@@ -1,0 +1,31 @@
+{
+  "schema": "APR_B133_V25_3_C_REVIEW_POINTER_TRAIN_ONLY",
+  "status": "C_INDEPENDENT_COMPLETE_PRELABEL_FREEZE_PENDING",
+  "library_folder": "/APR_Evolution_Checkpoints",
+  "library_artifacts": {
+    "bundle": "APR_B133_20261026_V25_3_CAUSAL_SET_C_FREEZE_HANDOFF_PRELABEL_ONLY.zip",
+    "bundle_sha256": "5d9714b6259ed4f9752300e102acd31545cc93d68cadd0d66cf2e7353bbe050d",
+    "C_handoff": "B133_C_FULL_BATCH_FREEZE_HANDOFF.json",
+    "C_handoff_sha256": "ca08e6a499246608da548f5d59289dffc3f052c6b0c0887c76b651d988b0870f",
+    "separate_receipt": "B133_FINAL_SEPARATE_LIBRARY_READBACK_RECEIPT.json",
+    "receipt_sha256": "02f1866f02a5c3d4cfb9032fa3f34d5ed45217e0dfd5e020972ac9364d570c68"
+  },
+  "train_source": {
+    "repo": "olejardamir/doubletake_work",
+    "commit": "3565d44098c9e8da9863b6c4695b2a3cf74ff4bc",
+    "path": "apr/data/binance_spot_1d/",
+    "classification": "CONNECTOR_NORMALIZED_NOT_ORIGINAL_PROVIDER_HTTP"
+  },
+  "C127_protocol_sha256": "37b81981d866fdf8175b3fc59c78da9e0930bed0f6ebf350c8e11149014e9276",
+  "A135_submitted": 9,
+  "A135_retained": 7,
+  "A135_excluded": 2,
+  "A137_overlay": "OPTIONAL_SEPARATE_POLICY_REQUIRES_INDEPENDENT_C_PRELABEL_DECISION",
+  "risk": "M131_IN_SAMPLE_POSITION_ROW_ALIGNMENT_BUG_CONFIRMED_B133_CORRECTED_DATE_SYMBOL_JOIN",
+  "outcome_reads_2021": 0,
+  "scores_2021": "NOT_SCORED",
+  "no_trades": true,
+  "no_releases": true,
+  "no_promotions": true,
+  "warning": "Shared Library/GitHub does not provide blind ACL. C must independently freeze complete roster, formulas, code, source, cohort, costs, classifier and optional mask before any 2021 data retrieval."
+}
