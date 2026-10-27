@@ -1,0 +1,49 @@
+{
+  "schema": "APR_B141_V27_3_C_D_MASTER_OPEN_TIME_SOURCE_HANDOFF_POINTER",
+  "status": "B_SOURCE_ONLY_COMPLETE; C_OPEN_TIME_FULL_PRELABEL_FREEZE_PENDING; NO_FUTURE_PATH_READ",
+  "classification": "EXPOSED_DEVELOPMENT_NOT_BLIND_2025",
+  "event_count": 12,
+  "prestart_daily_bars": 372,
+  "source": {
+    "commit": "b6e5e8febff2f639d4a2b51ddc2c861e6a442805",
+    "path": "apr_research/B138_2025_QTR_FEATURE_ONLY_SOURCE_V1.json",
+    "sha256": "c8a1db40a3413e43864721af0597c20e9635d2a434b3aefed6e0a8bd89b9b4f1",
+    "blob_sha1": "fdfaa36e1dee0a969b0880aeaa0c8ade2d0f3698",
+    "provider_delivery_attested": false
+  },
+  "new_open_time_panel": {
+    "commit": "9fd5259768a8855eb75aedcde3743d4157d316b4",
+    "path": "apr_research/B141_V27_3_OPEN_TIME_2025_EVENT_START_SOURCE_ONLY_V1.json",
+    "sha256": "51b68224744d1487cfd49f515044d005757ef414b78dda86f4e6e7d29d3d1350",
+    "blob_sha1": "a357515076c273f2f91eda0850fd032b07f0db42"
+  },
+  "library": {
+    "folder": "/APR_Evolution_Checkpoints",
+    "package": "APR_B141_20261026_V27_3_OPEN_TIME_EVENT_START_SOURCE_ONLY_C_HANDOFF.zip",
+    "package_sha256": "9551ebc921c354c9bb9c35a3894f614c043e4008a4f76709ee80ba7c06c7e49d",
+    "final_manifest_sha256": "bd9312d011c62f3f5f748f50d7757c80f9db0c478c4897f164e695016243c441",
+    "separate_final_receipt_sha256": "9680578df202adc0a6b7f1b785856bd3f8d6259c8c455d5f6df366ef0cba393c",
+    "independent_readback": "11/11 including manifest, plus separate receipt PASS"
+  },
+  "event_rule": {
+    "success": "+5% FIRST",
+    "competing_adverse": "-3% FIRST",
+    "fixed_forecast_horizon": null,
+    "admin_observation_end": "2025-12-31T23:59:59.999Z",
+    "admin_end_not_forecast_deadline": true,
+    "dual_barrier_same_daily_bar": "U_ORDER_UNOBSERVED",
+    "no_barrier_by_admin_end": "U_RIGHT_CENSORED",
+    "opening_gap": "PREENTRY_A_IF_OUTSIDE_BARRIERS"
+  },
+  "gates": {
+    "A": "NEW OPEN_TIME EVENT-SPECIFIC MODEL FORECASTS AND OVERLAP NOT YET FROZEN",
+    "C": "INDEPENDENT FULL OPEN_TIME PRELABEL FREEZE REQUIRED BEFORE D OUTCOME PATH ACCESS",
+    "D": "NO POSTSTART PRICE/PATH TAPE RETRIEVAL OR SCORING YET",
+    "protected_P0": "NO_READ",
+    "historical_C139_D142": "PRESERVE_UNMODIFIED",
+    "formal": "v3.6.6-B inherited, R4/A100, H8/D102 SAFETY_HOLD, P0 12 UNSCORED"
+  },
+  "synthetic_first_hit_tests": "16/16 PASS",
+  "trades": 0,
+  "promotions": 0
+}
