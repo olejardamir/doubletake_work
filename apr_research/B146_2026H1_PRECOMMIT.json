@@ -1,0 +1,17 @@
+{
+  "id": "B146",
+  "dates": [
+    "2026-01-19",
+    "2026-02-16",
+    "2026-03-16",
+    "2026-04-20"
+  ],
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT"
+  ],
+  "feature_bars": 31,
+  "reference": "first aggregate trade at or after 00:00 UTC",
+  "research_only": true
+}
