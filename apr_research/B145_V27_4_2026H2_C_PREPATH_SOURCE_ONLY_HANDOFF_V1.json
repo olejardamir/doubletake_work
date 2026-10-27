@@ -1,0 +1,315 @@
+{
+  "schema": "APR_B145_V27_4_2026H2_C_PREPATH_SOURCE_ONLY_HANDOFF_V1",
+  "precommit_commit": "fa8499abeeb1e212c09141eb3d9a1d449959d3a6",
+  "source_registry": [
+    {
+      "date": "2026-07-20",
+      "commit": "0283e66a891811ffdb9cc96529588369d45266e3",
+      "path": "apr_research/B145_2026H2_2026-07-20_PRESTART_P0_SOURCE.json",
+      "bytes": 33391,
+      "sha256": "30c34e7c1f35b4ab3905d2ebcb30a61dd1acd07fb914cabc10d94282d294cbba",
+      "github_blob_sha1": "3cab75241d5239ab33f496ed11bb468ac79b1096",
+      "readback": "PASS"
+    },
+    {
+      "date": "2026-08-17",
+      "commit": "ae4a20282156fe4320aa585bbb9b909bb423c783",
+      "path": "apr_research/B145_2026H2_2026-08-17_PRESTART_P0_SOURCE.json",
+      "bytes": 33330,
+      "sha256": "77f99ff732e522bba0ffdda183da9662bd7ebd46fc2efd835983edde963a8dda",
+      "github_blob_sha1": "84507c8aa0232f451d0723c369da179c3aaae161",
+      "readback": "PASS"
+    },
+    {
+      "date": "2026-09-21",
+      "commit": "8af587767c7a7c793182c26d1344c84d5ebf89ac",
+      "path": "apr_research/B145_2026H2_2026-09-21_PRESTART_P0_SOURCE.json",
+      "bytes": 33497,
+      "sha256": "728c0b60bcade24b350d2dcc7f4031b313135f7ba32e3227d67d1067d82ff5e1",
+      "github_blob_sha1": "b308d5009fefd989178ec77d1392342ed6c4e20d",
+      "readback": "PASS"
+    },
+    {
+      "date": "2026-10-19",
+      "commit": "17a880b5735986e3938657e6742b819652720809",
+      "path": "apr_research/B145_2026H2_2026-10-19_PRESTART_P0_SOURCE.json",
+      "bytes": 33460,
+      "sha256": "63b7919c6658084d529f210906437071d705684ca821d4dc60fe981caef861a5",
+      "github_blob_sha1": "6856665b29a8f198a405273a63a538ac6e0dda90",
+      "readback": "PASS"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "BTCUSDT_2026-07-20T00:00:00Z",
+      "asset": "BTCUSDT",
+      "nominal_t0_utc": "2026-07-20T00:00:00.000Z",
+      "effective_t0_utc": "2026-07-20T00:00:00.137Z",
+      "feature_observed_by_utc": "2026-07-18T23:59:59.999Z",
+      "source_window_start_utc": "2026-06-18T00:00:00.000Z",
+      "p0_original_trade_price": "64722.55000000",
+      "first_trade_aggregate_id": 4017553738,
+      "first_trade_latency_ms": 137,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.029800973696595623,
+        "return_7d": 0.015907801751829487,
+        "mean_quote_volume_31d": 1063374813.82164,
+        "volatility_logreturns_30d": 0.016724640480831023
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "ETHUSDT_2026-07-20T00:00:00Z",
+      "asset": "ETHUSDT",
+      "nominal_t0_utc": "2026-07-20T00:00:00.000Z",
+      "effective_t0_utc": "2026-07-20T00:00:00.127Z",
+      "feature_observed_by_utc": "2026-07-18T23:59:59.999Z",
+      "source_window_start_utc": "2026-06-18T00:00:00.000Z",
+      "p0_original_trade_price": "1872.24000000",
+      "first_trade_aggregate_id": 2042305049,
+      "first_trade_latency_ms": 127,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.08853901853183022,
+        "return_7d": 0.0418680359779835,
+        "mean_quote_volume_31d": 437408037.33698684,
+        "volatility_logreturns_30d": 0.02386478156800415
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "XRPUSDT_2026-07-20T00:00:00Z",
+      "asset": "XRPUSDT",
+      "nominal_t0_utc": "2026-07-20T00:00:00.000Z",
+      "effective_t0_utc": "2026-07-20T00:00:00.477Z",
+      "feature_observed_by_utc": "2026-07-18T23:59:59.999Z",
+      "source_window_start_utc": "2026-06-18T00:00:00.000Z",
+      "p0_original_trade_price": "1.09780000",
+      "first_trade_aggregate_id": 710796056,
+      "first_trade_latency_ms": 477,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": -0.04675098124727439,
+        "return_7d": -0.0034649402753715863,
+        "mean_quote_volume_31d": 80792409.40731548,
+        "volatility_logreturns_30d": 0.019021701049432432
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "BTCUSDT_2026-08-17T00:00:00Z",
+      "asset": "BTCUSDT",
+      "nominal_t0_utc": "2026-08-17T00:00:00.000Z",
+      "effective_t0_utc": "2026-08-17T00:00:00.063Z",
+      "feature_observed_by_utc": "2026-08-15T23:59:59.999Z",
+      "source_window_start_utc": "2026-07-16T00:00:00.000Z",
+      "p0_original_trade_price": "62900.00000000",
+      "first_trade_aggregate_id": 4034013003,
+      "first_trade_latency_ms": 63,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": -0.011658901272438404,
+        "return_7d": -0.028887236656168214,
+        "mean_quote_volume_31d": 837946251.9393659,
+        "volatility_logreturns_30d": 0.011286392200814257
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "ETHUSDT_2026-08-17T00:00:00Z",
+      "asset": "ETHUSDT",
+      "nominal_t0_utc": "2026-08-17T00:00:00.000Z",
+      "effective_t0_utc": "2026-08-17T00:00:00.209Z",
+      "feature_observed_by_utc": "2026-08-15T23:59:59.999Z",
+      "source_window_start_utc": "2026-07-16T00:00:00.000Z",
+      "p0_original_trade_price": "1876.01000000",
+      "first_trade_aggregate_id": 2055013631,
+      "first_trade_latency_ms": 209,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.009615436180424819,
+        "return_7d": -0.017790623663094585,
+        "mean_quote_volume_31d": 358707793.1145282,
+        "volatility_logreturns_30d": 0.015692469315267
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "XRPUSDT_2026-08-17T00:00:00Z",
+      "asset": "XRPUSDT",
+      "nominal_t0_utc": "2026-08-17T00:00:00.000Z",
+      "effective_t0_utc": "2026-08-17T00:00:00.455Z",
+      "feature_observed_by_utc": "2026-08-15T23:59:59.999Z",
+      "source_window_start_utc": "2026-07-16T00:00:00.000Z",
+      "p0_original_trade_price": "0.99350000",
+      "first_trade_aggregate_id": 712736306,
+      "first_trade_latency_ms": 455,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": -0.07754576395915747,
+        "return_7d": -0.03549100702125629,
+        "mean_quote_volume_31d": 54493989.952774525,
+        "volatility_logreturns_30d": 0.015712161409353036
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "BTCUSDT_2026-09-21T00:00:00Z",
+      "asset": "BTCUSDT",
+      "nominal_t0_utc": "2026-09-21T00:00:00.000Z",
+      "effective_t0_utc": "2026-09-21T00:00:00.170Z",
+      "feature_observed_by_utc": "2026-09-19T23:59:59.999Z",
+      "source_window_start_utc": "2026-08-20T00:00:00.000Z",
+      "p0_original_trade_price": "81178.01000000",
+      "first_trade_aggregate_id": 4068629447,
+      "first_trade_latency_ms": 170,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.11263023766469504,
+        "return_7d": 0.051388784468896054,
+        "mean_quote_volume_31d": 1321952358.7526195,
+        "volatility_logreturns_30d": 0.022606554020271286
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "ETHUSDT_2026-09-21T00:00:00Z",
+      "asset": "ETHUSDT",
+      "nominal_t0_utc": "2026-09-21T00:00:00.000Z",
+      "effective_t0_utc": "2026-09-21T00:00:00.164Z",
+      "feature_observed_by_utc": "2026-09-19T23:59:59.999Z",
+      "source_window_start_utc": "2026-08-20T00:00:00.000Z",
+      "p0_original_trade_price": "2645.21000000",
+      "first_trade_aggregate_id": 2085190540,
+      "first_trade_latency_ms": 164,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.13145408755296928,
+        "return_7d": 0.04226562097920383,
+        "mean_quote_volume_31d": 836839056.2503048,
+        "volatility_logreturns_30d": 0.02710765168538937
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "XRPUSDT_2026-09-21T00:00:00Z",
+      "asset": "XRPUSDT",
+      "nominal_t0_utc": "2026-09-21T00:00:00.000Z",
+      "effective_t0_utc": "2026-09-21T00:00:00.404Z",
+      "feature_observed_by_utc": "2026-09-19T23:59:59.999Z",
+      "source_window_start_utc": "2026-08-20T00:00:00.000Z",
+      "p0_original_trade_price": "1.41040000",
+      "first_trade_aggregate_id": 722773991,
+      "first_trade_latency_ms": 404,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.11221512499014286,
+        "return_7d": 0.032276952353070376,
+        "mean_quote_volume_31d": 257367700.97015092,
+        "volatility_logreturns_30d": 0.043297726576264906
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "BTCUSDT_2026-10-19T00:00:00Z",
+      "asset": "BTCUSDT",
+      "nominal_t0_utc": "2026-10-19T00:00:00.000Z",
+      "effective_t0_utc": "2026-10-19T00:00:00.044Z",
+      "feature_observed_by_utc": "2026-10-17T23:59:59.999Z",
+      "source_window_start_utc": "2026-09-17T00:00:00.000Z",
+      "p0_original_trade_price": "82116.00000000",
+      "first_trade_aggregate_id": 4092763536,
+      "first_trade_latency_ms": 44,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": 0.06639922184864333,
+        "return_7d": -0.01804253030184,
+        "mean_quote_volume_31d": 1308864997.4371743,
+        "volatility_logreturns_30d": 0.019350545130652232
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "ETHUSDT_2026-10-19T00:00:00Z",
+      "asset": "ETHUSDT",
+      "nominal_t0_utc": "2026-10-19T00:00:00.000Z",
+      "effective_t0_utc": "2026-10-19T00:00:00.744Z",
+      "feature_observed_by_utc": "2026-10-17T23:59:59.999Z",
+      "source_window_start_utc": "2026-09-17T00:00:00.000Z",
+      "p0_original_trade_price": "2410.31000000",
+      "first_trade_aggregate_id": 2103487725,
+      "first_trade_latency_ms": 744,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": -0.018167107972933194,
+        "return_7d": -0.041372101559133734,
+        "mean_quote_volume_31d": 707247451.1230001,
+        "volatility_logreturns_30d": 0.022242196832938217
+      },
+      "outcome": null
+    },
+    {
+      "event_id": "XRPUSDT_2026-10-19T00:00:00Z",
+      "asset": "XRPUSDT",
+      "nominal_t0_utc": "2026-10-19T00:00:00.000Z",
+      "effective_t0_utc": "2026-10-19T00:00:00.001Z",
+      "feature_observed_by_utc": "2026-10-17T23:59:59.999Z",
+      "source_window_start_utc": "2026-09-17T00:00:00.000Z",
+      "p0_original_trade_price": "1.30720000",
+      "first_trade_aggregate_id": 730241572,
+      "first_trade_latency_ms": 1,
+      "upper_barrier": "1.05 * immutable original P0",
+      "adverse_barrier": "0.97 * immutable original P0",
+      "features": {
+        "return_30d": -0.0017741437827830664,
+        "return_7d": -0.07722475755847125,
+        "mean_quote_volume_31d": 218353574.82715163,
+        "volatility_logreturns_30d": 0.029363014772104484
+      },
+      "outcome": null
+    }
+  ],
+  "exposure_registry": {
+    "previously_exposed": [
+      "2021",
+      "2022-2023 training",
+      "2023 evaluation",
+      "2024-2025 controls and evaluations",
+      "2026H1 previously scored"
+    ],
+    "this_cohort": "2026H2 July-Oct 2026 third-Monday: prior exposure NOT proven absent, conservatively EXPOSED_DEVELOPMENT; NOT blind"
+  },
+  "controls": {
+    "asset_side": "spot long/flat only",
+    "p0": "first observed historical aggregate trade at/after nominal UTC start; effective t0 actual trade timestamp",
+    "event": "upper 1.05*P0 first vs lower 0.97*P0 first",
+    "horizon": "NONE",
+    "admin_cutoff": "2026-10-27T00:00:00Z (administrative only)",
+    "costs": [
+      "0.3% roundtrip",
+      "0.9% roundtrip"
+    ],
+    "prestart_last_bar": "preceding Saturday UTC 23:59:59.999",
+    "historical_delivery": "UNKNOWN",
+    "historical_executable_fill": "NOT ATTESTED",
+    "poststart_path": "NOT READ",
+    "outcome_fields": "NULL",
+    "c_freeze": "PENDING",
+    "a155_roster": "NOT YET VERIFIED; C must independently freeze any chosen A roster and controls BEFORE D outcome read",
+    "ambiguity": "same bar dual hit unresolved without intrabar chronology",
+    "safety": "no reanchoring, no P0 protected outcomes, no trade/release/promotion"
+  },
+  "status": "FEATURE_AND_ORIGINAL_P0_SOURCE_VERIFIED_ONLY; C_PREPATH_FREEZE_PENDING"
+}
