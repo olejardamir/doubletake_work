@@ -1,0 +1,124 @@
+{
+  "schema": "APR_B144_V27_4_2024_2025_NOV_FEB_OPEN_TIME_PRECOMMIT_V2",
+  "supersedes_v1_for_new_source_acquisition_only": true,
+  "v1_preserved": "2024 Mar Jun Sep Dec 2024 precommit; first-trade aggregate endpoint historical window returned empty for Mar/Jun; not silently substituted",
+  "exposure": "EXPOSED_DEVELOPMENT_NOT_BLIND",
+  "events": [
+    {
+      "event_id": "APR_B144V2_2024-11-18_BTCUSDT_FIRST_TRADE_P0",
+      "asset": "BTCUSDT",
+      "nominal_start_utc": "2024-11-18T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2024-11-16",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2024-11-18_ETHUSDT_FIRST_TRADE_P0",
+      "asset": "ETHUSDT",
+      "nominal_start_utc": "2024-11-18T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2024-11-16",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2024-11-18_XRPUSDT_FIRST_TRADE_P0",
+      "asset": "XRPUSDT",
+      "nominal_start_utc": "2024-11-18T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2024-11-16",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2024-12-16_BTCUSDT_FIRST_TRADE_P0",
+      "asset": "BTCUSDT",
+      "nominal_start_utc": "2024-12-16T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2024-12-14",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2024-12-16_ETHUSDT_FIRST_TRADE_P0",
+      "asset": "ETHUSDT",
+      "nominal_start_utc": "2024-12-16T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2024-12-14",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2024-12-16_XRPUSDT_FIRST_TRADE_P0",
+      "asset": "XRPUSDT",
+      "nominal_start_utc": "2024-12-16T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2024-12-14",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2025-01-20_BTCUSDT_FIRST_TRADE_P0",
+      "asset": "BTCUSDT",
+      "nominal_start_utc": "2025-01-20T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2025-01-18",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2025-01-20_ETHUSDT_FIRST_TRADE_P0",
+      "asset": "ETHUSDT",
+      "nominal_start_utc": "2025-01-20T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2025-01-18",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2025-01-20_XRPUSDT_FIRST_TRADE_P0",
+      "asset": "XRPUSDT",
+      "nominal_start_utc": "2025-01-20T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2025-01-18",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2025-02-17_BTCUSDT_FIRST_TRADE_P0",
+      "asset": "BTCUSDT",
+      "nominal_start_utc": "2025-02-17T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2025-02-15",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2025-02-17_ETHUSDT_FIRST_TRADE_P0",
+      "asset": "ETHUSDT",
+      "nominal_start_utc": "2025-02-17T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2025-02-15",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    },
+    {
+      "event_id": "APR_B144V2_2025-02-17_XRPUSDT_FIRST_TRADE_P0",
+      "asset": "XRPUSDT",
+      "nominal_start_utc": "2025-02-17T00:00:00.000Z",
+      "feature_bars": 31,
+      "feature_last_day_utc": "2025-02-15",
+      "target_multiplier": "1.05",
+      "adverse_multiplier": "0.97"
+    }
+  ],
+  "source_policy": "Binance spot daily 31 bars through preceding Saturday; aggregate first trade at or after nominal Monday midnight, verified within 60s; no poststart high/low/close; if missing fail closed",
+  "no_outcome_paths_before_independent_C_full_freeze": true,
+  "administrative_end": "2025-06-30T23:59:59.999Z",
+  "roundtrip_costs": [
+    "0.003",
+    "0.009"
+  ],
+  "forecast_horizon": null
+}
