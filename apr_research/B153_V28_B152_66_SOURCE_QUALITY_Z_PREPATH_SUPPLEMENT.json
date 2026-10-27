@@ -1,0 +1,1280 @@
+{
+  "schema": "APR_B153_V28_B152_66_SOURCE_QUALITY_Z_PREPATH_SUPPLEMENT_V1",
+  "date_utc": "2026-10-27",
+  "events": 66,
+  "asof": "Only first individual trade at t0 and immediately preceding trade; do not use first-aggregate later component trades or poststart paths",
+  "cohort": "B152 original 66 events/22 dates/3 assets; immutable original P0 and A161 roster",
+  "source_chunk_git_blob_sha1": [
+    "fb90b9837b82334564c1d9d0774b2df4183e3277",
+    "d0c4a73f8d51ea4421fa84a0cff0d3064a5e1754",
+    "a0e46f6b9c73cbdf05a2f69307b28374058b42b4",
+    "ba471352d2b2431ac6f366de97fe4eee04792a8c",
+    "015e593d612c1eeb0743d4d8da447d5f44706e56",
+    "21286b0c666f1d68d68a88aa2872f41ce0729610"
+  ],
+  "features": [
+    {
+      "event_id": "B152_2025-01-01_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-01-01T00:00:00.010Z",
+      "original_p0": "93576.00000000",
+      "first_individual_trade_id": 4359935386,
+      "prestart_last_trade_id": 4359935385,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 10,
+        "predecessor_age_at_nominal_ms": 49,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00136000",
+        "first_trade_quote_qty": "127.26336000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-01-01_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-01-01T00:00:00.080Z",
+      "original_p0": "3337.78000000",
+      "first_individual_trade_id": 2010047664,
+      "prestart_last_trade_id": 2010047663,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 80,
+        "predecessor_age_at_nominal_ms": 2837,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.04040000",
+        "first_trade_quote_qty": "134.84631200",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-01-01_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-01-01T00:00:00.221Z",
+      "original_p0": "2.08360000",
+      "first_individual_trade_id": 852673096,
+      "prestart_last_trade_id": 852673095,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 221,
+        "predecessor_age_at_nominal_ms": 1257,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "641.00000000",
+        "first_trade_quote_qty": "1335.58760000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 2,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-02-05_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-02-05T00:00:00.004Z",
+      "original_p0": "2731.19000000",
+      "first_individual_trade_id": 2128606524,
+      "prestart_last_trade_id": 2128606523,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 4,
+        "predecessor_age_at_nominal_ms": 580,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00200000",
+        "first_trade_quote_qty": "5.46238000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 2,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-02-05_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-02-05T00:00:00.017Z",
+      "original_p0": "97763.14000000",
+      "first_individual_trade_id": 4522917199,
+      "prestart_last_trade_id": 4522917198,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 17,
+        "predecessor_age_at_nominal_ms": 18,
+        "first_vs_previous_trade_price_jump_bps": 0.001022881,
+        "first_trade_qty": "0.00006000",
+        "first_trade_quote_qty": "5.86578840",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 11,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-02-05_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-02-05T00:00:00.062Z",
+      "original_p0": "2.52750000",
+      "first_individual_trade_id": 964705325,
+      "prestart_last_trade_id": 964705324,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 62,
+        "predecessor_age_at_nominal_ms": 165,
+        "first_vs_previous_trade_price_jump_bps": 0.395663528,
+        "first_trade_qty": "751.00000000",
+        "first_trade_quote_qty": "1898.15250000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-03-05_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-03-05T00:00:00.141Z",
+      "original_p0": "87281.98000000",
+      "first_individual_trade_id": 4655991662,
+      "prestart_last_trade_id": 4655991661,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 141,
+        "predecessor_age_at_nominal_ms": 586,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.02290000",
+        "first_trade_quote_qty": "1998.75734200",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-03-05_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-03-05T00:00:00.459Z",
+      "original_p0": "2171.50000000",
+      "first_individual_trade_id": 2228818210,
+      "prestart_last_trade_id": 2228818209,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 459,
+        "predecessor_age_at_nominal_ms": 1434,
+        "first_vs_previous_trade_price_jump_bps": -0.046050905,
+        "first_trade_qty": "0.02680000",
+        "first_trade_quote_qty": "58.19620000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-03-05_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-03-05T00:00:00.737Z",
+      "original_p0": "2.45420000",
+      "first_individual_trade_id": 1034926078,
+      "prestart_last_trade_id": 1034926077,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 737,
+        "predecessor_age_at_nominal_ms": 1483,
+        "first_vs_previous_trade_price_jump_bps": -0.407448152,
+        "first_trade_qty": "3.00000000",
+        "first_trade_quote_qty": "7.36260000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 10,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-04-02_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-04-02T00:00:00.140Z",
+      "original_p0": "85158.35000000",
+      "first_individual_trade_id": 4764337881,
+      "prestart_last_trade_id": 4764337880,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 140,
+        "predecessor_age_at_nominal_ms": 198,
+        "first_vs_previous_trade_price_jump_bps": 0.001174283,
+        "first_trade_qty": "0.00007000",
+        "first_trade_quote_qty": "5.96108450",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 3,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-04-02_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-04-02T00:00:00.352Z",
+      "original_p0": "1904.98000000",
+      "first_individual_trade_id": 2291925905,
+      "prestart_last_trade_id": 2291925904,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 352,
+        "predecessor_age_at_nominal_ms": 2726,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "1.86050000",
+        "first_trade_quote_qty": "3544.21529000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-04-02_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-04-02T00:00:00.360Z",
+      "original_p0": "2.13870000",
+      "first_individual_trade_id": 1083048495,
+      "prestart_last_trade_id": 1083048494,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 360,
+        "predecessor_age_at_nominal_ms": 140,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "1485.00000000",
+        "first_trade_quote_qty": "3175.96950000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 10,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-05-07_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-05-07T00:00:00.028Z",
+      "original_p0": "1817.00000000",
+      "first_individual_trade_id": 2383039412,
+      "prestart_last_trade_id": 2383039411,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 28,
+        "predecessor_age_at_nominal_ms": 4465,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.63180000",
+        "first_trade_quote_qty": "1147.98060000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-05-07_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-05-07T00:00:00.032Z",
+      "original_p0": "96834.02000000",
+      "first_individual_trade_id": 4878916093,
+      "prestart_last_trade_id": 4878916092,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 32,
+        "predecessor_age_at_nominal_ms": 221,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00007000",
+        "first_trade_quote_qty": "6.77838140",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-05-07_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-05-07T00:00:00.041Z",
+      "original_p0": "2.15500000",
+      "first_individual_trade_id": 1130746664,
+      "prestart_last_trade_id": 1130746663,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 41,
+        "predecessor_age_at_nominal_ms": 388,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "4.20000000",
+        "first_trade_quote_qty": "9.05100000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 5,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-06-04_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-06-04T00:00:00.105Z",
+      "original_p0": "2593.35000000",
+      "first_individual_trade_id": 2494633056,
+      "prestart_last_trade_id": 2494633055,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 105,
+        "predecessor_age_at_nominal_ms": 460,
+        "first_vs_previous_trade_price_jump_bps": -0.038560015,
+        "first_trade_qty": "0.00390000",
+        "first_trade_quote_qty": "10.11406500",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-06-04_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-06-04T00:00:00.119Z",
+      "original_p0": "2.24450000",
+      "first_individual_trade_id": 1173666637,
+      "prestart_last_trade_id": 1173666636,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 119,
+        "predecessor_age_at_nominal_ms": 1275,
+        "first_vs_previous_trade_price_jump_bps": -0.445513677,
+        "first_trade_qty": "2.40000000",
+        "first_trade_quote_qty": "5.38680000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 8,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-06-04_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-06-04T00:00:00.309Z",
+      "original_p0": "105376.90000000",
+      "first_individual_trade_id": 4981644931,
+      "prestart_last_trade_id": 4981644930,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 309,
+        "predecessor_age_at_nominal_ms": 1266,
+        "first_vs_previous_trade_price_jump_bps": 0.000948975,
+        "first_trade_qty": "0.00152000",
+        "first_trade_quote_qty": "160.17288800",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-07-02_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-07-02T00:00:00.332Z",
+      "original_p0": "2405.01000000",
+      "first_individual_trade_id": 2580504913,
+      "prestart_last_trade_id": 2580504912,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 332,
+        "predecessor_age_at_nominal_ms": 1304,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "2.26980000",
+        "first_trade_quote_qty": "5458.89169800",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-07-02_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-07-02T00:00:00.363Z",
+      "original_p0": "105681.13000000",
+      "first_individual_trade_id": 5057490102,
+      "prestart_last_trade_id": 5057490101,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 363,
+        "predecessor_age_at_nominal_ms": 1221,
+        "first_vs_previous_trade_price_jump_bps": -0.000946243,
+        "first_trade_qty": "0.00018000",
+        "first_trade_quote_qty": "19.02260340",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-07-02_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-07-02T00:00:00.673Z",
+      "original_p0": "2.17190000",
+      "first_individual_trade_id": 1201166613,
+      "prestart_last_trade_id": 1201166612,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 673,
+        "predecessor_age_at_nominal_ms": 2667,
+        "first_vs_previous_trade_price_jump_bps": -0.460405157,
+        "first_trade_qty": "324.90000000",
+        "first_trade_quote_qty": "705.65031000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 7,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-08-06_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-08-06T00:00:00.051Z",
+      "original_p0": "2.96220000",
+      "first_individual_trade_id": 1287146289,
+      "prestart_last_trade_id": 1287146288,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 51,
+        "predecessor_age_at_nominal_ms": 432,
+        "first_vs_previous_trade_price_jump_bps": -0.337575533,
+        "first_trade_qty": "54.00000000",
+        "first_trade_quote_qty": "159.95880000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-08-06_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-08-06T00:00:00.695Z",
+      "original_p0": "3612.01000000",
+      "first_individual_trade_id": 2692880965,
+      "prestart_last_trade_id": 2692880964,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 695,
+        "predecessor_age_at_nominal_ms": 87,
+        "first_vs_previous_trade_price_jump_bps": 0.027685493,
+        "first_trade_qty": "0.13850000",
+        "first_trade_quote_qty": "500.26338500",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 4,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-08-06_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-08-06T00:00:00.825Z",
+      "original_p0": "114129.75000000",
+      "first_individual_trade_id": 5135258660,
+      "prestart_last_trade_id": 5135258659,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 825,
+        "predecessor_age_at_nominal_ms": 274,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00027000",
+        "first_trade_quote_qty": "30.81503250",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-09-03_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-09-03T00:00:00.078Z",
+      "original_p0": "111240.01000000",
+      "first_individual_trade_id": 5210705439,
+      "prestart_last_trade_id": 5210705438,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 78,
+        "predecessor_age_at_nominal_ms": 421,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00899000",
+        "first_trade_quote_qty": "1000.04768990",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-09-03_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-09-03T00:00:00.293Z",
+      "original_p0": "4326.49000000",
+      "first_individual_trade_id": 2811634486,
+      "prestart_last_trade_id": 2811634485,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 293,
+        "predecessor_age_at_nominal_ms": 2390,
+        "first_vs_previous_trade_price_jump_bps": -0.023113371,
+        "first_trade_qty": "2.05120000",
+        "first_trade_quote_qty": "8874.49628800",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 15,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-09-03_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-09-03T00:00:01.246Z",
+      "original_p0": "2.86200000",
+      "first_individual_trade_id": 1333193515,
+      "prestart_last_trade_id": 1333193514,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 1246,
+        "predecessor_age_at_nominal_ms": 1162,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "1.90000000",
+        "first_trade_quote_qty": "5.43780000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 3,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-10-01_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-10-01T00:00:00.181Z",
+      "original_p0": "114048.94000000",
+      "first_individual_trade_id": 5270037601,
+      "prestart_last_trade_id": 5270037600,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 181,
+        "predecessor_age_at_nominal_ms": 502,
+        "first_vs_previous_trade_price_jump_bps": 0.000876817,
+        "first_trade_qty": "0.00143000",
+        "first_trade_quote_qty": "163.08998420",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-10-01_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-10-01T00:00:00.336Z",
+      "original_p0": "4145.15000000",
+      "first_individual_trade_id": 2902981421,
+      "prestart_last_trade_id": 2902981420,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 336,
+        "predecessor_age_at_nominal_ms": 679,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00990000",
+        "first_trade_quote_qty": "41.03698500",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-10-01_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-10-01T00:00:00.815Z",
+      "original_p0": "2.84680000",
+      "first_individual_trade_id": 1363855515,
+      "prestart_last_trade_id": 1363855514,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 815,
+        "predecessor_age_at_nominal_ms": 487,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "2.40000000",
+        "first_trade_quote_qty": "6.83232000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-11-05_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-11-05T00:00:00.002Z",
+      "original_p0": "3287.05000000",
+      "first_individual_trade_id": 3107483656,
+      "prestart_last_trade_id": 3107483655,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 2,
+        "predecessor_age_at_nominal_ms": 928,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00180000",
+        "first_trade_quote_qty": "5.91669000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 4,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-11-05_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-11-05T00:00:00.003Z",
+      "original_p0": "101497.23000000",
+      "first_individual_trade_id": 5436049230,
+      "prestart_last_trade_id": 5436049229,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 3,
+        "predecessor_age_at_nominal_ms": 5,
+        "first_vs_previous_trade_price_jump_bps": 0.000985249,
+        "first_trade_qty": "0.00006000",
+        "first_trade_quote_qty": "6.08983380",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 28,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-11-05_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-11-05T00:00:00.111Z",
+      "original_p0": "2.20530000",
+      "first_individual_trade_id": 1425517169,
+      "prestart_last_trade_id": 1425517168,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 111,
+        "predecessor_age_at_nominal_ms": 1185,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "3.00000000",
+        "first_trade_quote_qty": "6.61590000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 7,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-12-03_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-12-03T00:00:00.012Z",
+      "original_p0": "2.15310000",
+      "first_individual_trade_id": 1473676132,
+      "prestart_last_trade_id": 1473676131,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 12,
+        "predecessor_age_at_nominal_ms": 186,
+        "first_vs_previous_trade_price_jump_bps": -0.464425042,
+        "first_trade_qty": "49.60000000",
+        "first_trade_quote_qty": "106.79376000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-12-03_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-12-03T00:00:00.103Z",
+      "original_p0": "91277.88000000",
+      "first_individual_trade_id": 5598384033,
+      "prestart_last_trade_id": 5598384032,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 103,
+        "predecessor_age_at_nominal_ms": 105,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00162000",
+        "first_trade_quote_qty": "147.87016560",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2025-12-03_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-12-03T00:00:01.766Z",
+      "original_p0": "2996.07000000",
+      "first_individual_trade_id": 3264685312,
+      "prestart_last_trade_id": 3264685311,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 1766,
+        "predecessor_age_at_nominal_ms": 927,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.07070000",
+        "first_trade_quote_qty": "211.82214900",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 2,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-01-07_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-01-07T00:00:00.009Z",
+      "original_p0": "3296.83000000",
+      "first_individual_trade_id": 3423714868,
+      "prestart_last_trade_id": 3423714867,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 9,
+        "predecessor_age_at_nominal_ms": 65,
+        "first_vs_previous_trade_price_jump_bps": -0.030332076,
+        "first_trade_qty": "1.32590000",
+        "first_trade_quote_qty": "4371.26689700",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 2,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-01-07_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-01-07T00:00:00.246Z",
+      "original_p0": "93747.97000000",
+      "first_individual_trade_id": 5744558779,
+      "prestart_last_trade_id": 5744558778,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 246,
+        "predecessor_age_at_nominal_ms": 973,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00021000",
+        "first_trade_quote_qty": "19.68707370",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-01-07_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-01-07T00:00:00.804Z",
+      "original_p0": "2.30420000",
+      "first_individual_trade_id": 1504790654,
+      "prestart_last_trade_id": 1504790653,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 804,
+        "predecessor_age_at_nominal_ms": 45,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "2.30000000",
+        "first_trade_quote_qty": "5.29966000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 7,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-02-04_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-02-04T00:00:00.003Z",
+      "original_p0": "2233.72000000",
+      "first_individual_trade_id": 3578955093,
+      "prestart_last_trade_id": 3578955092,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 3,
+        "predecessor_age_at_nominal_ms": 1092,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00390000",
+        "first_trade_quote_qty": "8.71150800",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 37,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-02-04_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-02-04T00:00:00.005Z",
+      "original_p0": "75770.21000000",
+      "first_individual_trade_id": 5875597544,
+      "prestart_last_trade_id": 5875597543,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 5,
+        "predecessor_age_at_nominal_ms": 175,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.10539000",
+        "first_trade_quote_qty": "7985.42243190",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-02-04_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-02-04T00:00:00.274Z",
+      "original_p0": "1.57900000",
+      "first_individual_trade_id": 1535402321,
+      "prestart_last_trade_id": 1535402320,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 274,
+        "predecessor_age_at_nominal_ms": 230,
+        "first_vs_previous_trade_price_jump_bps": -0.633272117,
+        "first_trade_qty": "3.30000000",
+        "first_trade_quote_qty": "5.21070000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 14,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-03-04_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-03-04T00:00:00.004Z",
+      "original_p0": "68338.01000000",
+      "first_individual_trade_id": 6054826695,
+      "prestart_last_trade_id": 6054826694,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 4,
+        "predecessor_age_at_nominal_ms": 159,
+        "first_vs_previous_trade_price_jump_bps": 0.001463315,
+        "first_trade_qty": "0.07978000",
+        "first_trade_quote_qty": "5452.00643780",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 2,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-03-04_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-03-04T00:00:00.011Z",
+      "original_p0": "1982.81000000",
+      "first_individual_trade_id": 3756857813,
+      "prestart_last_trade_id": 3756857812,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 11,
+        "predecessor_age_at_nominal_ms": 1723,
+        "first_vs_previous_trade_price_jump_bps": 0.05043373,
+        "first_trade_qty": "0.00500000",
+        "first_trade_quote_qty": "9.91405000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 16,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-03-04_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-03-04T00:00:00.364Z",
+      "original_p0": "1.36070000",
+      "first_individual_trade_id": 1578523860,
+      "prestart_last_trade_id": 1578523859,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 364,
+        "predecessor_age_at_nominal_ms": 2637,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "36.70000000",
+        "first_trade_quote_qty": "49.93769000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-04-01_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-04-01T00:00:00.062Z",
+      "original_p0": "68284.49000000",
+      "first_individual_trade_id": 6172995294,
+      "prestart_last_trade_id": 6172995293,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 62,
+        "predecessor_age_at_nominal_ms": 382,
+        "first_vs_previous_trade_price_jump_bps": 0.001464462,
+        "first_trade_qty": "0.00007000",
+        "first_trade_quote_qty": "4.77991430",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-04-01_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-04-01T00:00:00.092Z",
+      "original_p0": "2105.43000000",
+      "first_individual_trade_id": 3886791132,
+      "prestart_last_trade_id": 3886791131,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 92,
+        "predecessor_age_at_nominal_ms": 998,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00500000",
+        "first_trade_quote_qty": "10.52715000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 39,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-04-01_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-04-01T00:00:01.748Z",
+      "original_p0": "1.34100000",
+      "first_individual_trade_id": 1600864192,
+      "prestart_last_trade_id": 1600864191,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 1748,
+        "predecessor_age_at_nominal_ms": 3883,
+        "first_vs_previous_trade_price_jump_bps": -0.745656551,
+        "first_trade_qty": "335.60000000",
+        "first_trade_quote_qty": "450.03960000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-05-06_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-05-06T00:00:00.024Z",
+      "original_p0": "1.41260000",
+      "first_individual_trade_id": 1618064471,
+      "prestart_last_trade_id": 1618064470,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 24,
+        "predecessor_age_at_nominal_ms": 782,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "2368.30000000",
+        "first_trade_quote_qty": "3345.46058000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 20,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-05-06_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-05-06T00:00:00.076Z",
+      "original_p0": "80905.53000000",
+      "first_individual_trade_id": 6275616423,
+      "prestart_last_trade_id": 6275616422,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 76,
+        "predecessor_age_at_nominal_ms": 4,
+        "first_vs_previous_trade_price_jump_bps": 0.00123601,
+        "first_trade_qty": "0.00006000",
+        "first_trade_quote_qty": "4.85433180",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-05-06_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-05-06T00:00:00.796Z",
+      "original_p0": "2360.76000000",
+      "first_individual_trade_id": 3994086916,
+      "prestart_last_trade_id": 3994086915,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 796,
+        "predecessor_age_at_nominal_ms": 8,
+        "first_vs_previous_trade_price_jump_bps": -0.042359061,
+        "first_trade_qty": "0.00220000",
+        "first_trade_quote_qty": "5.19367200",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 7,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-06-03_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-06-03T00:00:00.016Z",
+      "original_p0": "1859.84000000",
+      "first_individual_trade_id": 4066945315,
+      "prestart_last_trade_id": 4066945314,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 16,
+        "predecessor_age_at_nominal_ms": 37,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00300000",
+        "first_trade_quote_qty": "5.57952000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-06-03_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-06-03T00:00:00.102Z",
+      "original_p0": "1.21180000",
+      "first_individual_trade_id": 1633886137,
+      "prestart_last_trade_id": 1633886136,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 102,
+        "predecessor_age_at_nominal_ms": 3200,
+        "first_vs_previous_trade_price_jump_bps": 0.825286787,
+        "first_trade_qty": "4.40000000",
+        "first_trade_quote_qty": "5.33192000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 46,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-06-03_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-06-03T00:00:00.127Z",
+      "original_p0": "66760.84000000",
+      "first_individual_trade_id": 6347768452,
+      "prestart_last_trade_id": 6347768451,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 127,
+        "predecessor_age_at_nominal_ms": 342,
+        "first_vs_previous_trade_price_jump_bps": 0.001497884,
+        "first_trade_qty": "0.00007000",
+        "first_trade_quote_qty": "4.67325880",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-07-01_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-07-01T00:00:00.021Z",
+      "original_p0": "1572.00000000",
+      "first_individual_trade_id": 4178839847,
+      "prestart_last_trade_id": 4178839846,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 21,
+        "predecessor_age_at_nominal_ms": 202,
+        "first_vs_previous_trade_price_jump_bps": -0.063612827,
+        "first_trade_qty": "0.00320000",
+        "first_trade_quote_qty": "5.03040000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 3,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-07-01_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-07-01T00:00:00.054Z",
+      "original_p0": "58624.71000000",
+      "first_individual_trade_id": 6465948054,
+      "prestart_last_trade_id": 6465948053,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 54,
+        "predecessor_age_at_nominal_ms": 68,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.05200000",
+        "first_trade_quote_qty": "3048.48492000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-07-01_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-07-01T00:00:00.969Z",
+      "original_p0": "1.04010000",
+      "first_individual_trade_id": 1656399854,
+      "prestart_last_trade_id": 1656399853,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 969,
+        "predecessor_age_at_nominal_ms": 6231,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "5.00000000",
+        "first_trade_quote_qty": "5.20050000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 16,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-08-05_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-08-05T00:00:00.165Z",
+      "original_p0": "64106.55000000",
+      "first_individual_trade_id": 6557162650,
+      "prestart_last_trade_id": 6557162649,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 165,
+        "predecessor_age_at_nominal_ms": 3854,
+        "first_vs_previous_trade_price_jump_bps": -0.001559903,
+        "first_trade_qty": "0.00080000",
+        "first_trade_quote_qty": "51.28524000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-08-05_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-08-05T00:00:00.741Z",
+      "original_p0": "1.07380000",
+      "first_individual_trade_id": 1669663195,
+      "prestart_last_trade_id": 1669663194,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 741,
+        "predecessor_age_at_nominal_ms": 862,
+        "first_vs_previous_trade_price_jump_bps": -0.931185399,
+        "first_trade_qty": "2150.40000000",
+        "first_trade_quote_qty": "2309.09952000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 20,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-08-05_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-08-05T00:00:01.185Z",
+      "original_p0": "1869.74000000",
+      "first_individual_trade_id": 4254635339,
+      "prestart_last_trade_id": 4254635338,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 1185,
+        "predecessor_age_at_nominal_ms": 1929,
+        "first_vs_previous_trade_price_jump_bps": -0.053483086,
+        "first_trade_qty": "0.00280000",
+        "first_trade_quote_qty": "5.23527200",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 2,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-09-02_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-09-02T00:00:00.119Z",
+      "original_p0": "77439.01000000",
+      "first_individual_trade_id": 6645741649,
+      "prestart_last_trade_id": 6645741648,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 119,
+        "predecessor_age_at_nominal_ms": 2640,
+        "first_vs_previous_trade_price_jump_bps": 0.001291339,
+        "first_trade_qty": "0.06599000",
+        "first_trade_quote_qty": "5110.20026990",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-09-02_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-09-02T00:00:00.120Z",
+      "original_p0": "2418.58000000",
+      "first_individual_trade_id": 4325173178,
+      "prestart_last_trade_id": 4325173177,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 120,
+        "predecessor_age_at_nominal_ms": 1108,
+        "first_vs_previous_trade_price_jump_bps": 0.041346746,
+        "first_trade_qty": "0.12540000",
+        "first_trade_quote_qty": "303.28993200",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 13,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-09-02_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-09-02T00:00:00.121Z",
+      "original_p0": "1.35190000",
+      "first_individual_trade_id": 1698108549,
+      "prestart_last_trade_id": 1698108548,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 121,
+        "predecessor_age_at_nominal_ms": 143,
+        "first_vs_previous_trade_price_jump_bps": 0.739754402,
+        "first_trade_qty": "3.80000000",
+        "first_trade_quote_qty": "5.13722000",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 12,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-10-07_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-10-07T00:00:00.006Z",
+      "original_p0": "1.49700000",
+      "first_individual_trade_id": 1731325569,
+      "prestart_last_trade_id": 1731325568,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 6,
+        "predecessor_age_at_nominal_ms": 976,
+        "first_vs_previous_trade_price_jump_bps": -0.667958052,
+        "first_trade_qty": "9.60000000",
+        "first_trade_quote_qty": "14.37120000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-10-07_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-10-07T00:00:00.036Z",
+      "original_p0": "85549.94000000",
+      "first_individual_trade_id": 6740948177,
+      "prestart_last_trade_id": 6740948176,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 36,
+        "predecessor_age_at_nominal_ms": 7,
+        "first_vs_previous_trade_price_jump_bps": 0.001168908,
+        "first_trade_qty": "0.02510000",
+        "first_trade_quote_qty": "2147.30349400",
+        "first_trade_buyer_maker": false,
+        "first_aggregate_underlying_trade_count": 1,
+        "multi_trade_aggregate": false
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    },
+    {
+      "event_id": "B152_2026-10-07_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-10-07T00:00:00.562Z",
+      "original_p0": "2697.49000000",
+      "first_individual_trade_id": 4411827017,
+      "prestart_last_trade_id": 4411827016,
+      "source_quality_z": {
+        "first_trade_delay_from_nominal_ms": 562,
+        "predecessor_age_at_nominal_ms": 377,
+        "first_vs_previous_trade_price_jump_bps": 0,
+        "first_trade_qty": "0.00200000",
+        "first_trade_quote_qty": "5.39498000",
+        "first_trade_buyer_maker": true,
+        "first_aggregate_underlying_trade_count": 5,
+        "multi_trade_aggregate": true
+      },
+      "source_status": "KNOWN_AT_FIRST_INDIVIDUAL_TRADE_t0_RESEARCH_PROXY_NO_FILL"
+    }
+  ],
+  "forecast_horizon": null,
+  "first_hit_barriers": {
+    "target": "+5% from original P0",
+    "adverse": "-3% from original P0",
+    "rule": "first barrier reached, no expiration"
+  },
+  "disclaimer": "Connector-normalized historical individual trades, not executable fill, no original exchange HTTP bytes or provider as-of delivery; source-quality Z available only after first trade observed; never backdate to nominal midnight",
+  "historical_issued_trades": 0,
+  "poststart_outcomes_read": 0
+}
