@@ -1,0 +1,451 @@
+{
+  "schema": "APR_D158_B155_BINANCE_SPOT_1D_FIRST_HIT_EVIDENCE_PART_2_OF_2",
+  "classification": "EXPOSED_HISTORICAL_RESEARCH_NOT_ISSUED_NOT_EXECUTABLE",
+  "source": "Binance spot kline connector 1d historical",
+  "original_handoff_git_blob": "143b5a45757e9b76c5f7e425feb77c2b1554011b",
+  "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+  "part": 2,
+  "eligible_part": 18,
+  "events": [
+    {
+      "event_id": "B155_2025-10-16_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-10-16T00:00:00.099Z",
+      "original_p0": "110763.28000000",
+      "target": "116301.4440000000",
+      "adverse": "107440.3816000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-10-16T00:00:00.000Z",
+          "open": "110763.28000000",
+          "high": "111982.45000000",
+          "low": "107427.00000000",
+          "close": "108194.28000000",
+          "close_utc": "2025-10-16T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-10-16_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-10-16T00:00:00.582Z",
+      "original_p0": "3985.61000000",
+      "target": "4184.8905000000",
+      "adverse": "3866.0417000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-10-16T00:00:00.000Z",
+          "open": "3985.61000000",
+          "high": "4086.49000000",
+          "low": "3826.04000000",
+          "close": "3894.51000000",
+          "close_utc": "2025-10-16T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-10-16_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-10-16T00:00:01.707Z",
+      "original_p0": "2.41100000",
+      "target": "2.5315500000",
+      "adverse": "2.3386700000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-10-16T00:00:00.000Z",
+          "open": "2.41100000",
+          "high": "2.46650000",
+          "low": "2.28330000",
+          "close": "2.32800000",
+          "close_utc": "2025-10-16T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-11-20_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-11-20T00:00:00.125Z",
+      "original_p0": "2.10970000",
+      "target": "2.2151850000",
+      "adverse": "2.0464090000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-11-20T00:00:00.000Z",
+          "open": "2.10970000",
+          "high": "2.14980000",
+          "low": "1.97430000",
+          "close": "1.99990000",
+          "close_utc": "2025-11-20T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-11-20_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-11-20T00:00:00.219Z",
+      "original_p0": "91554.96000000",
+      "target": "96132.7080000000",
+      "adverse": "88808.3112000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-11-20T00:00:00.000Z",
+          "open": "91554.96000000",
+          "high": "93160.00000000",
+          "low": "86100.00000000",
+          "close": "86637.23000000",
+          "close_utc": "2025-11-20T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-11-20_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-11-20T00:00:00.588Z",
+      "original_p0": "3025.48000000",
+      "target": "3176.7540000000",
+      "adverse": "2934.7156000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-11-20T00:00:00.000Z",
+          "open": "3025.48000000",
+          "high": "3063.61000000",
+          "low": "2790.01000000",
+          "close": "2834.22000000",
+          "close_utc": "2025-11-20T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-12-18_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2025-12-18T00:00:00.006Z",
+      "original_p0": "1.86270000",
+      "target": "1.9558350000",
+      "adverse": "1.8068190000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-12-18T00:00:00.000Z",
+          "open": "1.86270000",
+          "high": "1.93410000",
+          "low": "1.80000000",
+          "close": "1.80760000",
+          "close_utc": "2025-12-18T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-12-18_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2025-12-18T00:00:00.223Z",
+      "original_p0": "86243.23000000",
+      "target": "90555.3915000000",
+      "adverse": "83655.9331000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-12-18T00:00:00.000Z",
+          "open": "86243.23000000",
+          "high": "89477.61000000",
+          "low": "84450.01000000",
+          "close": "85516.41000000",
+          "close_utc": "2025-12-18T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2025-12-19T00:00:00.000Z",
+          "open": "85516.41000000",
+          "high": "89399.97000000",
+          "low": "85110.24000000",
+          "close": "88136.94000000",
+          "close_utc": "2025-12-19T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2025-12-20T00:00:00.000Z",
+          "open": "88136.95000000",
+          "high": "88573.07000000",
+          "low": "87795.76000000",
+          "close": "88360.90000000",
+          "close_utc": "2025-12-20T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2025-12-21T00:00:00.000Z",
+          "open": "88360.91000000",
+          "high": "89081.77000000",
+          "low": "87600.04000000",
+          "close": "88658.86000000",
+          "close_utc": "2025-12-21T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2025-12-22T00:00:00.000Z",
+          "open": "88658.87000000",
+          "high": "90588.23000000",
+          "low": "87900.00000000",
+          "close": "88620.79000000",
+          "close_utc": "2025-12-22T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2025-12-18_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2025-12-18T00:00:00.492Z",
+      "original_p0": "2833.50000000",
+      "target": "2975.1750000000",
+      "adverse": "2748.4950000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2025-12-18T00:00:00.000Z",
+          "open": "2833.50000000",
+          "high": "2997.40000000",
+          "low": "2775.19000000",
+          "close": "2828.57000000",
+          "close_utc": "2025-12-18T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-07-16_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-07-16T00:00:00.066Z",
+      "original_p0": "1917.86000000",
+      "target": "2013.7530000000",
+      "adverse": "1860.3242000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-07-16T00:00:00.000Z",
+          "open": "1917.86000000",
+          "high": "1929.48000000",
+          "low": "1857.54000000",
+          "close": "1864.71000000",
+          "close_utc": "2026-07-16T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-07-16_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-07-16T00:00:00.154Z",
+      "original_p0": "64756.28000000",
+      "target": "67994.0940000000",
+      "adverse": "62813.5916000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-07-16T00:00:00.000Z",
+          "open": "64756.28000000",
+          "high": "64997.52000000",
+          "low": "63748.74000000",
+          "close": "63830.20000000",
+          "close_utc": "2026-07-16T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2026-07-17T00:00:00.000Z",
+          "open": "63830.20000000",
+          "high": "64387.99000000",
+          "low": "62537.56000000",
+          "close": "63931.67000000",
+          "close_utc": "2026-07-17T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-07-16_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-07-16T00:00:00.255Z",
+      "original_p0": "1.11320000",
+      "target": "1.1688600000",
+      "adverse": "1.0798040000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "ADVERSE",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-07-16T00:00:00.000Z",
+          "open": "1.11320000",
+          "high": "1.11820000",
+          "low": "1.08530000",
+          "close": "1.08710000",
+          "close_utc": "2026-07-16T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2026-07-17T00:00:00.000Z",
+          "open": "1.08700000",
+          "high": "1.09580000",
+          "low": "1.06980000",
+          "close": "1.08900000",
+          "close_utc": "2026-07-17T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-08-20_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-08-20T00:00:00.161Z",
+      "original_p0": "69334.78000000",
+      "target": "72801.5190000000",
+      "adverse": "67254.7366000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-08-20T00:00:00.000Z",
+          "open": "69334.78000000",
+          "high": "73400.00000000",
+          "low": "68902.22000000",
+          "close": "73025.15000000",
+          "close_utc": "2026-08-20T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-08-20_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-08-20T00:00:00.298Z",
+      "original_p0": "2252.81000000",
+      "target": "2365.4505000000",
+      "adverse": "2185.2257000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-08-20T00:00:00.000Z",
+          "open": "2252.81000000",
+          "high": "2360.00000000",
+          "low": "2221.54000000",
+          "close": "2326.82000000",
+          "close_utc": "2026-08-20T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2026-08-21T00:00:00.000Z",
+          "open": "2326.83000000",
+          "high": "2546.78000000",
+          "low": "2324.99000000",
+          "close": "2516.30000000",
+          "close_utc": "2026-08-21T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-08-20_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-08-20T00:00:01.347Z",
+      "original_p0": "1.10590000",
+      "target": "1.1611950000",
+      "adverse": "1.0727230000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-08-20T00:00:00.000Z",
+          "open": "1.10590000",
+          "high": "1.34410000",
+          "low": "1.08790000",
+          "close": "1.26810000",
+          "close_utc": "2026-08-20T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-09-17_BTCUSDT",
+      "asset": "BTCUSDT",
+      "t0_utc": "2026-09-17T00:00:00.172Z",
+      "original_p0": "76206.00000000",
+      "target": "80016.3000000000",
+      "adverse": "73919.8200000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-09-17T00:00:00.000Z",
+          "open": "76206.00000000",
+          "high": "77179.47000000",
+          "low": "76000.00000000",
+          "close": "76417.01000000",
+          "close_utc": "2026-09-17T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2026-09-18T00:00:00.000Z",
+          "open": "76417.01000000",
+          "high": "81400.00000000",
+          "low": "76296.00000000",
+          "close": "80883.87000000",
+          "close_utc": "2026-09-18T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-09-17_XRPUSDT",
+      "asset": "XRPUSDT",
+      "t0_utc": "2026-09-17T00:00:00.579Z",
+      "original_p0": "1.29960000",
+      "target": "1.3645800000",
+      "adverse": "1.2606120000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-09-17T00:00:00.000Z",
+          "open": "1.29960000",
+          "high": "1.32010000",
+          "low": "1.28770000",
+          "close": "1.29640000",
+          "close_utc": "2026-09-17T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2026-09-18T00:00:00.000Z",
+          "open": "1.29640000",
+          "high": "1.41470000",
+          "low": "1.29190000",
+          "close": "1.39630000",
+          "close_utc": "2026-09-18T23:59:59.999Z"
+        }
+      ]
+    },
+    {
+      "event_id": "B155_2026-09-17_ETHUSDT",
+      "asset": "ETHUSDT",
+      "t0_utc": "2026-09-17T00:00:00.843Z",
+      "original_p0": "2418.26000000",
+      "target": "2539.1730000000",
+      "adverse": "2345.7122000000",
+      "first_daily_open_equals_p0": true,
+      "daily_first_hit_state": "TARGET",
+      "daily_bars_until_first_hit": [
+        {
+          "open_utc": "2026-09-17T00:00:00.000Z",
+          "open": "2418.26000000",
+          "high": "2483.74000000",
+          "low": "2413.56000000",
+          "close": "2447.28000000",
+          "close_utc": "2026-09-17T23:59:59.999Z"
+        },
+        {
+          "open_utc": "2026-09-18T00:00:00.000Z",
+          "open": "2447.28000000",
+          "high": "2646.00000000",
+          "low": "2436.89000000",
+          "close": "2612.14000000",
+          "close_utc": "2026-09-18T23:59:59.999Z"
+        }
+      ]
+    }
+  ]
+}
