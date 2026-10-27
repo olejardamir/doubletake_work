@@ -1,0 +1,20 @@
+{
+  "schema": "APR_B140_V25_9_V2_LIBRARY_CORRECTION_AND_C_HANDOFF_STATUS",
+  "status": "V2_LIBRARY_CORRECTED; GITHUB_SOURCE_AND_ORIGINAL_C_HANDOFF_UNCHANGED",
+  "V1_library_zip_sha256": "8da385f806972092e780cd3ac780796f177f6a826e5018787900279e05396b77",
+  "V2_library_zip_name": "APR_B140_20261026_V25_9_2022_THIRD_MONDAY_FEATURE_ONLY_C_HANDOFF_V2_CORRECTED.zip",
+  "V2_library_zip_sha256": "371316ab039f70a6760c814a87c4ba4459e43e5114003b2cf546837efef47be4",
+  "V2_library_final_receipt_sha256": "79e50f22c50c58784e98aee138919d3edbf1badfac74fe99707455e9cb3f3402",
+  "V1_library_only_error": "BTCUSDT_2022-12-19 bar_payload_sha256 manually copied with two missing hex characters; original GitHub exact source and C handoff always correct",
+  "correct_window_sha256": "9573c9b718c548ee05053284323f753491c11e408d1f1aeee1274662bf74df73",
+  "source_commit": "5e00e302ce7b6d0c621afa3c04decb07e4ffa8ed",
+  "source_sha256": "36ed86e77c0ad5ddd50568f9b29daaf25fae2d3d7de0b48bdbdebd0faba6c529",
+  "original_C_handoff_commit": "69934ed765cea279f39c4d058b672fd547ed69e0",
+  "source_feature_canonical_sha256": "5bb6e1f5c55ef8fc17dc4bab0439fc5518e530b94c15f3683bdb87594f69fb98",
+  "new_outcome_reads": 0,
+  "cohort": "2022 third Mondays March June September December BTCUSDT ETHUSDT XRPUSDT 12 events 372 feature-only bars",
+  "exposure": "EXPOSED_DEVELOPMENT_2022_PRIOR_TRAINING_NOT_BLIND",
+  "C_status": "FULL_PRELABEL_FREEZE_PENDING; A147 Sunday train vs B140 Saturday eval and first-vs-third Monday shift must be explicitly adjudicated",
+  "D_status": "NO OUTCOME/ENTRY/EXIT ACCESS UNTIL C COMPLETE INDEPENDENT READBACK",
+  "safety": "P0 protected, no trades/releases/promotions/normative amendments/schedule changes"
+}
