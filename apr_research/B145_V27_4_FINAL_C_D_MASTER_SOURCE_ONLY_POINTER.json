@@ -1,0 +1,28 @@
+{
+  "schema": "APR_B145_V27_4_FINAL_C_D_MASTER_SOURCE_ONLY_HANDOFF",
+  "precommit_commit": "fa8499abeeb1e212c09141eb3d9a1d449959d3a6",
+  "full_c_handoff_commit": "6beb408dc5e190dfd2a7dc2d49becc1a8164587f",
+  "full_c_handoff_sha256": "b7d6d693ccd67b8007b6ddebd18bf91b1e2a0041da2f6b3961579fdadd1961e4",
+  "cohort": "2026H2 2026-07-20 2026-08-17 2026-09-21 2026-10-19 x BTCUSDT ETHUSDT XRPUSDT 12 immutable original-P0 first-trade research anchors",
+  "prestart_daily_bars": 372,
+  "original_p0": 12,
+  "poststart_paths_read": 0,
+  "exposure": "EXPOSED_DEVELOPMENT_CONSERVATIVE_NOT_BLIND",
+  "source_sha256": [
+    "30c34e7c1f35b4ab3905d2ebcb30a61dd1acd07fb914cabc10d94282d294cbba",
+    "77f99ff732e522bba0ffdda183da9662bd7ebd46fc2efd835983edde963a8dda",
+    "728c0b60bcade24b350d2dcc7f4031b313135f7ba32e3227d67d1067d82ff5e1",
+    "63b7919c6658084d529f210906437071d705684ca821d4dc60fe981caef861a5"
+  ],
+  "library_path": "/APR_Evolution_Checkpoints",
+  "package": "APR_B145_V27_4_2026H2_OPEN_TIME_P0_SOURCE_ONLY_C_HANDOFF.zip",
+  "package_sha256": "524443bbffd6fb5d76a66667af2dcc7b79ca525f62a56882e4bda7a458fc239b",
+  "manifest_sha256": "5ac753d6ab02007652ac5f16404288da8f3126f637a4139f910aa89d32db7123",
+  "separate_receipt_sha256": "a7df093e303d6dfd39640b4ac3008af31cbffd433061f1782df8cda44d8e92b7",
+  "latest_master_verified": "M144",
+  "a154_clean_replay_sha256": "c2543d6749cda3764b4462a5137f01f6a74634f4a7abeef146b93298301d140f",
+  "next_control": "C independently freeze A-selected roster (A155 not yet verified), model outputs, original P0, overlap masks, costs and controls BEFORE D reads outcomes",
+  "no_horizon": true,
+  "no_trades": true,
+  "no_promotion": true
+}
