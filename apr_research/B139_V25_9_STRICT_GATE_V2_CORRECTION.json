@@ -1,0 +1,17 @@
+{
+  "schema": "APR_B139_V25_9_STRICT_GATE_V2_CORRECTION",
+  "created_utc": "2026-10-27T00:54:37.558Z",
+  "supersedes_handoff_commit": "41c67f5801ce3316a2174f31bff923d9fe2bfeb2",
+  "reason": "Initial validator rejected only 20/21 malformed controls: feature-table injected label was incorrectly accepted. V2 enforces exact feature and event key whitelists, retains 21 synthetic negative controls, original B139 source unchanged.",
+  "source_git_blob_sha1": "a6926d93f45e2d8b92ee00c26067c11b03f875b4",
+  "source_sha256": "10d71a8a63eafb5a8ecac041b8c0dcfff9f7f367cfd81be6ca35f7f8627e17c5",
+  "validation": {
+    "original_pass": true,
+    "synthetic_negative_total": 21,
+    "synthetic_negative_rejected": 21,
+    "admissions": [],
+    "independent_spot_checks_from_previous_run": 3
+  },
+  "source_status": "EXPOSED_DEVELOPMENT_NOT_BLIND; NO OUTCOMES READ",
+  "C_instruction": "Use this V2 correction instead of initial handoff's 20/21 semantic result; independently freeze A146 full roster/masks/costs/classifier/source/cohort with Library readback before any outcomes."
+}
