@@ -1,0 +1,21 @@
+(async function collectB152(year,months){
+ const assets=["BTCUSDT","ETHUSDT","XRPUSDT"], D=86400000;
+ const firstWed=m=>{const d=new Date(Date.UTC(year,m-1,1));d.setUTCDate(1+(3-d.getUTCDay()+7)%7);return d.toISOString().slice(0,10)};
+ const dec=(p,m)=>{let [a,b=""]=p.split(".");let n=BigInt(a+b.padEnd(8,"0").slice(0,8))*BigInt(m);let s=n.toString().padStart(11,"0");return s.slice(0,-10)+"."+s.slice(-10)};
+ const jobs=months.flatMap(m=>assets.map(asset=>({asset,date:firstWed(m)})));const events=[];let next=0;
+ async function worker(){while(next<jobs.length){const j=jobs[next++],t=Date.parse(j.date+"T00:00:00Z");try{
+ const r=await Promise.all([tools.mcp__Binance__get_spot_compressed_aggregate_trades_list({symbol:j.asset,startTime:t,endTime:t+59999,limit:1}),tools.mcp__Binance__get_spot_kline_candlestick_data({symbol:j.asset,interval:"1d",startTime:t-90*D,endTime:t-1,limit:90})]);
+ const agg=r[0].structuredContent?.result||[],bars=r[1].structuredContent?.result||[];const a=agg[0]||null;
+ const valid=agg.length===1&&bars.length===90&&a.T>=t&&a.T<t+60000&&bars.every(b=>b[0]<t&&b[6]<t);
+ const c=bars.map(b=>Number(b[4])),v=bars.map(b=>Number(b[7]));
+ const ret=k=>c.at(-1)/c.at(-k-1)-1;
+ const vol=k=>{const z=c.slice(-k-1).map((x,i,ar)=>i?Math.log(x/ar[i-1]):null).slice(1);const mu=z.reduce((s,x)=>s+x,0)/z.length;return Math.sqrt(z.reduce((s,x)=>s+(x-mu)**2,0)/z.length)};
+ events.push({event_id:"B152_"+j.date+"_"+j.asset,asset:j.asset,nominal_start_utc:j.date+"T00:00:00.000Z",first_aggregate_t0_utc:a?new Date(a.T).toISOString():null,original_p0:a?.p||null,barrier_target_105pct:a?dec(a.p,105):null,barrier_adverse_97pct:a?dec(a.p,97):null,source_first_aggregate:a,prestart_daily_90:bars,features:valid?{previous_close:bars.at(-1)[4],return_7d:ret(7),return_30d:ret(30),daily_log_vol_20d:vol(20),daily_log_vol_60d:vol(60),quote_volume_prior_day:v.at(-1),quote_volume_ratio_prior20:v.at(-1)/(v.slice(-21,-1).reduce((s,x)=>s+x,0)/20),last_closed_daily_bar_end_utc:new Date(bars.at(-1)[6]).toISOString(),year,month:Number(j.date.slice(5,7)),day_of_week:3}:null,valid});
+ }catch(e){events.push({event_id:"B152_"+j.date+"_"+j.asset,valid:false,error:String(e)})}}}
+ await Promise.all(Array.from({length:3},()=>worker()));events.sort((a,b)=>a.event_id.localeCompare(b.event_id));
+ const data={schema:"APR_B152_V28_SOURCE_ONLY_ASOF_90D_V1",created_utc:"2026-10-27",year,months,events,source_queries:"Binance connector normalized spot aggTrades first at/after nominal UTC 00:00 within 60s, and 90 completed 1d klines strictly prior to nominal issue",forecast_horizon:null,first_hit_rule:"P0*1.05 target BEFORE P0*0.97 adverse; no time expiry; frozen B candidate pending A/C independent freeze",exposure:"EXPOSED HISTORICAL DEVELOPMENT. Prior 90-day tapes for later events can include earlier events' poststart history; never pass entire multi-date source tape to forecast model; enforce event-specific as-of and chronological train cutoff.",no_poststart_outcome_path_queries:true,source_limits:"Connector-normalized, NOT original exchange HTTP bytes; first aggregate print is historical P0 proxy, underlying individual trade/fill not independently verified; provider delivery latency and executable fills unknown; retrospective issuance only."};
+ const mm=months.map(x=>String(x).padStart(2,"0")).join("_");
+ const path="apr_research/B152_"+year+"_MONTHS_"+mm+"_FIRST_WED_SOURCE_ONLY.json";
+ const cr=await tools.mcp__GitHub__create_file({repository_full_name:"olejardamir/doubletake_work",path,content:JSON.stringify(data),message:"APR B152 append-only V28 first-Wednesday source-only original-P0 cohort "+year+" months "+mm});
+ return {path,commit:cr.result?.commit_sha,events:events.length,valid:events.filter(x=>x.valid).length,dates:[...new Set(events.map(x=>x.nominal_start_utc))],errors:events.filter(x=>!x.valid).map(x=>({id:x.event_id,error:x.error})),bytes:JSON.stringify(data).length,example:events[0]&&{id:events[0].event_id,p0:events[0].original_p0,issue:events[0].first_aggregate_t0_utc}};
+})
