@@ -1,0 +1,47 @@
+{
+  "schema": "APR_B147_V27_4_NEW_MAY_JUNE_2026_PRE_SOURCE_PRECOMMIT_V1",
+  "created_utc": "2026-10-27",
+  "purpose": "NEW open-time event-start source only; outcomes quarantined until independent C full freeze",
+  "assets": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT"
+  ],
+  "dates_utc": [
+    "2026-05-04",
+    "2026-05-18",
+    "2026-06-01",
+    "2026-06-15"
+  ],
+  "nominal_t0": "00:00:00.000Z",
+  "event_ids": [
+    "B147_2026-05-04_BTCUSDT_FIRST_PRINT_P0",
+    "B147_2026-05-04_ETHUSDT_FIRST_PRINT_P0",
+    "B147_2026-05-04_XRPUSDT_FIRST_PRINT_P0",
+    "B147_2026-05-18_BTCUSDT_FIRST_PRINT_P0",
+    "B147_2026-05-18_ETHUSDT_FIRST_PRINT_P0",
+    "B147_2026-05-18_XRPUSDT_FIRST_PRINT_P0",
+    "B147_2026-06-01_BTCUSDT_FIRST_PRINT_P0",
+    "B147_2026-06-01_ETHUSDT_FIRST_PRINT_P0",
+    "B147_2026-06-01_XRPUSDT_FIRST_PRINT_P0",
+    "B147_2026-06-15_BTCUSDT_FIRST_PRINT_P0",
+    "B147_2026-06-15_ETHUSDT_FIRST_PRINT_P0",
+    "B147_2026-06-15_XRPUSDT_FIRST_PRINT_P0"
+  ],
+  "feature_definition": "31 UTC daily OHLCV bars ending Saturday 23:59:59.999Z before each Monday; Sunday omitted; features r7/r30, daily log volatility 30, mean daily high-low range 7; provider delivery unknown",
+  "P0_definition": "first recorded Binance SPOT aggregate trade with trade timestamp >= nominal Monday t0; effective observation t0 is first print time, not nominal 00:00:00.000Z; not verified executable fill",
+  "barriers": {
+    "target_multiplier": "1.05",
+    "adverse_multiplier": "0.97",
+    "first_hit": "first event reached; original anchor never rebased",
+    "forecast_horizon": null,
+    "administrative_end": "2026-10-27T00:00:00Z"
+  },
+  "costs_roundtrip": [
+    "0.003",
+    "0.009"
+  ],
+  "exposure": "EXPOSED_DEVELOPMENT_NOT_BLIND; 2026H1 market information previously examined; not contemporaneously issued",
+  "source_rules": "Fetch ONLY 31 prestart daily bars and first post-t0 trade print; NO poststart high/low/close, no first-hit paths or labels until independent C full prepath freeze; never protected P0",
+  "controls": "No A155/A156 cross-event forecast grafts; strict asset+event+t0+P0+feature+source SHA binding; no trades/releases/promotions"
+}
