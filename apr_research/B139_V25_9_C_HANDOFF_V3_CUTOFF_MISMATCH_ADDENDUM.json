@@ -1,0 +1,20 @@
+{
+  "schema": "APR_B139_V25_9_C_HANDOFF_V3_TRAIN_TEST_CUTOFF_MISMATCH_ADDENDUM",
+  "created_utc": "2026-10-27T00:58:33.514Z",
+  "parent_C_handoff_V2_commit": "428c73d4b92e9fac9b4ec8c72299b7cf9a79bdbc",
+  "source_sha256": "10d71a8a63eafb5a8ecac041b8c0dcfff9f7f367cfd81be6ca35f7f8627e17c5",
+  "source_blob": "a6926d93f45e2d8b92ee00c26067c11b03f875b4",
+  "finding": "All 72 A146 original training feature_last_available_date_utc dates are Sunday, one day before Monday entry; B139 2025 feature-only windows intentionally end Saturday, two days before Monday entry. Different lookback endpoints imply a train/test feature-definition shift, not automatically comparable fitted parameters.",
+  "verified_from": "APR_A146_20261026_V26_0_NS31_CAUSAL_TRAIN_ONLY_C_PENDING.zip / B132_SOURCE_REDERIVED_TRAIN_ROWS.json; 72/72 Sunday; B139 12/12 Saturday",
+  "causal_rationale": "Saturday-ending windows provide nominal one-day provider delivery buffer; actual provider delivery timestamps remain unavailable. Original A146 Sunday-close training features had no authenticated delivery latency.",
+  "C_requirements": [
+    "Do not silently treat B139 Saturday feature vectors as identically defined to A146 Sunday-based training features.",
+    "Before any new outcome read, independently choose and SHA-freeze either a Saturday-only retrained A-source/parameters/positions with 31-day matured-exit controls, or a clearly declared train/test cutoff-shift sensitivity study that cannot be interpreted as a comparable untouched evaluation.",
+    "Freeze full A146 invention roster/variants/masks, cohort identities, source, costs/classifier, matched controls and source-to-formula SHA with Library original-byte readback.",
+    "Keep original A146, B139 precommit, B139 source and earlier handoffs immutable."
+  ],
+  "classification": "EXPOSED_DEVELOPMENT_NOT_BLIND",
+  "outcome_reads_2025": 0,
+  "protected_post_P0_reads": 0,
+  "no_trades": true
+}
