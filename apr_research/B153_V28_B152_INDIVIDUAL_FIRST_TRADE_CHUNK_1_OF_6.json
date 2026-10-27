@@ -1,0 +1,418 @@
+{
+  "schema": "APR_B153_V28_FIRST_TRADE_SOURCE_ONLY_CHUNK_V1",
+  "chunk": 1,
+  "source_panel_blob_sha1": "c2c105cf0c7275fb02efe427afe8a97882a66da7",
+  "source_panel_declared_sha256": "a68604039812e854587a1c4963c04461845253a1fddd34dfb251ab658562b576",
+  "connector": "Binance spot historical individual trade lookup by exact trade ID",
+  "source_caveat": "Connector-normalized response, not original exchange HTTP bytes; no executable fill/latency/order-book attestation",
+  "future_paths_read": false,
+  "rows": [
+    {
+      "id": "B152_2025-01-01_BTCUSDT",
+      "asset": "BTCUSDT",
+      "nominal": "2025-01-01T00:00:00.000Z",
+      "p0": "93576.00000000",
+      "aggregate_id": 3358804174,
+      "aggregate_first_id": 4359935386,
+      "aggregate_last_id": 4359935386,
+      "aggregate_n": 1,
+      "aggregate_time": 1735689600010,
+      "prev": {
+        "id": 4359935385,
+        "price": "93576.00000000",
+        "qty": "0.00022000",
+        "quoteQty": "20.58672000",
+        "time": 1735689599951,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 4359935386,
+        "price": "93576.00000000",
+        "qty": "0.00136000",
+        "quoteQty": "127.26336000",
+        "time": 1735689600010,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-01-01_ETHUSDT",
+      "asset": "ETHUSDT",
+      "nominal": "2025-01-01T00:00:00.000Z",
+      "p0": "3337.78000000",
+      "aggregate_id": 1376412706,
+      "aggregate_first_id": 2010047664,
+      "aggregate_last_id": 2010047664,
+      "aggregate_n": 1,
+      "aggregate_time": 1735689600080,
+      "prev": {
+        "id": 2010047663,
+        "price": "3337.78000000",
+        "qty": "0.02070000",
+        "quoteQty": "69.09204600",
+        "time": 1735689597163,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 2010047664,
+        "price": "3337.78000000",
+        "qty": "0.04040000",
+        "quoteQty": "134.84631200",
+        "time": 1735689600080,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-01-01_XRPUSDT",
+      "asset": "XRPUSDT",
+      "nominal": "2025-01-01T00:00:00.000Z",
+      "p0": "2.08360000",
+      "aggregate_id": 518539763,
+      "aggregate_first_id": 852673096,
+      "aggregate_last_id": 852673097,
+      "aggregate_n": 2,
+      "aggregate_time": 1735689600221,
+      "prev": {
+        "id": 852673095,
+        "price": "2.08360000",
+        "qty": "320.00000000",
+        "quoteQty": "666.75200000",
+        "time": 1735689598743,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 852673096,
+        "price": "2.08360000",
+        "qty": "641.00000000",
+        "quoteQty": "1335.58760000",
+        "time": 1735689600221,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-02-05_ETHUSDT",
+      "asset": "ETHUSDT",
+      "nominal": "2025-02-05T00:00:00.000Z",
+      "p0": "2731.19000000",
+      "aggregate_id": 1424711303,
+      "aggregate_first_id": 2128606524,
+      "aggregate_last_id": 2128606525,
+      "aggregate_n": 2,
+      "aggregate_time": 1738713600004,
+      "prev": {
+        "id": 2128606523,
+        "price": "2731.19000000",
+        "qty": "0.58120000",
+        "quoteQty": "1587.36762800",
+        "time": 1738713599420,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 2128606524,
+        "price": "2731.19000000",
+        "qty": "0.00200000",
+        "quoteQty": "5.46238000",
+        "time": 1738713600004,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-02-05_BTCUSDT",
+      "asset": "BTCUSDT",
+      "nominal": "2025-02-05T00:00:00.000Z",
+      "p0": "97763.14000000",
+      "aggregate_id": 3420502350,
+      "aggregate_first_id": 4522917199,
+      "aggregate_last_id": 4522917209,
+      "aggregate_n": 11,
+      "aggregate_time": 1738713600017,
+      "prev": {
+        "id": 4522917198,
+        "price": "97763.13000000",
+        "qty": "0.00006000",
+        "quoteQty": "5.86578780",
+        "time": 1738713599982,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 4522917199,
+        "price": "97763.14000000",
+        "qty": "0.00006000",
+        "quoteQty": "5.86578840",
+        "time": 1738713600017,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-02-05_XRPUSDT",
+      "asset": "XRPUSDT",
+      "nominal": "2025-02-05T00:00:00.000Z",
+      "p0": "2.52750000",
+      "aggregate_id": 550703042,
+      "aggregate_first_id": 964705325,
+      "aggregate_last_id": 964705325,
+      "aggregate_n": 1,
+      "aggregate_time": 1738713600062,
+      "prev": {
+        "id": 964705324,
+        "price": "2.52740000",
+        "qty": "696.00000000",
+        "quoteQty": "1759.07040000",
+        "time": 1738713599835,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 964705325,
+        "price": "2.52750000",
+        "qty": "751.00000000",
+        "quoteQty": "1898.15250000",
+        "time": 1738713600062,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-03-05_BTCUSDT",
+      "asset": "BTCUSDT",
+      "nominal": "2025-03-05T00:00:00.000Z",
+      "p0": "87281.98000000",
+      "aggregate_id": 3470764978,
+      "aggregate_first_id": 4655991662,
+      "aggregate_last_id": 4655991662,
+      "aggregate_n": 1,
+      "aggregate_time": 1741132800141,
+      "prev": {
+        "id": 4655991661,
+        "price": "87281.98000000",
+        "qty": "0.01560000",
+        "quoteQty": "1361.59888800",
+        "time": 1741132799414,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 4655991662,
+        "price": "87281.98000000",
+        "qty": "0.02290000",
+        "quoteQty": "1998.75734200",
+        "time": 1741132800141,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-03-05_ETHUSDT",
+      "asset": "ETHUSDT",
+      "nominal": "2025-03-05T00:00:00.000Z",
+      "p0": "2171.50000000",
+      "aggregate_id": 1465583672,
+      "aggregate_first_id": 2228818210,
+      "aggregate_last_id": 2228818210,
+      "aggregate_n": 1,
+      "aggregate_time": 1741132800459,
+      "prev": {
+        "id": 2228818209,
+        "price": "2171.51000000",
+        "qty": "0.04690000",
+        "quoteQty": "101.84381900",
+        "time": 1741132798566,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 2228818210,
+        "price": "2171.50000000",
+        "qty": "0.02680000",
+        "quoteQty": "58.19620000",
+        "time": 1741132800459,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-03-05_XRPUSDT",
+      "asset": "XRPUSDT",
+      "nominal": "2025-03-05T00:00:00.000Z",
+      "p0": "2.45420000",
+      "aggregate_id": 569811823,
+      "aggregate_first_id": 1034926078,
+      "aggregate_last_id": 1034926087,
+      "aggregate_n": 10,
+      "aggregate_time": 1741132800737,
+      "prev": {
+        "id": 1034926077,
+        "price": "2.45430000",
+        "qty": "81.00000000",
+        "quoteQty": "198.79830000",
+        "time": 1741132798517,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 1034926078,
+        "price": "2.45420000",
+        "qty": "3.00000000",
+        "quoteQty": "7.36260000",
+        "time": 1741132800737,
+        "isBuyerMaker": true,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-04-02_BTCUSDT",
+      "asset": "BTCUSDT",
+      "nominal": "2025-04-02T00:00:00.000Z",
+      "p0": "85158.35000000",
+      "aggregate_id": 3515337163,
+      "aggregate_first_id": 4764337881,
+      "aggregate_last_id": 4764337883,
+      "aggregate_n": 3,
+      "aggregate_time": 1743552000140,
+      "prev": {
+        "id": 4764337880,
+        "price": "85158.34000000",
+        "qty": "0.00007000",
+        "quoteQty": "5.96108380",
+        "time": 1743551999802,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 4764337881,
+        "price": "85158.35000000",
+        "qty": "0.00007000",
+        "quoteQty": "5.96108450",
+        "time": 1743552000140,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    },
+    {
+      "id": "B152_2025-04-02_ETHUSDT",
+      "asset": "ETHUSDT",
+      "nominal": "2025-04-02T00:00:00.000Z",
+      "p0": "1904.98000000",
+      "aggregate_id": 1494302239,
+      "aggregate_first_id": 2291925905,
+      "aggregate_last_id": 2291925905,
+      "aggregate_n": 1,
+      "aggregate_time": 1743552000352,
+      "prev": {
+        "id": 2291925904,
+        "price": "1904.98000000",
+        "qty": "0.01410000",
+        "quoteQty": "26.86021800",
+        "time": 1743551997274,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "first": {
+        "id": 2291925905,
+        "price": "1904.98000000",
+        "qty": "1.86050000",
+        "quoteQty": "3544.21529000",
+        "time": 1743552000352,
+        "isBuyerMaker": false,
+        "isBestMatch": true
+      },
+      "checks": {
+        "prev_id": true,
+        "prev_before_t0": true,
+        "first_id": true,
+        "first_after_t0": true,
+        "first_time": true,
+        "first_price": true
+      }
+    }
+  ]
+}
