@@ -1,0 +1,46 @@
+{
+  "schema": "APR_B143_V27_4_C_D_MASTER_HANDOFF_POINTER_V1",
+  "classification": "EXPOSED_DEVELOPMENT_NOT_BLIND",
+  "new_events": 12,
+  "prestart_bars": 372,
+  "original_first_trades": 12,
+  "precommit_commit": "8c25ff8184f656d4a31ad44886eecec105f42fc2",
+  "complete_c_source_only_handoff": {
+    "commit": "897778ad96cb2f337dd3190058e80c2bd0b72260",
+    "path": "apr_research/B143_V27_4_2025_THIRD_MONDAY_OPEN_TIME_C_SOURCE_ONLY_HANDOFF_V1.json",
+    "sha256": "c9aa8c137688cb30b5197d4670a8d86550d2d4e04d0a2722ec7466e44fad850d",
+    "blob_sha1": "faf14d103a298a19c5380d2fcfb8d8c49a580133"
+  },
+  "library": {
+    "folder": "/APR_Evolution_Checkpoints",
+    "package": "APR_B143_20261027_V27_4_2025_THIRD_MONDAY_SOURCE_ONLY_C_HANDOFF.zip",
+    "package_sha256": "430d8ceb85a661ec34901de24d6ed06feb281ced25bc6e129e0d82c088f1bb94",
+    "primary_byte_readback_count": 8,
+    "manifest_sha256": "f09c4c906ef6466a22cdb891e4300ee01231852adb6e34b3244dfa8086aabbd1",
+    "separate_receipt": "B143_FINAL_SEPARATE_LIBRARY_READBACK_RECEIPT.json",
+    "separate_receipt_sha256": "60264be473e6c08a3eb2e0c9b17f551a29d8f76cc753ac695a3b856fdf2afd0f",
+    "receipt_byte_readback": true
+  },
+  "originals": {
+    "M142_state_sha256": "6445cc60e397ba77d92b6198b7f979e460e9682ed1c6c2092b105b316eb175e4",
+    "M141_parent_sha256": "61e6f59aaee4c04520ee4a4bbd3eaf1ac09528f19d1307458a3e8502a4e61881",
+    "A150_fresh_replay": "BYTE_IDENTICAL_289_ASSERTIONS",
+    "B142_crc_manifest": "PASS",
+    "C141_crc_manifest": "PASS",
+    "D144_crc_manifest": "PASS"
+  },
+  "causal_limitations": [
+    "historical first trade 30-1366ms after nominal midnight",
+    "provider delivery latency unavailable",
+    "no actual historical issuance or executable fill attested",
+    "2025 outcomes previously exposed",
+    "new poststart outcome paths not read"
+  ],
+  "C_independent_new_full_freeze": "PENDING",
+  "D_poststart_path_read": "BLOCKED_UNTIL_C",
+  "protected_P0_reads": 0,
+  "trades": 0,
+  "promotions": 0,
+  "releases": 0,
+  "schedule_changes": 0
+}
