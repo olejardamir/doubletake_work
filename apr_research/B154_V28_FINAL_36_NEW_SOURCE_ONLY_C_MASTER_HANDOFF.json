@@ -1,0 +1,46 @@
+{
+  "schema": "APR_B154_V28_FINAL_SOURCE_ONLY_HANDOFF_V1",
+  "date_utc": "2026-10-27",
+  "status": "NEW_36_FIRST_INDIVIDUAL_P0_SOURCE_ONLY_COMPLETE_NO_POSTSTART_PATHS",
+  "classification": "EXPOSED_HISTORICAL_DEVELOPMENT",
+  "new_events": 36,
+  "new_distinct_dates": 12,
+  "new_assets": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT"
+  ],
+  "prior_B152_events_immutable": 66,
+  "prior_B152_dates_immutable": 22,
+  "combined_unique_events": 102,
+  "combined_distinct_dates": 34,
+  "first_trade_delay_ms_range": [
+    4,
+    1195
+  ],
+  "first_aggregate_multitrade_metadata_only": 14,
+  "prestart_daily_bars": 3240,
+  "source_partitions": 12,
+  "first_individual_predecessor_pairs": 36,
+  "source_only_panel": {
+    "path": "apr_research/B154_V28_36_EVENT_FEATURE_ONLY_C_HANDOFF.json",
+    "git_blob_sha1": "d4014ebb59be775d06f216b1edca1f254e0932f9"
+  },
+  "library_archive": {
+    "path": "/APR_Evolution_Checkpoints/APR_B154_20261027_V28_36_NEW_SECOND_WED_SOURCE_ONLY_FIRST_TRADE_P0.zip",
+    "sha256": "917857275d9958b6edfd09ff4b0345227dda2de9bf2cea4ffef1b90fc7a5fd02",
+    "independent_library_readback": "PASS_5_OF_5_PRIMARY_ORIGINAL_BYTES"
+  },
+  "python_tests": "15/15_PASS",
+  "source_connector_independent_readback": "12/12 Git blob identities, 36/36 P0+predecessor+barriers, 3240/3240 prestart daily bars, 0 mismatches",
+  "full_local_original_raw_source_replay": "NOT_RUN; GitHub connector source-only originals not locally materialized",
+  "first_trade_P0": "research proxy, no historical executable fill or original HTTP/delivery latency attestation",
+  "no_future_paths_read_by_B154": true,
+  "forecast_horizon": null,
+  "barriers": "1.05 original P0 before 0.97 original P0, first-hit, no expiry",
+  "outcomes_scored": 0,
+  "historical_issued_predictions": 0,
+  "historical_issued_trades": 0,
+  "required_next_gate": "A author B154-bound 36-event mathematically diverse q roster; C independent complete prepath forecast/overlap/action/baseline freeze plus receipt; THEN D can read B154 future paths; causal mature prior labels only, date-blocked matched baselines",
+  "safety": "No trades/releases/promotions; existing B152/C152/D155/A162 formal holds and five hourly schedules unchanged"
+}
