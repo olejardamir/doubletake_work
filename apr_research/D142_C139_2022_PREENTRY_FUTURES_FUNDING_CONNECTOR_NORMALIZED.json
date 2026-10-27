@@ -1,0 +1,1873 @@
+{
+  "schema": "APR_D142_2022_USDS_PERPETUAL_FUNDING_PREENTRY_WINDOWS",
+  "retrieval": "Binance connected read-only USD-M perpetual funding rate history",
+  "family": "derivatives_funding_not_spot_OHLCV",
+  "exchange": "Binance",
+  "venue": "USD-M perpetual futures",
+  "provider_delivery_timestamps": "UNATTESTED",
+  "measurement_time": "fundingTime (historical funding settlement event)",
+  "causal_cutoff": "Saturday 23:59:59.999 UTC before Monday entry; all observations fundingTime <= cutoff",
+  "label_status": "EXPOSED_DEVELOPMENT; NOT precommitted ensemble; no 2022 model fitting permitted as untouched",
+  "windows": [
+    {
+      "symbol": "BTCUSDT",
+      "cutoff_utc": "2022-03-19T23:59:59.999Z",
+      "source_start_utc": "2022-03-12T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647129600008,
+          "fundingRate": "-0.00005855",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647158400000,
+          "fundingRate": "0.00000613",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647187200002,
+          "fundingRate": "-0.00005741",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647216000014,
+          "fundingRate": "-0.00008009",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647244800005,
+          "fundingRate": "-0.00006699",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647273600002,
+          "fundingRate": "0.00002708",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647302400008,
+          "fundingRate": "0.00005726",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647331200000,
+          "fundingRate": "0.00004476",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647360000006,
+          "fundingRate": "0.00009061",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647388800013,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647417600000,
+          "fundingRate": "0.00005871",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647446400008,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647475200004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647504000000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647532800004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647561600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647590400000,
+          "fundingRate": "0.00001662",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647619200017,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647648000008,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647676800015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1647705600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "cutoff_utc": "2022-03-19T23:59:59.999Z",
+      "source_start_utc": "2022-03-12T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647129600008,
+          "fundingRate": "0.00002116",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647158400000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647187200002,
+          "fundingRate": "-0.00002698",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647216000014,
+          "fundingRate": "-0.00010352",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647244800005,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647273600002,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647302400008,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647331200000,
+          "fundingRate": "-0.00000321",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647360000006,
+          "fundingRate": "-0.00004856",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647388800013,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647417600000,
+          "fundingRate": "0.00009131",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647446400008,
+          "fundingRate": "0.00005316",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647475200004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647504000000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647532800004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647561600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647590400000,
+          "fundingRate": "0.00004709",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647619200017,
+          "fundingRate": "0.00005917",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647648000008,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647676800015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1647705600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "XRPUSDT",
+      "cutoff_utc": "2022-03-19T23:59:59.999Z",
+      "source_start_utc": "2022-03-12T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647129600008,
+          "fundingRate": "-0.00000786",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647158400000,
+          "fundingRate": "-0.00001010",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647187200002,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647216000014,
+          "fundingRate": "0.00003827",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647244800005,
+          "fundingRate": "-0.00012609",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647273600002,
+          "fundingRate": "0.00009697",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647302400008,
+          "fundingRate": "0.00005239",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647331200000,
+          "fundingRate": "0.00005695",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647360000006,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647388800013,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647417600000,
+          "fundingRate": "0.00003516",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647446400008,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647475200004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647504000000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647532800004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647561600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647590400000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647619200017,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647648000008,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647676800015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1647705600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "cutoff_utc": "2022-06-18T23:59:59.999Z",
+      "source_start_utc": "2022-06-11T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1654992000015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655020800019,
+          "fundingRate": "0.00000563",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655049600010,
+          "fundingRate": "0.00000439",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655078400009,
+          "fundingRate": "0.00005616",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655107200000,
+          "fundingRate": "-0.00003182",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655136000007,
+          "fundingRate": "-0.00000580",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655164800013,
+          "fundingRate": "0.00004088",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655193600008,
+          "fundingRate": "-0.00010037",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655222400006,
+          "fundingRate": "-0.00005186",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655251200000,
+          "fundingRate": "-0.00002077",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655280000016,
+          "fundingRate": "-0.00007240",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655308800008,
+          "fundingRate": "-0.00000666",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655337600009,
+          "fundingRate": "-0.00004114",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655366400016,
+          "fundingRate": "0.00004475",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655395200000,
+          "fundingRate": "-0.00005277",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655424000008,
+          "fundingRate": "-0.00002222",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655452800003,
+          "fundingRate": "-0.00009486",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655481600000,
+          "fundingRate": "0.00005092",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655510400020,
+          "fundingRate": "0.00007356",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655539200025,
+          "fundingRate": "0.00004575",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1655568000014,
+          "fundingRate": "0.00005227",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "cutoff_utc": "2022-06-18T23:59:59.999Z",
+      "source_start_utc": "2022-06-11T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1654992000015,
+          "fundingRate": "-0.00006025",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655020800019,
+          "fundingRate": "-0.00009914",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655049600010,
+          "fundingRate": "-0.00006827",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655078400009,
+          "fundingRate": "0.00001579",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655107200000,
+          "fundingRate": "-0.00000219",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655136000007,
+          "fundingRate": "-0.00005144",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655164800013,
+          "fundingRate": "-0.00004066",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655193600008,
+          "fundingRate": "-0.00005061",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655222400006,
+          "fundingRate": "-0.00002999",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655251200000,
+          "fundingRate": "-0.00005370",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655280000016,
+          "fundingRate": "-0.00016430",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655308800008,
+          "fundingRate": "-0.00000952",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655337600009,
+          "fundingRate": "-0.00001444",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655366400016,
+          "fundingRate": "0.00006616",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655395200000,
+          "fundingRate": "-0.00010424",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655424000008,
+          "fundingRate": "-0.00012406",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655452800003,
+          "fundingRate": "-0.00005634",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655481600000,
+          "fundingRate": "-0.00014982",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655510400020,
+          "fundingRate": "-0.00007277",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655539200025,
+          "fundingRate": "-0.00029164",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1655568000014,
+          "fundingRate": "-0.00007606",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "XRPUSDT",
+      "cutoff_utc": "2022-06-18T23:59:59.999Z",
+      "source_start_utc": "2022-06-11T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1654992000015,
+          "fundingRate": "-0.00008185",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655020800019,
+          "fundingRate": "-0.00010963",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655049600010,
+          "fundingRate": "-0.00006432",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655078400009,
+          "fundingRate": "-0.00003952",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655107200000,
+          "fundingRate": "-0.00012590",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655136000007,
+          "fundingRate": "-0.00016719",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655164800013,
+          "fundingRate": "-0.00020389",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655193600008,
+          "fundingRate": "-0.00003586",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655222400006,
+          "fundingRate": "-0.00010528",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655251200000,
+          "fundingRate": "-0.00017962",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655280000016,
+          "fundingRate": "-0.00025651",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655308800008,
+          "fundingRate": "-0.00000951",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655337600009,
+          "fundingRate": "-0.00002381",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655366400016,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655395200000,
+          "fundingRate": "-0.00005482",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655424000008,
+          "fundingRate": "-0.00021804",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655452800003,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655481600000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655510400020,
+          "fundingRate": "0.00003639",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655539200025,
+          "fundingRate": "-0.00017718",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1655568000014,
+          "fundingRate": "-0.00009328",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "cutoff_utc": "2022-09-17T23:59:59.999Z",
+      "source_start_utc": "2022-09-10T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1662854400009,
+          "fundingRate": "0.00007115",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1662883200012,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1662912000005,
+          "fundingRate": "0.00006712",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1662940800007,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1662969600013,
+          "fundingRate": "0.00008246",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1662998400000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663027200004,
+          "fundingRate": "0.00009965",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663056000000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663084800000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663113600000,
+          "fundingRate": "-0.00003953",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663142400000,
+          "fundingRate": "0.00000727",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663171200000,
+          "fundingRate": "0.00001004",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663200000019,
+          "fundingRate": "0.00000324",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663228800012,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663257600007,
+          "fundingRate": "0.00000813",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663286400000,
+          "fundingRate": "0.00008055",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663315200000,
+          "fundingRate": "0.00004349",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663344000000,
+          "fundingRate": "0.00002919",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663372800000,
+          "fundingRate": "0.00003024",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663401600012,
+          "fundingRate": "0.00004336",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1663430400017,
+          "fundingRate": "0.00001467",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "cutoff_utc": "2022-09-17T23:59:59.999Z",
+      "source_start_utc": "2022-09-10T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1662854400009,
+          "fundingRate": "-0.00011556",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1662883200012,
+          "fundingRate": "-0.00016606",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1662912000005,
+          "fundingRate": "-0.00031696",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1662940800007,
+          "fundingRate": "-0.00034442",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1662969600013,
+          "fundingRate": "-0.00027610",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1662998400000,
+          "fundingRate": "-0.00038902",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663027200004,
+          "fundingRate": "-0.00028397",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663056000000,
+          "fundingRate": "-0.00047985",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663084800000,
+          "fundingRate": "-0.00046620",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663113600000,
+          "fundingRate": "-0.00111142",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663142400000,
+          "fundingRate": "-0.00182506",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663171200000,
+          "fundingRate": "-0.00172134",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663200000019,
+          "fundingRate": "-0.00301937",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663228800012,
+          "fundingRate": "-0.00216987",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663257600007,
+          "fundingRate": "-0.00010393",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663286400000,
+          "fundingRate": "-0.00000776",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663315200000,
+          "fundingRate": "-0.00000235",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663344000000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663372800000,
+          "fundingRate": "0.00007400",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663401600012,
+          "fundingRate": "0.00007913",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1663430400017,
+          "fundingRate": "0.00004111",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "XRPUSDT",
+      "cutoff_utc": "2022-09-17T23:59:59.999Z",
+      "source_start_utc": "2022-09-10T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1662854400009,
+          "fundingRate": "0.00009010",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1662883200012,
+          "fundingRate": "0.00001217",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1662912000005,
+          "fundingRate": "0.00000471",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1662940800007,
+          "fundingRate": "-0.00001384",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1662969600013,
+          "fundingRate": "0.00008103",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1662998400000,
+          "fundingRate": "0.00008838",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663027200004,
+          "fundingRate": "0.00002917",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663056000000,
+          "fundingRate": "-0.00007219",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663084800000,
+          "fundingRate": "-0.00005955",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663113600000,
+          "fundingRate": "-0.00038316",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663142400000,
+          "fundingRate": "-0.00038406",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663171200000,
+          "fundingRate": "-0.00015412",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663200000019,
+          "fundingRate": "-0.00018839",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663228800012,
+          "fundingRate": "-0.00023366",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663257600007,
+          "fundingRate": "-0.00003431",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663286400000,
+          "fundingRate": "-0.00011656",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663315200000,
+          "fundingRate": "-0.00010715",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663344000000,
+          "fundingRate": "-0.00013721",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663372800000,
+          "fundingRate": "-0.00004994",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663401600012,
+          "fundingRate": "0.00003562",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1663430400017,
+          "fundingRate": "0.00007782",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "cutoff_utc": "2022-12-17T23:59:59.999Z",
+      "source_start_utc": "2022-12-10T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670716800011,
+          "fundingRate": "0.00000929",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670745600007,
+          "fundingRate": "0.00000873",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670774400011,
+          "fundingRate": "0.00000692",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670803200000,
+          "fundingRate": "0.00002406",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670832000004,
+          "fundingRate": "0.00002638",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670860800000,
+          "fundingRate": "-0.00001670",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670889600000,
+          "fundingRate": "0.00003003",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670918400018,
+          "fundingRate": "0.00001971",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670947200011,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1670976000010,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671004800015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671033600004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671062400000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671091200023,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671120000010,
+          "fundingRate": "0.00005180",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671148800016,
+          "fundingRate": "0.00004842",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671177600011,
+          "fundingRate": "0.00005706",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671206400001,
+          "fundingRate": "-0.00001987",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671235200001,
+          "fundingRate": "0.00002013",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671264000011,
+          "fundingRate": "0.00007810",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "BTCUSDT",
+          "fundingTime": 1671292800011,
+          "fundingRate": "0.00009707",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "cutoff_utc": "2022-12-17T23:59:59.999Z",
+      "source_start_utc": "2022-12-10T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670716800011,
+          "fundingRate": "-0.00002288",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670745600007,
+          "fundingRate": "0.00001946",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670774400011,
+          "fundingRate": "0.00001359",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670803200000,
+          "fundingRate": "0.00003843",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670832000004,
+          "fundingRate": "-0.00002359",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670860800000,
+          "fundingRate": "-0.00002692",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670889600000,
+          "fundingRate": "0.00008949",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670918400018,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670947200011,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1670976000010,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671004800015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671033600004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671062400000,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671091200023,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671120000010,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671148800016,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671177600011,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671206400001,
+          "fundingRate": "-0.00003780",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671235200001,
+          "fundingRate": "0.00008697",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671264000011,
+          "fundingRate": "-0.00006429",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "ETHUSDT",
+          "fundingTime": 1671292800011,
+          "fundingRate": "0.00003413",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    },
+    {
+      "symbol": "XRPUSDT",
+      "cutoff_utc": "2022-12-17T23:59:59.999Z",
+      "source_start_utc": "2022-12-10T23:59:59.999Z",
+      "status": "AVAILABLE",
+      "observations": [
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670716800011,
+          "fundingRate": "-0.00030172",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670745600007,
+          "fundingRate": "-0.00023213",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670774400011,
+          "fundingRate": "-0.00014466",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670803200000,
+          "fundingRate": "-0.00017470",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670832000004,
+          "fundingRate": "-0.00003972",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670860800000,
+          "fundingRate": "-0.00003285",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670889600000,
+          "fundingRate": "-0.00029576",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670918400018,
+          "fundingRate": "0.00005303",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670947200011,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1670976000010,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671004800015,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671033600004,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671062400000,
+          "fundingRate": "-0.00010154",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671091200023,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671120000010,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671148800016,
+          "fundingRate": "0.00009733",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671177600011,
+          "fundingRate": "0.00010000",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671206400001,
+          "fundingRate": "0.00007955",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671235200001,
+          "fundingRate": "-0.00022889",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671264000011,
+          "fundingRate": "-0.00001240",
+          "markPrice": "",
+          "rateType": "Regular"
+        },
+        {
+          "symbol": "XRPUSDT",
+          "fundingTime": 1671292800011,
+          "fundingRate": "0.00003820",
+          "markPrice": "",
+          "rateType": "Regular"
+        }
+      ]
+    }
+  ]
+}
