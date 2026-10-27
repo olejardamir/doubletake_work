@@ -1,0 +1,160 @@
+{
+  "schema": "APR_B139_V25_9_FIXED_FEATURE_ONLY_COHORT_PRECOMMIT",
+  "created_utc": "2026-10-27T00:52:39.598Z",
+  "status": "PRE_SOURCE_PRE_LABEL",
+  "exposure": "EXPOSED_DEVELOPMENT_NOT_BLIND",
+  "exposure_registry": {
+    "historical_2019_2020": "A training",
+    "year_2021": "D134 exposed",
+    "year_2022_2023": "training and 2023 D exposed",
+    "year_2024": "D139 exposed",
+    "year_2025": "M138/D140 2025 quarterly BTC ETH XRP and 2024-25 controls exposed",
+    "year_2026_H1": "previously scored exposed",
+    "year_2026_H2": "PROTECTED_POST_P0_DO_NOT_READ",
+    "year_2027": "future prospective not current"
+  },
+  "source": "Binance read-only spot 1d connector normalized, not authenticated original HTTP",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT"
+  ],
+  "dates": [
+    "2025-03-03",
+    "2025-06-02",
+    "2025-09-01",
+    "2025-12-01"
+  ],
+  "events": [
+    {
+      "event_id": "BTCUSDT_2025-03-03",
+      "symbol": "BTCUSDT",
+      "entry_utc": "2025-03-03T00:00:00.000Z",
+      "exit_utc": "2025-03-10T00:00:00.000Z",
+      "feature_start_utc": "2025-01-30T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-03-01T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-03-01T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "ETHUSDT_2025-03-03",
+      "symbol": "ETHUSDT",
+      "entry_utc": "2025-03-03T00:00:00.000Z",
+      "exit_utc": "2025-03-10T00:00:00.000Z",
+      "feature_start_utc": "2025-01-30T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-03-01T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-03-01T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "XRPUSDT_2025-03-03",
+      "symbol": "XRPUSDT",
+      "entry_utc": "2025-03-03T00:00:00.000Z",
+      "exit_utc": "2025-03-10T00:00:00.000Z",
+      "feature_start_utc": "2025-01-30T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-03-01T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-03-01T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "BTCUSDT_2025-06-02",
+      "symbol": "BTCUSDT",
+      "entry_utc": "2025-06-02T00:00:00.000Z",
+      "exit_utc": "2025-06-09T00:00:00.000Z",
+      "feature_start_utc": "2025-05-01T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-05-31T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-05-31T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "ETHUSDT_2025-06-02",
+      "symbol": "ETHUSDT",
+      "entry_utc": "2025-06-02T00:00:00.000Z",
+      "exit_utc": "2025-06-09T00:00:00.000Z",
+      "feature_start_utc": "2025-05-01T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-05-31T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-05-31T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "XRPUSDT_2025-06-02",
+      "symbol": "XRPUSDT",
+      "entry_utc": "2025-06-02T00:00:00.000Z",
+      "exit_utc": "2025-06-09T00:00:00.000Z",
+      "feature_start_utc": "2025-05-01T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-05-31T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-05-31T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "BTCUSDT_2025-09-01",
+      "symbol": "BTCUSDT",
+      "entry_utc": "2025-09-01T00:00:00.000Z",
+      "exit_utc": "2025-09-08T00:00:00.000Z",
+      "feature_start_utc": "2025-07-31T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-08-30T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-08-30T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "ETHUSDT_2025-09-01",
+      "symbol": "ETHUSDT",
+      "entry_utc": "2025-09-01T00:00:00.000Z",
+      "exit_utc": "2025-09-08T00:00:00.000Z",
+      "feature_start_utc": "2025-07-31T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-08-30T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-08-30T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "XRPUSDT_2025-09-01",
+      "symbol": "XRPUSDT",
+      "entry_utc": "2025-09-01T00:00:00.000Z",
+      "exit_utc": "2025-09-08T00:00:00.000Z",
+      "feature_start_utc": "2025-07-31T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-08-30T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-08-30T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "BTCUSDT_2025-12-01",
+      "symbol": "BTCUSDT",
+      "entry_utc": "2025-12-01T00:00:00.000Z",
+      "exit_utc": "2025-12-08T00:00:00.000Z",
+      "feature_start_utc": "2025-10-30T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-11-29T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-11-29T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "ETHUSDT_2025-12-01",
+      "symbol": "ETHUSDT",
+      "entry_utc": "2025-12-01T00:00:00.000Z",
+      "exit_utc": "2025-12-08T00:00:00.000Z",
+      "feature_start_utc": "2025-10-30T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-11-29T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-11-29T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    },
+    {
+      "event_id": "XRPUSDT_2025-12-01",
+      "symbol": "XRPUSDT",
+      "entry_utc": "2025-12-01T00:00:00.000Z",
+      "exit_utc": "2025-12-08T00:00:00.000Z",
+      "feature_start_utc": "2025-10-30T00:00:00.000Z",
+      "feature_last_bar_open_utc": "2025-11-29T00:00:00.000Z",
+      "feature_nominal_close_utc": "2025-11-29T23:59:59.999Z",
+      "provider_delivery_observed_by_utc": null
+    }
+  ],
+  "feature_window_bars": 31,
+  "feature_formula": "ret7=close[-1]/close[-8]-1; ret30=close[-1]/close[-31]-1; vol30=population_stdev(daily simple returns of 31 bars); volume_z30=(volume[-1]-mean(volume 31 bars))/population_stdev(volume 31 bars)",
+  "note": "Formula must be reviewed against frozen A146 engine before use; this is B source-only precommit, NOT C invention roster/decision freeze.",
+  "feature_availability": "nominal Saturday daily bar close before Monday entry; provider delivery timestamp unavailable; no observed-by assertion",
+  "outcome_price_policy": "NO 2025 entry/exit bars or outcomes until C independent complete prelabel freeze",
+  "costs": {
+    "LOW": 0.003,
+    "HIGH": 0.009
+  },
+  "risk": "spot long/flat only; fixed eligible denominator; P/N/Z/A/U disjoint; no trades"
+}
