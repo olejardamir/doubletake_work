@@ -1,0 +1,69 @@
+{
+  "schema": "APR_B153_V28_B152_66_INDIVIDUAL_TRADE_AUDIT_INDEPENDENT_READBACK_V1",
+  "date_utc": "2026-10-27",
+  "status": "PASS",
+  "checks": {
+    "six_chunks": true,
+    "eleven_each": true,
+    "exact_66": true,
+    "unique_66": true,
+    "full_panel_coverage": true,
+    "all_source_sha": true,
+    "all_prepath_only": true,
+    "all_per_row_checks": true,
+    "full_p0_match": true
+  },
+  "stats": {
+    "events": 66,
+    "dates": 22,
+    "assets": 3,
+    "multitrade_first_aggregates": 33,
+    "max_aggregate_n": 46,
+    "first_trade_delay_ms_min": 2,
+    "first_trade_delay_ms_max": 1766,
+    "predecessor_gap_ms_max": 6231,
+    "predecessor_gap_ms_min": 4,
+    "first_trade_equals_prior_price": 31,
+    "first_trade_differs_prior_price": 35
+  },
+  "source_panel": {
+    "path": "apr_research/B152_V28_66_EVENT_FIRST_WED_FEATURE_ONLY_C_HANDOFF.json",
+    "git_blob_sha1": "c2c105cf0c7275fb02efe427afe8a97882a66da7",
+    "declared_sha256": "a68604039812e854587a1c4963c04461845253a1fddd34dfb251ab658562b576"
+  },
+  "chunks": [
+    {
+      "path": "apr_research/B153_V28_B152_INDIVIDUAL_FIRST_TRADE_CHUNK_1_OF_6.json",
+      "blob_sha1": "fb90b9837b82334564c1d9d0774b2df4183e3277"
+    },
+    {
+      "path": "apr_research/B153_V28_B152_INDIVIDUAL_FIRST_TRADE_CHUNK_2_OF_6.json",
+      "blob_sha1": "d0c4a73f8d51ea4421fa84a0cff0d3064a5e1754"
+    },
+    {
+      "path": "apr_research/B153_V28_B152_INDIVIDUAL_FIRST_TRADE_CHUNK_3_OF_6.json",
+      "blob_sha1": "a0e46f6b9c73cbdf05a2f69307b28374058b42b4"
+    },
+    {
+      "path": "apr_research/B153_V28_B152_INDIVIDUAL_FIRST_TRADE_CHUNK_4_OF_6.json",
+      "blob_sha1": "ba471352d2b2431ac6f366de97fe4eee04792a8c"
+    },
+    {
+      "path": "apr_research/B153_V28_B152_INDIVIDUAL_FIRST_TRADE_CHUNK_5_OF_6.json",
+      "blob_sha1": "015e593d612c1eeb0743d4d8da447d5f44706e56"
+    },
+    {
+      "path": "apr_research/B153_V28_B152_INDIVIDUAL_FIRST_TRADE_CHUNK_6_OF_6.json",
+      "blob_sha1": "21286b0c666f1d68d68a88aa2872f41ce0729610"
+    }
+  ],
+  "research_caveats": [
+    "All data are historical connector-normalized trade objects; original HTTP response bytes and provider as-of delivery latency unavailable",
+    "The first trade price is a historical transaction P0, NOT an executable fill for an issued APR order",
+    "First trade at t0 can be milliseconds after nominal midnight; issuance must be defined at first trade time, not nominal time",
+    "No future outcome path or first-hit label read in this B audit",
+    "C must bind exact P0/forecast and independently freeze before D scores B152 paths",
+    "No historical issued trades or predictions; no alpha/profitability claim"
+  ],
+  "next": "C full independent prepath B152+A161 forecast freeze/receipt, then D chronological first-hit scoring"
+}
