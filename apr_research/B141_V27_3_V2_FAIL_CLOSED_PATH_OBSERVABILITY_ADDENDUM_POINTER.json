@@ -1,0 +1,27 @@
+{
+  "schema": "APR_B141_V27_3_V2_PATH_OBSERVABILITY_ADDENDUM_POINTER",
+  "status": "V2_SYNTHETIC_ENGINE_SUPERSEDES_V1_ENGINE_ONLY",
+  "unchanged": [
+    "12 open-time event starts",
+    "2025 source SHA and Git blob",
+    "event barriers +5%/-3%",
+    "2025 historical exposed classification",
+    "C freeze pending",
+    "no poststart path reads"
+  ],
+  "V1_package_sha256": "9551ebc921c354c9bb9c35a3894f614c043e4008a4f76709ee80ba7c06c7e49d",
+  "V2_package_sha256": "88e6a8ff6ffa34a8793767d9c96eb2ac80cd4ad70c403b30b69813e846ce86fe",
+  "V2_separate_receipt_sha256": "fd4dd103664a9420e393b35498aa988fd31fbc1ae45712aebff5818c29e4a526",
+  "library_folder": "/APR_Evolution_Checkpoints",
+  "corrections": [
+    "missing initial daily start bar => U_MISSING_INITIAL_START_BAR",
+    "missing intermediate daily bar => U_MISSING_INTERMEDIATE_DAILY_BAR, not a false first-hit",
+    "if final administrative candle incomplete, known opening gap can resolve at open; no use of subsequent high/low"
+  ],
+  "synthetic_cases": 20,
+  "synthetic_passed": 20,
+  "real_outcome_rows_read": 0,
+  "C_open_time_freeze": "PENDING",
+  "D_future_path_access": "BLOCKED_UNTIL_C_FULL_INDEPENDENT_FREEZE",
+  "formal": "v3.6.6-B inherited, no amendments"
+}
