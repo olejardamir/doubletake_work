@@ -1,0 +1,41 @@
+{
+  "schema": "APR_B145_V27_4_2026H2_OPEN_TIME_PRECOMMIT_V1",
+  "status": "PRE_SOURCE_NO_LABEL_READ",
+  "research_mode": "OPEN_TIME_FIRST_HIT",
+  "cohort_exposure": "NOT_YET_AUDITED_FOR_PRIOR_APR_USE; DO_NOT_CALL_BLIND",
+  "assets": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT"
+  ],
+  "utc_entry_dates": [
+    "2026-07-20",
+    "2026-08-17",
+    "2026-09-21",
+    "2026-10-19"
+  ],
+  "event_count": 12,
+  "event_ids": [
+    "BTCUSDT_2026-07-20T00:00:00Z",
+    "ETHUSDT_2026-07-20T00:00:00Z",
+    "XRPUSDT_2026-07-20T00:00:00Z",
+    "BTCUSDT_2026-08-17T00:00:00Z",
+    "ETHUSDT_2026-08-17T00:00:00Z",
+    "XRPUSDT_2026-08-17T00:00:00Z",
+    "BTCUSDT_2026-09-21T00:00:00Z",
+    "ETHUSDT_2026-09-21T00:00:00Z",
+    "XRPUSDT_2026-09-21T00:00:00Z",
+    "BTCUSDT_2026-10-19T00:00:00Z",
+    "ETHUSDT_2026-10-19T00:00:00Z",
+    "XRPUSDT_2026-10-19T00:00:00Z"
+  ],
+  "feature_window": "31 complete 1d bars ending preceding Saturday UTC; no Sunday/entry/poststart bar",
+  "p0": "first spot aggTrade at or after nominal Monday 00:00 UTC, with effective observation t0 at actual first trade timestamp; hypothetical executable fill NOT attested",
+  "upper_barrier": "1.05*original immutable P0",
+  "lower_barrier": "0.97*original immutable P0",
+  "event_stop": "first barrier observed; no forecast deadline; ambiguous intrabar sequence remains unresolved until higher resolution",
+  "administrative_end": "2026-10-27T00:00:00Z observation limit ONLY; NOT prediction horizon",
+  "prohibited": "NO poststart paths/entry-day HLC or outcomes before independent C full prepath freeze",
+  "source": "Binance spot market-data connector normalized original arrays; provider HTTP bytes and delivery timestamps unavailable",
+  "note": "Event t0 at first trade, not nominal midnight; features strictly prior; precommitted before data retrieval."
+}
