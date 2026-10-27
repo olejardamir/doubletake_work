@@ -1,0 +1,380 @@
+{
+  "schema": "APR_D158_B155_FIRST_HIT_TRUTH_36_RESEARCH_V1",
+  "classification": "EXPOSED_HISTORICAL_NOT_BLIND_NOT_ISSUED",
+  "cutoff_utc": "2026-10-26T23:59:59Z",
+  "forecast_horizon": null,
+  "source": "Binance spot 1d OHLCV; 1m for two daily ambiguities; not original tick-level execution",
+  "original_p0_immutable": true,
+  "source_evidence_paths": [
+    "apr_research/D158_B155_DAILY_FIRST_HIT_EVIDENCE_PART_1_OF_2.json",
+    "apr_research/D158_B155_DAILY_FIRST_HIT_EVIDENCE_PART_2_OF_2.json",
+    "apr_research/D158_B155_1M_AMBIGUITY_REFINEMENT.json"
+  ],
+  "source_evidence_git_blob_sha1": [
+    "0e83a10aed39530fabfb0f134169d6a410e99a51",
+    "27b4aa9399753dcb8acca3c565340de3a11081dd",
+    "6df3a343c7e809a13ee0db9d137d6ece0e8ac04f"
+  ],
+  "truth": {
+    "B155_2024-12-19_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2024-12-19T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2024-12-19T00:00:00.000Z",
+      "reference_original_p0": "100204.01000000",
+      "source_part": 1
+    },
+    "B155_2024-12-19_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2024-12-19T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2024-12-19T00:00:00.000Z",
+      "reference_original_p0": "3626.80000000",
+      "source_part": 1
+    },
+    "B155_2024-12-19_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2024-12-19T02:08:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1m",
+      "evidence_daily_first_hit_bar_utc": "2024-12-19T00:00:00.000Z",
+      "reference_original_p0": "2.31020000",
+      "source_part": 1
+    },
+    "B155_2025-01-16_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-01-16T00:17:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1m",
+      "evidence_daily_first_hit_bar_utc": "2025-01-16T00:00:00.000Z",
+      "reference_original_p0": "3.14300000",
+      "source_part": 1
+    },
+    "B155_2025-01-16_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-01-16T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-01-16T00:00:00.000Z",
+      "reference_original_p0": "100497.35000000",
+      "source_part": 1
+    },
+    "B155_2025-01-16_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-01-16T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-01-16T00:00:00.000Z",
+      "reference_original_p0": "3451.51000000",
+      "source_part": 1
+    },
+    "B155_2025-02-20_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-02-24T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-02-24T00:00:00.000Z",
+      "reference_original_p0": "96644.37000000",
+      "source_part": 1
+    },
+    "B155_2025-02-20_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-02-21T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-02-21T00:00:00.000Z",
+      "reference_original_p0": "2715.51000000",
+      "source_part": 1
+    },
+    "B155_2025-02-20_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-02-21T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-02-21T00:00:00.000Z",
+      "reference_original_p0": "2.73780000",
+      "source_part": 1
+    },
+    "B155_2025-07-17_XRPUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2025-07-17T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-07-17T00:00:00.000Z",
+      "reference_original_p0": "3.03800000",
+      "source_part": 1
+    },
+    "B155_2025-07-17_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-07-25T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-07-25T00:00:00.000Z",
+      "reference_original_p0": "118630.44000000",
+      "source_part": 1
+    },
+    "B155_2025-07-17_ETHUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2025-07-18T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-07-18T00:00:00.000Z",
+      "reference_original_p0": "3371.35000000",
+      "source_part": 1
+    },
+    "B155_2025-08-21_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-08-24T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-08-24T00:00:00.000Z",
+      "reference_original_p0": "114271.23000000",
+      "source_part": 1
+    },
+    "B155_2025-08-21_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-08-21T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-08-21T00:00:00.000Z",
+      "reference_original_p0": "4336.16000000",
+      "source_part": 1
+    },
+    "B155_2025-08-21_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-08-21T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-08-21T00:00:00.000Z",
+      "reference_original_p0": "2.95120000",
+      "source_part": 1
+    },
+    "B155_2025-09-18_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-09-22T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-09-22T00:00:00.000Z",
+      "reference_original_p0": "116447.60000000",
+      "source_part": 1
+    },
+    "B155_2025-09-18_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-09-19T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-09-19T00:00:00.000Z",
+      "reference_original_p0": "3.08410000",
+      "source_part": 1
+    },
+    "B155_2025-09-18_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-09-19T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-09-19T00:00:00.000Z",
+      "reference_original_p0": "4590.54000000",
+      "source_part": 1
+    },
+    "B155_2025-10-16_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-10-16T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-10-16T00:00:00.000Z",
+      "reference_original_p0": "110763.28000000",
+      "source_part": 2
+    },
+    "B155_2025-10-16_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-10-16T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-10-16T00:00:00.000Z",
+      "reference_original_p0": "3985.61000000",
+      "source_part": 2
+    },
+    "B155_2025-10-16_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-10-16T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-10-16T00:00:00.000Z",
+      "reference_original_p0": "2.41100000",
+      "source_part": 2
+    },
+    "B155_2025-11-20_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-11-20T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-11-20T00:00:00.000Z",
+      "reference_original_p0": "2.10970000",
+      "source_part": 2
+    },
+    "B155_2025-11-20_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-11-20T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-11-20T00:00:00.000Z",
+      "reference_original_p0": "91554.96000000",
+      "source_part": 2
+    },
+    "B155_2025-11-20_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-11-20T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-11-20T00:00:00.000Z",
+      "reference_original_p0": "3025.48000000",
+      "source_part": 2
+    },
+    "B155_2025-12-18_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2025-12-18T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-12-18T00:00:00.000Z",
+      "reference_original_p0": "1.86270000",
+      "source_part": 2
+    },
+    "B155_2025-12-18_BTCUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2025-12-22T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-12-22T00:00:00.000Z",
+      "reference_original_p0": "86243.23000000",
+      "source_part": 2
+    },
+    "B155_2025-12-18_ETHUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2025-12-18T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2025-12-18T00:00:00.000Z",
+      "reference_original_p0": "2833.50000000",
+      "source_part": 2
+    },
+    "B155_2026-07-16_ETHUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2026-07-16T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-07-16T00:00:00.000Z",
+      "reference_original_p0": "1917.86000000",
+      "source_part": 2
+    },
+    "B155_2026-07-16_BTCUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2026-07-17T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-07-17T00:00:00.000Z",
+      "reference_original_p0": "64756.28000000",
+      "source_part": 2
+    },
+    "B155_2026-07-16_XRPUSDT": {
+      "state": "ADVERSE",
+      "mature": true,
+      "resolution_upper_utc": "2026-07-17T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-07-17T00:00:00.000Z",
+      "reference_original_p0": "1.11320000",
+      "source_part": 2
+    },
+    "B155_2026-08-20_BTCUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2026-08-20T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-08-20T00:00:00.000Z",
+      "reference_original_p0": "69334.78000000",
+      "source_part": 2
+    },
+    "B155_2026-08-20_ETHUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2026-08-21T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-08-21T00:00:00.000Z",
+      "reference_original_p0": "2252.81000000",
+      "source_part": 2
+    },
+    "B155_2026-08-20_XRPUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2026-08-20T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-08-20T00:00:00.000Z",
+      "reference_original_p0": "1.10590000",
+      "source_part": 2
+    },
+    "B155_2026-09-17_BTCUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2026-09-18T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-09-18T00:00:00.000Z",
+      "reference_original_p0": "76206.00000000",
+      "source_part": 2
+    },
+    "B155_2026-09-17_XRPUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2026-09-18T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-09-18T00:00:00.000Z",
+      "reference_original_p0": "1.29960000",
+      "source_part": 2
+    },
+    "B155_2026-09-17_ETHUSDT": {
+      "state": "TARGET",
+      "mature": true,
+      "resolution_upper_utc": "2026-09-18T23:59:59.999Z",
+      "observation_cutoff_utc": "2026-10-26T23:59:59Z",
+      "evidence_resolution": "1d",
+      "evidence_daily_first_hit_bar_utc": "2026-09-18T00:00:00.000Z",
+      "reference_original_p0": "2418.26000000",
+      "source_part": 2
+    }
+  }
+}
