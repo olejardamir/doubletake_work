@@ -1,0 +1,45 @@
+{
+  "schema": "APR_B147_V27_4_FINAL_C_D_MASTER_A_HANDOFF_POINTER_V1",
+  "status": "SOURCE_ONLY_COMPLETE_C_FREEZE_PENDING_NO_B147_OUTCOME_READ",
+  "precommit_commit": "35c166e7f0d93e12815accfee335800cdfec2394",
+  "source_handoff_commit": "9434183ad9a4de744fbf2010e9d5b53a13d64c0c",
+  "source_handoff_path": "apr_research/B147_V27_4_2026_MAY_JUNE_C_SOURCE_ONLY_HANDOFF_V1.json",
+  "source_handoff_sha256": "ab42ef12f4818db343f64c07a492771ce2dbbf17c622d6472cf00cb83a5b4e4a",
+  "source_dates": [
+    "2026-05-04",
+    "2026-05-18",
+    "2026-06-01",
+    "2026-06-15"
+  ],
+  "assets": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT"
+  ],
+  "events": 12,
+  "prestart_daily_bars": 372,
+  "prestart_feature_checks": 48,
+  "first_print_original_P0": 12,
+  "source_partitions_sha256": [
+    "646062e00f299aaa77a39cc2a24a4616ce8bc4d4f2d23307b202ad13c873e64d",
+    "e839cc52aad1d0d4cbdc6a193c8ef4b405d468c14a143415ed77c723b6ee3503",
+    "57531462a9f0b2c8cf548aff372e9f6a8910430a7bec1ac137c9e2667ab37389",
+    "6e66258ae8d140d0a4521e20c32cae6994fd2480b04c9b93bd5fb7b4006f8de4"
+  ],
+  "library_folder": "/APR_Evolution_Checkpoints",
+  "library_package": "APR_B147_20261027_V27_4_MAY_JUNE_2026_NEW_SOURCE_ONLY_C_HANDOFF.zip",
+  "library_package_sha256": "03d88d2a51d704abdf58081c45371eb3abac9f9557859ebd1c7f47dec95edca4",
+  "library_primary_original_byte_readback": "9/9 PASS",
+  "library_manifest_sha256": "57a680aefc81c79162e241f27526e465c271a4ac71515793a3fefef46069cdd8",
+  "library_separate_receipt_sha256": "17075222bd878e965f2834b2b7d374738e618deaaa6e88da2bfdd673d03c15c4",
+  "new_independent_finding": "D148 original replay byte mismatch from nondeterministic ZIP enumeration; after archive-name sorting both JSON outputs semantically equal; do not claim byte-identical",
+  "exposure": "EXPOSED_DEVELOPMENT_NOT_BLIND; 2026H1 previously examined; October 2026 models cannot be represented as contemporaneously issued May/June forecasts",
+  "C_freeze": "PENDING",
+  "D_outcome_paths_authorized": false,
+  "poststart_paths_read": 0,
+  "formal": "v3.6.6-B M126 inherited, R4/A100 unchanged, H8/D102 SAFETY_HOLD, P0 12 UNSCORED, legacy 8 FAIL+3 ERROR",
+  "schedules": "unchanged",
+  "trades": 0,
+  "releases": 0,
+  "promotions": 0
+}
