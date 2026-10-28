@@ -1,7 +1,7 @@
 {
   "sequence": "B186_DATE_CLUSTER_UNCERTAINTY_SUPPLEMENT",
   "classification": "EXPOSED_DESCRIPTIVE_BOOTSTRAP_NOT_BLIND",
-  "method": "10000 seeded resamples of complete issue-date clusters within each cohort, retaining all resolved same-date assets; pooled uses 34 distinct cohort-date clusters",
+  "method": "10000 seeded resamples of complete resolved issue-date clusters within each cohort, retaining all resolved same-date assets; pooled uses 33 cohort-date clusters (B152 21 resolved dates, B155 12; one B152 date all U excluded)",
   "source_git_blob_sha": "9c1d171cb5987c2ad568981e477bc35c99c9bfbc",
   "bootstrap_iterations": 10000,
   "cohorts": {
