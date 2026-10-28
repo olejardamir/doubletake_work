@@ -1,0 +1,19 @@
+{
+  "sequence": "B185",
+  "created_context": "2026-10-28 before historical label join; exposed research design; not prospective or blind",
+  "classification": "EXPOSED_RETROSPECTIVE_PRELABEL_HYPOTHESIS",
+  "event": "first individual trade original P0, +5% before -3%, no fixed horizon or rebasing",
+  "hypothesis": "A last-24h surge in traded quote volume specifically on negative-return hours relative to positive-return hours, compared with prior312h, raises downside-first probability beyond price-only C184. Turnover weighting differs from price semivariance and taker-buy imbalance.",
+  "features": "For completed hourly h, r_h=log(close/open), w_h=quoteVolume. For window W, D_W=sum(w_h for r_h<0)/|W| and U_W=sum(w_h for r_h>=0)/|W|. z=clip(log((D_24+eps)/(D_312+eps))-log((U_24+eps)/(U_312+eps)),-2,2), eps=1e-12 times mean hourly quote volume across 336h to preserve scale; zero-division guarded.",
+  "primary": "q_primary=sigmoid(logit(q_C184)-0.35*z), fixed before label join",
+  "controls": [
+    "q_reverse=sigmoid(logit(q_C184)+0.35*z)",
+    "q_sign_count=sigmoid(logit(q_C184)-0.35*z_count), z_count uses counts of negative and nonnegative hours with Laplace +1 smoothing and same differential log ratio",
+    "q_C184 unchanged",
+    "q_B unchanged",
+    "q_M B155 only"
+  ],
+  "input_source": "Existing B182 six B152 and B181 four B155 archived original connector-normalized Binance Spot 1h bars, 336 strictly pre-t0 completed hours per event, no Oct29 future source or paths.",
+  "evaluation": "Same resolved B152 61/66 (5 U), B155 36/36, pooled 97/102; Brier primary, logloss, fixed q>=0.5 confusion, same-date top-one, per-date/asset paired deltas, leave-one-date-out, descriptive date-cluster uncertainty. No sign/coefficient refit; controls descriptive only.",
+  "safety": "A165 Oct29 frozen untouched; no future q issued; no future P0 or paths; no trades; all schedules unchanged."
+}
