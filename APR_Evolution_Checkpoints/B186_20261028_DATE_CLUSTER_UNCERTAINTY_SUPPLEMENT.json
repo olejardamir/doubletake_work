@@ -1,0 +1,90 @@
+{
+  "sequence": "B186_DATE_CLUSTER_UNCERTAINTY_SUPPLEMENT",
+  "classification": "EXPOSED_DESCRIPTIVE_BOOTSTRAP_NOT_BLIND",
+  "method": "10000 seeded resamples of complete issue-date clusters within each cohort, retaining all resolved same-date assets; pooled uses 34 distinct cohort-date clusters",
+  "source_git_blob_sha": "9c1d171cb5987c2ad568981e477bc35c99c9bfbc",
+  "bootstrap_iterations": 10000,
+  "cohorts": {
+    "B152": {
+      "dates": 21,
+      "B185": {
+        "delta_vs_C184": 0.002671704419151527,
+        "cluster_bootstrap_95": [
+          -0.0070262829825233535,
+          0.011800860484485583
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.2782
+      },
+      "q_common": {
+        "delta_vs_C184": 0.0034866223219471664,
+        "cluster_bootstrap_95": [
+          -0.006593724764861009,
+          0.01311749150146642
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.2414
+      },
+      "q_relative": {
+        "delta_vs_C184": -0.0008507387361224815,
+        "cluster_bootstrap_95": [
+          -0.002102625433092234,
+          0.00023665036346923426
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.932
+      }
+    },
+    "B155": {
+      "dates": 12,
+      "B185": {
+        "delta_vs_C184": -0.009504023801133623,
+        "cluster_bootstrap_95": [
+          -0.02918835741409781,
+          0.010979004853397558
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.8195
+      },
+      "q_common": {
+        "delta_vs_C184": -0.010329013756605764,
+        "cluster_bootstrap_95": [
+          -0.03040471034451063,
+          0.010204376141096561
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.8394
+      },
+      "q_relative": {
+        "delta_vs_C184": 0.0008894826549895365,
+        "cluster_bootstrap_95": [
+          -0.0019829604349537533,
+          0.0038702032024944453
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.2766
+      }
+    },
+    "POOLED": {
+      "dates": 33,
+      "B185": {
+        "delta_vs_C184": -0.0018471225492017245,
+        "cluster_bootstrap_95": [
+          -0.011829627689996526,
+          0.007989821063738987
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.6354
+      },
+      "q_common": {
+        "delta_vs_C184": -0.0016408302432889743,
+        "cluster_bootstrap_95": [
+          -0.011605765495822084,
+          0.008308753255259406
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.6124
+      },
+      "q_relative": {
+        "delta_vs_C184": -0.000204883374472661,
+        "cluster_bootstrap_95": [
+          -0.001545878966819903,
+          0.0011556184862240573
+        ],
+        "fraction_bootstrap_delta_below_zero": 0.6199
+      }
+    }
+  }
+}
