@@ -1,0 +1,222 @@
+{
+  "sequence": "C191_B155_TRANSFER",
+  "classification": "EXPOSED_RETROSPECTIVE_DISJOINT_UNCHANGED_TRANSFER_NO_PROSPECTIVE_Q",
+  "forecast_source_sha1": "1c4995ae9a53bee40dda6e64dea693e539cd569f",
+  "labels_source_sha1": "e403835e8e0878eb16a41ab04fdc3144a7c7c489",
+  "cohort": "B155",
+  "n_total": 36,
+  "n_resolved": 36,
+  "n_target": 10,
+  "n_adverse": 26,
+  "n_U": 0,
+  "metrics": {
+    "B": {
+      "n": 36,
+      "brier": 0.18779216960384648,
+      "logloss": 0.5617854183674347,
+      "mean_q": 0.41030349929658727,
+      "TP": 7,
+      "FP": 4,
+      "FN": 3,
+      "TN": 22
+    },
+    "M": {
+      "n": 36,
+      "brier": 0.17977992518900157,
+      "logloss": 0.5434818573230389,
+      "mean_q": 0.3947617515355696,
+      "TP": 7,
+      "FP": 3,
+      "FN": 3,
+      "TN": 23
+    },
+    "C184": {
+      "n": 36,
+      "brier": 0.16329795528924357,
+      "logloss": 0.5129030836214531,
+      "mean_q": 0.41472522066448153,
+      "TP": 7,
+      "FP": 2,
+      "FN": 3,
+      "TN": 24
+    },
+    "q_tail_diffusion_14d": {
+      "n": 36,
+      "brier": 0.18949659791286144,
+      "logloss": 0.567710499908989,
+      "mean_q": 0.4083429253839528,
+      "TP": 3,
+      "FP": 3,
+      "FN": 7,
+      "TN": 23
+    },
+    "q_symmetric_null_14d": {
+      "n": 36,
+      "brier": 0.21225735411399044,
+      "logloss": 0.616541752906008,
+      "mean_q": 0.3896992211985794,
+      "TP": 0,
+      "FP": 0,
+      "FN": 10,
+      "TN": 26
+    },
+    "q_unshrunk_14d": {
+      "n": 36,
+      "brier": 0.1886994397070777,
+      "logloss": 0.5622851243048913,
+      "mean_q": 0.41358985102838,
+      "TP": 4,
+      "FP": 3,
+      "FN": 6,
+      "TN": 23
+    },
+    "q_tail_diffusion_7d": {
+      "n": 36,
+      "brier": 0.1945368344091471,
+      "logloss": 0.5791652876468878,
+      "mean_q": 0.4026476354261933,
+      "TP": 3,
+      "FP": 1,
+      "FN": 7,
+      "TN": 25
+    }
+  },
+  "primary_delta_brier_vs_C184": 0.026198642623617888,
+  "primary_delta_brier_vs_M": 0.009716672723859902,
+  "primary_delta_brier_vs_B": 0.0017044283090149788,
+  "primary_delta_logloss_vs_C184": 0.05480741628753594,
+  "primary_delta_brier_vs_null": -0.022760756201129044,
+  "date_blocks": {
+    "n": 12,
+    "wins": 6,
+    "losses": 6,
+    "leave_one_date_out_delta_range": [
+      0.016995210884434914,
+      0.03225263680546182
+    ],
+    "bootstrap95_descriptive": [
+      -0.0023031548262465273,
+      0.05809017212265609
+    ],
+    "bydate": [
+      {
+        "date": "2024-12-19",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.007984291547112513,
+        "delta_M": -0.08306829382459859,
+        "delta_B": -0.04675211099564383
+      },
+      {
+        "date": "2025-01-16",
+        "n": 3,
+        "target": 0,
+        "delta_C184": 0.04208773671022769,
+        "delta_M": -0.021206687558564908,
+        "delta_B": -0.02120668755856429
+      },
+      {
+        "date": "2025-02-20",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.018337401409139475,
+        "delta_M": 0.016118550734056714,
+        "delta_B": 0.016118550734057047
+      },
+      {
+        "date": "2025-07-17",
+        "n": 3,
+        "target": 2,
+        "delta_C184": 0.10698703994322678,
+        "delta_M": 0.05948089372369036,
+        "delta_B": 0.042622606770258635
+      },
+      {
+        "date": "2025-08-21",
+        "n": 3,
+        "target": 0,
+        "delta_C184": 0.08068210556914396,
+        "delta_M": 0.0989456048591703,
+        "delta_B": 0.09894560485917055
+      },
+      {
+        "date": "2025-09-18",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.0403952933766654,
+        "delta_M": -0.14455158639055068,
+        "delta_B": -0.16058675706446332
+      },
+      {
+        "date": "2025-10-16",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.0002556538068670631,
+        "delta_M": 0.06079616347018879,
+        "delta_B": 0.06079616347018901
+      },
+      {
+        "date": "2025-11-20",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.014669696502897353,
+        "delta_M": 0.06650374352230605,
+        "delta_B": 0.06650374352230619
+      },
+      {
+        "date": "2025-12-18",
+        "n": 3,
+        "target": 2,
+        "delta_C184": 0.05360188580012112,
+        "delta_M": -0.0936588453042686,
+        "delta_B": -0.09319045525731258
+      },
+      {
+        "date": "2026-07-16",
+        "n": 3,
+        "target": 0,
+        "delta_C184": 0.020412166000412207,
+        "delta_M": 0.1466506385427346,
+        "delta_B": 0.006960237316857437
+      },
+      {
+        "date": "2026-08-20",
+        "n": 3,
+        "target": 3,
+        "delta_C184": -0.03518127765166593,
+        "delta_M": -0.0853251547121846,
+        "delta_B": -0.04365545576977373
+      },
+      {
+        "date": "2026-09-17",
+        "n": 3,
+        "target": 3,
+        "delta_C184": 0.1274363917546306,
+        "delta_M": 0.09591504562433932,
+        "delta_B": 0.09389769968109866
+      }
+    ]
+  },
+  "per_asset": {
+    "BTCUSDT": {
+      "n": 12,
+      "delta_C184": 0.021243473948658248,
+      "delta_M": -0.027070585996123026,
+      "brier": 0.18897717137035985
+    },
+    "ETHUSDT": {
+      "n": 12,
+      "delta_C184": 0.021231705398394547,
+      "delta_M": 0.010587523313058914,
+      "brier": 0.18681704342282804
+    },
+    "XRPUSDT": {
+      "n": 12,
+      "delta_C184": 0.036120748523800865,
+      "delta_M": 0.04563308085464379,
+      "brier": 0.19269557894539643
+    }
+  },
+  "limitations": "Historical labels exposed before C191 design; B155 was disjoint from B152 but NOT untouched/blind; original provider delivery and maturity unattested; no trades or prospective q.",
+  "next_falsifier": "No promotion. If useful, test unchanged mechanism on disjoint B154 raw 14d hourly arrays, otherwise investigate different causal pre-t0 feature; Oct29 A165 source 3/3 and 27-q C freeze first."
+}
