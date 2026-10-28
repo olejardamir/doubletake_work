@@ -1,0 +1,47 @@
+{
+  "sequence": "B185",
+  "created_utc_context": "2026-10-28 22:47Z B scheduled cycle",
+  "research_status": "EXPOSED_RETROSPECTIVE_NOT_PROSPECTIVE_NO_PROMOTION",
+  "hypothesis_commit": "b1714f81ad1a5d73d1f2361e9b429a6ffabd5c7e",
+  "prelabel_commit": "5e5db24d07ad43577db150ddf7881804ac466420",
+  "score_commit": "4a319965820401456e703fc68ec8e70f164b601f",
+  "same_event_brier": {
+    "B152": {
+      "n": 61,
+      "U": 5,
+      "B": 0.32018342,
+      "C184": 0.27821577,
+      "B185": 0.280887474,
+      "delta_vs_C184": 0.002671704
+    },
+    "B155": {
+      "n": 36,
+      "U": 0,
+      "B": 0.18779217,
+      "M": 0.179779925,
+      "C184": 0.163297955,
+      "B185": 0.153793931,
+      "delta_vs_C184": -0.009504024
+    },
+    "pooled": {
+      "n": 97,
+      "U": 5,
+      "C184": 0.235565859,
+      "B185": 0.233718737,
+      "delta_vs_C184": -0.001847123
+    }
+  },
+  "decision": "Small exposed pooled improvement, worsens disjoint B152 and no within-date top-one gain. No promotion or shadow issuance.",
+  "next_falsifier": "Decompose turnover into date-common versus asset-relative shock and test unchanged on disjoint cohorts; require own independent pre-t0 Nov05+ shadow before prospective claim.",
+  "critical_oct29": {
+    "B162_source_panel": "3/3 QUALIFIED already; do not refetch",
+    "A165_q": "A192 actual original 27q authored 2026-10-28T22:36:46Z; SHA256 5437f8ae5ee8c349066e77e4a0ca2a9ec63a1bd3c74d3b7e03ec150637554423",
+    "C_pre_t0": "INDEPENDENT C receipt required before 2026-10-29T00:00:00Z; do not substitute A readback",
+    "B_post_t0": "After t0 obtain earliest individual trade P0 plus predecessor f-1 for all BTCUSDT ETHUSDT XRPUSDT, original source proof and delivery",
+    "C_second": "Independently bind immutable P0 and barriers to original q, separate exact-byte receipt",
+    "D": "No future paths until both C receipts",
+    "trades": 0,
+    "schedule_changes": 0
+  },
+  "source_limits": "Historical arrays retrieved retrospectively, no original HTTP/historical delivery or first-hit maturity attestation; 5 B152 U preserved."
+}
