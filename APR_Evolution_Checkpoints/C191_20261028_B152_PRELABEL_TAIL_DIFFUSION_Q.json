@@ -1,0 +1,1344 @@
+{
+  "sequence": "C191",
+  "status": "EXPOSED_RETROSPECTIVE_PRELABEL_FEATURE_RECONSTRUCTION_NOT_ORIGINAL_ISSUED_Q",
+  "hypothesis": "Asymmetric rare-tail jump rates and magnitudes plus truncated-Gaussian diffusion, zero Brownian drift, absorbing no-expiry +5%/-3% barriers; Jeffreys jump pseudocount .5, fixed 50% symmetric shrink; 14d primary, 7d and no-shrink/symmetric controls",
+  "parameters": {
+    "tail_threshold_RMS": 2.5,
+    "grid": 100,
+    "omega": 1.85,
+    "tolerance": 1e-10,
+    "max_iterations": 12000
+  },
+  "source_blob_sha1": [
+    "594ce747e68b2a6ffbdcd804f412a6fc564ad89b",
+    "9311aa2fa78b5f4f2570f8692ab6f58e646ec9bc",
+    "0c6e22a6c0f2e89aaba9048c268cdc8a0141dd2d",
+    "77b8ced578229f88a6a8a14f8b7415e036c79990",
+    "aad42a5e110b68cd97e4f5ee9d0e90882b8d475d",
+    "80a5090cadfaa764789e0aa9d672bcfac6c43196"
+  ],
+  "source_provider_delivery_at_original_t0_attested": false,
+  "historical_labels_accessed_in_this_forecast_stage": false,
+  "rows": [
+    {
+      "event_id": "B152_2025-01-01_BTCUSDT",
+      "date": "2025-01-01",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.2708813771562715,
+      "q_symmetric_null_14d": 0.38820004009234405,
+      "q_unshrunk_14d": 0.17705209887547954,
+      "q_tail_diffusion_7d": 0.2733012440471536,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 10,
+        "lambda_up": 0.013392857142857144,
+        "lambda_down": 0.025297619047619048,
+        "jump_up": 0.018561315652085852,
+        "jump_down": 0.0192355977501645,
+        "diffusion_variance": 0.00002253225733312394,
+        "threshold": 0.014972179471521307
+      },
+      "iterations_14d": 936
+    },
+    {
+      "event_id": "B152_2025-01-01_ETHUSDT",
+      "date": "2025-01-01",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3314472128002951,
+      "q_symmetric_null_14d": 0.39195141020818797,
+      "q_unshrunk_14d": 0.25737913409037416,
+      "q_tail_diffusion_7d": 0.283714179474336,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 10,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.026041666666666664,
+        "jump_up": 0.030967941103919355,
+        "jump_down": 0.027147357094451863,
+        "diffusion_variance": 0.000039674370404194045,
+        "threshold": 0.0211753582310362
+      },
+      "iterations_14d": 847
+    },
+    {
+      "event_id": "B152_2025-01-01_XRPUSDT",
+      "date": "2025-01-01",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3867188006629226,
+      "q_symmetric_null_14d": 0.39511335787982366,
+      "q_unshrunk_14d": 0.3700333463517147,
+      "q_tail_diffusion_7d": 0.3621240504347902,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 5,
+        "lambda_up": 0.011904761904761904,
+        "lambda_down": 0.014880952380952382,
+        "jump_up": 0.05345367498480499,
+        "jump_down": 0.04189695404433276,
+        "diffusion_variance": 0.00009166986507533102,
+        "threshold": 0.030644406745596812
+      },
+      "iterations_14d": 910
+    },
+    {
+      "event_id": "B152_2025-02-05_BTCUSDT",
+      "date": "2025-02-05",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.4208475684316624,
+      "q_symmetric_null_14d": 0.38956162273941686,
+      "q_unshrunk_14d": 0.470159477186559,
+      "q_tail_diffusion_7d": 0.36509644652220224,
+      "feature_14d": {
+        "positive_jumps": 8,
+        "negative_jumps": 5,
+        "lambda_up": 0.023065476190476192,
+        "lambda_down": 0.01860119047619048,
+        "jump_up": 0.01942420944632328,
+        "jump_down": 0.02109894211524512,
+        "diffusion_variance": 0.000019359359377858905,
+        "threshold": 0.01497114588136655
+      },
+      "iterations_14d": 722
+    },
+    {
+      "event_id": "B152_2025-02-05_ETHUSDT",
+      "date": "2025-02-05",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3639564750590647,
+      "q_symmetric_null_14d": 0.3980111853493387,
+      "q_unshrunk_14d": 0.3529188016023979,
+      "q_tail_diffusion_7d": 0.37911353382041957,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 4,
+        "lambda_up": 0.011160714285714284,
+        "lambda_down": 0.012648809523809524,
+        "jump_up": 0.03628130900246015,
+        "jump_down": 0.05736772305078097,
+        "diffusion_variance": 0.000059368924515179776,
+        "threshold": 0.028387722650718192
+      },
+      "iterations_14d": 885
+    },
+    {
+      "event_id": "B152_2025-02-05_XRPUSDT",
+      "date": "2025-02-05",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3972499952461946,
+      "q_symmetric_null_14d": 0.4004511349764785,
+      "q_unshrunk_14d": 0.3972499952461946,
+      "q_tail_diffusion_7d": 0.3701072551271203,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 5,
+        "lambda_up": 0.01636904761904762,
+        "lambda_down": 0.01636904761904762,
+        "jump_up": 0.05757234271295999,
+        "jump_down": 0.07426468220356226,
+        "diffusion_variance": 0.00010184705318874482,
+        "threshold": 0.03944387254590877
+      },
+      "iterations_14d": 839
+    },
+    {
+      "event_id": "B152_2025-03-05_BTCUSDT",
+      "date": "2025-03-05",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.36860031803836957,
+      "q_symmetric_null_14d": 0.39373536565306244,
+      "q_unshrunk_14d": 0.35421697407651354,
+      "q_tail_diffusion_7d": 0.36796523863468533,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 6,
+        "lambda_up": 0.01711309523809524,
+        "lambda_down": 0.018601190476190476,
+        "jump_up": 0.029120963673554812,
+        "jump_down": 0.031386727456946595,
+        "diffusion_variance": 0.00002775901157728249,
+        "threshold": 0.019405468134410027
+      },
+      "iterations_14d": 719
+    },
+    {
+      "event_id": "B152_2025-03-05_ETHUSDT",
+      "date": "2025-03-05",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.33708189878986256,
+      "q_symmetric_null_14d": 0.4131714000261936,
+      "q_unshrunk_14d": 0.23659300733414773,
+      "q_tail_diffusion_7d": 0.36876761615253006,
+      "feature_14d": {
+        "positive_jumps": 1,
+        "negative_jumps": 10,
+        "lambda_up": 0.011160714285714284,
+        "lambda_down": 0.024553571428571428,
+        "jump_up": 0.09126074516840177,
+        "jump_down": 0.03886440260019279,
+        "diffusion_variance": 0.00005571808027890999,
+        "threshold": 0.02817661504655414
+      },
+      "iterations_14d": 833
+    },
+    {
+      "event_id": "B152_2025-03-05_XRPUSDT",
+      "date": "2025-03-05",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.36873204850308516,
+      "q_symmetric_null_14d": 0.3968884259218814,
+      "q_unshrunk_14d": 0.3353503718365836,
+      "q_tail_diffusion_7d": 0.40120561289745393,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 7,
+        "lambda_up": 0.011160714285714284,
+        "lambda_down": 0.018601190476190476,
+        "jump_up": 0.12319065520938005,
+        "jump_down": 0.04722871871469325,
+        "diffusion_variance": 0.00012517919200476569,
+        "threshold": 0.04096472885339904
+      },
+      "iterations_14d": 979
+    },
+    {
+      "event_id": "B152_2025-04-02_BTCUSDT",
+      "date": "2025-04-02",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.37066817662818025,
+      "q_symmetric_null_14d": 0.3864517621643236,
+      "q_unshrunk_14d": 0.325756210282359,
+      "q_tail_diffusion_7d": 0.4238614768129763,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 6,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.017857142857142856,
+        "jump_up": 0.012882614264039915,
+        "jump_down": 0.011386923053182526,
+        "diffusion_variance": 0.000010017613983802676,
+        "threshold": 0.009521778349263307
+      },
+      "iterations_14d": 854
+    },
+    {
+      "event_id": "B152_2025-04-02_ETHUSDT",
+      "date": "2025-04-02",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.39286220197187277,
+      "q_symmetric_null_14d": 0.38786525579760284,
+      "q_unshrunk_14d": 0.4098869242186064,
+      "q_tail_diffusion_7d": 0.35607980478523166,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 4,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.01413690476190476,
+        "jump_up": 0.018552266247465886,
+        "jump_down": 0.020028266249849436,
+        "diffusion_variance": 0.00002109442396093276,
+        "threshold": 0.014114801280845954
+      },
+      "iterations_14d": 647
+    },
+    {
+      "event_id": "B152_2025-04-02_XRPUSDT",
+      "date": "2025-04-02",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.4412964445097763,
+      "q_symmetric_null_14d": 0.3939572287396182,
+      "q_unshrunk_14d": 0.4412964445097763,
+      "q_tail_diffusion_7d": 0.4170666361887394,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 2,
+        "lambda_up": 0.00744047619047619,
+        "lambda_down": 0.00744047619047619,
+        "jump_up": 0.058261067525009036,
+        "jump_down": 0.0229774176466232,
+        "diffusion_variance": 0.00003872662944059138,
+        "threshold": 0.02018077807220887
+      },
+      "iterations_14d": 971
+    },
+    {
+      "event_id": "B152_2025-05-07_BTCUSDT",
+      "date": "2025-05-07",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.4149383062503499,
+      "q_symmetric_null_14d": 0.38669143723356353,
+      "q_unshrunk_14d": 0.4769725695066581,
+      "q_tail_diffusion_7d": 0.43176380802237946,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 3,
+        "lambda_up": 0.014880952380952382,
+        "lambda_down": 0.011904761904761904,
+        "jump_up": 0.011581893763323237,
+        "jump_down": 0.013100786025126729,
+        "diffusion_variance": 0.000007498706402506598,
+        "threshold": 0.008377318080623542
+      },
+      "iterations_14d": 822
+    },
+    {
+      "event_id": "B152_2025-05-07_ETHUSDT",
+      "date": "2025-05-07",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3904458292476701,
+      "q_symmetric_null_14d": 0.38769164936042194,
+      "q_unshrunk_14d": 0.4075960999547434,
+      "q_tail_diffusion_7d": 0.346579277100847,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 4,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.01413690476190476,
+        "jump_up": 0.01787699130565166,
+        "jump_down": 0.01957409993078363,
+        "diffusion_variance": 0.000020511578277118655,
+        "threshold": 0.013700114722199593
+      },
+      "iterations_14d": 708
+    },
+    {
+      "event_id": "B152_2025-05-07_XRPUSDT",
+      "date": "2025-05-07",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.358575217048213,
+      "q_symmetric_null_14d": 0.38742196970337334,
+      "q_unshrunk_14d": 0.358575217048213,
+      "q_tail_diffusion_7d": 0.3031966841046285,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 5,
+        "lambda_up": 0.01636904761904762,
+        "lambda_down": 0.01636904761904762,
+        "jump_up": 0.016457901889334537,
+        "jump_down": 0.01988585516375374,
+        "diffusion_variance": 0.000022888645360198375,
+        "threshold": 0.014439804413725573
+      },
+      "iterations_14d": 905
+    },
+    {
+      "event_id": "B152_2025-06-04_BTCUSDT",
+      "date": "2025-06-04",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.3742594827562132,
+      "q_symmetric_null_14d": 0.3882683232252675,
+      "q_unshrunk_14d": 0.4272651755658271,
+      "q_tail_diffusion_7d": 0.321308108587959,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 4,
+        "lambda_up": 0.017857142857142856,
+        "lambda_down": 0.01488095238095238,
+        "jump_up": 0.013461242477541546,
+        "jump_down": 0.01717540642445181,
+        "diffusion_variance": 0.000009099327598500565,
+        "threshold": 0.010058994813698426
+      },
+      "iterations_14d": 718
+    },
+    {
+      "event_id": "B152_2025-06-04_ETHUSDT",
+      "date": "2025-06-04",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.2919268432610381,
+      "q_symmetric_null_14d": 0.3884379697168367,
+      "q_unshrunk_14d": 0.22807849747872136,
+      "q_tail_diffusion_7d": 0.33890925097588076,
+      "feature_14d": {
+        "positive_jumps": 1,
+        "negative_jumps": 6,
+        "lambda_up": 0.008184523809523808,
+        "lambda_down": 0.015625,
+        "jump_up": 0.021502125268328065,
+        "jump_down": 0.02741948766303996,
+        "diffusion_variance": 0.00003032296443958102,
+        "threshold": 0.017190001558248687
+      },
+      "iterations_14d": 998
+    },
+    {
+      "event_id": "B152_2025-06-04_XRPUSDT",
+      "date": "2025-06-04",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.2806433598649697,
+      "q_symmetric_null_14d": 0.3879662748783943,
+      "q_unshrunk_14d": 0.2349900849051485,
+      "q_tail_diffusion_7d": 0.29955965885463787,
+      "feature_14d": {
+        "positive_jumps": 1,
+        "negative_jumps": 4,
+        "lambda_up": 0.006696428571428571,
+        "lambda_down": 0.011160714285714284,
+        "jump_up": 0.016875903435945583,
+        "jump_down": 0.030109750810576402,
+        "diffusion_variance": 0.000023412099573071412,
+        "threshold": 0.014953898709963262
+      },
+      "iterations_14d": 1011
+    },
+    {
+      "event_id": "B152_2025-07-02_BTCUSDT",
+      "date": "2025-07-02",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.4188758563108647,
+      "q_symmetric_null_14d": 0.38838406000533987,
+      "q_unshrunk_14d": 0.48039584392537704,
+      "q_tail_diffusion_7d": 0.3052100000150436,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 4,
+        "lambda_up": 0.017857142857142856,
+        "lambda_down": 0.01488095238095238,
+        "jump_up": 0.013761989116278942,
+        "jump_down": 0.015121137766135107,
+        "diffusion_variance": 0.000007043662647894176,
+        "threshold": 0.00919573481528578
+      },
+      "iterations_14d": 674
+    },
+    {
+      "event_id": "B152_2025-07-02_ETHUSDT",
+      "date": "2025-07-02",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.36315464548120957,
+      "q_symmetric_null_14d": 0.3924783226960084,
+      "q_unshrunk_14d": 0.36315464548120957,
+      "q_tail_diffusion_7d": 0.5097082664335569,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 4,
+        "lambda_up": 0.013392857142857142,
+        "lambda_down": 0.013392857142857142,
+        "jump_up": 0.026204148583116593,
+        "jump_down": 0.03299387574810231,
+        "diffusion_variance": 0.000024650698061744405,
+        "threshold": 0.01728366371018774
+      },
+      "iterations_14d": 776
+    },
+    {
+      "event_id": "B152_2025-07-02_XRPUSDT",
+      "date": "2025-07-02",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.45873549215719306,
+      "q_symmetric_null_14d": 0.3909093866273839,
+      "q_unshrunk_14d": 0.49463260925894775,
+      "q_tail_diffusion_7d": 0.49283765216830855,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 3,
+        "lambda_up": 0.014880952380952382,
+        "lambda_down": 0.011904761904761904,
+        "jump_up": 0.030008726275016984,
+        "jump_down": 0.023800398304619958,
+        "diffusion_variance": 0.000023631413358301392,
+        "threshold": 0.016325891437583773
+      },
+      "iterations_14d": 806
+    },
+    {
+      "event_id": "B152_2025-08-06_BTCUSDT",
+      "date": "2025-08-06",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.2596600600383978,
+      "q_symmetric_null_14d": 0.38597418614407847,
+      "q_unshrunk_14d": 0.17440408023449402,
+      "q_tail_diffusion_7d": 0.2848460678766308,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 7,
+        "lambda_up": 0.013392857142857144,
+        "lambda_down": 0.019345238095238096,
+        "jump_up": 0.009287352345142589,
+        "jump_down": 0.010007191553989056,
+        "diffusion_variance": 0.000006579492131447891,
+        "threshold": 0.007712489636663304
+      },
+      "iterations_14d": 983
+    },
+    {
+      "event_id": "B152_2025-08-06_ETHUSDT",
+      "date": "2025-08-06",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.33894932275029027,
+      "q_symmetric_null_14d": 0.38765309566768386,
+      "q_unshrunk_14d": 0.2741276517678922,
+      "q_tail_diffusion_7d": 0.3033542563412707,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 7,
+        "lambda_up": 0.011160714285714284,
+        "lambda_down": 0.018601190476190476,
+        "jump_up": 0.022481015864805443,
+        "jump_down": 0.019271176742652836,
+        "diffusion_variance": 0.00002975126306017514,
+        "threshold": 0.01596380325790371
+      },
+      "iterations_14d": 980
+    },
+    {
+      "event_id": "B152_2025-08-06_XRPUSDT",
+      "date": "2025-08-06",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.33699552792470366,
+      "q_symmetric_null_14d": 0.39072990337748137,
+      "q_unshrunk_14d": 0.2770253060307318,
+      "q_tail_diffusion_7d": 0.35468318499640183,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 9,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.023809523809523808,
+        "jump_up": 0.02958333238899565,
+        "jump_down": 0.027398106834252936,
+        "diffusion_variance": 0.00004523300182735798,
+        "threshold": 0.021496602520140535
+      },
+      "iterations_14d": 899
+    },
+    {
+      "event_id": "B152_2025-09-03_BTCUSDT",
+      "date": "2025-09-03",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.4322502117755637,
+      "q_symmetric_null_14d": 0.3890675058752208,
+      "q_unshrunk_14d": 0.3721853967750078,
+      "q_tail_diffusion_7d": 0.4384399121224772,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 5,
+        "lambda_up": 0.011904761904761904,
+        "lambda_down": 0.014880952380952382,
+        "jump_up": 0.021028294463072566,
+        "jump_down": 0.01391691035650453,
+        "diffusion_variance": 0.000008800150161387167,
+        "threshold": 0.010051522604589181
+      },
+      "iterations_14d": 724
+    },
+    {
+      "event_id": "B152_2025-09-03_ETHUSDT",
+      "date": "2025-09-03",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.44259768640088776,
+      "q_symmetric_null_14d": 0.3909661513947044,
+      "q_unshrunk_14d": 0.4849119359976907,
+      "q_tail_diffusion_7d": 0.35982121508089715,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 2,
+        "lambda_up": 0.014136904761904762,
+        "lambda_down": 0.009672619047619048,
+        "jump_up": 0.03312177268928877,
+        "jump_down": 0.029662116395657634,
+        "diffusion_variance": 0.0000393622677985473,
+        "threshold": 0.02047141187966683
+      },
+      "iterations_14d": 897
+    },
+    {
+      "event_id": "B152_2025-09-03_XRPUSDT",
+      "date": "2025-09-03",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.44867058135426596,
+      "q_symmetric_null_14d": 0.3901338333449695,
+      "q_unshrunk_14d": 0.4782099048312957,
+      "q_tail_diffusion_7d": 0.4107519284570991,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 4,
+        "lambda_up": 0.017857142857142856,
+        "lambda_down": 0.01488095238095238,
+        "jump_up": 0.027949558660922007,
+        "jump_down": 0.02272701126020532,
+        "diffusion_variance": 0.000028189445735638426,
+        "threshold": 0.017948243153362676
+      },
+      "iterations_14d": 820
+    },
+    {
+      "event_id": "B152_2025-10-01_BTCUSDT",
+      "date": "2025-10-01",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.3366256359516673,
+      "q_symmetric_null_14d": 0.38655136450617045,
+      "q_unshrunk_14d": 0.3366256359516673,
+      "q_tail_diffusion_7d": 0.3173744633544724,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 6,
+        "lambda_up": 0.019345238095238096,
+        "lambda_down": 0.019345238095238096,
+        "jump_up": 0.00848648797140831,
+        "jump_down": 0.009489395575764448,
+        "diffusion_variance": 0.000004008615486521544,
+        "threshold": 0.006752226702811975
+      },
+      "iterations_14d": 777
+    },
+    {
+      "event_id": "B152_2025-10-01_ETHUSDT",
+      "date": "2025-10-01",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.37548380220357297,
+      "q_symmetric_null_14d": 0.3887184193965464,
+      "q_unshrunk_14d": 0.39455689183308135,
+      "q_tail_diffusion_7d": 0.41643396202170757,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 5,
+        "lambda_up": 0.018601190476190476,
+        "lambda_down": 0.01711309523809524,
+        "jump_up": 0.01688154788885961,
+        "jump_down": 0.019654007127011396,
+        "diffusion_variance": 0.0000153990893805323,
+        "threshold": 0.012944854229851659
+      },
+      "iterations_14d": 750
+    },
+    {
+      "event_id": "B152_2025-10-01_XRPUSDT",
+      "date": "2025-10-01",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3442224525584316,
+      "q_symmetric_null_14d": 0.3883607692630268,
+      "q_unshrunk_14d": 0.27650314306031726,
+      "q_tail_diffusion_7d": 0.3304182090019426,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 8,
+        "lambda_up": 0.01636904761904762,
+        "lambda_down": 0.022321428571428572,
+        "jump_up": 0.018400324782013866,
+        "jump_down": 0.016244211588680266,
+        "diffusion_variance": 0.000015852655023309884,
+        "threshold": 0.01285620465892107
+      },
+      "iterations_14d": 826
+    },
+    {
+      "event_id": "B152_2025-11-05_BTCUSDT",
+      "date": "2025-11-05",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.25465926539186146,
+      "q_symmetric_null_14d": 0.3870354864112557,
+      "q_unshrunk_14d": 0.17523133012593708,
+      "q_tail_diffusion_7d": 0.2701130727727094,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 7,
+        "lambda_up": 0.011160714285714284,
+        "lambda_down": 0.018601190476190476,
+        "jump_up": 0.01360575084564708,
+        "jump_down": 0.0163299659376356,
+        "diffusion_variance": 0.000013150711283900842,
+        "threshold": 0.011277342198148372
+      },
+      "iterations_14d": 972
+    },
+    {
+      "event_id": "B152_2025-11-05_ETHUSDT",
+      "date": "2025-11-05",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.299802843222201,
+      "q_symmetric_null_14d": 0.3888627856186323,
+      "q_unshrunk_14d": 0.2528512565415525,
+      "q_tail_diffusion_7d": 0.2737293961055979,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 7,
+        "lambda_up": 0.013392857142857144,
+        "lambda_down": 0.019345238095238096,
+        "jump_up": 0.01979940275218084,
+        "jump_down": 0.026519709127518252,
+        "diffusion_variance": 0.000029983686985391067,
+        "threshold": 0.01758520654771012
+      },
+      "iterations_14d": 933
+    },
+    {
+      "event_id": "B152_2025-11-05_XRPUSDT",
+      "date": "2025-11-05",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3280325741390429,
+      "q_symmetric_null_14d": 0.3891387003853529,
+      "q_unshrunk_14d": 0.29373125386909876,
+      "q_tail_diffusion_7d": 0.33105943414450384,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 7,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.020089285714285712,
+        "jump_up": 0.021626696939648415,
+        "jump_down": 0.026283480628447906,
+        "diffusion_variance": 0.0000337001009275867,
+        "threshold": 0.018656029241164492
+      },
+      "iterations_14d": 908
+    },
+    {
+      "event_id": "B152_2025-12-03_BTCUSDT",
+      "date": "2025-12-03",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.29932092350203704,
+      "q_symmetric_null_14d": 0.38980407479528284,
+      "q_unshrunk_14d": 0.21969844864564012,
+      "q_tail_diffusion_7d": 0.3435945980396094,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 10,
+        "lambda_up": 0.017857142857142856,
+        "lambda_down": 0.026785714285714288,
+        "jump_up": 0.02031161850685237,
+        "jump_down": 0.020474506653018663,
+        "diffusion_variance": 0.000019673626215118645,
+        "threshold": 0.015488266238533879
+      },
+      "iterations_14d": 800
+    },
+    {
+      "event_id": "B152_2025-12-03_ETHUSDT",
+      "date": "2025-12-03",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.347967065501575,
+      "q_symmetric_null_14d": 0.3917569848536693,
+      "q_unshrunk_14d": 0.31419839117299964,
+      "q_tail_diffusion_7d": 0.3833956826319159,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 7,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.020089285714285712,
+        "jump_up": 0.028676650105838863,
+        "jump_down": 0.031056296614516348,
+        "diffusion_variance": 0.00004023146131819653,
+        "threshold": 0.02127697158185623
+      },
+      "iterations_14d": 849
+    },
+    {
+      "event_id": "B152_2025-12-03_XRPUSDT",
+      "date": "2025-12-03",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3655329068729941,
+      "q_symmetric_null_14d": 0.39054341586505326,
+      "q_unshrunk_14d": 0.3446846303702335,
+      "q_tail_diffusion_7d": 0.38487312634465254,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 6,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.017857142857142856,
+        "jump_up": 0.029311903253633892,
+        "jump_down": 0.030550701063284464,
+        "diffusion_variance": 0.0000489833022917238,
+        "threshold": 0.022052404631573715
+      },
+      "iterations_14d": 891
+    },
+    {
+      "event_id": "B152_2026-01-07_BTCUSDT",
+      "date": "2026-01-07",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.3827563452478091,
+      "q_symmetric_null_14d": 0.38824463440582474,
+      "q_unshrunk_14d": 0.4900592323673177,
+      "q_tail_diffusion_7d": 0.42268687394515436,
+      "feature_14d": {
+        "positive_jumps": 7,
+        "negative_jumps": 4,
+        "lambda_up": 0.020089285714285712,
+        "lambda_down": 0.015625,
+        "jump_up": 0.010821037679795253,
+        "jump_down": 0.014226461569904814,
+        "diffusion_variance": 0.000004848283225041936,
+        "threshold": 0.007965808694212224
+      },
+      "iterations_14d": 599
+    },
+    {
+      "event_id": "B152_2026-01-07_ETHUSDT",
+      "date": "2026-01-07",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3970666076711741,
+      "q_symmetric_null_14d": 0.38786522804769075,
+      "q_unshrunk_14d": 0.45109645320889774,
+      "q_tail_diffusion_7d": 0.4570735780473895,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 4,
+        "lambda_up": 0.017857142857142856,
+        "lambda_down": 0.01488095238095238,
+        "jump_up": 0.013331695831882465,
+        "jump_down": 0.01560687131581684,
+        "diffusion_variance": 0.000008796385232374372,
+        "threshold": 0.009784116782257414
+      },
+      "iterations_14d": 661
+    },
+    {
+      "event_id": "B152_2026-01-07_XRPUSDT",
+      "date": "2026-01-07",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.42020753483631645,
+      "q_symmetric_null_14d": 0.3911024580512118,
+      "q_unshrunk_14d": 0.5145105495078911,
+      "q_tail_diffusion_7d": 0.3833693096006837,
+      "feature_14d": {
+        "positive_jumps": 9,
+        "negative_jumps": 4,
+        "lambda_up": 0.024553571428571428,
+        "lambda_down": 0.017113095238095236,
+        "jump_up": 0.018969789085723505,
+        "jump_down": 0.02481544888241244,
+        "diffusion_variance": 0.000016047253424274703,
+        "threshold": 0.014550169912435447
+      },
+      "iterations_14d": 629
+    },
+    {
+      "event_id": "B152_2026-02-04_BTCUSDT",
+      "date": "2026-02-04",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.2963084165963167,
+      "q_symmetric_null_14d": 0.39020592063066006,
+      "q_unshrunk_14d": 0.2073166101566701,
+      "q_tail_diffusion_7d": 0.30422872782175187,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 9,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.023809523809523808,
+        "jump_up": 0.021840606627092047,
+        "jump_down": 0.02119009656451729,
+        "diffusion_variance": 0.000018143714954843025,
+        "threshold": 0.014792531124401405
+      },
+      "iterations_14d": 796
+    },
+    {
+      "event_id": "B152_2026-02-04_ETHUSDT",
+      "date": "2026-02-04",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3705113804752033,
+      "q_symmetric_null_14d": 0.39533832500038546,
+      "q_unshrunk_14d": 0.3153000214629746,
+      "q_tail_diffusion_7d": 0.38825445285144017,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 8,
+        "lambda_up": 0.01413690476190476,
+        "lambda_down": 0.021577380952380952,
+        "jump_up": 0.04126663070315869,
+        "jump_down": 0.029998404101077014,
+        "diffusion_variance": 0.00004817261772304746,
+        "threshold": 0.0231274985311777
+      },
+      "iterations_14d": 832
+    },
+    {
+      "event_id": "B152_2026-02-04_XRPUSDT",
+      "date": "2026-02-04",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3803805356425615,
+      "q_symmetric_null_14d": 0.3904396887080336,
+      "q_unshrunk_14d": 0.3689196221172599,
+      "q_tail_diffusion_7d": 0.3780528991653045,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 7,
+        "lambda_up": 0.020089285714285716,
+        "lambda_down": 0.021577380952380952,
+        "jump_up": 0.026053573050431194,
+        "jump_down": 0.025778547515200534,
+        "diffusion_variance": 0.00003595075982031252,
+        "threshold": 0.019918466575053778
+      },
+      "iterations_14d": 777
+    },
+    {
+      "event_id": "B152_2026-03-04_BTCUSDT",
+      "date": "2026-03-04",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.39099498614745093,
+      "q_symmetric_null_14d": 0.3910975883590554,
+      "q_unshrunk_14d": 0.4304429099002415,
+      "q_tail_diffusion_7d": 0.4180363205838864,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 3,
+        "lambda_up": 0.014880952380952382,
+        "lambda_down": 0.011904761904761904,
+        "jump_up": 0.022933248152199326,
+        "jump_down": 0.029817923368588833,
+        "diffusion_variance": 0.00002073893615735542,
+        "threshold": 0.015332856392034598
+      },
+      "iterations_14d": 698
+    },
+    {
+      "event_id": "B152_2026-03-04_ETHUSDT",
+      "date": "2026-03-04",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3922531243743129,
+      "q_symmetric_null_14d": 0.3917497215224906,
+      "q_unshrunk_14d": 0.40625897861045573,
+      "q_tail_diffusion_7d": 0.4235684246291726,
+      "feature_14d": {
+        "positive_jumps": 6,
+        "negative_jumps": 5,
+        "lambda_up": 0.018601190476190476,
+        "lambda_down": 0.01711309523809524,
+        "jump_up": 0.02662199318460508,
+        "jump_down": 0.029314792544450796,
+        "diffusion_variance": 0.00003002684901461723,
+        "threshold": 0.018929588663185608
+      },
+      "iterations_14d": 698
+    },
+    {
+      "event_id": "B152_2026-03-04_XRPUSDT",
+      "date": "2026-03-04",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.412850153178551,
+      "q_symmetric_null_14d": 0.38992723449693056,
+      "q_unshrunk_14d": 0.4527818224325102,
+      "q_tail_diffusion_7d": 0.4071350717876746,
+      "feature_14d": {
+        "positive_jumps": 7,
+        "negative_jumps": 4,
+        "lambda_up": 0.020089285714285712,
+        "lambda_down": 0.015625,
+        "jump_up": 0.0238158910554405,
+        "jump_down": 0.026861109126854105,
+        "diffusion_variance": 0.000032616596879178936,
+        "threshold": 0.018445524791225288
+      },
+      "iterations_14d": 784
+    },
+    {
+      "event_id": "B152_2026-04-01_BTCUSDT",
+      "date": "2026-04-01",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.3022610055314915,
+      "q_symmetric_null_14d": 0.3880560425342274,
+      "q_unshrunk_14d": 0.19336504049706132,
+      "q_tail_diffusion_7d": 0.2947642701502231,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 8,
+        "lambda_up": 0.011904761904761904,
+        "lambda_down": 0.020833333333333336,
+        "jump_up": 0.018242618303865754,
+        "jump_down": 0.01531196038459992,
+        "diffusion_variance": 0.000013524237814299054,
+        "threshold": 0.011565694913377934
+      },
+      "iterations_14d": 891
+    },
+    {
+      "event_id": "B152_2026-04-01_ETHUSDT",
+      "date": "2026-04-01",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.34807825643884854,
+      "q_symmetric_null_14d": 0.3904855009322319,
+      "q_unshrunk_14d": 0.2847866658336216,
+      "q_tail_diffusion_7d": 0.2976121660959896,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 8,
+        "lambda_up": 0.01636904761904762,
+        "lambda_down": 0.022321428571428572,
+        "jump_up": 0.02389163549614426,
+        "jump_down": 0.021148815390246822,
+        "diffusion_variance": 0.000019600574701892743,
+        "threshold": 0.015573480603925289
+      },
+      "iterations_14d": 759
+    },
+    {
+      "event_id": "B152_2026-04-01_XRPUSDT",
+      "date": "2026-04-01",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.344580879960389,
+      "q_symmetric_null_14d": 0.3884070046247922,
+      "q_unshrunk_14d": 0.24912857149561032,
+      "q_tail_diffusion_7d": 0.44632220942568573,
+      "feature_14d": {
+        "positive_jumps": 2,
+        "negative_jumps": 7,
+        "lambda_up": 0.011160714285714284,
+        "lambda_down": 0.018601190476190476,
+        "jump_up": 0.021837820191894175,
+        "jump_down": 0.016087453747600542,
+        "diffusion_variance": 0.000016242984422260916,
+        "threshold": 0.012467886623720848
+      },
+      "iterations_14d": 875
+    },
+    {
+      "event_id": "B152_2026-05-06_BTCUSDT",
+      "date": "2026-05-06",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.4497750192324341,
+      "q_symmetric_null_14d": 0.3876512572609018,
+      "q_unshrunk_14d": 0.41706967216543245,
+      "q_tail_diffusion_7d": 0.5658260217338631,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 5,
+        "lambda_up": 0.01413690476190476,
+        "lambda_down": 0.015625,
+        "jump_up": 0.015275863566618142,
+        "jump_down": 0.011274707372879788,
+        "diffusion_variance": 0.000006509501262185317,
+        "threshold": 0.008429369067105213
+      },
+      "iterations_14d": 750
+    },
+    {
+      "event_id": "B152_2026-05-06_ETHUSDT",
+      "date": "2026-05-06",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3216842649994171,
+      "q_symmetric_null_14d": 0.3885111819694997,
+      "q_unshrunk_14d": 0.2556597672326918,
+      "q_tail_diffusion_7d": 0.3400222309818204,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 7,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.020089285714285712,
+        "jump_up": 0.01572707186712008,
+        "jump_down": 0.015466078433817263,
+        "diffusion_variance": 0.000009627493669802999,
+        "threshold": 0.0106671129958028
+      },
+      "iterations_14d": 776
+    },
+    {
+      "event_id": "B152_2026-05-06_XRPUSDT",
+      "date": "2026-05-06",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.44610162398045516,
+      "q_symmetric_null_14d": 0.38738433316365145,
+      "q_unshrunk_14d": 0.5986360949082702,
+      "q_tail_diffusion_7d": 0.45551458176870974,
+      "feature_14d": {
+        "positive_jumps": 8,
+        "negative_jumps": 3,
+        "lambda_up": 0.021577380952380952,
+        "lambda_down": 0.01413690476190476,
+        "jump_up": 0.01060183985181204,
+        "jump_down": 0.0137898456630877,
+        "diffusion_variance": 0.000006608108256439262,
+        "threshold": 0.008318588237792357
+      },
+      "iterations_14d": 749
+    },
+    {
+      "event_id": "B152_2026-06-03_BTCUSDT",
+      "date": "2026-06-03",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.27469582007780324,
+      "q_symmetric_null_14d": 0.38694724467178065,
+      "q_unshrunk_14d": 0.17032835711462377,
+      "q_tail_diffusion_7d": 0.15998060680624732,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 8,
+        "lambda_up": 0.01413690476190476,
+        "lambda_down": 0.021577380952380952,
+        "jump_up": 0.012179444372237688,
+        "jump_down": 0.011602512974022927,
+        "diffusion_variance": 0.000007593588677705821,
+        "threshold": 0.008809936570196507
+      },
+      "iterations_14d": 885
+    },
+    {
+      "event_id": "B152_2026-06-03_ETHUSDT",
+      "date": "2026-06-03",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.3329904640591559,
+      "q_symmetric_null_14d": 0.3897707102006283,
+      "q_unshrunk_14d": 0.22994217940455333,
+      "q_tail_diffusion_7d": 0.20643454251320678,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 8,
+        "lambda_up": 0.01413690476190476,
+        "lambda_down": 0.021577380952380952,
+        "jump_up": 0.020662467285866033,
+        "jump_down": 0.01658790714504743,
+        "diffusion_variance": 0.000011678688308505799,
+        "threshold": 0.011943132144400702
+      },
+      "iterations_14d": 744
+    },
+    {
+      "event_id": "B152_2026-06-03_XRPUSDT",
+      "date": "2026-06-03",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3119206898622246,
+      "q_symmetric_null_14d": 0.38750563164646995,
+      "q_unshrunk_14d": 0.25570132589155686,
+      "q_tail_diffusion_7d": 0.250978813817533,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 6,
+        "lambda_up": 0.012648809523809524,
+        "lambda_down": 0.01711309523809524,
+        "jump_up": 0.015646602392999847,
+        "jump_down": 0.016861298639230967,
+        "diffusion_variance": 0.000013901199431408822,
+        "threshold": 0.0115719361198177
+      },
+      "iterations_14d": 917
+    },
+    {
+      "event_id": "B152_2026-07-01_BTCUSDT",
+      "date": "2026-07-01",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.31031094728817143,
+      "q_symmetric_null_14d": 0.39058844292486783,
+      "q_unshrunk_14d": 0.27161549247148886,
+      "q_tail_diffusion_7d": 0.3351059777215949,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 6,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.017857142857142856,
+        "jump_up": 0.01950526680251574,
+        "jump_down": 0.02344947956352487,
+        "diffusion_variance": 0.000013651129078069316,
+        "threshold": 0.013867268789770876
+      },
+      "iterations_14d": 742
+    },
+    {
+      "event_id": "B152_2026-07-01_ETHUSDT",
+      "date": "2026-07-01",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.30177419428839414,
+      "q_symmetric_null_14d": 0.3916997052593578,
+      "q_unshrunk_14d": 0.2586949532648074,
+      "q_tail_diffusion_7d": 0.3473479149209794,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 8,
+        "lambda_up": 0.01860119047619048,
+        "lambda_down": 0.023065476190476192,
+        "jump_up": 0.0214132148588412,
+        "jump_down": 0.026652788179496456,
+        "diffusion_variance": 0.000018882576333266064,
+        "threshold": 0.017235812672145585
+      },
+      "iterations_14d": 713
+    },
+    {
+      "event_id": "B152_2026-07-01_XRPUSDT",
+      "date": "2026-07-01",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.3013558677510327,
+      "q_symmetric_null_14d": 0.3892954697522682,
+      "q_unshrunk_14d": 0.27114525799365674,
+      "q_tail_diffusion_7d": 0.3295467239587675,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 6,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.017857142857142856,
+        "jump_up": 0.01791942159366099,
+        "jump_down": 0.02504909737941279,
+        "diffusion_variance": 0.000020157073300607616,
+        "threshold": 0.015602731024492998
+      },
+      "iterations_14d": 858
+    },
+    {
+      "event_id": "B152_2026-08-05_BTCUSDT",
+      "date": "2026-08-05",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.29349401452187324,
+      "q_symmetric_null_14d": 0.3864556499860825,
+      "q_unshrunk_14d": 0.26711841583428786,
+      "q_tail_diffusion_7d": 0.3482348500290485,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 6,
+        "lambda_up": 0.01711309523809524,
+        "lambda_down": 0.018601190476190476,
+        "jump_up": 0.009105327228366277,
+        "jump_down": 0.011014487977494861,
+        "diffusion_variance": 0.000005812899304982735,
+        "threshold": 0.0076619558137700685
+      },
+      "iterations_14d": 883
+    },
+    {
+      "event_id": "B152_2026-08-05_ETHUSDT",
+      "date": "2026-08-05",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.2996542272688633,
+      "q_symmetric_null_14d": 0.38717801742134594,
+      "q_unshrunk_14d": 0.26087676881254646,
+      "q_tail_diffusion_7d": 0.31726485927873427,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 6,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.017857142857142856,
+        "jump_up": 0.012835716759269866,
+        "jump_down": 0.015699385365379737,
+        "diffusion_variance": 0.000011466201285023978,
+        "threshold": 0.010687856114856627
+      },
+      "iterations_14d": 909
+    },
+    {
+      "event_id": "B152_2026-08-05_XRPUSDT",
+      "date": "2026-08-05",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.297224621713369,
+      "q_symmetric_null_14d": 0.38657286638433974,
+      "q_unshrunk_14d": 0.297224621713369,
+      "q_tail_diffusion_7d": 0.36271175951436196,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 5,
+        "lambda_up": 0.01636904761904762,
+        "lambda_down": 0.01636904761904762,
+        "jump_up": 0.009737011204798899,
+        "jump_down": 0.013687634356060218,
+        "diffusion_variance": 0.000008248737503825176,
+        "threshold": 0.008899649425670486
+      },
+      "iterations_14d": 922
+    },
+    {
+      "event_id": "B152_2026-09-02_BTCUSDT",
+      "date": "2026-09-02",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.5266873329240587,
+      "q_symmetric_null_14d": 0.3899464135357912,
+      "q_unshrunk_14d": 0.5476817014405411,
+      "q_tail_diffusion_7d": 0.26613346584060255,
+      "feature_14d": {
+        "positive_jumps": 5,
+        "negative_jumps": 4,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.01413690476190476,
+        "jump_up": 0.027036727232431446,
+        "jump_down": 0.015136703160875786,
+        "diffusion_variance": 0.000014080538608455114,
+        "threshold": 0.013520675309504973
+      },
+      "iterations_14d": 747
+    },
+    {
+      "event_id": "B152_2026-09-02_ETHUSDT",
+      "date": "2026-09-02",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.5335599657004995,
+      "q_symmetric_null_14d": 0.39358048678971197,
+      "q_unshrunk_14d": 0.6357279217261024,
+      "q_tail_diffusion_7d": 0.31820745473894557,
+      "feature_14d": {
+        "positive_jumps": 8,
+        "negative_jumps": 2,
+        "lambda_up": 0.020833333333333336,
+        "lambda_down": 0.011904761904761904,
+        "jump_up": 0.032271264648022546,
+        "jump_down": 0.02603215854786889,
+        "diffusion_variance": 0.000021428070459160074,
+        "threshold": 0.018568067004501823
+      },
+      "iterations_14d": 689
+    },
+    {
+      "event_id": "B152_2026-09-02_XRPUSDT",
+      "date": "2026-09-02",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.4302943640813565,
+      "q_symmetric_null_14d": 0.4021388873430765,
+      "q_unshrunk_14d": 0.47356769683251104,
+      "q_tail_diffusion_7d": 0.32837731069461834,
+      "feature_14d": {
+        "positive_jumps": 8,
+        "negative_jumps": 3,
+        "lambda_up": 0.021577380952380952,
+        "lambda_down": 0.01413690476190476,
+        "jump_up": 0.04393999694997073,
+        "jump_down": 0.06037726883591244,
+        "diffusion_variance": 0.00007994582971505737,
+        "threshold": 0.03220818297832789
+      },
+      "iterations_14d": 777
+    },
+    {
+      "event_id": "B152_2026-10-07_BTCUSDT",
+      "date": "2026-10-07",
+      "asset": "BTCUSDT",
+      "q_tail_diffusion_14d": 0.35537042493735266,
+      "q_symmetric_null_14d": 0.38657277671319284,
+      "q_unshrunk_14d": 0.30159874881302134,
+      "q_tail_diffusion_7d": 0.42751429164513977,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 6,
+        "lambda_up": 0.01488095238095238,
+        "lambda_down": 0.017857142857142856,
+        "jump_up": 0.01167341558424484,
+        "jump_down": 0.010748255559158556,
+        "diffusion_variance": 0.000007115387121774458,
+        "threshold": 0.00829109081596865
+      },
+      "iterations_14d": 842
+    },
+    {
+      "event_id": "B152_2026-10-07_ETHUSDT",
+      "date": "2026-10-07",
+      "asset": "ETHUSDT",
+      "q_tail_diffusion_14d": 0.2847967910265472,
+      "q_symmetric_null_14d": 0.3865420378607596,
+      "q_unshrunk_14d": 0.2255454683163967,
+      "q_tail_diffusion_7d": 0.29811124835479735,
+      "feature_14d": {
+        "positive_jumps": 4,
+        "negative_jumps": 7,
+        "lambda_up": 0.015625,
+        "lambda_down": 0.020089285714285712,
+        "jump_up": 0.010885739033147157,
+        "jump_down": 0.012403852308304384,
+        "diffusion_variance": 0.000009001947302954776,
+        "threshold": 0.009256573407274276
+      },
+      "iterations_14d": 933
+    },
+    {
+      "event_id": "B152_2026-10-07_XRPUSDT",
+      "date": "2026-10-07",
+      "asset": "XRPUSDT",
+      "q_tail_diffusion_14d": 0.31814128654998547,
+      "q_symmetric_null_14d": 0.3887856551449602,
+      "q_unshrunk_14d": 0.25225216402581113,
+      "q_tail_diffusion_7d": 0.2693781541347527,
+      "feature_14d": {
+        "positive_jumps": 3,
+        "negative_jumps": 8,
+        "lambda_up": 0.01413690476190476,
+        "lambda_down": 0.021577380952380952,
+        "jump_up": 0.02132582888412789,
+        "jump_down": 0.021289985844400547,
+        "diffusion_variance": 0.000025245029414718985,
+        "threshold": 0.015923066743743275
+      },
+      "iterations_14d": 902
+    }
+  ]
+}
