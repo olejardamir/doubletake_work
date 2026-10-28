@@ -1,0 +1,148 @@
+{
+  "sequence": "B183",
+  "classification": "EXPOSED_RETROSPECTIVE_DATE_CLUSTER_DESCRIPTIVE_NOT_PROSPECTIVE",
+  "bootstrap_method": "20,000 resamples of date/cohort blocks with replacement; LCG seed 18320261028, 2.5% and 97.5% empirical quantiles; observational and label-exposed only",
+  "robustness": {
+    "B152": {
+      "n": 61,
+      "dates": 21,
+      "delta": 0.005680102178624667,
+      "date_cluster_bootstrap95": [
+        -0.0016334785752311941,
+        0.013445507868486539
+      ],
+      "squared_error_correlation": 0.9873186987206046,
+      "mean_abs_probability_shift": 0.017720845862672037,
+      "top1_complete_dates": 20,
+      "top1_C184_target": 12,
+      "top1_flow_target": 12,
+      "top1_changed_dates": 3,
+      "calibration_bins": [
+        {
+          "bin": 0,
+          "n": 4,
+          "mean_q": 0.1566890548420617,
+          "target_rate": 0.25
+        },
+        {
+          "bin": 1,
+          "n": 27,
+          "mean_q": 0.3312465367694441,
+          "target_rate": 0.5925925925925926
+        },
+        {
+          "bin": 2,
+          "n": 28,
+          "mean_q": 0.465250435510915,
+          "target_rate": 0.5714285714285714
+        },
+        {
+          "bin": 3,
+          "n": 2,
+          "mean_q": 0.6325652216954509,
+          "target_rate": 0.5
+        },
+        {
+          "bin": 4,
+          "n": 0,
+          "mean_q": null,
+          "target_rate": null
+        }
+      ]
+    },
+    "B155": {
+      "n": 36,
+      "dates": 12,
+      "delta": -0.0036229447817552884,
+      "date_cluster_bootstrap95": [
+        -0.012598917603868292,
+        0.005074923706287399
+      ],
+      "squared_error_correlation": 0.9573637319832488,
+      "mean_abs_probability_shift": 0.023233935193444202,
+      "top1_complete_dates": 12,
+      "top1_C184_target": 4,
+      "top1_flow_target": 4,
+      "top1_changed_dates": 2,
+      "calibration_bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "mean_q": null,
+          "target_rate": null
+        },
+        {
+          "bin": 1,
+          "n": 20,
+          "mean_q": 0.3312247556981015,
+          "target_rate": 0.05
+        },
+        {
+          "bin": 2,
+          "n": 13,
+          "mean_q": 0.49959884285224315,
+          "target_rate": 0.46153846153846156
+        },
+        {
+          "bin": 3,
+          "n": 3,
+          "mean_q": 0.6563675432609156,
+          "target_rate": 1
+        },
+        {
+          "bin": 4,
+          "n": 0,
+          "mean_q": null,
+          "target_rate": null
+        }
+      ]
+    },
+    "ALL": {
+      "n": 97,
+      "dates": 33,
+      "delta": 0.002227424956215694,
+      "date_cluster_bootstrap95": [
+        -0.0036788975371052036,
+        0.008310532652941172
+      ],
+      "squared_error_correlation": 0.9862492991325499,
+      "mean_abs_probability_shift": 0.019766940872030778,
+      "top1_complete_dates": 32,
+      "top1_C184_target": 16,
+      "top1_flow_target": 16,
+      "top1_changed_dates": 5,
+      "calibration_bins": [
+        {
+          "bin": 0,
+          "n": 4,
+          "mean_q": 0.1566890548420617,
+          "target_rate": 0.25
+        },
+        {
+          "bin": 1,
+          "n": 47,
+          "mean_q": 0.3312372682284472,
+          "target_rate": 0.3617021276595745
+        },
+        {
+          "bin": 2,
+          "n": 41,
+          "mean_q": 0.4761413939362142,
+          "target_rate": 0.5365853658536586
+        },
+        {
+          "bin": 3,
+          "n": 5,
+          "mean_q": 0.6468466146347297,
+          "target_rate": 0.8
+        },
+        {
+          "bin": 4,
+          "n": 0,
+          "mean_q": null,
+          "target_rate": null
+        }
+      ]
+    }
+  }
+}
