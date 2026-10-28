@@ -1,0 +1,307 @@
+{
+  "sequence": "C191",
+  "classification": "EXPOSED_RETROSPECTIVE_LABELS_KNOWN_BEFORE_DESIGN_NO_PROSPECTIVE_Q",
+  "forecast_source_sha1": "c168e715d1fa855137727bc49df7bcc94c80df7e",
+  "labels_source_sha1": "c63671ef114ace8dc460f5107ca5410a98aa3e87",
+  "cohort": "B152",
+  "n_total": 66,
+  "n_resolved": 61,
+  "n_target": 34,
+  "n_adverse": 27,
+  "n_U": 5,
+  "U_event_ids": [
+    {
+      "event_id": "B152_2025-11-05_ETHUSDT",
+      "status": "U_AMBIGUOUS"
+    },
+    {
+      "event_id": "B152_2025-11-05_XRPUSDT",
+      "status": "U_AMBIGUOUS"
+    },
+    {
+      "event_id": "B152_2026-10-07_BTCUSDT",
+      "status": "U_UNVERIFIABLE"
+    },
+    {
+      "event_id": "B152_2026-10-07_ETHUSDT",
+      "status": "U_UNVERIFIABLE"
+    },
+    {
+      "event_id": "B152_2026-10-07_XRPUSDT",
+      "status": "U_UNVERIFIABLE"
+    }
+  ],
+  "metrics": {
+    "B": {
+      "n": 61,
+      "brier": 0.32018342021091156,
+      "logloss": 0.8746857554648371,
+      "mean_q": 0.3504386535361915,
+      "TP": 3,
+      "FP": 6,
+      "FN": 31,
+      "TN": 21
+    },
+    "C184": {
+      "n": 61,
+      "brier": 0.27821576986235674,
+      "logloss": 0.7535814625191108,
+      "mean_q": 0.3934734054917735,
+      "TP": 5,
+      "FP": 2,
+      "FN": 29,
+      "TN": 25
+    },
+    "markov14": {
+      "n": 61,
+      "brier": 0.4017279599753641,
+      "logloss": 1.1802819572862993,
+      "mean_q": 0.3083110429804159,
+      "TP": 4,
+      "FP": 7,
+      "FN": 30,
+      "TN": 20
+    },
+    "iid14": {
+      "n": 61,
+      "brier": 0.3968269916461308,
+      "logloss": 1.1427036748957486,
+      "mean_q": 0.307823380927304,
+      "TP": 5,
+      "FP": 6,
+      "FN": 29,
+      "TN": 21
+    },
+    "q_tail_diffusion_14d": {
+      "n": 61,
+      "brier": 0.281236417414597,
+      "logloss": 0.759981949615918,
+      "mean_q": 0.3648296005942796,
+      "TP": 2,
+      "FP": 0,
+      "FN": 32,
+      "TN": 27
+    },
+    "q_symmetric_null_14d": {
+      "n": 61,
+      "brier": 0.2745080301654682,
+      "logloss": 0.7431744967011932,
+      "mean_q": 0.390476203598579,
+      "TP": 0,
+      "FP": 0,
+      "FN": 34,
+      "TN": 27
+    },
+    "q_unshrunk_14d": {
+      "n": 61,
+      "brier": 0.28922704560531,
+      "logloss": 0.7833763424380207,
+      "mean_q": 0.34912906524474574,
+      "TP": 3,
+      "FP": 1,
+      "FN": 31,
+      "TN": 26
+    },
+    "q_tail_diffusion_7d": {
+      "n": 61,
+      "brier": 0.2881086037627914,
+      "logloss": 0.7731414058617836,
+      "mean_q": 0.3584978180102633,
+      "TP": 1,
+      "FP": 1,
+      "FN": 33,
+      "TN": 26
+    }
+  },
+  "primary_delta_brier_vs_C184": 0.003020647552240132,
+  "primary_delta_brier_vs_B": -0.038947002796314426,
+  "primary_delta_logloss_vs_C184": 0.006400487096807184,
+  "primary_delta_brier_vs_null": 0.006728387249128808,
+  "primary_squared_error_corr_C184": 0.7850574940635854,
+  "mean_abs_q_diff_C184": 0.07906767166578049,
+  "date_blocks": {
+    "n": 21,
+    "wins": 12,
+    "losses": 9,
+    "ties": 0,
+    "leave_one_date_out_delta_range": [
+      -0.006384479682514195,
+      0.008198279957434641
+    ],
+    "bootstrap95_descriptive": [
+      -0.029250304305977227,
+      0.03674402906155082
+    ],
+    "bydate": [
+      {
+        "date": "2025-01-01",
+        "n": 3,
+        "target": 3,
+        "delta_C184": 0.02336978639825839,
+        "delta_B": -0.09168676760814969
+      },
+      {
+        "date": "2025-02-05",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.019764910238407745,
+        "delta_B": 0.08195931487169679
+      },
+      {
+        "date": "2025-03-05",
+        "n": 3,
+        "target": 3,
+        "delta_C184": 0.03660102862953246,
+        "delta_B": -0.030944356215482416
+      },
+      {
+        "date": "2025-04-02",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.0027083311989129313,
+        "delta_B": 0.11528564665477135
+      },
+      {
+        "date": "2025-05-07",
+        "n": 3,
+        "target": 3,
+        "delta_C184": 0.10793372968886554,
+        "delta_B": 0.14105963036010757
+      },
+      {
+        "date": "2025-06-04",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.07264133057644101,
+        "delta_B": -0.1267940545958555
+      },
+      {
+        "date": "2025-07-02",
+        "n": 3,
+        "target": 3,
+        "delta_C184": -0.08651475241447903,
+        "delta_B": -0.07739499844201449
+      },
+      {
+        "date": "2025-08-06",
+        "n": 3,
+        "target": 3,
+        "delta_C184": 0.18485310742415714,
+        "delta_B": 0.08534958523455609
+      },
+      {
+        "date": "2025-09-03",
+        "n": 3,
+        "target": 3,
+        "delta_C184": -0.09307676541056448,
+        "delta_B": -0.10835346782670635
+      },
+      {
+        "date": "2025-10-01",
+        "n": 3,
+        "target": 3,
+        "delta_C184": 0.08159129265994329,
+        "delta_B": 0.10078381080462497
+      },
+      {
+        "date": "2025-11-05",
+        "n": 1,
+        "target": 1,
+        "delta_C184": -0.1314525825781957,
+        "delta_B": -0.31539062032174703
+      },
+      {
+        "date": "2025-12-03",
+        "n": 3,
+        "target": 1,
+        "delta_C184": 0.022826832157426803,
+        "delta_B": -0.01527810836193603
+      },
+      {
+        "date": "2026-01-07",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.06311929138610291,
+        "delta_B": -0.4088192193317886
+      },
+      {
+        "date": "2026-02-04",
+        "n": 3,
+        "target": 0,
+        "delta_C184": 0.04465015715583942,
+        "delta_B": 0.11159578430936745
+      },
+      {
+        "date": "2026-03-04",
+        "n": 3,
+        "target": 3,
+        "delta_C184": -0.0157480407472765,
+        "delta_B": -0.04489442363283943
+      },
+      {
+        "date": "2026-04-01",
+        "n": 3,
+        "target": 0,
+        "delta_C184": -0.08162517485193248,
+        "delta_B": -0.00506356301281793
+      },
+      {
+        "date": "2026-05-06",
+        "n": 3,
+        "target": 1,
+        "delta_C184": -0.09708024561485362,
+        "delta_B": -0.20861597684298938
+      },
+      {
+        "date": "2026-06-03",
+        "n": 3,
+        "target": 0,
+        "delta_C184": 0.0650071127358962,
+        "delta_B": 0.0852042660288153
+      },
+      {
+        "date": "2026-07-01",
+        "n": 3,
+        "target": 3,
+        "delta_C184": -0.02623749246940917,
+        "delta_B": -0.3241128363073871
+      },
+      {
+        "date": "2026-08-05",
+        "n": 3,
+        "target": 2,
+        "delta_C184": 0.09767747801761724,
+        "delta_B": 0.07544535382120605
+      },
+      {
+        "date": "2026-09-02",
+        "n": 3,
+        "target": 2,
+        "delta_C184": -0.0007568288708752572,
+        "delta_B": -0.04151780332498953
+      }
+    ]
+  },
+  "per_asset": {
+    "BTCUSDT": {
+      "n": 21,
+      "delta_C184": -0.002841019698519113,
+      "delta_B": -0.057676986500523775,
+      "brier": 0.2949355235521018
+    },
+    "ETHUSDT": {
+      "n": 20,
+      "delta_C184": 0.012425982818382175,
+      "delta_B": -0.05079657651063232,
+      "brier": 0.28969095569401004
+    },
+    "XRPUSDT": {
+      "n": 20,
+      "delta_C184": -0.0002299371006046935,
+      "delta_B": -0.0074309461925767,
+      "brier": 0.258397817690804
+    }
+  },
+  "limitations": "All labels exposed before candidate design; historical provider delivery and original pre-event q unverified; first-hit maturity not independently attested; research only, not blind or prospective. No trade, A165 change or D release.",
+  "next_falsifier": "Execute unchanged C191 on disjoint raw B155 or B154 hourly sources, with same-event B/M/C184 and date-block robustness; no tuning on B152 outcomes. OCT29 A165 27 q independent C receipt remains first priority."
+}
