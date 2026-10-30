@@ -29,4 +29,11 @@ These are **hypotheses for later assessment**, not executable implementation req
 - **Unknowns:** Original write-time format, independent provenance, safe compatibility interpretation, and whether a narrow read-only degraded-state report is preferable to mutation.
 - **Promotion evidence:** Reproducible isolated fixture, independently validated provenance and threat-model review, a non-destructive design that fails closed on genuinely tampered data, and focused positive/negative tests. Any state rewrite or integrity-policy change requires its existing authority; do not self-authorize it.
 
+## R-005 — Assess stale registry identity hygiene without unsafe state deletion
+- **Question:** Can stale or non-source identities in a durable worker registry be distinguished from legitimate retained history and prevented from repeatedly consuming reconciliation effort?
+- **Potential value:** Reduce misleading availability signals and repeated bookkeeping while preserving valid provenance and rollback.
+- **Existing evidence:** A recent read-only census found a substantial population of invalid-looking historical entries in one registry, with repeat reconciliation churn. The existing source-scope correction prevents new instances of the observed contamination, but does not clean historical entries. The census does **not** establish this as the cause of the live-cycle timeout, and a separate capability catalogue was not shown to be affected.
+- **Unknowns:** Authoritative identity/provenance rules, legitimate retention obligations, safe quarantine semantics, cost of keeping historical entries, and whether any improvement is material after the pending performance corrections are activated.
+- **Promotion evidence:** A reproducible synthetic fixture, measured post-activation impact, a non-destructive fail-closed plan, independent positive/negative tests, and existing authorization for any retained-state mutation. No purge, re-seal or self-granted repair is authorized by this research entry.
+
 No third-party library or additional governance layer is recommended by these hypotheses alone.
