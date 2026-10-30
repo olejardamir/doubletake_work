@@ -36,4 +36,11 @@ These are **hypotheses for later assessment**, not executable implementation req
 - **Unknowns:** Authoritative identity/provenance rules, legitimate retention obligations, safe quarantine semantics, cost of keeping historical entries, and whether any improvement is material after the pending performance corrections are activated.
 - **Promotion evidence:** A reproducible synthetic fixture, measured post-activation impact, a non-destructive fail-closed plan, independent positive/negative tests, and existing authorization for any retained-state mutation. No purge, re-seal or self-granted repair is authorized by this research entry.
 
+## R-006 — Bound repeated acquisition work as authorized input roots accumulate
+- **Question:** Can a growing collection of individually bounded, authorized discovery roots cause aggregate acquisition to exceed the existing phase budget even when each root is valid?
+- **Potential value:** Prevent future autonomous-cycle starvation without losing authorized discoveries or creating new approval machinery.
+- **Existing evidence:** Read-only, guarded synthetic measurements found approximately additive per-root discovery cost; a sufficiently large collection can exceed a shared phase budget. The relevant input collection was empty at observation time, so this is a **latent scalability risk**, not a demonstrated current live fault. Discovery-only measurements do not include registration cost.
+- **Unknowns:** Representative root arrival rate and content mix, existing deduplication or incremental-scan facilities, cost of registration, and correctness obligations when deferring work.
+- **Promotion evidence:** A reproducible representative multi-root fixture including discovery **and** registration; evidence that a realistic authorized workload breaches budget after the currently committed fixes are loaded; a bounded, checkpointable approach using existing state owners; tests for no silent omissions, idempotent resumption, fairness and restart recovery. Do not prune retained manifests, silently drop authorized work or change live state without existing authority.
+
 No third-party library or additional governance layer is recommended by these hypotheses alone.
