@@ -21,10 +21,10 @@
 - **Done when:** A reproducible check demonstrates whether the live process uses current code; discrepancies are named without claiming a deployment.
 
 **1.2 — Safely activate only outstanding runtime changes.** If restart or reloading is needed, use the existing supported service lifecycle with session/service ownership protections. Do not forcibly restart a process hosting another active session or interfere with peer workloads.
-- **Done when:** The supported activation procedure is performed and loaded version verified, A blocker is reported accurately, but does **not** count as completed activation.
+- **Done when:** A supported activation is observed and the newly loaded version is verified. Record any unresolved prerequisite as **BLOCKED**, not completed.
 
 **1.3 — Measure one complete live autonomous cycle.** Observe scanning, planning, repair and downstream phase progression, including time budgets, failure handling and whether a paused state is treated as intentional rather than a fault.
-- **Done when:** Timestamped live evidence demonstrates a complete successful cycle with no skipped downstream phase due to timeout, A failure remains open; record its diagnosis rather than counting the subtask complete.
+- **Done when:** Timestamped live evidence demonstrates a complete successful cycle with no downstream phase skipped by timeout. If it fails, record the failure and keep this subtask open.
 
 **1.4 — Regression and restart resilience.** Run focused host-guarded tests and verify that pauses, bounded retries and recovery persist across restart.
 - **Done when:** Focused tests pass and an actual or safely simulated restart proves state integrity, with live versus simulation clearly labeled.
@@ -33,10 +33,7 @@
 **Priority:** HIGH. **Why:** Earlier evidence identified an implemented repair orchestrator without a fully demonstrated live caller.
 
 ### Subtasks
-**2.1 — Inspect current repair integration.** Trace the actual production caller from detected fault to classification, authorized repair request, execution, verification, and final state. Check whether newer code already provides the missing integration.
-- **Done when:** The real call chain is demonstrated, The call chain is verified or its precise missing step is identified; identifying a gap closes the diagnostic subtask only, not integration.
-
-**2.2 — Connect only the missing seam.** If a gap remains, reuse existing repair, scheduler, permissions and state components. Prepare evidence-backed requests from detected failures and invoke the existing repair executor only within already granted authority.
+**2.2 — Connect only the missing seam.** The diagnostic subtask (2.1) has been verified and archived; do not repeat it without changed evidence. Verify the integration gap still exists at the working HEAD. If so, reuse existing repair, scheduler, permissions and state components. Prepare evidence-backed requests from detected failures and invoke the existing repair executor only within already granted authority.
 - **Done when:** A production-reachable call site exists, carries required request evidence, and refuses attempts outside current authority. If required authority is absent, record that blocker and keep this subtask open; never manufacture a grant.
 
 **2.3 — Verify bounded recovery.** Test repeat fault, unchanged-fingerprint parking, successful repair, failed verification, rollback, process restart, resource refusal, and unrelated-work continuation.
@@ -53,7 +50,7 @@
 - **Done when:** Every identified stale or unretained record is correctly classified, with no forged history, invented baseline, restored unauthorized refs, or arbitrary digest rebinding.
 
 **3.2 — Replace only obsolete proof.** Where meaningful, generate fresh evidence with the owning verifier using retained current inputs; otherwise retain a truthful `UNRETAINED`/historical designation. Do not rebuild unrelated completed evidence.
-- **Done when:** Current, reproducible proof exists for required present-day decisions An irreducible limitation is documented with a current reproducibility check and explicitly classified as remaining risk, not silently marked as passing.
+- **Done when:** Required present-day claims have current reproducible evidence. If a historical limitation is irreducible, document the attempted reproduction and classify the remaining risk explicitly; do not mislabel it as a passing result.
 
 **3.3 — Measure matched before/after performance.** On equivalent safe workloads, measure execution latency, repeated-state writes, intervention count, and timeout/failure behavior. Separate synthetic from live observations.
 - **Done when:** A repeatable apples-to-apples comparison exists with environment, samples, method, and measured outcomes; do not claim improvement without a real baseline.
@@ -65,7 +62,7 @@
 Report: current DT SHA; subtasks verified and their evidence; subtasks changed and tests; remaining blockers; next runnable subtask. Do not write a new master prompt. Do not claim complete unless all subtask definitions of done hold.
 
 ## Latest worker reconciliation
-- The repository's prior recorded evidence shows the core manager implementation and focused suites passing; do not recreate them.
-- The specific remaining risks are live activation/observation, a real authorized repair caller, historical evidence reproducibility, and a matched performance comparison. These are **not** marked complete on the strength of historical fixture tests.
-- One newer implementation commit was observed since the previous prompt. Its message alone does not establish any of the above subtask completion conditions.
-- **Next runnable actions:** start with 1.1 and 2.1 source/runtime inspection; in parallel, prepare 3.3's comparable benchmark protocol. Avoid changing code before verifying which gaps remain.
+- At inspected DT `main` `dc1512b14d0e`, the existing diagnostic evidence and source/test inspection confirm that the production repair integration remains unresolved. **Subtask 2.1 is verified as a diagnosis only** and has been removed; **2.2–2.4 remain open**.
+- No fresh live-runtime evidence was available for 1.1–1.4 or 2.4. Earlier fixture and unit results are not substitutes for live acceptance.
+- Historical evidence reproducibility and matched performance measurement remain unresolved; do not regenerate completed manager implementation work.
+- **Next executable sequence:** verify runtime state (1.1), safely establish activation if needed (1.2), then collect a full live cycle (1.3); separately pursue authorized integration (2.2) and matched measurement (3.3).
