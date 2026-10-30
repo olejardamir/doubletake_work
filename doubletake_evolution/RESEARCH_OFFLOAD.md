@@ -22,11 +22,11 @@ These are **hypotheses for later assessment**, not executable implementation req
 - **Unknowns:** Real call frequency, representative end-to-end workload, existing caching/reuse options, correctness impact of any optimization.
 - **Promotion evidence:** Measured impact on a relevant hot path, a feasible bounded optimization, and tests proving retained correctness and reduced latency.
 
-## R-004 — Determine whether recurring integrity-check failures need separate remediation
-- **Question:** Are repeated integrity-check refusals expected safe behavior, or do they indicate a persistent defect affecting ordinary runtime progress?
-- **Potential value:** Protects state integrity while preventing a separate fault from being overlooked after liveness improves.
-- **Existing evidence:** The current repository records recurring integrity-related phase failures; the overall tick can continue. Their root cause and impact have not been independently established.
-- **Unknowns:** Trigger conditions, whether refusal is correct, affected operations, and whether existing recovery already handles the condition safely.
-- **Promotion evidence:** A minimal safe reproduction or reliable current observation, classification of expected versus defective behavior, and a bounded fix/test plan that preserves integrity enforcement.
+## R-004 — Diagnose compatibility-safe handling of a historical integrity refusal
+- **Question:** Does a persistent historical verification mismatch reflect an old representation/verification compatibility issue, or an actual integrity violation? How can the system distinguish them without weakening tamper detection?
+- **Potential value:** Preserve strict integrity enforcement while allowing healthy work to continue where a single historical record is unverifiable.
+- **Existing evidence:** A bounded, read-only inspection narrowed recurring refusals to one historical record and found no broad chain corruption. The origin of the mismatch is still unproven; no repair, re-sealing, bypass or retained-state deletion was authorized or performed.
+- **Unknowns:** Original write-time format, independent provenance, safe compatibility interpretation, and whether a narrow read-only degraded-state report is preferable to mutation.
+- **Promotion evidence:** Reproducible isolated fixture, independently validated provenance and threat-model review, a non-destructive design that fails closed on genuinely tampered data, and focused positive/negative tests. Any state rewrite or integrity-policy change requires its existing authority; do not self-authorize it.
 
 No third-party library or additional governance layer is recommended by these hypotheses alone.
