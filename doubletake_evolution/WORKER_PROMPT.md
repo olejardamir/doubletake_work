@@ -1,6 +1,6 @@
 # DoubleTake — Continuous Evolution Worker
-Version: 1.1
-Status: Ready for a future scheduler (not scheduled yet)
+Version: 1.2
+Status: Scheduled hourly; also supports a manual single-iteration run
 
 ## Purpose
 Continuously determine the highest-value improvements for DoubleTake, keep a single executable mission prompt current, and retain speculative research separately. The worker plans and verifies; DoubleTake implements changes in its own repository.
