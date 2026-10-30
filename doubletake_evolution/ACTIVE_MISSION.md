@@ -2,7 +2,7 @@
 
 **Mission:** Continuous, evidence-led DoubleTake improvement.
 **Status:** ACTIVE — earlier evidence confirms implementation progress but does not establish completion of the remaining live subtasks.
-**Last observed DT main:** `49d0c5fd8e66` (repository inspection; not a live-runtime attestation).
+**Last observed DT main:** `49d0c5fd8e66` (rechecked; repository inspection only, not a live-runtime attestation).
 **Execution owner:** DoubleTake. This public prompt contains no private source, logs, or secrets.
 
 ## General execution rules
@@ -23,7 +23,7 @@
 **1.2 — Safely activate only outstanding runtime changes.** If restart or reloading is needed, use the existing supported service lifecycle with session/service ownership protections. Do not forcibly restart a process hosting another active session or interfere with peer workloads.
 - **Done when:** A supported activation is observed and the newly loaded version is verified. Record any unresolved prerequisite as **BLOCKED**, not completed.
 
-**1.3 — Measure one complete live autonomous cycle.** Observe scanning, planning, repair and downstream phase progression, including time budgets, failure handling and whether a paused state is treated as intentional rather than a fault.
+**1.3 — Measure one complete live autonomous cycle.** Observe scanning, planning, repair and downstream phase progression, including time budgets, failure handling and whether a paused state is treated as intentional rather than a fault. **Check for independent upstream phase timeouts:** earlier recorded live probes showed that phases preceding the downstream operating loop can exhaust their budgets even when isolated loop tests pass. First verify whether those timeouts still occur; if so, isolate the bottleneck and implement only a measured, bounded fix before retrying the full unattended cycle. Do not equate a directly invoked phase with a successful natural heartbeat.
 - **Done when:** Timestamped live evidence demonstrates a complete successful cycle with no downstream phase skipped by timeout. If it fails, record the failure and keep this subtask open.
 
 **1.4 — Regression and restart resilience.** Reuse existing focused restart-safety evidence before running tests; distinguish successful isolated restart-handoff checks from proof that paused state, bounded retries and recovery survive an actual or safely simulated full operating-loop restart. Run only missing focused host-guarded tests.
@@ -66,4 +66,5 @@ Report: current DT SHA; subtasks verified and their evidence; subtasks changed a
 - Fresh restart-focused evidence reports all declared checks passing **for that specific verifier**; it is not an observed complete live autonomous cycle or proof that every stateful recovery condition in 1.4 is covered.
 - A refreshed comparison exists for a **different runtime subsystem** and explicitly records performance regressions. Do not use it as a substitute for the matched autonomy baseline required by 3.3.
 - **Verified completed this iteration:** none. Preserve 11 open subtasks. Earlier verified diagnosis 2.1 remains archived.
-- **Next executable sequence:** verify the loaded runtime and pending activation (1.1–1.2), observe a complete cycle (1.3), pursue the already-diagnosed authorized repair integration (2.2–2.4), and measure matched autonomy performance (3.3). Reuse existing proof; do not rebuild unrelated completed work.
+- **Additional evidence-based focus:** Historical live probes reached isolated downstream logic but also recorded independent upstream time-budget failures. Before claiming 1.3 complete, verify the current natural unattended heartbeat and resolve any remaining upstream starvation; isolated test success alone does not prove this.
+- **Next executable sequence:** verify the loaded runtime and pending activation (1.1–1.2), diagnose upstream phase starvation if still present and observe a complete natural cycle (1.3), pursue the already-diagnosed authorized repair integration (2.2–2.4), and measure matched autonomy performance (3.3). Reuse existing proof; do not rebuild unrelated completed work.
