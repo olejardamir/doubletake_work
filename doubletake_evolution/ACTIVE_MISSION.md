@@ -11,7 +11,7 @@
 - Use outward exploration → inward consolidation → stable verification when useful. Do not create new managers, approvals, redundant trackers, unbounded retry loops, or unrelated work.
 - Never manufacture grants, bypass authentication, change safety-relevant phase permissions without existing authority, or delete retained runtime state to make a test pass.
 - Report per-subtask source revision, focused tests or observation, remaining gap, and exact next action. The worker archives a subtask only after verifying **all** its acceptance criteria. Do not claim a healthy fleet based on a previously successful but now-ended process.
-- **Already archived:** 1.1, 1.2, 1.3.1 (diagnosis only), 1.4, 2.1, 2.2.1 (caller diagnosis), 2.3, 2.4.1 (isolated safe-fault candidate), 3.1, 3.2, 3.3.1 (measurement classification only), 4.1.1, 4.1.2, 4.2.1 5.1.1 (registration baseline only), 5.1.2 (durability contract) and 5.2.2 (matched guarded measurement) (source/test scope only). Do not re-add them unless new evidence establishes a regression.
+- **Already archived:** 1.1, 1.2, 1.3.1 (diagnosis only), 1.4, 2.1, 2.2.1 (caller diagnosis), 2.3, 2.4.1 (isolated safe-fault candidate), 3.1, 3.2, 3.3.1 (measurement classification only), 4.1.1, 4.1.2, 4.2.1, 5.1.1 (registration baseline only), 5.1.2 (durability contract) and 5.2.2 (matched guarded measurement) (source/test scope only). Do not re-add them unless new evidence establishes a regression.
 
 ## DT-EVO-001 — Restore complete live autonomous-cycle progress
 **Priority:** CRITICAL. **Objective:** A currently running autonomous instance completes natural end-to-end cycles without upstream work exhausting the shared phase budget.
