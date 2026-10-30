@@ -1,8 +1,8 @@
 # DoubleTake — Active Evolution Mission
 
 **Mission:** Continuous, evidence-led DoubleTake improvement.
-**Status:** ACTIVE — 3 tasks, 5 open top-level subtasks (diagnostic step 1.3.1 archived; activation and liveness remain open).
-**Latest DT main inspected:** `0628504c03d0` (2026-10-30; repository evidence, not a live connection by this planner).
+**Status:** ACTIVE — 4 tasks, 7 open top-level subtasks (diagnostic step 1.3.1 archived; activation, liveness, authorized repair, performance and truthful health reporting remain open).
+**Latest DT main inspected:** `1509992f6ffd` (2026-10-30; source and committed evidence inspected, no live connection by this planner).
 **Execution owner:** DoubleTake. The planning repository is public: never publish private source, logs, secrets, privileged runtime identifiers, or confidential evidence.
 
 ## Operating rules
@@ -15,14 +15,14 @@
 
 ## DT-EVO-001 — Restore complete live autonomous-cycle progress
 **Priority:** CRITICAL. **Objective:** A currently running autonomous instance completes natural end-to-end cycles without upstream work exhausting the shared phase budget.
-**Evidence:** Three distinct upstream inefficiencies have now been isolated with bounded measurements, source-level corrections and focused regression evidence. The current observed process has not loaded those corrections. A sustained natural observation window on that older process showed repeated starvation, not recovery. The diagnosis step (1.3.1) is archived; deployment and live acceptance are not.
+**Evidence:** Three distinct upstream inefficiencies have now been isolated with bounded measurements, source-level corrections and focused regression evidence. The current observed process has not loaded those corrections. Later observation-only commits confirm prolonged starvation on that older process, not recovery; existing adaptive controls do not safely skip the affected essential phases. The diagnosis step (1.3.1) is archived; deployment and live acceptance are not.
 
 ### Subtask 1.3 — Activate verified fixes and prove sustained liveness
 **Dependency:** Preserve historical restart/state safeguards. Do not mistake committed code or a frozen-snapshot benchmark for a loaded runtime.
 
-1. **1.3.2 — Safely activate the three existing corrections and verify loaded source.** Do **not** reimplement the completed bounded-scan, source-scope or batched-persistence corrections. A recent process-lifecycle check established that restarting the active service during its current dependent session would terminate that session. Do not interrupt it, bypass the supported lifecycle, or use a fresh-state second instance as a substitute for the affected workload. Recheck whether that operational blocker still exists; when a supported, non-disruptive activation becomes possible within existing authority, load the corrections and verify the actual running revision. **Test/DoD:** Supported activation with recorded loaded-version evidence, passing focused host-guarded timeout, state, source-boundary and recovery regressions, and no unrelated-session disruption. A blocked restart, an unloaded fix or a test-only success is not a pass.
+1. **1.3.2 — Safely activate the three existing corrections and verify loaded source.** Do **not** reimplement the completed bounded-scan, source-scope or batched-persistence corrections. A recent process-lifecycle check established that restarting the active service during its current dependent session would terminate that session. Do not interrupt it, bypass the supported lifecycle, or use a fresh-state second instance as a substitute for the affected workload. The current process lifecycle has been examined and all existing supported activation paths would terminate a dependent session; do not keep retrying the same unsafe routes. Re-evaluate only after that session ends or the supported lifecycle materially changes. When a non-disruptive activation becomes possible within existing authority, load the corrections and verify the actual running revision. **Test/DoD:** Supported activation with recorded loaded-version evidence, passing focused host-guarded timeout, state, source-boundary and recovery regressions, and no unrelated-session disruption. A blocked restart, an unloaded fix or a test-only success is not a pass.
 2. **1.3.3 — Prove sustained natural liveness on the corrected runtime.** After verified activation, observe naturally scheduled cycles with all intended downstream phases and unaffected work. Use a representative **60-minute post-activation window**; explicitly mark any shorter or interrupted window inconclusive. Preserve the prior negative observation as baseline evidence, not as proof of the fix. **Test/DoD:** Multiple complete naturally scheduled cycles, no recurring downstream starvation over the observation window, and version-scoped outcomes, timeout/parking behavior and residual risks. A single healthy cycle or direct phase invocation is insufficient.
-- **Next action:** Recheck whether the dependent session has ended and a safe supported activation is possible. Until then preserve the existing measured diagnosis and focused tests; do not restart the active service or regenerate the same benchmarks. After activation, run the post-fix natural window.
+- **Next action:** Await a genuine change in the dependent-session/lifecycle condition before supported activation; do not force a restart, orphan a session, start an unsupported duplicate instance, or rerun unchanged diagnostics. After verified activation, run the post-fix natural window. Meanwhile DT-EVO-004 is independently executable without changing runtime privileges.
 
 ## DT-EVO-002 — Finish authorized production repair integration
 **Priority:** HIGH. **Objective:** Existing bounded repair machinery is reachable from real detected faults only through existing authority. The diagnostic and bounded component tests are already archived.
@@ -54,11 +54,27 @@
 - **Next action:** Preserve both the degraded-state live write baseline and the already-measured phase-level comparison; obtain a matched live after-sample only after verified activation, avoiding another baseline-only run.
 
 ### Subtask 3.4 — Close or explicitly bound the remaining mission
-**Dependency:** Reconcile 1.3, 2.2, 2.4 and 3.3 with evidence rather than relying on a status label.
+**Dependency:** Reconcile 1.3, 2.2, 2.4, 3.3 and the independently testable health work in DT-EVO-004 with evidence rather than relying on a status label.
 1. **3.4.1 — Reconcile every remaining criterion.** List measured pass/fail/blocked outcomes, exact authority limitations and affected runtime generations. **Test/DoD:** Each active acceptance claim is checked against current, version-scoped evidence and conflicting historical claims are explicitly superseded.
 2. **3.4.2 — Publish one concise final status.** Reuse the existing status/evidence owner; do not create duplicate trackers or claim full closure for qualified results. **Test/DoD:** One consistent status identifies passes, open defects, authorization blockers and evidence gaps without claiming unverified closure.
 - **Done when:** Every acceptance claim has traceable evidence, every remaining blocker is accurately classified, and no duplicate reporting loop is introduced. If core work is still open, this subtask remains open rather than disguising partial completion as full closure.
 - **Next action:** Reconcile after the next successful current-generation cycle or materially new authorization/performance evidence.
+
+## DT-EVO-004 — Make autonomous health reflect actual completed-cycle progress
+**Priority:** HIGH. **Objective:** An instance that continues ticking but repeatedly fails to complete an operating cycle must not appear healthy merely because its process is alive.
+**Evidence:** Recent committed observation and source review show a sustained no-progress condition while existing durable status remains nominal. The current adaptive controls deliberately do not skip essential work; this is a health-reporting defect, **not** permission to bypass essential phases or weaken timeout/authority protections.
+
+### Subtask 4.1 — Verify and define a truthful liveness criterion
+1. **4.1.1 — Trace the existing status owners and progress signals at current HEAD.** Distinguish process heartbeat, last successful full cycle, failed/timeout phases, legitimate idle/paused operation, and the source revision that produced each signal. **Test/DoD:** Source-backed map identifies the existing status owner and a reproducible fixture in which ticks continue but no full cycle completes; do not introduce a second health database.
+2. **4.1.2 — Specify a bounded, clock-safe degraded/no-progress decision.** Reuse existing durable outcomes and monotonic or validated timestamps where possible; do not equate an idle system or one transient timeout with sustained starvation. **Test/DoD:** Deterministic cases cover healthy cycles, repeated incomplete cycles, pause/idle, restart, clock skew and recovery; each has an explicit expected status and freshness interpretation.
+- **Next action:** Run the read-only source/status trace and add focused failing fixtures before implementing a new status behavior. This does not depend on service restart or additional grants.
+
+### Subtask 4.2 — Correct the existing status path without altering core-phase authority
+**Dependency:** 4.1 establishes the status owner and bounded criterion.
+1. **4.2.1 — Report sustained incomplete-cycle progress honestly.** Extend the existing health/status owner rather than creating another monitor or governance layer. Preserve backward-compatible fields, record a bounded degraded reason and clear it only after actual successful progress. **Test/DoD:** Repeated essential-phase timeouts yield a non-healthy status even while heartbeat continues; a successful full cycle clears the condition; transient failure and legitimate pause remain correctly classified.
+2. **4.2.2 — Verify restart, persistence and unaffected work.** Exercise focused integration tests using isolated fixtures and the existing host guard. Do not restart a dependent live session, skip essential phases, grant repair privileges or mutate retained evidence to make health green. **Test/DoD:** Persisted status survives restart coherently, stale successful-cycle timestamps are not presented as current, existing consumers remain compatible, and no unrelated work is disrupted.
+- **Done when:** The existing status surface distinguishes running-process heartbeat from actual autonomous progress, fails visibly on sustained no-progress, recovers on verified progress, and passes focused positive/negative/restart tests.
+- **Next action:** Implement only after 4.1 verifies that the gap is still present at current HEAD; otherwise return the existing passing evidence.
 
 ## Per-run output
 Report the current DT HEAD, verified and removed subtasks, evidence and tests for changes, outstanding blockers, and the next runnable subtask. Do not regenerate this mission from scratch.
