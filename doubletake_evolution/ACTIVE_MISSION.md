@@ -1,70 +1,65 @@
 # DoubleTake — Active Evolution Mission
 
 **Mission:** Continuous, evidence-led DoubleTake improvement.
-**Status:** ACTIVE — earlier evidence confirms implementation progress but does not establish completion of the remaining live subtasks.
-**Last observed DT main:** `49d0c5fd8e66` (rechecked; repository inspection only, not a live-runtime attestation).
-**Execution owner:** DoubleTake. This public prompt contains no private source, logs, or secrets.
+**Status:** ACTIVE — 3 tasks, 5 individually actionable open subtasks.
+**Latest DT main inspected:** `5667b3980d1c` (2026-10-30; repository evidence, not a live connection by this planner).
+**Execution owner:** DoubleTake. The planning repository is public: never publish private source, logs, secrets, privileged runtime identifiers, or confidential evidence.
 
-## General execution rules
-- Work from current `main`; reread latest repository instructions and check for concurrent changes.
-- These are **three separate tasks with individually actionable subtasks**. Historical evidence may be superseded; obtain current runtime/test evidence before marking a subtask complete. Verify each subtask against current source, runtime, and tests **before** modifying anything. If already done, report evidence and skip implementation.
-- Retain existing minimal kernel, delegated permissions, meaningful verification, host protections and rollback. Never self-grant authorization or bypass existing permissions.
-- Persist clear, bounded results in the implementation repository, using existing stores; do not create an approval layer or redundant planning machinery.
-- Do not mark any live requirement complete based solely on a unit test, fixture, commit title, or old report.
-- For every verified subtask, supply relevant commit, command/test result, and observed outcome. The scheduled worker will reconcile the public mission and remove verified subtasks.
+## Operating rules
+- Work from the current `main`; read the repository's existing instructions and recheck concurrent changes before editing. Preserve the single-main/no-tags rule, host workload protections, current authority, rollback and existing state stores.
+- **VERIFY_FIRST:** Each subtask below remains open for a specific reason. Compare any newer implementation or live evidence before changing code; if a criterion is already met, return a precise evidence pointer rather than rebuilding it.
+- Use outward exploration → inward consolidation → stable verification when useful. Do not create new managers, approvals, redundant trackers, unbounded retry loops, or unrelated work.
+- Never manufacture grants, bypass authentication, change safety-relevant phase permissions without existing authority, or delete retained runtime state to make a test pass.
+- Report per-subtask source revision, focused tests or observation, remaining gap, and exact next action. The worker archives a subtask only after verifying **all** its acceptance criteria. Do not claim a healthy fleet based on a previously successful but now-ended process.
+- **Already archived:** 1.1, 1.2, 1.4, 2.1, 2.3, 3.1, 3.2. Do not re-add them unless new evidence establishes a regression.
 
-## DT-EVO-001 — Verify the currently deployed autonomous runtime
-**Priority:** HIGH. **Why:** Earlier committed fixes passed isolated tests but the running service had not loaded all of them.
+## DT-EVO-001 — Restore complete live autonomous-cycle progress
+**Priority:** CRITICAL. **Objective:** A currently running autonomous instance completes its natural end-to-end cycle without an upstream phase consuming the budget and starving downstream work.
+**Evidence:** A prior process generation completed full cycles, but the surviving generation was re-observed after restart with upstream time-budget failures. Passing component tests and previously successful instances do not satisfy current liveness.
 
-### Subtasks
-**1.1 — Inspect live/runtime drift.** Identify the loaded runtime version and compare it with the committed implementation. Determine which relevant autonomy, scanning, and repair fixes are actually in memory.
-- **Done when:** A reproducible check demonstrates whether the live process uses current code; discrepancies are named without claiming a deployment.
+### Subtask 1.3 — Diagnose and close the live cycle starvation
+**Dependency:** Existing activation and restart checks (1.1, 1.2, 1.4) are archived; revalidate only if new evidence shows regression.
+1. **1.3.1 — Observe current behavior.** Obtain a new, bounded, timestamped natural-heartbeat observation from the current process. Distinguish the full operating-loop cycle from other independently advancing cycle counters. Identify which upstream phase, budget, and state-size factors prevent downstream completion.
+2. **1.3.2 — Select a safe bounded remedy.** Measure the cause and choose the smallest non-destructive fix within existing authority: bounded work per phase, incremental processing, safe resumption, or a properly governed phase policy. Do **not** silently authorize skipping safety-relevant work, discard retained state, or increase budgets without a measurement. If an action requires authority not already granted, record that specific blocker and continue non-destructive diagnostics.
+3. **1.3.3 — Stabilize and prove liveness.** Run focused host-guarded regression/negative tests for timeout, cancellation, retry/parking, persistence, and unaffected phases; then observe at least one **naturally scheduled** complete live cycle on the current generation.
+- **Done when:** Timestamped evidence identifies the current loaded revision, proves all intended phases complete or are intentionally skipped by existing policy, shows no downstream starvation or budget breach during the observed full cycle, and documents test results and residual risks. A direct phase invocation, historical process, or isolated test is insufficient.
+- **Next action:** Capture the current generation's next natural tick and isolate the first budget-exhausting phase before any code change.
 
-**1.2 — Safely activate only outstanding runtime changes.** First compare the capture time and source version of any earlier `VERIFIED_DONE` activation record against subsequent relevant commits and later operational audits: a valid earlier component activation does not prove a later change is loaded. If restart or reloading is needed, use the existing supported service lifecycle with session/service ownership protections. Do not forcibly restart a process hosting another active session or interfere with peer workloads.
-- **Done when:** A supported activation is observed and the newly loaded version is verified. Record any unresolved prerequisite as **BLOCKED**, not completed.
+## DT-EVO-002 — Finish authorized production repair integration
+**Priority:** HIGH. **Objective:** Existing bounded repair machinery is reachable from real detected faults only through existing authority. The diagnostic and bounded component tests are already archived.
 
-**1.3 — Measure one complete live autonomous cycle.** Observe scanning, planning, repair and downstream phase progression, including time budgets, failure handling and whether a paused state is treated as intentional rather than a fault. **Check for independent upstream phase timeouts:** earlier recorded live probes showed that phases preceding the downstream operating loop can exhaust their budgets even when isolated loop tests pass. First verify whether those timeouts still occur; if so, isolate the bottleneck and implement only a measured, bounded fix before retrying the full unattended cycle. Do not equate a directly invoked phase with a successful natural heartbeat.
-- **Done when:** Timestamped live evidence demonstrates a complete successful cycle with no downstream phase skipped by timeout. If it fails, record the failure and keep this subtask open.
+### Subtask 2.2 — Complete the missing authorized caller
+**Dependency:** Preserve existing grants and request-evidence requirements.
+1. **2.2.1 — Reconfirm the missing seam at current HEAD.** Trace detection → classification → evidence-backed request → authority decision → existing repair executor → verification and state. Skip implementation if a new caller already satisfies the criteria.
+2. **2.2.2 — Wire only the missing integration within granted scope.** Reuse existing repair/scheduler/state components; preserve denial, rollback and no-effect behavior. If a required standing grant or owner-declared request is unavailable, record `BLOCKED_AUTHORIZATION`; never self-grant or bypass it.
+3. **2.2.3 — Run focused integration tests.** Cover permitted invocation, absent/invalid grant, incomplete evidence, denied mutation, verification failure and unrelated-work continuation.
+- **Done when:** A production-reachable caller passes required evidence, invokes the existing executor **only** with valid authority, refuses unauthorized work without side effects, and has recorded focused test outcomes. A control endpoint returning unauthenticated denial alone is **not** a repair caller.
+- **Next action:** Recheck the caller and authority prerequisites at latest HEAD, then implement only what is permitted.
 
-**1.4 — Regression and restart resilience.** Reuse existing focused restart-safety evidence before running tests; distinguish successful isolated restart-handoff checks from proof that paused state, bounded retries and recovery survive an actual or safely simulated full operating-loop restart. Run only missing focused host-guarded tests.
-- **Done when:** Focused tests pass and an actual or safely simulated restart proves state integrity, with live versus simulation clearly labeled.
+### Subtask 2.4 — Verify the real repair fault path
+**Dependency:** 2.2 must expose a production-reachable fault-to-repair caller; a pre-existing authentication-boundary denial does not independently prove this path.
+1. **2.4.1 — Choose a safe fault observation.** Prefer an existing harmless recoverable fault or an isolated controlled scenario; never inject hazardous faults into shared workloads.
+2. **2.4.2 — Exercise the production caller.** Demonstrate an authorized repair with verification/rollback **or** a measured safe refusal by the actual fault-to-repair caller when authorization is absent.
+3. **2.4.3 — Reconcile state.** Record outcome, effects/no-effects, bounded retries and unaffected work, clearly separating live observation from fixtures.
+- **Done when:** The actual production fault-to-repair caller is observed returning a verified repair or a safe refusal, with durable state and no unauthorized effects. An unauthenticated request to a separate control route does not close this criterion.
+- **Next action:** Wait for the 2.2 integration seam or new proof of an existing caller; retain the previously measured access-control refusal as a useful partial security check.
 
-## DT-EVO-002 — Finish the existing autonomous repair execution path
-**Priority:** HIGH. **Why:** Earlier evidence identified an implemented repair orchestrator without a fully demonstrated live caller.
+## DT-EVO-003 — Finish the remaining performance evidence and close accurately
+**Priority:** MEDIUM. **Objective:** Make remaining autonomy claims reproducible without rebuilding already completed evidence. The stale-record classification and regeneration subtasks (3.1–3.2) are archived.
 
-### Subtasks
-**2.2 — Connect only the missing seam.** The diagnostic subtask (2.1) has been verified and archived; do not repeat it without changed evidence. Verify the integration gap still exists at the working HEAD. If so, reuse existing repair, scheduler, permissions and state components. Prepare evidence-backed requests from detected failures and invoke the existing repair executor only within already granted authority.
-- **Done when:** A production-reachable call site exists, carries required request evidence, and refuses attempts outside current authority. If required authority is absent, record that blocker and keep this subtask open; never manufacture a grant.
+### Subtask 3.3 — Complete matched autonomy performance evidence
+1. **3.3.1 — Reuse the existing matched measurements.** Preserve the recorded bounded-phase latency/timeout comparison and the separate synthetic benchmark without misrepresenting different workload scopes as equivalent.
+2. **3.3.2 — Measure the missing repeated-state-write baseline.** On equivalent safe workloads, record before/after state-write counts alongside latency, interventions, timeouts and environment. Use existing instrumentation where possible; do not introduce a new monitoring system.
+3. **3.3.3 — State regressions and limitations.** Distinguish live versus synthetic, sample sizes and any change of workload scope; do not claim unmeasured improvements.
+- **Done when:** Reproducible matched evidence covers **all** requested dimensions, including repeated-state writes, and honestly records any regression or non-comparability.
+- **Next action:** Identify the owning existing counter or verifier for state writes and collect a comparable baseline and candidate measurement.
 
-**2.3 — Verify bounded recovery.** Test repeat fault, unchanged-fingerprint parking, successful repair, failed verification, rollback, process restart, resource refusal, and unrelated-work continuation.
-- **Done when:** Focused negative and positive cases pass and logs/state prove a bounded outcome without retry storms.
-
-**2.4 — Verify an actual runtime fault path.** Use a controlled harmless fault or an already observed recoverable fault; do not inject dangerous failures into an active shared service.
-- **Done when:** A live caller produces measurable repair or safe refusal, and its outcome is captured distinctly from fixture tests.
-
-## DT-EVO-003 — Close evidence and performance uncertainty without bureaucracy
-**Priority:** MEDIUM. **Why:** Prior reports distinguished implementation completion from real runtime performance and noted unretained historical evidence.
-
-### Subtasks
-**3.1 — Recheck historical evidence status.** Inspect current evidence dependencies and retained history. Identify which prior records are reproducible, which are historical only, and which verifiers already provide current proof.
-- **Done when:** Every identified stale or unretained record is correctly classified, with no forged history, invented baseline, restored unauthorized refs, or arbitrary digest rebinding.
-
-**3.2 — Replace only obsolete proof.** Reuse newly regenerated, retained-head evidence where it already satisfies a specific requirement. Where meaningful, generate other fresh evidence with the owning verifier using retained current inputs; otherwise retain a truthful `UNRETAINED`/historical designation. Do not rebuild unrelated completed evidence.
-- **Done when:** Required present-day claims have current reproducible evidence. If a historical limitation is irreducible, document the attempted reproduction and classify the remaining risk explicitly; do not mislabel it as a passing result.
-
-**3.3 — Measure matched before/after performance.** On equivalent safe autonomy workloads, measure execution latency, repeated-state writes, intervention count, and timeout/failure behavior. Reuse existing benchmark methodology where appropriate, but do not mistake a passing comparison in a different subsystem for this autonomy baseline. Separate synthetic from live observations and explicitly report regressions and their trade-offs.
-- **Done when:** A repeatable apples-to-apples comparison exists with environment, samples, method, and measured outcomes; do not claim improvement without a real baseline.
-
-**3.4 — Close or explicitly bound the mission.** Reconcile all subtasks, identify any remaining genuine operational blockers, and publish one compact status from authoritative evidence.
-- **Done when:** Every acceptance statement has supporting measurement, unfinished work is explicitly identified, and there are no duplicated trackers or unnecessary report loops. A qualified/partial status is not full closure.
+### Subtask 3.4 — Close or explicitly bound the remaining mission
+**Dependency:** Reconcile 1.3, 2.2, 2.4 and 3.3 with evidence rather than relying on a status label.
+1. **3.4.1 — Reconcile every remaining criterion.** List measured pass/fail/blocked outcomes, exact authority limitations and affected runtime generations.
+2. **3.4.2 — Publish one concise final status.** Reuse the existing status/evidence owner; do not create duplicate trackers or claim full closure for qualified results.
+- **Done when:** Every acceptance claim has traceable evidence, every remaining blocker is accurately classified, and no duplicate reporting loop is introduced. If core work is still open, this subtask remains open rather than disguising partial completion as full closure.
+- **Next action:** Reconcile after the next successful current-generation cycle or materially new authorization/performance evidence.
 
 ## Per-run output
-Report: current DT SHA; subtasks verified and their evidence; subtasks changed and tests; remaining blockers; next runnable subtask. Do not write a new master prompt. Do not claim complete unless all subtask definitions of done hold.
-
-## Latest worker reconciliation
-- Inspected current DT `main` at `49d0c5fd8e66`. Recent commits include refreshed restart-focused evidence and an unrelated repository hygiene fix. Neither proves deployment of the remaining live runtime changes or closes the production repair integration.
-- Fresh restart-focused evidence reports all declared checks passing **for that specific verifier**; it is not an observed complete live autonomous cycle or proof that every stateful recovery condition in 1.4 is covered.
-- A refreshed comparison exists for a **different runtime subsystem** and explicitly records performance regressions. Do not use it as a substitute for the matched autonomy baseline required by 3.3.
-- **Verified completed this iteration:** none. Preserve 11 open subtasks. Earlier verified diagnosis 2.1 remains archived.
-- **Additional evidence-based focus:** Historical live probes reached isolated downstream logic but also recorded independent upstream time-budget failures. Before claiming 1.3 complete, verify the current natural unattended heartbeat and resolve any remaining upstream starvation; isolated test success alone does not prove this.
-- **Next executable sequence:** verify the loaded runtime and pending activation (1.1–1.2), diagnose upstream phase starvation if still present and observe a complete natural cycle (1.3), pursue the already-diagnosed authorized repair integration (2.2–2.4), and measure matched autonomy performance (3.3). Reuse existing proof; do not rebuild unrelated completed work.
+Report the current DT HEAD, verified and removed subtasks, evidence and tests for changes, outstanding blockers, and the next runnable subtask. Do not regenerate this mission from scratch.
