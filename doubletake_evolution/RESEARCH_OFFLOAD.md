@@ -43,4 +43,6 @@ These are **hypotheses for later assessment**, not executable implementation req
 - **Unknowns:** Representative root arrival rate and content mix, existing deduplication or incremental-scan facilities, cost of registration, and correctness obligations when deferring work.
 - **Promotion evidence:** A reproducible representative multi-root fixture including discovery **and** registration; evidence that a realistic authorized workload breaches budget after the currently committed fixes are loaded; a bounded, checkpointable approach using existing state owners; tests for no silent omissions, idempotent resumption, fairness and restart recovery. Do not prune retained manifests, silently drop authorized work or change live state without existing authority.
 
+**Boundary with active work:** A separately verified default-path registration amplification is now actionable as DT-EVO-005, with source-level tests and durability requirements. R-006 remains research-only for the distinct problem of aggregate *discovery across multiple authorized roots* and should not duplicate DT-EVO-005 or imply a current live fault.
+
 No third-party library or additional governance layer is recommended by these hypotheses alone.
