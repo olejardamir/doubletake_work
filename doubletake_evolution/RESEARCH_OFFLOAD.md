@@ -45,4 +45,11 @@ These are **hypotheses for later assessment**, not executable implementation req
 
 **Boundary with active work:** A separately verified default-path registration amplification is now actionable as DT-EVO-005, with source-level tests and durability requirements. R-006 remains research-only for the distinct problem of aggregate *discovery across multiple authorized roots* and should not duplicate DT-EVO-005 or imply a current live fault.
 
+## R-007 — Assess durability expectations of legacy capability-registration callers
+- **Question:** Do other still-used registration entry points promise durable success while handling failed writes as best-effort, and would tightening them break existing compatibility or unrelated work?
+- **Potential value:** Prevent reported capabilities from disappearing after restart outside the newly corrected bounded-acquisition path.
+- **Existing evidence:** Current source distinguishes strict conditional/batched admission from legacy registration methods that can ignore persistence failure. A separate environment-discovery caller uses a legacy method, but no representative failed-write production-path test or impact estimate was verified in this inspection.
+- **Unknowns:** Caller-specific return contracts, whether consumers treat a returned object/count as durable confirmation, frequency of actual failures, and backward-compatible error signaling.
+- **Promotion evidence:** Source-traced reachable caller, temporary-store failed-write fixture reproducing a misleading user-visible result, compatibility impact assessment, and a bounded correction with negative/restart tests. Do not mutate retained state, silently change authority, or conflate this research with the already-verified bounded admission fix.
+
 No third-party library or additional governance layer is recommended by these hypotheses alone.
