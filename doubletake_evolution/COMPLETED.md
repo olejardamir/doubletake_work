@@ -2,6 +2,11 @@
 
 Items below were reconciled against committed evidence and the current repository source/tests. This external worker **reviewed** stored runtime observations and test records; it did **not** independently connect to the host or rerun pytest. A completion verdict is scoped to the stated acceptance criterion and observation time, not a claim of whole-system health. This public record contains no private source or logs.
 
+## 2026-10-30 — DT-EVO-001 / 1.3.1 — VERIFIED (diagnosis only)
+- **Verified result:** The previously unresolved upstream delay was isolated by bounded, same-workload before/after measurement. Source inspection confirmed the corresponding batched-state correction and regression tests preserving recovery outcomes. A separate source-scope correction addresses the other observed timeout path.
+- **Evidence scope:** Current DT source and committed measurement/test records reviewed through main `0628504c03d0`; focused host-guarded suite and cleanup safeguards were recorded passing. This worker did not rerun tests or connect to the live host.
+- **Not completed:** Activation of the three corrections, a sustained post-activation natural cycle window, live matched write measurements, or authorized repair integration. Those remain active.
+
 ## 2026-10-30 — New verified subtasks (DT main `5667b3980d1c`)
 The DT evidence package was committed at this HEAD and includes observations rechecked after a host restart. The worker cross-checked the current commit delta, the existence and declared cases of all eight focused test modules (91 tests), the existing restart and performance evidence records, and the current phase-policy source.
 
