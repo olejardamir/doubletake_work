@@ -52,4 +52,11 @@ These are **hypotheses for later assessment**, not executable implementation req
 - **Unknowns:** Caller-specific return contracts, whether consumers treat a returned object/count as durable confirmation, frequency of actual failures, and backward-compatible error signaling.
 - **Promotion evidence:** Source-traced reachable caller, temporary-store failed-write fixture reproducing a misleading user-visible result, compatibility impact assessment, and a bounded correction with negative/restart tests. Do not mutate retained state, silently change authority, or conflate this research with the already-verified bounded admission fix.
 
+## R-008 — Define audit-safe retention and recovery for oversized durable loop history
+- **Question:** What bounded, reversible retention or archival strategy can keep durable history loadable without silently discarding prior cycles, counters or integrity evidence?
+- **Potential value:** Avoid recurrent oversized-history rejection while retaining auditability and crash recovery.
+- **Existing evidence:** A read-only observation reproduced a size-threshold rejection followed by a history/counter reset; source inspection confirms the writer does not bound every retained field. DT-EVO-006 handles the immediately actionable **non-destructive overwrite guard**, not a new retention policy.
+- **Unknowns:** Required audit horizon, whether old records must remain fully accessible, compatibility with existing digests and rollback, and authorization for migration/compaction.
+- **Promotion evidence:** Documented retention contract and existing authority, synthetic worst-case growth measurement, reversible format/migration plan, and tests for integrity, counter continuity, restart replay, no silent loss and bounded load time. Never purge or rewrite retained history merely to satisfy a size limit.
+
 No third-party library or additional governance layer is recommended by these hypotheses alone.
