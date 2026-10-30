@@ -22,4 +22,11 @@ These are **hypotheses for later assessment**, not executable implementation req
 - **Unknowns:** Real call frequency, representative end-to-end workload, existing caching/reuse options, correctness impact of any optimization.
 - **Promotion evidence:** Measured impact on a relevant hot path, a feasible bounded optimization, and tests proving retained correctness and reduced latency.
 
+## R-004 — Determine whether recurring integrity-check failures need separate remediation
+- **Question:** Are repeated integrity-check refusals expected safe behavior, or do they indicate a persistent defect affecting ordinary runtime progress?
+- **Potential value:** Protects state integrity while preventing a separate fault from being overlooked after liveness improves.
+- **Existing evidence:** The current repository records recurring integrity-related phase failures; the overall tick can continue. Their root cause and impact have not been independently established.
+- **Unknowns:** Trigger conditions, whether refusal is correct, affected operations, and whether existing recovery already handles the condition safely.
+- **Promotion evidence:** A minimal safe reproduction or reliable current observation, classification of expected versus defective behavior, and a bounded fix/test plan that preserves integrity enforcement.
+
 No third-party library or additional governance layer is recommended by these hypotheses alone.
