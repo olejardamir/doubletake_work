@@ -1,5 +1,5 @@
 # DoubleTake — Continuous Evolution Worker
-Version: 1.5
+Version: 1.6
 Status: Scheduled hourly; also supports a manual single-iteration run
 
 ## Purpose
