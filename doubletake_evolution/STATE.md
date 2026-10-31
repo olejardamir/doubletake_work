@@ -16,7 +16,7 @@
 
 ## Reconciliation and next actions
 
-- **Archived this iteration — 3.4.1:** The current revision-scoped acceptance matrix accounts for pass/fail/partial/blocked outcomes and supersedes the last apparent health-status contradiction. Same-generation observations at different heartbeat ages explain the changed stalled/degraded classification; both remained unhealthy. No recovered cycle or mission closure is inferred. Evidence: private DT committed reconciliation and observation analysis through `a4908646f6cb`.
+- **Previously archived — 3.4.1:** The current revision-scoped acceptance matrix accounts for pass/fail/partial/blocked outcomes and supersedes the last apparent health-status contradiction. Same-generation observations at different heartbeat ages explain the changed stalled/degraded classification; both remained unhealthy. No recovered cycle or mission closure is inferred. Evidence: private DT committed reconciliation and observation analysis through `a4908646f6cb`.
 - **DT-EVO-001 / 1.3.3:** `BLOCKED_INTEGRITY_AUTHORIZATION`. The negative 60.3-minute result remains valid. Do not bypass, rewrite, quarantine or silently accept unverifiable state.
 - **DT-EVO-002 / 2.2 and 2.4:** `BLOCKED_AUTHORIZATION` / dependent. Production-reachable authorized fault-to-repair invocation remains unverified; isolated fixtures and unrelated control denials do not satisfy it.
 - **DT-EVO-003 / 3.3 and 3.4.2:** Matched post-recovery live evidence and final qualified closure remain open. Historical live/synthetic/phase-only measurements are not interchangeable.
