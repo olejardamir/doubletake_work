@@ -2,6 +2,10 @@
 
 Items below were reconciled against committed evidence and the current repository source/tests. This external worker **reviewed** stored runtime observations and test records; it did **not** independently connect to the host or rerun pytest. A completion verdict is scoped to the stated acceptance criterion and observation time, not a claim of whole-system health. This public record contains no private source or logs.
 
+## 2026-10-31 — DT-EVO-007 / 7.6.1 — VERIFIED (frozen challenge only)
+- **Verified result:** A distinct existing interface path has a version-scoped, answer-free challenge, explicit caller/owner/consumer contract, a reachable positive control and disconnected-but-running negative control, a green but non-discriminating component baseline, a declared budget and a reproducible generator. Source and committed control results were cross-checked at private DT `4521044ca0ab64e366aadd8887e2de2999a5d48e`.
+- **Evidence limits:** The planner inspected source and stored tests, but did not rerun the harness, observe the host, verify a production fault or grade DT's own reasoning. The first proxy-agent attempt passed its rubric; a second pass has prior-documentation contamination. **7.6.2 remains open** for genuinely independent transfer and cannot yet support an intelligence-improvement claim.
+
 ## 2026-10-30 — DT-EVO-001 / 1.3.1 — VERIFIED (diagnosis only)
 - **Verified result:** The previously unresolved upstream delay was isolated by bounded, same-workload before/after measurement. Source inspection confirmed the corresponding batched-state correction and regression tests preserving recovery outcomes. A separate source-scope correction addresses the other observed timeout path.
 - **Evidence scope:** Current DT source and committed measurement/test records reviewed through main `0628504c03d0`; focused host-guarded suite and cleanup safeguards were recorded passing. This worker did not rerun tests or connect to the live host.
