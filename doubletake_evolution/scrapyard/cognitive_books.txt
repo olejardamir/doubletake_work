@@ -1,0 +1,20 @@
+| Priority | Book | What DoubleTake could extract | Value |
+|---|---|---|---:|
+
+
+| **5** | **Marvin Minsky — *The Society of Mind*** | Intelligence emerging from many small specialized agents; arbitration, delegation, competing mechanisms | **9.5/10** |
+| **6** | **Andy Clark — *Supersizing the Mind*** | Treating tools, external memory, software and environment as parts of the cognitive system | **9.5/10** |
+| **7** | **Andy Clark — *Surfing Uncertainty*** | Prediction → observation → prediction error → model update; confidence/precision-weighted processing | **9/10** |
+| **8** | **Alan Baddeley — *Working Memory, Thought, and Action*** | Capacity-limited working memory, executive control, separate working-memory channels, attention allocation | **9/10** |
+| **9** | **Herbert Simon — *The Sciences of the Artificial*** | Bounded rationality, satisficing, hierarchy, near-decomposability, designing adaptive artificial systems | **9/10** |
+| **10** | **Gerd Gigerenzer — *Rationality for Mortals*** | Fast heuristics, adaptive strategy selection, deciding when exhaustive computation is unnecessary | **8.5/10** |
+| **11** | **Hugo Mercier & Dan Sperber — *The Enigma of Reason*** | Adversarial/argumentative reasoning: one process proposes, another challenges; collective reasoning | **8.5/10** |
+
+
+
+DONE
+
+| **1** | **Allen Newell — *Unified Theories of Cognition*** | Cognitive architecture, goal stacks, impasses, subgoal creation, production rules, continuous learning, problem spaces | **10/10** |
+
+
+| **4** | **Janet Metcalfe & Arthur Shimamura — *Metacognition: Knowing about Knowing*** | Confidence estimation, knowing-what-you-do-not-know, self-monitoring, control decisions, strategy switching | **10/10** |
