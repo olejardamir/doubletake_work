@@ -1,5 +1,11 @@
 # Borg Scrapyard Inventory
 
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
+- **Prior path:** `doubletake_evolution/scrapyard/MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1b.md`; **prior blob:** `259ab402ce7edefc4d8394630da4b100dd59c509`; **classification:** `DELETE_CANDIDATE → DELETED_VERIFIED`; **GitHub deletion commit:** `93e7a30a60b8c9d8526f857c553b192b53bbadbe`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` (same exact full UTF-8 content and Git blob SHA, re-fetched immediately before deletion). **Dependency checks:** five current Director files had no exact numbered-path reference; both-repo code search found no indexed matching filename stem; other unindexed/external references remain unknowable. Original path reversible via Git history. No unique material lost; no deletion outside scrapyard. No DT implementation, protected history or mission altered.
+
+
 ## Q16 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
