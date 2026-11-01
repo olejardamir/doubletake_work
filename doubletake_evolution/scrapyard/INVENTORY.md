@@ -2,6 +2,12 @@
 
 ## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
 
+- **Prior path:** `doubletake_evolution/scrapyard/universal_job_post_template_for_resume_creation_10_10_v2 (1).md`; **prior blob SHA:** `f2c08f203cdce88edfbfbced56e05e9bc0f2102a`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `3a09daebbd77cca8479913162bfcc80f683bcdf0`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/universal_job_post_template_for_resume_creation_10_10_v2.md` with identical full Git blob SHA `f2c08f203cdce88edfbfbced56e05e9bc0f2102a`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
+
+
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
 - **Prior path:** `doubletake_evolution/scrapyard/ublock_resurrected_video_ad_lifecycle_controller_next_fix (1).md`; **prior blob SHA:** `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `2d97d006beb91a869a5ce245a4351040b34431fc`.
 - **Retained canonical:** `doubletake_evolution/scrapyard/ublock_resurrected_video_ad_lifecycle_controller_next_fix.md` with identical full Git blob SHA `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
 
