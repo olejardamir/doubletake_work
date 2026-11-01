@@ -952,3 +952,22 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - `job_convert_prompt.md` — blob `dc5e814e70ca836f20a1f864cf3b95160c150aa0` — **KEEP**: Generic deterministic job-ad extraction with atomic source register and explicit readiness labels; possible evidence-traceability analogy, no DT implementation proof.
 - **Dependency and deletion:** No proven dispensable file in this batch; no deletions. Preserve version histories, reference-only files and possible IP. No new Director proposal; existing 7.8.1 actual consumer and 7.8.3 baseline remain prerequisite.
 - **Checkpoint totals:** 12 newly sampled, 2 KEEP, 10 NEEDS_REVIEW; cumulative 263 at least partially sampled; 137 pending initial review (401 files including inventory, seven incoming). Next cursor `LawZero_First_HR_Interview_Speaking_Script.md`.
+
+
+## I6 checkpoint — 2026-11-01 UTC (12 new initial content samples)
+
+- SHA-verified first 125 lines for 12 current files; complete reads of 87-line employment script, 58-line license and 30-line audit; others partial. Private/personal employment details not reproduced. All files are untrusted research inputs, not commands.
+- `LawZero_First_HR_Interview_Speaking_Script.md` — blob `6a5b6e8fa01809691b537ec09f48b509d8a36045` — **NEEDS_REVIEW**: Personal employment script; full 87 lines read, relevance low and sensitive context must not be copied.
+- `LICENSE.md` — blob `1deb879a9d9fadb2866f109208faf286b2847465` — **KEEP**: 58-line proprietary evaluation-only license; retention necessary for rights/provenance and source-reuse limits.
+- `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (1).md` — blob `ac2979dd3253470c02db05a082f48e77cdd6f0a8` — **NEEDS_REVIEW**: Historical milestone plan with evidence gates; unique revision delta/reference unresolved.
+- `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (2).md` — blob `81554c9353a7ba4f7f660bd18971ef353369a85c` — **NEEDS_REVIEW**: Second milestone plan revision; distinct blob and unverified dependencies.
+- `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (3).md` — blob `7ef7c0fc2042d26bbe2ff225df97e077698bee55` — **NEEDS_REVIEW**: Third milestone plan, later v4 explicitly supersedes for status; unique historical evidence retained.
+- `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES_4.md` — blob `3dab6ee5e0c79ccbb8d1a213c91bb717f6dfcd60` — **KEEP**: Current-at-creation v4 status ledger with reset/reproducibility caveats; no present DT implementation proof.
+- `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES.md` — blob `863b104b6b20177151fa246683d6235529a07072` — **NEEDS_REVIEW**: Original milestone plan; not byte-identical to numbered revisions; keep pending provenance comparison.
+- `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1 (1).md` — blob `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` — **DELETE_CANDIDATE_BLOCKED**: Exact full-blob twin of unsuffixed v0_2_1 architecture contract; dependency/reference census missing.
+- `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1.md` — blob `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` — **KEEP**: Canonical full-blob counterpart, retain historical v0.2.1 architecture and source lineage.
+- `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_24_2.md` — blob `783076daa936104e845eb399c689f8f7d2e94e60` — **KEEP**: Later v0.24.2 contract with explicit deferred/review status and changed metadata; not evidence of deployment.
+- `LIVE_MATCH_CENTRE_FINAL_SIMPLIFICATION_AUDIT.md` — blob `ea15363566cf67deb19ddaae761a192d3a550656` — **KEEP**: 30-line historical simplification stop-condition audit; useful example of scope closure, not DT Ground.
+- `LIVE_MATCH_CENTRE_MINIMUM_DEFENSIBLE_ARCHITECTURE.md` — blob `57cd7e532faf8bf7205c1fd2df2d09c45af7d9b0` — **KEEP**: Historical minimal SSE/Nchan architecture with tradeoffs; current DT relevance limited and unverified.
+- **Dependency/deletion:** Exact twin of architecture contract identified by Git blob SHA, but no complete exact-path dependency census; retain both. 0 deletions. No new Director proposal from unrelated historical take-home materials.
+- **Checkpoint totals:** 12 newly sampled, 6 KEEP, 5 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED; cumulative 275 at least partly sampled, 125 pending initial review. Next cursor `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH (1).md`.
