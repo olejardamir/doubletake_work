@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "patch_id": "BPE-20261101-003",
+  "patch_file": "doubletake_evolution/patches/BPE-20261101-003.sh",
+  "source_repository": "olejardamir/DT",
+  "branch": "feature/alphacode-provider",
+  "commit_sha": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
+  "commit_url": "https://github.com/olejardamir/DT/commit/b1931476299f5b0dfa7b7222ce2706df9d11a01e",
+  "observed": {
+    "implementation_committed": true,
+    "branch_head_matches_commit": true,
+    "changed_files": [
+      "tools/doubletake_evolve/claim_receipt/receipts.py",
+      "tools/doubletake_evolve/claim_receipt/test_evidence_payload_digest.py"
+    ],
+    "intent_confirmed_in_committed_code": true
+  },
+  "executor_report": {
+    "reported_status": "Applied and verified",
+    "reported_test_count": {
+      "passed": 24,
+      "total": 24
+    },
+    "test_command_type": "guarded focused pytest",
+    "reported_pushed": true,
+    "recorded_results_path": "patch_results/BPE-20261101-003.json"
+  },
+  "verification": {
+    "source_change_independently_inspected": true,
+    "pushed_commit_independently_confirmed": true,
+    "test_logs_independently_seen": false,
+    "private_result_path_on_remote_found": false,
+    "public_feedback_entry_created_from_report": true,
+    "status": "APPLIED_UNVERIFIED",
+    "note": "Code and pushed branch are verified on GitHub. 24/24 tests are user-supplied Clai report; exact runner logs and unseen negative controls not independently available."
+  },
+  "learning_signal": {
+    "type": "first_application_report",
+    "local_model_completed_patch": true,
+    "first_attempt_success": "REPORTED",
+    "inference_limit": "No direct test logs or patch_results file accessible on remote",
+    "follow_up": "Next patch scripts that touch claim_receipt/receipts.py may need rebasing against updated feature/alphacode-provider blob e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c."
+  }
+}
