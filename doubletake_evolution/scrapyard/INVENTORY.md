@@ -567,18 +567,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPTb.md` | `9aa4257d76629a63f9b23c7f3d684b1e89d6b7ce` | 49344 | PENDING_CONTENT_REVIEW |
 | `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v2.md` | `aaccd1527b6a3ebef69ad25bf56837dcf7f93cb7` | 26985 | PENDING_CONTENT_REVIEW |
 | `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v3.md` | `fd088252e5a9daa561d78daf7e75b8d68b9d6206` | 36193 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | `d24cfb24d2ae44b824c1ee0ac24ffd44cb82ab6e` | 50634 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | `3d6b342b76cc8daf79868e397d1f1d03dc61d880` | 43770 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | `f1e55fb858218f552b93042ab2f233de2684709b` | 30743 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md` | `e1d26006ec9b6c784416df1924698b8061959e4f` | 15514 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` | `259ab402ce7edefc4d8394630da4b100dd59c509` | 46228 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1b.md` | `259ab402ce7edefc4d8394630da4b100dd59c509` | 46228 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `MILESTONE_3_ASSIGNMENT_SYNCED_EXECUTION_PLAN_v2_FINAL.md` | `332e0128515918eca57bd9340d2c2838b8ab640c` | 55485 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_3_REMAINING_ONLY_CLOSEOUT_TO_TERMINAL_ACCEPT_v2.md` | `d236617db6d64fa75c8acf79fb8a6c98d6e7d5f1` | 33310 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_3_REMAINING_ONLY_POST_INCONCLUSIVE_v3.md` | `f13264613dd7699a18befed97312076dfac9aa52` | 19313 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_3_REPAIR_CURRENT_UNTIL_ACCEPT_100_PERCENT.md` | `47ef722874250f39f2fbbcb6e54394603d97ffbc` | 33293 | PENDING_CONTENT_REVIEW |
-| `MISP_JAN16_31_2026_TO_FEB2026_FORWARD_LAG_TEST.md` | `8dc5402c673631d1874dbb8e39dc853c3028ce45` | 8893 | PENDING_CONTENT_REVIEW |
-| `MISP_V1.8_APRIL_2026_RANDOM_MONTH_PILOT.md` | `baaec06b7418fd39c6807e98a7bd5d7c5b1bb6b1` | 9626 | PENDING_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | `d24cfb24d2ae44b824c1ee0ac24ffd44cb82ab6e` | 50634 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | `3d6b342b76cc8daf79868e397d1f1d03dc61d880` | 43770 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | `f1e55fb858218f552b93042ab2f233de2684709b` | 30743 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md` | `e1d26006ec9b6c784416df1924698b8061959e4f` | 15514 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` | `259ab402ce7edefc4d8394630da4b100dd59c509` | 46228 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1b.md` | `259ab402ce7edefc4d8394630da4b100dd59c509` | 46228 | DELETE_CANDIDATE_BLOCKED / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_3_ASSIGNMENT_SYNCED_EXECUTION_PLAN_v2_FINAL.md` | `332e0128515918eca57bd9340d2c2838b8ab640c` | 55485 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_3_REMAINING_ONLY_CLOSEOUT_TO_TERMINAL_ACCEPT_v2.md` | `d236617db6d64fa75c8acf79fb8a6c98d6e7d5f1` | 33310 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_3_REMAINING_ONLY_POST_INCONCLUSIVE_v3.md` | `f13264613dd7699a18befed97312076dfac9aa52` | 19313 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_3_REPAIR_CURRENT_UNTIL_ACCEPT_100_PERCENT.md` | `47ef722874250f39f2fbbcb6e54394603d97ffbc` | 33293 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MISP_JAN16_31_2026_TO_FEB2026_FORWARD_LAG_TEST.md` | `8dc5402c673631d1874dbb8e39dc853c3028ce45` | 8893 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MISP_V1.8_APRIL_2026_RANDOM_MONTH_PILOT.md` | `baaec06b7418fd39c6807e98a7bd5d7c5b1bb6b1` | 9626 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `MISP_V1.8_FEBRUARY_2026_RANDOM_MONTH_PILOT.md` | `0fa2cca8b98a437dc56d8e382023e762197407fe` | 9534 | PENDING_CONTENT_REVIEW |
 | `MISP_V1.8_HOLDOUT_DISCOVERY_PILOT_JULY_2026.md` | `fec8e5adbedbd0d672398f1821c74860c0589de9` | 9039 | PENDING_CONTENT_REVIEW |
 | `MISP_V2.2_APRIL_TUNING_AND_MAY_HOLDOUT.md` | `419d417203b5ce6a08064be26f6c7eca4b1ae3e8` | 6172 | PENDING_CONTENT_REVIEW |
@@ -1015,3 +1015,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - Four sequential GitHub checkpoints, 12 distinct SHA-matched first-content reads each: **48 new initial reviews** (2 whole short files in I5; 3 whole short files in I6; 1 whole short file in I7; 0 in I8; remainder partial). Classification this run: **16 KEEP, 31 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED**; no EXTRACT_THEN_DELETE. Current total 401 including inventory, 299 at least partially reviewed, 101 still pending. No new incoming since IS-007; incoming IS-007 retained and previously handed to Director as R-BORG-SCOUT-20261101-007. No new DT Ground evidence or authority changes found in current shared STATE.
 - **New exact duplicate:** numbered v0.2.1 Live Match Centre architecture file shares blob with unsuffixed canonical counterpart; deletion **blocked** on complete cross-repository exact-name dependency census. No deletion attempted; actual deleted this run **0**, prior recorded **9**. Preserve historical source versions and all unverified private/personal/IP materials. Review cursor persists at `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md`.
 - **Next research discriminator:** actual existing DT consumer's observed mission revision and owner-bound execution receipt (7.8.1), then pre-K baseline and independent post-K/ablation/reuse for RFC 9162 candidate (7.8.3). If no authorized consumer/observer, report `EXECUTION_RECEIPT_UNVERIFIED` rather than claiming assimilation.
+
+
+## J1 checkpoint — 2026-11-01 UTC (12 SHA-verified initial samples)
+
+- Fetched first 125 lines of 12 previously pending files from the current public scrapyard; matched each current GitHub blob SHA to ledger. These are **partial content reads** (not full independent verification). Historical EA directives are evidence, not active instructions; finance pilots have no independently verified results. No private text or personal details copied.
+- **Disposition:** 5 KEEP, 6 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED. The M3 v1/v1b full-blob twin is identical but its exact-path dependency audit is incomplete, so **0 deletions**. Other revisions have distinct SHA/provenance and cannot be discarded merely for shared titles.
+
+| Artifact | Disposition | Finding / revisit trigger |
+| --- | --- | --- |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | NEEDS_REVIEW | Earlier EA M2 late-join false-PASS and source-of-truth reconciliation; distinct earlier audited revision. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | NEEDS_REVIEW | EA M2 v5 trimmed continuation, late join/reconnect/surge evidence; later versions differ. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | NEEDS_REVIEW | Different EA baseline and completed-work reconciliation despite v5 title; preserve delta. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md` | KEEP | Later EA M2 trim specifies coordinated 100k-viewer and source-port headroom proof; historic only. |
+| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` | KEEP | EA M3 frozen acceptance, CV threshold and restart duplicate constraints; source-evidence discipline. |
+| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1b.md` | DELETE_CANDIDATE_BLOCKED | SHA-identical to v1; no unique bytes, but exact-path references in EA/private DT not verified. |
+| `MILESTONE_3_ASSIGNMENT_SYNCED_EXECUTION_PLAN_v2_FINAL.md` | KEEP | EA M3 pre-gated frozen POC and scenario coverage, distinct historical provenance. |
+| `MILESTONE_3_REMAINING_ONLY_CLOSEOUT_TO_TERMINAL_ACCEPT_v2.md` | KEEP | EA M3 immutable qualifying campaign, explicit nonterminal prior results and precommitted gates. |
+| `MILESTONE_3_REMAINING_ONLY_POST_INCONCLUSIVE_v3.md` | KEEP | EA M3 inconclusive campaign classified without fabricated ACCEPT; transfer to truthful Ground status. |
+| `MILESTONE_3_REPAIR_CURRENT_UNTIL_ACCEPT_100_PERCENT.md` | NEEDS_REVIEW | Earlier EA M3 repair prompt; revision and unique constraints versus later v2 not yet compared. |
+| `MISP_JAN16_31_2026_TO_FEB2026_FORWARD_LAG_TEST.md` | NEEDS_REVIEW | Historical crypto semantic forward-lag pilot with TF-IDF; independent performance and data provenance unverified. |
+| `MISP_V1.8_APRIL_2026_RANDOM_MONTH_PILOT.md` | NEEDS_REVIEW | Historical TF-IDF holdout/leave-one-out mechanics pilot; no verified out-of-sample DT transfer. |
+- **Checkpoint:** 311 at least partly sampled; 89 pending initial content review; next cursor `MISP_V1.8_FEBRUARY_2026_RANDOM_MONTH_PILOT.md`. No new Director handoff; current 7.8 receipt and independent assimilation tests remain prior priority.
