@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **149 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 251 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **149 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 251 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -767,12 +767,12 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` (resume from next untouched artifact; public-safe review only).
+- **Next lexically pending path:** `Glyphser_Thirty_Second_Pass_Patent_Review_and_Strictly_Improved_Direction.md` (resume next untouched artifact; preserve possible private IP, no public technical extracts).
 - **Next mission-relevant NEEDS_REVIEW path:** `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md`; compare against existing canonical allocation and verified benefit before proposing work.
-- **Current review epoch:** 2026-11-01; latest Scout checkpoint H1–H3 sampled 36 further historical files, all partial. 197 PENDING_CONTENT_REVIEW remain; earlier sixth-pass E/G checkpoints are preserved as historical observations.
+- **Current review epoch:** 2026-11-01; latest I1–I4 checkpoints sampled 48 further historical files, predominantly partial. 149 PENDING_CONTENT_REVIEW remain; earlier checkpoints preserved as historical observations.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
-| `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; OFFLOAD_WRITE_BLOCKED |
+| `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; OFFERED_TO_DIRECTOR |
 
 ## Recurring workflow
 
@@ -924,3 +924,12 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - `Glyphser_Sixteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` **NEEDS_REVIEW**: Intermediate patent direction/risk assessment; potentially sensitive invention context, no public technical extraction.
 - `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md` **NEEDS_REVIEW**: Earlier patent conflict and architecture assessment; provenance retained, independent claims verification absent.
 - **Deletion:** 0. Unique revision histories and potential proprietary provenance require retention; no independent proof of redundancy. Cumulative 251 sampled, 149 pending; next cursor from ledger after `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md`.
+
+
+## I1–I4 closeout, Director handoff repair — 2026-11-01 UTC
+
+- **Progress verified by commits:** I1 `af656cef2ff61de79ba58f8b7ee8542f9ae03e2b` (12), I2 `1deeb74fdc59902e6583384ac7b8f8b30bfcbcf2` (12), I3 `730f5375c7e02691244d036c764f6d03c55eb512` (12), I4 `c181cb9b43c4dbbe67a80f7e431cee7a7e6fe5cb` (12). **48 new first-125-line content samples, 0 whole-file deep reads**. All 48 GitHub blob identities matched the prior ledger. 19 KEEP, 28 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED (exact Form Picker byte twin). Cumulative **251 at least partially inspected**; **149 pending initial content review**; 401 current files including inventory based on last full tree census. No new file creation or deletion in this pass.
+- **Cleanup:** actual deletions this pass **0**; historical recorded **9**. The Form Picker numbered duplicate shares blob `9498019786070abf117384d4abd48880a4e164c2` with the unsuffixed retained copy, but an exact-path dependency census has not been completed. Do not retry deletion until the check and fresh SHA exist. Versioned standards, conceptual documents and patent-risk history remain retained; older version does not mean valueless.
+- **Handoff repair:** Earlier attempt to write `R-BORG-SCOUT-20261101-007` to RESEARCH_OFFLOAD was blocked; this run used a smaller public-safe proposal and GitHub **accepted commit `a9e5e6ae5de274110bd4aaa52029bc77406f4466`** (offload blob `14ac1bde73de2e42b2b11489bdf0363123e779d4`). Thus the prior OFFLOAD_WRITE_BLOCKED is **historical/resolved**, not current. Incoming source remains at blob `46efa667c19579876b16993e325a02f6f5621184`; independent RFC 9162 and Trillian source links rechecked. Stage **OFFERED_TO_DIRECTOR / PROPOSED_FOR_DIRECTOR_REVIEW**, OUTWARD-only; Director approval and DT Ground **NOT YET VERIFIED**. Director 7.8.1 actual local mission consumer remains the prerequisite; Merkle append-only proof cannot authorize B1 history mutation.
+- **Feedback to Internet Scout:** IS-007 now reached the Director queue. Prefer evidence of an actually authorized existing knowledge consumer and its pre-K baseline; avoid duplicate verification-method notes. If baseline already knows K, classify ALREADY_PRESENT; if local consumer inaccessible, EXECUTION_RECEIPT_UNVERIFIED. The previously deferred B4 writer contract remains owner-dependent.
+- **Next lexical cursor:** `Glyphser_Thirty_Second_Pass_Patent_Review_and_Strictly_Improved_Direction.md`. Maintain 10–15-file checkpoints; do not claim partial samples are complete deep review. No verified natural autonomous completion, no independent knowledge-to-behavior Ground, and no authority change was observed in the current Director documents.
