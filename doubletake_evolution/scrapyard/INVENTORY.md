@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **53 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 347 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **57 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 343 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -518,55 +518,55 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `Glyphser_Seventh_Pass_Patent_Review_and_Better_Direction.md` | `ed0ef6590c99dd8976f588d6c9de1163b456fd01` | 47072 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Glyphser_Sixteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `37dd8f739d076ff5b578fc5f308d2f92ff309e25` | 60716 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md` | `b285a935aae8bf51c47eca3eba1a1fdfe7811a13` | 56355 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `Glyphser_Thirty_Second_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `0d64f8cc7a00b25d02b5ce51b00350d08431b405` | 77842 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Twenty_Fifth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `d7d335cbc3a36c5872d9a69701326c2c6557dab6` | 81825 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Twenty_Fourth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `35aa611c2a0edf9779a71c192d4c758b058d4479` | 74976 | PENDING_CONTENT_REVIEW |
+| `Glyphser_Thirty_Second_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `0d64f8cc7a00b25d02b5ce51b00350d08431b405` | 77842 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `Glyphser_Twenty_Fifth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `d7d335cbc3a36c5872d9a69701326c2c6557dab6` | 81825 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `Glyphser_Twenty_Fourth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `35aa611c2a0edf9779a71c192d4c758b058d4479` | 74976 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `Harness_not_prompt.txt` | `51c5fb30f22bf8c0b2f615a05ceb862532c40d63` | 74 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `herdr_agent_x_port_plan.md` | `64b923c39039486088c274b3e3754cf4fda92abc` | 1599 | CONTENT_REVIEWED; KEEP |
-| `hybrid_outside_feedback_adaptive_jumping_64hex_blueprint_v30.md` | `173ce3613eec824aaf33a1984833ed165c5b5424` | 90754 | PENDING_CONTENT_REVIEW |
-| `hybrid_outside_feedback_adaptive_jumping_64hex_blueprint_v31.md` | `0725818531b17fde9bfe8b00b7522b415b579b5d` | 111421 | PENDING_CONTENT_REVIEW |
-| `ICHING_65_HUMAN_INTERPRETATIONS_FROM_V18_WITH_ORIGINAL_TITLES.md` | `d23a012ba93550c4732d1c388956b479ce7b64ae` | 18797 | PENDING_CONTENT_REVIEW |
-| `ICHING_WILHELM_TUNED_TO_V18_FULL_REWRITE.md` | `3b9e48687e1cf796848e54767e253705e15168e2` | 364100 | PENDING_CONTENT_REVIEW |
-| `IMPLEMENT_DETERMINISTIC_BORG_COLLECTIVE_RUNTIME_IN_DOUBLETAKE_v4.7.md` | `aa7bcc2f8153e76d51177f75f3a6e86b3e80071f` | 103708 | PENDING_CONTENT_REVIEW |
-| `IMPLEMENT_VON1_BORG_RUNTIME_IN_AGENT_X.md` | `35d7d4a3ac428ff38ca3ec514b32fc35f3fced1b` | 23105 | PENDING_CONTENT_REVIEW |
+| `hybrid_outside_feedback_adaptive_jumping_64hex_blueprint_v30.md` | `173ce3613eec824aaf33a1984833ed165c5b5424` | 90754 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `hybrid_outside_feedback_adaptive_jumping_64hex_blueprint_v31.md` | `0725818531b17fde9bfe8b00b7522b415b579b5d` | 111421 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `ICHING_65_HUMAN_INTERPRETATIONS_FROM_V18_WITH_ORIGINAL_TITLES.md` | `d23a012ba93550c4732d1c388956b479ce7b64ae` | 18797 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `ICHING_WILHELM_TUNED_TO_V18_FULL_REWRITE.md` | `3b9e48687e1cf796848e54767e253705e15168e2` | 364100 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `IMPLEMENT_DETERMINISTIC_BORG_COLLECTIVE_RUNTIME_IN_DOUBLETAKE_v4.7.md` | `aa7bcc2f8153e76d51177f75f3a6e86b3e80071f` | 103708 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `IMPLEMENT_VON1_BORG_RUNTIME_IN_AGENT_X.md` | `35d7d4a3ac428ff38ca3ec514b32fc35f3fced1b` | 23105 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `incoming/IS-20261101-001-versioned-history-replay-compatibility-gate.md` | `12e38fd07323dbab379354507f16917e909d3677` | 9790 | SOURCE_VALIDATED; ACCEPTED_FOR_PLANNING (OUTWARD ONLY) |
-| `job_convert_prompt.md` | `dc5e814e70ca836f20a1f864cf3b95160c150aa0` | 67924 | PENDING_CONTENT_REVIEW |
-| `LawZero_First_HR_Interview_Speaking_Script.md` | `6a5b6e8fa01809691b537ec09f48b509d8a36045` | 10307 | PENDING_CONTENT_REVIEW |
+| `job_convert_prompt.md` | `dc5e814e70ca836f20a1f864cf3b95160c150aa0` | 67924 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `LawZero_First_HR_Interview_Speaking_Script.md` | `6a5b6e8fa01809691b537ec09f48b509d8a36045` | 10307 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `LICENSE.md` | `1deb879a9d9fadb2866f109208faf286b2847465` | 3783 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (1).md` | `ac2979dd3253470c02db05a082f48e77cdd6f0a8` | 27398 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (2).md` | `81554c9353a7ba4f7f660bd18971ef353369a85c` | 27486 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (3).md` | `7ef7c0fc2042d26bbe2ff225df97e077698bee55` | 28408 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES_4.md` | `3dab6ee5e0c79ccbb8d1a213c91bb717f6dfcd60` | 17963 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES.md` | `863b104b6b20177151fa246683d6235529a07072` | 25397 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1 (1).md` | `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` | 87617 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1.md` | `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` | 87617 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_24_2.md` | `783076daa936104e845eb399c689f8f7d2e94e60` | 226398 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_FINAL_SIMPLIFICATION_AUDIT.md` | `ea15363566cf67deb19ddaae761a192d3a550656` | 1483 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_MINIMUM_DEFENSIBLE_ARCHITECTURE.md` | `57cd7e532faf8bf7205c1fd2df2d09c45af7d9b0` | 16471 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH (1).md` | `3b40f345af6e20690c2fc9ee74d203aa7dbcf25b` | 23681 | PENDING_CONTENT_REVIEW |
-| `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH.md` | `bab6ed0671839d0b8a91498e0d2411cdd1027a85` | 22997 | PENDING_CONTENT_REVIEW |
-| `llm_embedding_arithmetic_and_decoding (1).md` | `765925c4d8437acdfea3db457ee9a998147e70f6` | 164260 | PENDING_CONTENT_REVIEW |
-| `llm_embedding_arithmetic_and_decoding.md` | `9779a2cd2c41c77f0dff1e4ddbd4fc602f656b0e` | 106922 | PENDING_CONTENT_REVIEW |
-| `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` | `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` | 21573 | PENDING_CONTENT_REVIEW |
-| `M3_FINAL_PUSH_CURRENT_STATE_DEADLINE_FOCUSED.md` | `c6a255009b3171e36c9d2df7ef5a0a171e5c2d1b` | 15581 | PENDING_CONTENT_REVIEW |
-| `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` | `92f3476aa830db37520d795afcb2b1df48719d9d` | 30691 | PENDING_CONTENT_REVIEW |
-| `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` | `3a1cde51997351586eeffe8a006f3a19fecffae0` | 123239 | PENDING_CONTENT_REVIEW |
-| `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` | `223ea1748251cb0c08d6fd65d4de7affe71651d3` | 111689 | PENDING_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (1).md` | `ac2979dd3253470c02db05a082f48e77cdd6f0a8` | 27398 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (2).md` | `81554c9353a7ba4f7f660bd18971ef353369a85c` | 27486 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (3).md` | `7ef7c0fc2042d26bbe2ff225df97e077698bee55` | 28408 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES_4.md` | `3dab6ee5e0c79ccbb8d1a213c91bb717f6dfcd60` | 17963 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES.md` | `863b104b6b20177151fa246683d6235529a07072` | 25397 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1 (1).md` | `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` | 87617 | DELETE_CANDIDATE_BLOCKED / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1.md` | `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` | 87617 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_24_2.md` | `783076daa936104e845eb399c689f8f7d2e94e60` | 226398 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_FINAL_SIMPLIFICATION_AUDIT.md` | `ea15363566cf67deb19ddaae761a192d3a550656` | 1483 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_MINIMUM_DEFENSIBLE_ARCHITECTURE.md` | `57cd7e532faf8bf7205c1fd2df2d09c45af7d9b0` | 16471 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH (1).md` | `3b40f345af6e20690c2fc9ee74d203aa7dbcf25b` | 23681 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH.md` | `bab6ed0671839d0b8a91498e0d2411cdd1027a85` | 22997 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `llm_embedding_arithmetic_and_decoding (1).md` | `765925c4d8437acdfea3db457ee9a998147e70f6` | 164260 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `llm_embedding_arithmetic_and_decoding.md` | `9779a2cd2c41c77f0dff1e4ddbd4fc602f656b0e` | 106922 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` | `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` | 21573 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `M3_FINAL_PUSH_CURRENT_STATE_DEADLINE_FOCUSED.md` | `c6a255009b3171e36c9d2df7ef5a0a171e5c2d1b` | 15581 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` | `92f3476aa830db37520d795afcb2b1df48719d9d` | 30691 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` | `3a1cde51997351586eeffe8a006f3a19fecffae0` | 123239 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` | `223ea1748251cb0c08d6fd65d4de7affe71651d3` | 111689 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `4a5682905e5f21f3b0a5a4e3ab552c27ce51fa8c` | 2237 | CONTENT_REVIEWED; KEEP |
-| `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.1.md` | `8eabf55583193601aae032b1960ca9382ef9e03a` | 101769 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.2_INTERMEDIATE.md` | `f2573f079b944409df51fd7c8eba6c36beaa4dce` | 106008 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.6_CHECKPOINT.md` | `e393f51ae737c7b2b3019879c94fc1329c7cdaa2` | 27537 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.7_CHECKPOINT.md` | `171c59ae3784b33f3f1bdd33171a852d934c99e7` | 31751 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.8_DISCOVERY_HOLDOUT.md` | `32cc41fda727704b982a6475ecdcd4c3390aa841` | 40375 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.9_SIGNAL_PRESERVING.md` | `ec78543b9f671fbbd527b50f5e0a3768e83cb728` | 39011 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.0_PREDICTIVE_INNOVATION.md` | `faa9edd54df2f780c33b6456ff89cd9d1aaa51a6` | 33389 | PENDING_CONTENT_REVIEW |
-| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.2_MULTIVECTOR_PROPAGATION.md` | `26611aea32c66e01d610fcd42d23751d60065bcf` | 40468 | PENDING_CONTENT_REVIEW |
-| `Mastery_MCQ_Guardrails_10_of_10_Final.md` | `9899f29dd3c1dbf4f5838326efbe5e96ea8e2ef2` | 21384 | PENDING_CONTENT_REVIEW |
-| `maximum_stealth_adblock_method.md` | `bd3b9d5b8632228df518a6275a1f6296787c5916` | 15995 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPT.md` | `8f3d55898b69c7d1dd0580d314a3bc9c8d949607` | 141351 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPTb.md` | `9aa4257d76629a63f9b23c7f3d684b1e89d6b7ce` | 49344 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v2.md` | `aaccd1527b6a3ebef69ad25bf56837dcf7f93cb7` | 26985 | PENDING_CONTENT_REVIEW |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v3.md` | `fd088252e5a9daa561d78daf7e75b8d68b9d6206` | 36193 | PENDING_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.1.md` | `8eabf55583193601aae032b1960ca9382ef9e03a` | 101769 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.2_INTERMEDIATE.md` | `f2573f079b944409df51fd7c8eba6c36beaa4dce` | 106008 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.6_CHECKPOINT.md` | `e393f51ae737c7b2b3019879c94fc1329c7cdaa2` | 27537 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.7_CHECKPOINT.md` | `171c59ae3784b33f3f1bdd33171a852d934c99e7` | 31751 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.8_DISCOVERY_HOLDOUT.md` | `32cc41fda727704b982a6475ecdcd4c3390aa841` | 40375 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.9_SIGNAL_PRESERVING.md` | `ec78543b9f671fbbd527b50f5e0a3768e83cb728` | 39011 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.0_PREDICTIVE_INNOVATION.md` | `faa9edd54df2f780c33b6456ff89cd9d1aaa51a6` | 33389 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.2_MULTIVECTOR_PROPAGATION.md` | `26611aea32c66e01d610fcd42d23751d60065bcf` | 40468 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `Mastery_MCQ_Guardrails_10_of_10_Final.md` | `9899f29dd3c1dbf4f5838326efbe5e96ea8e2ef2` | 21384 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `maximum_stealth_adblock_method.md` | `bd3b9d5b8632228df518a6275a1f6296787c5916` | 15995 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPT.md` | `8f3d55898b69c7d1dd0580d314a3bc9c8d949607` | 141351 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPTb.md` | `9aa4257d76629a63f9b23c7f3d684b1e89d6b7ce` | 49344 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v2.md` | `aaccd1527b6a3ebef69ad25bf56837dcf7f93cb7` | 26985 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v3.md` | `fd088252e5a9daa561d78daf7e75b8d68b9d6206` | 36193 | KEEP / PARTIAL_CONTENT_REVIEW |
 | `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | `d24cfb24d2ae44b824c1ee0ac24ffd44cb82ab6e` | 50634 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | `3d6b342b76cc8daf79868e397d1f1d03dc61d880` | 43770 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | `f1e55fb858218f552b93042ab2f233de2684709b` | 30743 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
@@ -1109,3 +1109,8 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - **48 distinct previously pending GitHub files** inspected in four 12-item mini-batches with SHA checks and successful inventory commits. Most reviews were first 125 lines only, **not full-document certification**; J3 included two fully read short files. Dispositions this run: **19 KEEP, 25 NEEDS_REVIEW, 4 DELETE_CANDIDATE_BLOCKED**; 0 EXTRACT_THEN_DELETE. No new source-validated Director proposal; existing 7.8.1 receipt and 7.8.3 independent assimilation remain the nearest falsifiable gaps. Current backlog: **401 known scrapyard blobs including inventory, 400 artifact rows; 347 at least partly reviewed, 53 pending initial review**.
 - **Deletion:** **0 actual deletions this run**, cumulative known historical deletions 9. Identified exact-blob twins (M3 v1b, runic poetry numbered, uBlock popup numbered) and a 25-byte placeholder; all blocked on missing exact-path dependency/reference census. Never delete based solely on a file's own instructions or filename. Privacy-sensitive documents and uncertain copyrighted material retained without public extracts. No private DT code copied.
 - **Research/feedback:** Director latest shared STATE still says full Borg NO / NOT VERIFIED, zero independently verified full natural cycles, B1 owner disposition pending, B7 mission receipt/independent assimilation unverified. Prior incoming IS-007 already inventoried/offloaded; no independently confirmed new DT Ground. Do not duplicate the existing research proposal. Next batch starts at `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt_rev11.md`; keep task enabled for incremental review.
+
+
+## J4 exact-ledger reconciliation — 2026-11-01 UTC
+
+- **Correction to earlier cumulative counts (do not erase historical checkpoints):** Of 48 files listed in I5–I8 as newly sampled, **44** still had PENDING ledger status and **4** had already been sampled/reviewed in an earlier epoch (`Harness_not_prompt.txt`, `herdr_agent_x_port_plan.md`, `LICENSE.md`, `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md`). All 48 checkpoint paths and SHA values matched the existing ledger. This reconciles the **44 genuinely new earlier reads** into canonical ledger dispositions using their already-committed I5–I8 content observations; no additional content fetched in this repair. Thus prior I8 cumulative 299 and J4 cumulative 347 overstated distinct newly reviewed artifacts by four. Correct unique counts are **295 after I8** and **343 after J4**, leaving **57 PENDING_CONTENT_REVIEW** out of 400 artifact rows. J1–J4's 48 newly sampled distinct artifacts and 0 deletions remain valid. No content, ownership, or deletion decisions changed; this is accounting and status reconciliation only.
