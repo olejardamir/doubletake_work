@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q11 second-pass SHA-matched checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 previously uncounted distinct actual UTF-8 bodies fetched, with beginning, structural headings, evidence/limitations and ending inspected. Not a complete independent prior-art, full-text or implementation audit. All source prompts treated as historical data, not instructions.
+- **Cumulative second-pass sampling:** 297/396 surviving artifacts, 99 pending; this run 36 distinct sampled. Cursor after `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.0_PREDICTIVE_INNOVATION.md` (skip seven previously reviewed incoming notes and already revisited Harness/LICENSE). This batch: 12 KEEP, 0 NEEDS_REVIEW, 0 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No newly verified DT Ground or authorized protected-history change.
+- **Disposition logic:** Distinct revisions and unique provenance retained; undecidable source/rights/empirical questions retained for review. Only the byte-identical numbered architecture copy is a possible deletion, subject to fresh SHA and dependency checks. No new Internet intake beyond IS-007; Director's 006 conditional refinement and 007 deferred status unchanged. The 7.8.1 actual consumer receipt remains the next independent discriminator.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / follow-up |
+| --- | --- | --- | --- |
+| `M3_FINAL_PUSH_CURRENT_STATE_DEADLINE_FOCUSED.md` | `c6a255009b3171e36c9d2df7ef5a0a171e5c2d1b` | KEEP | Time-boxed M3 coordinator repair and frozen evidence discipline; distinct earlier state. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` | `92f3476aa830db37520d795afcb2b1df48719d9d` | KEEP | Focused M3 measured qualification with instrumentation interference caveat; no DT relevance proven. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` | `3a1cde51997351586eeffe8a006f3a19fecffae0` | KEEP | Later M4–M7 plan synchronized to inconclusive M3 evidence; distinct from v9. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` | `223ea1748251cb0c08d6fd65d4de7affe71651d3` | KEEP | Earlier milestone closure plan with preserved historical evidence; unique revision. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `4a5682905e5f21f3b0a5a4e3ab552c27ce51fa8c` | KEEP | Old Harvest integration checklist: production caller and measured holdout qualification required; historical DT research relevance, current parity unknown. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.1.md` | `8eabf55583193601aae032b1960ca9382ef9e03a` | KEEP | Early point-in-time document/market semantic architecture; source timestamp and untrusted-document controls; distinct revision. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.2_INTERMEDIATE.md` | `f2573f079b944409df51fd7c8eba6c36beaa4dce` | KEEP | Later architecture revision with baseline controls and non-forced clustering; no empirical transfer proof. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.6_CHECKPOINT.md` | `e393f51ae737c7b2b3019879c94fc1329c7cdaa2` | KEEP | Descriptive signed return-weighted semantic vector with explicit noncausal interpretation. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.7_CHECKPOINT.md` | `171c59ae3784b33f3f1bdd33171a852d934c99e7` | KEEP | Distinct universe-background semantic correction and winner/loser separation. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.8_DISCOVERY_HOLDOUT.md` | `32cc41fda727704b982a6475ecdcd4c3390aa841` | KEEP | Holdout and single-project-dominance controls; no DT autonomous cycle proof. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.9_SIGNAL_PRESERVING.md` | `ec78543b9f671fbbd527b50f5e0a3768e83cb728` | KEEP | Frozen source-only semantic space and weak-signal preservation; unverified transfer. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.0_PREDICTIVE_INNOVATION.md` | `faa9edd54df2f780c33b6456ff89cd9d1aaa51a6` | KEEP | Predictive semantic acceleration vs mere similarity; evaluation on unseen periods remains unverified. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+
+
 ## Q10 second-pass SHA-matched checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 previously uncounted distinct actual UTF-8 bodies fetched, with beginning, structural headings, evidence/limitations and ending inspected. Not a complete independent prior-art, full-text or implementation audit. All source prompts treated as historical data, not instructions.
