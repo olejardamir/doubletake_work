@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## O4 second-pass checkpoint and run closeout — 2026-11-01 UTC (12 additional SHA-matched reads)
+
+- **Scope:** 12 distinct current artifact bodies fetched/sampled, exact blob SHA checked, no filename-only reviews counted. O1–O4 total **48 distinct second-pass reviews** (43 KEEP, 4 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED); cumulative second-pass **119/398**, **279 remaining**. All 398 surviving artifacts have prior first-pass partial-content review; second pass is stricter sampled re-evaluation, not full line-by-line audit. Incoming 7 unchanged and previously triaged. **0 actual deletions this run; 11 historical verified deletions cumulative**. Pending eligible: 0 proven safe; 5 blocked exact-blob twin candidates including newly identified Harvest UI twin. Reference search for its exact filename returned zero in both repositories, but absence is not established by incomplete code search or uninspected external references; retain.
+- **Research outcome:** No genuinely new safe external-K natural assimilation candidate found in this 48-file batch; historical files reinforce existing 7.8.1 consumer/receipt and 7.8.3 source-dependent Ground negative controls. Director still reports full Borg **NO / NOT VERIFIED**, B1 owner decision pending, zero complete natural cycles; existing RFC 9162 candidate `R-BORG-SCOUT-20261101-007` remains deferred for parity/consumer, and IS-006 conditional only. No new offload proposal or private implementation change. **Next second-pass cursor:** after `Agent_X_Harvest_Execution_Prompt.md` in path order, skipping previously reviewed paths and unrelated sensitive material. Next research priority: observe authorized local mission consumer and source-dependent held-out Ground, then compare against current DT; avoid generic proposals.
+- **Method efficacy:** 48 content samples, 0 new verified assimilations, 0 false dismissal claims, 1 additional duplicate identified but safely blocked, 4 uncertain preserved. All 4 inventory checkpoints successfully committed independently. The 30–50 target was met without unsupported deletion or prompt edits.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `AGENT_X_SEMANTIC_PROVIDER_BOOTSTRAP_REPAIR.md` | `f6a192f33d6dbd9a1ad0c9a3bd450e11566e129a` | KEEP | Historical semantic-provider bootstrap 403 diagnosis; no write-capable fallback on unavailable provider. |
+| `AGENT_X_SEMANTIC_WRITE_SET_RESOLUTION_REPAIR.md` | `e446916997c2a156cb13c863222f5d4fc3f2f578` | KEEP | Materialize external request source before semantic interpretation and resolve exact authorized write set. |
+| `AGENT_X_SPEC_DRIVEN_FALSE_NOOP_REPAIR.md` | `bbb6d89e321b350daf66ae3e8d2d56f5127e4b46` | KEEP | Spec compliance cannot infer completion from capability presence or no-op; explicit behavior checks. |
+| `AGENT_X_SPEC_RUNTIME_HANDOFF_ZERO_EFFECT_FIX.md` | `9f18646ecf0560240607e9323cc0ba37e79a9f5e` | KEEP | Semantic compliance to runtime packet must have actual effect; zero-effect false PASS is failure. |
+| `AGENT_X_TOOLS_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `70d563d71a7c3d2be1cc7d871f3a66b7bdd5917d` | KEEP | Historical source-only cleanup bias and behavioral promotion requirements; not deletion authority over scrapbook. |
+| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_PROMPT.md` | `a258ddfa17dc85b4e89f8d9cdba17526d70afae9` | KEEP | Reject placeholder/generated record handlers masquerading as algorithms; require executable substance. |
+| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_REMAINING_WORK.md` | `8513d3f0751c71693a7676381d697d1ddf675c55` | KEEP | Post-cleanup remaining work version; behavioral gates, no fabricated code, canonical authoring. |
+| `AGENT_X_TOOLS_FINAL_CLOSURE_REMAINING_WORK.md` | `40fb2b19d7afafe17725a2cfff603ce9c6d173a8` | KEEP | Later closure-only audit with explicit no-redesign and regression evidence; distinct historical revision. |
+| `AGENT_X_VERIFICATION_STALE_BASE_RECOVERY_REPAIR.md` | `fbcc01af7de0daaadf3f23201f534e80cb7ab065` | KEEP | Version verification and semantic projection must be separately reconciled, preserving fail-closed mismatch. |
+| `AUDIT.md` | `dd621250c391afd0db22501e71b6c60c840988f0` | NEEDS_REVIEW | Historical source-fidelity correction for semantic-state data and geometry; original sources/provenance not independently validated. |
+| `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | KEEP | Transcript-to-study-outline coverage ledger with covered/partial/missing states; unique provenance, unrelated to current Borg Ground. |
+| `Agent_X_Harvest_Execution_Prompt.md` | `c24cb33bdaee5d529711b360fcce5881851ba6d4` | KEEP | Historical guided discovery through durable inventory and governed implementation acceptance; current DT parity unknown. |
+
+
 ## O3 second-pass checkpoint — 2026-11-01 UTC (12 additional SHA-matched reads)
 
 - **Scope:** 12 current text artifacts directly fetched and sampled, exact blob identities checked; 10 KEEP, 2 NEEDS_REVIEW. Second-pass distinct **107/398**; **291 remain**. **0 deletions** this checkpoint, cumulative verified 11. Historical designs do not establish live DT behavior.
