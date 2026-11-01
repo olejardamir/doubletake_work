@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q20 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 current files checked against Git tree SHA; 11 directly sampled through path reader and one 1.32 MB artifact through blob reader after path reader returned empty. 7 KEEP, 3 NEEDS_REVIEW, 2 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No full deep audit of large artifacts.
+- **Cursor:** End of current sorted scrapyard tree at `zero_resolution_observation_genesis_of_distinction.md`. Q17–Q20 have now SHA-matched content-sampled all 51 files lexicographically following the prior cursor, including 12 previously accounted for elsewhere in the earlier 353/392 ledger. **Do not sum 353+51 as 404 unique files**. Current tree still has 392 artifacts excluding inventory. Historical first-pass ledger reports all reachable text inspected at least partially, with three inaccessible/oversized exceptions; independent deep-content coverage and all format-specific validation remain NOT VERIFIED. **PENDING_CONTENT_REVIEW in the bounded SHA-sample sense: 0 for this 51-file cursor tail; earlier three inaccessible/partial artifacts remain NEEDS_REVIEW.**
+- **Privacy:** Two personal career-related artifacts retained without quoting or promoting content. No permission to delete or republish inferred.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md` | `76677875e6fce955268ebdbcb6ed3c8b3c3a2f69` | NEEDS_REVIEW | 1.32 MB dimensional card-system book; path reader empty but blob reader confirmed nonempty and sampled beginning/end; deep audit outstanding. Retain; revisit on concrete trigger. |
+| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE (1).md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | DELETE_CANDIDATE | Exact duplicate of unsuffixed general-audience methodology; pending references check. No deletion until current-SHA and reference checks. |
+| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE.md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | KEEP | Canonical accessible overview of card-system observational framing, not empirical DT evidence. Retain; revisit on concrete trigger. |
+| `voynich_frequency_mapping_workflow_revised (1).md` | `3256242128dc49040fc5ed9bad910a068041e98c` | DELETE_CANDIDATE | Exact duplicate of unsuffixed revised Voynich experiment workflow; pending references check. No deletion until current-SHA and reference checks. |
+| `voynich_frequency_mapping_workflow_revised.md` | `3256242128dc49040fc5ed9bad910a068041e98c` | KEEP | Canonical frequency-compatible mapping hypothesis with explicit null-result falsifier. Retain; revisit on concrete trigger. |
+| `voynich_frequency_mapping_workflow_updated.md` | `2da46b82d46ce8e29e209409f1bcf3e0819e0791` | KEEP | Earlier frequency-bin mapping and random-baseline controls; distinct historical version. Retain; revisit on concrete trigger. |
+| `voynich_unsupervised_morphology_system.md` | `7ad8a114852cbc366bce4deaeb70cf010b03bea4` | KEEP | Unsupervised morphology clustering design; not evidence of decipherment. Retain; revisit on concrete trigger. |
+| `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` | `39624f47870cb77866037f397e47228a7f20e383` | NEEDS_REVIEW | Personal interview preparation document; sensitive context, retain pending owner-directed privacy disposition; do not republish content. Retain; revisit on concrete trigger. |
+| `WEALTHSIMPLE_HR_INTERVIEW_TRANSCRIPT_DAMIR_STUDY_ONLY.md` | `d5b7afda4b2ecba002f3d1aa6b0a3b7a59745420` | NEEDS_REVIEW | Personal interview study transcript; retain pending owner-directed privacy disposition; no public extraction. Retain; revisit on concrete trigger. |
+| `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | KEEP | Historical browser ad-suppression v16 with reversible wrappers and fail-closed caveats. Retain; revisit on concrete trigger. |
+| `youtube_detection_neutral_architecture_v17.md` | `3387f7a74038e2c6155dce3702969351af3999fc` | KEEP | Distinct v17 revision with explicit unresolved negative-test caveats. Retain; revisit on concrete trigger. |
+| `zero_resolution_observation_genesis_of_distinction.md` | `b75eda1766f0896edc78f0c96b36483b36f05e9f` | KEEP | Working mathematical/philosophical observation proposal; no demonstrated DT capability or verified empirical basis. Retain; revisit on concrete trigger. |
+
+
 ## Q19 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 13 current UTF-8/CSV artifacts fetched and sampled; 9 KEEP, 2 NEEDS_REVIEW, 2 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. Large 944-kB book sampled only; no deep audit.
