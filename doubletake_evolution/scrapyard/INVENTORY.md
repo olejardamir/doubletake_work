@@ -2,6 +2,12 @@
 
 ## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
 
+- **Prior path:** `doubletake_evolution/scrapyard/voynich_frequency_mapping_workflow_revised (1).md`; **prior blob SHA:** `3256242128dc49040fc5ed9bad910a068041e98c`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `d58755fa4571e543cab63446d08e6385ed1925db`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/voynich_frequency_mapping_workflow_revised.md` with identical full Git blob SHA `3256242128dc49040fc5ed9bad910a068041e98c`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
+
+
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
 - **Prior path:** `doubletake_evolution/scrapyard/VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE (1).md`; **prior blob SHA:** `988a907a9f60bdc95966a1ab4895ee5e542fdba1`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `fa81f5a13d6cb323243c334d3b4220504a65f5f7`.
 - **Retained canonical:** `doubletake_evolution/scrapyard/VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE.md` with identical full Git blob SHA `988a907a9f60bdc95966a1ab4895ee5e542fdba1`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
 
