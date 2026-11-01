@@ -579,19 +579,19 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `MILESTONE_3_REPAIR_CURRENT_UNTIL_ACCEPT_100_PERCENT.md` | `47ef722874250f39f2fbbcb6e54394603d97ffbc` | 33293 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `MISP_JAN16_31_2026_TO_FEB2026_FORWARD_LAG_TEST.md` | `8dc5402c673631d1874dbb8e39dc853c3028ce45` | 8893 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `MISP_V1.8_APRIL_2026_RANDOM_MONTH_PILOT.md` | `baaec06b7418fd39c6807e98a7bd5d7c5b1bb6b1` | 9626 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
-| `MISP_V1.8_FEBRUARY_2026_RANDOM_MONTH_PILOT.md` | `0fa2cca8b98a437dc56d8e382023e762197407fe` | 9534 | PENDING_CONTENT_REVIEW |
-| `MISP_V1.8_HOLDOUT_DISCOVERY_PILOT_JULY_2026.md` | `fec8e5adbedbd0d672398f1821c74860c0589de9` | 9039 | PENDING_CONTENT_REVIEW |
-| `MISP_V2.2_APRIL_TUNING_AND_MAY_HOLDOUT.md` | `419d417203b5ce6a08064be26f6c7eca4b1ae3e8` | 6172 | PENDING_CONTENT_REVIEW |
-| `MSR_false_break_failure_modes_complete_v4.md` | `7f8c08e8a53be353be034865717dc57f6c2d2827` | 114594 | PENDING_CONTENT_REVIEW |
-| `MSR_formal_specification_corrected_v26.md` | `f3ce6db8517b2ba1a9d48ec0443fe9ad66a6f17a` | 45281 | PENDING_CONTENT_REVIEW |
-| `Natal_Chart_Rectification_Working_Model_v10.md` | `ad57ec94642d797573bdf85902c20b63b40d86c2` | 6198 | PENDING_CONTENT_REVIEW |
-| `NEW_MATH_GUARDRAILS_v6.md` | `bb8288b61755f90e5f820d7897b5f8603fef1fc1` | 118418 | PENDING_CONTENT_REVIEW |
-| `no_primitive_boundary_boolean_logic_paper_v0.4_proof_audited.md` | `466987ab877e15c9eda8c4dc0814a7b9786d37dc` | 58737 | PENDING_CONTENT_REVIEW |
-| `non_collapsing_adaptive_jumping_64hex_blueprint_v26.md` | `ba73dba5e4391a501e84a4491463c06c06df6a0b` | 65498 | PENDING_CONTENT_REVIEW |
-| `ontario_anal_fissure_clinics_expanded_175_locations.md` | `e9da2f9df2f3c92aecaa02654379ea0c5e7b36cd` | 65718 | PENDING_CONTENT_REVIEW |
+| `MISP_V1.8_FEBRUARY_2026_RANDOM_MONTH_PILOT.md` | `0fa2cca8b98a437dc56d8e382023e762197407fe` | 9534 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MISP_V1.8_HOLDOUT_DISCOVERY_PILOT_JULY_2026.md` | `fec8e5adbedbd0d672398f1821c74860c0589de9` | 9039 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MISP_V2.2_APRIL_TUNING_AND_MAY_HOLDOUT.md` | `419d417203b5ce6a08064be26f6c7eca4b1ae3e8` | 6172 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `MSR_false_break_failure_modes_complete_v4.md` | `7f8c08e8a53be353be034865717dc57f6c2d2827` | 114594 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `MSR_formal_specification_corrected_v26.md` | `f3ce6db8517b2ba1a9d48ec0443fe9ad66a6f17a` | 45281 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `Natal_Chart_Rectification_Working_Model_v10.md` | `ad57ec94642d797573bdf85902c20b63b40d86c2` | 6198 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `NEW_MATH_GUARDRAILS_v6.md` | `bb8288b61755f90e5f820d7897b5f8603fef1fc1` | 118418 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `no_primitive_boundary_boolean_logic_paper_v0.4_proof_audited.md` | `466987ab877e15c9eda8c4dc0814a7b9786d37dc` | 58737 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `non_collapsing_adaptive_jumping_64hex_blueprint_v26.md` | `ba73dba5e4391a501e84a4491463c06c06df6a0b` | 65498 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `ontario_anal_fissure_clinics_expanded_175_locations.md` | `e9da2f9df2f3c92aecaa02654379ea0c5e7b36cd` | 65718 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `openshell_not_prompt.txt` | `3015885a7b72feb88035a2fa4e91500b0718ae04` | 5953 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | 28654 | PENDING_CONTENT_REVIEW |
-| `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | 54225 | PENDING_CONTENT_REVIEW |
+| `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | 28654 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | 54225 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | `943cbbdb59a9382f04cf924a3920f9e29c55aa15` | 294843 | PENDING_CONTENT_REVIEW |
 | `PAIV_EQC_Project_Master_Specification_v0.1.0.md` | `e4e511c8ab82bccdcfadc0eef97fd00cccbd2460` | 68593 | PENDING_CONTENT_REVIEW |
 | `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | `c647b322d7770522ecb1108e1fbfeec1b2d5a90a` | 58096 | PENDING_CONTENT_REVIEW |
@@ -1037,3 +1037,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `MISP_JAN16_31_2026_TO_FEB2026_FORWARD_LAG_TEST.md` | NEEDS_REVIEW | Historical crypto semantic forward-lag pilot with TF-IDF; independent performance and data provenance unverified. |
 | `MISP_V1.8_APRIL_2026_RANDOM_MONTH_PILOT.md` | NEEDS_REVIEW | Historical TF-IDF holdout/leave-one-out mechanics pilot; no verified out-of-sample DT transfer. |
 - **Checkpoint:** 311 at least partly sampled; 89 pending initial content review; next cursor `MISP_V1.8_FEBRUARY_2026_RANDOM_MONTH_PILOT.md`. No new Director handoff; current 7.8 receipt and independent assimilation tests remain prior priority.
+
+
+## J2 checkpoint — 2026-11-01 UTC (12 SHA-verified initial samples)
+
+- Directly fetched first 125 lines of 12 previously pending files; each GitHub blob SHA matched inventory. Partial review only; mathematical and market assertions are not independently validated. Personal medical/astrological/employment materials are retained **without quoting identifying content**. No source text treated as executable instruction.
+- **Disposition:** 2 KEEP, 10 NEEDS_REVIEW, 0 deletion candidates; no identical blob in this batch; 0 deletions. Distinct candidate value: negative-control taxonomy and research-claim proof maturity, already substantially covered by DT's evidence governance, so no duplicate Director proposal.
+
+| Artifact | Disposition | Actual-content finding / revisit |
+| --- | --- | --- |
+| `MISP_V1.8_FEBRUARY_2026_RANDOM_MONTH_PILOT.md` | NEEDS_REVIEW | Historical February semantic discovery TF-IDF pilot; claims need independent market-data replay and leakage audit. |
+| `MISP_V1.8_HOLDOUT_DISCOVERY_PILOT_JULY_2026.md` | NEEDS_REVIEW | July leave-one-out project discovery pilot; holdout integrity and predictive performance not independently validated. |
+| `MISP_V2.2_APRIL_TUNING_AND_MAY_HOLDOUT.md` | NEEDS_REVIEW | Multi-channel tuning versus following-month holdout; baseline/negative results require independent replication. |
+| `MSR_false_break_failure_modes_complete_v4.md` | KEEP | Explicit false-cryptanalytic-break taxonomy; useful negative-control and theorem-claim discipline, not a validated shortcut. |
+| `MSR_formal_specification_corrected_v26.md` | NEEDS_REVIEW | Markovian State Realignment mathematical hypothesis; independent proof and cryptographic assumptions unverified. |
+| `Natal_Chart_Rectification_Working_Model_v10.md` | NEEDS_REVIEW | Personal astrology working record; privacy-sensitive, no scientific DT capability or public extraction justified. |
+| `NEW_MATH_GUARDRAILS_v6.md` | KEEP | Formal novelty/proof maturity/finite exhaustive checks separated from unsupported novelty claims; research quality pattern. |
+| `no_primitive_boundary_boolean_logic_paper_v0.4_proof_audited.md` | NEEDS_REVIEW | Original Boolean-base logic manuscript with nonclaims and proof classes; independent formal validity unverified. |
+| `non_collapsing_adaptive_jumping_64hex_blueprint_v26.md` | NEEDS_REVIEW | Large indexed-space adaptive search blueprint; performance and actual generality unverified. |
+| `ontario_anal_fissure_clinics_expanded_175_locations.md` | NEEDS_REVIEW | Personal health-related provider research; protect privacy, no DT mechanism or public excerpt. |
+| `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | NEEDS_REVIEW | Job-specific professional narrative; personal employment material, no public extraction or DT proof. |
+| `opsguru_carbon60_principal_architect_role_stories.md` | NEEDS_REVIEW | Earlier professional role narrative; privacy and unique-revision comparison unresolved. |
+- **Checkpoint:** 323 at least partly sampled; 77 pending initial review; next cursor `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md`.
