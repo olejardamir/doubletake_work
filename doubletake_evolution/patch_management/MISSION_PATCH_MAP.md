@@ -24,7 +24,7 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `a7b6424ebaacc
 | DT-EVO-007 | 7.8.1 | OUTWARD: map the actual existing consumer and test revision-bound acknowledgement | DIAGNOSTIC_READY (not implementation) | BPE-20261101-008 |
 | DT-EVO-007 | 7.8.2 | INWARD, only if 7.8.1 proves an actionable owner gap | DEPENDENCY_PENDING | — |
 | DT-EVO-007 | 7.8.3 | GROUND: independently verify the full downstream effect and return feedback to the Scouts | DEPENDENCY_PENDING | — |
-| DT-EVO-007 | 7.9.1 | OUTWARD→INWARD→GROUND: contain reserved mission proof artifacts | PREPARED_PRIVATE_PUBLICATION_BLOCKED | BPE-20261101-001 (private) |
+| DT-EVO-007 | 7.9.1 | OUTWARD→INWARD→GROUND: contain reserved mission proof artifacts | PRIVATE_PREPARED_UNTESTED; PUBLICATION_TOOL_BLOCKED; RACE_GROUND_OPEN | BPE-20261101-001 (private rev2; source/test blobs match executor branch; 6/6 source hunks match; no public .sh published) |
 | DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | IMPLEMENTATION_PARTIAL_FEATURE_BRANCH | BPE-20261101-002 (private); BPE-20261101-003–004 applied on feature branch; BPE-20261101-005–007 also integrated on the feature branch (source/test commits independently inspected; guarded test counts reported, logs not independently rerun) |
 
 **Snapshot coverage:** 22 numbered open steps across 6 task areas. `SOURCE_REVIEW_REQUIRED` means no valid patch or blocker has yet been established. A mapped patch is NOT a completed mission step. Conditional or owner-authority-blocked steps must not be implemented without legitimate authorization. A verification-only step needs real test/observation evidence, not a fabricated source diff.
@@ -136,8 +136,8 @@ The owner has clarified in ACTIVE_MISSION.md that ordinary DT source-code patch 
 
 ### 7.9.1
 - **7.9.1-A** — Verify current private proof-artifact write behavior and safe patch applicability. **DoD:** evidence or focused positive/negative result required; not satisfied by planning alone.
-- **7.9.1-B** — Apply private BPE-001 only if still necessary and authorized. **Gate:** prerequisite/authorization must be independently satisfied; not a ready code patch.
-- **7.9.1-C** — Test reserved/intermediate symlink and validation-write swap negative fixtures. **DoD:** evidence or focused positive/negative result required; not satisfied by planning alone.
+- **7.9.1-B** — Private BPE-001 rev2 remains PREPARED_UNTESTED and source-compatible on confirmed feature branch; public .sh packaging was rejected by tool safety checks this run. No public executable patch is available for this ID. Do not count it as applied or silently bypass the publication blocker.
+- **7.9.1-C** — Test reserved/intermediate symlink and validation→write swap negative fixtures in an isolated workspace with outside sentinel. Static path validation in private BPE-001 does not prove race-safe use-time containment; preserve the independent Ground requirement.
 
 ### 7.9.2
 - **7.9.2-A** — Confirm canonical receipt-chain contract and private patch compatibility. **DoD:** evidence or focused positive/negative result required; not satisfied by planning alone.
@@ -156,3 +156,11 @@ At DT `feature/alphacode-provider` HEAD `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5b
 These two code patches are preparation, not execution or Ground. No authority-blocked mission steps were reclassified as completed. Existing 22 open numbered steps remain represented above; next verification-only discriminator remains 7.8.1.
 
 - `BPE-20261101-012` (`PREPARED_UNTESTED`): current claim-receipt CLI returns process success even when its JSON verdict reports `all_pass=false`. Source `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, `cli.py` blob `56d52e2f724042567d11d1f1635601bcc413d9fe`. The patch preserves JSON output but exits nonzero for failed verification, with success and negative tests. No production consumer integration is claimed.
+
+## Patch Engineer source reconciliation — 2026-11-01 latest run
+
+- The six active mission tasks and all **22** open numbered steps, including 4-part 4.2.2.2 and 4.2.2.3, were rechecked against current ACTIVE_MISSION.md and COMPLETED.md. Existing classifications remain; no new owner authorization, loaded recovery or external Ground evidence was observed.
+- DT executor `feature/alphacode-provider` HEAD `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb` is unchanged. BPE-003–007 implementation commits remain on that branch, not DT main; test counts are reported rather than independently rerun.
+- BPE-010/011/012 source SHA bindings remain current and exact old diff hunks match (2/2, 1/1, 1/1 respectively). Git apply, shell syntax and host tests were not executed. They remain PREPARED_UNTESTED.
+- Private BPE-001 rev2 source/test blobs match and six old hunks match; proposed public single-file patch publication was blocked by tool safety checks. No BPE-001 public patch was created and no source tests ran. 7.9.1 race negative remains unresolved. Private BPE-002 remains untested pending canonical chain-contract review.
+- Existing diagnostics BPE-008/009 are verification-only. Other authority, deployment and natural-case blockers retain their previously recorded triggers. This update records inspection, not additional implementation or Ground.
