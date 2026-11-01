@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q4 second-pass checkpoint and run closeout — 2026-11-01 UTC (12 SHA-matched content samples)
+
+- **Scope:** Q4 12 more actual UTF-8 bodies sampled, distinct SHA identities. Q1–Q4 **48 distinct content-sampled** files, **47 KEEP, 1 NEEDS_REVIEW, 0 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE, 0 actual deletions**. Current **214/397** surviving second-pass sampled; **183 pending second pass**; cumulative GitHub-verified deletions **12** (none in Q1–Q4). Next cursor after `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md`. Seven incoming source SHAs unchanged and previously dispositioned; no new Internet item. All first-pass coverage remains partial; second pass is sampled rather than exhaustive independent validation.
+- **Research relevance:** The strongest-link catalog and three-phase/universal-research/ingestion prompt families are historical sources, not executable proof. Several explicitly require independently observed real-world source acquisition and actual task outcomes. None supplies a new authorized local DT consumer or observed scheduler receipt; no safe source-dependent natural Ground is established. Current Director decisions for IS-006 (conditional negative-test refinement) and IS-007 (deferred until parity/consumer) stand. No new RESEARCH_OFFLOAD entry or mission edit.
+- **Cleanup reason:** No exact SHA duplicates in this 12-file batch and versioned deltas have unique historical provenance; deletion would be premature. No file outside scrapyard touched. Existing unresolved B1 integrity owner disposition remains outside Scout authority.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `DOUBLETAKE_STRONGEST_LINK_ASSIMILATION_CORPUS.md` | `e2c18892ed9d996845dfa7d203be421626209267` | KEEP | Research link corpus spanning industrial self-evolution and agent runtime; provenance/license and transfer still require per-source checks. |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v1.md` | `c4e261f6390a06a6fbfcd8809bec2da6a5817034` | KEEP | Earlier three-phase final acceptance, state/concurrency and held-out Ground gates; historical baseline. |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v3_UNIVERSAL_EVOLUTION_ADOPTION.md` | `59a9712b0a52d051b1300f1aaef1c323a6dadd76` | KEEP | Later universal eligibility and verified policy-succession adoption; distinct extension to v1. |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_MIGRATION_MISSION_v3_EXCLUSIVE.md` | `09137b4cc4d563893c9f6767df6a1689dcd6336a` | KEEP | Exclusive migration contract with phase evidence, state preservation and guarded integration; not current authority. |
+| `DOUBLETAKE_TRANSFERABLE_PROJECT_EVOLUTION_IMPLEMENTATION_PROMPT_v1.md` | `5061a3e8b495fffd501f2a1af18f7515c169a3a5` | KEEP | Project-independent task boundary and prompt ingress; testable end-to-end bridge distinct from DT-only self-evolution. |
+| `DOUBLETAKE_UNIVERSAL_ADAPTIVE_RESEARCH_AND_INFORMATION_ACQUISITION_EVOLUTION_MISSION_v2_UI_AUTO_ACTIVATION.md` | `94af46971f70a9cfdacce8e81118bff0f1dda658` | KEEP | Evidence-backed multi-source discovery, safe acquisition and automatic chat trigger with ablation; no live acquisition shown. |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_INTELLIGENCE_DISCOVERY_RELEVANCE_VERIFICATION_FINAL_CLOSURE_v1.md` | `4868c682a00e04c891e8268810931e05cd47ccbe` | KEEP | Provider suitability, independent claim verification and bounded recovery; source/fixture distinction explicit. |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_MULTI_ENGINE_FINAL_REAL_WORLD_CLOSURE_MASTER_v1.md` | `9856cb1dcf68c157e97a9398393bf4c1007a714b` | KEEP | Multi-engine live task-evidence hierarchy separates fixtures, acquired sources and user outcomes; no present DT Ground. |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` | `0d45870461370a7f9588d6abe39de2ad86760465` | KEEP | Earlier parking-task live-outcome acceptance and no-fixture-only closure; distinct dated case. |
+| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v2.md` | `35f4d60edfe03862f8e6fa93a7f1d01d4e9f1c6a` | KEEP | Initial synthetic-only governed ingestion spec, identity, policy and audit work packages. |
+| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v3_10of10.md` | `36d5d02267d83ba10f837dc81157babf612fb087` | KEEP | v3 canonical owner/integration and explicit evidence requirements, distinct from v2. |
+| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md` | `4a84803867f94f3b2cb2e12e1ecef88a4fcd0228` | KEEP | v4 test-as-built, integrate then certify at stable checkpoint; anti-churn execution-order delta. |
+
+
 ## Q3 second-pass checkpoint and run closeout — 2026-11-01 UTC (12 SHA-matched content samples)
 
 - **Scope:** Twelve additional actual UTF-8 bodies fetched/sampled; Q1–Q3 **36 distinct files**, 36 KEEP except Q1 URL catalog NEEDS_REVIEW (35 KEEP / 1 NEEDS_REVIEW), **0 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE, 0 actual deletions**. Current **202/397** surviving second-pass sampled; **195 pending second pass**, 12 historical verified deletions cumulative. First-pass partial coverage unchanged; no claim of full semantic review. Next cursor after `DOUBLETAKE_SKILLGYM_NATIVE_ASSIMILATION_PROMPT_10_10.md`.
