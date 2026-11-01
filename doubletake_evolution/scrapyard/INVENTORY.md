@@ -1,5 +1,11 @@
 # Borg Scrapyard Inventory
 
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
+- **Prior path:** `doubletake_evolution/scrapyard/ublock_resurrected_video_ad_lifecycle_controller_next_fix (1).md`; **prior blob SHA:** `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `2d97d006beb91a869a5ce245a4351040b34431fc`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/ublock_resurrected_video_ad_lifecycle_controller_next_fix.md` with identical full Git blob SHA `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
+
+
 ## Q20 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 current files checked against Git tree SHA; 11 directly sampled through path reader and one 1.32 MB artifact through blob reader after path reader returned empty. 7 KEEP, 3 NEEDS_REVIEW, 2 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No full deep audit of large artifacts.
