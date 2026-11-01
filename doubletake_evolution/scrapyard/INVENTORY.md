@@ -224,6 +224,26 @@ Source: current GitHub blob content (full for <=40 kB, first 120 lines otherwise
 | `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3c.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED | Byte-identical peer AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3.md; exact-path dependencies unverified. Sections: AGENT_X — SEMANTIC-FIRST FINAL REMAINING IMPLEMENTATION PATCH V3 / SUPERSEDES THE PREVIOUS SEMANTIC-FIRST PATCH / VERIFIED BASELINE: Astrocytech/Agent_X main; historical source, not current DT proof. |
 | `AGENT_X_SEMANTIC_FIRST_REMAINING_WORK_843f554.md` | `a526e6dfb92b1845bf30f741635af6c12c0a88a4` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X Semantic-First — Remaining Work Only / Purpose / Remaining defect 1 — Baseline evidence fields are still placeholders, not r; historical source, not current DT proof. |
 
+
+## Progressive review checkpoint E2 — 2026-11-01 (12-item bounded batch)
+
+Source: SHA-matched current GitHub content (full for <=40 kB, first 120 lines otherwise). Historical artifacts retained; byte identity does not authorize deletion; exact-path dependencies and DT parity unverified.
+
+| Artifact | SHA | Disposition | Content finding / limitation |
+| --- | --- | --- | --- |
+| `AGENT_X_SEMANTIC_FIRST_SIMPLIFICATION_CLEANUP.md` | `84ff4a6ffe9ec4d02fe8dc29daa3a6f7ffd3e08c` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X — Semantic-First Simplification / Junk Removal / 1. The original requirement / 2. Fundamental authority model; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Semantic Prompt Governance Deadlock Repair / Exact failure / 1. Preserve the security rules; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_PROVIDER_BOOTSTRAP_REPAIR.md` | `f6a192f33d6dbd9a1ad0c9a3bd450e11566e129a` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Semantic Provider Bootstrap Repair / Problem to fix / 1. Preserve the security invariant; historical source, not current DT proof. |
+| `AGENT_X_SPEC_DRIVEN_FALSE_NOOP_REPAIR.md` | `bbb6d89e321b350daf66ae3e8d2d56f5127e4b46` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Spec-Driven False No-Op / Premature “Task Complete” Repair / Exact production failure / Harvest Gate B still claims implementation authority; historical source, not current DT proof. |
+| `AGENT_X_SPEC_RUNTIME_HANDOFF_ZERO_EFFECT_FIX.md` | `9f18646ecf0560240607e9323cc0ba37e79a9f5e` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Spec Compliance → Runtime Handoff + Zero-Effect Completion Enforc / Exact production failure / Proven defects on current main; historical source, not current DT proof. |
+| `AGENT_X_TOOLS_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `70d563d71a7c3d2be1cc7d871f3a66b7bdd5917d` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X /tools/ Algorithmic Substance + Aggressive Slop Eradication — Remai / Mission / 1. Completed Work — Offloaded From This Prompt; historical source, not current DT proof. |
+| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_PROMPT.md` | `a258ddfa17dc85b4e89f8d9cdba17526d70afae9` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X /tools/ Algorithmic Substance Remediation Prompt / Mission / 1. Hard Scope; historical source, not current DT proof. |
+| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_REMAINING_WORK.md` | `8513d3f0751c71693a7676381d697d1ddf675c55` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X /tools/ Algorithmic Substance Remediation — Remaining Work Only / Purpose / 1. Already Completed — Do Not Redo; historical source, not current DT proof. |
+| `AGENT_X_TOOLS_FINAL_CLOSURE_REMAINING_WORK.md` | `40fb2b19d7afafe17725a2cfff603ce9c6d173a8` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X /tools/ Final Closure Pass — Remaining Work Only / Purpose / 1. Completed — Do Not Redo; historical source, not current DT proof. |
+| `AGENT_X_VERIFICATION_STALE_BASE_RECOVERY_REPAIR.md` | `fbcc01af7de0daaadf3f23201f534e80cb7ab065` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Verification-Revision Stale-Base Recovery Repair / Exact production failure / 1. Preserve the core safety rule; historical source, not current DT proof. |
+| `AGENTS (1).md` | `d008b2e03ba1113ea391c5ee04ad6d9b22f07c0e` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: AGENTS.md / Live Match Centre Take-Home — AI/Implementation Control Contract / Purpose; historical source, not current DT proof. |
+| `AGENTS.md` | `2699d2c2ffab9f99849d0463910d9fca5b28c6c9` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: AGENTS.md / Live Match Centre Take-Home — AI/Implementation Control Contract / Purpose; historical source, not current DT proof. |
+
 ## Complete path/blob metadata ledger
 
 Each row gives relative path, exact blob SHA, size and current triage status. PENDING_CONTENT_REVIEW does not mean unimportant; provenance/meaning/next test are unknown until read.
@@ -308,19 +328,19 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | 36255 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
 | `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3c.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | 36255 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
 | `AGENT_X_SEMANTIC_FIRST_REMAINING_WORK_843f554.md` | `a526e6dfb92b1845bf30f741635af6c12c0a88a4` | 24254 | CONTENT_REVIEWED; KEEP |
-| `AGENT_X_SEMANTIC_FIRST_SIMPLIFICATION_CLEANUP.md` | `84ff4a6ffe9ec4d02fe8dc29daa3a6f7ffd3e08c` | 41542 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | 14426 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_SEMANTIC_PROVIDER_BOOTSTRAP_REPAIR.md` | `f6a192f33d6dbd9a1ad0c9a3bd450e11566e129a` | 25003 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_SEMANTIC_FIRST_SIMPLIFICATION_CLEANUP.md` | `84ff4a6ffe9ec4d02fe8dc29daa3a6f7ffd3e08c` | 41542 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | 14426 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_SEMANTIC_PROVIDER_BOOTSTRAP_REPAIR.md` | `f6a192f33d6dbd9a1ad0c9a3bd450e11566e129a` | 25003 | CONTENT_REVIEWED; KEEP |
 | `AGENT_X_SEMANTIC_WRITE_SET_RESOLUTION_REPAIR.md` | `e446916997c2a156cb13c863222f5d4fc3f2f578` | 11203 | CONTENT_REVIEWED; KEEP |
-| `AGENT_X_SPEC_DRIVEN_FALSE_NOOP_REPAIR.md` | `bbb6d89e321b350daf66ae3e8d2d56f5127e4b46` | 16489 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_SPEC_RUNTIME_HANDOFF_ZERO_EFFECT_FIX.md` | `9f18646ecf0560240607e9323cc0ba37e79a9f5e` | 22511 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_TOOLS_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `70d563d71a7c3d2be1cc7d871f3a66b7bdd5917d` | 28490 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_PROMPT.md` | `a258ddfa17dc85b4e89f8d9cdba17526d70afae9` | 30775 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_REMAINING_WORK.md` | `8513d3f0751c71693a7676381d697d1ddf675c55` | 23511 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_TOOLS_FINAL_CLOSURE_REMAINING_WORK.md` | `40fb2b19d7afafe17725a2cfff603ce9c6d173a8` | 14170 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_VERIFICATION_STALE_BASE_RECOVERY_REPAIR.md` | `fbcc01af7de0daaadf3f23201f534e80cb7ab065` | 24914 | PENDING_CONTENT_REVIEW |
-| `AGENTS (1).md` | `d008b2e03ba1113ea391c5ee04ad6d9b22f07c0e` | 25490 | PENDING_CONTENT_REVIEW |
-| `AGENTS.md` | `2699d2c2ffab9f99849d0463910d9fca5b28c6c9` | 16764 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_SPEC_DRIVEN_FALSE_NOOP_REPAIR.md` | `bbb6d89e321b350daf66ae3e8d2d56f5127e4b46` | 16489 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_SPEC_RUNTIME_HANDOFF_ZERO_EFFECT_FIX.md` | `9f18646ecf0560240607e9323cc0ba37e79a9f5e` | 22511 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_TOOLS_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `70d563d71a7c3d2be1cc7d871f3a66b7bdd5917d` | 28490 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_PROMPT.md` | `a258ddfa17dc85b4e89f8d9cdba17526d70afae9` | 30775 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_TOOLS_ALGORITHMIC_SUBSTANCE_REMEDIATION_REMAINING_WORK.md` | `8513d3f0751c71693a7676381d697d1ddf675c55` | 23511 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_TOOLS_FINAL_CLOSURE_REMAINING_WORK.md` | `40fb2b19d7afafe17725a2cfff603ce9c6d173a8` | 14170 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_VERIFICATION_STALE_BASE_RECOVERY_REPAIR.md` | `fbcc01af7de0daaadf3f23201f534e80cb7ab065` | 24914 | CONTENT_REVIEWED; KEEP |
+| `AGENTS (1).md` | `d008b2e03ba1113ea391c5ee04ad6d9b22f07c0e` | 25490 | CONTENT_REVIEWED; KEEP |
+| `AGENTS.md` | `2699d2c2ffab9f99849d0463910d9fca5b28c6c9` | 16764 | CONTENT_REVIEWED; KEEP |
 | `agentx_full_gap_closure_prompt.md` | `db10d0d1241f7c72e7214980503918bbf6aad690` | 110068 | PENDING_CONTENT_REVIEW |
 | `agentx_gap_closure_master_prompt.md` | `7397e8c60d791bf945c731d6fbff7a41639fb749` | 29742 | PENDING_CONTENT_REVIEW |
 | `all_poetry_projected_vector_readings_poetry_grounded.md` | `cd0db3608fa90a6175d3a660333cf33970088461` | 292915 | PENDING_CONTENT_REVIEW |
