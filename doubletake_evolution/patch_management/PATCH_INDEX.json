@@ -252,16 +252,16 @@
       "id": "BPE-20261101-001",
       "mission_ref": "DT-EVO-007 / 7.9.1",
       "source_status": "PREPARED_UNTESTED",
-      "public_status": "BLOCKED_PRIVATE_CONTENT",
-      "reason": "Prior source-bearing package is retained privately; do not copy its private diff into the public planning repository.",
+      "public_status": "PENDING_SOURCE_REVIEW",
+      "reason": "User allows ordinary DT code patch publication; check latest code/DoD and screen specific secrets or confidential/protected content before preparing a public .sh.",
       "results_observed": false
     },
     {
       "id": "BPE-20261101-002",
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "source_status": "PREPARED_UNTESTED",
-      "public_status": "BLOCKED_PRIVATE_CONTENT",
-      "reason": "Prior source-bearing package is retained privately; do not copy its private diff into the public planning repository.",
+      "public_status": "PENDING_SOURCE_REVIEW",
+      "reason": "User allows ordinary DT code patch publication; check latest code/DoD and screen specific secrets or confidential/protected content before preparing a public .sh.",
       "results_observed": false
     }
   ],
