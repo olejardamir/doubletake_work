@@ -1,6 +1,14 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **0 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 397 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **0 PENDING_CONTENT_REVIEW**. Previous K1–K4 pass sampled 48 historical artifacts; L1 sampled the remaining nine pending items, and L2 sampled three formerly unreadable large blobs via the alternate blob reader; no new incoming beyond previously reviewed IS-007; **cumulative 400 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+
+
+## L2 checkpoint — 2026-11-01 UTC (large-blob reader recovery; initial census complete)
+
+- **Reader recovery:** fetch_file returned empty content for three large files, but authorized GitHub fetch_blob retrieved each complete UTF-8 text blob by the exact existing ledger SHA. Inspected opening, section hierarchy, structural metadata and end portions; did **not** line-by-line audit the full 1.32MB/5.58MB/5.70MB bodies. The three now have actual **partial content-review credit**, while remaining NEEDS_REVIEW for semantic/provenance/version-delta checks. No content copied into public offload.
+- **Coverage:** 400/400 current artifact rows have at least some directly observed text content; **0 PENDING_CONTENT_REVIEW and 0 wholly unreadable at this checkpoint**. This is **first-pass partial-content coverage only**, not 400 complete deep reviews, verified usefulness, or permission to delete. Preserve a follow-up cursor for NEEDS_REVIEW, exact version differences and cross-repository reference checks. 401 current blobs includes this inventory.
+- **Large-file findings:** VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md blob 76677875e6fce955268ebdbcb6ed3c8b3c3a2f69 contains a navigable multi-card semantic/dimensional reference book, not validated predictions or a DT capability. UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md blob 430d3ad4b5d92213fef60d51a438a6984ad9a946 is a 640-prompt, 40-phase Chrome MV3 implementation specification with result schemas and bounded batch controls; no runtime proof. V16 blob 88813a42f56e32d6b7a3020a4cb1900ff78f6be4 retains 640 prompts/40 phases but introduces a new prompt schema and additional rendered-card consistency/audit sections. The editions are not byte-identical; do not infer V15 can safely be deleted without a full unique-content and exact-reference audit.
+- **Research/Ground:** Existing IS-007 remains a bounded source-specific B7 experiment candidate pending actual authorized consumer and baseline; no new nonduplicative proposal warranted. Director's last recorded full-Borg answer NO/NOT VERIFIED, owner integrity decision and natural-consumption proof still absent. **This checkpoint: 3 newly sampled, 0 deleted, 0 promoted. Historical deletions remain 9.** No private DT mutation or mission edits.
 
 ## L1 checkpoint — 2026-11-01 UTC (remaining first-pass backlog; nine SHA-matched samples)
 
@@ -658,8 +666,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `ublock_resurrected_video_adblocker_next_steps_after_repo_update.md` | `76abedef369077049aeb43cb3474b788534d27a3` | 20792 | KEEP |
 | `UBLOCKRESURRECTED_CORE_PLAN_10_10_MV3_FOUR_LAYER_SOLUTION_REV15_FULLY_BUILDABLE_STORE_SAFE.md` | `de32be716827c8477453c7d8cc4e85f8e6157c8d` | 52990 | KEEP |
 | `uBlockResurrected_remaining_behavior_completion_prompt(4).md` | `d494c8f466310a7b78b28470e930c2039dc4e7e6` | 129320 | NEEDS_REVIEW |
-| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md` | `430d3ad4b5d92213fef60d51a438a6984ad9a946` | 5573934 | NEEDS_REVIEW |
-| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | `88813a42f56e32d6b7a3020a4cb1900ff78f6be4` | 5698406 | NEEDS_REVIEW |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md` | `430d3ad4b5d92213fef60d51a438a6984ad9a946` | 5573934 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101_BLOB |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | `88813a42f56e32d6b7a3020a4cb1900ff78f6be4` | 5698406 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101_BLOB |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v2.md` | `8e00d0f36a3e6b2e35fbcec45fb8c955dfc48dc8` | 58768 | NEEDS_REVIEW |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | `00f406612c24500186c04d5ce3f451632c82648c` | 62748 | KEEP |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | `5d3c54dd307a3c0fad8834e1f908c4db05f0679a` | 77566 | NEEDS_REVIEW |
@@ -679,7 +687,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `VISION_CENTERED_CARD_SYSTEM_CONCRETE_DIVINATION_BOOK.md` | `9a6245dcdfeec42369c313ce927563e58af10370` | 276341 | NEEDS_REVIEW |
 | `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL (1).md` | `0392337815e267f06e6610c67ad8788888082b41` | 151587 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
 | `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md` | `0392337815e267f06e6610c67ad8788888082b41` | 151587 | KEEP; SAME_BLOB |
-| `VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md` | `76677875e6fce955268ebdbcb6ed3c8b3c3a2f69` | 1318554 | NEEDS_REVIEW |
+| `VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md` | `76677875e6fce955268ebdbcb6ed3c8b3c3a2f69` | 1318554 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101_BLOB |
 | `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE (1).md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | 23461 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
 | `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE.md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | 23461 | KEEP; SAME_BLOB |
 | `voynich_frequency_mapping_workflow_revised (1).md` | `3256242128dc49040fc5ed9bad910a068041e98c` | 17075 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
