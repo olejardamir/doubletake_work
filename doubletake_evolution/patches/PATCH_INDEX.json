@@ -33,7 +33,8 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": null
+      "last_error": null,
+      "patch_blob_sha": "d8e00440ffdcb52426d7551563ca70c24dcdb1db"
     },
     {
       "id": "BPE-20261101-004",
@@ -56,7 +57,8 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": null
+      "last_error": null,
+      "patch_blob_sha": "5873588a038308adc619d45bb53c8c1867fb6c2b"
     },
     {
       "id": "BPE-20261101-005",
@@ -79,7 +81,8 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": null
+      "last_error": null,
+      "patch_blob_sha": "613cc4c9dc9518df2917bfc65c8dddc8ccea8c43"
     },
     {
       "id": "BPE-20261101-006",
@@ -102,7 +105,8 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": null
+      "last_error": null,
+      "patch_blob_sha": "b39e112a8496727d7162d0dfe9a10a6fdc567390"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
