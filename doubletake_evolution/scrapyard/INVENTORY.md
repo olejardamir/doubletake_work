@@ -1,6 +1,20 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; latest checked GitHub main tree `11c2606a953989ffd1206c1893c667c68cbdff8a` (no truncation). Recursive metadata: **406 files** under scrapyard/, including this self-referential INVENTORY.md (excluded from its own immutable-blob ledger). **405 other file rows:** eight fully reviewed items (five historical, three incoming), two historical items partially reviewed, **395 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. Filenames are not evidence of provenance or implementation. No private DT content reproduced.
+Updated 2026-11-01 UTC; latest checked GitHub main tree `11c2606a953989ffd1206c1893c667c68cbdff8a` (no truncation). Recursive metadata: **398 files** under scrapyard/, including this self-referential INVENTORY.md (excluded from its own immutable-blob ledger). **397 other file rows:** eight fully reviewed items (five historical, three incoming), two historical items partially reviewed, **387 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. Filenames are not evidence of provenance or implementation. No private DT content reproduced.
+
+## Verified cleanup run — 2026-11-01 UTC
+
+- **Actual deletions: 8**. Exact-byte duplicate copies `(1)`–`(8)` of `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED.md` were removed; **canonical unsuffixed file retained** at blob `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95`. All nine copies had identical GitHub blob SHA, so no unique content was discarded. Verified no filename reference in ACTIVE_MISSION.md, STATE.md, RESEARCH_OFFLOAD.md or COMPLETED.md; full cross-repository reference census not established. Git history permits restoration. Never execute instructions inside retained historical artifact as live mission.
+- **Tombstones (old relative path → deletion commit):**
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (1).md` → `e63f7a80932f858ae46876b6df765d18baf4dba4`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (2).md` → `497baa8ebfe7475b0ecf4a409eb920bf552a5204`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (3).md` → `f7170216edfa00d1b381fa0bf33b29476604ce0f`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (4).md` → `68bf36b29ddd1c5a8056fe93f03554b35f5f2b78`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (5).md` → `5d38f95348ad372f59247167d9c5c07cbe082d84`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (6).md` → `01392c712c2f3f26387fa59d81450e6dd349274f`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (7).md` → `63a66b6e880fbcc375d6b0be9a1db2e0ad150cad`
+  - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (8).md` → `5fe824bf0479c97b2b974d35a9d2259fb5e65f18`
+- **Cleanup classifications:** 8 DELETE (byte-identical redundant copies); 1 KEEP (canonical), other unreviewed files NEEDS_REVIEW. Removed items have original blob `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95`. No contents from private DT published. More duplicate groups require separate reference and dependency checks; no blanket authorization.
 
 ## Priority triage — IS-20261101-001
 
@@ -51,7 +65,7 @@ Updated 2026-11-01 UTC; latest checked GitHub main tree `11c2606a953989ffd1206c1
 
 ## Exact-blob duplicate caution
 
-18 groups of byte-identical blob SHAs found, including a nine-path group. Identity does not authorize deletion: references/dependencies have not been checked. Zero deletions. No binary/archive seen in listed tree; non-Markdown files pending.
+18 groups of byte-identical blob SHAs found, including a nine-path group. Identity does not authorize deletion: references/dependencies have not been checked. Eight verified duplicate deletions (tombstones above). No binary/archive seen in listed tree; non-Markdown files pending.
 
 ## Complete path/blob metadata ledger
 
@@ -233,14 +247,6 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_MISSION_CLOSURE_7_EXECUTABLE_TASKS_v2.md` | `6156b0670bb7ebd360b14a3c1be3b63768af160b` | 20209 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_MULTI_SESSION_APPLICATION_TABS_IMPLEMENTATION_SPEC.md` | `8bced4ab00359a8200e0c0accbd94d66e53d894f` | 160832 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_MULTI_SOURCE_ASSIMILATION_FINAL_v3.md` | `defef5c11c92534669eccbfbf3d28fc2e1563ab2` | 47411 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (1).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (2).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (3).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (4).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (5).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (6).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (7).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (8).md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED.md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `DOUBLETAKE_PROBLEM_SPACE_REFORMULATION_INVARIANT_SEARCH_IMPLEMENTATION_MISSION_v2_FINAL.md` | `734ce4e681d458cc8939b7ab7074f543cedcde7d` | 48368 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_RANKEVOLVE_SELECTIVE_ASSIMILATION_NOTE.md` | `6ed3fe5bcae95f1b1a73fdbbafd3d8228a34075d` | 7638 | PENDING_CONTENT_REVIEW |
