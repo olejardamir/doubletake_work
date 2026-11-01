@@ -1,533 +1,69 @@
-# AGENTS.md
-## Live Match Centre Take-Home — AI/Implementation Control Contract
+# Live Match Centre — canonical AI/POC research contract (distilled 2026-11-01)
 
-## Purpose
+**Provenance:** Historical take-home instruction artifact, originally `scrapyard/AGENTS.md` blob `2699d2c2ffab9f99849d0463910d9fca5b28c6c9`; extended variant `scrapyard/AGENTS (1).md` blob `d008b2e03ba1113ea391c5ee04ad6d9b22f07c0e`. This single canonical version preserves the original contract plus the extended variant's composition-aware design, primary-source cost research and latency-budget requirements. Both verbatim originals remain recoverable by blob SHA from Git history. This is historical research data, **not** authority over DoubleTake, its current worker, or a live production system. No benchmark was run and no current cloud pricing verified.
 
-This is an **auxiliary AI instruction file**, not the design proposal. It governs AI-assisted research, drafting, coding, testing, and review for this take-home.
+## Authority, fixed assignment and delivery
 
-The objective is simple: preserve the assignment exactly, make the production design defensible, test one genuinely risky assumption with the smallest useful experiment, and report evidence without exaggeration.
+Historical precedence: original take-home assignment > candidate's explicit decisions > approved `proposal.md` > this instruction contract > POC/`README.md` > code > AI suggestions. The candidate owns final choices and claims. Never change fixed facts or silently convert assumptions into guarantees.
 
-The candidate owns every final architecture choice, assumption, number, benchmark interpretation, and claim.
+| Fixed constraint | Required value |
+| --- | --- |
+| Live matches | 8 concurrent at peak |
+| Third-party feed | ~10 events/s total, bursts ~50; **best effort**, no long retry window |
+| Viewers | 100,000 peak; +40,000 over 2 minutes |
+| Geography | ~60% Europe, ~40% North America |
+| User-visible latency | Goals p95 ≤2 s from ingest to screen; other events p95 ≤5 s |
+| Late join/reload | Full match history visible within 2 s |
+| Cost | ≤$3,000/month at peak, including material cost drivers and margin |
+| Deploy | Weekly, potentially during matches, with no noticeable disruption |
+| Frontend / preference | Next.js App Router; AWS preferred, alternatives justified |
+| Audience / state | Anonymous public read-only; score and clock derived from event stream |
+| POC | Synthetic feed permitted; **no real feed**, cloud deployment or real infrastructure spend required |
 
----
+Final submission: `proposal.md` (≤1,500 words excluding diagrams), `README.md` (one-command setup and ≤300-word assumption→method→result→proposal-impact write-up, limitations and truthful AI-use statement), `poc/` and only agent-instruction files actually used. Exclude generated dependencies, logs, secrets, cloud state and unrelated files.
 
-# 1. Authority
+## End-to-end architecture and invariants
 
-Use this order when instructions conflict:
+Design the entire path: third-party feed → ingest → validation/normalization → ordering/deduplication/state derivation → compatible current/history state → fan-out → geographic delivery → Next.js lobby/match views. A late/reloading/waking viewer must receive coherent history and state, then uninterrupted live updates; small and surge audiences must experience equivalent correctness. The lobby updates score/minute and state-changing events without refresh.
 
-1. Take-home assignment
-2. Explicit candidate decisions
-3. Approved decisions in `proposal.md`
-4. This `AGENTS.md`
-5. POC experiment contract / `README.md`
-6. Code
-7. AI suggestions
+**Provider boundary:** `provider loss != application loss`. Never invent upstream replay, sequence numbers, unique IDs, snapshots, reconciliation, redelivery, a second provider or recovery capability. If a guarantee requires an unstated upstream facility, name it as an assumption and explain its failure impact. Application-level accepted-event guarantees must be scoped to events actually received and durably accepted.
 
-Never silently change a higher-authority requirement. If evidence invalidates an approved design decision, surface the conflict, update the proposal explicitly, and explain why.
+Required correctness checks: stable identity under declared deduplication semantics; canonical per-match ordering rather than arrival order; idempotent score/state mutation; compatible score/clock/history snapshot boundary; no snapshot→stream handoff gap/duplicate; reconnect, reload, sleep/wake, deploy and downstream-disconnect recovery; correction/resynchronization for extrapolated clocks. Include schema evolution, failure domains, backpressure/surge, provider interruption, public endpoint abuse, observability and deployment rollback.
 
-A failed or inconclusive experiment is valid evidence. Do not move the target to make the result look successful.
+Every major component must document its requirement, simpler alternative, trade-off, failure mode, latency, cost, deployment and consistency effect. Do not add services merely for architectural appearance.
 
----
+## Composition-aware selection (unique extension from the numbered variant)
 
-# 2. Fixed assignment facts
+Local subsystem optimality need not survive composition. Keep a small non-dominated alternative set long enough to compare **whole-system** effects on goal/other-event latency, history, correctness, surge, geography, recovery, deploy continuity, upstream assumptions, cost and complexity. Apply mandatory constraints as hard gates before softer trade-offs.
 
-Treat these as immutable:
+Look for preference reversal across: delivery × surge × geography × cost; history × late join × snapshot/live consistency; state × dedup × ordering × derived score × recovery; regional topology × latency × cross-region traffic × failure/deploy × budget. Retain Pareto-relevant alternatives; prune only if another is at least as good on all material dimensions and strictly better on one, with no credible hidden interaction.
 
-- 8 concurrent live matches at peak.
-- Third-party feed pushes ~10 events/s total, bursting to ~50 events/s.
-- Feed delivery is best-effort, with no long retry window.
-- 100,000 concurrent viewers at peak.
-- Viewer surge: +40,000 within 2 minutes.
-- Audience: ~60% Europe / ~40% North America.
-- Goal latency: p95 ≤ 2 s from ingest to the viewer's screen.
-- Other-event latency: p95 ≤ 5 s.
-- Late join/reload: full match history visible within 2 s.
-- Infrastructure budget: ≤ $3,000/month at peak.
-- Weekly deploys may occur during live matches and must not be noticeable.
-- Frontend: Next.js App Router, component-based.
-- AWS preferred; alternatives require justification.
-- Fans are anonymous, public, read-only, with no accounts.
-- Match score and clock are derived from the event stream.
+Decision ledger: candidate; local strengths/weaknesses; hard constraints; interactions; failure modes; latency/cost/consistency/deploy effects; unverified assumptions; composed verdict. Falsify the preferred candidate under surge, missing provider capabilities, replay/ordering faults, deployment and fastest-growing cost. Derive the POC **after** selecting a credible architecture: identify the weakest architecture-critical assumption whose falsification would change that architecture. Stop exploring when hard requirements have credible coverage, remaining alternatives are dominated, the preferred design survives composition checks, and one consequential uncertainty is testable.
 
-The final delivery contains:
+Evidence categories remain separate: assignment fact, current authoritative external fact, design decision, assumption, local measurement and production inference. Neither a local measurement nor a diagram establishes full production performance.
 
-```text
-proposal.md
-README.md
-poc/
-AGENTS.md
-[other agent instruction files only if actually used]
-```
+## Source, latency and cost discipline (unique extension)
 
-Do not round constraints into easier targets or add requirements that are not present.
+Verify mutable AWS prices, service limits, quotas, region availability and Next.js/runtime behavior from current official primary documentation. Record pricing region, peak-duration assumption and material drivers: compute, fan-out/connections, messages, egress, CDN, storage, cross-region transfer, observability and margin. Distinguish hard limits from increasable quotas; disclose contradictions and uncertain figures rather than manufacture precision.
 
----
+Treat p95 viewer-screen latency as an **end-to-end** SLO: ingest → validation/state → fan-out → network/geography → client receipt → render. Reserve margin; do not sum independent p95s and call the result end-to-end p95. State measured/modelled/inferred segments and regional effects; aggregate p95 cannot conceal persistent regional failure. A partial-path POC does not prove end-to-end SLO.
 
-# 3. Preserve the intended user experience
+## One falsifiable POC and frozen experiment
 
-The architecture must satisfy the scenario, not only the numbers.
+Select one assumption by architecture impact if false, uncertainty, local measurability and assignment relevance. If the greatest risk is not locally testable, explicitly disclose that and test the most consequential feasible proxy. Possible targets: snapshot→live handoff, fan-out surge, reconnect recovery; none is mandated.
 
-- **Lobby:** all live matches show current score/minute and state-changing events update without refresh.
-- **Late join / reload / wake-up:** the fan sees coherent history/current state immediately, then continues live.
-- **Trustworthy state:** the application does not create duplicates, disappearing events, ordering errors, or double-applied score changes.
-- **Live feel:** user-facing latency, not only backend throughput, must meet the stated p95 targets.
-- **Crowd invariance:** the experience remains materially equivalent at small audiences and at peak/surge load.
+**Freeze before the final run:** falsifiable assumption, architecture decision affected, untestable production claim, steady/burst workload (matches, connections, ramp, payload, duration, warm-up, repetitions, seed and resource limits), metrics and thresholds. Changing thresholds after results starts a new experiment. Metrics only as needed: throughput, p50/p95/p99 with defined population, drops, duplicates, out-of-order, handoff/reconnect, history time, connection success, CPU/memory.
 
----
+Measurement rules: measure the exact boundary claimed (`ingest→receiver` ≠ `ingest→viewer screen`); use monotonic elapsed timing; repeated runs when variance matters, no cherry-picking; disclose local CPU/memory/container limits, file-descriptor/ephemeral-port/loopback/load-generator bottlenecks; identify saturation knee/headroom when feasible. For reduced scale, state what shrank, what property is believed comparable, why, and that 100,000-viewer capacity was **not** measured. Reproduce 10/50 events/s, 8 matches, +40k/2min analogue, reload/reconnect and relevant event classes when material.
 
-# 4. Provider-boundary honesty
+Outcome is `ACCEPT | REJECT | INCONCLUSIVE` against the frozen assumption, **not** approval of the entire architecture. Failed or inconclusive tests are useful evidence and must not be hidden or rerun until a lucky pass.
 
-The feed is best-effort. Do **not** assume replay, snapshots, reconciliation, provider sequence numbers, uniqueness, guaranteed redelivery, idempotency, or a second provider unless explicitly labelled as an external assumption.
+## Minimal implementation, execution and proof
 
-Keep these separate:
+AI may help research, draft, code, test and calculate; it must not invent requirements, APIs, numbers, provider features, test executions or claims, change acceptance after seeing results, expand scope, conceal failures, or choose architecture the candidate cannot defend. Missing evidence is `UNKNOWN`/`BLOCKED`.
 
-```text
-provider loss != application loss
-```
+POC includes only what changes the selected measurement; avoid unnecessary authentication, database, Kubernetes, Terraform, cloud SDK, polished UI or CI/CD. Clean checkout plus container runtime; one command such as `docker compose up --build` must build, start, generate declared load, measure and clearly report result. No cloud credentials, hidden local files or external spend; pin material versions and seed where needed. Example output fields: experiment, measured runs, generated/delivered/dropped/duplicate/out-of-order events, relevant latency percentiles, criterion and verdict. Do not package generated logs.
 
-The system may guarantee that an event successfully accepted at ingest is not duplicated, lost, or reordered by the application. It cannot guarantee recovery of an event the provider never delivered unless a real recovery source exists.
+Traceability: assignment requirement → architecture decision → risky assumption → frozen local experiment → measured result → verdict → proposal confirmation/change. Before final delivery, verify fixed facts, provider honesty, state/history coherence, alternatives after composition, geographic and cost/latency budgets, primary-source mutable facts, single falsifiable POC, reproducible command, honest measurement/proxy limitations, word limits and clean package. Stop when the selected assumption has a valid or inconclusive outcome and the evidence is reflected honestly; further polish without validity gain is out of scope.
 
-If the design depends on an unstated provider capability, name the assumption and state what changes if it is false.
-
----
-
-# 5. Production design gate
-
-Every major component in `proposal.md` must earn its place.
-
-For each important choice, be able to explain:
-
-1. which requirement it serves;
-2. why it is needed;
-3. the simpler alternative considered;
-4. why the chosen option won;
-5. its main failure mode;
-6. its latency effect;
-7. its cost effect;
-8. its deployment behaviour;
-9. its effect on consistency.
-
-The full path must be clear:
-
-```text
-third-party feed
-  -> ingest
-  -> validation / normalization
-  -> ordering / deduplication / state derivation
-  -> current/history state
-  -> fan-out / delivery
-  -> geographic delivery
-  -> Next.js client
-  -> coherent lobby / match view
-```
-
-The proposal must address, proportionally and without service-catalogue overengineering:
-
-- safe history/snapshot → live-stream handoff;
-- reconnect/reload/sleep-wake recovery;
-- viewer surge and backpressure;
-- Europe/North America delivery;
-- live-match deploy and rollback;
-- feed interruption/resume;
-- obvious failure domains / single points of failure;
-- event schema evolution;
-- public-endpoint abuse/DDoS protection;
-- observability for latency, errors, drops, lag, and connection health;
-- peak-month cost under $3,000.
-
-Prefer a few well-justified components over a large architecture diagram full of unnecessary services.
-
----
-
-# 6. Correctness invariants
-
-Use explicit invariants instead of vague reliability claims.
-
-1. **Stable event identity** — enough identity exists for the stated deduplication guarantee.
-2. **Canonical ordering** — define match-event order; do not assume network arrival order is canonical.
-3. **Idempotent application** — reprocessing an accepted event cannot duplicate it or apply its state mutation twice.
-4. **Score/clock/history coherence** — visible derived state and visible history come from a compatible state boundary.
-5. **Snapshot-to-live correctness** — events occurring during history load are neither missed nor shown twice when streaming begins.
-6. **Recovery correctness** — reconnect, reload, sleep/wake, deploy, or downstream connection loss does not create application-induced gaps, duplicates, or reordering.
-7. **Upstream-boundary honesty** — the application cannot manufacture an event never delivered by the provider.
-8. **Clock semantics** — if the client extrapolates a running clock between feed updates, define correction/resynchronization behaviour.
-
----
-
-# 7. Cost discipline
-
-Exact cloud prices or quotas must come from current authoritative sources.
-
-Include the material cost drivers of the chosen architecture, as applicable:
-
-- compute;
-- connection/fan-out service;
-- request/message volume;
-- data transfer/egress;
-- CDN/edge;
-- storage;
-- cross-region traffic;
-- observability;
-- reasonable operating margin.
-
-Do not omit a dominant cost to force the model under $3,000. If a price is uncertain, label it rather than using false precision.
-
----
-
-# 8. Select one architecture-critical POC assumption
-
-The POC tests **one** assumption.
-
-Rank candidates using:
-
-- **impact:** how much of the architecture changes if false?
-- **uncertainty:** how little confidence exists without measurement?
-- **local measurability:** can a local experiment produce useful evidence?
-- **relevance:** does it map directly to an assignment constraint?
-
-Use this test:
-
-> If this assumption is false, would I materially change the proposed architecture?
-
-If no, it is probably not risky enough.
-
-Possible candidates include fan-out under connection surge, snapshot-to-live correctness, reconnect recovery, or another architecture-specific risk. These are examples only; select the risk after the design establishes what is genuinely uncertain.
-
-If the true highest-risk assumption cannot be tested locally, say so and test the riskiest locally testable one, as the assignment permits.
-
----
-
-# 9. Freeze the experiment before final measurement
-
-Record the experiment contract before the final measured run.
-
-## Assumption
-One falsifiable sentence.
-
-## Architecture dependency
-Which production decision changes if the assumption is false?
-
-## Local-test limitation
-What production claim can this local experiment **not** prove?
-
-## Workload
-Declare, where relevant:
-
-- matches;
-- steady/burst event rate;
-- viewer/connection count;
-- connection ramp/surge shape;
-- payload size;
-- duration;
-- warm-up;
-- measured repetitions;
-- resource limits;
-- random seed if randomness affects results.
-
-## Metrics
-Collect only what decides the assumption, for example:
-
-- throughput;
-- p50/p95/p99 latency;
-- drops;
-- duplicates;
-- out-of-order events;
-- connection establishment/sustained connections;
-- history load time;
-- handoff errors;
-- reconnect time;
-- CPU/memory.
-
-## Acceptance criteria
-Freeze success/failure thresholds before the final measured run.
-
-Changing a threshold after seeing results creates a **new experiment** and must be recorded as such.
-
----
-
-# 10. Measurement integrity
-
-## Measure the boundary you claim
-A measurement of:
-
-```text
-ingest -> server receiver
-```
-
-is not the same as:
-
-```text
-ingest -> viewer screen
-```
-
-If browser rendering, Internet transit, edge/CDN, geographic propagation, or another segment is absent, state that limitation.
-
-## Timing and percentiles
-Use a monotonic clock for elapsed timing where practical. Define metric start/end points and the sample population used for p95/p99.
-
-## Runs
-Do not cherry-pick the best run. Use repeated runs when variance matters. Separate warm-up from measured intervals.
-
-## Environment
-Record enough local context to interpret results: CPU, memory, container limits, runtime versions, and relevant host limits.
-
-## Capacity tests
-If the assumption concerns capacity, do not merely prove that one load level “worked.” Where practical, increase load enough to identify the performance knee or failure region and report headroom.
-
-## Synthetic-load limits
-Detect/disclose when file descriptors, ephemeral ports, loopback networking, scheduler limits, or the load generator itself dominate the result.
-
-## No unjustified extrapolation
-A local or reduced-scale benchmark does not directly prove 100,000-user production capacity. Any scaling argument is an inference and must be labelled as such.
-
-Valid outcomes:
-
-```text
-ACCEPT
-REJECT
-INCONCLUSIVE
-```
-
-`ACCEPT` means the assumption survived the declared experiment, not that the whole architecture is proven.
-
----
-
-# 11. Workload fidelity
-
-When relevant, model:
-
-- ~10 events/s steady;
-- ~50 events/s burst;
-- up to 8 matches;
-- +40,000 viewers in 2 minutes, or a clearly stated reduced-scale analogue;
-- late join/reload;
-- reconnect;
-- goal/card/routine classes if they affect measurement.
-
-If reduced scale is used, state:
-
-1. what was reduced;
-2. what property is intended to remain comparable;
-3. why the analogue is informative;
-4. that full production scale was **not** measured.
-
-Simulation choices are experiment choices, not assignment facts.
-
----
-
-# 12. AI implementation rules
-
-AI may assist with research, architecture comparison, drafting, code, tests, Docker, workload generation, metrics, calculations, and consistency review.
-
-AI must not:
-
-- invent requirements/provider capabilities;
-- alter numeric constraints;
-- silently change assumption/workload/metric/acceptance criteria;
-- broaden POC scope without justification;
-- invent APIs/dependencies to make code compile;
-- claim a benchmark ran when it did not;
-- fabricate output;
-- hide failed/inconclusive results;
-- present extrapolation as measurement;
-- add architecture the candidate cannot explain;
-- make final claims the candidate has not reviewed.
-
-When required information is missing, state the uncertainty or return `BLOCKED` rather than guessing.
-
----
-
-# 13. Smallest satisfying implementation
-
-Before adding a POC component, ask:
-
-> Does this materially affect the selected measurement?
-
-If no, omit it.
-
-Potentially unnecessary elements include authentication, unrelated databases, polished frontend work, Kubernetes, Terraform, full observability stacks, CI/CD, cloud SDKs, and unrelated APIs.
-
-Experiment-grade code is expected and acceptable.
-
----
-
-# 14. Reproducible one-command execution
-
-The POC must run locally with one command, for example:
-
-```bash
-docker compose up --build
-```
-
-The command must:
-
-1. build what is required;
-2. start the experiment;
-3. generate the declared workload;
-4. collect the declared measurements;
-5. print a clear result;
-6. make completion/failure obvious.
-
-Rules:
-
-- no cloud account;
-- nothing beyond a container runtime;
-- no hidden local files or credentials;
-- clean checkout must be enough;
-- pin material versions where practical;
-- use fixed/configurable seeds when randomness affects comparability.
-
-Example result shape:
-
-```text
-Experiment: <name>
-Measured runs: ...
-Events generated: ...
-Events delivered: ...
-Dropped: ...
-Duplicates: ...
-Out of order: ...
-
-Latency:
-p50: ...
-p95: ...
-p99: ...
-
-Acceptance criterion: ...
-Decision: ACCEPT | REJECT | INCONCLUSIVE
-```
-
-Print only metrics relevant to the selected assumption. Do not package generated logs/results in `poc/`.
-
----
-
-# 15. Proposal ↔ POC traceability
-
-Maintain this exact reasoning chain:
-
-```text
-assignment requirement
-  -> architecture decision
-  -> risky assumption
-  -> local experiment
-  -> measured result
-  -> ACCEPT / REJECT / INCONCLUSIVE
-  -> proposal confirmation or change
-```
-
-If an arrow cannot be explained, fix the reasoning before submission.
-
----
-
-# 16. README and package
-
-`README.md` must contain:
-
-- one-command run instructions;
-- the required ≤300-word write-up in the order **assumption → method → result → proposal impact**;
-- material limitations;
-- a short truthful explanation of how AI tools were directed.
-
-Keep the package clean. Do not include:
-
-- `node_modules`;
-- build artifacts;
-- generated logs/results;
-- temporary files;
-- editor metadata;
-- secrets;
-- cloud state;
-- unrelated notes.
-
----
-
-# 17. Proposal word-budget discipline
-
-`proposal.md` is limited to 1,500 words excluding diagrams.
-
-Use the space for decisions and reasoning, not generic technology explanations.
-
-Prioritize:
-
-1. end-to-end architecture;
-2. consistency/state model;
-3. live delivery and late join;
-4. scale/latency;
-5. failure/recovery/deployment;
-6. cost;
-7. alternatives/trade-offs;
-8. the risky assumption leading to the POC.
-
-A diagram should reduce prose, not duplicate it.
-
----
-
-# 18. Final gate
-
-Do not package until all of the following are true:
-
-### Proposal
-- [ ] Every fixed fact in §2 is addressed.
-- [ ] End-to-end ingest → fan path is clear.
-- [ ] Provider best-effort limitations are represented honestly.
-- [ ] Ordering, deduplication, idempotency, state coherence, and snapshot→live handoff are clear.
-- [ ] Reconnect, surge/backpressure, failure, deployment/rollback, geography, and cost are addressed.
-- [ ] Observability and public-endpoint protection are proportionate to a production design.
-- [ ] Exact current prices/limits are sourced where used.
-- [ ] Important alternatives/trade-offs are visible.
-- [ ] The riskiest assumption is named.
-- [ ] `proposal.md` is ≤1,500 words excluding diagrams.
-- [ ] Every material decision can be defended by the candidate.
-
-### POC
-- [ ] Tests one falsifiable architecture-critical assumption.
-- [ ] Experiment contract was frozen before final measurement.
-- [ ] Runs with one command and only a container runtime.
-- [ ] Requires no cloud account.
-- [ ] Produces measured evidence, not a demonstration UI.
-- [ ] Measurement/proxy boundaries are explicit.
-- [ ] Percentile method/population is defined.
-- [ ] Results are not cherry-picked.
-- [ ] Environment and host/load-generator limits are disclosed.
-- [ ] Capacity headroom/saturation is reported where practical.
-- [ ] No local benchmark is misrepresented as direct proof of production scale.
-- [ ] Outcome follows frozen criteria.
-
-### README / package
-- [ ] Clean-checkout instructions are sufficient.
-- [ ] Required POC write-up is ≤300 words.
-- [ ] Write-up covers assumption → method → result → proposal impact.
-- [ ] Material limitations are stated.
-- [ ] AI use is described truthfully.
-- [ ] Every agent instruction file actually used is included.
-- [ ] No generated dependencies, artifacts, logs, secrets, or unrelated files are packaged.
-
----
-
-# 19. Stop conditions
-
-Stop AI-assisted implementation when:
-
-1. the selected assumption has a valid measured outcome or is correctly marked inconclusive;
-2. the result is reflected honestly in `proposal.md`;
-3. every assignment constraint is covered;
-4. `README.md` accurately describes the experiment and AI use;
-5. the final gate passes;
-6. further work would add scope or polish without improving validity.
-
----
-
-# Core operating principle
-
-```text
-Preserve the assignment.
-Make every architecture choice earn its place.
-Do not invent upstream guarantees.
-Freeze the experiment before final measurement.
-Measure the smallest thing that can falsify the risky belief.
-Measure the boundary you claim to measure.
-Separate evidence from extrapolation.
-Treat failed results as useful evidence.
-Never change the problem to make the result look better.
-Ship only what the reviewer asked for.
-```
+**Transfer hypothesis for DT (unverified):** A source→consumer provenance receipt and full-chain mission acknowledgement should be tested end-to-end, not inferred from a scheduler or component-only pass. This document supplies an analogy for experimental discipline, not a new approved Borg task. Current DT parity, active consumer, permission and independent Ground remain UNKNOWN.
