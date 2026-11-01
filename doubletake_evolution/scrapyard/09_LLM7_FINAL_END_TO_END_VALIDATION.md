@@ -1,7 +1,0 @@
-# Historical LLM7 final end-to-end acceptance — distilled
-
-**Original blob:** `13d24abd8768e2c5ce99fd329389b15eb281ecc6`. Historical Agent_X plan, **not** a completed E2E report. [Master](00_MAIN_PROMPT.md); [D01](DISTILLED_KNOWLEDGE.md).
-
-**Real path:** select/configure LLM7→GET `https://api.llm7.io/v1/models`→choose eligible model→canonical runtime config→POST `/v1/chat/completions` without credential/Authorization when service permits→normalize response/stream. Direct curl is an **external control only**, not proof that Agent_X uses the provider. Tool path must be exercised where permitted; when anonymous tools are restricted, do not advertise them and ordinary anonymous chat should still work. Test noninteractive/headless flow and OpenCode/Codex regressions. No second registry/transport/config, unrelated refactor or placeholder-only implementation.
-
-**Hard PASS requirements:** first-class catalog/registry and actual consumer; no fake persisted key; dynamic model turnover; accurate model/tier/tool signals; stream/tool IDs; interactive/headless config; safe explicit errors; unit/integration/shared tests; current live smoke if anonymous allowed; source/runtime reconciliation and concrete changed-file/test/receipt report. External policy drift since claimed 2026-09-11 no-key success must be reported without silently forcing login. Any unverified checkbox remains UNKNOWN, not PASS. **Unknown:** present LLM7 policy, implementation and independently observed DT Ground.
