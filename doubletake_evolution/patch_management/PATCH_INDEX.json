@@ -14,7 +14,8 @@
     "one_patch_per_file": true,
     "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
     "executor_branch_reference": "feature/alphacode-provider",
-    "public_source_disclosure": "SAFETY_STOP: do not publish or revise source-bearing private DT diffs in public doubletake_work until explicit owner authorization; existing public copies do not constitute permission."
+    "public_source_disclosure": "SAFETY_STOP: do not publish or revise source-bearing private DT diffs in public doubletake_work until explicit owner authorization; existing public copies do not constitute permission.",
+    "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work."
   },
   "patches": [
     {
@@ -219,6 +220,42 @@
         "status": "EXPECTED_STALE_AFTER_PREDECESSOR; IN_MEMORY_HUNK_MATCH_ONLY; NO_EXECUTION",
         "resolution": "Rebase only after authorized private publication path; no public script revision permitted"
       }
+    },
+    {
+      "id": "BPE-20261101-008",
+      "mission_ref": "DT-EVO-007 / 7.8.1",
+      "summary": "Read-only source census for actual mission-consumer and A/B receipt proof",
+      "file": "BPE-20261101-008.sh",
+      "type": "READ_ONLY_DIAGNOSTIC",
+      "status": "DIAGNOSTIC_READY",
+      "priority": 20,
+      "depends_on": [],
+      "source_branch": "feature/alphacode-provider",
+      "patch_revision": 1,
+      "security": "public-safe orchestration only; no private source diff; no live write or DT commit",
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
+    },
+    {
+      "id": "BPE-20261101-009",
+      "mission_ref": "DT-EVO-007 / 7.7.1",
+      "summary": "Guarded temporary-fixture cartography integrity baseline before replay applicability decision",
+      "file": "BPE-20261101-009.sh",
+      "type": "READ_ONLY_DIAGNOSTIC",
+      "status": "DIAGNOSTIC_READY",
+      "priority": 21,
+      "depends_on": [],
+      "source_branch": "feature/alphacode-provider",
+      "patch_revision": 1,
+      "security": "public-safe orchestration only; no private source diff; no live write or DT commit",
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -258,5 +295,6 @@
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
-  "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md"
+  "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
+  "latest_mission_blob": "8c8e5bae2a6d9660b544d595064cd107f4d213d4"
 }
