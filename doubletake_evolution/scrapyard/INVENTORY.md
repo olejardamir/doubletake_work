@@ -1,5 +1,10 @@
 # Borg Scrapyard Inventory
 
+## Q21 verified second duplicate deletion and updated totals — 2026-11-01 UTC
+
+- **Prior path:** `doubletake_evolution/scrapyard/agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass (1).md`; **prior blob SHA:** `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `45e29c59c0dd398cce649d5ae0f467265faf2938`. Verified GitHub commit changed only this numbered duplicate; canonical `doubletake_evolution/scrapyard/agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass.md` retained with the identical SHA and content. Current Director documents had no exact-path references; indexed search in planning/private DT returned no matches, with index/external limits. Reversible from Git history; no unique bytes or private implementation deleted.
+- **Current count:** 386 surviving scrapyard artifacts excluding INVENTORY.md, 8 incoming notes; **2 actual deletions this Q21 run**, **24 cumulative verified deletions**. 13 source-content items reviewed this run (12 revisits + 1 new IS-008), 12 KEEP, 1 NEEDS_REVIEW, 0 EXTRACT_THEN_DELETE. Remaining exact-SHA duplicate groups: 2 (HARVEST UI alias and semantic V3/V3c), still **DELETE_CANDIDATE_BLOCKED** pending filename provenance/dependency clearance; do not auto-delete them. No new eligible first-pass text item pending; deep review and historical inaccessible/large materials remain open. Full Borg NOT VERIFIED; no new DT Ground.
+
 ## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
 
 - **Prior path:** `doubletake_evolution/scrapyard/CARD_SYSTEM_REBALANCED (1).md`; **prior blob SHA:** `2ee20cd74e7cb3a4c22990c995773570db85bbab`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `b983a3a614935d4e4497270ff0a2b8dc524dd551`.
