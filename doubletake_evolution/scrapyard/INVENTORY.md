@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q12 second-pass SHA-matched checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 previously uncounted distinct actual UTF-8 bodies fetched, with beginning, structural headings, evidence/limitations and ending inspected. Not a complete independent prior-art, full-text or implementation audit. All source prompts treated as historical data, not instructions.
+- **Cumulative second-pass sampling:** 309/396 surviving artifacts, 87 pending; this run 48 distinct sampled. Cursor after `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` (skip seven previously reviewed incoming notes and already revisited Harness/LICENSE). This batch: 12 KEEP, 0 NEEDS_REVIEW, 0 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No newly verified DT Ground or authorized protected-history change.
+- **Disposition logic:** Distinct revisions and unique provenance retained; undecidable source/rights/empirical questions retained for review. Only the byte-identical numbered architecture copy is a possible deletion, subject to fresh SHA and dependency checks. No new Internet intake beyond IS-007; Director's 006 conditional refinement and 007 deferred status unchanged. The 7.8.1 actual consumer receipt remains the next independent discriminator.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / follow-up |
+| --- | --- | --- | --- |
+| `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v2.2_MULTIVECTOR_PROPAGATION.md` | `26611aea32c66e01d610fcd42d23751d60065bcf` | KEEP | Experimental multi-vector semantic memory and channel identity; explicitly tuned on example period, so that period is not held-out evidence. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `Mastery_MCQ_Guardrails_10_of_10_Final.md` | `9899f29dd3c1dbf4f5838326efbe5e96ea8e2ef2` | KEEP | Source-grounded mastery-question and distractor quality rules; separate education workflow, no current DT owner. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `maximum_stealth_adblock_method.md` | `bd3b9d5b8632228df518a6275a1f6296787c5916` | KEEP | Browser ad-block detection-limit/threat-model note, explicitly rejects absolute stealth; unrelated to current Borg gate. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPT.md` | `8f3d55898b69c7d1dd0580d314a3bc9c8d949607` | KEEP | Early full M2 harness-correctness instructions; historical frozen-contract scope. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPTb.md` | `9aa4257d76629a63f9b23c7f3d684b1e89d6b7ce` | KEEP | Follow-on M2 delta distinguishes harness correctness from favorable performance; distinct evidence discipline. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v2.md` | `aaccd1527b6a3ebef69ad25bf56837dcf7f93cb7` | KEEP | Earlier late-join and generator-concurrency gap register; dated historical scope. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v3.md` | `fd088252e5a9daa561d78daf7e75b8d68b9d6206` | KEEP | Later source-state and independent expected-history gap register; distinct revision. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | `d24cfb24d2ae44b824c1ee0ac24ffd44cb82ab6e` | KEEP | Later false-PASS detection and replay-state schema defects; historical test design. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | `3d6b342b76cc8daf79868e397d1f1d03dc61d880` | KEEP | Later M2 topology/evidence residuals and closed-work distinctions; distinct state. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | `f1e55fb858218f552b93042ab2f233de2684709b` | KEEP | Different v5a revised closed-work classification; despite same v5 heading not byte-identical. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md` | `e1d26006ec9b6c784416df1924698b8061959e4f` | KEEP | Shorter later residual on coordinated 100k run, worker limits and evidence validity. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` | `259ab402ce7edefc4d8394630da4b100dd59c509` | KEEP | M3 integrity closeout with precommitted CV and no false ACCEPT; no verified DT integration. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+
+
 ## Q11 second-pass SHA-matched checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 previously uncounted distinct actual UTF-8 bodies fetched, with beginning, structural headings, evidence/limitations and ending inspected. Not a complete independent prior-art, full-text or implementation audit. All source prompts treated as historical data, not instructions.
