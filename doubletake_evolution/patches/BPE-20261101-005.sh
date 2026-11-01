@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # BPE-20261101-005 — Reject externally supplied sealed-spec digests that do not match current claim contents.
+# EXECUTOR COMPATIBILITY: feature/alphacode-provider @ b1931476299f5b0dfa7b7222ce2706df9d11a01e (after BPE-20261101-003)
 # SOURCE: private DT @ 7b86364f1bbf34c0f04a2b85f21e5fb499fd7719; mission DT-EVO-007 / 7.9 evidence-trust extension
 # STATUS: PREPARED_UNTESTED. Apply and tests are NOT preverified.
 # This single file contains the exact source diff, safety checks, test and DoD.
