@@ -1,9 +1,0 @@
-# Historical Harvest Task 05 — Evidence-bound promotion and rollback
-
-**Provenance:** Astrocytech/Agent_X audit `874bbe4268aca0539cbf8476f62444d704f2d555` (implementation wave after `3887efe448edd223a00f94db324786d6a47a2d3b`). Historical requirements, not current DT verification or execution authority. Original blob `47bb697da972c59b0ce3cfe402c3b0628f6e07ac`; canonical D01 synthesis: [DISTILLED_KNOWLEDGE.md](DISTILLED_KNOWLEDGE.md).
-
-**Historical owners:** `harvest_reality_kernel.py`, `learning/stabilization/promotion.py`, `promotion/promotion_gate.py`, `promotion_dispatcher.py`, `gate_decision.py`, `release_candidate.py`; evaluation/champion/canary/wiring donors must not form another authority.
-
-**Mechanism:** One governed promotion chain with R0 structural validity, R1 anti-slop, R2 independent invariant/property/adversarial/differential checks, R3 benchmark, R4 real production integration, R5 fresh incumbent/challenger comparison, R6 side-effect-free shadow or persisted bounded canary. Hard invariants never averaged away; stale champion/baseline rechecked before final promotion. REPLACE removes/rewires incumbent; COMPLEMENT proves specialization routing. Shadow cannot mutate authoritative state; canary must be abortable, restart-safe and rollback-tested. Donor registry cannot declare a champion; UI and generator fitness cannot approve promotion.
-
-**Falsifiable tests:** Placeholder fails R1; disconnected caller fails R4; high absolute but below incumbent fails R5; guardrail violation rolls back; canary survives restart without unintended writes; replacement leaves no unintended active old path. Remove/reduce donors only after canonical consumer and reference checks. Preserve exact HEADs, owners, source/semantic reconciliation, tests/results, rollback, failures/UNKNOWNs. Current DT parity UNKNOWN.
