@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q1 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
+
+- **Scope:** Next 12 surviving artifacts after P4 cursor, actual UTF-8 bodies fetched and sampled (openings, headings, acceptance/negative-test passages, endings); not a full line-by-line audit. Current **178/397** surviving second-pass reviewed; **219 remain**. Batch: **11 KEEP, 1 NEEDS_REVIEW, 0 deletion candidates, 0 actual deletions**; cumulative verified deletions **12**. Existing seven incoming files have unchanged blob SHAs. Private DT Borg tree remains at `059811cf7dc4b2d8402e53ed7d63ffce190a4969`; no new Ground. Next cursor after `DOUBLETAKE_HIGH_VALUE_EXTERNAL_ASSIMILATION_URLS.md`.
+- **Research-to-proof:** Explicit-chat bridge and AMM v3 offer historical ideas for mission-consumer receipt and bounded reusable campaign; no proof of actual scheduler→local DT consumption. External URL catalog is not an independently verified source and includes unrelated namesake projects; verify licensing, primary source, precise mechanism and current DT parity before any proposal. No duplicate offload. All files retained, no deletion clearance.
+- **Dependency:** These historical prompts may be cited by existing research or serve as provenance; no exact-duplicate candidate established. E17/enterprise details are not propagated into public research notes.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / limitation |
+| --- | --- | --- | --- |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_FINAL_CLOSURE_OFFLOADED_2026-10-04.md` | `825d62b79c6209486455ed21c66956557bab4366` | KEEP | Oct 4 enterprise boundary evidence-closure, scoped network/process/workspace/memory/logging restrictions; not current deployment proof. |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_MISSION_v1.md` | `ca24e5841d3002bc418d4b4f17daff72cdd27ded` | KEEP | Earlier mock-backed pre-Copilot contract and fail-closed external-ingestion exclusions; distinct original scope. |
+| `DOUBLETAKE_ENTERPRISE_E17_EVIDENCE_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `840d769d6ce0d80a761db98f9a1bef25115aefac` | KEEP | E17 evidence regeneration/verification after disk-space failure, warns verify-exit alone insufficient; historical proof protocol. |
+| `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` | `bcec6a148adf88f91686b1d4c7774ed30047ed88` | KEEP | Explicit chat request→governed owner bridge→durable receipt→real browser negative controls; no observed local consumer. |
+| `DOUBLETAKE_FAMILY_116_SEMANTIC_DISCRIMINATION_EVOLUTION_MISSION_v2_FINAL.md` | `0ad9727c6da23724b8e7288d75377d77dd2c1f8e` | KEEP | Math identity-testing/hitting-list analogy, hypothesis and adversarial tournament; no source-dependent DT gain proven. |
+| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v2_DIRECTORY_DISCOVERY.md` | `5dad73510430b1ba8a85abfacaec9effe769e8bc` | KEEP | Directory-driven AMM campaign contracts, immutable goals, bounded resumption and evidence-based allocation; v2 provenance. |
+| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v3_REUSE_FIRST_VERTICAL_SLICE.md` | `95ffe42f5964f91ebe692794c27021bbe9a7b125` | KEEP | v3 adds reuse-first audit and narrow early vertical slice; distinct staged integration order and negative controls. |
+| `DOUBLETAKE_GOAL_DRIVEN_AUTONOMOUS_CAPABILITY_EVOLUTION_RESEARCH_AND_TASK_CLOSURE_MASTER_v2_AUTOTAILOR.md` | `ec577f58c00ddc0db8291dc41ad3140a9e166087` | KEEP | Universal source/capability discovery, authorization and independent task-satisfaction oracle; claims not current DT evidence. |
+| `DOUBLETAKE_GOVERNED_INGESTION_CLOSURE_DEADLOCK_RESOLUTION_v1.md` | `cb363783208a220391de1e8228f2c2338a98149b` | KEEP | Anti-churn checkpoint and terminal evidence/authority categories; explicit no vanity revalidation. |
+| `DOUBLETAKE_GOVERNED_INGESTION_FINAL_ACCEPTANCE_ACTIVATION_OFFLOAD.md` | `e256e885b308367117a5cc1e3561fa32833cd6e7` | KEEP | Historical acceptance vs activation authority separation; no fabricated approval from readiness. |
+| `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `0ea696876f137f114e0c3b02accee491e43a04e8` | KEEP | Multi-fidelity ASHA/Hyperband evaluation rungs and evidence-gated promotion; distinct resource-allocation design, not verified runtime. |
+| `DOUBLETAKE_HIGH_VALUE_EXTERNAL_ASSIMILATION_URLS.md` | `f5563ed5aa05e2c36d28f90aacf6791ebc3305da` | NEEDS_REVIEW | Catalog of multiple unrelated namesake DoubleTake projects and arXiv links; primary-source/license/relevance not independently checked; retain pending source verification. |
+
+
 ## P4 verified duplicate-deletion tombstone — 2026-11-01 UTC
 
 - **Removed:** `doubletake_evolution/scrapyard/all_poetry_readings_191_individual (1).md`; prior exact Git blob `82ed92e0e82fe9e4f55a745a20f411d6129d98c5`; classification `DELETE_CANDIDATE → DELETED_VERIFIED`. GitHub SHA-guarded deletion commit **`170b9e5ebe32e6dceb1c16ce0c9299b9f2ec21be`**.
