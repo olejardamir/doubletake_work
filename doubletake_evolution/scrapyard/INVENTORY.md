@@ -1,5 +1,31 @@
 # Borg Scrapyard Inventory
 
+## CL-HARVEST-001 canonical-only semantic merge and D01 closure — 2026-11-01 ~20:00Z
+
+**Director / collective feedback:** Latest STATE ~19:26Z: full Borg **NO / NOT VERIFIED**; natural complete cycles 0, owner B1 integrity decision pending, 7.8.1 local mission-consumer receipt absent, external assimilation→independent Ground 0. Director **ACCEPTED IS-015 FOR OUTWARD TEST DESIGN ONLY** (static-vs-interleaved proof-artifact containment negatives), no implementation/Ground. No new incoming beyond IS-015 in the recursive tree; no duplicate research handoff manufactured. Private BORG `Chant.md` and discovery/assimilation spec sampled read-only, no private text copied. New public patch-distribution safety hold in STATE acknowledged; this Scout made no private code changes.
+
+**Canonical cluster:** `clustered/historical-harvest-governed-integration.md` (**CL-HARVEST-001**) created at commit `5f3c0a77ba2711cecf19b7ea9a7567c6a75fbba4`, refetched blob `597ce92067daa20db662e6bb4f997177ddae0d00` (10,703 UTF-8 bytes). Twelve fully readable, already-surgically-reduced D01 source files were re-read at their exact blobs; distinct historical owner mapping, Gate B dispositions, semantic scope, scheduler controls, R0–R6, durability caveats, UI/API, fixed-budget holdout, strict E2E negatives and source/proof unknowns were consolidated with a member SHA ledger. Historical `Astrocytech/Agent_X` assertions are NOT verified present-day DT. Cluster is research provenance, **not** a new Director proposal or an authorized mission. Its 12 member bodies are not required as working copies after complete extraction.
+
+**Verified deletion tombstones:** All 12 working sources below were SHA-refetched immediately before GitHub `delete_file`; independent recursive HEAD tree confirms every path absent. Git history retains originals. Disposition for each: **EXTRACT_THEN_DELETE → DISTILLED_REPLACED_AND_DELETED**. Retained destination for every source: `clustered/historical-harvest-governed-integration.md` (blob above), plus archival original SHA in the canonical member ledger. No source had a currently named live dependency in STATE, ACTIVE_MISSION, WORKER_PROMPT, RESEARCH_OFFLOAD or COMPLETED; repo code-search did not find exact filename matches, but that is not proof about external bookmarks. The removed `MAIN_EXECUTE...` internal links now resolve to the canonical member IDs. D01/inventory mentions are historical ledger pointers, not active caller dependencies. No runtime/protected evidence, binaries, licenses or private code deleted. Each deletion reversible from its exact Git blob.
+
+| Deleted path relative to scrapyard/ | Last blob SHA | Delete commit SHA | Bytes removed |
+|---|---|---|---:|
+| `CURRENT_STATE_AUDIT.md` | `dc4a13e656b26937109c17a53ef56fb3979d28c0` | `746ac96b95af54547167ce94791eaff6c164cc0b` | 1631 |
+| `DONOR_MODULE_DISPOSITION_MATRIX.md` | `f6022de2f82ce921142e2ab23f7ee8d8c9f27842` | `2e3f9f45f401733a9774cb8b2f778ce1773343f8` | 1696 |
+| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `96f9d52276a4968fec98e39bb3e3cf8e5f8b5044` | `10aa5aa6f42e3f025d52248808eaef32fcd06bdc` | 1876 |
+| `01_revalidate_and_disposition.md` | `6688846ab15a72d50c88c70a9d9696ee5709b611` | `559858fa8da5c08e10668a8fdb96838c72043725` | 2177 |
+| `02_gate_b_contract_integration.md` | `0a4aec9bbfd3b26365c6fa4968c081a90027a638` | `1a9520e966154314433a759a15005feb8fdff663` | 2068 |
+| `03_semantic_embedding_grounding.md` | `06f3081f219552203852b42fb6b0f55ee6ac574b` | `0c0c6a4ddffea98fa977f73092ee649bc32e7ed1` | 1833 |
+| `04_generation_scheduler_integration.md` | `f177d789d16b1f5cc53b41644d5725de3de8369f` | `199eec3164c9eb46539897ca592fc0c43acf6921` | 1864 |
+| `05_evaluation_promotion_integration.md` | `39ec0cd88e2657862fa7961bfe8b67a104457555` | `2f22613023b24aa964ea68448c3f459806fb4e14` | 1830 |
+| `06_persistence_migration_recovery.md` | `1e9c6eb4924abe89a4ae4378ee771018f5760952` | `96fc6aab5c450bc704eb6472196b991f7e2ce1c2` | 1758 |
+| `07_real_api_ui_inventory.md` | `572d3e80a22d9de12beaa1939e020053911927ff` | `12e6a19078f32330cb14a8ea13310178efb0a6db` | 1785 |
+| `08_benchmark_holdout.md` | `9ac87fe414f86f76b7352b7d08a23a913487caf7` | `1b22f4c0e3fe022bb8f820ae224d155e37f79e63` | 1596 |
+| `09_strict_e2e_ci.md` | `350060eba69d56d3eafab4594e30cd13e708128e` | `22d46b4c265f024379c1afc9b432c8b1ff50f600` | 1563 |
+
+**Verified outcomes:** 12 historical text bodies content-read / fully dissected (closure re-review), 1 coherent semantic cluster created, **12 verified original deletions**, **0 in-place reductions this checkpoint**, **0 non-plaintext conversions**, **0 verified DT capability changes**. Deleted source bytes **21,677**, canonical added **10,703**, **10,974 net source+canonical bytes removed** before inventory metadata; 12 source files removed, one canonical added, **11 fewer files**. Recursive tree after writes: **370 scrapyard blobs** (excluding directories); one known LLM7 deletion safety hold remains unchanged. Prior inventory first-pass review completion is not proof of universal atomic distillation. Next content-review cursor: uncompressed historical DT/Governed-Ingestion sources not yet atomically distilled; do not re-read these 12 unless new evidence changes their relevance. No unreviewed binary falsely counted as converted.
+
+
 ## CL-LLM7-001 verified semantic cluster merge and IS-015 triage — 2026-11-01 UTC
 
 **Current Director:** latest STATE at ~18:24Z: full Borg **NO / NOT VERIFIED**; 0 verified completed natural autonomous cycles, owner B1 unresolved, scheduler→local 7.8.1 run-bound receipt unobserved, external knowledge Ground unverified. Two private patches are PREPARED_UNTESTED, not executed. No Director mission, worker prompt or private implementation changed here.
