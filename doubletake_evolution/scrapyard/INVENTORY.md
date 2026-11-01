@@ -1,6 +1,25 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **9 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 388 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **0 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 397 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+
+## L1 checkpoint — 2026-11-01 UTC (remaining first-pass backlog; nine SHA-matched samples)
+
+- **Tree/coverage:** 401 current blobs including this inventory, 400 tracked artifact rows. Nine previously PENDING_CONTENT_REVIEW paths were fetched by GitHub path with matching ledger blob SHA and actual text sampled (all nine first 110 lines; five extended through line 210; one short formal-audit file fully returned). **397/400** have at least a partial actual-content inspection; **0 PENDING_CONTENT_REVIEW**. The other **3/400** are large, unreadable via current connector and remain NEEDS_REVIEW **without** content-review credit. The 397 are not certified exhaustive full-file reviews; existing NEEDS_REVIEW statuses remain for source, privacy, version-delta or dependency checks. Cursor: INITIAL_PASS_COMPLETE; revisit three inaccessible files with an authorized reader and then deeper NEEDS_REVIEW.
+- **Current incoming:** IS-001 through IS-007 exist; no newly untriaged incoming beyond IS-007. IS-007 has source-validated inventory/offload handoff R-BORG-SCOUT-20261101-007; 006/007 Director acceptance/DT Ground remains unverified in latest inspected state. IS-005 Director DEFERRED. Internet Scout feedback: seek actual authorized 7.8.1 consumer receipt and source-dependent 7.8.3 baseline, not more generic theoretical candidates.
+- **Authority and proof:** Director latest documented FULL BORG **NO / NOT VERIFIED**; zero natural complete cycles, B1 owner integrity disposition pending, no verified isolated local consumer receipt or external governed assimilation. No changes to mission/prompt/private DT. No new Director candidate promoted; prior IS-007 remains best bounded external K slice, subject to actual authorization and source-specific independent tests.
+- **Cleanup:** zero new deletions, nine historical deletions retained. The previously flagged byte-twin DELETE_CANDIDATE_BLOCKED files remain blocked because cross-repository exact-path references and mission dependencies were not fully checked; byte equality alone is insufficient. No fresh-SHA delete attempted and no new tombstone. No untrusted historical file instructions executed.
+
+| Artifact (full blob SHA in unchanged ledger) | Disposition | Actual-content finding, reason, revisit trigger |
+| --- | --- | --- |
+| `APR_v3.5-F_A6_FORMAL_AUDIT.md` | **NEEDS_REVIEW** | Historical signed-evidence and delegated-revocation formal audit; first 84 lines inspected (entire returned document), but proof soundness, provenance and DT transfer unverified. No new public extraction; revisit only with legitimate owner need. |
+| `AZ-104_Transcript_Coverage_Matrix.md` | **KEEP** | Exam-study transcript-to-outline coverage matrix, first 210 lines sampled; explicit covered/partial/missing traceability is a potentially reusable audit pattern, not evidence of current DT capability. Retain distinct source; unrelated to immediate B1/B7. |
+| `bank_of_canada_role_stories_updated.md` | **NEEDS_REVIEW** | Personal career/interview preparation material, first 110 lines inspected; privacy and provenance require protected review. No content extraction to public handoff; no current DT mission dependency established. |
+| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED.md` | **KEEP** | Canonical byte-equivalent source retained after prior removal of eight numbered duplicates. First 210 lines sampled: existing-session-authority ACP interoperability and language-server integration plan; historical design, not current implementation proof. Revisit on actual DT code parity. |
+| `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` | **NEEDS_REVIEW** | Personal interview study guide, first 110 lines sampled; preserve for owner/privacy review, not a Borg assimilation candidate; no public excerpt. |
+| `WEALTHSIMPLE_HR_INTERVIEW_TRANSCRIPT_DAMIR_STUDY_ONLY.md` | **NEEDS_REVIEW** | Personal interview transcript/study document, first 110 lines sampled; provenance and personal-data review needed before any extraction; retain, no public excerpt. |
+| `youtube_detection_neutral_architecture_v16.md` | **NEEDS_REVIEW** | Historical browser-extension architecture v16; first 210 lines sampled, including versioned review dispositions. Distinct revision from v17; full diff and implementation/rights review not established, so retain. |
+| `youtube_detection_neutral_architecture_v17.md` | **NEEDS_REVIEW** | Historical browser-extension architecture v17; first 210 lines sampled, extensive prior-revision review matrix. Do not assume v16 superseded or that design works; exact version delta and independent implementation evidence missing. |
+| `zero_resolution_observation_genesis_of_distinction.md` | **NEEDS_REVIEW** | Foundational zero-discrimination observational-equivalence proposal; first 210 lines sampled, mathematical claims not independently validated and no measurable B7 transfer shown. Retain as speculative provenance. |
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -377,13 +396,13 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `all_poetry_readings_191_individual (1).md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
 | `all_poetry_readings_191_individual.md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
 | `all_poetry_readings_direct.md` | `4b1bbbdc4f66de1619f43654f000c815b2e091f1` | 269171 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `APR_v3.5-F_A6_FORMAL_AUDIT.md` | `6e8245e2e2054d6bd2dcef80b2fd993a1385648b` | 11498 | PENDING_CONTENT_REVIEW |
+| `APR_v3.5-F_A6_FORMAL_AUDIT.md` | `6e8245e2e2054d6bd2dcef80b2fd993a1385648b` | 11498 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
 | `audio_frame_mosaic_llm_prompt_10_10_v4.md` | `3145e4120557c8f693e3a6c30c4e75665d9496e5` | 42519 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | 52229 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `AUDIT.md` | `dd621250c391afd0db22501e71b6c60c840988f0` | 4681 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | 69026 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | 27325 | PENDING_CONTENT_REVIEW |
-| `bank_of_canada_role_stories_updated.md` | `60ef6841c9ae0cbd56c7f3e16382a0e1a6d1562a` | 37990 | PENDING_CONTENT_REVIEW |
+| `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | 27325 | KEEP; PARTIAL_CONTENT_SAMPLED_20261101 |
+| `bank_of_canada_role_stories_updated.md` | `60ef6841c9ae0cbd56c7f3e16382a0e1a6d1562a` | 37990 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
 | `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | 135184 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `BORG_WHAT_THEY_DO.md` | `1bafc66072df4e8e99c7c0a5b1e67ba14e0a80ac` | 43127 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `CARD_SYSTEM_REBALANCED (1).md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
@@ -451,7 +470,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_MISSION_CLOSURE_7_EXECUTABLE_TASKS_v2.md` | `6156b0670bb7ebd360b14a3c1be3b63768af160b` | 20209 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_MULTI_SESSION_APPLICATION_TABS_IMPLEMENTATION_SPEC.md` | `8bced4ab00359a8200e0c0accbd94d66e53d894f` | 160832 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DOUBLETAKE_MULTI_SOURCE_ASSIMILATION_FINAL_v3.md` | `defef5c11c92534669eccbfbf3d28fc2e1563ab2` | 47411 | CONTENT_SAMPLED; KEEP |
-| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED.md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | PENDING_CONTENT_REVIEW; SAME_BLOB |
+| `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED.md` | `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95` | 22099 | KEEP; PARTIAL_CONTENT_SAMPLED_20261101 |
 | `DOUBLETAKE_PROBLEM_SPACE_REFORMULATION_INVARIANT_SEARCH_IMPLEMENTATION_MISSION_v2_FINAL.md` | `734ce4e681d458cc8939b7ab7074f543cedcde7d` | 48368 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_RANKEVOLVE_SELECTIVE_ASSIMILATION_NOTE.md` | `6ed3fe5bcae95f1b1a73fdbbafd3d8228a34075d` | 7638 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DOUBLETAKE_REASONING_FIRST_BANK_VALUE_EVOLUTION_MISSION_v4.md` | `36f322e24d25b68500f21e0976b9f8123437f6c0` | 39499 | CONTENT_SAMPLED; NEEDS_REVIEW |
@@ -667,11 +686,11 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `voynich_frequency_mapping_workflow_revised.md` | `3256242128dc49040fc5ed9bad910a068041e98c` | 17075 | KEEP; SAME_BLOB |
 | `voynich_frequency_mapping_workflow_updated.md` | `2da46b82d46ce8e29e209409f1bcf3e0819e0791` | 13026 | NEEDS_REVIEW |
 | `voynich_unsupervised_morphology_system.md` | `7ad8a114852cbc366bce4deaeb70cf010b03bea4` | 7154 | KEEP |
-| `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` | `39624f47870cb77866037f397e47228a7f20e383` | 34082 | PENDING_CONTENT_REVIEW |
-| `WEALTHSIMPLE_HR_INTERVIEW_TRANSCRIPT_DAMIR_STUDY_ONLY.md` | `d5b7afda4b2ecba002f3d1aa6b0a3b7a59745420` | 65781 | PENDING_CONTENT_REVIEW |
-| `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | 199310 | PENDING_CONTENT_REVIEW |
-| `youtube_detection_neutral_architecture_v17.md` | `3387f7a74038e2c6155dce3702969351af3999fc` | 213206 | PENDING_CONTENT_REVIEW |
-| `zero_resolution_observation_genesis_of_distinction.md` | `b75eda1766f0896edc78f0c96b36483b36f05e9f` | 54203 | PENDING_CONTENT_REVIEW |
+| `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` | `39624f47870cb77866037f397e47228a7f20e383` | 34082 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
+| `WEALTHSIMPLE_HR_INTERVIEW_TRANSCRIPT_DAMIR_STUDY_ONLY.md` | `d5b7afda4b2ecba002f3d1aa6b0a3b7a59745420` | 65781 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
+| `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | 199310 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
+| `youtube_detection_neutral_architecture_v17.md` | `3387f7a74038e2c6155dce3702969351af3999fc` | 213206 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
+| `zero_resolution_observation_genesis_of_distinction.md` | `b75eda1766f0896edc78f0c96b36483b36f05e9f` | 54203 | NEEDS_REVIEW; PARTIAL_CONTENT_SAMPLED_20261101 |
 
 | `incoming/IS-20261101-002-provenance-bound-mission-execution-receipts.md` | `20dc7c82b0d6fd45827c6d7b1cb1091ee875bc09` | 10148 | SOURCE_VALIDATED; ACCEPTED_FOR_PLANNING (OUTWARD ONLY) |
 
