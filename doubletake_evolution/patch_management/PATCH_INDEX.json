@@ -10,7 +10,7 @@
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
     "verification": "local execution and independent evidence required",
     "public_repo": true,
-    "local_selection": "read PATCH_INDEX.json, select first PREPARED_UNTESTED by priority with satisfied dependencies and source preflight; apply ONE; report outcome; do not auto-repeat",
+    "local_selection": "read ../patch_management/PATCH_INDEX.json, select first eligible by priority/status/dependencies and compatible DT source; inspect and execute ONE ../patches/<ID>.sh patch; report to patch_management/results/<ID>.json",
     "one_patch_per_file": true
   },
   "patches": [
@@ -187,5 +187,7 @@
     "results_observed": 0,
     "notes": "Five new public-safe, source-inspected code-bearing patch packages prepared; no actual local DT/Clai test or application evidence. Two older private packages were not republished."
   },
-  "last_format_migration": "2026-11-01"
+  "last_format_migration": "2026-11-01",
+  "patch_management_directory": "doubletake_evolution/patch_management",
+  "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json"
 }
