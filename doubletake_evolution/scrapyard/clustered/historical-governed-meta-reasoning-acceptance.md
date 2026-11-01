@@ -330,12 +330,95 @@ Do not close this with another direct state-store CAS test.
 
 ### V2 matched-comparison acceptance (historical exact details)
 
+Before final convergence, execute MR-X with a reproducible matched comparison.
+
+At minimum record for DIRECT and META:
+
+- task identity and input digest;
+- provider/model identity;
+- resource ceilings;
+- actual measured resource consumption;
+- tool/capability inventory;
+- wall/step/model-call budget;
+- completion state;
+- verified output/artifact;
+- correctness/quality measure appropriate to the task;
+- latency/cost;
+- retries/recovery;
+- failures;
+- meta-controller overhead;
+- final decision evidence.
+
+The comparison must not give META hidden extra budget or tools.
+
+The purpose is not to prove META always wins.
+The purpose is to establish whether the governed meta layer adds measurable value, when it abstains, and whether its overhead/safety trade is honestly recorded.
+
+If META is worse or neutral on a task, record that result rather than tuning the benchmark after seeing it.
 
 ### V2 adversarial end-to-end negatives (historical exact details)
 
+After all 48 rows appear PASS, perform a fresh adversarial pass against the integrated runtime.
+
+Attempt to cause:
+
+- a DIRECT-history escalation that loses the prior attempt;
+- two individually useful but incompatible mutable actions to execute together;
+- state growth beyond the declared bound;
+- a meta-selected action to bypass canonical governance;
+- STOP to select a missing/unverified/ineligible artifact;
+- crash after provider response but before durable commit;
+- crash after effect completion before aggregation;
+- contradictory report/ledger/artifact evidence;
+- leakage into shared/global memory;
+- controller authority to leak into Borg/routine control;
+- malformed/oversize/unknown stage output to escape fail-closed handling;
+- cancellation followed by new work;
+- steering followed by execution of a stale decision;
+- off-objective work to execute;
+- a timeout retry to receive a fresh full deadline;
+- out-of-order completion to skip a missing delta;
+- two concurrent triggers to silently overwrite one another;
+- a newly registered action/capability to require central edits;
+- a no-progress loop to continue indefinitely;
+- META to appear better only because it received more budget/resources;
+- a green criterion test to remain green after its production wiring is removed.
+
+Repair any material failure and repeat the convergence pass.
 
 ### V3 regression guards (historical, not current PASS)
 
+The 33 rows already PASS are not implementation targets unless their evidence becomes red.
+
+Preserve in particular:
+
+- production ingress and deterministic activation;
+- DIRECT-history escalation;
+- control/object-work separation;
+- incremental assessment;
+- budget truth and set selection;
+- conflict/concurrency decisions;
+- self-contained dispatch;
+- artifact lineage and persistent retrieval;
+- capability participation and dynamic reevaluation;
+- verification discipline;
+- forced-stop honesty;
+- crash/resume;
+- matched DIRECT-vs-META comparison;
+- canonical inference/provider authority;
+- canonical task authority;
+- transactional dispatch;
+- capability baseline non-regression;
+- stale-decision refusal;
+- single orchestration authority;
+- mid-run task revision;
+- context data governance/egress;
+- import/authority identity;
+- no recursive control-ingress reentry;
+- timeout/deadline propagation;
+- committed-delta/out-of-order safety.
+
+Do not "simplify" remaining work by weakening any of these.
 
 ## Disagreements, limitations, next falsifier
 
