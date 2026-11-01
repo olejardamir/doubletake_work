@@ -1,5 +1,26 @@
 # Borg Scrapyard Inventory
 
+## Q2 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
+
+- **Scope:** Twelve more actual file bodies sampled for mechanisms, evidence claims, test and negative controls, source scope, and ending. Current **190/397** surviving second-pass reviewed; **207 remain**. Q2: **12 KEEP, 0 NEEDS_REVIEW, 0 deletion candidates, 0 actual deletions**; 12 cumulative verified deletions. Next cursor after `DOUBLETAKE_MISSION_CLOSURE_7_EXECUTABLE_TASKS_v2.md`.
+- **Gap-to-proof:** Historical impasse-native control, cross-source evolution and L0 self-repair prompts require real production consumer, no-loss owner authority and independent source-dependent Ground. Existing 7.8.1/7.8.3 acceptance gates cover these; no new proposal or capability. Distinct versions have different source/evidence chronology and remain KEEP, not presumed obsolete. No exact-duplicate or dependency-cleared deletion identified.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_CHECKPOINT_v2_2026-10-04.md` | `0feb3a31e6f4807bcece656a0741478425757898` | KEEP | Frozen Oct 4 typed-impasse, goal-lineage and recurrence-reuse design checkpoint; live application proof remains unverified. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_DELTA_CLOSURE_OFFLOADED_2026-10-04.md` | `53115f3107da99c17da5495880abad0d074ea1e7` | KEEP | Oct 4 source/test closure contract and production-consumption evidence requirement, distinct from earlier checkpoint. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_OFFLOADED_2026-10-05.md` | `fb4adc4b9d92f06db8682c3c0ab8f4a653637d70` | KEEP | Oct 5 focused/default suite and evidence-package freshness reconciliation; historical results not current Ground. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_v1.md` | `3a91822c7b2e10ea647b24b294edfa8470293354` | KEEP | Alternate Oct 5 evidence-closure source baseline and non-vacuity suite; provenance differs from offload. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_MISSION_v19_RECOVERED_CONSOLIDATED.md` | `266b15131e0d8079f83d1639a16491c0a9f21fac` | KEEP | Recovered four-mechanism cognitive-control original with typed impasses and owner integration; unique historical specification. |
+| `DOUBLETAKE_MASTER_RESEARCH_SOURCE_EVOLUTION_FINAL_DELTA_CLOSURE_OFFLOADED_2026-10-09.md` | `2919bfe98a11ae6d29d25840d1fe2af484f50362` | KEEP | Final delta requires real acquisition, clean ephemeral source handling, independent measured gain and evidence rebinding. |
+| `DOUBLETAKE_MASTER_RESEARCH_SOURCE_EVOLUTION_MISSION_v4_FINAL.md` | `1a2cc9e0c39f1eacd098ed168125a5c681801d22` | KEEP | Earlier cross-paper/cross-source synthesis, governed hypotheses and measured source-exhaustion definition. |
+| `DOUBLETAKE_MASTER_RESEARCH_SOURCE_EVOLUTION_MISSION_v7_FINAL.md` | `f76470398605bab1b06eb57b453e74e44ce7d492` | KEEP | Later ephemeral acquisition and cleanup requirements extend v4; keep both version histories. |
+| `DOUBLETAKE_MASTER_v2_AUTOTAILOR_FINAL_GAIN_ADOPTION_CLOSURE_OFFLOADED_v1.md` | `ea5e72601726c29f725f92a8b40f4c41c1495999` | KEEP | Cross-model served-model parity, selective promotion, adversarial rollback; Oct 19 evidence snapshot not current. |
+| `DOUBLETAKE_MINIMAL_L0_KERNEL_SYSTEM_WIDE_LIVE_UPDATE_AND_SELF_REPAIR_MISSION_v2.md` | `17c9e8aa1fad1cc94ead0f85c3749394a252722a` | KEEP | v2 L0 activation truth, approved vs candidate separation, bounded update/rollback and real caller proof. |
+| `DOUBLETAKE_MINIMAL_L0_KERNEL_SYSTEM_WIDE_LIVE_UPDATE_AND_SELF_REPAIR_MISSION_v3_FINAL_INTEGRATION.md` | `40f6bdcd900087bff375bdde0e6a2f842d4e38a9` | KEEP | v3 adds reuse-first critical path, adversarial repair injection and unaffected-service proof; distinct delta. |
+| `DOUBLETAKE_MISSION_CLOSURE_7_EXECUTABLE_TASKS_v2.md` | `6156b0670bb7ebd360b14a3c1be3b63768af160b` | KEEP | Seven bounded ingestion closure tasks separate real acceptance/activation authority and anti-stall tests. |
+
+
 ## Q1 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
 
 - **Scope:** Next 12 surviving artifacts after P4 cursor, actual UTF-8 bodies fetched and sampled (openings, headings, acceptance/negative-test passages, endings); not a full line-by-line audit. Current **178/397** surviving second-pass reviewed; **219 remain**. Batch: **11 KEEP, 1 NEEDS_REVIEW, 0 deletion candidates, 0 actual deletions**; cumulative verified deletions **12**. Existing seven incoming files have unchanged blob SHAs. Private DT Borg tree remains at `059811cf7dc4b2d8402e53ed7d63ffce190a4969`; no new Ground. Next cursor after `DOUBLETAKE_HIGH_VALUE_EXTERNAL_ASSIMILATION_URLS.md`.
