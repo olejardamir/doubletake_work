@@ -204,6 +204,26 @@ Two SHA-identical pairs were fetched and compared at content level. Canonical co
 
 **Cursor:** 40 distinct historical content files inspected this run plus incoming 004. Next pass: next pending technical file after these checkpoints, plus unresolved duplicates only when a trustworthy reference scan is available. No permission expansion.
 
+
+## Progressive review checkpoint E1 — 2026-11-01 (12-item bounded batch)
+
+Source: current GitHub blob content (full for <=40 kB, first 120 lines otherwise); no private DT content copied. All items retained pending exact-path dependency checks. Each finding is historical, not an execution directive.
+
+| Artifact | SHA | Disposition | Content finding / limitation |
+| --- | --- | --- | --- |
+| `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` | `f2d9035a865e1fb40605d9808f42002d4c8b557f` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X Plumber — Consolidated Release Specification v6 / 0. Normative status and release rule / 1. What Plumber is; historical source, not current DT proof. |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_10_10_CONVERGED (1).md` | `cc6fc4314818af58e54236f34e73e372c46b23dc` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X Prompt-Native Transformation Loop — Current-Code Bootstrap / Mission / Current-State Assumption; historical source, not current DT proof. |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_CONVERGED_UPDATED.md` | `fd1d9a30ebaf039a6f750558f78999eb1affe663` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X Prompt-Native Transformation Loop — Current-Code Compatible / Mission / OpenCode Execution Contract; historical source, not current DT proof. |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_GUIDE_30_OF_30.md` | `eb60f18ca64e660bfc3b2e187d1091c6351ad177` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X Prompt-Native Transformation Loop — End-to-End Closed Contract / TASK / PRIORITY ORDER; historical source, not current DT proof. |
+| `AGENT_X_REAL_SPEC_EXECUTION_ENGINE_V2_AUDITED.md` | `eea871cc5525c45d56dbd107ae2b5a7fc2e8764a` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X — Real Spec Execution Engine: Bounded Slices, Persistent Loop, No S / Exact production symptom / Proven defects on current main; historical source, not current DT proof. |
+| `AGENT_X_REPEATED_SEMANTIC_TIMEOUT_REPAIR.md` | `3307e54f6e12c368c7a2e895cab25e8b628949dc` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Repeated Semantic Provider Timeout Repair / Exact production regression / 1. Proven weaknesses in the current code; historical source, not current DT proof. |
+| `AGENT_X_RUNTIME_INTEGRATION_NEXT_STEPS_10_10_REV17.md` | `8ae54f5eec10b49d9a2d2d0b3a2868a73712b720` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X Runtime Integration Next Steps — 10/10 LLM-Executable Implementatio / 0. Rating of REV16 / Improvements made in REV17; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_CONTRACT_MISMATCH_REPAIR.md` | `9df40d2b0395a246ea0ef2aea8ea873a682e125a` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X — Semantic Contract-Mismatch Repair / Exact production failure / 1. Proven current root cause; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_EMBEDDING_UPGRADE_SPEC.md` | `266dd35c8615eee7b197b6865ab009f0c901f859` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X Semantic Embedding Upgrade Specification / 1. Objective / 2. Non-negotiable invariants; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED | Byte-identical peer AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3c.md; exact-path dependencies unverified. Sections: AGENT_X — SEMANTIC-FIRST FINAL REMAINING IMPLEMENTATION PATCH V3 / SUPERSEDES THE PREVIOUS SEMANTIC-FIRST PATCH / VERIFIED BASELINE: Astrocytech/Agent_X main; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3c.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED | Byte-identical peer AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3.md; exact-path dependencies unverified. Sections: AGENT_X — SEMANTIC-FIRST FINAL REMAINING IMPLEMENTATION PATCH V3 / SUPERSEDES THE PREVIOUS SEMANTIC-FIRST PATCH / VERIFIED BASELINE: Astrocytech/Agent_X main; historical source, not current DT proof. |
+| `AGENT_X_SEMANTIC_FIRST_REMAINING_WORK_843f554.md` | `a526e6dfb92b1845bf30f741635af6c12c0a88a4` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X Semantic-First — Remaining Work Only / Purpose / Remaining defect 1 — Baseline evidence fields are still placeholders, not r; historical source, not current DT proof. |
+
 ## Complete path/blob metadata ledger
 
 Each row gives relative path, exact blob SHA, size and current triage status. PENDING_CONTENT_REVIEW does not mean unimportant; provenance/meaning/next test are unknown until read.
@@ -276,18 +296,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AGENT_X_MULTI_SESSION_OPENCODE_BIGPICKLE_EXECUTION_TASKS.md` | `79052555caf15e2ab4ed25d32a7c20053b35e01b` | 73937 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION.md` | `78c57f90e378d23f685af1703a8c238ee45f19dc` | 13417 | KEEP / CONTENT_TRIAGED |
 | `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md` | `c776a7d4a2a5527992921206d9291b3eeacafda0` | 47847 | KEEP / CONTENT_TRIAGED |
-| `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` | `f2d9035a865e1fb40605d9808f42002d4c8b557f` | 116808 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_10_10_CONVERGED (1).md` | `cc6fc4314818af58e54236f34e73e372c46b23dc` | 107111 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_CONVERGED_UPDATED.md` | `fd1d9a30ebaf039a6f750558f78999eb1affe663` | 88409 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_GUIDE_30_OF_30.md` | `eb60f18ca64e660bfc3b2e187d1091c6351ad177` | 120231 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_REAL_SPEC_EXECUTION_ENGINE_V2_AUDITED.md` | `eea871cc5525c45d56dbd107ae2b5a7fc2e8764a` | 58052 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_REPEATED_SEMANTIC_TIMEOUT_REPAIR.md` | `3307e54f6e12c368c7a2e895cab25e8b628949dc` | 22554 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_RUNTIME_INTEGRATION_NEXT_STEPS_10_10_REV17.md` | `8ae54f5eec10b49d9a2d2d0b3a2868a73712b720` | 31988 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_SEMANTIC_CONTRACT_MISMATCH_REPAIR.md` | `9df40d2b0395a246ea0ef2aea8ea873a682e125a` | 19663 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_SEMANTIC_EMBEDDING_UPGRADE_SPEC.md` | `266dd35c8615eee7b197b6865ab009f0c901f859` | 55840 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | 36255 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3c.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | 36255 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `AGENT_X_SEMANTIC_FIRST_REMAINING_WORK_843f554.md` | `a526e6dfb92b1845bf30f741635af6c12c0a88a4` | 24254 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` | `f2d9035a865e1fb40605d9808f42002d4c8b557f` | 116808 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_10_10_CONVERGED (1).md` | `cc6fc4314818af58e54236f34e73e372c46b23dc` | 107111 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_CONVERGED_UPDATED.md` | `fd1d9a30ebaf039a6f750558f78999eb1affe663` | 88409 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_GUIDE_30_OF_30.md` | `eb60f18ca64e660bfc3b2e187d1091c6351ad177` | 120231 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_REAL_SPEC_EXECUTION_ENGINE_V2_AUDITED.md` | `eea871cc5525c45d56dbd107ae2b5a7fc2e8764a` | 58052 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_REPEATED_SEMANTIC_TIMEOUT_REPAIR.md` | `3307e54f6e12c368c7a2e895cab25e8b628949dc` | 22554 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_RUNTIME_INTEGRATION_NEXT_STEPS_10_10_REV17.md` | `8ae54f5eec10b49d9a2d2d0b3a2868a73712b720` | 31988 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_SEMANTIC_CONTRACT_MISMATCH_REPAIR.md` | `9df40d2b0395a246ea0ef2aea8ea873a682e125a` | 19663 | CONTENT_REVIEWED; KEEP |
+| `AGENT_X_SEMANTIC_EMBEDDING_UPGRADE_SPEC.md` | `266dd35c8615eee7b197b6865ab009f0c901f859` | 55840 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | 36255 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
+| `AGENT_X_SEMANTIC_FIRST_DIRECT_IMPLEMENTATION_PATCH_V3c.md` | `7d615cc1bbfd7e7ca9dd78e56abda7aaa33fa0e8` | 36255 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
+| `AGENT_X_SEMANTIC_FIRST_REMAINING_WORK_843f554.md` | `a526e6dfb92b1845bf30f741635af6c12c0a88a4` | 24254 | CONTENT_REVIEWED; KEEP |
 | `AGENT_X_SEMANTIC_FIRST_SIMPLIFICATION_CLEANUP.md` | `84ff4a6ffe9ec4d02fe8dc29daa3a6f7ffd3e08c` | 41542 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | 14426 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_SEMANTIC_PROVIDER_BOOTSTRAP_REPAIR.md` | `f6a192f33d6dbd9a1ad0c9a3bd450e11566e129a` | 25003 | PENDING_CONTENT_REVIEW |
