@@ -1,6 +1,55 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; latest checked GitHub main tree `88b30430bcafdf501cf2ae88d0d153fa71a6651d` (no truncation). Recursive metadata: **398 files** under scrapyard/ including this INVENTORY.md; **397 other file rows**. **51 items have at least partial content/source inspection** (including 40 historical files and the new incoming note reviewed this run); **346 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. No private DT material reproduced. Deletions recorded cumulatively: 9; deletions this run: 0.
+Updated 2026-11-01 UTC; last complete recursive tree census remains `88b30430bcafdf501cf2ae88d0d153fa71a6651d` (not re-enumerated this run). Baseline 398 files including INVENTORY; one newly verified incoming artifact yields **at least 399 tracked files**, pending fresh recursive census. **398 ledger rows**, 40 newly content-triaged historical artifacts plus one source-validated incoming. **306 PENDING_CONTENT_REVIEW** (346 before minus 40); historical NEEDS_REVIEW items still require deeper work. Cumulative at least partly inspected **92** (51 previous + 41 this run), not 92 exhaustively reviewed. Prior recorded deletions 9; deletions this run 0. No private DT text reproduced.
+
+## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
+
+- **Actual GitHub content fetched and SHA-matched:** 40 previously pending historical files, in four 10–12-item bounded read batches, plus incoming `IS-20261101-005`. For historical files, inspected document openings, section structure, selected text and endings; **not an exhaustive line-by-line deep review**. Classified 22 KEEP, 17 NEEDS_REVIEW and 1 DELETE_CANDIDATE_BLOCKED. Full blob SHAs are in the per-file ledger below; no filename-only classification. These 40 items leave PENDING_CONTENT_REVIEW but NEEDS_REVIEW entries still require deeper examination. **No deletion**: the byte twin has no unique bytes but its exact-path dependency census remains unverified; recheck live SHA and references before any removal.
+- **Common reference/dependency check:** canonical DT runtime/mission references for these historical files have **not** been exhaustively established; historical execution directives are untrusted source content, never instructions. KEEP does not mean currently implemented or endorsed. For NEEDS_REVIEW, revisit when exact historical comparison, privacy review or current owner evidence is available. For KEEP, revisit on current DT owner/mission dependency or a source-evidence change. No private implementation text copied here.
+- **Incoming `IS-20261101-005`:** source blob `5bdfebe81c7e059287f3d18bbddbeb81f2b1c7b5`; independently checked publisher [Bailis et al. PVLDB](https://www.vldb.org/pvldb/vol8/p185-bailis.pdf) and [Alvaro et al. CIDR](https://people.ucsc.edu/~palvaro/cidr11.pdf). Distinct hypothesis: immutable evidence additions may merge without coordinating every intake while exclusive owner/approval/budget transitions remain coordinated. Director B4 already has an isolated acknowledged-update-loss counterexample; no proof that current DT evidence operations are I-confluent, no writer contract or authority to change it. **KEEP / SOURCE_VALIDATED / PROPOSED_FOR_DIRECTOR_REVIEW** via `R-BORG-SCOUT-20261101-005`; conditional OUTWARD-only test, not approval. Internet Scout feedback: seek actual existing writer/operation algebra and invariant failure, not more generic CRDT summaries.
+
+| Artifact (exact SHA in ledger) | Disposition | Actual-content finding / reason / revisit trigger |
+| --- | --- | --- |
+| `191_poetry_semantic_clusters.md` | **NEEDS_REVIEW** | 31 thematic clusters of historical runic-poetry interpretations; no demonstrated DT mechanism; preserve source/provenance for possible representation-transfer study. |
+| `3phasedev.md` | **KEEP** | Research assimilation plan separates papers from implementation evidence and asks for reproduce/adapt/beyond-baseline tests. |
+| `AGENT_X_ASSIMILATE_DYNAMIC_MCP (1).md` | **KEEP** | Historical dynamic-MCP assimilation directive favors canonical capability descriptors, identity, governance and bounded context, not a parallel MCP runtime. |
+| `AGENT_X_ASSIMILATOR_ATOMIC_TASKS_REMAINING.md` | **NEEDS_REVIEW** | Historical 54-task assimilation backlog with acceptance gates; old audited HEAD and completion claims cannot be treated as current Ground. |
+| `AGENT_X_ASSIMILATOR_COMPLETION_PROMPT.md` | **KEEP** | Native capability path requires automatic ordinary-intent routing, governed execution, hot availability and inventory cleanup; useful B7 test vocabulary. |
+| `AGENT_X_ASSIMILATOR_COMPLETION_PROMPTL.md` | **NEEDS_REVIEW** | Earlier audited completion plan with ordinary-intent proof; compare unique requirements to current canonical path before extraction. |
+| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v4.md` | **NEEDS_REVIEW** | Earlier autonomous completion contract with phase gates, anti-drift and evidence; v5 differs; preserve until delta/provenance check. |
+| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v5.md` | **KEEP** | Later autonomous directive adds long-loop proof, phase gating and no-false-progress recovery; historical instruction only. |
+| `AGENT_X_BANK_OF_CANADA_ARCHITECTURE.md` | **NEEDS_REVIEW** | Large role-aligned enterprise analytics architecture/interview manuscript; potential sensitive context and unrelated scope; do not extract publicly. |
+| `AGENT_X_CAPABILITY_DISTILLATION_DIRECT_IMPLEMENTATION.md` | **KEEP** | Separates raw harvest from technical validity, need assessment and implementation; no automatic code from source score. |
+| `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN.md` | **KEEP** | UI anti-slop design distinguishes discovery, valid capability, real gap and approved action; exact blob also in a previously deleted numbered copy. |
+| `agent_x_commit_76ab330_remaining_work_definition_of_done.md` | **KEEP** | Historical proof-layer audit identifies false-PASS and repeatability risks; reusable independent negative-control ideas. |
+| `agent_x_commit_7b6cfbc_final_proof_gap_closure_prompt.md` | **KEEP** | Evidence-derived acceptance instead of hardcoded PASS; persisted manifests and independent validators proposed. |
+| `agent_x_continuous_discovery_assimilation_architecture_FINAL_v4.md` | **KEEP** | Detailed bounded mining→human-readable knowledge→single governed assimilation path; relevant to B7 and resumption, not current implementation proof. |
+| `agent_x_continuous_discovery_assimilation_architecture.md` | **NEEDS_REVIEW** | Earlier architecture shares knowledge-first principle; retain until distinct ideas versus FINAL_v4 are checked. |
+| `AGENT_X_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT.md` | **KEEP** | Historical atomic implementation pack includes durable supervisor, bounded chunks and no-loss restart; do not execute as live instructions. |
+| `AGENT_X_FINAL_3_GAP_SEMANTIC_FIRST_CLOSURE.md` | **NEEDS_REVIEW** | Historical semantic baseline and explicit effect-contract closure prompt; current status not revalidated. |
+| `AGENT_X_FINAL_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | **KEEP** | Historical duplicate-promotion-engine diagnosis; single canonical promotion owner is a transferable negative control. |
+| `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` | **NEEDS_REVIEW** | Large historical semantic-first repair specification; preserve for delta comparison, not current defects. |
+| `AGENT_X_FINAL_MCP_CONTRACT_CLOSURE.md` | **KEEP** | Explicit per-tool effect contracts and fail-closed unknown dynamic tools; relevant governance verification pattern. |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE_CURRENT_MAIN.md` | **NEEDS_REVIEW** | Large historical current-main repair prompt; baseline now stale; unique fixes unverified. |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE.md` | **NEEDS_REVIEW** | Earlier end-to-end semantic-first repair plan with restart/SYNCED controls; compare to later revisions. |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_GAP_CLOSURE.md` | **NEEDS_REVIEW** | Historical request-source materialization and exact target write-scope guidance; current code comparison required. |
+| `AGENT_X_FINAL_TWO_GAP_CLOSURE.md` | **NEEDS_REVIEW** | Historical distinction between affected modules and authorized write targets; retain for negative test reuse. |
+| `agent_x_full_point_form_work_plan_and_next_direction.md` | **KEEP** | MVP proof-first sequencing before broad external integration; historically relevant anti-false-PASS approach. |
+| `AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` | **KEEP** | Pattern adoption prioritizes existing owners, durable states, bounded retries and deterministic paths; upstream guidance not independently rechecked. |
+| `AGENT_X_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | **KEEP** | Uncertainty-aware multi-fidelity evaluation with separate candidate generation and decision gates; potential exploration-budget benchmark. |
+| `AGENT_X_HARVEST_CURRENT_CODE_10_OF_10_IMPLEMENTATION.md` | **NEEDS_REVIEW** | Historical current-code Harvest implementation plan; compare actual code and newer spec before any promotion. |
+| `Agent_X_Harvest_Execution_Prompt.md` | **NEEDS_REVIEW** | Historical Harvest execution directive with provenance and end-to-end proof; local paths are not authorization. |
+| `AGENT_X_HARVEST_FINAL_10_OF_10_DESIGN.md` | **KEEP** | Transaction-style Harvest design: frozen truth, gated decisions, rollback, restart and independently verified activation. |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES (1).md` | **DELETE_CANDIDATE** | Byte-identical to AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXESs.md; no unique bytes, but cross-repository exact-name dependency census unverified. |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES.md` | **KEEP** | Shorter, distinct UI/authority specification; not identical to expanded (1)/s revision; preserve. |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXESs.md` | **KEEP** | Expanded canonical byte twin of numbered (1); retain as sole byte-equivalent reference pending dependency audit. |
+| `agent_x_hermes_gap_closure_next_prompt.md` | **NEEDS_REVIEW** | Historical Hermes reference-repo and strict module-coverage plan; prior percentages are not current evidence. |
+| `AGENT_X_JIRA_PROMPT_STACK_IMPLEMENTATION_PROMPT_v5_ASTROCYTECH_CONFIGURED.md` | **KEEP** | Historical Jira stack design includes resumability, approvals and fake-transport tests; do not execute or grant Jira authority. |
+| `agent_x_missing_requirements_for_universal_agent_10_10_rev3 (1).md` | **NEEDS_REVIEW** | Broad universal-agent requirement catalogue with governance/recovery; unique delta and source rights not checked. |
+| `AGENT_X_MULTI_SESSION_APPLICATION_TABS_IMPLEMENTATION_SPEC.md` | **KEEP** | Multi-session shared-workspace design highlights isolated session state and explicit concurrent writer hazards; B4 relevant. |
+| `AGENT_X_MULTI_SESSION_OPENCODE_BIGPICKLE_EXECUTION_TASKS.md` | **NEEDS_REVIEW** | Task-level derivative of multi-session spec; preserve until dependency/unique acceptance comparison. |
+| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION.md` | **KEEP** | Historical orphan capability audit: locally tested algorithm without real consumer is not a justified production addition. |
+| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md` | **KEEP** | Expanded necessity-gate remediation with independent consumer proof and no self-justifying canonical owner. |
 
 ## Reconciled prior deletion not yet in inventory (observed, not performed in this run)
 
@@ -182,51 +231,51 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `09_strict_e2e_ci.md` | `4465231b2ba76b867290031d365a2bd7f9959267` | 2920 | CONTENT_REVIEWED; KEEP |
 | `10_parallel_stack_cleanup.md` | `444a6a23a39f7c1f64f71493a6d63d5e272fca9b` | 2540 | CONTENT_REVIEWED; KEEP |
 | `11_final_10_10_audit.md` | `40f8ae4f936c0733c5f38cfbf97ebec4cbadac09` | 2662 | CONTENT_REVIEWED; KEEP |
-| `191_poetry_semantic_clusters.md` | `1e2cdadc554cd615f661855706122ff0730f08e8` | 12856 | PENDING_CONTENT_REVIEW |
-| `3phasedev.md` | `ef61e28e721e40ce85f60ad7599c88d8814d0664` | 20327 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_ASSIMILATE_DYNAMIC_MCP (1).md` | `d04135e7cd0ff55cfdd57eb8051520d6b1575d5d` | 47952 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_ASSIMILATOR_ATOMIC_TASKS_REMAINING.md` | `18233b8bfad489623f1ef0d57cd5b0bbefeb83f2` | 78476 | PENDING_CONTENT_REVIEW |
+| `191_poetry_semantic_clusters.md` | `1e2cdadc554cd615f661855706122ff0730f08e8` | 12856 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `3phasedev.md` | `ef61e28e721e40ce85f60ad7599c88d8814d0664` | 20327 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_ASSIMILATE_DYNAMIC_MCP (1).md` | `d04135e7cd0ff55cfdd57eb8051520d6b1575d5d` | 47952 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_ASSIMILATOR_ATOMIC_TASKS_REMAINING.md` | `18233b8bfad489623f1ef0d57cd5b0bbefeb83f2` | 78476 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `AGENT_X_ASSIMILATOR_ATOMIC_TASKS.md` | `80a3546fbfd9a7fe05f0e0bb5f61296dc80cb23b` | 86288 | PARTIAL_REVIEW; RETAIN |
-| `AGENT_X_ASSIMILATOR_COMPLETION_PROMPT.md` | `1e507c05b5d62ed998eea13d320ae8f4eab03013` | 32182 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_ASSIMILATOR_COMPLETION_PROMPTL.md` | `60efbfb2c003cfcf36cb1467a7c6e9d77c615eb6` | 30338 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v4.md` | `1d540d57e6af79c7d8cd5b674f15e3eac175a511` | 35699 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v5.md` | `70067f589f82b65d401982296c441a552a2d65f4` | 38192 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_BANK_OF_CANADA_ARCHITECTURE.md` | `a749fc62ef2508dca944234bd0706eadd39a8864` | 150099 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_CAPABILITY_DISTILLATION_DIRECT_IMPLEMENTATION.md` | `9a0c4867c262f4f036eab56a92f13a256af3c194` | 30446 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN.md` | `e745f1ef36dd90d9e01186f61822a7d60ef46ef2` | 29341 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `agent_x_commit_76ab330_remaining_work_definition_of_done.md` | `0d65332b6c2142ea49ceec6c60512785238784f3` | 29162 | PENDING_CONTENT_REVIEW |
-| `agent_x_commit_7b6cfbc_final_proof_gap_closure_prompt.md` | `105b6666fd99331363d0a5adc2eacf54b3ab4406` | 27539 | PENDING_CONTENT_REVIEW |
-| `agent_x_continuous_discovery_assimilation_architecture_FINAL_v4.md` | `eb0c243541f655b8b20e62b6c8ca90b9bb801b10` | 145627 | PENDING_CONTENT_REVIEW |
-| `agent_x_continuous_discovery_assimilation_architecture.md` | `c1c8450afc2e372fc3885da8ca556599cd34c426` | 41454 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT.md` | `6f00a41c88600556229414ebafc170e697ff0da3` | 80889 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_3_GAP_SEMANTIC_FIRST_CLOSURE.md` | `05caa0ff4c5b4aa4b049dfb059bdbfcd414d4d83` | 15686 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `6fb91f710c3aa9565c464b6d75abff93ffd2d497` | 15205 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` | `8e8944909cd8b49d7575c16078ba22748fdc3c8a` | 86295 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_MCP_CONTRACT_CLOSURE.md` | `20e7e0ab08fdc5e13294e2a81ce9eb3c4bdc7a0c` | 15468 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_ASSIMILATOR_COMPLETION_PROMPT.md` | `1e507c05b5d62ed998eea13d320ae8f4eab03013` | 32182 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_ASSIMILATOR_COMPLETION_PROMPTL.md` | `60efbfb2c003cfcf36cb1467a7c6e9d77c615eb6` | 30338 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v4.md` | `1d540d57e6af79c7d8cd5b674f15e3eac175a511` | 35699 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v5.md` | `70067f589f82b65d401982296c441a552a2d65f4` | 38192 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_BANK_OF_CANADA_ARCHITECTURE.md` | `a749fc62ef2508dca944234bd0706eadd39a8864` | 150099 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_CAPABILITY_DISTILLATION_DIRECT_IMPLEMENTATION.md` | `9a0c4867c262f4f036eab56a92f13a256af3c194` | 30446 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN.md` | `e745f1ef36dd90d9e01186f61822a7d60ef46ef2` | 29341 | KEEP / CONTENT_TRIAGED |
+| `agent_x_commit_76ab330_remaining_work_definition_of_done.md` | `0d65332b6c2142ea49ceec6c60512785238784f3` | 29162 | KEEP / CONTENT_TRIAGED |
+| `agent_x_commit_7b6cfbc_final_proof_gap_closure_prompt.md` | `105b6666fd99331363d0a5adc2eacf54b3ab4406` | 27539 | KEEP / CONTENT_TRIAGED |
+| `agent_x_continuous_discovery_assimilation_architecture_FINAL_v4.md` | `eb0c243541f655b8b20e62b6c8ca90b9bb801b10` | 145627 | KEEP / CONTENT_TRIAGED |
+| `agent_x_continuous_discovery_assimilation_architecture.md` | `c1c8450afc2e372fc3885da8ca556599cd34c426` | 41454 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT.md` | `6f00a41c88600556229414ebafc170e697ff0da3` | 80889 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_FINAL_3_GAP_SEMANTIC_FIRST_CLOSURE.md` | `05caa0ff4c5b4aa4b049dfb059bdbfcd414d4d83` | 15686 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_FINAL_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `6fb91f710c3aa9565c464b6d75abff93ffd2d497` | 15205 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` | `8e8944909cd8b49d7575c16078ba22748fdc3c8a` | 86295 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_FINAL_MCP_CONTRACT_CLOSURE.md` | `20e7e0ab08fdc5e13294e2a81ce9eb3c4bdc7a0c` | 15468 | KEEP / CONTENT_TRIAGED |
 | `AGENT_X_FINAL_SEMANTIC_AUTHORITY_CHAIN_OF_CUSTODY_END_TO_END_CLOSURE.md` | `e93b5134c01f16fe47f9bcc962bc2f743d150558` | 57577 | PARTIAL_REVIEW; RETAIN |
-| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE_CURRENT_MAIN.md` | `d0fdad0b352f944e837c9c8785ad2e6bbb730c50` | 101315 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE.md` | `2f5b495de7b5c436d87d9cafe75e28901c2e348c` | 58877 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_SEMANTIC_FIRST_GAP_CLOSURE.md` | `38cb0850be0c841aca92aa94808494b22006db9f` | 25809 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_TWO_GAP_CLOSURE.md` | `b4d1c7f5c8c9384c61a55caf93ac9c0458f9848a` | 14891 | PENDING_CONTENT_REVIEW |
-| `agent_x_full_point_form_work_plan_and_next_direction.md` | `e0aa8d6985685be0051908acaf9cae5b68a9504f` | 88933 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE_CURRENT_MAIN.md` | `d0fdad0b352f944e837c9c8785ad2e6bbb730c50` | 101315 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE.md` | `2f5b495de7b5c436d87d9cafe75e28901c2e348c` | 58877 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_GAP_CLOSURE.md` | `38cb0850be0c841aca92aa94808494b22006db9f` | 25809 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_FINAL_TWO_GAP_CLOSURE.md` | `b4d1c7f5c8c9384c61a55caf93ac9c0458f9848a` | 14891 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `agent_x_full_point_form_work_plan_and_next_direction.md` | `e0aa8d6985685be0051908acaf9cae5b68a9504f` | 88933 | KEEP / CONTENT_TRIAGED |
 | `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass (1).md` | `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9` | 38896 | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED |
 | `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass.md` | `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9` | 38896 | CONTENT_REVIEWED; KEEP |
-| `AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` | `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` | 51290 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` | `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` | 51290 | KEEP / CONTENT_TRIAGED |
 | `AGENT_X_GOVERNED_SEMANTIC_KWARG_FORWARDING_FIX.md` | `1612783d0cb3f13daeff9e14488383996e491a17` | 9707 | CONTENT_REVIEWED; KEEP |
-| `AGENT_X_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `89d35b4fc5f966e83feaf1a065f1d6779c1c0257` | 140508 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_HARVEST_CURRENT_CODE_10_OF_10_IMPLEMENTATION.md` | `f3ac4a84c250c46c999fc1fc290f201a43e7092e` | 59624 | PENDING_CONTENT_REVIEW |
-| `Agent_X_Harvest_Execution_Prompt.md` | `c24cb33bdaee5d529711b360fcce5881851ba6d4` | 44617 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_HARVEST_FINAL_10_OF_10_DESIGN.md` | `5a03bb77e52206552ef7fa907a06c54a1dbd2f7c` | 46109 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES (1).md` | `8ceaffb18669a8da2665b84ec52aab465233ab47` | 93877 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES.md` | `c2fda9c46a6532b498b81ac184f9300752064538` | 17831 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXESs.md` | `8ceaffb18669a8da2665b84ec52aab465233ab47` | 93877 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `agent_x_hermes_gap_closure_next_prompt.md` | `137bdfbdb881b8aefe25b0038df1e2895ed95b94` | 61295 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_JIRA_PROMPT_STACK_IMPLEMENTATION_PROMPT_v5_ASTROCYTECH_CONFIGURED.md` | `f1e4c8254afda56a06911a2e54f39015016a31a2` | 79834 | PENDING_CONTENT_REVIEW |
-| `agent_x_missing_requirements_for_universal_agent_10_10_rev3 (1).md` | `ab7e3770a205995a5e08c57ba8716945594f8591` | 48106 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_MULTI_SESSION_APPLICATION_TABS_IMPLEMENTATION_SPEC.md` | `aa91f2749048cbfce49a58966d02430f218ca2a4` | 160510 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_MULTI_SESSION_OPENCODE_BIGPICKLE_EXECUTION_TASKS.md` | `79052555caf15e2ab4ed25d32a7c20053b35e01b` | 73937 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION.md` | `78c57f90e378d23f685af1703a8c238ee45f19dc` | 13417 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md` | `c776a7d4a2a5527992921206d9291b3eeacafda0` | 47847 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `89d35b4fc5f966e83feaf1a065f1d6779c1c0257` | 140508 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_HARVEST_CURRENT_CODE_10_OF_10_IMPLEMENTATION.md` | `f3ac4a84c250c46c999fc1fc290f201a43e7092e` | 59624 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `Agent_X_Harvest_Execution_Prompt.md` | `c24cb33bdaee5d529711b360fcce5881851ba6d4` | 44617 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_HARVEST_FINAL_10_OF_10_DESIGN.md` | `5a03bb77e52206552ef7fa907a06c54a1dbd2f7c` | 46109 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES (1).md` | `8ceaffb18669a8da2665b84ec52aab465233ab47` | 93877 | DELETE_CANDIDATE_BLOCKED |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES.md` | `c2fda9c46a6532b498b81ac184f9300752064538` | 17831 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXESs.md` | `8ceaffb18669a8da2665b84ec52aab465233ab47` | 93877 | KEEP / CONTENT_TRIAGED |
+| `agent_x_hermes_gap_closure_next_prompt.md` | `137bdfbdb881b8aefe25b0038df1e2895ed95b94` | 61295 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_JIRA_PROMPT_STACK_IMPLEMENTATION_PROMPT_v5_ASTROCYTECH_CONFIGURED.md` | `f1e4c8254afda56a06911a2e54f39015016a31a2` | 79834 | KEEP / CONTENT_TRIAGED |
+| `agent_x_missing_requirements_for_universal_agent_10_10_rev3 (1).md` | `ab7e3770a205995a5e08c57ba8716945594f8591` | 48106 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_MULTI_SESSION_APPLICATION_TABS_IMPLEMENTATION_SPEC.md` | `aa91f2749048cbfce49a58966d02430f218ca2a4` | 160510 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_MULTI_SESSION_OPENCODE_BIGPICKLE_EXECUTION_TASKS.md` | `79052555caf15e2ab4ed25d32a7c20053b35e01b` | 73937 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION.md` | `78c57f90e378d23f685af1703a8c238ee45f19dc` | 13417 | KEEP / CONTENT_TRIAGED |
+| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md` | `c776a7d4a2a5527992921206d9291b3eeacafda0` | 47847 | KEEP / CONTENT_TRIAGED |
 | `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` | `f2d9035a865e1fb40605d9808f42002d4c8b557f` | 116808 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_10_10_CONVERGED (1).md` | `cc6fc4314818af58e54236f34e73e372c46b23dc` | 107111 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_CONVERGED_UPDATED.md` | `fd1d9a30ebaf039a6f750558f78999eb1affe663` | 88409 | PENDING_CONTENT_REVIEW |
@@ -562,11 +611,13 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 | `incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md` | `bda6bf0124e8a222383f94d1d707b4314e207a49` | 9632 | SOURCE_VALIDATED; KEEP; REFINEMENT_OF_002 |
 
+| `incoming/IS-20261101-005-invariant-confluence-governed-shared-evidence.md` | `5bdfebe81c7e059287f3d18bbddbeb81f2b1c7b5` | 10419 | SOURCE_VALIDATED; KEEP; PROPOSED_FOR_DIRECTOR_REVIEW (OUTWARD ONLY) |
+
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `191_poetry_semantic_clusters.md` (all formats remain eligible; skip no files solely by subject).
-- **Next mission-relevant pending path:** `3phasedev.md` (20,327 bytes); after that, inspect further canonical assimilation/autonomy artifacts rather than repeating reviewed entries.
-- **Current review epoch:** 2026-11-01; 40 historical files + incoming `IS-20261101-004` directly inspected this run, with 4 bounded content checkpoints A–D. 346 ledger items remain pending. This cursor is a *selection hint*, not a claim that intervening unreviewed items were examined.
+- **Next lexically pending path:** `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` (all formats remain eligible; skip no files solely by subject).
+- **Next mission-relevant pending path:** `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` (20,327 bytes); after that, inspect further canonical assimilation/autonomy artifacts rather than repeating reviewed entries.
+- **Current review epoch:** 2026-11-01; 40 new historical files content-triaged with 4 bounded read batches; 1 incoming source-validated. 306 ledger items remain PENDING_CONTENT_REVIEW; NEEDS_REVIEW are separately retained for deeper examination. Cursor advances to next untouched artifact.
 - **Duplicate deletion queue:** Two numbered copies are `DELETE_CANDIDATE_BLOCKED` until trustworthy exact-filename dependency/reference checks are available. No destructive action from an unreliable code-search absence.
 
 ## Recurring workflow
