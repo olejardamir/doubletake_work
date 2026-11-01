@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **57 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 343 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **45 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 355 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -619,18 +619,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `ublock_resurrected_chrome_featured_badge_readiness_llm_prompt_rev10.md` | `a3a21f763c36272159381d75f1f196c78e9ca70f` | 96026 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `ublock_resurrected_chrome_newtab_override_llm_prompt_rev2.md` | `ad46f48e7bfd0b40509b4d0e9c671cad2b5a03a8` | 18701 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt.md` | `3226dea5d13dfd9f11c554be1c4bfe588997f8fd` | 45435 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
-| `ublock_resurrected_final_closeout_plan_v6.md` | `1b18bce8d4cddcdd7e520e0f24b8b79c11059210` | 96424 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_full_remaining_generalization_list_v10.md` | `58c3390ab543a3d4fcfbddd679db24bba6c4d050` | 47575 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_full_remaining_generalization_list_v11.md` | `d63390add12462ccf65aca98113628f210ed0179` | 53337 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_full_remaining_generalization_list_v8.md` | `d544492a834e0e9a5379b8d6dd8930749eef2289` | 33681 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_general_same_player_preroll_skip_solution.md` | `85dca3f518178ae4293502190997ea599e9a0ffa` | 17446 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_general_video_overlay_solution_no_domain_patch.md` | `d9955d06335dcb1db22815b543a2e95c5465bc7e` | 16965 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_generalization_backlog_v17_more_projectwide_points.md` | `9d5aef819abe16aebf22a715d163d07dfdb26ad3` | 251087 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_generalization_backlog_v4.md` | `a9e0b1e3a18330ca7465f36c104d0ae5438e30f3` | 98016 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_generalization_backlog_v6_7f97.md` | `cdeb2adda3b4563fc99e464a1840f2a4f212eae7` | 193225 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_generalization_backlog_v6_b57.md` | `656d553ce0f06db42b14e4af85a3fec2888ea5b9` | 173223 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_generalization_backlog_v6_ca353.md` | `a3650b98c198f6cc0b15d9f8a50df11129aa5f99` | 165917 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_generalization_backlog_v7.md` | `b13076f82a880b69eee9f2cf78ed6e12370cdb74` | 182789 | PENDING_CONTENT_REVIEW |
+| `ublock_resurrected_final_closeout_plan_v6.md` | `1b18bce8d4cddcdd7e520e0f24b8b79c11059210` | 96424 | KEEP |
+| `ublock_resurrected_full_remaining_generalization_list_v10.md` | `58c3390ab543a3d4fcfbddd679db24bba6c4d050` | 47575 | NEEDS_REVIEW |
+| `ublock_resurrected_full_remaining_generalization_list_v11.md` | `d63390add12462ccf65aca98113628f210ed0179` | 53337 | KEEP |
+| `ublock_resurrected_full_remaining_generalization_list_v8.md` | `d544492a834e0e9a5379b8d6dd8930749eef2289` | 33681 | NEEDS_REVIEW |
+| `ublock_resurrected_general_same_player_preroll_skip_solution.md` | `85dca3f518178ae4293502190997ea599e9a0ffa` | 17446 | KEEP |
+| `ublock_resurrected_general_video_overlay_solution_no_domain_patch.md` | `d9955d06335dcb1db22815b543a2e95c5465bc7e` | 16965 | KEEP |
+| `ublock_resurrected_generalization_backlog_v17_more_projectwide_points.md` | `9d5aef819abe16aebf22a715d163d07dfdb26ad3` | 251087 | KEEP |
+| `ublock_resurrected_generalization_backlog_v4.md` | `a9e0b1e3a18330ca7465f36c104d0ae5438e30f3` | 98016 | NEEDS_REVIEW |
+| `ublock_resurrected_generalization_backlog_v6_7f97.md` | `cdeb2adda3b4563fc99e464a1840f2a4f212eae7` | 193225 | NEEDS_REVIEW |
+| `ublock_resurrected_generalization_backlog_v6_b57.md` | `656d553ce0f06db42b14e4af85a3fec2888ea5b9` | 173223 | NEEDS_REVIEW |
+| `ublock_resurrected_generalization_backlog_v6_ca353.md` | `a3650b98c198f6cc0b15d9f8a50df11129aa5f99` | 165917 | NEEDS_REVIEW |
+| `ublock_resurrected_generalization_backlog_v7.md` | `b13076f82a880b69eee9f2cf78ed6e12370cdb74` | 182789 | NEEDS_REVIEW |
 | `ublock_resurrected_remaining_behavior_master_prompt(4).md` | `398cda13851359858532707a4abbe596f73cc65d` | 124965 | PENDING_CONTENT_REVIEW |
 | `ublock_resurrected_remaining_behavior_work_prompt(4).md` | `97f4ff0c11c18a7315ed603422983701e692e64f` | 128760 | PENDING_CONTENT_REVIEW |
 | `ublock_resurrected_stabilization_prompt_v4_final.md` | `33c12f0c4fc3791db982cc4dc67ce937bd7e25e5` | 43020 | PENDING_CONTENT_REVIEW |
@@ -1114,3 +1114,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 ## J4 exact-ledger reconciliation — 2026-11-01 UTC
 
 - **Correction to earlier cumulative counts (do not erase historical checkpoints):** Of 48 files listed in I5–I8 as newly sampled, **44** still had PENDING ledger status and **4** had already been sampled/reviewed in an earlier epoch (`Harness_not_prompt.txt`, `herdr_agent_x_port_plan.md`, `LICENSE.md`, `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md`). All 48 checkpoint paths and SHA values matched the existing ledger. This reconciles the **44 genuinely new earlier reads** into canonical ledger dispositions using their already-committed I5–I8 content observations; no additional content fetched in this repair. Thus prior I8 cumulative 299 and J4 cumulative 347 overstated distinct newly reviewed artifacts by four. Correct unique counts are **295 after I8** and **343 after J4**, leaving **57 PENDING_CONTENT_REVIEW** out of 400 artifact rows. J1–J4's 48 newly sampled distinct artifacts and 0 deletions remain valid. No content, ownership, or deletion decisions changed; this is accounting and status reconciliation only.
+
+
+## K1 checkpoint — 2026-11-01 UTC (12 SHA-verified first-pass content samples)
+
+- Inspected actual first 125 lines of 12 distinct previously pending historical extension files and matched fresh blob SHA against ledger. These are **partial initial content reviews**, not full-document certification; historical prompts are untrusted. Current DT relevance and exact version deltas unverified. No new incoming beyond already triaged IS-007. No deletion; exact-path dependency audit not performed. Prior Director B1/B7 and full-Borg NO/NOT VERIFIED remain unchanged.
+
+| Artifact | Disposition | Content finding / revisit |
+| --- | --- | --- |
+| `ublock_resurrected_final_closeout_plan_v6.md` | KEEP | Operational closeout combines third-party notices, supply-chain controls, lifecycle authorization and browser-fixture proof; historical extension spec, not current DT evidence. |
+| `ublock_resurrected_full_remaining_generalization_list_v10.md` | NEEDS_REVIEW | Numbered extension runtime-policy backlog adds egress/XSS and cross-store controls; unique delta versus v11 and DT relevance unverified. |
+| `ublock_resurrected_full_remaining_generalization_list_v11.md` | KEEP | Later numbered backlog adds browser API gateway, fuzz/property tests, shadow rollout and consent gates; possible governed-capability test vocabulary. |
+| `ublock_resurrected_full_remaining_generalization_list_v8.md` | NEEDS_REVIEW | Earlier full list on policy-driven activation and removal of broad injection; preserve version witness until v10/v11 delta check. |
+| `ublock_resurrected_general_same_player_preroll_skip_solution.md` | KEEP | Specific non-domain-bound preroll/skip detection plan with prohibition on forged view/impression signals; unrelated extension implementation. |
+| `ublock_resurrected_general_video_overlay_solution_no_domain_patch.md` | KEEP | Generic video-overlay geometry/adapter-cascade diagnosis with historical source paths; claims not revalidated against extension repo. |
+| `ublock_resurrected_generalization_backlog_v17_more_projectwide_points.md` | KEEP | Later lifecycle/idempotent listener and service-worker startup registry proposals; cross-context bounded recovery analogy only. |
+| `ublock_resurrected_generalization_backlog_v4.md` | NEEDS_REVIEW | Earlier risk-classified filtering/generalization backlog; version-specific insights not compared with later files. |
+| `ublock_resurrected_generalization_backlog_v6_7f97.md` | NEEDS_REVIEW | Historical v6 extension backlog tied to 7f97 source checkpoint; unique patch-level deltas unverified. |
+| `ublock_resurrected_generalization_backlog_v6_b57.md` | NEEDS_REVIEW | Historical v5/v6 extended backlog tied to b57 source checkpoint; provenance distinct, delta and current code unknown. |
+| `ublock_resurrected_generalization_backlog_v6_ca353.md` | NEEDS_REVIEW | Historical v6 generalization backlog at ca353 checkpoint; compare unique findings before supersession decision. |
+| `ublock_resurrected_generalization_backlog_v7.md` | NEEDS_REVIEW | Historical v7 policy generalization backlog with self-rating; score not independent evidence; retain for version delta. |
+
+- **Cumulative unique at least partly inspected:** 355/400; **pending:** 45. K1: KEEP 5, NEEDS_REVIEW 7, EXTRACT_THEN_DELETE 0, DELETE_CANDIDATE 0, actual deleted 0; known historical deletions 9. Next cursor: `ublock_resurrected_remaining_behavior_master_prompt(4).md`. No independent DT Ground or new research handoff claimed.
