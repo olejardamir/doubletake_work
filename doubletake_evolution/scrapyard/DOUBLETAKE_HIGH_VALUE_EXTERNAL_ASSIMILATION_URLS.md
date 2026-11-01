@@ -1,81 +1,13 @@
-# DoubleTake — High-Value External Assimilation URLs
+# External same-name DoubleTake leads — identity-separated index (distilled)
 
-## DoubleTake.so — Evaluation / Trace / CI / Governance
+**Original blob:** `f5563ed5aa05e2c36d28f90aacf6791ebc3305da`; historical full URL catalog recoverable via Git. **NOT** private DT sources or verified assimilation candidates. [D01](DISTILLED_KNOWLEDGE.md). Each identity, version, license and measured transfer value must be independently checked before reuse.
 
-https://www.doubletake.so/
-https://developers.doubletake.so/introduction
-https://developers.doubletake.so/llms.txt
-https://www.doubletake.so/mcp/ai-evaluation
-https://www.doubletake.so/enterprise/ai-governance
-https://www.doubletake.so/enterprise/security
-https://www.doubletake.so/enterprise/deployment
-https://developers.doubletake.so/sdk/tracing
-https://developers.doubletake.so/sdk/evaluations/overview
-https://developers.doubletake.so/sdk/ci-cd
-https://developers.doubletake.so/improve/validating-proposals
-https://developers.doubletake.so/improve/comparing-versions
-https://developers.doubletake.so/evaluation/model-portability
-https://github.com/DoubleTake-ai
-https://github.com/DoubleTake-ai/DoubleTake-Trace-Eval
-https://github.com/DoubleTake-ai/DoubleTake-Python
-https://github.com/DoubleTake-ai/DoubleTake-JS
-https://github.com/DoubleTake-ai/sample-scripts
-https://github.com/DoubleTake-ai/DoubleTake-mcp-servers
+- **DoubleTake.ai eval/trace/governance:** https://www.doubletake.so/ ; https://developers.doubletake.so/introduction ; https://github.com/DoubleTake-ai/DoubleTake-Trace-Eval . Potential trace/CI evaluators; current rights and parity UNKNOWN.
+- **anis-marrouchi distributed mesh:** https://github.com/anis-marrouchi/doubletake ; https://doubletake-docs.pages.dev/ . Ledger/replay/capability claims UNVERIFIED.
+- **Industrial self-iteration research:** https://arxiv.org/abs/2606.26859 ; https://github.com/daiwk/auto-research . Paper→implementation correspondence UNKNOWN.
+- **Workflow planner/executor paper:** https://arxiv.org/abs/2509.07595 . Reproduction and novelty UNKNOWN.
+- **Deepractice event/runtime/persistence:** https://github.com/Deepractice/DoubleTake ; https://www.npmjs.com/org/doubletakejs . Versions/license and state guarantees UNKNOWN.
+- **DoubleTakeHQ daemon/control:** https://www.doubletakehq.com/ . Architecture and claims not independently checked.
+- **MBZUAI/Oryx benchmark:** https://github.com/mbzuai-oryx/DoubleTake ; https://arxiv.org/abs/2505.24876 ; https://huggingface.co/datasets/Tajamul21/DoubleTake . Dataset/benchmark applicability UNKNOWN.
 
-## anis-marrouchi/doubletake — Distributed Mesh / Ledger / Replay / Capabilities
-
-https://github.com/anis-marrouchi/doubletake
-https://doubletake-docs.pages.dev/
-https://github.com/anis-marrouchi/doubletake/tree/master/docs
-https://github.com/anis-marrouchi/doubletake/tree/master/src
-https://github.com/anis-marrouchi/doubletake/tree/master/test
-https://github.com/anis-marrouchi/doubletake/tree/master/examples
-https://github.com/anis-marrouchi/doubletake/tree/master/references
-https://github.com/anis-marrouchi/doubletake/blob/master/SECURITY.md
-https://github.com/anis-marrouchi/doubletake/blob/master/doubletake.example.json
-
-## Industrial DoubleTake — Self-Iteration / Experiment Loop / Harness Evolution
-
-https://arxiv.org/abs/2606.26859
-https://arxiv.org/pdf/2606.26859
-https://huggingface.co/papers/2606.26859
-https://daiwk.github.io/auto-research/agent-research/2606.26859-doubletake/
-https://github.com/daiwk/auto-research
-https://github.com/daiwk/auto-research/tree/main/src/auto_research/agent_research
-
-## DoubleTake Workflow — Stage / Planner / Executor / MCP
-
-https://arxiv.org/abs/2509.07595
-https://arxiv.org/pdf/2509.07595
-https://huggingface.co/papers/2509.07595
-
-## Deepractice DoubleTake — Event Runtime / Lifecycle / Persistent Agent State
-
-https://github.com/Deepractice/DoubleTake
-https://github.com/Deepractice
-https://deepractice.ai/en
-https://www.npmjs.com/org/doubletakejs
-https://www.npmjs.com/package/doubletakejs
-https://www.npmjs.com/package/%40doubletakejs/agent
-https://www.npmjs.com/package/%40doubletakejs/runtime
-https://www.npmjs.com/package/%40doubletakejs/persistence
-https://www.npmjs.com/package/%40doubletakejs/queue
-https://github.com/Deepractice/AgentVM
-https://github.com/Deepractice/RoleX
-https://github.com/Deepractice/ResourceX
-
-## DoubleTakeHQ — Local Daemon / Control Plane / Minimal Operator Surface
-
-https://www.doubletakehq.com/
-https://www.doubletakehq.com/about
-https://www.doubletakehq.com/install
-https://www.doubletakehq.com/trust
-
-## DoubleTake Benchmark — Step-Level / Tool-Use / Whole-Trajectory Evaluation
-
-https://github.com/mbzuai-oryx/DoubleTake
-https://arxiv.org/abs/2505.24876
-https://arxiv.org/pdf/2505.24876
-https://huggingface.co/papers/2505.24876
-https://huggingface.co/datasets/Tajamul21/DoubleTake
-https://ora.ox.ac.uk/objects/uuid%3A8b107049-d531-4d9d-a5c9-d6405e5f0314
+**Recheck trigger:** Director identifies a specific gap and independent source/rights check can distinguish it from already-implemented DT behavior. Name collision is not architectural evidence; no external content copied or DT capability asserted.
