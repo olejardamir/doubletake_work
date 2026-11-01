@@ -372,9 +372,13 @@
       "id": "BPE-20261101-001",
       "mission_ref": "DT-EVO-007 / 7.9.1",
       "source_status": "PREPARED_UNTESTED",
-      "public_status": "PENDING_SOURCE_REVIEW",
-      "reason": "User allows ordinary DT code patch publication; check latest code/DoD and screen specific secrets or confidential/protected content before preparing a public .sh.",
-      "results_observed": false
+      "public_status": "PUBLICATION_BLOCKED_TOOL_SAFETY",
+      "reason": "The private prepared rev2 patch source/test blobs match the confirmed feature branch and all six old hunks match, but a proposed public code-bearing publication was rejected by tool safety checks. No public script was created. Preserve private package; do not claim local apply/tests.",
+      "results_observed": false,
+      "source_blob_shas": {
+        "tools/doubletake_evolve/mission_intake/__init__.py": "206104ef6d8e446e68bddba3b2e3a6b15ee457a6",
+        "tools/doubletake_evolve/mission_intake/test_mission_intake_boundary.py": "2799b79ecf6cfd20b667f7b6ab6eb1acd4d71b35"
+      }
     },
     {
       "id": "BPE-20261101-002",
@@ -389,26 +393,21 @@
     "date_utc": "2026-11-01",
     "executor_branch": "feature/alphacode-provider",
     "executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-    "public_mission_blob": "a7b6424ebaacc29acf3c2b42e5958209b39d2632",
+    "public_mission_blob": "32d5e090376cd4560ba4cd91bf4376e1a9aea13c",
     "open_mission_steps_mapped": 22,
-    "existing_patches_reconciled": 4,
-    "existing_source_integrations_observed": 4,
+    "existing_patches_reconciled": 10,
+    "existing_source_integrations_observed": 5,
     "independent_tests_rerun": 0,
-    "reported_test_passes": [
-      23,
-      24,
-      23,
-      23
-    ],
-    "new_patches": 3,
+    "new_patches": 0,
     "revised_patches": 0,
-    "notes": "Reconciled BPE 003–007 and authored 010–011 from exact current source blobs. Old hunk blocks matched uniquely in retrieved source; git apply and guarded tests remain unrun by GPT. Added independent CLI exit-status patch 012 after inspecting exact current CLI.",
     "verified_patches": 0,
-    "reported_feature_branch_integrations": 5
+    "reported_feature_branch_integrations": 5,
+    "source_hunk_checks": "BPE-001: 6/6, BPE-010: 2/2, BPE-011: 1/1, BPE-012: 1/1; no actual git apply check",
+    "notes": "BPE-001 prepared private rev2 source and test hashes still match feature branch; attempted code-bearing public publication rejected by tool safety checks, so no patch published. Pending 010–012 still source-compatible, no new execution results. No worker schedule changes."
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "a7b6424ebaacc29acf3c2b42e5958209b39d2632"
+  "latest_mission_blob": "32d5e090376cd4560ba4cd91bf4376e1a9aea13c"
 }
