@@ -1,5 +1,26 @@
 # Borg Scrapyard Inventory
 
+## O3 second-pass checkpoint — 2026-11-01 UTC (12 additional SHA-matched reads)
+
+- **Scope:** 12 current text artifacts directly fetched and sampled, exact blob identities checked; 10 KEEP, 2 NEEDS_REVIEW. Second-pass distinct **107/398**; **291 remain**. **0 deletions** this checkpoint, cumulative verified 11. Historical designs do not establish live DT behavior.
+- **Contradiction:** historical persistent specification engine and later deletion-first semantic simplification propose opposing approaches. Neither is an approved mission; do not import both, or claim a new gap, until current DT code/consumer and the Director's existing scope are checked. No duplicate offload proposed. Retain both for evidence-based comparison; all dependency checks for deletion remain unresolved.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / revisit trigger |
+| --- | --- | --- | --- |
+| `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` | `f2d9035a865e1fb40605d9808f42002d4c8b557f` | KEEP | Plumber v6 supersedes earlier plans as historical target; source-owner/repo audit and conservative certainty rules. |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_10_10_CONVERGED (1).md` | `cc6fc4314818af58e54236f34e73e372c46b23dc` | KEEP | Historical prompt-native percentage targets explicitly directional, not quota; deterministic safety core protected. |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_CURRENT_CODE_CONVERGED_UPDATED.md` | `fd1d9a30ebaf039a6f750558f78999eb1affe663` | KEEP | Distinct revised prompt-native spec; no architectural MCP assumption; canonical change owner must remain. |
+| `AGENT_X_PROMPT_NATIVE_TRANSFORMATION_LOOP_GUIDE_30_OF_30.md` | `eb60f18ca64e660bfc3b2e187d1091c6351ad177` | KEEP | Closed-contract task prioritization, explicit blocker and evidence requirements; historical instruction only. |
+| `AGENT_X_REAL_SPEC_EXECUTION_ENGINE_V2_AUDITED.md` | `eea871cc5525c45d56dbd107ae2b5a7fc2e8764` | NEEDS_REVIEW | Proposed persistent spec engine fixes silent 128-requirement truncation; conflicts with later simplification proposal, no parity. |
+| `AGENT_X_REPEATED_SEMANTIC_TIMEOUT_REPAIR.md` | `3307e54f6e12c368c7a2e895cab25e8b628949dc` | KEEP | Historical timeout root-cause tests: bounded provider output, global deadline, diagnostics, failover. |
+| `AGENT_X_RUNTIME_INTEGRATION_NEXT_STEPS_10_10_REV17.md` | `8ae54f5eec10b49d9a2d2d0b3a2868a73712b720` | KEEP | Historical OpenCode provider/CLI integration acceptance plan; rating not evidence of live consumer. |
+| `AGENT_X_SEMANTIC_CONTRACT_MISMATCH_REPAIR.md` | `9df40d2b0395a246ea0ef2aea8ea873a682e125a` | KEEP | Schema-specific bounded contract repair without weakening fail-closed validator; historical failure. |
+| `AGENT_X_SEMANTIC_EMBEDDING_UPGRADE_SPEC.md` | `266dd35c8615eee7b197b6865ab009f0c901f859` | KEEP | Embeddings complement hashes, similarity is not truth; redact/filter before remote embedding. |
+| `AGENT_X_SEMANTIC_FIRST_REMAINING_WORK_843f554.md` | `a526e6dfb92b1845bf30f741635af6c12c0a88a4` | KEEP | Old rebase isolates real baseline/evidence digest fields from placeholders; version-specific. |
+| `AGENT_X_SEMANTIC_FIRST_SIMPLIFICATION_CLEANUP.md` | `84ff4a6ffe9ec4d02fe8dc29daa3a6f7ffd3e08c` | NEEDS_REVIEW | Historical deletion-first simplification argues against speculative spec-engine layers; conflicting proposal must be reconciled with current DT. |
+| `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | KEEP | Segment trusted internal template from dynamic user material; prevent governance deadlock and trust laundering. |
+
+
 ## O2 second-pass checkpoint — 2026-11-01 UTC (12 additional SHA-matched reads)
 
 - **Scope:** 12 distinct current historical files fetched and sampled, exact blobs verified. Second-pass distinct **95/398**; **303 remain**. 10 KEEP, 1 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED. New duplicate twin of long-form Harvest UI file retained pending path-reference/provenance proof; **0 deletions** this checkpoint, cumulative 11. Incoming unchanged, no new independently validated DT capability.
