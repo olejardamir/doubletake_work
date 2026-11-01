@@ -1,5 +1,25 @@
 # Borg Scrapyard Inventory
 
+## P1 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched actual-content samples)
+
+- **Scope:** 12 distinct existing artifact bodies fetched; inspected openings, section hierarchy, mechanism/evidence passages and endings (not full line-by-line or external-source validation). Current blob SHAs matched the durable ledger. **Second-pass 131/398; 267 remain.** Dispositions 11 KEEP, 1 DELETE_CANDIDATE_BLOCKED, 0 EXTRACT_THEN_DELETE; **0 actual deletions**, 11 historical verified. Original historical/cultural files remain untrusted source material, not execution instructions.
+- **Decision:** Exact duplicate `all_poetry_readings_191_individual (1).md` is blocked from deletion because complete exact-path reference/provenance clearance is not established. Distinct historical prompts and alternate cultural arrangements retained. No eligible novel external-K DT assimilation proposal in this batch; existing 7.8.1 receipt and 7.8.3 source-dependent Ground gates remain the relevant proof targets. Next cursor after `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md`.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `agent_x_hermes_gap_closure_next_prompt.md` | `137bdfbdb881b8aefe25b0038df1e2895ed95b94` | KEEP | Historical Hermes-pattern reference and strict proof-gated module closure; source code/rights and current DT parity not established. |
+| `agent_x_missing_requirements_for_universal_agent_10_10_rev3 (1).md` | `ab7e3770a205995a5e08c57ba8716945594f8591` | KEEP | Universal-goal interpretation, autonomy/risk controls and bounded specialist acceptance; design requirements, not runtime Ground. |
+| `agentx_full_gap_closure_prompt.md` | `db10d0d1241f7c72e7214980503918bbf6aad690` | KEEP | Older exact-commit 95%+ acceptance ladder; warns against static scorecard laundering, distinct historical scope. |
+| `agentx_gap_closure_master_prompt.md` | `7397e8c60d791bf945c731d6fbff7a41639fb749` | KEEP | Earlier 46.03% strict-module baseline and clean-checkout proof contract; revision-specific, not current score. |
+| `all_poetry_projected_vector_readings_poetry_grounded.md` | `cd0db3608fa90a6175d3a660333cf33970088461` | KEEP | 191 rune-poem readings with literal/interpretive grounding; separate cultural corpus, not an autonomous Borg proof. |
+| `all_poetry_readings_191_by_96_rune_runs.md` | `215a039721bc864530cd141a6ef835f2387569c4` | KEEP | Same 191 readings reorganized into 96 symbol runs; arrangement/provenance differs, no deletion clearance. |
+| `all_poetry_readings_191_elder_first_clusters.md` | `a5b66bff944134fec8c835c44de6a892d04a7a31` | KEEP | Elder-first 191-reading semantic clusters with non-Elder exceptions; distinct organization, no DT parity. |
+| `all_poetry_readings_191_individual (1).md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | DELETE_CANDIDATE_BLOCKED | Exact blob twin of unsuffixed original; preserve until exact-path references, original/provenance and safe deletion verified. |
+| `all_poetry_readings_191_individual.md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | KEEP | Canonical unsuffixed full 191 individual readings; byte-identical numbered twin retained pending dependency proof. |
+| `all_poetry_readings_direct.md` | `4b1bbbdc4f66de1619f43654f000c815b2e091f1` | KEEP | Earlier direct 191-poem reading arrangement, distinct wording from grounded projected version. |
+| `audio_frame_mosaic_llm_prompt_10_10_v4.md` | `3145e4120557c8f693e3a6c30c4e75665d9496e5` | KEEP | Audio-feature-based source-frame retrieval and bounded similarity search; version 2.3 lacks later low-VRAM img2img. |
+| `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | KEEP | Version 2.4 adds GTX1070 low-VRAM img2img and keeps base retrieval independently usable; distinct historical target. |
+
 ## O4 second-pass checkpoint and run closeout — 2026-11-01 UTC (12 additional SHA-matched reads)
 
 - **Scope:** 12 distinct current artifact bodies fetched/sampled, exact blob SHA checked, no filename-only reviews counted. O1–O4 total **48 distinct second-pass reviews** (42 KEEP, 5 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED); cumulative second-pass **119/398**, **279 remaining**. All 398 surviving artifacts have prior first-pass partial-content review; second pass is stricter sampled re-evaluation, not full line-by-line audit. Incoming 7 unchanged and previously triaged. **0 actual deletions this run; 11 historical verified deletions cumulative**. Pending eligible: 0 proven safe; 5 blocked exact-blob twin candidates including newly identified Harvest UI twin. Reference search for its exact filename returned zero in both repositories, but absence is not established by incomplete code search or uninspected external references; retain.
