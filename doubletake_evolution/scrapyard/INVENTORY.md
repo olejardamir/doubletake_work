@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q15 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
+- **Coverage:** 344/395 surviving artifacts second-pass sampled; 51 pending. Run-to-date 36 reviewed; dispositions in this batch KEEP 9, NEEDS_REVIEW 2, DELETE_CANDIDATE 1, EXTRACT_THEN_DELETE 0. No deletion claimed yet. Cursor after `runic_poetry_rune_name_english.md`.
+- **Safety:** Duplicates remain pending fresh-SHA, reference and provenance checks. Sensitive records summarized without repeating personal contents. New source-check: ACL Anthology 2026 Findings EMNLP paper https://aclanthology.org/2026.findings-emnlp.244/ confirms same-task skill-on/off evaluation but does not prove current DT parity or Ground. No new Internet intake (seven existing unchanged); Director IS-006 conditional, IS-007 deferred. Full Borg NOT VERIFIED, 0 natural complete cycles, B1 owner gate and 7.8.1 consumer receipt unresolved.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `PROPER_SEMANTIC_CENTER_AND_N_SIDED_DIE_METHOD.md` | `af73a2d7f8ff939cfd4d7b567b70683413a30117` | KEEP | Geometric semantic-center/simplex alignment method; no empirical DT relevance demonstrated. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | `006727a9fbdefa798a63d81386f1689fce6015b4` | KEEP | Bounded pseudocode-to-contract-to-code DAG with validation-before-coding; historical method. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `RADOVI.txt` | `154f3242ccdbe941ba58adb26afe3da13910cb45` | KEEP | Ranked research lead index; original ACL 2026 skill-following paper independently verified, rest require source/parity checks. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `README_UPDATED_WITH_DIAGRAMS.md` | `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414` | KEEP | Governed seed-kernel architecture README with explicit no-direct-modification boundaries; provenance retained. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `README.md` | `c206eba55f584b77a28b2019e26cf14ec98095e1` | KEEP | Distinct Rune Forces CLI readme and interpretation caveats; not same as seed-kernel README. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `reverse-skill_not_prompt.txt` | `fbb6188f41ee47eb28e10536f44c9e5b0584c60b` | NEEDS_REVIEW | Third-party skill extraction proposal; current upstream license and DT overlap not independently checked. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` | NEEDS_REVIEW | Edited third-party rune-text corpus; rights/license and provenance must be verified before reuse. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `runic_poetry_corpus (1).md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | DELETE_CANDIDATE | Byte-identical to retained unsuffixed historical corpus; only redundant copy considered for removal. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | KEEP | Canonical preserved witness-separated runic poetry corpus; source rights/reconstruction audit remain. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `runic_poetry_reconstructed.md` | `5a4f85b2e933d0f10cc14c457e9b2a3d2da8eabd` | KEEP | Separate reconstructed literal renderings; do not equate hypothetical text with historical source. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `runic_poetry_reconstruction_audit.md` | `f316358b0a1d666d5ab6faa921cf615ec82333b9` | KEEP | Itemized reconstruction confidence and nearest-neighbor caveats; unique provenance. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `runic_poetry_rune_name_english.md` | `acab3dbfd0a07a995143715ca610f3f86f316032` | KEEP | Distinct literal rendering record; not byte-identical to reconstructed version. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+
+
 ## Q14 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
