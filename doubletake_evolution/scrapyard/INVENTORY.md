@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **33 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 365 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **21 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 377 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -643,18 +643,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | `88813a42f56e32d6b7a3020a4cb1900ff78f6be4` | 5698406 | NEEDS_REVIEW |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v2.md` | `8e00d0f36a3e6b2e35fbcec45fb8c955dfc48dc8` | 58768 | NEEDS_REVIEW |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | `00f406612c24500186c04d5ce3f451632c82648c` | 62748 | KEEP |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | `5d3c54dd307a3c0fad8834e1f908c4db05f0679a` | 77566 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v5.md` | `18b55a7cc9cbecb46fbe6a872ae80214ebc5b775` | 94952 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v6.md` | `b210411cb098f71022c96b5eae350b370e1ac955` | 104454 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md` | `bfee8cf9f2dacbe5f741408589273b1465973f4f` | 129732 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v9_consolidated.md` | `25052f94e1cf741141fc7a2f5194330f3e1a2254` | 208218 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint.md` | `aeadb46db79a53da0c4203aa7a246d414b65dcb3` | 46317 | PENDING_CONTENT_REVIEW |
-| `Uninstalls by region_ooagdclidngalapkfajibimbmdhgafal.csv` | `2f019ba443f842d7cbf955887a3a3eceb4d276fe` | 5203 | PENDING_CONTENT_REVIEW |
-| `universal_job_post_template_for_resume_creation_10_10_v2 (1).md` | `f2c08f203cdce88edfbfbced56e05e9bc0f2102a` | 28235 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `universal_job_post_template_for_resume_creation_10_10_v2.md` | `f2c08f203cdce88edfbfbced56e05e9bc0f2102a` | 28235 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `universal_job_post_template_for_resume_creation_ats_aligned_10_10_v6.md` | `003f5edb3a93186c4edc46d00843ab33dc4604bf` | 86316 | PENDING_CONTENT_REVIEW |
-| `V30_clean_filing_version_conflict_calibrated_runtime_authority_compiler.md` | `0e3106347c7c30019b40f368ed27bef38a57f77e` | 100678 | PENDING_CONTENT_REVIEW |
-| `Verified_Modular_Program_Induction_Architecture_STRENGTHENED.md` | `fff9a834c2fddaca95aba6487df0b45420557bc9` | 50484 | PENDING_CONTENT_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | `5d3c54dd307a3c0fad8834e1f908c4db05f0679a` | 77566 | NEEDS_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v5.md` | `18b55a7cc9cbecb46fbe6a872ae80214ebc5b775` | 94952 | NEEDS_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v6.md` | `b210411cb098f71022c96b5eae350b370e1ac955` | 104454 | NEEDS_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md` | `bfee8cf9f2dacbe5f741408589273b1465973f4f` | 129732 | NEEDS_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v9_consolidated.md` | `25052f94e1cf741141fc7a2f5194330f3e1a2254` | 208218 | KEEP |
+| `ubr_smart_cosmetic_rule_syntax_blueprint.md` | `aeadb46db79a53da0c4203aa7a246d414b65dcb3` | 46317 | KEEP |
+| `Uninstalls by region_ooagdclidngalapkfajibimbmdhgafal.csv` | `2f019ba443f842d7cbf955887a3a3eceb4d276fe` | 5203 | NEEDS_REVIEW |
+| `universal_job_post_template_for_resume_creation_10_10_v2 (1).md` | `f2c08f203cdce88edfbfbced56e05e9bc0f2102a` | 28235 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
+| `universal_job_post_template_for_resume_creation_10_10_v2.md` | `f2c08f203cdce88edfbfbced56e05e9bc0f2102a` | 28235 | KEEP; SAME_BLOB |
+| `universal_job_post_template_for_resume_creation_ats_aligned_10_10_v6.md` | `003f5edb3a93186c4edc46d00843ab33dc4604bf` | 86316 | KEEP |
+| `V30_clean_filing_version_conflict_calibrated_runtime_authority_compiler.md` | `0e3106347c7c30019b40f368ed27bef38a57f77e` | 100678 | NEEDS_REVIEW |
+| `Verified_Modular_Program_Induction_Architecture_STRENGTHENED.md` | `fff9a834c2fddaca95aba6487df0b45420557bc9` | 50484 | KEEP |
 | `Verified_Modular_Program_Induction_Architecture.md` | `089207d3e1bd9219ddca3abdeaaa1a5e8acdc90d` | 22292 | PENDING_CONTENT_REVIEW |
 | `VISION_CENTERED_CARD_SYSTEM_BOOK.md` | `c54dbabdd329ef52e4be6ffb5d7a09c0950952a1` | 946931 | PENDING_CONTENT_REVIEW |
 | `VISION_CENTERED_CARD_SYSTEM_CONCRETE_DIVINATION_BOOK.md` | `9a6245dcdfeec42369c313ce927563e58af10370` | 276341 | PENDING_CONTENT_REVIEW |
@@ -1158,3 +1158,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | KEEP | Rule-language v3 adds clarifications to v2 on structured selectors/exception semantics; keep provenance, no current DT proof. |
 
 - **Cumulative actual at-least-partial content reviews:** 365/400. **33 still PENDING initial review**, plus **2 NEEDS_REVIEW with no readable content**. K2: 5 KEEP, 6 NEEDS_REVIEW (2 inaccessible), 1 DELETE_CANDIDATE_BLOCKED, 0 actual deletions. Known historical deletions 9. No safe deletion because exact-path dependency census incomplete. Next cursor `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md`.
+
+
+## K3 checkpoint — 2026-11-01 UTC (12 SHA-verified partial content samples)
+
+- Fetched actual first 125 lines and SHA-matched 12 previously pending files: historical browser-rule revisions, a 32-line extension uninstall CSV, two job-post templates, a patent-style autonomous-authority manuscript and bounded modular program-induction specification. **Partial content review only** for long texts; CSV fully read. Sensitive/potential proprietary manuscript and analytics data retained with no public content excerpt. No private DT source copied, no novel Director proposal without independent source/implementation validation.
+
+| Artifact | Disposition | Content finding / revisit |
+| --- | --- | --- |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | NEEDS_REVIEW | v4 adds explicit specification tightening to rule language; preserve as distinct revision until formal delta comparison. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v5.md` | NEEDS_REVIEW | v5 adds additional tightening of local cosmetic-rule matching and safety; later v9 supersession claim unverified. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v6.md` | NEEDS_REVIEW | v6 claims final normative closure of rule language; no independent parser or current browser implementation proof. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md` | NEEDS_REVIEW | v7 adds implementation closure to v6; current code parity and unique version delta unverified. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v9_consolidated.md` | KEEP | Consolidated v9 explicitly incorporates v7/v8 and production hardening; canonical reference, not evidence of working code. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint.md` | KEEP | Original human-readable rule philosophy defines target, scope, generalization and safety conditions; provenance witness. |
+| `Uninstalls by region_ooagdclidngalapkfajibimbmdhgafal.csv` | NEEDS_REVIEW | 32-line date-by-country browser-extension uninstall count table; origin, collection permission and aggregation/privacy constraints unknown; no public excerpt. |
+| `universal_job_post_template_for_resume_creation_10_10_v2 (1).md` | DELETE_CANDIDATE_BLOCKED | Exact blob twin of unsuffixed candidate-agnostic job blueprint; reference census missing, deletion BLOCKED. |
+| `universal_job_post_template_for_resume_creation_10_10_v2.md` | KEEP | Canonical candidate-agnostic job blueprint separates source requirements from candidate evidence and prohibits invented qualifications. |
+| `universal_job_post_template_for_resume_creation_ats_aligned_10_10_v6.md` | KEEP | ATS-aligned job blueprint adds evidence-depth labels, field completeness, validation and readiness gates; not a DT mission. |
+| `V30_clean_filing_version_conflict_calibrated_runtime_authority_compiler.md` | NEEDS_REVIEW | Patent-style autonomous-agent authority compiler from conflicting proposals; provenance, novelty and disclosure rights require review; do not publicly extract. |
+| `Verified_Modular_Program_Induction_Architecture_STRENGTHENED.md` | KEEP | Bounded typed modular program synthesis and independent verification with explicit non-universality; possible future unseen-transfer falsifier, not current DT parity. |
+
+- **Cumulative at least partly content-reviewed:** 377/400; **21 PENDING**, **2 large-file NEEDS_REVIEW with no content access**. K3: KEEP 5, NEEDS_REVIEW 6, DELETE_CANDIDATE_BLOCKED 1, EXTRACT_THEN_DELETE 0, deleted 0. Known historical deletions 9. Duplicate remains pending exact-path dependency checks. Next cursor `Verified_Modular_Program_Induction_Architecture.md`.
