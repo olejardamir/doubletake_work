@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **242 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **158 cumulative at least partly inspected** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
+Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **233 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **167 cumulative at least partly inspected** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -417,17 +417,17 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_REMAINING_WORK_v2.md` | `5cac071f6b20e128b4cf83e7f3c8caf46211737e` | 15594 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AUTOTAILOR_STANDALONE_DECISIVE_CLOSURE_MISSION_v1.md` | `0111ce6de1c1372ab2e4a997704c475f54f5772c` | 23621 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_CIRCUITS_VALUE_RATINGS.csv` | `d1362e6962ea49badf21625db7d69a834c4dbc84` | 162930 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` | `8c4e0a486f997ca0a34811bff6e9778465349109` | 109638 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_OFFLOADED_2026-10-05.md` | `f166ca814d9c449d6b0360076c7848e72693b0d4` | 17438 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` | `8c4e0a486f997ca0a34811bff6e9778465349109` | 109638 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_OFFLOADED_2026-10-05.md` | `f166ca814d9c449d6b0360076c7848e72693b0d4` | 17438 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1 (1).md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED |
 | `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1.md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | CONTENT_REVIEWED; KEEP |
-| `DOUBLETAKE_DETERMINISTIC_BORG_PROVIDER_AUTHORITY_DELTA_CLOSURE_v1.0.md` | `281e60be2f4772948a4fbb5788a6c4f985a5d806` | 32695 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_END_TO_END_UI_CAPABILITY_INTEGRATION_FINAL_CLOSURE_OFFLOADED_v1.md` | `d7adfacde39ce0b2237b990d23e8192c9dbd7b30` | 13024 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_E17_ONLY_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `558164576e4ad0aa1ad239f17b2969b9b1b8e8db` | 21163 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_FINAL_CLOSURE_OFFLOADED_2026-10-04.md` | `825d62b79c6209486455ed21c66956557bab4366` | 28007 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_MISSION_v1.md` | `ca24e5841d3002bc418d4b4f17daff72cdd27ded` | 26812 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_ENTERPRISE_E17_EVIDENCE_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `840d769d6ce0d80a761db98f9a1bef25115aefac` | 16782 | PENDING_CONTENT_REVIEW |
-| `DoubleTake_Enterprise_Governance_Offline_Python_Evolution_Master_v7_10of10.md` | `9fb4d9f8a8164e555852c0a3adfeb053ba595087` | 93652 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_DETERMINISTIC_BORG_PROVIDER_AUTHORITY_DELTA_CLOSURE_v1.0.md` | `281e60be2f4772948a4fbb5788a6c4f985a5d806` | 32695 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_END_TO_END_UI_CAPABILITY_INTEGRATION_FINAL_CLOSURE_OFFLOADED_v1.md` | `d7adfacde39ce0b2237b990d23e8192c9dbd7b30` | 13024 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_E17_ONLY_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `558164576e4ad0aa1ad239f17b2969b9b1b8e8db` | 21163 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_FINAL_CLOSURE_OFFLOADED_2026-10-04.md` | `825d62b79c6209486455ed21c66956557bab4366` | 28007 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_MISSION_v1.md` | `ca24e5841d3002bc418d4b4f17daff72cdd27ded` | 26812 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_ENTERPRISE_E17_EVIDENCE_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `840d769d6ce0d80a761db98f9a1bef25115aefac` | 16782 | CONTENT_REVIEWED; KEEP |
+| `DoubleTake_Enterprise_Governance_Offline_Python_Evolution_Master_v7_10of10.md` | `9fb4d9f8a8164e555852c0a3adfeb053ba595087` | 93652 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` | `bcec6a148adf88f91686b1d4c7774ed30047ed88` | 17226 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_FAMILY_116_SEMANTIC_DISCRIMINATION_EVOLUTION_MISSION_v2_FINAL.md` | `0ad9727c6da23724b8e7288d75377d77dd2c1f8e` | 31015 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v2_DIRECTORY_DISCOVERY.md` | `5dad73510430b1ba8a85abfacaec9effe769e8bc` | 107106 | PENDING_CONTENT_REVIEW |
@@ -739,11 +739,29 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_AUTOTAILOR_STANDALONE_DECISIVE_CLOSURE_MISSION_v1.md` | KEEP | Full 170 lines: bounded evidence-driven standalone capability validation; historical directives not authorization. |
 | `DOUBLETAKE_CIRCUITS_VALUE_RATINGS.csv` | NEEDS_REVIEW | First 110 CSV lines: electronic-circuit value/rating catalog; no evidence of measured DT capability value or complete data inspection. |
 
+
+## Progressive review checkpoint G4 — 2026-11-01 UTC
+
+- **Read:** 9 new files SHA matched; six complete UTF-8 reads and three opening-only samples. Six KEEP, three NEEDS_REVIEW. Historical enterprise/security text is source material, not current grant, deployment evidence or executable instruction. No deletions.
+- **Cursor:** next `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md`. G1–G4: 37 new historical content inspections; pending initial review 233; cumulative inspected 167 including incoming IS-007; prior nine deletions unchanged.
+
+| Artifact | Disposition | Content finding / limitation |
+| --- | --- | --- |
+| `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` | NEEDS_REVIEW | First 110 lines: discovery→knowledge→governed assimilation vocabulary and success path; declared specification completeness is not verified Ground. |
+| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_OFFLOADED_2026-10-05.md` | KEEP | Full 627 lines: historical criterion-M runtime revalidation, non-vacuity and evidence; compare to current owner before reuse. |
+| `DOUBLETAKE_DETERMINISTIC_BORG_PROVIDER_AUTHORITY_DELTA_CLOSURE_v1.0.md` | NEEDS_REVIEW | First 110 lines: provider/authority residual closure; preserve for governance negative controls, no new grants. |
+| `DOUBLETAKE_END_TO_END_UI_CAPABILITY_INTEGRATION_FINAL_CLOSURE_OFFLOADED_v1.md` | KEEP | Full 103 lines: production route and non-vacuous UI contribution proof; current B5 production-release authority still unresolved. |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_E17_ONLY_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | KEEP | Full 192 lines: E17 release binding and existing evidence recheck; no enterprise access implied. |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_FINAL_CLOSURE_OFFLOADED_2026-10-04.md` | KEEP | Full 1383 lines: historical security-boundary closure and mock-backed negative controls; not current certification. |
+| `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_MISSION_v1.md` | KEEP | Full 957 lines: mock-backed enterprise isolation, authority and denial invariants; preserve conceptual tests. |
+| `DOUBLETAKE_ENTERPRISE_E17_EVIDENCE_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | KEEP | Full 144 lines: E17 evidence-only regression and disk-space constraints; historical test plan, not observed current pass. |
+| `DoubleTake_Enterprise_Governance_Offline_Python_Evolution_Master_v7_10of10.md` | NEEDS_REVIEW | First 110 lines: offline Python governance, concurrency and security contracts; deep read and current DT parity pending. |
+
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` (resume from the next untouched artifact; content read only under public-safe review).
+- **Next lexically pending path:** `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` (resume from the next untouched artifact; content read only under public-safe review).
 - **Next mission-relevant pending path:** `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
-- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 242 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
+- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 233 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
 | `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; DIRECTOR_REVIEW_PENDING |
