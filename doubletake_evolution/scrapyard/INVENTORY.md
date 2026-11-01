@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **400 current scrapyard blobs including INVENTORY**, 399 artifact ledger rows after this update. **270 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **Cumulative at least partly inspected: 129** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
+Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **260 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **Cumulative at least partly inspected: 140** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -385,17 +385,17 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | 27325 | PENDING_CONTENT_REVIEW |
 | `bank_of_canada_role_stories_updated.md` | `60ef6841c9ae0cbd56c7f3e16382a0e1a6d1562a` | 37990 | PENDING_CONTENT_REVIEW |
 | `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | 135184 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `BORG_WHAT_THEY_DO.md` | `1bafc66072df4e8e99c7c0a5b1e67ba14e0a80ac` | 43127 | PENDING_CONTENT_REVIEW |
-| `CARD_SYSTEM_REBALANCED (1).md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `CARD_SYSTEM_REBALANCED_10_OF_10.md` | `2e359ab4b1d2c036c9cce855e58140d0eaea00f4` | 101341 | PENDING_CONTENT_REVIEW |
-| `CARD_SYSTEM_REBALANCED.md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `CODEX_FIX_UBLOCK_DYNAMIC_FILTERING_POPUP.md` | `1acd2ff56aead8e1a11555aa590f620f3c22bb51` | 25040 | PENDING_CONTENT_REVIEW |
+| `BORG_WHAT_THEY_DO.md` | `1bafc66072df4e8e99c7c0a5b1e67ba14e0a80ac` | 43127 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `CARD_SYSTEM_REBALANCED (1).md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
+| `CARD_SYSTEM_REBALANCED_10_OF_10.md` | `2e359ab4b1d2c036c9cce855e58140d0eaea00f4` | 101341 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `CARD_SYSTEM_REBALANCED.md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `CODEX_FIX_UBLOCK_DYNAMIC_FILTERING_POPUP.md` | `1acd2ff56aead8e1a11555aa590f620f3c22bb51` | 25040 | CONTENT_REVIEWED; KEEP |
 | `cognitive_books.txt` | `a4f0a4682aca30268d57e4e442ec25f99be02dde` | 1752 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `Constructible_Computation_Future_Iteration_Prompt_v9.md` | `5656233491430a0b6834774b2754992709cb7c93` | 23658 | PENDING_CONTENT_REVIEW |
-| `Constructible_Computation_Mathematics_MONOGRAPH_FINAL(1).md` | `ae2f43effdd309ef07516b2385dd8c158cc1224f` | 93853 | PENDING_CONTENT_REVIEW |
-| `Constructible_Computation_Mathematics_v56.md` | `50b9f4adeefda8075baaf8c32a87c6872ef43322` | 151949 | PENDING_CONTENT_REVIEW |
-| `cool_edit_pro_bottom_player_prompt_v9.md` | `dadf5acda7228e1ebe8002d8dae0827ab76d1cf2` | 14220 | PENDING_CONTENT_REVIEW |
-| `cool_edit_pro_style_ui_prompt_v5_style_only.md` | `ae11463e618d79245ba88e5e91384c9dece829a6` | 17743 | PENDING_CONTENT_REVIEW |
+| `Constructible_Computation_Future_Iteration_Prompt_v9.md` | `5656233491430a0b6834774b2754992709cb7c93` | 23658 | CONTENT_REVIEWED; KEEP |
+| `Constructible_Computation_Mathematics_MONOGRAPH_FINAL(1).md` | `ae2f43effdd309ef07516b2385dd8c158cc1224f` | 93853 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Constructible_Computation_Mathematics_v56.md` | `50b9f4adeefda8075baaf8c32a87c6872ef43322` | 151949 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `cool_edit_pro_bottom_player_prompt_v9.md` | `dadf5acda7228e1ebe8002d8dae0827ab76d1cf2` | 14220 | CONTENT_REVIEWED; KEEP |
+| `cool_edit_pro_style_ui_prompt_v5_style_only.md` | `ae11463e618d79245ba88e5e91384c9dece829a6` | 17743 | CONTENT_REVIEWED; KEEP |
 | `cool_edit_pro_ui_style_polish_prompt_v7.md` | `0e1bef5ea3122a871fbf38230943a814e3b796e0` | 11727 | PENDING_CONTENT_REVIEW |
 | `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md` | `6f09d435ca9797c263acf1ebde76b8914ae7e581` | 11160 | PENDING_CONTENT_REVIEW |
 | `CURRENT_STATE_AUDIT.md` | `2ce5cbca46e1aed5f3f212322ea0cd906c7e643a` | 2897 | CONTENT_REVIEWED; KEEP |
@@ -683,12 +683,34 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 | `incoming/IS-20261101-006-counterfactual-metamorphic-knowledge-ground.md` | `66ded2d83f9dc9e70ecc4236364e256cc833249c` | 8044 | SOURCE_VALIDATED; KEEP; OFFERED_TO_DIRECTOR_AS_7.8.3_REFINEMENT |
 
+
+## Progressive review checkpoint G1 — 2026-11-01 UTC
+
+- **Read:** 10 new historical files, SHA matched against inventory; four complete UTF-8 reads and six first-110-line samples. These are *initial* content inspections, not ten deep full reviews. No production/private code edited. Two identical card-system copies preserved pending exact-path dependency audit.
+- **Incoming IS-007:** new external research source observed; independently checked RFC 9162 and Trillian original material. Research handoff pending separate offload commit. Incoming source blob `46efa667c19579876b16993e325a02f6f5621184` retained.
+- **Cumulative checkpoint:** 139 artifacts at least partially inspected (129+10); pending initial review 260 (270−10), plus newly arrived IS-007 already read; no deletions (known prior 9). Exact cursor: `cool_edit_pro_ui_style_polish_prompt_v7.md`.
+
+| Artifact | Disposition | Actual content and revisit rationale |
+| --- | --- | --- |
+| `BORG_WHAT_THEY_DO.md` | NEEDS_REVIEW | Opening 110 lines: Borg observe/classify/prioritize operating loop; matches private specification blob, historical source not execution authority; remainder unexamined. |
+| `CARD_SYSTEM_REBALANCED (1).md` | DELETE_CANDIDATE_BLOCKED | Opening 110 lines: card-system centroid geometry; byte-identical to unsuffixed copy, no unique bytes; exact-path dependency/provenance check not complete, retain. |
+| `CARD_SYSTEM_REBALANCED_10_OF_10.md` | NEEDS_REVIEW | Opening 110 lines: alternative canonical card embedding and relationship operators; differs from centroid master; source rigor/DT transfer unknown. |
+| `CARD_SYSTEM_REBALANCED.md` | NEEDS_REVIEW | Opening 110 lines: canonical centroid card geometry; retained original twin; potential representation idea but not validated; full content unexamined. |
+| `CODEX_FIX_UBLOCK_DYNAMIC_FILTERING_POPUP.md` | KEEP | Full 812 lines: browser-extension popup functional restoration with existing-owner reuse, state propagation and negative controls; unrelated code, preserve only general reachability principle. |
+| `Constructible_Computation_Future_Iteration_Prompt_v9.md` | KEEP | Full 994 lines: research novelty/falsification workflow and mathematical construction frontier; speculative mathematics not externally validated; keep as exploratory methodology. |
+| `Constructible_Computation_Mathematics_MONOGRAPH_FINAL(1).md` | NEEDS_REVIEW | Opening 110 lines: monograph with constructive resource/product claims; referenced cover image and mathematical proofs not verified; preserve. |
+| `Constructible_Computation_Mathematics_v56.md` | NEEDS_REVIEW | Opening 110 lines: v56 semantic-completeness and no-separation claims; proof and novelty unverified, retain. |
+| `cool_edit_pro_bottom_player_prompt_v9.md` | KEEP | Full 593 lines: UI transport-control visual/function requirements; unrelated design, no direct DT capability claim. |
+| `cool_edit_pro_style_ui_prompt_v5_style_only.md` | KEEP | Full 733 lines: style-only UI scope isolation, no logic mutation; useful as design/behavior negative control, not a DT mission. |
+
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `BORG_WHAT_THEY_DO.md` (resume from the next untouched artifact; content read only under public-safe review).
-- **Next mission-relevant pending path:** `BORG_WHAT_THEY_DO.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
-- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 270 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
+- **Next lexically pending path:** `cool_edit_pro_ui_style_polish_prompt_v7.md` (resume from the next untouched artifact; content read only under public-safe review).
+- **Next mission-relevant pending path:** `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
+- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 260 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
+
+| `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; DIRECTOR_REVIEW_PENDING |
 
 ## Recurring workflow
 
