@@ -1,30 +1,7 @@
-# Final Simplification Audit
+# Historical Live Match Centre simplification audit — distilled
 
-**Date:** 2026-08-19  
-**Result:** STOP CONDITION REACHED
+**Dated:** 2026-08-19. **Original blob:** `ea15363566cf67deb19ddaae761a192d3a550656`. Historical design assessment only, not current DT or independently tested cloud deployment. [D01](DISTILLED_KNOWLEDGE.md).
 
-Final surviving simplifications:
+**Conditional removals:** AWS WAF only if demonstrated app-layer abuse requires it; do not assume Nchan→Valkey compatibility—historical source identified Nchan's documented Redis OSS 7.1 ElastiCache dependency, **recheck upstream/version today**. Artillery SSE generator was experimental; prefer small TypeScript streaming client for POC to avoid measurement-harness confound.
 
-1. Remove AWS WAF from the baseline; keep it conditional on a demonstrated application-layer abuse requirement.
-2. Replace the unverified Nchan→Valkey assumption with the dependency Nchan actually documents: Redis OSS 7.1 on ElastiCache.
-3. Remove Artillery as the primary SSE POC generator because its SSE engine is experimental; use a small TypeScript streaming client so the measurement harness does not introduce a second unknown.
-
-All other attempted removals were rejected:
-
-```text
-Redis        KEEP — shared Nchan history/cross-node resume
-NLB          KEEP — multi-node stable origin/draining
-ASG          KEEP — self-healing/live rolling deploy
-API Gateway  KEEP — minimal provider HTTPS ingress
-SQS FIFO     KEEP — durable acceptance for best-effort provider
-Lambda       KEEP — required domain processing
-DynamoDB     KEEP — independent canonical truth
-CloudFront   KEEP — global viewer edge/private origin
-S3           KEEP — frontend/live-release separation
-Nchan        KEEP — commodity fan-out product
-lobby channel KEEP — simpler/cheaper than replaying all match channels
-```
-
-No additional component can currently be removed without either weakening the assignment or replacing a managed/existing responsibility with more custom code.
-
-Next architectural change must be evidence-driven by the Nchan + Redis + SSE POC.
+**Retained by assigned responsibility:** Redis (Nchan history/cross-node resume), NLB (origin/draining), ASG (self-heal/rolling deploy), API Gateway (provider HTTPS), SQS FIFO (durable best-effort acceptance), Lambda (domain processing), DynamoDB (canonical truth), CloudFront (viewer edge/private origin), S3 (frontend/release separation), Nchan (fan-out), lobby channel (simpler replay). Further removal requires a measured Nchan+Redis+SSE POC; no unsupported simplification. **Unknown:** current upstream support, real deployment and transfer value to DT.
