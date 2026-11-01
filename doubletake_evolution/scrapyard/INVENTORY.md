@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q14 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
+- **Coverage:** 332/395 surviving artifacts second-pass sampled; 63 pending. Run-to-date 24 reviewed; dispositions in this batch KEEP 6, NEEDS_REVIEW 6, DELETE_CANDIDATE 0, EXTRACT_THEN_DELETE 0. No deletion claimed yet. Cursor after `Pasted markdown.md`.
+- **Safety:** Duplicates remain pending fresh-SHA, reference and provenance checks. Sensitive records summarized without repeating personal contents. New source-check: ACL Anthology 2026 Findings EMNLP paper https://aclanthology.org/2026.findings-emnlp.244/ confirms same-task skill-on/off evaluation but does not prove current DT parity or Ground. No new Internet intake (seven existing unchanged); Director IS-006 conditional, IS-007 deferred. Full Borg NOT VERIFIED, 0 natural complete cycles, B1 owner gate and 7.8.1 consumer receipt unresolved.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `Natal_Chart_Rectification_Working_Model_v10.md` | `ad57ec94642d797573bdf85902c20b63b40d86c2` | NEEDS_REVIEW | Personal interpretive record in public scrapyard; privacy/ownership review needed, not relevant to DT Ground. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `NEW_MATH_GUARDRAILS_v6.md` | `bb8288b61755f90e5f820d7897b5f8603fef1fc1` | KEEP | Proof dependency and novelty classification charter; claims require external mathematical review. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `no_primitive_boundary_boolean_logic_paper_v0.4_proof_audited.md` | `466987ab877e15c9eda8c4dc0814a7b9786d37dc` | KEEP | Proof-audited foundational logic manuscript with explicit nonclaims; no DT integration evidence. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `non_collapsing_adaptive_jumping_64hex_blueprint_v26.md` | `ba73dba5e4391a501e84a4491463c06c06df6a0b` | KEEP | Bounded-search design explicitly requires matched baselines; speculative transfer, not proven gain. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ontario_anal_fissure_clinics_expanded_175_locations.md` | `e9da2f9df2f3c92aecaa02654379ea0c5e7b36cd` | NEEDS_REVIEW | Medical service directory; freshness, provenance and privacy checks needed; not a DT mission dependency. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `openshell_not_prompt.txt` | `3015885a7b72feb88035a2fa4e91500b0718ae04` | NEEDS_REVIEW | Proposes governed external sandbox backend; actual upstream source/license and DT parity not yet verified. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | NEEDS_REVIEW | Personal career preparation, updated revision; public exposure warrants owner/privacy review. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | NEEDS_REVIEW | Earlier personal career preparation with distinct role framing; owner/privacy review. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | `943cbbdb59a9382f04cf924a3920f9e29c55aa15` | KEEP | Normative staged interface/validation bundle; not proof implementation or current DT adoption. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `PAIV_EQC_Project_Master_Specification_v0.1.0.md` | `e4e511c8ab82bccdcfadc0eef97fd00cccbd2460` | KEEP | Reproducible project math/governance specification; source-level historical reference only. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | `c647b322d7770522ecb1108e1fbfeec1b2d5a90a` | KEEP | Historical isolated-workload concurrency and evidence-separation controls; distinct context. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `Pasted markdown.md` | `11f0dee7cd7b11c43412e8593266cd99fc6d9976` | NEEDS_REVIEW | Contains personal resume/contact material; public repository exposure requires owner privacy disposition. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+
+
 ## Q13 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
