@@ -10,7 +10,7 @@
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
     "verification": "local execution and independent evidence required",
     "public_repo": true,
-    "local_selection": "Select only patches that have been checked against actual current DT branch source, are not already applied, and have satisfied dependencies. Check patch_results/public feedback before each selection.",
+    "local_selection": "Select next eligible CODE patch, check current feature branch, dependency and conflicts before applying; never apply APPLIED_*, BLOCKED_* or diagnostics unless explicitly requested. Compare 002/010 alternatives and choose at most one.",
     "one_patch_per_file": true,
     "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
     "executor_branch_reference": "feature/alphacode-provider",
@@ -20,6 +20,34 @@
     "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb"
   },
   "patches": [
+    {
+      "id": "BPE-20261101-001",
+      "mission_ref": "DT-EVO-007 / 7.9.1",
+      "summary": "Refuse reserved mission plan/evidence redirects and normalized output collisions; preserve canonical evidence",
+      "file": "BPE-20261101-001.sh",
+      "status": "PREPARED_UNTESTED",
+      "priority": 1,
+      "patch_revision": 2,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/mission_intake/__init__.py": "206104ef6d8e446e68bddba3b2e3a6b15ee457a6",
+        "tools/doubletake_evolve/mission_intake/test_mission_intake_boundary.py": "2799b79ecf6cfd20b667f7b6ab6eb1acd4d71b35"
+      },
+      "depends_on": [],
+      "touched_paths": [
+        "tools/doubletake_evolve/mission_intake/__init__.py",
+        "tools/doubletake_evolve/mission_intake/test_mission_intake_boundary.py"
+      ],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "code_patch": true,
+      "source_context_check": "All 6 patch old hunks matched current executor source, hunk counts checked; git apply/test not run.",
+      "limitation": "Independent use-time symlink race Ground remains unverified"
+    },
     {
       "id": "BPE-20261101-003",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
@@ -58,6 +86,37 @@
         "test_logs_independently_observed": false,
         "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-003.json"
       }
+    },
+    {
+      "id": "BPE-20261101-002",
+      "mission_ref": "DT-EVO-007 / 7.9.2",
+      "summary": "Require canonical ordered receipt predecessor chain, recomputed receipt digest and invalid-chain aggregate failure",
+      "file": "BPE-20261101-002.sh",
+      "status": "PREPARED_UNTESTED",
+      "priority": 2,
+      "patch_revision": 1,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0",
+        "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py": "0cbf09e728f483788d63c5b016cdd4df3d728c6e"
+      },
+      "depends_on": [],
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/receipts.py",
+        "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py"
+      ],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "code_patch": true,
+      "source_context_check": "All 4 patch old hunks matched current executor source, hunk counts checked; git apply/test not run.",
+      "conflicts_with": [
+        "BPE-20261101-010"
+      ],
+      "limitation": "Only verifier contract; independent Ground still required"
     },
     {
       "id": "BPE-20261101-004",
@@ -142,6 +201,48 @@
       "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
     },
     {
+      "id": "BPE-20261101-010",
+      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
+      "summary": "Require contiguous ordered receipt links and gate all_pass on chain validity",
+      "file": "BPE-20261101-010.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 3,
+      "patch_revision": 2,
+      "status": "BLOCKED_CONFLICT",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/receipts.py",
+        "tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
+      "last_error": "Alternative to BPE-002 canonical receipt-chain implementation; do not apply both. If BPE-002 validates, mark this superseded; otherwise reassess independently.",
+      "validation": {
+        "exact_source_blob_inspected": true,
+        "old_hunks_matched_uniquely": true,
+        "all_diff_hunk_counts_validated": true,
+        "embedded_new_test_lines": 93,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      },
+      "patch_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
+      "script_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
+      "revision_reason": "Added discriminating three-receipt skipped-predecessor negative and reversed mapping order positive; same implementation hunk and source binding.",
+      "conflicts_with": [
+        "BPE-20261101-002"
+      ]
+    },
+    {
       "id": "BPE-20261101-006",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
       "summary": "Do not count receipts for committed claim IDs absent from the sealed claim set as coverage.",
@@ -185,6 +286,40 @@
       "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
     },
     {
+      "id": "BPE-20261101-011",
+      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
+      "summary": "Validate externally supplied terminal receipt digests against contents",
+      "file": "BPE-20261101-011.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 4,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/models.py": "51bb900549ee4ca9ddc6d236e7afbf090a72b6f0"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/models.py",
+        "tools/doubletake_evolve/claim_receipt/test_terminal_receipt_digest_binding.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
+      "last_error": null,
+      "validation": {
+        "exact_source_blob_inspected": true,
+        "old_hunks_matched_uniquely": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      }
+    },
+    {
       "id": "BPE-20261101-007",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
       "summary": "Reject a receipt for another claim ID in direct per-claim verification.",
@@ -226,115 +361,6 @@
       },
       "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
       "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
-    },
-    {
-      "id": "BPE-20261101-008",
-      "mission_ref": "DT-EVO-007 / 7.8.1",
-      "summary": "Read-only source census for actual mission-consumer and A/B receipt proof",
-      "file": "BPE-20261101-008.sh",
-      "type": "READ_ONLY_DIAGNOSTIC",
-      "status": "DIAGNOSTIC_READY",
-      "priority": 20,
-      "depends_on": [],
-      "source_branch": "feature/alphacode-provider",
-      "patch_revision": 1,
-      "security": "public-safe orchestration only; no private source diff; no live write or DT commit",
-      "verification": {
-        "executed": false,
-        "ground_verified": false
-      },
-      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
-    },
-    {
-      "id": "BPE-20261101-009",
-      "mission_ref": "DT-EVO-007 / 7.7.1",
-      "summary": "Guarded temporary-fixture cartography integrity baseline before replay applicability decision",
-      "file": "BPE-20261101-009.sh",
-      "type": "READ_ONLY_DIAGNOSTIC",
-      "status": "DIAGNOSTIC_READY",
-      "priority": 21,
-      "depends_on": [],
-      "source_branch": "feature/alphacode-provider",
-      "patch_revision": 1,
-      "security": "public-safe orchestration only; no private source diff; no live write or DT commit",
-      "verification": {
-        "executed": false,
-        "ground_verified": false
-      },
-      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
-    },
-    {
-      "id": "BPE-20261101-010",
-      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
-      "summary": "Require contiguous ordered receipt links and gate all_pass on chain validity",
-      "file": "BPE-20261101-010.sh",
-      "format": "single_file_bash_embedded_diff_instructions_DoD",
-      "priority": 3,
-      "patch_revision": 2,
-      "status": "PREPARED_UNTESTED",
-      "target_branch": "feature/alphacode-provider",
-      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-      "source_blob_shas": {
-        "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0"
-      },
-      "touched_paths": [
-        "tools/doubletake_evolve/claim_receipt/receipts.py",
-        "tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py"
-      ],
-      "depends_on": [],
-      "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
-      },
-      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
-      "last_error": null,
-      "validation": {
-        "exact_source_blob_inspected": true,
-        "old_hunks_matched_uniquely": true,
-        "all_diff_hunk_counts_validated": true,
-        "embedded_new_test_lines": 93,
-        "git_apply_check_executed": false,
-        "bash_syntax_checked": false,
-        "host_tests_executed": false
-      },
-      "patch_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
-      "script_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
-      "revision_reason": "Added discriminating three-receipt skipped-predecessor negative and reversed mapping order positive; same implementation hunk and source binding."
-    },
-    {
-      "id": "BPE-20261101-011",
-      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
-      "summary": "Validate externally supplied terminal receipt digests against contents",
-      "file": "BPE-20261101-011.sh",
-      "format": "single_file_bash_embedded_diff_instructions_DoD",
-      "priority": 4,
-      "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
-      "target_branch": "feature/alphacode-provider",
-      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-      "source_blob_shas": {
-        "tools/doubletake_evolve/claim_receipt/models.py": "51bb900549ee4ca9ddc6d236e7afbf090a72b6f0"
-      },
-      "touched_paths": [
-        "tools/doubletake_evolve/claim_receipt/models.py",
-        "tools/doubletake_evolve/claim_receipt/test_terminal_receipt_digest_binding.py"
-      ],
-      "depends_on": [],
-      "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
-      },
-      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
-      "last_error": null,
-      "validation": {
-        "exact_source_blob_inspected": true,
-        "old_hunks_matched_uniquely": true,
-        "git_apply_check_executed": false,
-        "bash_syntax_checked": false,
-        "host_tests_executed": false
-      }
     },
     {
       "id": "BPE-20261101-012",
@@ -448,6 +474,42 @@
         "bash_syntax_checked": false,
         "host_tests_executed": false
       }
+    },
+    {
+      "id": "BPE-20261101-008",
+      "mission_ref": "DT-EVO-007 / 7.8.1",
+      "summary": "Read-only source census for actual mission-consumer and A/B receipt proof",
+      "file": "BPE-20261101-008.sh",
+      "type": "READ_ONLY_DIAGNOSTIC",
+      "status": "DIAGNOSTIC_READY",
+      "priority": 20,
+      "depends_on": [],
+      "source_branch": "feature/alphacode-provider",
+      "patch_revision": 1,
+      "security": "public-safe orchestration only; no private source diff; no live write or DT commit",
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
+    },
+    {
+      "id": "BPE-20261101-009",
+      "mission_ref": "DT-EVO-007 / 7.7.1",
+      "summary": "Guarded temporary-fixture cartography integrity baseline before replay applicability decision",
+      "file": "BPE-20261101-009.sh",
+      "type": "READ_ONLY_DIAGNOSTIC",
+      "status": "DIAGNOSTIC_READY",
+      "priority": 21,
+      "depends_on": [],
+      "source_branch": "feature/alphacode-provider",
+      "patch_revision": 1,
+      "security": "public-safe orchestration only; no private source diff; no live write or DT commit",
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -494,5 +556,16 @@
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "32d5e090376cd4560ba4cd91bf4376e1a9aea13c"
+  "latest_mission_blob": "32d5e090376cd4560ba4cd91bf4376e1a9aea13c",
+  "last_manual_patch_publication": {
+    "new_code_scripts": [
+      "BPE-20261101-001",
+      "BPE-20261101-002"
+    ],
+    "evidence": "source-hunk and source blob checked; local git apply/tests not executed",
+    "mission_steps": [
+      "7.9.1",
+      "7.9.2"
+    ]
+  }
 }
