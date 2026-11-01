@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # BPE-20261101-004 — Reject evidence whose embedded path disagrees with the committed evidence path.
+# EXECUTOR COMPATIBILITY: feature/alphacode-provider @ b1931476299f5b0dfa7b7222ce2706df9d11a01e (after BPE-20261101-003)
 # SOURCE: private DT @ 7b86364f1bbf34c0f04a2b85f21e5fb499fd7719; mission DT-EVO-007 / 7.9 evidence-trust extension
 # STATUS: PREPARED_UNTESTED. Apply and tests are NOT preverified.
 # This single file contains the exact source diff, safety checks, test and DoD.
@@ -16,7 +17,7 @@ if [[ ! -f tools/doubletake_evolve/runtime/host_workload.py ]]; then echo "STOP:
 printf 'PATCH_ID=%s\nSTART_HEAD=%s\n' "BPE-20261101-004" "$(git rev-parse HEAD)"
 if [[ ! -f "tools/doubletake_evolve/claim_receipt/receipts.py" ]]; then echo "STOP: expected source file missing: tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 21; fi
 if ! git diff --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py" || ! git diff --cached --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py"; then echo "STOP: preserve existing changes in tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 22; fi
-if [[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/receipts.py")" != "a304c64d15db4ed37b94e491b4deebc9738b23ad" ]]; then echo "STOP: source changed: tools/doubletake_evolve/claim_receipt/receipts.py; report STALE and ask Patch Engineer to rebase" >&2; exit 23; fi
+if [[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/receipts.py")" != "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c" ]]; then echo "STOP: source changed: tools/doubletake_evolve/claim_receipt/receipts.py; report STALE and ask Patch Engineer to rebase" >&2; exit 23; fi
 if [[ -e "tools/doubletake_evolve/claim_receipt/test_evidence_path_binding.py" || -L "tools/doubletake_evolve/claim_receipt/test_evidence_path_binding.py" ]]; then echo "STOP: target test file already exists: tools/doubletake_evolve/claim_receipt/test_evidence_path_binding.py" >&2; exit 24; fi
 
 PATCH_TEXT="$(cat <<'BPE_PATCH_PAYLOAD_BPE_20261101_004'
