@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **233 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **167 cumulative at least partly inspected** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **233 PENDING_CONTENT_REVIEW**. This pass read 37 historical artifacts (19 complete UTF-8 files, 18 partial first-110-line samples), plus full incoming IS-007; **cumulative 167 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -757,6 +757,14 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_ENTERPRISE_E17_EVIDENCE_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | KEEP | Full 144 lines: E17 evidence-only regression and disk-space constraints; historical test plan, not observed current pass. |
 | `DoubleTake_Enterprise_Governance_Offline_Python_Evolution_Master_v7_10of10.md` | NEEDS_REVIEW | First 110 lines: offline Python governance, concurrency and security contracts; deep read and current DT parity pending. |
 
+
+## Scout G4 closeout and incoming IS-007 disposition — 2026-11-01 UTC
+
+- **Source:** `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` blob `46efa667c19579876b16993e325a02f6f5621184`, Internet commit `7ca9690736f288a561f2b5d8a380a23076733360`. Full 11,659-character note read; independent original-source checks: [RFC 9162](https://www.rfc-editor.org/rfc/rfc9162.html) (experimental, Merkle consistency, security caveats) and [Trillian verifiable logs](https://github.com/google/trillian/blob/master/docs/VerifiableDataStructures-Latest.md) (checkpoint anchoring and split-view limitation). Source supports a narrow append-only *proof algorithm*, not truthful data, durable writes, authority or DT execution. **KEEP / SOURCE_CHECKED**, confidence HIGH for RFC mechanism, LOW for DT novelty/implementability.
+- **Research insight / intended handoff ID:** `R-BORG-SCOUT-20261101-007`. Distinct concrete external knowledge K for existing 7.8.3 causal A/B/C test (006), not another receipt framework (002/004). Authorized experiment: first verify existing local consumer and baseline; then only in an approved disposable sandbox compare baseline vs governed K vs K withheld/wrong-source on held-out correct/altered/mismatched/unanchored Merkle proof cases; require independent later ordinary-task reuse and source→decision→Ground lineage. If existing baseline already passes, ALREADY_PRESENT. If consumer/approval unavailable, UNVERIFIED and no implementation. B1 owner integrity decision is **not** bypassed. Existing private DT parity remains unknown; no capability gain credited.
+- **Handoff write status:** `WRITE_BLOCKED` for `doubletake_evolution/RESEARCH_OFFLOAD.md`: GitHub update action rejected by connector safety checks; **no offload commit was created**. This inventory note is an authorized durable research disposition, **not** Director delivery or approval. Revisit on permitted offload write and actual consumer evidence. Do not retry identical rejected mutation unchanged.
+- **Coverage / cleanup:** 37 previously pending historical artifacts inspected in four checkpoints G1–G4 (19 full, 18 sampled), plus incoming 007; 233 remain pending initial content review. Classifications historical: 19 KEEP, 17 NEEDS_REVIEW, one DELETE_CANDIDATE_BLOCKED (exact card-system byte twin, exact-path dependency audit incomplete). Actual deleted this run **0**; 9 earlier tombstones retained. Next lexical pending `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md`; revisit sampled items for deep review when appropriate. No protected history altered.
+
 ## Durable progressive review cursor
 
 - **Next lexically pending path:** `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` (resume from the next untouched artifact; content read only under public-safe review).
@@ -764,7 +772,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 - **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 233 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
-| `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; DIRECTOR_REVIEW_PENDING |
+| `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; OFFLOAD_WRITE_BLOCKED |
 
 ## Recurring workflow
 
