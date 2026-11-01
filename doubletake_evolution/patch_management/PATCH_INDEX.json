@@ -27,11 +27,11 @@
         "tools/doubletake_evolve/claim_receipt/test_evidence_payload_digest.py"
       ],
       "depends_on": [],
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "patch_revision": 1,
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED_24_OF_24",
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
@@ -40,7 +40,18 @@
       "file": "BPE-20261101-003.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 1,
-      "application": "one_patch_per_local_execution"
+      "application": "one_patch_per_local_execution",
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
+        "source_change_confirmed": true,
+        "reported_guarded_tests": {
+          "passed": 24,
+          "total": 24
+        },
+        "test_logs_independently_observed": false,
+        "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-003.json"
+      }
     },
     {
       "id": "BPE-20261101-004",
