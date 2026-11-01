@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; latest checked GitHub main tree `88b30430bcafdf501cf2ae88d0d153fa71a6651d` (no truncation). Recursive metadata: **398 files** under scrapyard/ including this INVENTORY.md; **397 other file rows**. **47 items have at least partial content/source inspection** (including 36 historical files and the new incoming note reviewed this run); **350 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. No private DT material reproduced. Deletions recorded cumulatively: 9; deletions this run: 0.
+Updated 2026-11-01 UTC; latest checked GitHub main tree `88b30430bcafdf501cf2ae88d0d153fa71a6651d` (no truncation). Recursive metadata: **398 files** under scrapyard/ including this INVENTORY.md; **397 other file rows**. **51 items have at least partial content/source inspection** (including 40 historical files and the new incoming note reviewed this run); **346 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. No private DT material reproduced. Deletions recorded cumulatively: 9; deletions this run: 0.
 
 ## Reconciled prior deletion not yet in inventory (observed, not performed in this run)
 
@@ -142,6 +142,19 @@ Actual text of all twelve items was fetched and inspected at source/section leve
 
 **Cursor:** checkpoint C complete, 36 previously unreviewed historical files inspected in three sequential batches. Next pass starts after these newly classified rows; prioritize other small unique technical files and SHA-duplicate groups with verified reference checks.
 
+## Progressive review checkpoint D — 2026-11-01 UTC (4 duplicate-group contents inspected; 41 total this run including incoming 004)
+
+Two SHA-identical pairs were fetched and compared at content level. Canonical copies KEEP. Numbered copies are **DELETE_CANDIDATE_BLOCKED** until exact-filename reference/dependency checks are complete. GitHub code-search exact filename query returned a 422 parse error; simpler query returned no results despite existing files, so absence of hits is **not** a reliable no-reference proof. No deletion executed.
+
+| File | Disposition | Rationale / next check |
+| --- | --- | --- |
+| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1.md` | CONTENT_REVIEWED; KEEP | Canonical exact-byte source for historical Criterion M runtime/model blocker and negative controls; retain. |
+| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1 (1).md` | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED | Exact SHA duplicate of canonical, no unique bytes; reference census incomplete, do not delete. |
+| `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass.md` | CONTENT_REVIEWED; KEEP | Canonical historical functional MVP evidence/replay/anti-false-pass contract; retain. |
+| `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass (1).md` | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED | Exact SHA duplicate of canonical; no unique bytes, dependency check incomplete; do not delete. |
+
+**Cursor:** 40 distinct historical content files inspected this run plus incoming 004. Next pass: next pending technical file after these checkpoints, plus unresolved duplicates only when a trustworthy reference scan is available. No permission expansion.
+
 ## Complete path/blob metadata ledger
 
 Each row gives relative path, exact blob SHA, size and current triage status. PENDING_CONTENT_REVIEW does not mean unimportant; provenance/meaning/next test are unknown until read.
@@ -196,8 +209,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AGENT_X_FINAL_SEMANTIC_FIRST_GAP_CLOSURE.md` | `38cb0850be0c841aca92aa94808494b22006db9f` | 25809 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_FINAL_TWO_GAP_CLOSURE.md` | `b4d1c7f5c8c9384c61a55caf93ac9c0458f9848a` | 14891 | PENDING_CONTENT_REVIEW |
 | `agent_x_full_point_form_work_plan_and_next_direction.md` | `e0aa8d6985685be0051908acaf9cae5b68a9504f` | 88933 | PENDING_CONTENT_REVIEW |
-| `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass (1).md` | `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9` | 38896 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass.md` | `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9` | 38896 | PENDING_CONTENT_REVIEW; SAME_BLOB |
+| `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass (1).md` | `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9` | 38896 | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED |
+| `agent_x_functional_runtime_mvp_gap_closing_unknown_gap_discovery_prompt_rev4_anti_false_pass.md` | `6eaabb6c2715c325fafc3ad985dd43ca8452f4d9` | 38896 | CONTENT_REVIEWED; KEEP |
 | `AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` | `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` | 51290 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_GOVERNED_SEMANTIC_KWARG_FORWARDING_FIX.md` | `1612783d0cb3f13daeff9e14488383996e491a17` | 9707 | CONTENT_REVIEWED; KEEP |
 | `AGENT_X_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `89d35b4fc5f966e83feaf1a065f1d6779c1c0257` | 140508 | PENDING_CONTENT_REVIEW |
@@ -289,8 +302,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_CIRCUITS_VALUE_RATINGS.csv` | `d1362e6962ea49badf21625db7d69a834c4dbc84` | 162930 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` | `8c4e0a486f997ca0a34811bff6e9778465349109` | 109638 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_OFFLOADED_2026-10-05.md` | `f166ca814d9c449d6b0360076c7848e72693b0d4` | 17438 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1 (1).md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1.md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | PENDING_CONTENT_REVIEW; SAME_BLOB |
+| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1 (1).md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED |
+| `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1.md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_DETERMINISTIC_BORG_PROVIDER_AUTHORITY_DELTA_CLOSURE_v1.0.md` | `281e60be2f4772948a4fbb5788a6c4f985a5d806` | 32695 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_END_TO_END_UI_CAPABILITY_INTEGRATION_FINAL_CLOSURE_OFFLOADED_v1.md` | `d7adfacde39ce0b2237b990d23e8192c9dbd7b30` | 13024 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_ENTERPRISE_COPILOT_READY_E17_ONLY_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `558164576e4ad0aa1ad239f17b2969b9b1b8e8db` | 21163 | PENDING_CONTENT_REVIEW |
