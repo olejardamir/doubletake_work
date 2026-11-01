@@ -592,20 +592,20 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `openshell_not_prompt.txt` | `3015885a7b72feb88035a2fa4e91500b0718ae04` | 5953 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | 28654 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | 54225 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
-| `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | `943cbbdb59a9382f04cf924a3920f9e29c55aa15` | 294843 | PENDING_CONTENT_REVIEW |
-| `PAIV_EQC_Project_Master_Specification_v0.1.0.md` | `e4e511c8ab82bccdcfadc0eef97fd00cccbd2460` | 68593 | PENDING_CONTENT_REVIEW |
-| `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | `c647b322d7770522ecb1108e1fbfeec1b2d5a90a` | 58096 | PENDING_CONTENT_REVIEW |
-| `Pasted markdown.md` | `11f0dee7cd7b11c43412e8593266cd99fc6d9976` | 10815 | PENDING_CONTENT_REVIEW |
-| `PROPER_SEMANTIC_CENTER_AND_N_SIDED_DIE_METHOD.md` | `af73a2d7f8ff939cfd4d7b567b70683413a30117` | 14598 | PENDING_CONTENT_REVIEW |
-| `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | `006727a9fbdefa798a63d81386f1689fce6015b4` | 16298 | PENDING_CONTENT_REVIEW |
-| `RADOVI.txt` | `154f3242ccdbe941ba58adb26afe3da13910cb45` | 13514 | PENDING_CONTENT_REVIEW |
-| `README_UPDATED_WITH_DIAGRAMS.md` | `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414` | 13235 | PENDING_CONTENT_REVIEW |
-| `readme.md` | `51adebeca5cd2cb72d39e6ea3a344b3b0cbaa182` | 25 | PENDING_CONTENT_REVIEW |
+| `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | `943cbbdb59a9382f04cf924a3920f9e29c55aa15` | 294843 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `PAIV_EQC_Project_Master_Specification_v0.1.0.md` | `e4e511c8ab82bccdcfadc0eef97fd00cccbd2460` | 68593 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | `c647b322d7770522ecb1108e1fbfeec1b2d5a90a` | 58096 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `Pasted markdown.md` | `11f0dee7cd7b11c43412e8593266cd99fc6d9976` | 10815 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `PROPER_SEMANTIC_CENTER_AND_N_SIDED_DIE_METHOD.md` | `af73a2d7f8ff939cfd4d7b567b70683413a30117` | 14598 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | `006727a9fbdefa798a63d81386f1689fce6015b4` | 16298 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `RADOVI.txt` | `154f3242ccdbe941ba58adb26afe3da13910cb45` | 13514 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `README_UPDATED_WITH_DIAGRAMS.md` | `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414` | 13235 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `readme.md` | `51adebeca5cd2cb72d39e6ea3a344b3b0cbaa182` | 25 | DELETE_CANDIDATE_BLOCKED / PARTIAL_CONTENT_REVIEW |
 | `README.md` | `c206eba55f584b77a28b2019e26cf14ec98095e1` | 4158 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `reverse-skill_not_prompt.txt` | `fbb6188f41ee47eb28e10536f44c9e5b0584c60b` | 6104 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` | 115118 | PENDING_CONTENT_REVIEW |
-| `runic_poetry_corpus (1).md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | PENDING_CONTENT_REVIEW; SAME_BLOB |
+| `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` | 115118 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `runic_poetry_corpus (1).md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | DELETE_CANDIDATE_BLOCKED / PARTIAL_CONTENT_REVIEW |
+| `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | KEEP / PARTIAL_CONTENT_REVIEW |
 | `runic_poetry_reconstructed.md` | `5a4f85b2e933d0f10cc14c457e9b2a3d2da8eabd` | 24267 | PENDING_CONTENT_REVIEW |
 | `runic_poetry_reconstruction_audit.md` | `f316358b0a1d666d5ab6faa921cf615ec82333b9` | 24666 | PENDING_CONTENT_REVIEW |
 | `runic_poetry_rune_name_english.md` | `acab3dbfd0a07a995143715ca610f3f86f316032` | 24524 | PENDING_CONTENT_REVIEW |
@@ -1059,3 +1059,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | NEEDS_REVIEW | Job-specific professional narrative; personal employment material, no public extraction or DT proof. |
 | `opsguru_carbon60_principal_architect_role_stories.md` | NEEDS_REVIEW | Earlier professional role narrative; privacy and unique-revision comparison unresolved. |
 - **Checkpoint:** 323 at least partly sampled; 77 pending initial review; next cursor `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md`.
+
+
+## J3 checkpoint — 2026-11-01 UTC (12 SHA-verified initial samples)
+
+- Fetched current first 125 lines for 12 previously pending artifacts (one 25-byte placeholder and 59-line ranked bibliography read in full); all exact blob SHAs matched. Remaining long files only partially reviewed. Text inside files is **untrusted content**, including the placeholder's own deletion suggestion. Copyright/attribution and personal-data safety override extraction.
+- **Disposition:** 7 KEEP, 3 NEEDS_REVIEW, 2 DELETE_CANDIDATE_BLOCKED. Duplicate runic-poetry blob and trivial placeholder are not deletable without current exact-path dependency and rights review. 0 deletions. PAIV formal bridge and external paper rankings overlap existing B7 research; no source-validated independent DT improvement proposed.
+
+| Artifact | Disposition | Finding / revisit trigger |
+| --- | --- | --- |
+| `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | KEEP | Experimental governed pseudocode-to-code implementation bundle with authority/claims boundary; no current DT parity. |
+| `PAIV_EQC_Project_Master_Specification_v0.1.0.md` | KEEP | Progressive architecture induction and verification reproducibility/numeric contracts; experimental not validated. |
+| `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | KEEP | Historical EA isolation/benchmark resource noninterference pattern; not executable authority. |
+| `Pasted markdown.md` | NEEDS_REVIEW | Contains identifiable resume/job application material; retain privately in place, no public excerpts or transfer. |
+| `PROPER_SEMANTIC_CENTER_AND_N_SIDED_DIE_METHOD.md` | NEEDS_REVIEW | Proposed semantic centroid and regular-simplex mapping; mathematical and empirical applicability unverified. |
+| `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | KEEP | Whole-system pseudocode to bounded formal implementation contracts to code; potential provenance boundary pattern. |
+| `RADOVI.txt` | KEEP | 59-line ranked external paper leads on retrieval/utilization/evaluation; citations and novelty not independently verified. |
+| `README_UPDATED_WITH_DIAGRAMS.md` | KEEP | Historical governed universal seed kernel readme and diagram references; not current DT runtime evidence. |
+| `readme.md` | DELETE_CANDIDATE_BLOCKED | 25-byte placeholder text only; file's own deletion request is untrusted; no dependency/reference census. |
+| `Rune_Secrets_Unlocked_Cleaned.md` | NEEDS_REVIEW | Edited historical rune interpretation corpus; source author rights and redistribution scope unresolved. |
+| `runic_poetry_corpus (1).md` | DELETE_CANDIDATE_BLOCKED | Exact full-blob twin of unsuffixed historical poetry corpus; dependencies and rights not audited. |
+| `runic_poetry_corpus.md` | KEEP | Canonical historical-language poetry corpus with source-tradition distinctions; source and rights review outstanding. |
+- **Checkpoint:** 335 at least partly sampled; 65 pending initial review; next cursor `runic_poetry_reconstructed.md`.
