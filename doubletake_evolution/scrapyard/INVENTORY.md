@@ -1,14 +1,33 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; source: GitHub main tree `c5e1843e7302bb22200c5139eae0324930609c47`. Complete recursive path/blob **metadata** enumeration: 403 files under scrapyard/. Only the four explicitly reviewed items below were read; every other item remains PENDING_CONTENT_REVIEW. Filenames are not evidence of provenance or implementation. No private DT content reproduced.
+Updated 2026-11-01 UTC; latest checked GitHub main tree `0fb6935dee00ff615930848d7dc708572881414d` (no truncation). Recursive metadata: **405 files** under scrapyard/, including this self-referential INVENTORY.md (not included in its own immutable-blob ledger). **404 other file rows:** five fully reviewed items (three earlier historical, two incoming), two additional historical files sampled/partially reviewed, **397 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. Filenames are not evidence of provenance or implementation. No private DT content reproduced.
 
 ## Priority triage — IS-20261101-001
 
 - **Path:** `incoming/IS-20261101-001-versioned-history-replay-compatibility-gate.md`; **blob:** `12e38fd07323dbab379354507f16917e909d3677`.
 - **Provenance:** Internet Scout original source-linked synthesis, 2026-11-01. Directly reviewed note and independently checked primary Temporal documentation and Beldi's USENIX abstract.
-- **Disposition:** SOURCE_VALIDATED / PROPOSED_FOR_DIRECTOR_REVIEW; handoff `R-BORG-SCOUT-20261101-001` in RESEARCH_OFFLOAD.md. Retain. Replay testing detects code/history determinism mismatches, **not** cryptographic tampering; never bypass owner integrity disposition.
+- **Disposition:** SOURCE_VALIDATED / ACCEPTED_FOR_PLANNING (OUTWARD ONLY; NOT IMPLEMENTATION); handoff `R-BORG-SCOUT-20261101-001` in RESEARCH_OFFLOAD.md. Retain. Replay testing detects code/history determinism mismatches, **not** cryptographic tampering; never bypass owner integrity disposition.
 - **Source links:** https://github.com/temporalio/documentation/blob/main/docs/develop/safe-deployments.mdx ; https://github.com/temporalio/documentation/blob/main/docs/develop/python/best-practices/testing-suite.mdx ; https://www.usenix.org/conference/osdi20/presentation/zhang-haoran .
 - **Next falsifier:** Compare existing DT replay/integrity verifier against synthetic compatible/authorized-version/tampered fixtures; no production writes or replayed side effects. If DT already passes, reject new mechanism. Seek Director ACCEPT/DEFER/REJECT and later independently verified Ground. Current DT overlap remains unverified.
+
+## Priority triage — IS-20261101-002 (new this run)
+
+- **Path:** `incoming/IS-20261101-002-provenance-bound-mission-execution-receipts.md`; **blob:** `20dc7c82b0d6fd45827c6d7b1cb1091ee875bc09`; 10,148 bytes.
+- **Provenance:** Internet Scout's original public research synthesis (2026-11-01). Directly read full note; independently verified primary in-toto Statement v1 and Test Result predicate, SLSA v1.2 Build Provenance and verification guidance, and W3C PROV-O. Standards describe artifact/test provenance; adapting them to DT mission consumption is a *hypothesis*, not an existing standard protocol or proof of execution.
+- **Disposition:** `SOURCE_VALIDATED / PROPOSED_FOR_DIRECTOR_REVIEW`; stable handoff `R-BORG-SCOUT-20261101-002` in RESEARCH_OFFLOAD.md. **Retain**: addresses a different gap from historical replay: published mission versus actually consumed revision, output, independent Ground and later reuse. Distinct as a *question*, but overlap with existing DT receipt/assimilation owners (R-001/R-010/R-011) is material and implementation novelty remains UNVERIFIED.
+- **Primary sources:** https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md ; https://github.com/in-toto/attestation/blob/main/spec/predicates/test-result.md ; https://slsa.dev/spec/v1.2/build-provenance ; https://slsa.dev/spec/v1.2/verifying-artifacts ; https://www.w3.org/TR/prov-o/ .
+- **Specific research correction:** A signed receipt from a trusted boundary plus an independent verifier may establish a narrower authenticated claim; an unsigned self-authored receipt or public planning commit proves neither local consumption nor success. SLSA is for software *build* provenance, not agent execution; do not assert SLSA conformance for an adapted DT format.
+- **Next falsifier:** Identify existing authorized local mission consumer and evidence owner; run a read-only trace of published A versus actually consumed A, stale A after B publication, B never consumed, blocked mission, forged claim, and separate held-out output verification. Report `ALREADY_PRESENT` if existing receipt/observer covers all; `DELIVERY_UNVERIFIED` or `AUTHENTICITY_UNVERIFIED` if not observable. Do not add keys, write protected history, or claim a natural completed cycle from synthetic fixtures.
+- **Director feedback awaited:** proposal is not a new mission, implementation approval or proven DT improvement. Internet Scout should seek primary-source evidence of **independent observer trust** and evidence-to-outcome reuse, rather than more generic provenance schemas.
+
+## Director feedback on IS-20261101-001
+
+- **Disposition update:** `ACCEPTED_FOR_PLANNING / OUTWARD_ONLY` as recorded by Director (2026-11-01), with conditional task 7.7.1. This is not accepted implementation, no integrity-repair authority and no verified Ground. Director identified a possible category error between executable command-history replay and digest-bound immutable record verification. **Research follow-up:** find a version-aware, non-mutating canonicalization/digest discriminator with legitimate-version positive and tamper negative controls; avoid duplicate replay proposals.
+
+## Additional historical samples (retain; partial content review)
+
+- `AGENT_X_ASSIMILATOR_ATOMIC_TASKS.md` blob `80a3546fbfd9a7fe05f0e0bb5f61296dc80cb23b`: opening section of a historical atomic backlog sampled. It emphasizes reuse of existing assimilation owners and no parallel registry. **PARTIAL_REVIEW / RETAIN** as historical comparison, not active instructions; current parity unknown.
+- `AGENT_X_FINAL_SEMANTIC_AUTHORITY_CHAIN_OF_CUSTODY_END_TO_END_CLOSURE.md` blob `e93b5134c01f16fe47f9bcc962bc2f743d150558`: opening section of an old authority-chain closure prompt sampled. It distinguishes accepted authority from self-manufactured acceptance. **PARTIAL_REVIEW / RETAIN** as a negative-control principle, not executable instruction; current parity unknown.
 
 ## Historical items directly read (retain)
 
@@ -51,7 +70,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `3phasedev.md` | `ef61e28e721e40ce85f60ad7599c88d8814d0664` | 20327 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_ASSIMILATE_DYNAMIC_MCP (1).md` | `d04135e7cd0ff55cfdd57eb8051520d6b1575d5d` | 47952 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_ASSIMILATOR_ATOMIC_TASKS_REMAINING.md` | `18233b8bfad489623f1ef0d57cd5b0bbefeb83f2` | 78476 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_ASSIMILATOR_ATOMIC_TASKS.md` | `80a3546fbfd9a7fe05f0e0bb5f61296dc80cb23b` | 86288 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_ASSIMILATOR_ATOMIC_TASKS.md` | `80a3546fbfd9a7fe05f0e0bb5f61296dc80cb23b` | 86288 | PARTIAL_REVIEW; RETAIN |
 | `AGENT_X_ASSIMILATOR_COMPLETION_PROMPT.md` | `1e507c05b5d62ed998eea13d320ae8f4eab03013` | 32182 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_ASSIMILATOR_COMPLETION_PROMPTL.md` | `60efbfb2c003cfcf36cb1467a7c6e9d77c615eb6` | 30338 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v4.md` | `1d540d57e6af79c7d8cd5b674f15e3eac175a511` | 35699 | PENDING_CONTENT_REVIEW |
@@ -69,7 +88,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AGENT_X_FINAL_AGGRESSIVE_SLOP_ERADICATION_REMAINING_WORK.md` | `6fb91f710c3aa9565c464b6d75abff93ffd2d497` | 15205 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` | `8e8944909cd8b49d7575c16078ba22748fdc3c8a` | 86295 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_FINAL_MCP_CONTRACT_CLOSURE.md` | `20e7e0ab08fdc5e13294e2a81ce9eb3c4bdc7a0c` | 15468 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_FINAL_SEMANTIC_AUTHORITY_CHAIN_OF_CUSTODY_END_TO_END_CLOSURE.md` | `e93b5134c01f16fe47f9bcc962bc2f743d150558` | 57577 | PENDING_CONTENT_REVIEW |
+| `AGENT_X_FINAL_SEMANTIC_AUTHORITY_CHAIN_OF_CUSTODY_END_TO_END_CLOSURE.md` | `e93b5134c01f16fe47f9bcc962bc2f743d150558` | 57577 | PARTIAL_REVIEW; RETAIN |
 | `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE_CURRENT_MAIN.md` | `d0fdad0b352f944e837c9c8785ad2e6bbb730c50` | 101315 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE.md` | `2f5b495de7b5c436d87d9cafe75e28901c2e348c` | 58877 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_FINAL_SEMANTIC_FIRST_GAP_CLOSURE.md` | `38cb0850be0c841aca92aa94808494b22006db9f` | 25809 | PENDING_CONTENT_REVIEW |
@@ -286,7 +305,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `ICHING_WILHELM_TUNED_TO_V18_FULL_REWRITE.md` | `3b9e48687e1cf796848e54767e253705e15168e2` | 364100 | PENDING_CONTENT_REVIEW |
 | `IMPLEMENT_DETERMINISTIC_BORG_COLLECTIVE_RUNTIME_IN_DOUBLETAKE_v4.7.md` | `aa7bcc2f8153e76d51177f75f3a6e86b3e80071f` | 103708 | PENDING_CONTENT_REVIEW |
 | `IMPLEMENT_VON1_BORG_RUNTIME_IN_AGENT_X.md` | `35d7d4a3ac428ff38ca3ec514b32fc35f3fced1b` | 23105 | PENDING_CONTENT_REVIEW |
-| `incoming/IS-20261101-001-versioned-history-replay-compatibility-gate.md` | `12e38fd07323dbab379354507f16917e909d3677` | 9790 | SOURCE_VALIDATED; PROPOSED_FOR_DIRECTOR_REVIEW |
+| `incoming/IS-20261101-001-versioned-history-replay-compatibility-gate.md` | `12e38fd07323dbab379354507f16917e909d3677` | 9790 | SOURCE_VALIDATED; ACCEPTED_FOR_PLANNING (OUTWARD ONLY) |
 | `job_convert_prompt.md` | `dc5e814e70ca836f20a1f864cf3b95160c150aa0` | 67924 | PENDING_CONTENT_REVIEW |
 | `LawZero_First_HR_Interview_Speaking_Script.md` | `6a5b6e8fa01809691b537ec09f48b509d8a36045` | 10307 | PENDING_CONTENT_REVIEW |
 | `LICENSE.md` | `1deb879a9d9fadb2866f109208faf286b2847465` | 3783 | PENDING_CONTENT_REVIEW |
@@ -429,6 +448,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | 199310 | PENDING_CONTENT_REVIEW |
 | `youtube_detection_neutral_architecture_v17.md` | `3387f7a74038e2c6155dce3702969351af3999fc` | 213206 | PENDING_CONTENT_REVIEW |
 | `zero_resolution_observation_genesis_of_distinction.md` | `b75eda1766f0896edc78f0c96b36483b36f05e9f` | 54203 | PENDING_CONTENT_REVIEW |
+
+| `incoming/IS-20261101-002-provenance-bound-mission-execution-receipts.md` | `20dc7c82b0d6fd45827c6d7b1cb1091ee875bc09` | 10148 | SOURCE_VALIDATED; PROPOSED_FOR_DIRECTOR_REVIEW |
 
 ## Recurring workflow
 
