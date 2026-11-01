@@ -1,9 +1,0 @@
-# Historical Harvest Task 03 — Canonical semantic evidence grounding
-
-**Provenance:** Astrocytech/Agent_X `main` audit `874bbe4268aca0539cbf8476f62444d704f2d555`, wave after `3887efe448edd223a00f94db324786d6a47a2d3b`. Historical design, not proof of present DT defect or authority. D01 digest: [DISTILLED_KNOWLEDGE.md](DISTILLED_KNOWLEDGE.md); original blob `046070224ecad6f037676438af00dcef130e9fa4`.
-
-**Historical owners:** `semantic/embedding_route.py`, `semantic_retrieval.py`, `semantic_index.py`, semantic execution/service, `_hp_mining.py`, `_hp_evidence.py`. Donors: `harvest_embedding.py`, `harvest_corpus.py`, `harvest_grounding.py`.
-
-**Mechanism:** Use one governed provider/router, corpus chunking, index and retrieval scope. Bind every evidence claim to source chunk, embedding specification, corpus/index identity and authorized scope. Missing scope fails closed; dimension mismatch, nonfinite vector, spec/role mismatch, incompatible index and synthetic ungrounded probes reject. No arbitrary vector→text reconstruction or parallel provider/cache. Deduplicate rediscovery into existing logical inventory; expose semantic inventory search via canonical route. Proposed findings remain non-authoritative until governed verification.
-
-**Falsifiable Ground:** Trace actual Harvest caller into canonical provider; verify source provenance resolves to chunks; index/spec drift invalidates incompatible cache; missing scope and malformed vector reject; paraphrased query retrieves known inventory; rediscovery merges rather than duplicates. Compare against existing baseline with negative tests. Remove donor production paths only after unique logic migrated and import/reference checks pass. Preserve source revision, changed owners, exact tests, semantic delta, rollback and unknowns. Current DT parity remains unverified.
