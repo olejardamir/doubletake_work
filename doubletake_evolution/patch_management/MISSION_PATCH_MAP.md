@@ -1,6 +1,6 @@
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `a7b6424ebaacc29acf3c2b42e5958209b39d2632`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `32d5e090376cd4560ba4cd91bf4376e1a9aea13c`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
@@ -164,3 +164,13 @@ These two code patches are preparation, not execution or Ground. No authority-bl
 - BPE-010/011/012 source SHA bindings remain current and exact old diff hunks match (2/2, 1/1, 1/1 respectively). Git apply, shell syntax and host tests were not executed. They remain PREPARED_UNTESTED.
 - Private BPE-001 rev2 source/test blobs match and six old hunks match; proposed public single-file patch publication was blocked by tool safety checks. No BPE-001 public patch was created and no source tests ran. 7.9.1 race negative remains unresolved. Private BPE-002 remains untested pending canonical chain-contract review.
 - Existing diagnostics BPE-008/009 are verification-only. Other authority, deployment and natural-case blockers retain their previously recorded triggers. This update records inspection, not additional implementation or Ground.
+
+## Patch Engineer reconciliation — 2026-11-01 (source-bound extensions)
+
+- Full latest mission re-enumerated: **22/22 numbered open steps mapped**, including four-level `4.2.2.2` and `4.2.2.3`; 0 new/unmapped. The 6 task areas and all existing authority, production deployment, natural-case, and independent Ground prerequisites remain unchanged. COMPL​ETED.md was read; no completed item was reopened or newly declared verified.
+- Confirmed local executor branch `feature/alphacode-provider` remains at `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`; BPE-003–007 are feature-branch implementations with reported, not independently rerun, guarded tests. No fresh result JSON for 010–014; no DT main or runtime integration claimed.
+- **BPE-010 rev2:** Added a skipped-middle-predecessor negative that old chain logic incorrectly accepts, plus reverse-insertion-order positive. Original implementation hunk and exact `receipts.py` source blob unchanged. New test file now has 93 lines. Status `PREPARED_UNTESTED`.
+- **BPE-013** (`PREPARED_UNTESTED`, depends on 011): Bind aggregate verdict fingerprint to `chain.chain_digest`; two distinct invalid chains with identical per-claim verdicts must have distinct verdict digests. Source target `models.py` blob `0f903b08461edce217c83a1feb324958affb159f` is a **predicted post-011** blob, not yet observed in DT. Exact dependency diff and patch hunks were checked in memory; actual Git apply/tests remain unrun.
+- **BPE-014** (`PREPARED_UNTESTED`, depends on 012): Include `chain_digest` and `verdict_digest` in CLI JSON for both valid and failed verification, preserving BPE-012 nonzero failure exit. Source target `cli.py` blob `903445b151774881d36eebe2651549759403cc81` is a **predicted post-012** blob, not yet observed in DT. Actual Git apply/tests remain unrun.
+- 013/014 are **supporting 7.9.2 evidence-trust packages**, not replacements for private BPE-002's distinct canonical proof-chain contract. 7.9.1 BPE-001 publication/tool block and race-safe containment Ground remain unresolved. Read-only BPE-008/009 remain diagnostic only. No authority-dependent or verification-only step is reclassified as code-complete.
+- Ready for local source-check sequence (not tested): **011 → 013** on `models.py`; **012 → 014** on `cli.py`; **010 rev2** on `receipts.py`. Any branch drift requires fresh source SHA and exact apply validation before selection.

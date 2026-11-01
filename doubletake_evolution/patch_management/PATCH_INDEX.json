@@ -270,7 +270,7 @@
       "file": "BPE-20261101-010.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
-      "patch_revision": 1,
+      "patch_revision": 2,
       "status": "PREPARED_UNTESTED",
       "target_branch": "feature/alphacode-provider",
       "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
@@ -292,10 +292,15 @@
       "validation": {
         "exact_source_blob_inspected": true,
         "old_hunks_matched_uniquely": true,
+        "all_diff_hunk_counts_validated": true,
+        "embedded_new_test_lines": 93,
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false
-      }
+      },
+      "patch_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
+      "script_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
+      "revision_reason": "Added discriminating three-receipt skipped-predecessor negative and reversed mapping order positive; same implementation hunk and source binding."
     },
     {
       "id": "BPE-20261101-011",
@@ -363,6 +368,86 @@
         "bash_syntax_checked": false,
         "host_tests_executed": false
       }
+    },
+    {
+      "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "SOURCE_DIFF_ONLY_NO_SECRETS_OR_PROTECTED_RUNTIME_DATA",
+      "last_error": null,
+      "id": "BPE-20261101-013",
+      "summary": "Bind aggregate verdict digest to exact receipt-chain digest; reject equal fingerprint for distinct invalid chains",
+      "file": "BPE-20261101-013.sh",
+      "priority": 6,
+      "depends_on": [
+        "BPE-20261101-011"
+      ],
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/models.py": "0f903b08461edce217c83a1feb324958affb159f"
+      },
+      "source_blob_basis": "PREDICTED_POST_BPE_011_UNCOMMITTED; derived from exact existing diff, SHA-1 Git blob independently recomputed and checked against current original",
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/models.py",
+        "tools/doubletake_evolve/claim_receipt/test_verdict_chain_binding.py"
+      ],
+      "script_blob_sha": "d9fe810e8a39849f8bed88eca934b8f5015e0f59",
+      "validation": {
+        "dependency_diff_hunks_uniquely_matched": true,
+        "post_dependency_blob_computed": true,
+        "source_hunk_context_simulated": true,
+        "all_diff_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      }
+    },
+    {
+      "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "SOURCE_DIFF_ONLY_NO_SECRETS_OR_PROTECTED_RUNTIME_DATA",
+      "last_error": null,
+      "id": "BPE-20261101-014",
+      "summary": "Expose receipt chain and aggregate verdict digests in CLI JSON output for independent proof identity",
+      "file": "BPE-20261101-014.sh",
+      "priority": 7,
+      "depends_on": [
+        "BPE-20261101-012"
+      ],
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/cli.py": "903445b151774881d36eebe2651549759403cc81"
+      },
+      "source_blob_basis": "PREDICTED_POST_BPE_012_UNCOMMITTED; derived from exact existing diff, SHA-1 Git blob independently recomputed and checked against current original",
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/cli.py",
+        "tools/doubletake_evolve/claim_receipt/test_cli_proof_digest_output.py"
+      ],
+      "script_blob_sha": "5707ff03493808bb5736761fe828223bbd3c025e",
+      "validation": {
+        "dependency_diff_hunks_uniquely_matched": true,
+        "post_dependency_blob_computed": true,
+        "source_hunk_context_simulated": true,
+        "all_diff_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      }
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -398,12 +483,12 @@
     "existing_patches_reconciled": 10,
     "existing_source_integrations_observed": 5,
     "independent_tests_rerun": 0,
-    "new_patches": 0,
-    "revised_patches": 0,
+    "new_patches": 2,
+    "revised_patches": 1,
     "verified_patches": 0,
     "reported_feature_branch_integrations": 5,
-    "source_hunk_checks": "BPE-001: 6/6, BPE-010: 2/2, BPE-011: 1/1, BPE-012: 1/1; no actual git apply check",
-    "notes": "BPE-001 prepared private rev2 source and test hashes still match feature branch; attempted code-bearing public publication rejected by tool safety checks, so no patch published. Pending 010–012 still source-compatible, no new execution results. No worker schedule changes."
+    "source_hunk_checks": "BPE-010 rev2: 2 existing hunks + 93-line test; BPE-011/012: current-source hunks; BPE-013/014: dependency-derived source blobs and exact old hunk contexts checked; no actual git apply --check",
+    "notes": "Two new source-specific evidence-identity patches 013/014 published; 010 strengthened with skipped-middle-receipt negative and input-order positive. All three remain PREPARED_UNTESTED. Feature branch unchanged; no new local result JSON. Owner-authorized publication, not runtime authority."
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
