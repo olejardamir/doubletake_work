@@ -2,6 +2,12 @@
 
 ## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
 
+- **Prior path:** `doubletake_evolution/scrapyard/VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL (1).md`; **prior blob SHA:** `0392337815e267f06e6610c67ad8788888082b41`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `b5051644666aacfcc464afefb3de80f400e07ead`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md` with identical full Git blob SHA `0392337815e267f06e6610c67ad8788888082b41`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
+
+
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
 - **Prior path:** `doubletake_evolution/scrapyard/universal_job_post_template_for_resume_creation_10_10_v2 (1).md`; **prior blob SHA:** `f2c08f203cdce88edfbfbced56e05e9bc0f2102a`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `3a09daebbd77cca8479913162bfcc80f683bcdf0`.
 - **Retained canonical:** `doubletake_evolution/scrapyard/universal_job_post_template_for_resume_creation_10_10_v2.md` with identical full Git blob SHA `f2c08f203cdce88edfbfbced56e05e9bc0f2102a`. The five current Director documents had no exact numbered-path references; indexed repository filename-stem searches returned no matches. Unindexed/external references cannot be excluded. Exact original is recoverable from Git history; no unique bytes or private DT history removed.
 
