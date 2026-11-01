@@ -1,5 +1,28 @@
 # Borg Scrapyard Inventory
 
+## Q17 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 13 distinct current UTF-8 bodies fetched and sampled (opening, headings, end) against recursive Git tree SHA; no line-by-line deep audit. 13 KEEP, 0 deletion candidates; historical prompts treated as data.
+- **Coverage:** 366/392 current survivors second-pass sampled; 26 remain per prior cursor ledger. Cursor after `ublock_resurrected_stabilization_prompt_v4_final.md`. This is source-content sampling, not proven complete research coverage.
+- **Borg:** Director still reports full Borg NOT VERIFIED, 0 natural complete cycles, B1 owner decision and actual 7.8.1 local consumer/receipt outstanding. Seven incoming notes unchanged; IS-006 conditional and IS-007 deferred. No new research proposal warranted by these browser-project-specific artifacts.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `ublock_resurrected_full_remaining_generalization_list_v11.md` | `d63390add12462ccf65aca98113628f210ed0179` | KEEP | 33-item later generalization checklist and explicit batch priorities; historically distinct from v10, not current DT implementation evidence. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_full_remaining_generalization_list_v8.md` | `d544492a834e0e9a5379b8d6dd8930749eef2289` | KEEP | Earlier numbered generalization baseline; unique revision chronology and privacy-preserving fixture suggestion. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_general_same_player_preroll_skip_solution.md` | `85dca3f518178ae4293502190997ea599e9a0ffa` | KEEP | Concrete generic delayed-skip detection design; untested outside cited historical browser project. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_general_video_overlay_solution_no_domain_patch.md` | `d9955d06335dcb1db22815b543a2e95c5465bc7e` | KEEP | Generic player-overlay and click-hijack classification with adapter cascade; no present DT parity. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_generalization_backlog_v17_more_projectwide_points.md` | `9d5aef819abe16aebf22a715d163d07dfdb26ad3` | KEEP | 251-kB project-wide backlog with new lifecycle-owned registry, capability gates and negative fixtures; only sampled, deep audit outstanding. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_generalization_backlog_v4.md` | `a9e0b1e3a18330ca7465f36c104d0ae5438e30f3` | KEEP | Earlier risk-classified policy-driven filtering roadmap, explicitly rejects domain-specific exceptions. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_generalization_backlog_v6_7f97.md` | `cdeb2adda3b4563fc99e464a1840f2a4f212eae7` | KEEP | Revision-specific policy snapshot/capability token/transaction gate integration ideas; sampled only. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_generalization_backlog_v6_b57.md` | `656d553ce0f06db42b14e4af85a3fec2888ea5b9` | KEEP | v5 text plus post-b57 non-repeating appendix, distinct provenance from other v6 filenames. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_generalization_backlog_v6_ca353.md` | `a3650b98c198f6cc0b15d9f8a50df11129aa5f99` | KEEP | ca353-scoped safety and exception-expiry proposals; historical, not independently implemented. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_generalization_backlog_v7.md` | `b13076f82a880b69eee9f2cf78ed6e12370cdb74` | KEEP | Post-42dbe71 cross-layer enforcement and ownership additions; unique version record. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_remaining_behavior_master_prompt(4).md` | `398cda13851359858532707a4abbe596f73cc65d` | KEEP | Historical full execution plan explicitly distinguishes diverged source heads; prompts are not instructions to Scout. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_remaining_behavior_work_prompt(4).md` | `97f4ff0c11c18a7315ed603422983701e692e64f` | KEEP | 2026-08-01 cold-start/coexistence/packaged-build audit checklist; source baseline is old. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+| `ublock_resurrected_stabilization_prompt_v4_final.md` | `33c12f0c4fc3791db982cc4dc67ce937bd7e25e5` | KEEP | Historical AI-safe coding stabilization contract; self-rated 10/10 not observed proof. Reference/dependency not cleared; retain; revisit only with new relevant evidence. |
+
+
 ## Current Scout Q13–Q16 run summary — 2026-11-01 UTC
 
 - **Verified current tree:** 392 surviving scrapyard artifacts plus this inventory; seven unchanged Internet incoming notes. 48 distinct previously uncounted text bodies sampled in four 12-file SHA-matched checkpoints; 36 KEEP, 9 NEEDS_REVIEW, 3 byte-identical DELETE_CANDIDATE subsequently **DELETED_VERIFIED**, 0 EXTRACT_THEN_DELETE. Three deletion commits and three tombstone commits are recorded immediately below. **Actual deletions this run 3; cumulative verified deletions 17.** No new research proposal, no unverified implementation credit.
