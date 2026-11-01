@@ -1,6 +1,11 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; latest checked GitHub main tree `11c2606a953989ffd1206c1893c667c68cbdff8a` (no truncation). Recursive metadata: **398 files** under scrapyard/, including this self-referential INVENTORY.md (excluded from its own immutable-blob ledger). **397 other file rows:** eight fully reviewed items (five historical, three incoming), two historical items partially reviewed, **387 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. Filenames are not evidence of provenance or implementation. No private DT content reproduced.
+Updated 2026-11-01 UTC; latest checked GitHub main tree `88b30430bcafdf501cf2ae88d0d153fa71a6651d` (no truncation). Recursive metadata: **398 files** under scrapyard/ including this INVENTORY.md; **397 other file rows**. **47 items have at least partial content/source inspection** (including 36 historical files and the new incoming note reviewed this run); **350 still PENDING_CONTENT_REVIEW**. Metadata enumeration is not content inspection. No private DT material reproduced. Deletions recorded cumulatively: 9; deletions this run: 0.
+
+## Reconciled prior deletion not yet in inventory (observed, not performed in this run)
+
+- `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN (1).md`, old blob `e745f1ef36dd90d9e01186f61822a7d60ef46ef2`, was removed at [commit `1b1fba4c`](https://github.com/olejardamir/doubletake_work/commit/1b1fba4cf483345bb16ab43a0229b2b7804fbc78) before this pass. Canonical unsuffixed file with identical blob remains in scrapyard. Original content recoverable from Git history. Current source-tree comparison confirmed the numbered copy is absent. Prior worker reported identical-copy rationale; **full cross-repository reference census remains unverified**, so do not treat this as a fresh authorization for other removals.
+- **Deletion accounting:** 8 previously recorded tombstones + 1 reconciled prior deletion = 9 known deletions. **Actual deletions by this run: 0**; no additional safe candidates established.
 
 ## Verified cleanup run — 2026-11-01 UTC
 
@@ -15,6 +20,13 @@ Updated 2026-11-01 UTC; latest checked GitHub main tree `11c2606a953989ffd1206c1
   - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (7).md` → `63a66b6e880fbcc375d6b0be9a1db2e0ad150cad`
   - `DOUBLETAKE_OPENCODE_ACP_LSP_ADOPTION_PLAN_REDUCED (8).md` → `5fe824bf0479c97b2b974d35a9d2259fb5e65f18`
 - **Cleanup classifications:** 8 DELETE (byte-identical redundant copies); 1 KEEP (canonical), other unreviewed files NEEDS_REVIEW. Removed items have original blob `c477c0ba0c0d6b8af85fbd5c9b2a23f95a4ace95`. No contents from private DT published. More duplicate groups require separate reference and dependency checks; no blanket authorization.
+
+## Priority triage — IS-20261101-004 (2026-11-01 UTC)
+
+- **Path:** `incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md`; **blob:** `bda6bf0124e8a222383f94d1d707b4314e207a49`; source commit `f42daea4da3be333db3785ce2e9b2dd126ef612d`. Internet Scout original 2026-11-01 note directly read; retained.
+- **Source validation:** independently read official [IETF RFC 9334](https://datatracker.ietf.org/doc/html/rfc9334) (attestation freshness versus underlying measurement freshness; nonce/epoch/trust boundary) and [Cornell Chandra–Toueg technical-report abstract](https://ecommons.cornell.edu/entities/publication/7948ff49-7263-49f8-a29b-d062e7cbb240) (failure-detector completeness/accuracy, not a DT theorem). No full Cornell paper replication or live DT experiment.
+- **Disposition:** `SOURCE_VALIDATED / KEEP / REFINEMENT_OF_R-BORG-SCOUT-20261101-002`, **not a new independent implementation proposal**. Mission 7.8.1 already includes stale/forged/unconsumed A/B negatives; the *additional precise falsifier* is a valid old B receipt replayed as a **new B run** (same revision, different run), plus delayed acknowledgement classified UNKNOWN rather than conclusive failure. No current DT false-positive baseline or independent host consumer evidence exists.
+- **Director feedback/next test:** Existing owner/evaluator, isolated/read-only, run P1 (observed B read only), N4 (old B receipt replayed as fresh B), N5 (delayed/clock-uncertain acknowledgement UNKNOWN), N6 (B read then authorization blocked). Require run-local observation identity/freshness **if already present**; no new attester, signer, keys, host permissions or history edits. If current baseline already rejects N4 and preserves N5 UNKNOWN, mark ALREADY_PRESENT and avoid code change. Offload refinement `R-BORG-SCOUT-20261101-004` attaches to existing 7.8 research; DT Ground remains unverified.
 
 ## Priority triage — IS-20261101-001
 
@@ -109,6 +121,27 @@ Each source file was fetched and its actual sections and evidence claims inspect
 
 **Cursor:** checkpoint B complete; continue to technical candidates not yet reviewed. No new implementation authorization.
 
+## Progressive review checkpoint C — 2026-11-01 UTC (12 additional contents inspected; 36 historical files this run)
+
+Actual text of all twelve items was fetched and inspected at source/section level. KEEP 6, NEEDS_REVIEW 6. No new deletion authorized; proprietary-license and unrelated-material provenance are retained. These documents do not confer execution authority.
+
+| File | Disposition | Finding / revisit |
+| --- | --- | --- |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v1.md` | KEEP | Three-phase Ground, safe concurrency, driver handoff and no false 100% acceptance; historical prompt. |
+| `DT_GOVERNED_INGESTION_FINAL_CLOSURE_v7.md` | KEEP | Historical governed ingestion acceptance with explicit activation/authority distinction. |
+| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | KEEP | Donor-to-canonical-owner integration order; no new parallel stack. |
+| `TMP_MATRIX_REGISTER_COMPARISON.md` | KEEP | Evidence-register comparison semantics and BLOCKED versus inferred distinctions. |
+| `README.md` | NEEDS_REVIEW | Unrelated rune CLI documentation; provenance and DT transfer unestablished. |
+| `LICENSE.md` | NEEDS_REVIEW | Proprietary evaluation-only license; preserve legal provenance, do not redistribute or delete without owner review. |
+| `herdr_agent_x_port_plan.md` | KEEP | Historical external orchestration port sketch; actual source/current overlap not checked. |
+| `openshell_not_prompt.txt` | NEEDS_REVIEW | External sandbox integration notes; safety/licensing/current DT comparison not checked. |
+| `reverse-skill_not_prompt.txt` | NEEDS_REVIEW | External skill extraction notes; unverified overlap and permissions. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v3_M_CLOSURE.md` | KEEP | Criterion M proactive capability participation and negative controls; historical execution instructions. |
+| `Harness_not_prompt.txt` | NEEDS_REVIEW | Single external model-router link; source and transfer not checked. |
+| `cognitive_books.txt` | NEEDS_REVIEW | Reading list with subjective ratings; not source-validated research or proof. |
+
+**Cursor:** checkpoint C complete, 36 previously unreviewed historical files inspected in three sequential batches. Next pass starts after these newly classified rows; prioritize other small unique technical files and SHA-duplicate groups with verified reference checks.
+
 ## Complete path/blob metadata ledger
 
 Each row gives relative path, exact blob SHA, size and current triage status. PENDING_CONTENT_REVIEW does not mean unimportant; provenance/meaning/next test are unknown until read.
@@ -147,7 +180,6 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v5.md` | `70067f589f82b65d401982296c441a552a2d65f4` | 38192 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_BANK_OF_CANADA_ARCHITECTURE.md` | `a749fc62ef2508dca944234bd0706eadd39a8864` | 150099 | PENDING_CONTENT_REVIEW |
 | `AGENT_X_CAPABILITY_DISTILLATION_DIRECT_IMPLEMENTATION.md` | `9a0c4867c262f4f036eab56a92f13a256af3c194` | 30446 | PENDING_CONTENT_REVIEW |
-| `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN (1).md` | `e745f1ef36dd90d9e01186f61822a7d60ef46ef2` | 29341 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN.md` | `e745f1ef36dd90d9e01186f61822a7d60ef46ef2` | 29341 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `agent_x_commit_76ab330_remaining_work_definition_of_done.md` | `0d65332b6c2142ea49ceec6c60512785238784f3` | 29162 | PENDING_CONTENT_REVIEW |
 | `agent_x_commit_7b6cfbc_final_proof_gap_closure_prompt.md` | `105b6666fd99331363d0a5adc2eacf54b3ab4406` | 27539 | PENDING_CONTENT_REVIEW |
@@ -228,7 +260,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `CARD_SYSTEM_REBALANCED_10_OF_10.md` | `2e359ab4b1d2c036c9cce855e58140d0eaea00f4` | 101341 | PENDING_CONTENT_REVIEW |
 | `CARD_SYSTEM_REBALANCED.md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `CODEX_FIX_UBLOCK_DYNAMIC_FILTERING_POPUP.md` | `1acd2ff56aead8e1a11555aa590f620f3c22bb51` | 25040 | PENDING_CONTENT_REVIEW |
-| `cognitive_books.txt` | `a4f0a4682aca30268d57e4e442ec25f99be02dde` | 1752 | PENDING_CONTENT_REVIEW |
+| `cognitive_books.txt` | `a4f0a4682aca30268d57e4e442ec25f99be02dde` | 1752 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Constructible_Computation_Future_Iteration_Prompt_v9.md` | `5656233491430a0b6834774b2754992709cb7c93` | 23658 | PENDING_CONTENT_REVIEW |
 | `Constructible_Computation_Mathematics_MONOGRAPH_FINAL(1).md` | `ae2f43effdd309ef07516b2385dd8c158cc1224f` | 93853 | PENDING_CONTENT_REVIEW |
 | `Constructible_Computation_Mathematics_v56.md` | `50b9f4adeefda8075baaf8c32a87c6872ef43322` | 151949 | PENDING_CONTENT_REVIEW |
@@ -245,7 +277,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DONOR_MODULE_DISPOSITION_MATRIX.md` | `b634d27a527e107e9af6df3929a96b42ac616498` | 1901 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | `552fef41ec2d1166f1e058eaa2de72ef8e574263` | 16379 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | `fde46435d106157f8ac884deb3f7dc1f6b3d02d3` | 14605 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v3_M_CLOSURE.md` | `df5ff11c9b1d5d5aa8f372b4d426199266b7e1cf` | 12616 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v3_M_CLOSURE.md` | `df5ff11c9b1d5d5aa8f372b4d426199266b7e1cf` | 12616 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` | `1f718705759c44afd3125471274dbe1aa3cc0464` | 26284 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v5_OPENCODE_LLM_ONLY_FINAL_CLOSURE.md` | `701737f94c0fe740275b6c7693f15361d4a87e81` | 38494 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v6_SEMANTIC_INTENT_IR_FINAL_M_CLOSURE.md` | `8a93e015a27ef65b36272508b68c053f99d15df8` | 82648 | PENDING_CONTENT_REVIEW |
@@ -300,7 +332,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_FINAL_CLOSURE_v1.md` | `944f1d0e4d607e78809a3a33c27109471aea26df` | 73305 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_SKILLGYM_NATIVE_ASSIMILATION_PROMPT_10_10.md` | `bd33072bbdbfa019775fbac6f60f94b1d3784245` | 45082 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_STRONGEST_LINK_ASSIMILATION_CORPUS.md` | `e2c18892ed9d996845dfa7d203be421626209267` | 20020 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v1.md` | `c4e261f6390a06a6fbfcd8809bec2da6a5817034` | 12980 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v1.md` | `c4e261f6390a06a6fbfcd8809bec2da6a5817034` | 12980 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v3_UNIVERSAL_EVOLUTION_ADOPTION.md` | `59a9712b0a52d051b1300f1aaef1c323a6dadd76` | 26034 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_THREE_PHASE_EVOLUTION_MIGRATION_MISSION_v3_EXCLUSIVE.md` | `09137b4cc4d563893c9f6767df6a1689dcd6336a` | 35925 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_TRANSFERABLE_PROJECT_EVOLUTION_IMPLEMENTATION_PROMPT_v1.md` | `5061a3e8b495fffd501f2a1af18f7515c169a3a5` | 40025 | PENDING_CONTENT_REVIEW |
@@ -311,7 +343,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DT_Evolution_Prompt_Governed_Ingestion_Agent_v2.md` | `35f4d60edfe03862f8e6fa93a7f1d01d4e9f1c6a` | 37460 | PENDING_CONTENT_REVIEW |
 | `DT_Evolution_Prompt_Governed_Ingestion_Agent_v3_10of10.md` | `36d5d02267d83ba10f837dc81157babf612fb087` | 79552 | PENDING_CONTENT_REVIEW |
 | `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md` | `4a84803867f94f3b2cb2e12e1ecef88a4fcd0228` | 42449 | PENDING_CONTENT_REVIEW |
-| `DT_GOVERNED_INGESTION_FINAL_CLOSURE_v7.md` | `8f1122d490a4d0155c811130e4cd21c8b3dfa96d` | 12560 | PENDING_CONTENT_REVIEW |
+| `DT_GOVERNED_INGESTION_FINAL_CLOSURE_v7.md` | `8f1122d490a4d0155c811130e4cd21c8b3dfa96d` | 12560 | CONTENT_REVIEWED; KEEP |
 | `DT_GOVERNED_INGESTION_REMAINING_WORK_v5.md` | `075a9675e9b28e64e2504f6c657300091d2ce57b` | 44501 | PENDING_CONTENT_REVIEW |
 | `DT_GOVERNED_INGESTION_REMAINING_WORK_v6.md` | `5ed5545fc7136d10c16e64ae9b3c4b07fbe9306e` | 14818 | PENDING_CONTENT_REVIEW |
 | `DT_GOVERNED_INGESTION_V4_SINGLE_ACTIVE_MASTER_CORRECTED.md` | `eadf738943f8eea95b326d61da844b293a906b9e` | 44752 | PENDING_CONTENT_REVIEW |
@@ -359,8 +391,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `Glyphser_Thirty_Second_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `0d64f8cc7a00b25d02b5ce51b00350d08431b405` | 77842 | PENDING_CONTENT_REVIEW |
 | `Glyphser_Twenty_Fifth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `d7d335cbc3a36c5872d9a69701326c2c6557dab6` | 81825 | PENDING_CONTENT_REVIEW |
 | `Glyphser_Twenty_Fourth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `35aa611c2a0edf9779a71c192d4c758b058d4479` | 74976 | PENDING_CONTENT_REVIEW |
-| `Harness_not_prompt.txt` | `51c5fb30f22bf8c0b2f615a05ceb862532c40d63` | 74 | PENDING_CONTENT_REVIEW |
-| `herdr_agent_x_port_plan.md` | `64b923c39039486088c274b3e3754cf4fda92abc` | 1599 | PENDING_CONTENT_REVIEW |
+| `Harness_not_prompt.txt` | `51c5fb30f22bf8c0b2f615a05ceb862532c40d63` | 74 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `herdr_agent_x_port_plan.md` | `64b923c39039486088c274b3e3754cf4fda92abc` | 1599 | CONTENT_REVIEWED; KEEP |
 | `hybrid_outside_feedback_adaptive_jumping_64hex_blueprint_v30.md` | `173ce3613eec824aaf33a1984833ed165c5b5424` | 90754 | PENDING_CONTENT_REVIEW |
 | `hybrid_outside_feedback_adaptive_jumping_64hex_blueprint_v31.md` | `0725818531b17fde9bfe8b00b7522b415b579b5d` | 111421 | PENDING_CONTENT_REVIEW |
 | `ICHING_65_HUMAN_INTERPRETATIONS_FROM_V18_WITH_ORIGINAL_TITLES.md` | `d23a012ba93550c4732d1c388956b479ce7b64ae` | 18797 | PENDING_CONTENT_REVIEW |
@@ -370,7 +402,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `incoming/IS-20261101-001-versioned-history-replay-compatibility-gate.md` | `12e38fd07323dbab379354507f16917e909d3677` | 9790 | SOURCE_VALIDATED; ACCEPTED_FOR_PLANNING (OUTWARD ONLY) |
 | `job_convert_prompt.md` | `dc5e814e70ca836f20a1f864cf3b95160c150aa0` | 67924 | PENDING_CONTENT_REVIEW |
 | `LawZero_First_HR_Interview_Speaking_Script.md` | `6a5b6e8fa01809691b537ec09f48b509d8a36045` | 10307 | PENDING_CONTENT_REVIEW |
-| `LICENSE.md` | `1deb879a9d9fadb2866f109208faf286b2847465` | 3783 | PENDING_CONTENT_REVIEW |
+| `LICENSE.md` | `1deb879a9d9fadb2866f109208faf286b2847465` | 3783 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (1).md` | `ac2979dd3253470c02db05a082f48e77cdd6f0a8` | 27398 | PENDING_CONTENT_REVIEW |
 | `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (2).md` | `81554c9353a7ba4f7f660bd18971ef353369a85c` | 27486 | PENDING_CONTENT_REVIEW |
 | `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES (3).md` | `7ef7c0fc2042d26bbe2ff225df97e077698bee55` | 28408 | PENDING_CONTENT_REVIEW |
@@ -390,7 +422,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` | `92f3476aa830db37520d795afcb2b1df48719d9d` | 30691 | PENDING_CONTENT_REVIEW |
 | `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` | `3a1cde51997351586eeffe8a006f3a19fecffae0` | 123239 | PENDING_CONTENT_REVIEW |
 | `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` | `223ea1748251cb0c08d6fd65d4de7affe71651d3` | 111689 | PENDING_CONTENT_REVIEW |
-| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `4a5682905e5f21f3b0a5a4e3ab552c27ce51fa8c` | 2237 | PENDING_CONTENT_REVIEW |
+| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `4a5682905e5f21f3b0a5a4e3ab552c27ce51fa8c` | 2237 | CONTENT_REVIEWED; KEEP |
 | `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.1.md` | `8eabf55583193601aae032b1960ca9382ef9e03a` | 101769 | PENDING_CONTENT_REVIEW |
 | `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.2_INTERMEDIATE.md` | `f2573f079b944409df51fd7c8eba6c36beaa4dce` | 106008 | PENDING_CONTENT_REVIEW |
 | `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.6_CHECKPOINT.md` | `e393f51ae737c7b2b3019879c94fc1329c7cdaa2` | 27537 | PENDING_CONTENT_REVIEW |
@@ -427,7 +459,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `no_primitive_boundary_boolean_logic_paper_v0.4_proof_audited.md` | `466987ab877e15c9eda8c4dc0814a7b9786d37dc` | 58737 | PENDING_CONTENT_REVIEW |
 | `non_collapsing_adaptive_jumping_64hex_blueprint_v26.md` | `ba73dba5e4391a501e84a4491463c06c06df6a0b` | 65498 | PENDING_CONTENT_REVIEW |
 | `ontario_anal_fissure_clinics_expanded_175_locations.md` | `e9da2f9df2f3c92aecaa02654379ea0c5e7b36cd` | 65718 | PENDING_CONTENT_REVIEW |
-| `openshell_not_prompt.txt` | `3015885a7b72feb88035a2fa4e91500b0718ae04` | 5953 | PENDING_CONTENT_REVIEW |
+| `openshell_not_prompt.txt` | `3015885a7b72feb88035a2fa4e91500b0718ae04` | 5953 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | 28654 | PENDING_CONTENT_REVIEW |
 | `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | 54225 | PENDING_CONTENT_REVIEW |
 | `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | `943cbbdb59a9382f04cf924a3920f9e29c55aa15` | 294843 | PENDING_CONTENT_REVIEW |
@@ -439,8 +471,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `RADOVI.txt` | `154f3242ccdbe941ba58adb26afe3da13910cb45` | 13514 | PENDING_CONTENT_REVIEW |
 | `README_UPDATED_WITH_DIAGRAMS.md` | `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414` | 13235 | PENDING_CONTENT_REVIEW |
 | `readme.md` | `51adebeca5cd2cb72d39e6ea3a344b3b0cbaa182` | 25 | PENDING_CONTENT_REVIEW |
-| `README.md` | `c206eba55f584b77a28b2019e26cf14ec98095e1` | 4158 | PENDING_CONTENT_REVIEW |
-| `reverse-skill_not_prompt.txt` | `fbb6188f41ee47eb28e10536f44c9e5b0584c60b` | 6104 | PENDING_CONTENT_REVIEW |
+| `README.md` | `c206eba55f584b77a28b2019e26cf14ec98095e1` | 4158 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `reverse-skill_not_prompt.txt` | `fbb6188f41ee47eb28e10536f44c9e5b0584c60b` | 6104 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` | 115118 | PENDING_CONTENT_REVIEW |
 | `runic_poetry_corpus (1).md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | PENDING_CONTENT_REVIEW; SAME_BLOB |
@@ -450,7 +482,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `secrets_to_poetry_die_transform.md` | `bd9f1c25ced4263f7e9616960b47a31130bb623f` | 131503 | PENDING_CONTENT_REVIEW |
 | `STABLE_Wave_MX5_Scientific_Paper_v3.md` | `931c2c93edc01386575b1b4675ce5fc460e9f3e6` | 72526 | PENDING_CONTENT_REVIEW |
 | `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | `7e0c4001045de0d8ed88a2e9b8f4b5778438e92b` | 178714 | PENDING_CONTENT_REVIEW |
-| `TMP_MATRIX_REGISTER_COMPARISON.md` | `cd5656a8d7e381cd685beab8893672005145d752` | 3985 | PENDING_CONTENT_REVIEW |
+| `TMP_MATRIX_REGISTER_COMPARISON.md` | `cd5656a8d7e381cd685beab8893672005145d752` | 3985 | CONTENT_REVIEWED; KEEP |
 | `TUI.txt` | `b373ef8a2950523c692984e12b6c81db63a736a5` | 20482 | PENDING_CONTENT_REVIEW |
 | `ublock_popup_ui_documentation_10_00_final_audited (1).md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | 84859 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `ublock_popup_ui_documentation_10_00_final_audited.md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | 84859 | PENDING_CONTENT_REVIEW; SAME_BLOB |
@@ -514,6 +546,8 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `incoming/IS-20261101-002-provenance-bound-mission-execution-receipts.md` | `20dc7c82b0d6fd45827c6d7b1cb1091ee875bc09` | 10148 | SOURCE_VALIDATED; ACCEPTED_FOR_PLANNING (OUTWARD ONLY) |
 
 | `incoming/IS-20261101-003-entity-bound-evidence-assimilation-falsifier.md` | `341a52d9fe1d950865bf459b27343e071b6b0e37` | 9693 | SOURCE_VALIDATED; PROPOSED_FOR_DIRECTOR_REVIEW |
+
+| `incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md` | `bda6bf0124e8a222383f94d1d707b4314e207a49` | 9632 | SOURCE_VALIDATED; KEEP; REFINEMENT_OF_002 |
 
 ## Recurring workflow
 
