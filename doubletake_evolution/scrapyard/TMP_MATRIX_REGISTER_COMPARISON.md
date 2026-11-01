@@ -1,80 +1,18 @@
-# TEMP PROMPT — Complete the closure matrix's register-disposition comparison
+# Historical temporary closure-matrix register comparison — distilled 2026-11-01
 
-Status: in progress
-Unit: TASK_5_EVIDENCE_CLOSURE_MATRIX (FIC-L1-PLAN-915)
-Phase: 2 (strengthen/repair existing behavior)
-Repo: /home/glompy/Desktop/OTHER_PROJECTS/DT, branch `main` only
+**Original blob:** `cd5656a8d7e381cd685beab8893672005145d752` (recover full instructions from Git history). **Original context:** `TASK_5_EVIDENCE_CLOSURE_MATRIX / FIC-L1-PLAN-915`, DT `main`, historical local path `tools/doubletake_evolve/governed_ingestion/closure_matrix.py`. The source claimed status *in progress*, **not** verified complete or applicable to current private DT. Treat as archived defect/test case, not a runnable mission.
 
-## Why this unit
+## Specific failure and proposed invariant
 
-`docs/governed_agent/evidence_register.md` declares five disposition tokens:
-`DEMONSTRATED_SYNTHETIC`, `INFERRED`, `DEFERRED`, `EXTERNALLY_SCOPED`,
-`BLOCKED`. `closed_matrix._finish_row` compares only
-`DEMONSTRATED_SYNTHETIC`, `DEFERRED` and `EXTERNALLY_SCOPED`; `BLOCKED` and
-`INFERRED` fall through to `register_agrees = None`. The committed matrix
-therefore prints `register_agrees: null` for G25 even though the register says
-`BLOCKED` and the matrix says `PARTIAL`.
+Evidence register vocabulary: `DEMONSTRATED_SYNTHETIC`, `INFERRED`, `DEFERRED`, `EXTERNALLY_SCOPED`, `BLOCKED`. Historical `closed_matrix._finish_row` reportedly compared only the first, third and fourth tokens, so `BLOCKED` and `INFERRED` produced `register_agrees: null`; G25 had register `BLOCKED` versus matrix `PARTIAL`. Requirement: independent matrix and WP15 register must compare dispositions, **without weakening any gate or changing row statuses**.
 
-FIC-L1-PLAN-915 requires: "The matrix compares its independent result with the
-WP15 evidence register's dispositions and records disagreements." A token that
-is never compared leaves that requirement incomplete. The defect is not a gate
-weakening: it makes the comparison stricter, and it changes no row status.
+Proposed comparison semantics: `BLOCKED`/`INFERRED` agree only with non-PASS `DEFERRED`, `PARTIAL` or `MISSING_EVIDENCE` (like `DEFERRED`); known mismatches yield `False` plus `register_disposition_disagrees:<token>`; any unknown non-null token yields `False` plus `register_disposition_unknown:<token>`; absent disposition stays `None`.
 
-## Bounded steps
+## Reproduction / negative controls (authorized environment only)
 
-1. In `tools/doubletake_evolve/governed_ingestion/closure_matrix.py`,
-   `_finish_row`:
-   - treat `BLOCKED` and `INFERRED` explicitly as non-pass register claims:
-     they agree only with a non-pass matrix status
-     (`DEFERRED`, `PARTIAL`, `MISSING_EVIDENCE`), following the existing
-     `DEFERRED` rule;
-   - keep `None` as "no disposition supplied" (unchanged);
-   - treat any other non-`None` token as a recorded disagreement:
-     `register_agrees = False` and reason
-     `register_disposition_unknown:<token>`, so it cannot be silently skipped;
-   - keep the existing `register_disposition_disagrees:<token>` reason for
-     known-token disagreements.
-   - Add a short comment naming the declared vocabulary and why it must stay
-     complete.
-2. In `tools/doubletake_evolve/governed_ingestion/tests/test_closure_matrix.py`
-   add focused tests:
-   - `_finish_row` maps `BLOCKED` + `PARTIAL` → True and `BLOCKED` + `PASS` →
-     False with the disagreement reason;
-   - `INFERRED` is compared, not `None`;
-   - an unknown token is `False` with `register_disposition_unknown:<token>`;
-   - the committed matrix's G25 row has a non-`None` `register_agrees` and
-     `register_disposition == "BLOCKED"`.
-3. Run the focused matrix suite and the matrix generator's `--verify` through
-   `tools/doubletake_evolve/runtime/host_workload.py --profile experiment`.
-4. Commit code + tests first (record must bind a clean head).
-5. Regenerate `reports/governed_ingestion/closure/05_closure_matrix.json` and
-   `.md` with `closure_matrix.py --generate`, then `--verify`; commit.
-6. Regenerate the dependent acceptance records with
-   `closure_acceptance.py --generate`, then the checkpoint with
-   `mission_state.py` (bare run writes; verify with `--verify --no-recheck`
-   then the full `--verify` if the guard allows); commit each step.
+- `BLOCKED + PARTIAL → True`; `BLOCKED + PASS → False` with reason; `INFERRED` never silently `None`; unknown token → False with reason.
+- G25 output should be `register_disposition=BLOCKED`, `register_agrees=true`, while preserving G6/G25 blockers and `AWAITING_AUTHORIZED_ACCEPTANCE`.
+- Check focused `test_closure_matrix.py`, guarded `closure_matrix.py --verify`, regenerated matrix JSON/MD, acceptance and mission-state checkpoint, preserving generator-bound digests and clean revision identity. Verify no other decision/status or digest-exclusion drift.
+- Stop on concurrent guarded workload, host guard refusal, unrelated verification failure or altered authority; do not bypass. Roll back code/tests and regenerate only from canonical generators if needed.
 
-## Done when
-
-- `BLOCKED`/`INFERRED` are compared; unknown tokens are recorded;
-- G25's committed row carries `register_agrees: true` (not `null`);
-- no row status, decision, blocker list or digest-exclusion changes except the
-  G25 comparison field and the records' own digests/heads;
-- acceptance remains `AWAITING_AUTHORIZED_ACCEPTANCE` and the checkpoint still
-  names WP0c revalidation plus the G6/G25 blockers;
-- the temporary prompt file is deleted.
-
-## Stop conditions
-
-- Another agent is running a guarded workload against this tree: do not edit
-  until it exits.
-- The focused suite or `--verify` fails for a reason other than the intended
-  comparison change: stop and record the exact failure.
-- A row status, decision or blocker changes beyond the G25 comparison field:
-  revert and record why.
-- The host guard refuses the workload: report the refusal, do not bypass it.
-
-## Rollback
-
-Restore `_finish_row`, remove the new tests, regenerate the matrix, acceptance
-and checkpoint records from their owning generators, and delete this file.
+**Unknowns:** Current DT code parity, whether this defect was fixed, current G25 record, owner authority and execution evidence. Do not reintroduce old prompt or claim Ground from this archived plan.
