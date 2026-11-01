@@ -1,5 +1,26 @@
 # Borg Scrapyard Inventory
 
+## O2 second-pass checkpoint — 2026-11-01 UTC (12 additional SHA-matched reads)
+
+- **Scope:** 12 distinct current historical files fetched and sampled, exact blobs verified. Second-pass distinct **95/398**; **303 remain**. 10 KEEP, 1 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED. New duplicate twin of long-form Harvest UI file retained pending path-reference/provenance proof; **0 deletions** this checkpoint, cumulative 11. Incoming unchanged, no new independently validated DT capability.
+- **Learning:** A tested algorithm without a production consumer remains orphan code; uncertainty-aware evaluation is a resource-allocation hypothesis, not authority to assimilate. Both reinforce existing Director acceptance gates rather than warrant near-duplicate offload. All files historical/untrusted; no private or configured material republished. Revisit when current DT consumer and authorization are independently observable.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / dependency note |
+| --- | --- | --- | --- |
+| `AGENT_X_GOVERNED_SEMANTIC_KWARG_FORWARDING_FIX.md` | `1612783d0cb3f13daeff9e14488383996e491a17` | KEEP | Historical bounded max_tokens/temperature forwarding failure; governance-only metadata must not leak to provider. |
+| `AGENT_X_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `89d35b4fc5f966e83feaf1a065f1d6779c1c0257` | KEEP | Uncertainty-aware multiobjective ASHA/Hyperband proposal separates budget allocation from promotion authority; no present-day benchmark. |
+| `AGENT_X_HARVEST_CURRENT_CODE_10_OF_10_IMPLEMENTATION.md` | `f3ac4a84c250c46c999fc1fc290f201a43e7092e` | KEEP | Historical implementation bridge from final Harvest design to audited code revision; no new DT parity proof. |
+| `AGENT_X_HARVEST_FINAL_10_OF_10_DESIGN.md` | `5a03bb77e52206552ef7fa907a06c54a1dbd2f7c` | KEEP | Design gates for novelty, replacement, transactional activation, and forbidden duplicate owner; design rating not proof. |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES (1).md` | `8ceaffb18669a8da2665b84ec52aab465233ab47` | KEEP | Retained long-form Gate B authority/UI automation version; same bytes as suffixed s version, historical filename provenance unresolved. |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXES.md` | `c2fda9c46a6532b498b81ac184f9300752064538` | KEEP | Shorter distinct UI simplification version, not an exact duplicate of long form; authority and diagnostic visibility tests. |
+| `AGENT_X_HARVEST_UI_SIMPLIFICATION_AND_GATE_B_FIXESs.md` | `8ceaffb18669a8da2665b84ec52aab465233ab47` | DELETE_CANDIDATE_BLOCKED | Exact byte-identical long-form twin of (1) file; cannot delete until exact-path references and provenance cleared. |
+| `AGENT_X_JIRA_PROMPT_STACK_IMPLEMENTATION_PROMPT_v5_ASTROCYTECH_CONFIGURED.md` | `f1e4c8254afda56a06911a2e54f39015016a31a2` | NEEDS_REVIEW | Historical Jira prompt-stack executor and approval UX; configured integration/provenance may be sensitive; no public extract. |
+| `AGENT_X_MULTI_SESSION_APPLICATION_TABS_IMPLEMENTATION_SPEC.md` | `aa91f2749048cbfce49a58966d02430f218ca2a4` | KEEP | Shared-workspace concurrent tabs require session identity, topology and adversarial isolation; historical design only. |
+| `AGENT_X_MULTI_SESSION_OPENCODE_BIGPICKLE_EXECUTION_TASKS.md` | `79052555caf15e2ab4ed25d32a7c20053b35e01b` | KEEP | Sequential acceptance-oriented task decomposition of multi-session specification; unique traceable execution history. |
+| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION.md` | `78c57f90e378d23f685af1703a8c238ee45f19dc` | KEEP | Tested harvested algorithm without runtime consumer is still orphan capability; compare canonical owner before promotion. |
+| `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md` | `c776a7d4a2a5527992921206d9291b3eeacafda0` | KEEP | Expanded orphan-remediation proof/negative controls and deletion bias; distinct version, preserve evidence. |
+
+
 ## O1 second-pass checkpoint — 2026-11-01 UTC (12 actual SHA-matched content reads)
 
 - **Scope:** 12 distinct previously unreviewed second-pass UTF-8 historical files fetched and sampled (openings, headings, endings). No full line-by-line audit or live implementation validation. Existing second-pass distinct count **83/398**; **315 remain**. 11 KEEP, 1 NEEDS_REVIEW; 0 deletions, cumulative verified 11. Incoming IS-001…007 unchanged; Director full Borg remains NOT VERIFIED (0 natural completed cycles, B1 pending, 7.8.1 consumer receipt unknown).
