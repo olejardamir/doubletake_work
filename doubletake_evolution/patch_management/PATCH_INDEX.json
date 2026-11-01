@@ -330,6 +330,39 @@
         "bash_syntax_checked": false,
         "host_tests_executed": false
       }
+    },
+    {
+      "id": "BPE-20261101-012",
+      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
+      "summary": "Fail the claim verification CLI process when aggregate verification is unsuccessful, preserving JSON output",
+      "file": "BPE-20261101-012.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 5,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/cli.py": "56d52e2f724042567d11d1f1635601bcc413d9fe"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/cli.py",
+        "tools/doubletake_evolve/claim_receipt/test_cli_failure_exit_status.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
+      "validation": {
+        "exact_source_blob_inspected": true,
+        "old_hunk_matched_uniquely": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      }
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -367,9 +400,9 @@
       23,
       23
     ],
-    "new_patches": 2,
+    "new_patches": 3,
     "revised_patches": 0,
-    "notes": "Reconciled BPE 003–007 and authored 010–011 from exact current source blobs. Old hunk blocks matched uniquely in retrieved source; git apply and guarded tests remain unrun by GPT.",
+    "notes": "Reconciled BPE 003–007 and authored 010–011 from exact current source blobs. Old hunk blocks matched uniquely in retrieved source; git apply and guarded tests remain unrun by GPT. Added independent CLI exit-status patch 012 after inspecting exact current CLI.",
     "verified_patches": 0,
     "reported_feature_branch_integrations": 5
   },

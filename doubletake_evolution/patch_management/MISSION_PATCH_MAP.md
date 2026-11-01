@@ -154,3 +154,5 @@ At DT `feature/alphacode-provider` HEAD `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5b
 - `BPE-20261101-011` (`PREPARED_UNTESTED`): same trust-extension area. The current `TerminalReceipt` accepts an arbitrary nonempty `receipt_sha256`; this patch recomputes and checks it, with forged/mutated digest negatives. Source `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, `models.py` blob `51bb900549ee4ca9ddc6d236e7afbf090a72b6f0`. Independent of 010 because source files do not overlap.
 
 These two code patches are preparation, not execution or Ground. No authority-blocked mission steps were reclassified as completed. Existing 22 open numbered steps remain represented above; next verification-only discriminator remains 7.8.1.
+
+- `BPE-20261101-012` (`PREPARED_UNTESTED`): current claim-receipt CLI returns process success even when its JSON verdict reports `all_pass=false`. Source `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, `cli.py` blob `56d52e2f724042567d11d1f1635601bcc413d9fe`. The patch preserves JSON output but exits nonzero for failed verification, with success and negative tests. No production consumer integration is claimed.
