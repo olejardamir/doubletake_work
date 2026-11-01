@@ -1,5 +1,26 @@
 # Borg Scrapyard Inventory
 
+## Q5 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
+
+- **Scope:** Twelve new surviving UTF-8 bodies fetched, actual openings, relevant sections and endings sampled. Q1–Q5 **60 distinct samples** (59 KEEP, 1 NEEDS_REVIEW); **226/397** surviving files second-pass sampled, **171 pending**. Sampled is not full independent line-by-line review. Next cursor after `EQC_FIC_Standard_v1_8.md`. Seven existing incoming notes unchanged; no newly observed incoming source. **0 actual deletions this batch; 12 verified historical deletions.**
+- **Research:** Governed-ingestion historical drivers require real source-bound native lifecycle, external acceptance and live consumer receipts. EQC-AC/FIC contracts provide provenance and no-silent-default checks, but existing DT governance already overlaps; none proves an authorized consumer, source-dependent natural Ground or B1 integrity disposition. No new near-duplicate proposal. **Reference/dependency check:** historical versioned prompts/standards have provenance and possible dependencies; no deletion cleared.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reference status |
+| --- | --- | --- | --- |
+| `DT_GOVERNED_INGESTION_FINAL_CLOSURE_v7.md` | `8f1122d490a4d0155c811130e4cd21c8b3dfa96d` | KEEP | Oct 27 source-bound C1–C4 integration/acceptance closure; demands actual native E2E and independent authority, not live proof. Reference/dependency not cleared for deletion. |
+| `DT_GOVERNED_INGESTION_REMAINING_WORK_v5.md` | `075a9675e9b28e64e2504f6c657300091d2ce57b` | KEEP | Oct 25 WP9–WP15 continuation with connector, lifecycle, status and concurrency negative tests; distinct historical scope. Reference/dependency not cleared for deletion. |
+| `DT_GOVERNED_INGESTION_REMAINING_WORK_v6.md` | `5ed5545fc7136d10c16e64ae9b3c4b07fbe9306e` | KEEP | Oct 26 delta-only R1–R6, real browser and authorized acceptance/activation; superseded as driver, preserved provenance. Reference/dependency not cleared for deletion. |
+| `DT_GOVERNED_INGESTION_V4_SINGLE_ACTIVE_MASTER_CORRECTED.md` | `eadf738943f8eea95b326d61da844b293a906b9e` | KEEP | Original single-driver correction and implement→integrate→certify workflow; not current authority. Reference/dependency not cleared for deletion. |
+| `DT_GOVERNED_INGESTION_v7_CURRENT_SOURCE_DELTA_RESUME.md` | `3829aa1324b9e81857b2aa3073fbf9c3d22de8de` | KEEP | Oct 28 delta-resume, owner-gated Task 6 decision and Task 7 activation; distinct conditional stop contract. Reference/dependency not cleared for deletion. |
+| `EA_FINAL_100_PERCENT_SUBMISSION_READY_PROMPT.md` | `aa826ca95feb91ee8a5e676ae23ee7c4b5c1dbe3` | KEEP | External sports fan-out submission clean-room reproducibility and correctness checks; historical provenance, no DT implementation. Reference/dependency not cleared for deletion. |
+| `EA_FINAL_GAP_CLOSURE_PROMPT.md` | `cbad287c38499f91635614f5eed14269a3921b1c` | KEEP | Earlier fan-out missing/duplicate/out-of-order, reconnect and late-join oracle corrections; unique test insight. Reference/dependency not cleared for deletion. |
+| `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` | `2b512674477f1e30795f3e9af62892e2d0c282b9` | KEEP | v1.5.1 architecture contract fixes stale self-version binding; explicit state ownership and architecture assumptions. Reference/dependency not cleared for deletion. |
+| `EQC_AC_Architecture_Contract_Standard_v1_5.md` | `d0eb932ce132be093b9016758eb3286d80dbfe42` | KEEP | v1.5 adds freshness, provenance and invalidation of external architecture facts; earlier distinct revision. Reference/dependency not cleared for deletion. |
+| `EQC_FIC_Standard_v1_6.md` | `16ece3332c51ceed64aecb04f2a95e09e6f59b62` | KEEP | v1.6 file implementation contract with requirements, validator, rollback and evidence-classification vocabulary. Reference/dependency not cleared for deletion. |
+| `EQC_FIC_Standard_v1_7.md` | `10ecab54aeef55191bad343afe33b1b8d8502334` | KEEP | v1.7 formal pre/postconditions, negative-space contract and oracle strength; distinct enforceability delta. Reference/dependency not cleared for deletion. |
+| `EQC_FIC_Standard_v1_8.md` | `4d2a5149c2813a38c218bd3c558fec07743bef10` | KEEP | v1.8 pseudocode-to-FIC traceability, one-unit-at-time validation and non-silent defaults. Reference/dependency not cleared for deletion. |
+
+
 ## Q4 second-pass checkpoint and run closeout — 2026-11-01 UTC (12 SHA-matched content samples)
 
 - **Scope:** Q4 12 more actual UTF-8 bodies sampled, distinct SHA identities. Q1–Q4 **48 distinct content-sampled** files, **47 KEEP, 1 NEEDS_REVIEW, 0 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE, 0 actual deletions**. Current **214/397** surviving second-pass sampled; **183 pending second pass**; cumulative GitHub-verified deletions **12** (none in Q1–Q4). Next cursor after `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md`. Seven incoming source SHAs unchanged and previously dispositioned; no new Internet item. All first-pass coverage remains partial; second pass is sampled rather than exhaustive independent validation.
