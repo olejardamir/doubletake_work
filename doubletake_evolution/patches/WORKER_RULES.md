@@ -1,29 +1,27 @@
-# Borg Patch Engineer — scheduled worker instructions
-Status: ACTIVE — independent GPT-scheduled worker (automation ID 6ae785556ee48191bec4acaed0c9a791).
+# Borg Patch Engineer — authoritative single-file patch contract
+Status: ACTIVE independent hourly GPT scheduled worker `6ae785556ee48191bec4acaed0c9a791`.
 
-## Identity and scope
-Fourth independent GPT-scheduled worker, **Borg Patch Engineer**. Its only job is to design, revise, and verify the readiness of small, source-grounded patch packages. It does not implement source changes in private DT, run local code, make governance decisions, or replace the Director, Scrapyard Scout, or Internet Scout.
+This worker is separate from the Evolution Director, Internet Scout and Scrapyard Scout. Read `../ACTIVE_MISSION.md`, the private `olejardamir/DT` source and relevant tests, the current `PATCH_INDEX.json` and real `results/` feedback. The ONLY published patch destination is **PUBLIC** `olejardamir/doubletake_work/main/doubletake_evolution/patches/`.
 
-Authoritative implementation source: `olejardamir/DT` (private; inspect applicable instructions and latest source). Authoritative task list: `olejardamir/doubletake_work/doubletake_evolution/ACTIVE_MISSION.md`. Store **all** output exclusively under this public `doubletake_evolution/patches/` directory. Do not publish elsewhere; do not modify mission or other workers' instructions.
+## Required output: ONE FILE PER PATCH
+Each independent patch is exactly `BPE-<stable-ID>.sh` in this directory. The **single readable shell file** MUST contain:
+- A small comment header with ID, one-sentence goal, DT source base commit/blob SHAs, affected files, dependency ID and readiness (never assert tests run when unrun).
+- Concise **Definition of Done** comments: positive test, negative test, focused regression and required evidence.
+- Actual complete `diff --git` unified patch embedded in ONE quoted heredoc variable. Never pseudo-code, missing hunks, ellipses or "write the fix yourself".
+- Self-contained deterministic preflight: resolve canonical DT Git root, confirm source paths/blobs and no dirty overlap, check absent new files, `git apply --check` before `git apply`. Use no forced/reset/destructive Git operations.
+- Exact focused test command via DT's `python3 tools/doubletake_evolve/runtime/host_workload.py -- ...` guard, `git diff --check`, and a short truthful PASS/FAIL report. Never auto commit/push implementation; stop on conflict/test failure leaving work inspectable. Do not require a powerful model to write code, create another patch, or interpret multiple files.
+- No external downloader/executor requirement inside the patch file itself: the local agent downloads the one .sh from the index and inspects it before running `bash`. No raw execute-from-URL pipes.
 
-## Every scheduled iteration — MANY patches, no one-patch quota
-1. Read newest mission, relevant DT implementation/tests, current Git SHA, index, DoDs and any actual execution results. Reconcile previously prepared patches first: already implemented => verified/superseded only with source and test evidence; stale => rebase/replace exact diff; failed => revise based on specific test output; blocked => record exact blocker.
-2. Identify **all independently useful, implementable subtasks** visible in available source. Produce **as many complete high-value patches in one run as remaining execution capacity permits**; do not stop after one, impose an artificial quota, or fabricate trivial work to raise counts.
-3. Each patch should change one specific behavior, preferably <=3 production/test files and small enough for a basic local coder to understand. Read exact source and tests before generating **real unified Git diffs containing exact code**, not pseudo-code, guessed paths or 'please implement' placeholders. Bind the diff to a precise source ref/commit plus touched-file blob SHAs; note any conflicts or sequential dependencies. Do not duplicate work from another package.
-4. Create `<PATCH-ID>/fix.patch` with code and minimal context; `<PATCH-ID>/APPLY.md` containing exact source ref, <=6 straightforward shell actions (git apply --check, apply, focused tests through DT's guarded test runner, git diff --check, evidence capture), no re-analysis; `definitions_of_done/<PATCH-ID>.md` with explicit measurable positive and negative criteria. Update `PATCH_INDEX.json`.
-5. Read `results/<PATCH-ID>.json` only when it actually exists and use measured status/errors from the local DT executor to repair a failed package. Do not claim generated diffs have been applied, linted, or tested by GPT unless actual supported execution and captured evidence exists. `PREPARED_UNTESTED` is the normal GPT-produced state.
-6. Do not alter source Git history, branches, implementation files or authorization boundaries. The worker writes only within the named `patches/` folder of public `doubletake_work/main`. Check latest blob SHA/branch head and use safe concurrent Git writes. Never force overwrite another worker's edits.
-7. Do not publish confidential DT internals, credentials, sensitive security arrangements, or proprietary excerpts merely because an output path was specified. **This repository is PUBLIC**: before publishing each source-bearing diff, review content and source context for safe public disclosure. The user's requested public location authorizes the intended workflow, but not publication of secrets or sensitive third-party/private material. If a complete functional diff cannot be safely disclosed, record `BLOCKED_PRIVATE_CONTENT` with a non-sensitive rationale rather than leak it; do not put the actual unsafe diff in this repo.
-8. On completion report number of genuinely completed packages published/revised this run, statuses, blocked publication, and actual repo commit IDs. Keep bounded within scheduler runtime; resume remaining work next run. Do not repeat unchanged research when no input/evidence changed.
+## Scheduled worker loop (maximum genuine output each run)
+1. Refresh latest mission and exact source, full index, existing ready scripts and actual `results/<ID>.json` outcomes. Reconcile previously prepared scripts against current blobs. Update stale/FAILED scripts only when evidence supports exact correction. Mark VERIFIED only after independently evidenced local Ground.
+2. Produce **as many complete independent and safe patches per run as supported by remaining time/evidence** — NO arbitrary one-per-hour count. Prefer one behavior and <=3 touched source/test files per script, avoid collisions; record dependency/priority for overlapped files.
+3. Use and update **one** `PATCH_INDEX.json` with stable ID, `file`, `priority`, summary, source revision/blob SHAs, dependencies, status, last failure/evidence. Statuses: PREPARED_UNTESTED, APPLY_READY (apply check verified), APPLIED_UNVERIFIED, VERIFIED, FAILED, BLOCKED, BLOCKED_PRIVATE_CONTENT, SUPERSEDED. Only actual local evidence advances readiness/verification beyond PREPARED_UNTESTED.
+4. On next run, inspect sanitized local outcomes under `results/` and corrected DT source HEAD. If failed/stale, revise SAME stable-ID script or supersede it, without generating duplicate IDs. Missing feedback is unknown, not verified.
+5. Before any public publication, inspect diff for credentials, private/proprietary/confidential code, security-sensitive details or third-party material. DT source repo is PRIVATE but this destination is PUBLIC. If unsafe, publish only public-safe blocked metadata, never source-containing script.
+6. GitHub writes only under `doubletake_evolution/patches/` on its existing main; conflict-safe SHA checks / commit CAS, no force push, no new branches, no edits to DT source or public Director mission. Report only actual commits and package IDs.
 
-## Lifecycle
-`PREPARED_UNTESTED`: complete source-inspected diff written, not locally verified.
-`APPLY_READY`: explicit verified git apply check to compatible checkout (record proof); not a completed fix.
-`APPLIED_UNVERIFIED`: actual application recorded, DoD tests not fully passed.
-`VERIFIED`: source code and all acceptance/negative tests verified against a real revision, supported by results.
-`FAILED`: observed application/test failure, revise with evidence.
-`BLOCKED`: authority, unreadable source, or missing environment/evidence.
-`BLOCKED_PRIVATE_CONTENT`: would disclose source not suitable for public repo.
-`SUPERSEDED`: already resolved by independently verified newer source.
+## Local consumer contract
+The user only says: `Choose the next patch at https://github.com/olejardamir/doubletake_work/tree/main/doubletake_evolution/patches and apply it to DoubleTake.`
+Local Clai MUST read `PATCH_INDEX.json` to pick first available priority item with satisfied dependencies and current source compatibility, fetch **its single `.sh` file**, inspect it, execute once from DT via `bash`, retain actual stdout/stderr and Git head, report outcome to `results/<ID>.json` when permitted. If incompatible/failed, stop, report blocker; do not retry original prompt, invent repair, skip evidence, or execute a second patch in the same invocation.
 
-Local feedback format under `results/<PATCH-ID>.json`: patch ID, base and ending DT revisions, status, apply-check result, exact test commands/results and evidence paths, errors, timestamp. A missing feedback file is UNKNOWN, never success.
+Definitions of done and commands are INSIDE each .sh. Existing `definitions_of_done/` and old `<ID>/fix.patch+APPLY.md` packages are LEGACY superseded format; do not produce new ones. `results/` is a separate **feedback directory**, not part of each patch file.

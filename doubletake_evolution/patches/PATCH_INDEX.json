@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source_repo": "olejardamir/DT",
   "mission_path": "doubletake_evolution/ACTIVE_MISSION.md",
   "patch_directory": "doubletake_evolution/patches",
@@ -7,9 +7,11 @@
   "automation_status": "ACTIVE",
   "policy": {
     "max_patches_per_run": "as many independent source-grounded complete patches as execution resources permit",
-    "patch_type": "unified_diff_with_real_code",
+    "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
     "verification": "local execution and independent evidence required",
-    "public_repo": true
+    "public_repo": true,
+    "local_selection": "read PATCH_INDEX.json, select first PREPARED_UNTESTED by priority with satisfied dependencies and source preflight; apply ONE; report outcome; do not auto-repeat",
+    "one_patch_per_file": true
   },
   "patches": [
     {
@@ -34,7 +36,11 @@
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
       "last_error": null,
-      "patch_blob_sha": "d8e00440ffdcb52426d7551563ca70c24dcdb1db"
+      "patch_blob_sha": "d8e00440ffdcb52426d7551563ca70c24dcdb1db",
+      "file": "BPE-20261101-003.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 1,
+      "application": "one_patch_per_local_execution"
     },
     {
       "id": "BPE-20261101-004",
@@ -58,7 +64,11 @@
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
       "last_error": null,
-      "patch_blob_sha": "5873588a038308adc619d45bb53c8c1867fb6c2b"
+      "patch_blob_sha": "5873588a038308adc619d45bb53c8c1867fb6c2b",
+      "file": "BPE-20261101-004.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 2,
+      "application": "one_patch_per_local_execution"
     },
     {
       "id": "BPE-20261101-005",
@@ -82,7 +92,11 @@
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
       "last_error": null,
-      "patch_blob_sha": "613cc4c9dc9518df2917bfc65c8dddc8ccea8c43"
+      "patch_blob_sha": "613cc4c9dc9518df2917bfc65c8dddc8ccea8c43",
+      "file": "BPE-20261101-005.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 3,
+      "application": "one_patch_per_local_execution"
     },
     {
       "id": "BPE-20261101-006",
@@ -106,7 +120,11 @@
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
       "last_error": null,
-      "patch_blob_sha": "b39e112a8496727d7162d0dfe9a10a6fdc567390"
+      "patch_blob_sha": "b39e112a8496727d7162d0dfe9a10a6fdc567390",
+      "file": "BPE-20261101-006.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 4,
+      "application": "one_patch_per_local_execution"
     },
     {
       "id": "BPE-20261101-007",
@@ -164,5 +182,6 @@
     "blocked_publication": 2,
     "results_observed": 0,
     "notes": "Five new public-safe, source-inspected code-bearing patch packages prepared; no actual local DT/Clai test or application evidence. Two older private packages were not republished."
-  }
+  },
+  "last_format_migration": "2026-11-01"
 }
