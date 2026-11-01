@@ -621,6 +621,48 @@
         "tools/doubletake_evolve/tests/test_cycle_summary_boundary.py"
       ],
       "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+    },
+    {
+      "id": "BPE-20261101-22",
+      "mission_ref": "DT-EVO-007 / 7.3.1",
+      "summary": "Knowledge intake and quarantine baseline",
+      "file": "BPE-20261101-22.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "READ_ONLY_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "priority": 122,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/collective_core/test_knowledge_intake_scope.py",
+        "tools/doubletake_evolve/collective_core/test_knowledge_quarantine_contract.py"
+      ],
+      "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent."
+    },
+    {
+      "id": "BPE-20261101-23",
+      "mission_ref": "DT-EVO-007 / 7.5.2",
+      "summary": "Governed intake source-generality baseline",
+      "file": "BPE-20261101-23.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "READ_ONLY_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "priority": 123,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/governed_knowledge/test_source_generality_real_sources.py",
+        "tools/doubletake_evolve/governed_knowledge/test_source_generality_intake.py"
+      ],
+      "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
