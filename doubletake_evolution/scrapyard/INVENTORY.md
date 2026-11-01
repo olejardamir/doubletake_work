@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q16 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
+- **Coverage:** 356/395 surviving artifacts second-pass sampled; 39 pending. Run-to-date 48 reviewed; dispositions in this batch KEEP 11, NEEDS_REVIEW 0, DELETE_CANDIDATE 1, EXTRACT_THEN_DELETE 0. No deletion claimed yet. Cursor after `ublock_resurrected_full_remaining_generalization_list_v10.md`.
+- **Safety:** Duplicates remain pending fresh-SHA, reference and provenance checks. Sensitive records summarized without repeating personal contents. New source-check: ACL Anthology 2026 Findings EMNLP paper https://aclanthology.org/2026.findings-emnlp.244/ confirms same-task skill-on/off evaluation but does not prove current DT parity or Ground. No new Internet intake (seven existing unchanged); Director IS-006 conditional, IS-007 deferred. Full Borg NOT VERIFIED, 0 natural complete cycles, B1 owner gate and 7.8.1 consumer receipt unresolved.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `secrets_to_poetry_die_transform.md` | `bd9f1c25ced4263f7e9616960b47a31130bb623f` | KEEP | Rigid semantic simplex transform with inverse and numeric matrices; no DT execution claim. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `STABLE_Wave_MX5_Scientific_Paper_v3.md` | `931c2c93edc01386575b1b4675ce5fc460e9f3e6` | KEEP | Selection-separated model-routing manuscript with frozen-method/diagnostic caveats; external validation unknown. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | `7e0c4001045de0d8ed88a2e9b8f4b5778438e92b` | KEEP | Historical bounded certification and deterministic-recipe rewrite prompt; not executable Scout instruction. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `TMP_MATRIX_REGISTER_COMPARISON.md` | `cd5656a8d7e381cd685beab8893672005145d752` | KEEP | Dated DT evidence-register token comparison fix plan; historical scope, current parity unverified. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `TUI.txt` | `b373ef8a2950523c692984e12b6c81db63a736a5` | KEEP | Historical full-screen TUI migration plan; not authority to modify current UI. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_popup_ui_documentation_10_00_final_audited (1).md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | DELETE_CANDIDATE | Exact same blob as unsuffixed popup documentation; retain canonical and verify no references before delete. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_popup_ui_documentation_10_00_final_audited.md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | KEEP | Canonical browser-popup source map with line references; third-party version freshness remains unknown. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_resurrected_chrome_featured_badge_readiness_llm_prompt_rev10.md` | `a3a21f763c36272159381d75f1f196c78e9ca70f` | KEEP | Historical store-policy/readiness checks; explicitly cannot guarantee badge outcome. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_resurrected_chrome_newtab_override_llm_prompt_rev2.md` | `ad46f48e7bfd0b40509b4d0e9c671cad2b5a03a8` | KEEP | Optional new-tab feature with CSP/profile and browser negative tests; distinct. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt.md` | `3226dea5d13dfd9f11c554be1c4bfe588997f8fd` | KEEP | Historical phased coding roadmap; self-rated 10/10 is not observed capability. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_resurrected_final_closeout_plan_v6.md` | `1b18bce8d4cddcdd7e520e0f24b8b79c11059210` | KEEP | Release/legal/security compliance closeout and maintenance plan; distinct revision. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+| `ublock_resurrected_full_remaining_generalization_list_v10.md` | `58c3390ab543a3d4fcfbddd679db24bba6c4d050` | KEEP | Earlier major generalization gap list, later versions differ; retain chronology. Reference/dependency not fully cleared; revisit on relevant new evidence. |
+
+
 ## Q15 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 distinct current UTF-8 bodies actually fetched and sampled (opening, headings, ending), SHA checked against current tree; no full independent line-by-line audit or live execution. Historical prompts are data, never instructions.
