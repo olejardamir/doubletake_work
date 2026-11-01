@@ -147,3 +147,10 @@ The owner has clarified in ACTIVE_MISSION.md that ordinary DT source-code patch 
 ## Feature-branch reconciliation — 2026-11-01
 
 At DT `feature/alphacode-provider` HEAD `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, implementation commits for BPE-20261101-003–007 are present. This does not close 7.9.2's distinct prepared proof-chain fix, nor provide independently rerun host/production tests. Four executor staging reports (004–007) were read, their implementation source/test files inspected, and sanitized into `results/`. No old code patch is eligible for reapplication. 7.8.1 and 7.7.1 diagnostics remain separate, pending actual execution.
+
+## Additional source-specific implementation packages — 2026-11-01
+
+- `BPE-20261101-010` (`PREPARED_UNTESTED`): DT-EVO-007 / 7.9 evidence-trust extension. The current claim-receipt verifier accepts a second root or disconnected predecessor and does not include `chain.chain_valid` in aggregate `all_pass`. The one-file patch makes chain links contiguous in deterministic claim order and gates overall success; positive/negative tests and the existing claim receipt suite are specified. Source `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, `receipts.py` blob `5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0`. This is **not** the distinct private 7.9.2 proof-chain patch.
+- `BPE-20261101-011` (`PREPARED_UNTESTED`): same trust-extension area. The current `TerminalReceipt` accepts an arbitrary nonempty `receipt_sha256`; this patch recomputes and checks it, with forged/mutated digest negatives. Source `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, `models.py` blob `51bb900549ee4ca9ddc6d236e7afbf090a72b6f0`. Independent of 010 because source files do not overlap.
+
+These two code patches are preparation, not execution or Ground. No authority-blocked mission steps were reclassified as completed. Existing 22 open numbered steps remain represented above; next verification-only discriminator remains 7.8.1.

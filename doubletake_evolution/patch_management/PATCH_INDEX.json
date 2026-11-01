@@ -262,6 +262,74 @@
         "ground_verified": false
       },
       "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
+    },
+    {
+      "id": "BPE-20261101-010",
+      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
+      "summary": "Require contiguous ordered receipt links and gate all_pass on chain validity",
+      "file": "BPE-20261101-010.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 3,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/receipts.py",
+        "tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
+      "last_error": null,
+      "validation": {
+        "exact_source_blob_inspected": true,
+        "old_hunks_matched_uniquely": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      }
+    },
+    {
+      "id": "BPE-20261101-011",
+      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
+      "summary": "Validate externally supplied terminal receipt digests against contents",
+      "file": "BPE-20261101-011.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 4,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/models.py": "51bb900549ee4ca9ddc6d236e7afbf090a72b6f0"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/models.py",
+        "tools/doubletake_evolve/claim_receipt/test_terminal_receipt_digest_binding.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
+      "last_error": null,
+      "validation": {
+        "exact_source_blob_inspected": true,
+        "old_hunks_matched_uniquely": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false
+      }
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -299,9 +367,11 @@
       23,
       23
     ],
-    "new_patches": 0,
+    "new_patches": 2,
     "revised_patches": 0,
-    "notes": "BPE 004–007 integrated on feature branch; public feedback now reconciled from private executor staging records; no independent test execution."
+    "notes": "Reconciled BPE 003–007 and authored 010–011 from exact current source blobs. Old hunk blocks matched uniquely in retrieved source; git apply and guarded tests remain unrun by GPT.",
+    "verified_patches": 0,
+    "reported_feature_branch_integrations": 5
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
