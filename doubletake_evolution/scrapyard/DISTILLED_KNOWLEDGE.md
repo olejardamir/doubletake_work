@@ -1,5 +1,8 @@
 # Scrapyard — loss-aware distilled knowledge (consolidated)
 
+> **CL-HARVEST-001 supersession (2026-11-01 ~20:00Z):** Twelve historical Harvest working sources — `CURRENT_STATE_AUDIT.md`, `DONOR_MODULE_DISPOSITION_MATRIX.md`, `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` and phase files `01_...` through `09_...` — were re-read, consolidated into [clustered/historical-harvest-governed-integration.md](clustered/historical-harvest-governed-integration.md) (verified blob `597ce92067daa20db662e6bb4f997177ddae0d00`), and their now-redundant working copies SHA-guarded deleted. Exact 12 deletion commits and old blob SHAs are in [INVENTORY.md](INVENTORY.md), checkpoint CL-HARVEST-001. The D01 source ledger below remains a *historical checkpoint*; its `SR` statuses no longer imply current file presence for those 12. Other D01 statuses are unaffected. No DT capability or live assimilation was verified.
+
+
 > **Later canonical-cluster supersession (2026-11-01):** The D01 status table below is a historical checkpoint, not current file presence. The LLM7 master `00_MAIN_PROMPT.md` and numbered phases **01, 03–09** were merged into verified `clustered/llm7-provider-integration.md` (CL-LLM7-001; blob `4d7b77be267ad3637408e1df455f16df15e21376`) and their working copies SHA-guarded deleted; nine exact deletion commits/tombstones are in `INVENTORY.md` checkpoint CL-LLM7-001. Phase **02** is fully represented but remains intact at `f0f6861636159e44c5d6c684eac240f42d5bd917` because the connected delete action was safety-blocked. All older original and reduced-source blobs remain recoverable in Git history. This changes source-file disposition only, **not** DT implementation or research validity.
 
 
