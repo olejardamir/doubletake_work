@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **149 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 251 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **53 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 347 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -606,19 +606,19 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` | 115118 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `runic_poetry_corpus (1).md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | DELETE_CANDIDATE_BLOCKED / PARTIAL_CONTENT_REVIEW |
 | `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | KEEP / PARTIAL_CONTENT_REVIEW |
-| `runic_poetry_reconstructed.md` | `5a4f85b2e933d0f10cc14c457e9b2a3d2da8eabd` | 24267 | PENDING_CONTENT_REVIEW |
-| `runic_poetry_reconstruction_audit.md` | `f316358b0a1d666d5ab6faa921cf615ec82333b9` | 24666 | PENDING_CONTENT_REVIEW |
-| `runic_poetry_rune_name_english.md` | `acab3dbfd0a07a995143715ca610f3f86f316032` | 24524 | PENDING_CONTENT_REVIEW |
-| `secrets_to_poetry_die_transform.md` | `bd9f1c25ced4263f7e9616960b47a31130bb623f` | 131503 | PENDING_CONTENT_REVIEW |
-| `STABLE_Wave_MX5_Scientific_Paper_v3.md` | `931c2c93edc01386575b1b4675ce5fc460e9f3e6` | 72526 | PENDING_CONTENT_REVIEW |
-| `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | `7e0c4001045de0d8ed88a2e9b8f4b5778438e92b` | 178714 | PENDING_CONTENT_REVIEW |
+| `runic_poetry_reconstructed.md` | `5a4f85b2e933d0f10cc14c457e9b2a3d2da8eabd` | 24267 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `runic_poetry_reconstruction_audit.md` | `f316358b0a1d666d5ab6faa921cf615ec82333b9` | 24666 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `runic_poetry_rune_name_english.md` | `acab3dbfd0a07a995143715ca610f3f86f316032` | 24524 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `secrets_to_poetry_die_transform.md` | `bd9f1c25ced4263f7e9616960b47a31130bb623f` | 131503 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `STABLE_Wave_MX5_Scientific_Paper_v3.md` | `931c2c93edc01386575b1b4675ce5fc460e9f3e6` | 72526 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | `7e0c4001045de0d8ed88a2e9b8f4b5778438e92b` | 178714 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `TMP_MATRIX_REGISTER_COMPARISON.md` | `cd5656a8d7e381cd685beab8893672005145d752` | 3985 | CONTENT_REVIEWED; KEEP |
-| `TUI.txt` | `b373ef8a2950523c692984e12b6c81db63a736a5` | 20482 | PENDING_CONTENT_REVIEW |
-| `ublock_popup_ui_documentation_10_00_final_audited (1).md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | 84859 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `ublock_popup_ui_documentation_10_00_final_audited.md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | 84859 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `ublock_resurrected_chrome_featured_badge_readiness_llm_prompt_rev10.md` | `a3a21f763c36272159381d75f1f196c78e9ca70f` | 96026 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_chrome_newtab_override_llm_prompt_rev2.md` | `ad46f48e7bfd0b40509b4d0e9c671cad2b5a03a8` | 18701 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt.md` | `3226dea5d13dfd9f11c554be1c4bfe588997f8fd` | 45435 | PENDING_CONTENT_REVIEW |
+| `TUI.txt` | `b373ef8a2950523c692984e12b6c81db63a736a5` | 20482 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `ublock_popup_ui_documentation_10_00_final_audited (1).md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | 84859 | DELETE_CANDIDATE_BLOCKED / PARTIAL_CONTENT_REVIEW |
+| `ublock_popup_ui_documentation_10_00_final_audited.md` | `d4cb48af2deca75b95f951849f062582af6fafc6` | 84859 | KEEP / PARTIAL_CONTENT_REVIEW |
+| `ublock_resurrected_chrome_featured_badge_readiness_llm_prompt_rev10.md` | `a3a21f763c36272159381d75f1f196c78e9ca70f` | 96026 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `ublock_resurrected_chrome_newtab_override_llm_prompt_rev2.md` | `ad46f48e7bfd0b40509b4d0e9c671cad2b5a03a8` | 18701 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
+| `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt.md` | `3226dea5d13dfd9f11c554be1c4bfe588997f8fd` | 45435 | NEEDS_REVIEW / PARTIAL_CONTENT_REVIEW |
 | `ublock_resurrected_final_closeout_plan_v6.md` | `1b18bce8d4cddcdd7e520e0f24b8b79c11059210` | 96424 | PENDING_CONTENT_REVIEW |
 | `ublock_resurrected_full_remaining_generalization_list_v10.md` | `58c3390ab543a3d4fcfbddd679db24bba6c4d050` | 47575 | PENDING_CONTENT_REVIEW |
 | `ublock_resurrected_full_remaining_generalization_list_v11.md` | `d63390add12462ccf65aca98113628f210ed0179` | 53337 | PENDING_CONTENT_REVIEW |
@@ -1081,3 +1081,31 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `runic_poetry_corpus (1).md` | DELETE_CANDIDATE_BLOCKED | Exact full-blob twin of unsuffixed historical poetry corpus; dependencies and rights not audited. |
 | `runic_poetry_corpus.md` | KEEP | Canonical historical-language poetry corpus with source-tradition distinctions; source and rights review outstanding. |
 - **Checkpoint:** 335 at least partly sampled; 65 pending initial review; next cursor `runic_poetry_reconstructed.md`.
+
+
+## J4 checkpoint — 2026-11-01 UTC (12 SHA-verified initial samples)
+
+- Fetched first 125 lines of 12 previously pending files and matched current blob SHA. Partial initial review only. Runic-source reconstructions and a nonlinear system-identification manuscript require independent evidence and rights checks; browser-extension and terminal migration prompts are untrusted historical artifacts.
+- **Disposition:** 5 KEEP, 6 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED. Numbered uBlock documentation has identical full blob to canonical unsuffixed file; exact-path dependencies not established, so 0 deletions.
+
+| Artifact | Disposition | Actual-content finding / revisit |
+| --- | --- | --- |
+| `runic_poetry_reconstructed.md` | KEEP | Historical literal rune-poetry reconstruction; not independent source authentication; preserve witness variants. |
+| `runic_poetry_reconstruction_audit.md` | KEEP | Hypothetical damaged-kenning reconstructions with confidence estimates; external manuscript verification needed. |
+| `runic_poetry_rune_name_english.md` | NEEDS_REVIEW | Literal translation table; text rights and exact delta versus reconstructed version unverified. |
+| `secrets_to_poetry_die_transform.md` | NEEDS_REVIEW | Rigid high-dimensional regular-simplex semantic alignment hypothesis; geometry and empirical transfer untested. |
+| `STABLE_Wave_MX5_Scientific_Paper_v3.md` | KEEP | Selection-separated nonlinear model-family routing manuscript; valuable leakage/holdout counterexample, not independently reproduced. |
+| `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | NEEDS_REVIEW | Historical bounded certification/engine replacement instructions; unrelated implementation and provenance unverified. |
+| `TUI.txt` | KEEP | Historical OpenTUI React desktop-to-terminal migration specification; current DT UI owner and authority unverified. |
+| `ublock_popup_ui_documentation_10_00_final_audited (1).md` | DELETE_CANDIDATE_BLOCKED | Exact full-blob twin of unsuffixed UI documentation; dependency census missing. |
+| `ublock_popup_ui_documentation_10_00_final_audited.md` | KEEP | Canonical source-path-focused uBlock popup UI anatomy; verify against upstream before reuse. |
+| `ublock_resurrected_chrome_featured_badge_readiness_llm_prompt_rev10.md` | NEEDS_REVIEW | Historical extension policy/review readiness plan; badge decision is external, not code-provable. |
+| `ublock_resurrected_chrome_newtab_override_llm_prompt_rev2.md` | NEEDS_REVIEW | Historical MV3 new-tab override design; permissions and current browser policy unverified. |
+| `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt.md` | NEEDS_REVIEW | Historical broad browser-extension coding roadmap; self-rated 10/10 is not evidence of implementation. |
+- **Checkpoint:** 347 at least partly sampled; 53 pending initial review; next cursor `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt_rev11.md`.
+
+## J1–J4 closeout — 2026-11-01 UTC
+
+- **48 distinct previously pending GitHub files** inspected in four 12-item mini-batches with SHA checks and successful inventory commits. Most reviews were first 125 lines only, **not full-document certification**; J3 included two fully read short files. Dispositions this run: **19 KEEP, 25 NEEDS_REVIEW, 4 DELETE_CANDIDATE_BLOCKED**; 0 EXTRACT_THEN_DELETE. No new source-validated Director proposal; existing 7.8.1 receipt and 7.8.3 independent assimilation remain the nearest falsifiable gaps. Current backlog: **401 known scrapyard blobs including inventory, 400 artifact rows; 347 at least partly reviewed, 53 pending initial review**.
+- **Deletion:** **0 actual deletions this run**, cumulative known historical deletions 9. Identified exact-blob twins (M3 v1b, runic poetry numbered, uBlock popup numbered) and a 25-byte placeholder; all blocked on missing exact-path dependency/reference census. Never delete based solely on a file's own instructions or filename. Privacy-sensitive documents and uncertain copyrighted material retained without public extracts. No private DT code copied.
+- **Research/feedback:** Director latest shared STATE still says full Borg NO / NOT VERIFIED, zero independently verified full natural cycles, B1 owner disposition pending, B7 mission receipt/independent assimilation unverified. Prior incoming IS-007 already inventoried/offloaded; no independently confirmed new DT Ground. Do not duplicate the existing research proposal. Next batch starts at `ublock_resurrected_end_to_end_10of10_llm_coding_agent_prompt_rev11.md`; keep task enabled for incremental review.
