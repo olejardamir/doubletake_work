@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **21 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 377 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **9 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 388 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -655,18 +655,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `universal_job_post_template_for_resume_creation_ats_aligned_10_10_v6.md` | `003f5edb3a93186c4edc46d00843ab33dc4604bf` | 86316 | KEEP |
 | `V30_clean_filing_version_conflict_calibrated_runtime_authority_compiler.md` | `0e3106347c7c30019b40f368ed27bef38a57f77e` | 100678 | NEEDS_REVIEW |
 | `Verified_Modular_Program_Induction_Architecture_STRENGTHENED.md` | `fff9a834c2fddaca95aba6487df0b45420557bc9` | 50484 | KEEP |
-| `Verified_Modular_Program_Induction_Architecture.md` | `089207d3e1bd9219ddca3abdeaaa1a5e8acdc90d` | 22292 | PENDING_CONTENT_REVIEW |
-| `VISION_CENTERED_CARD_SYSTEM_BOOK.md` | `c54dbabdd329ef52e4be6ffb5d7a09c0950952a1` | 946931 | PENDING_CONTENT_REVIEW |
-| `VISION_CENTERED_CARD_SYSTEM_CONCRETE_DIVINATION_BOOK.md` | `9a6245dcdfeec42369c313ce927563e58af10370` | 276341 | PENDING_CONTENT_REVIEW |
-| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL (1).md` | `0392337815e267f06e6610c67ad8788888082b41` | 151587 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md` | `0392337815e267f06e6610c67ad8788888082b41` | 151587 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md` | `76677875e6fce955268ebdbcb6ed3c8b3c3a2f69` | 1318554 | PENDING_CONTENT_REVIEW |
-| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE (1).md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | 23461 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE.md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | 23461 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `voynich_frequency_mapping_workflow_revised (1).md` | `3256242128dc49040fc5ed9bad910a068041e98c` | 17075 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `voynich_frequency_mapping_workflow_revised.md` | `3256242128dc49040fc5ed9bad910a068041e98c` | 17075 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `voynich_frequency_mapping_workflow_updated.md` | `2da46b82d46ce8e29e209409f1bcf3e0819e0791` | 13026 | PENDING_CONTENT_REVIEW |
-| `voynich_unsupervised_morphology_system.md` | `7ad8a114852cbc366bce4deaeb70cf010b03bea4` | 7154 | PENDING_CONTENT_REVIEW |
+| `Verified_Modular_Program_Induction_Architecture.md` | `089207d3e1bd9219ddca3abdeaaa1a5e8acdc90d` | 22292 | KEEP |
+| `VISION_CENTERED_CARD_SYSTEM_BOOK.md` | `c54dbabdd329ef52e4be6ffb5d7a09c0950952a1` | 946931 | NEEDS_REVIEW |
+| `VISION_CENTERED_CARD_SYSTEM_CONCRETE_DIVINATION_BOOK.md` | `9a6245dcdfeec42369c313ce927563e58af10370` | 276341 | NEEDS_REVIEW |
+| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL (1).md` | `0392337815e267f06e6610c67ad8788888082b41` | 151587 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
+| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md` | `0392337815e267f06e6610c67ad8788888082b41` | 151587 | KEEP; SAME_BLOB |
+| `VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md` | `76677875e6fce955268ebdbcb6ed3c8b3c3a2f69` | 1318554 | NEEDS_REVIEW |
+| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE (1).md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | 23461 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
+| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE.md` | `988a907a9f60bdc95966a1ab4895ee5e542fdba1` | 23461 | KEEP; SAME_BLOB |
+| `voynich_frequency_mapping_workflow_revised (1).md` | `3256242128dc49040fc5ed9bad910a068041e98c` | 17075 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
+| `voynich_frequency_mapping_workflow_revised.md` | `3256242128dc49040fc5ed9bad910a068041e98c` | 17075 | KEEP; SAME_BLOB |
+| `voynich_frequency_mapping_workflow_updated.md` | `2da46b82d46ce8e29e209409f1bcf3e0819e0791` | 13026 | NEEDS_REVIEW |
+| `voynich_unsupervised_morphology_system.md` | `7ad8a114852cbc366bce4deaeb70cf010b03bea4` | 7154 | KEEP |
 | `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` | `39624f47870cb77866037f397e47228a7f20e383` | 34082 | PENDING_CONTENT_REVIEW |
 | `WEALTHSIMPLE_HR_INTERVIEW_TRANSCRIPT_DAMIR_STUDY_ONLY.md` | `d5b7afda4b2ecba002f3d1aa6b0a3b7a59745420` | 65781 | PENDING_CONTENT_REVIEW |
 | `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | 199310 | PENDING_CONTENT_REVIEW |
@@ -1180,3 +1180,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `Verified_Modular_Program_Induction_Architecture_STRENGTHENED.md` | KEEP | Bounded typed modular program synthesis and independent verification with explicit non-universality; possible future unseen-transfer falsifier, not current DT parity. |
 
 - **Cumulative at least partly content-reviewed:** 377/400; **21 PENDING**, **2 large-file NEEDS_REVIEW with no content access**. K3: KEEP 5, NEEDS_REVIEW 6, DELETE_CANDIDATE_BLOCKED 1, EXTRACT_THEN_DELETE 0, deleted 0. Known historical deletions 9. Duplicate remains pending exact-path dependency checks. Next cursor `Verified_Modular_Program_Induction_Architecture.md`.
+
+
+## K4 checkpoint and bounded run closeout — 2026-11-01 UTC
+
+- SHA matched 12 further files; **11 actual first-125-line content samples** and one 1.32MB document that returned empty content, explicitly NEEDS_REVIEW without content-review credit. Read canonical and byte-identical numbered files but retained all; no safe exact-path reference/dependency audit across owners, so **0 deletions**. No new incoming beyond previously source-validated IS-007. No fresh DT implementation or host evidence; full Borg remains NO / NOT VERIFIED, B1 owner integrity disposition and B7 natural consumption/assimilation unverified.
+
+| Artifact | Disposition | Content finding / revisit |
+| --- | --- | --- |
+| `Verified_Modular_Program_Induction_Architecture.md` | KEEP | Earlier bounded modular discrete program-induction specification explicitly limits learnable classes; strengthened successor distinct, no current DT parity. |
+| `VISION_CENTERED_CARD_SYSTEM_BOOK.md` | NEEDS_REVIEW | 104-state reflection-card book with semantic relationships; not predictive evidence or a demonstrated DT transfer mechanism; preserve author provenance. |
+| `VISION_CENTERED_CARD_SYSTEM_CONCRETE_DIVINATION_BOOK.md` | NEEDS_REVIEW | Alternate 104-state situational/divination presentation; no empirical predictive claim; distinct rendering, source rights unknown. |
+| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL (1).md` | DELETE_CANDIDATE_BLOCKED | Exact-byte twin of unsuffixed vector-calibrated card specification; path dependencies not audited, deletion BLOCKED. |
+| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md` | KEEP | Canonical semantic relationship operators and 104-state card mapping; unvalidated conceptual system, retain as provenance witness. |
+| `VISION_CENTERED_CARD_SYSTEM_WITH_DIMENSIONAL_DATA.md` | NEEDS_REVIEW | 1.32MB card-system data file; fetch_file returned empty content even for line-range request; no content inspection, retain. |
+| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE (1).md` | DELETE_CANDIDATE_BLOCKED | Exact-byte twin of unsuffixed general-audience introduction; no dependency census, deletion BLOCKED. |
+| `VISION_CENTERED_INTRODUCTION_GENERAL_AUDIENCE.md` | KEEP | Canonical methodology/observer introduction with mirrored 104-state structure; not empirical DT capability evidence. |
+| `voynich_frequency_mapping_workflow_revised (1).md` | DELETE_CANDIDATE_BLOCKED | Exact-byte twin of unsuffixed Voynich frequency mapping workflow; deletion BLOCKED pending reference checks. |
+| `voynich_frequency_mapping_workflow_revised.md` | KEEP | Canonical Voynich word-frequency mapping experiment explicitly demands shuffled/random semantic coherence controls; hypothesis unvalidated. |
+| `voynich_frequency_mapping_workflow_updated.md` | NEEDS_REVIEW | Earlier Voynich mapping experiment with frequency bins and genetic search; unique delta versus revised version unknown. |
+| `voynich_unsupervised_morphology_system.md` | KEEP | Unsupervised token-morphology clustering engineering plan without assuming semantics; needs original transcription provenance and negative controls. |
+
+- **K1–K4 run totals:** 48 SHA-matched artifact paths, **45 actually content-sampled** (long documents partly), **3 inaccessible despite line-range fetch**. 15 KEEP, 29 NEEDS_REVIEW (3 inaccessible), 4 DELETE_CANDIDATE_BLOCKED, 0 EXTRACT_THEN_DELETE, **0 actual deletions**. **Cumulative distinct at least partially content-reviewed: 388/400; 9 still PENDING_CONTENT_REVIEW; 3 NEEDS_REVIEW inaccessible.** Nine historical deletions recorded, none new. The ledger counts are first-pass triage, not full deep-content certification; prior sampled NEEDS_REVIEW items still require revisit. Next cursor `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` (earlier four scattered pending items also remain). All incoming IS-001–IS-007 already inventoried/offloaded; latest Director decision IS-005 DEFERRED; IS-006/007 awaiting or subject to later Director feedback. No independent natural DT Ground or approved assimilation inferred. Future work should finish remaining initial backlog and revisit inaccessible files with a safe reader, then focus on owner-authorized 7.8.1 receipt and legitimate 7.8.3 knowledge slice. No deletion quota, no unsafe mutation.
