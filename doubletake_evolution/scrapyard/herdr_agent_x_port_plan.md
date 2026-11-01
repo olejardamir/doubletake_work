@@ -1,47 +1,7 @@
-# Agent_X Port Plan — herdr
+# Historical herdr→Agent_X transfer hypotheses (distilled)
 
-## Source Repository
+**Original blob:** `64b923c39039486088c274b3e3754cf4fda92abc`. The original https://github.com/ogulcancelik/herdr now redirects in GitHub connector; upstream version/license UNKNOWN. A separately inspected [motionharvest fork](https://github.com/motionharvest/herdr) describes terminal panes, detached sessions, status and socket API, but fork claims do not prove upstream features. Fork declares AGPL-3.0-or-later/commercial licensing; review rights before code reuse. [D01](DISTILLED_KNOWLEDGE.md).
 
-https://github.com/ogulcancelik/herdr
+**Candidate mechanisms:** governed issue→task→patch→test→promotion/rejection with event evidence; persistent workspace/pane/session and restart semantics; daemon/JSONL log/status UI/webhook intake; goal planning, handoff, recall, sparring, worktree/browser/tmux runners; capability/cost model routing; minimal HTTP bridge only where MCP is unnecessary. No duplicate DT planner, daemon, state store or authorization path.
 
-## What Should Be Ported to Agent_X, in Development Order
-
-1. **Governed vertical execution loop**
-   - GitHub issue → governed Agent_X task → implementation/patch proposal → validation → promotion or rejection.
-   - Preserve logs, evidence, tests, and review artifacts for every run.
-
-2. **Terminal pane, session, and workspace abstractions**
-   - Independent agent panes.
-   - Persistent/detached sessions.
-   - Restart-surviving workspaces.
-   - Programmatic pane creation, output reading, lifecycle control, and coordination.
-
-3. **Daemon mode and persistent orchestration**
-   - Long-running Agent_X daemon.
-   - Per-client/per-task workspaces.
-   - JSONL event log.
-   - Monitoring TUI.
-   - Chat/webhook adapter layer for external task intake.
-
-4. **Reusable agent execution modules**
-   - Goal planner.
-   - Handoff pack.
-   - Session recall.
-   - Agent sparring.
-   - Worktree runner.
-   - Browser runner.
-   - tmux runner.
-
-5. **GitHub intake layer**
-   - Convert GitHub issues, pull requests, and discussions into typed Agent_X tasks.
-   - Route those tasks through the governed execution loop rather than directly to coding agents.
-
-6. **Model registry and routing**
-   - Registry of available models and capabilities.
-   - Capability-aware model selection.
-   - Cost-aware routing.
-   - Task-specific model assignment.
-
-7. **Simple HTTP tool bridge**
-   - Lightweight HTTP tool/interface specification alongside MCP.
-   - Use it for integrations where MCP would be unnecessarily heavy.
+**Test gate:** verify an actual current DT missing owner/consumer, then benchmark authorized isolated recovery, no-loss, access isolation and cost against baseline. **Unknown:** upstream exact API, license, current DT parity, permission and measured benefit. Not approved for porting.
