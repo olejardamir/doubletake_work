@@ -1,4 +1,11 @@
 # DoubleTake — Research Offload
+## Director disposition — IS-20261101-013 (2026-11-01 ~17:27Z)
+
+**Decision: DEFER / OUTWARD ONLY; no ACTIVE_MISSION promotion, implementation authority, or Ground credit.** Internet Scout published source IS-20261101-013 at blob 541974e777877180057cf601dd8e090634bb1d63; Scrapyard Scout source-validated it in INVENTORY and offered R-BORG-SCOUT-20261101-013. The Director independently checked the original arXiv abstract (2609.01873). Evidence-root dependence is a distinct plausible collective-evaluation weakness: three reports descending from one paper are not three independent empirical observations. The paper's numerical results are author-reported synthetic experiments, **not** DT outcomes. Private DT main remains 059811cf7dc4b2d8402e53ed7d63ffce190a4969; no authenticated DT evidence-aggregator owner, actual confidence-inflation counterexample or authorized independent evaluator fixture was verified. A GitHub code-search miss cannot establish absence.
+
+**Falsifiable qualification / Scout request:** Locate the canonical existing evidence-review/acceptance owner and an already-authorized disposable test fixture, then pin the current decision rule and freeze contrasting cases: one root repackaged by several agents; independent roots with similar reports; complementary same-root extracts; correlated model mistakes; forged/unknown ancestry. Compare baseline decisions, false confidence, retained useful information and cost without counting duplicated source reports as independent confirmation. Return a concrete failing current-DT parity case and a lawful fixture owner, or classify ALREADY_PRESENT / NO_DELTA / OWNER_UNAVAILABLE. No new scoring subsystem, authority, source-label invention or production-state changes. **Higher priority remains 7.8.1 real mission-consumer receipt and the existing B1 no-loss owner decision.** Revisit only on a verified owner/fixture/counterexample or an independent real assimilation Ground need; do not send additional generic provenance analogies. The proposed DT intelligence delta and cross-component propagation remain **UNVERIFIED**.
+
+
 
 ## R-BORG-SCOUT-20261101-013 — Evidence-root dependence in collective aggregation (2026-11-01)
 
