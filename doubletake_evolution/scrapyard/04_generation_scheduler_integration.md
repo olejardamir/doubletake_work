@@ -1,49 +1,9 @@
-# Remaining Task 04 — Integrate Generators, ASHA, Ranking, and Optimizers
+# Historical Harvest Task 04 — Bounded proposal scheduling
 
-Move proposal/evidence-budget logic into existing mining/scheduling owners; generators never become promotion authority.
+**Provenance:** Astrocytech/Agent_X `main` audit `874bbe4268aca0539cbf8476f62444d704f2d555` (implementation wave after `3887efe448edd223a00f94db324786d6a47a2d3b`). Historical plan only; not DT runtime evidence or implementation permission. D01 digest: [DISTILLED_KNOWLEDGE.md](DISTILLED_KNOWLEDGE.md); original blob `bc1de84d7f1c4be97cff5b4636be048c45184b71`.
 
-## Baseline and rules
+**Historical loci:** `_hp_mining.py`, current Harvest scheduler/lifecycle, `learning/stabilization/scheduler.py` where relevant; donor generators/scheduler/ranking/optimizers.
 
-Repository: `Astrocytech/Agent_X`  
-Audited `main` when this pack was generated: `874bbe4268aca0539cbf8476f62444d704f2d555`.  
-The implementation wave began after `3887efe448edd223a00f94db324786d6a47a2d3b`.
+**Mechanism:** Wrap Topography/current producers in a proposal-only interface. Add semantic-neighbor, mutation, centroid or qualified optimizer modes only when value and caller exist. Reuse existing persistent scheduler for asynchronous multi-fidelity budgets, uncertainty/cost-aware repeat allocation, delayed downstream reward and bounded exploration. CEM/CMA-ES/Bayesian optimization act on compact controls, not full raw embedding vectors by default. Invalid scope, provenance, cost or governance rejects early. Generator fitness and scheduler priority never authorize code/promotion; avoid new scheduler DB or parallel authority.
 
-Before work, re-check current local `main` and the working tree. Never reset newer work to this baseline.
-
-Hard rules:
-1. The recently added `harvest_*.py` files are **donor code**, not presumed canonical owners.
-2. Merge useful logic into the existing subsystem that already owns the responsibility unless a new owner is independently justified.
-3. Do not create a second/third Harvest stack, scheduler, persistence layer, embedding route, Gate B, promotion path, or UI.
-4. Semantic proposed state precedes behavior-changing code; verified semantic state follows tests/runtime reconciliation.
-5. Replace/merge before add. Once donor logic is absorbed, delete/deactivate the redundant donor path.
-6. Tests must exercise production paths, not only isolated donor classes.
-7. Any hard gate failure or hard UNKNOWN blocks PASS.
-8. UI never authorizes implementation; server-side Gate B/governance does.
-9. Do not keep code because effort was spent on it; keep it only if it has a justified owner, consumer, and value.
-
-## Primary existing targets
-
-- `_hp_mining.py`
-- current Harvest job scheduler/lifecycle
-- `learning/stabilization/scheduler.py` where appropriate
-- donor generators/scheduler/ranking/optimizers
-
-## Required work
-
-Wrap current Topography/producers behind a proposal interface. Add only useful semantic-neighbor/mutation/centroid/qualified optimizer modes. Use existing scheduler persistence for asynchronous multi-fidelity allocation, uncertainty/cost repeats, delayed downstream reward, bounded exploration. CEM/CMA-ES/BO operate on compact controls, not raw full embedding vectors by default.
-
-## Exact completion gates
-
-Scheduler allocates resources only. Hard invalidity/scope/provenance/cost/governance rejects immediately. Generator fitness never promotes code. No new scheduler DB if existing owners suffice.
-
-## Tests / evidence
-
-Topography behavior preserved; slow probes do not block; cost cap enforced; delayed reward changes allocation; exploration bounded; restart does not double-count; generator cannot call implementation/promotion.
-
-## Cleanup / replacement
-
-Absorb useful donor logic. Delete unconsumed donor scheduler/ranking paths; keep optimizer code only with real production/benchmark caller.
-
-## Completion record
-
-Record starting/ending HEAD, semantic delta/reconciliation, owners changed, donor symbols consumed, donor files deleted/retained and why, production call paths, exact test commands/results, rollback point, and all failures/UNKNOWNs.
+**Falsifiable Ground:** Existing Topography behavior preserved; slow probe does not block unrelated work; cost cap enforced; delayed reward measurably alters allocations; exploration remains bounded; restart does not double-count; generator cannot invoke implementation/promotion. Compare fixed-budget baseline and negative controls. Migrate unique donor logic into canonical owners; remove redundant donor scheduler/ranking only after references checked, retain optimizer only with real benchmark/production caller. Record revisions, exact test results, affected owners, rollback, unresolved unknowns. Current DT parity UNKNOWN.
