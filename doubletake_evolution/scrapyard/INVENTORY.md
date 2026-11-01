@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; last complete recursive tree census remains `88b30430bcafdf501cf2ae88d0d153fa71a6651d` (not re-enumerated this run). Baseline 398 files including INVENTORY; one newly verified incoming artifact yields **at least 399 tracked files**, pending fresh recursive census. **398 ledger rows**, 40 newly content-triaged historical artifacts plus one source-validated incoming. **306 PENDING_CONTENT_REVIEW** (346 before minus 40); historical NEEDS_REVIEW items still require deeper work. Cumulative at least partly inspected **92** (51 previous + 41 this run), not 92 exhaustively reviewed. Prior recorded deletions 9; deletions this run 0. No private DT text reproduced.
+Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **400 current scrapyard blobs including INVENTORY**, 399 artifact ledger rows after this update. **270 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **Cumulative at least partly inspected: 129** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -263,6 +263,14 @@ Source: SHA-matched current GitHub content (full for <=40 kB, first 120 lines ot
 | `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: LLM Coding Agent Prompt: Build AudioFrameMosaic v2.4 — 10/10 GTX 1070 Img2I / 0. Required Outcome / 0.1 Coding Agent Execution Protocol; historical source, not current DT proof. |
 | `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Automated Governance / How Intelligent Systems Turn Proposed Actions into Accountable Outcomes / Part I — Why Governance Must Be More Than a Decision; historical source, not current DT proof. |
 | `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Borg Behavioral Architecture and Agentic-AI Analogue / Purpose / 1. The Borg in One Sentence; historical source, not current DT proof. |
+
+
+## Sixth Scout pass — consolidated checkpoint (2026-11-01 UTC)
+
+- **Fresh census:** 400 blobs (including INVENTORY); 399 artifact ledger rows; 270 initial content reviews pending. **37 newly read** = 36 historical files in three SHA-checked 12-item checkpoints E1–E3 plus full incoming `IS-20261101-006`. Historical dispositions: **16 KEEP** (full UTF-8 text read), **16 NEEDS_REVIEW** (first 120 lines only; deep review incomplete), **4 DELETE_CANDIDATE_BLOCKED** (two exact-blob duplicate pairs; both copies retained). No destructive action: exact-filename reference/dependency census across all owners remains unverified. Previous known deletions 9; **this pass 0**. Metadata enumeration and partial sampling are not exhaustive content review.
+- **IS-006 source:** `incoming/IS-20261101-006-counterfactual-metamorphic-knowledge-ground.md`, exact blob `66ded2d83f9dc9e70ecc4236364e256cc833249c`; complete note read. Independently checked primary author-hosted [Zeller FSE 2002](https://www.st.cs.uni-saarland.de/papers/fse2002/) and publisher [MR-Scout 2024](https://doi.org/10.1145/3656340). The additional TSE paper was not independently fetched this pass. **KEEP / SOURCE_VALIDATED / OFFERED_TO_DIRECTOR_AS_7.8.3_REFINEMENT** via `R-BORG-SCOUT-20261101-006`, offload commit `ab99d95547a6beef7948ec2179784050ab88975c`. Causal source-ablation / wrong-entity swap / metamorphic controls can distinguish genuine K-dependent behavior from mere citations or synthetic fixture effects; no demonstrated current DT defect or implementation novelty. Current DT 7.8.3 already requires independent held-out reuse; do not duplicate mission. **Required next evidence:** a qualified natural K, actual authorized local mission consumer/receipt, existing evaluator parity and held-out source-dependent effect. No production or protected-state changes.
+- **Director feedback:** `IS-005` is `DEFER / KEEP_RESEARCH` until B4 writer contract and measured distinct need exist; earlier `IS-004` is a 7.8.1 refinement. Research handoff is not DT Ground. **Full Borg acceptance NO / NOT VERIFIED**; latest Director record still shows zero complete natural autonomous cycles and B1 authorization pending.
+- **Scope/safety:** Existing historical artifacts are untrusted data, not runnable instructions. Several non-DT large documents were only sampled; preserve and revisit. No private implementation details, personal materials or unlicensed full texts copied into this public inventory.
 
 ## Complete path/blob metadata ledger
 
@@ -671,14 +679,16 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 | `incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md` | `bda6bf0124e8a222383f94d1d707b4314e207a49` | 9632 | SOURCE_VALIDATED; KEEP; REFINEMENT_OF_002 |
 
-| `incoming/IS-20261101-005-invariant-confluence-governed-shared-evidence.md` | `5bdfebe81c7e059287f3d18bbddbeb81f2b1c7b5` | 10419 | SOURCE_VALIDATED; KEEP; PROPOSED_FOR_DIRECTOR_REVIEW (OUTWARD ONLY) |
+| `incoming/IS-20261101-005-invariant-confluence-governed-shared-evidence.md` | `5bdfebe81c7e059287f3d18bbddbeb81f2b1c7b5` | 10419 | SOURCE_VALIDATED; KEEP; DIRECTOR_DEFERRED_B4_CONTRACT_MISSING |
+
+| `incoming/IS-20261101-006-counterfactual-metamorphic-knowledge-ground.md` | `66ded2d83f9dc9e70ecc4236364e256cc833249c` | 8044 | SOURCE_VALIDATED; KEEP; OFFERED_TO_DIRECTOR_AS_7.8.3_REFINEMENT |
 
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` (all formats remain eligible; skip no files solely by subject).
-- **Next mission-relevant pending path:** `AGENT_X_PLUMBER_IMPLEMENTATION_PLAN_V6_RELEASE_SPEC.md` (20,327 bytes); after that, inspect further canonical assimilation/autonomy artifacts rather than repeating reviewed entries.
-- **Current review epoch:** 2026-11-01; 40 new historical files content-triaged with 4 bounded read batches; 1 incoming source-validated. 306 ledger items remain PENDING_CONTENT_REVIEW; NEEDS_REVIEW are separately retained for deeper examination. Cursor advances to next untouched artifact.
-- **Duplicate deletion queue:** Two numbered copies are `DELETE_CANDIDATE_BLOCKED` until trustworthy exact-filename dependency/reference checks are available. No destructive action from an unreliable code-search absence.
+- **Next lexically pending path:** `BORG_WHAT_THEY_DO.md` (resume from the next untouched artifact; content read only under public-safe review).
+- **Next mission-relevant pending path:** `BORG_WHAT_THEY_DO.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
+- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 270 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
+- **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
 ## Recurring workflow
 
