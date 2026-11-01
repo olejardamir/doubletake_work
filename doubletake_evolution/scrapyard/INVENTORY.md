@@ -562,6 +562,13 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 | `incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md` | `bda6bf0124e8a222383f94d1d707b4314e207a49` | 9632 | SOURCE_VALIDATED; KEEP; REFINEMENT_OF_002 |
 
+## Durable progressive review cursor
+
+- **Next lexically pending path:** `191_poetry_semantic_clusters.md` (all formats remain eligible; skip no files solely by subject).
+- **Next mission-relevant pending path:** `3phasedev.md` (20,327 bytes); after that, inspect further canonical assimilation/autonomy artifacts rather than repeating reviewed entries.
+- **Current review epoch:** 2026-11-01; 40 historical files + incoming `IS-20261101-004` directly inspected this run, with 4 bounded content checkpoints A–D. 346 ledger items remain pending. This cursor is a *selection hint*, not a claim that intervening unreviewed items were examined.
+- **Duplicate deletion queue:** Two numbered copies are `DELETE_CANDIDATE_BLOCKED` until trustworthy exact-filename dependency/reference checks are available. No destructive action from an unreliable code-search absence.
+
 ## Recurring workflow
 
 Re-list recursively, compare blob SHA, read changed and prioritized unreviewed content, verify source/licensing, and track Director disposition and independent Ground. No deletion without reference census and fresh blob check. Metadata coverage is not content-review coverage.
