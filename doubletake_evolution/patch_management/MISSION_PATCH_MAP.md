@@ -1,6 +1,6 @@
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `8c8e5bae2a6d9660b544d595064cd107f4d213d4`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `a7b6424ebaacc29acf3c2b42e5958209b39d2632`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `8c8e5bae2a6d9
 | DT-EVO-007 | 7.8.2 | INWARD, only if 7.8.1 proves an actionable owner gap | DEPENDENCY_PENDING | — |
 | DT-EVO-007 | 7.8.3 | GROUND: independently verify the full downstream effect and return feedback to the Scouts | DEPENDENCY_PENDING | — |
 | DT-EVO-007 | 7.9.1 | OUTWARD→INWARD→GROUND: contain reserved mission proof artifacts | PREPARED_PRIVATE_PUBLICATION_BLOCKED | BPE-20261101-001 (private) |
-| DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | IMPLEMENTATION_PARTIAL_FEATURE_BRANCH | BPE-20261101-002 (private); BPE-20261101-003–004 applied on feature branch; BPE-20261101-005–007 pending source rebase |
+| DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | IMPLEMENTATION_PARTIAL_FEATURE_BRANCH | BPE-20261101-002 (private); BPE-20261101-003–004 applied on feature branch; BPE-20261101-005–007 also integrated on the feature branch (source/test commits independently inspected; guarded test counts reported, logs not independently rerun) |
 
 **Snapshot coverage:** 22 numbered open steps across 6 task areas. `SOURCE_REVIEW_REQUIRED` means no valid patch or blocker has yet been established. A mapped patch is NOT a completed mission step. Conditional or owner-authority-blocked steps must not be implemented without legitimate authorization. A verification-only step needs real test/observation evidence, not a fabricated source diff.
 
@@ -36,7 +36,7 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `8c8e5bae2a6d9
 
 The owner has clarified in ACTIVE_MISSION.md that ordinary DT source-code patch diffs belong in public `doubletake_evolution/patches/` and are not blocked merely because the implementation repository is private. Do not publish credentials, protected runtime data, or confidential third-party content; maintain all authority and live-state integrity boundaries. The independent hourly Patch Engineer must stay enabled.
 
-**Confirmed feature-branch progress:** BPE-20261101-003 has committed DT implementation evidence; BPE-20261101-004 also has a matching DT commit `6260daa5bfe56f0c73874d0f92ee624864b028c4` and a locally recorded 23-test pass. Test logs remain unverified by GPT. Pending BPE-20261101-005–007 require current source reinspection/rebasing before local execution; they are not blocked by a blanket disclosure rule. The 22 open mission steps and 58 planning units still require actual source-grounded executable patch work, and authorization/runtime observation blocked units cannot be represented as completed code changes.
+**Confirmed feature-branch progress:** BPE-20261101-003 has committed DT implementation evidence; BPE-20261101-004 also has a matching DT commit `6260daa5bfe56f0c73874d0f92ee624864b028c4` and a locally recorded 23-test pass. Test logs remain unverified by GPT. BPE-20261101-005–007 are already integrated in the current feature branch; they must not be replayed. Public sanitized results 004–007 reconcile their commit evidence and separately reported tests. The 22 open mission steps and 58 planning units still require actual source-grounded executable patch work, and authorization/runtime observation blocked units cannot be represented as completed code changes.
 
 ## Atomic mission decomposition — implementation candidates and proof slices
 
@@ -143,3 +143,7 @@ The owner has clarified in ACTIVE_MISSION.md that ordinary DT source-code patch 
 - **7.9.2-A** — Confirm canonical receipt-chain contract and private patch compatibility. **DoD:** evidence or focused positive/negative result required; not satisfied by planning alone.
 - **7.9.2-B** — Apply private BPE-002 only if contract matches; otherwise stop. **Gate:** prerequisite/authorization must be independently satisfied; not a ready code patch.
 - **7.9.2-C** — Test valid ordered chain, forged/disconnected/skipped cases and overall false success. **DoD:** evidence or focused positive/negative result required; not satisfied by planning alone.
+
+## Feature-branch reconciliation — 2026-11-01
+
+At DT `feature/alphacode-provider` HEAD `9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb`, implementation commits for BPE-20261101-003–007 are present. This does not close 7.9.2's distinct prepared proof-chain fix, nor provide independently rerun host/production tests. Four executor staging reports (004–007) were read, their implementation source/test files inspected, and sanitized into `results/`. No old code patch is eligible for reapplication. 7.8.1 and 7.7.1 diagnostics remain separate, pending actual execution.

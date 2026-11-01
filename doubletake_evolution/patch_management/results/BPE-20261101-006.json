@@ -1,0 +1,31 @@
+{
+  "patch_id": "BPE-20261101-006",
+  "patch_revision": 2,
+  "source_repo": "olejardamir/DT",
+  "source_branch": "feature/alphacode-provider",
+  "source_commit": "189dfb64bf641b28d910822a2e76a4eaa6aa596f",
+  "latest_inspected_branch_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+  "source_change": {
+    "status": "OBSERVED_IN_GITHUB",
+    "touched_paths": [
+      "tools/doubletake_evolve/claim_receipt/receipts.py",
+      "tools/doubletake_evolve/claim_receipt/test_committed_claim_coverage.py"
+    ]
+  },
+  "application": {
+    "status": "REPORTED_AND_COMMIT_OBSERVED",
+    "applied": true
+  },
+  "tests": {
+    "status": "REPORTED_NOT_INDEPENDENTLY_RUN",
+    "summary": "23 passed in 0.16s (host-guarded)",
+    "files": [
+      "tools/doubletake_evolve/claim_receipt/test_committed_claim_coverage.py",
+      "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py"
+    ],
+    "logs_available_to_worker": false
+  },
+  "ground_verified": false,
+  "feedback_source": "olejardamir/DT/patch_results/BPE-20261101-006.json",
+  "notes": "This public summary is based on a DT feature-branch commit, source/test inspection and executor-provided result JSON; not DT main or independently rerun runtime Ground."
+}

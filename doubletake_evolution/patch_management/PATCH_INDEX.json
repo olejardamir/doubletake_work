@@ -16,7 +16,8 @@
     "executor_branch_reference": "feature/alphacode-provider",
     "public_source_disclosure": "DT code diff patches are allowed in designated public patches directory; do not publish credentials, protected runtime state, or confidential third-party data.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
-    "automation_always_on": true
+    "automation_always_on": true,
+    "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb"
   },
   "patches": [
     {
@@ -75,7 +76,7 @@
       "patch_revision": 2,
       "verification": {
         "applied": true,
-        "tested": "REPORTED_23_PASSED",
+        "tested": "REPORTED_23 passed in 0.15s (host-guarded)",
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
@@ -91,10 +92,13 @@
       "integration": {
         "branch": "feature/alphacode-provider",
         "commit_sha": "6260daa5bfe56f0c73874d0f92ee624864b028c4",
-        "test_result": "23 passed (reported in DT patch_results)",
-        "test_logs_independently_seen": false,
-        "source_diff_confirmed": true
-      }
+        "source_change_confirmed": true,
+        "reported_guarded_tests": "23 passed in 0.15s (host-guarded)",
+        "tests_logs_independently_observed": false,
+        "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-004.json"
+      },
+      "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
     },
     {
       "id": "BPE-20261101-005",
@@ -109,15 +113,15 @@
         "tools/doubletake_evolve/claim_receipt/test_sealed_spec_digest.py"
       ],
       "depends_on": [],
-      "status": "BLOCKED",
+      "status": "APPLIED_UNVERIFIED",
       "patch_revision": 2,
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED_24 passed in 0.14s (host-guarded)",
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "SOURCE_RECHECK_REQUIRED: former publication hold lifted, but current target branch differs; rebase/test source-specific patch before local selection.",
+      "last_error": null,
       "patch_blob_sha": "613cc4c9dc9518df2917bfc65c8dddc8ccea8c43",
       "file": "BPE-20261101-005.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -126,7 +130,16 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "49fb0f997f684c20cc66a225620a62810c916ec5",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "source_recheck_required": true
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "0e2078eb136fe3b5cd107b2637a5300e1b5bf61d",
+        "source_change_confirmed": true,
+        "reported_guarded_tests": "24 passed in 0.14s (host-guarded)",
+        "tests_logs_independently_observed": false,
+        "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-005.json"
+      },
+      "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
     },
     {
       "id": "BPE-20261101-006",
@@ -143,15 +156,15 @@
       "depends_on": [
         "BPE-20261101-004"
       ],
-      "status": "BLOCKED",
+      "status": "APPLIED_UNVERIFIED",
       "patch_revision": 2,
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED_23 passed in 0.16s (host-guarded)",
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "SOURCE_RECHECK_REQUIRED: former publication hold lifted, but current target branch differs; rebase/test source-specific patch before local selection.",
+      "last_error": null,
       "patch_blob_sha": "b39e112a8496727d7162d0dfe9a10a6fdc567390",
       "file": "BPE-20261101-006.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -160,13 +173,16 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "7e8df8539e76ab2386f4a78efa301b226dfd5fa7",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "preflight_drift_observation": {
-        "current_script_hash": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c",
-        "expected_after_prior_patch_calculated": "bc43bf6768b736ae45310f4d8d9b3cfe5091ee4a",
-        "status": "EXPECTED_STALE_AFTER_PREDECESSOR; IN_MEMORY_HUNK_MATCH_ONLY; NO_EXECUTION",
-        "resolution": "Rebase only after authorized private publication path; no public script revision permitted"
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "189dfb64bf641b28d910822a2e76a4eaa6aa596f",
+        "source_change_confirmed": true,
+        "reported_guarded_tests": "23 passed in 0.16s (host-guarded)",
+        "tests_logs_independently_observed": false,
+        "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-006.json"
       },
-      "source_recheck_required": true
+      "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
     },
     {
       "id": "BPE-20261101-007",
@@ -183,15 +199,15 @@
       "depends_on": [
         "BPE-20261101-006"
       ],
-      "status": "BLOCKED",
+      "status": "APPLIED_UNVERIFIED",
       "patch_revision": 2,
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED_23 passed in 0.14s (host-guarded)",
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "SOURCE_RECHECK_REQUIRED: former publication hold lifted, but current target branch differs; rebase/test source-specific patch before local selection.",
+      "last_error": null,
       "patch_blob_sha": "ac634d53d2b882bb38d84eacfc9c0480173cee00",
       "file": "BPE-20261101-007.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -200,13 +216,16 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "2498096be538cbd1357e4e522ee667adab341440",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "preflight_drift_observation": {
-        "current_script_hash": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c",
-        "expected_after_prior_patch_calculated": "3c6f362f620dc0bb73e371143a26d5ee2a81fa43",
-        "status": "EXPECTED_STALE_AFTER_PREDECESSOR; IN_MEMORY_HUNK_MATCH_ONLY; NO_EXECUTION",
-        "resolution": "Rebase only after authorized private publication path; no public script revision permitted"
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "41c262026cfee14a58c23ea82184905ab473f6e9",
+        "source_change_confirmed": true,
+        "reported_guarded_tests": "23 passed in 0.14s (host-guarded)",
+        "tests_logs_independently_observed": false,
+        "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-007.json"
       },
-      "source_recheck_required": true
+      "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
     },
     {
       "id": "BPE-20261101-008",
@@ -266,23 +285,27 @@
     }
   ],
   "last_run": {
-    "date": "2026-11-01",
-    "private_head_checked": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
-    "private_main_checked": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
-    "mission_blob_checked": "aaafac5be79b7ea46fdea19c1be762e14d22b66e",
+    "date_utc": "2026-11-01",
+    "executor_branch": "feature/alphacode-provider",
+    "executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+    "public_mission_blob": "a7b6424ebaacc29acf3c2b42e5958209b39d2632",
     "open_mission_steps_mapped": 22,
+    "existing_patches_reconciled": 4,
+    "existing_source_integrations_observed": 4,
+    "independent_tests_rerun": 0,
+    "reported_test_passes": [
+      23,
+      24,
+      23,
+      23
+    ],
     "new_patches": 0,
     "revised_patches": 0,
-    "verified_patches": 0,
-    "blocked_publication": 4,
-    "private_unpublished": 2,
-    "results_observed": 1,
-    "notes": "Historical hold superseded by updated ACTIVE_MISSION.md. Revalidate code scripts on actual feature branch before new local applications.",
-    "policy_superseded": true
+    "notes": "BPE 004–007 integrated on feature branch; public feedback now reconciled from private executor staging records; no independent test execution."
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "8c8e5bae2a6d9660b544d595064cd107f4d213d4"
+  "latest_mission_blob": "a7b6424ebaacc29acf3c2b42e5958209b39d2632"
 }
