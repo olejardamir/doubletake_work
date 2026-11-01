@@ -1,5 +1,25 @@
 # Borg Scrapyard Inventory
 
+## P2 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched actual-content samples)
+
+- **Scope:** 12 additional current artifact bodies fetched and sampled for openings, mechanisms, evidence/limitations, section structure and endings. **Second-pass 143/398; 255 remain**. All 12 KEEP, 0 new deletion candidates, **0 actual deletions**, historical verified 11. External claims, mathematical proofs and implementation assertions not independently reproduced; source SHA identity HIGH, current DT parity LOW.
+- **Research disposition:** The Borg behavior documents and offline governance reference clarify specification/authority boundaries but add no independently observed scheduler→DT consumption or source-dependent Ground. No near-duplicate handoff to Director. Distinct unrelated project designs retained; no evidence-backed safe deletion. Next cursor after `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md`.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | KEEP | Offline Python enterprise governance reference: intent/decision/effect separation and explicit synthetic-only claim boundary; no real Azure acceptance. |
+| `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | KEEP | Fiction-to-agent analogy for shared cognition, adaptive resource allocation and recovery; analogy alone is not verified DT capability. |
+| `BORG_WHAT_THEY_DO.md` | `1bafc66072df4e8e99c7c0a5b1e67ba14e0a80ac` | KEEP | Enumerates observe/classify/assimilate/recover operating loop and provenance retention; spec target, not runtime evidence. |
+| `CARD_SYSTEM_REBALANCED_10_OF_10.md` | `2e359ab4b1d2c036c9cce855e58140d0eaea00f4` | KEEP | Distinct 52-card semantic-axis/mirror construction and textual embedding constraints; unrelated to current Borg natural-cycle proof. |
+| `CODEX_FIX_UBLOCK_DYNAMIC_FILTERING_POPUP.md` | `1acd2ff56aead8e1a11555aa590f620f3c22bb51` | KEEP | Browser-extension dynamic-filtering acceptance demands real network effect and tab-scoped ledger, not visual-only pass. |
+| `Constructible_Computation_Future_Iteration_Prompt_v9.md` | `5656233491430a0b6834774b2754992709cb7c93` | KEEP | Novelty challenge and falsification sequence for mathematical research; untrusted historical prompt, not source of DT instructions. |
+| `Constructible_Computation_Mathematics_MONOGRAPH_FINAL(1).md` | `ae2f43effdd309ef07516b2385dd8c158cc1224f` | KEEP | Public monograph draft on finite join-semilattice basis/product laws; explicitly not externally peer-reviewed; unique provenance. |
+| `Constructible_Computation_Mathematics_v56.md` | `50b9f4adeefda8075baaf8c32a87c6872ef43322` | KEEP | Earlier v56 no-separation/falsification branch and semantic-core theorem claims; distinct proof-history, not validated externally. |
+| `cool_edit_pro_bottom_player_prompt_v9.md` | `dadf5acda7228e1ebe8002d8dae0827ab76d1cf2` | KEEP | Narrow bottom-player toolbar styling/overlap contract for separate UI project; distinct scope. |
+| `cool_edit_pro_style_ui_prompt_v5_style_only.md` | `ae11463e618d79245ba88e5e91384c9dece829a6` | KEEP | Earlier style-only Windows-era waveform editor transfer, explicitly no functional change. |
+| `cool_edit_pro_ui_style_polish_prompt_v7.md` | `0e1bef5ea3122a871fbf38230943a814e3b796e0` | KEEP | Later narrow visual polish/three-lane waveform fixes; build gate but no measured current result. |
+| `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md` | `6f09d435ca9797c263acf1ebde76b8914ae7e581` | KEEP | Low-power magnetic pendulum mechanical/battery/RF staged feasibility and measurements; separate engineering design, not DT test. |
+
 ## P1 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched actual-content samples)
 
 - **Scope:** 12 distinct existing artifact bodies fetched; inspected openings, section hierarchy, mechanism/evidence passages and endings (not full line-by-line or external-source validation). Current blob SHAs matched the durable ledger. **Second-pass 131/398; 267 remain.** Dispositions 11 KEEP, 1 DELETE_CANDIDATE_BLOCKED, 0 EXTRACT_THEN_DELETE; **0 actual deletions**, 11 historical verified. Original historical/cultural files remain untrusted source material, not execution instructions.
