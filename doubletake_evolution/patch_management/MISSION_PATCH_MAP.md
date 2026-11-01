@@ -5,18 +5,18 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `32d5e090376cd
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
 | DT-EVO-001 | 1.3.3 | Resolve or safely bound the remaining integrity refusal and prove natural liveness | BLOCKED_AUTHORITY | — |
-| DT-EVO-002 | 2.2.2 | Wire only the missing integration within granted scope | BLOCKED_AUTHORITY | — |
-| DT-EVO-002 | 2.2.3 | Run focused integration tests | DEPENDENCY_PENDING | — |
-| DT-EVO-002 | 2.4.2 | Exercise the production caller | DEPENDENCY_PENDING | — |
-| DT-EVO-002 | 2.4.3 | Reconcile state | DEPENDENCY_PENDING | — |
+| DT-EVO-002 | 2.2.2 | Wire only the missing integration within granted scope | BLOCKED_AUTHORITY | BPE-20261101-015 (diagnostic only) |
+| DT-EVO-002 | 2.2.3 | Run focused integration tests | DEPENDENCY_PENDING | BPE-20261101-016 (diagnostic only) |
+| DT-EVO-002 | 2.4.2 | Exercise the production caller | DEPENDENCY_PENDING | BPE-20261101-017 (diagnostic only) |
+| DT-EVO-002 | 2.4.3 | Reconcile state | DEPENDENCY_PENDING | BPE-20261101-018 (diagnostic only) |
 | DT-EVO-003 | 3.3.4 | Verify post-recovery performance only after actual natural recovery | DEPENDENCY_PENDING | — |
-| DT-EVO-003 | 3.4.2 | Publish one concise final status | VERIFICATION_ONLY | — |
+| DT-EVO-003 | 3.4.2 | Publish one concise final status | VERIFICATION_ONLY | BPE-20261101-019 (diagnostic only) |
 | DT-EVO-003 | 3.5.2 | Establish a no-loss shared-state write contract, conditional on existing authority | BLOCKED_AUTHORITY | — |
 | DT-EVO-004 | 4.2.2.2 | Verify an authorized production-served health indication | BLOCKED_DEPLOYMENT_AUTHORITY | — |
 | DT-EVO-004 | 4.2.2.3 | Verify recovery clearing and stable health classification | DEPENDENCY_PENDING | — |
 | DT-EVO-006 | 6.5.2 | INWARD/GROUND, conditional on 6.5.1: test a reversible capacity extension | BLOCKED_AUTHORITY | — |
-| DT-EVO-007 | 7.3.1 | Ground the full evidence-to-validated-knowledge path, not merely queue reachability | DEPENDENCY_PENDING_NO_QUALIFIED_SOURCE | — |
-| DT-EVO-007 | 7.5.2 | INWARD, conditional on 7.5.1: reuse the canonical knowledge intake | DEPENDENCY_PENDING | — |
+| DT-EVO-007 | 7.3.1 | Ground the full evidence-to-validated-knowledge path, not merely queue reachability | DEPENDENCY_PENDING_NO_QUALIFIED_SOURCE | BPE-20261101-022 (diagnostic only) |
+| DT-EVO-007 | 7.5.2 | INWARD, conditional on 7.5.1: reuse the canonical knowledge intake | DEPENDENCY_PENDING | BPE-20261101-023 (diagnostic only) |
 | DT-EVO-007 | 7.6.2 | INWARD/GROUND: measure independent transfer without selecting a favorable retry result | QUIESCENT_AWAITING_NATURAL_CASE | — |
 | DT-EVO-007 | 7.7.1 | OUTWARD: test applicability and current parity before proposing code | DIAGNOSTIC_READY (not implementation) | BPE-20261101-009 |
 | DT-EVO-007 | 7.7.2 | INWARD: only if 7.7.1 proves a distinct, authority-safe gap, improve the existing owner in place | DEPENDENCY_PENDING | — |
