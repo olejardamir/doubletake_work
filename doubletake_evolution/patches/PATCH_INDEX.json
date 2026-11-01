@@ -129,7 +129,8 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": null
+      "last_error": null,
+      "patch_blob_sha": "ac634d53d2b882bb38d84eacfc9c0480173cee00"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
