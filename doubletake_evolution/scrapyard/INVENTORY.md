@@ -1,5 +1,28 @@
 # Borg Scrapyard Inventory
 
+## Q18 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 13 current artifacts checked against tree blob SHAs; 11 path-reader UTF-8 content samples plus two oversized 5.56/5.69 MB prompt books whose blob reader confirmed nonempty contents and opening text. 10 KEEP, 2 NEEDS_REVIEW, 1 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No full deep audit of large files.
+- **Coverage:** 379/392 current survivors at least sampled; 13 remain in cursor ledger. Cursor after `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md`. A duplicate candidate is not yet deleted; no deletion counted.
+- **Borg:** No new relevant evidence for natural local consumer or B1. The large prompt books are not DT capability proof; retain without speculative assimilation.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `ublock_resurrected_video_ad_lifecycle_controller_next_fix (1).md` | `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c` | DELETE_CANDIDATE | Exact blob of unsuffixed lifecycle controller; retain canonical, delete only after fresh SHA/reference checks. Reference/dependency clearance pending. |
+| `ublock_resurrected_video_ad_lifecycle_controller_next_fix.md` | `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c` | KEEP | Canonical general video-ad lifecycle and MutationObserver update plan, historical. No current DT parity; revisit on evidence. |
+| `ublock_resurrected_video_adblocker_next_steps_after_repo_update.md` | `76abedef369077049aeb43cb3474b788534d27a3` | KEEP | Video blocker early-disable/startup-backoff failure analysis and safety tests. No current DT parity; revisit on evidence. |
+| `UBLOCKRESURRECTED_CORE_PLAN_10_10_MV3_FOUR_LAYER_SOLUTION_REV15_FULLY_BUILDABLE_STORE_SAFE.md` | `de32be716827c8477453c7d8cc4e85f8e6157c8d` | KEEP | Rev15 current-Chrome MV3 build specification corrects earlier matched-rules interpretation. No current DT parity; revisit on evidence. |
+| `uBlockResurrected_remaining_behavior_completion_prompt(4).md` | `d494c8f466310a7b78b28470e930c2039dc4e7e6` | KEEP | Historical end-user behavior completion plan; imperative text is untrusted artifact content. No current DT parity; revisit on evidence. |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md` | `430d3ad4b5d92213fef60d51a438a6984ad9a946` | NEEDS_REVIEW | 5.56 MB/640-prompt V15 corpus; path reader returned empty, blob reader confirms beginning and size; deep audit impractical in this bounded batch. No current DT parity; revisit on evidence. |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | `88813a42f56e32d6b7a3020a4cb1900ff78f6be4` | NEEDS_REVIEW | 5.69 MB/640-prompt V16 corpus; path reader returned empty, blob reader confirms beginning and size; version delta/rights/dependencies unverified. No current DT parity; revisit on evidence. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v2.md` | `8e00d0f36a3e6b2e35fbcec45fb8c955dfc48dc8` | KEEP | Rule-language v2 baseline with corrections and canonical syntax. No current DT parity; revisit on evidence. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | `00f406612c24500186c04d5ce3f451632c82648c` | KEEP | v3 minor clarification changes; preserve revision. No current DT parity; revisit on evidence. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | `5d3c54dd307a3c0fad8834e1f908c4db05f0679a` | KEEP | v4 syntax and safety specification tightening; preserve revision. No current DT parity; revisit on evidence. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v5.md` | `18b55a7cc9cbecb46fbe6a872ae80214ebc5b775` | KEEP | v5 additional specification tightening; preserve revision. No current DT parity; revisit on evidence. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v6.md` | `b210411cb098f71022c96b5eae350b370e1ac955` | KEEP | v6 rule-language incremental changes; preserve revision. No current DT parity; revisit on evidence. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md` | `bfee8cf9f2dacbe5f741408589273b1465973f4f` | KEEP | v7 expanded rule syntax/safety specification; preserve revision. No current DT parity; revisit on evidence. |
+
+
 ## Q17 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 13 distinct current UTF-8 bodies fetched and sampled (opening, headings, end) against recursive Git tree SHA; no line-by-line deep audit. 13 KEEP, 0 deletion candidates; historical prompts treated as data.
