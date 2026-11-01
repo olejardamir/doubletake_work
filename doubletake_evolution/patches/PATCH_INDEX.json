@@ -148,7 +148,11 @@
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
       "last_error": null,
-      "patch_blob_sha": "ac634d53d2b882bb38d84eacfc9c0480173cee00"
+      "patch_blob_sha": "ac634d53d2b882bb38d84eacfc9c0480173cee00",
+      "file": "BPE-20261101-007.sh",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 5,
+      "application": "one_patch_per_local_execution"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
