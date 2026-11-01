@@ -107,6 +107,29 @@
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
       "last_error": null,
       "patch_blob_sha": "b39e112a8496727d7162d0dfe9a10a6fdc567390"
+    },
+    {
+      "id": "BPE-20261101-007",
+      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
+      "summary": "Reject a receipt for another claim ID in direct per-claim verification.",
+      "source_revision": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "a304c64d15db4ed37b94e491b4deebc9738b23ad"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/receipts.py",
+        "tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py"
+      ],
+      "depends_on": [],
+      "status": "PREPARED_UNTESTED",
+      "patch_revision": 1,
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
+      "last_error": null
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -134,11 +157,11 @@
     "private_head_checked": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
     "public_head_before": "ff55b86ee29d9614b36b49788078cfd566dfc303",
     "source_changes_since_prior_patch_base": "NONE_OUTSIDE_PRIVATE_PATCH_WORKBENCH",
-    "new_patches": 4,
+    "new_patches": 5,
     "revised": 0,
     "verified": 0,
     "blocked_publication": 2,
     "results_observed": 0,
-    "notes": "Four new public-safe, minimally contextual code-bearing patches prepared for independent local execution. No local DT/Clai execution or test result was observed. Existing two private packages were not republished."
+    "notes": "Five new public-safe, source-inspected code-bearing patch packages prepared; no actual local DT/Clai test or application evidence. Two older private packages were not republished."
   }
 }

@@ -1,0 +1,46 @@
+diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletake_evolve/claim_receipt/receipts.py
+--- a/tools/doubletake_evolve/claim_receipt/receipts.py
++++ b/tools/doubletake_evolve/claim_receipt/receipts.py
+@@ -65,1 +65,8 @@
++    if receipt.claim_id != claim.claim_id:
++        return ClaimVerdict(
++            claim_id=claim.claim_id,
++            verdict=INVALID,
++            reason="receipt claim identity differs from committed claim",
++        )
++
+     item = evidence.get(claim.evidence_path)
+diff --git a/tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py b/tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py
+new file mode 100644
+--- /dev/null
++++ b/tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py
+@@ -0,0 +1,29 @@
++"""Direct per-claim verification must reject a receipt for another claim."""
++
++from doubletake_evolve.claim_receipt.models import (
++    ClaimSpec, EvidenceItem, TerminalReceipt, INVALID, PASS,
++)
++from doubletake_evolve.claim_receipt.receipts import verify_claim
++
++
++def _claim():
++    return ClaimSpec(
++        claim_id="a", statement="claim identity", expected_kind="score",
++        evidence_path="ev/a", required_fields=("value",),
++    )
++
++
++def _item():
++    return EvidenceItem(path="ev/a", payload={"value": "42"})
++
++
++def test_receipt_for_different_claim_cannot_verify_current_claim():
++    item = _item()
++    foreign = TerminalReceipt("other", item.content_digest, "")
++    assert verify_claim(_claim(), {"ev/a": item}, foreign).verdict == INVALID
++
++
++def test_receipt_for_matching_claim_still_passes():
++    item = _item()
++    matching = TerminalReceipt("a", item.content_digest, "")
++    assert verify_claim(_claim(), {"ev/a": item}, matching).verdict == PASS
