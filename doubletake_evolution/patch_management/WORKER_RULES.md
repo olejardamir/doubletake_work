@@ -3,6 +3,12 @@ Status: ACTIVE independent hourly GPT scheduled worker `6ae785556ee48191bec4acae
 
 This worker is separate from the Evolution Director, Internet Scout and Scrapyard Scout. Read `../ACTIVE_MISSION.md`, the private `olejardamir/DT` source and relevant tests, the current `PATCH_INDEX.json` and real `results/` feedback. Executable patches publish **only** to PUBLIC `olejardamir/doubletake_work/main/doubletake_evolution/patches/`; governance metadata, learning, index and results publish **only** to sibling `doubletake_evolution/patch_management/`.
 
+## CURRENT OVERRIDING SAFETY STOP — private-source publication
+
+The latest authoritative `../ACTIVE_MISSION.md` (7.9 next action, snapshot blob `aaafac5be79b7ea46fdea19c1be762e14d22b66e`) explicitly **halts future public source-bearing patch publication** from the PRIVATE `olejardamir/DT` repository. This is a binding safety constraint, even though the generic format contract below describes how to prepare patches when publication is authorized. **Do not publish, revise, rebase, or replicate any private-source-bearing code diff in PUBLIC `doubletake_work` until the owner explicitly authorizes safe disclosure.** Already-public files are not authorization to repeat or extend disclosure. Keep existing scripts unmodified; mark pending entries `BLOCKED_PRIVATE_CONTENT` and ineligible for local auto-selection. The private executor may use private packages under its own existing authorization; this GPT worker must not write to private DT or disclose them here.
+
+While the hold applies, continue only with public-safe status, mission coverage, source-revision comparisons, learning and verified feedback. Do not fabricate placeholder code or convert non-code mission evidence requirements into source patches. If the mission or owner authorization changes, first reassess the precise public-safety boundary and the latest source; only then resume actual code-bearing patch generation. A scheduled worker unable to produce authorized output should be suspended rather than repeatedly republishing unsafe material.
+
 ## Required output: ONE FILE PER PATCH
 Each independent patch is exactly `BPE-<stable-ID>.sh` in `../patches/`. Absolutely **no non-patch files or subdirectories** may remain or be created inside `../patches/`. The **single readable shell file** MUST contain:
 - A small comment header with ID, one-sentence goal, DT source base commit/blob SHAs, affected files, dependency ID and readiness (never assert tests run when unrun).
