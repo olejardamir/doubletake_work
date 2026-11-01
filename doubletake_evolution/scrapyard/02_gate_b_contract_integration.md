@@ -1,49 +1,11 @@
-# Remaining Task 02 — Collapse Contracts and Gate B into Existing Assimilation
+# Historical Harvest Task 02 — Canonical Gate B integration
 
-Move useful contract/value/fit/replacement logic into the real `capability_distillation.py` Gate B and actual write-code caller.
+**Provenance:** Astrocytech/Agent_X audit `874bbe4268aca0539cbf8476f62444d704f2d555` (wave after `3887efe448edd223a00f94db324786d6a47a2d3b`). Historical design, not current authorization or implemented proof. D01 synthesis: [DISTILLED_KNOWLEDGE.md](DISTILLED_KNOWLEDGE.md); original blob `e9b17035387e8680f5ec2328fb51c7765edc43a8`.
 
-## Baseline and rules
+**Integration locus (historical, current parity UNKNOWN):** canonical `collective_core/capability_distillation.py`, `evaluate_gate_b`, `AssimilationDisposition`, Gate B decision store, real `_mixins/write_code.py` or successor. Donors `harvest_contracts.py`, `harvest_gate_b.py`, `harvest_models.py` are research material, not new authorities.
 
-Repository: `Astrocytech/Agent_X`  
-Audited `main` when this pack was generated: `874bbe4268aca0539cbf8476f62444d704f2d555`.  
-The implementation wave began after `3887efe448edd223a00f94db324786d6a47a2d3b`.
+**Mechanism:** One server-side Gate B assesses measurable gap, canonical owner, value floor, feasibility, experiment, guardrails and disposition `REJECT|EXPERIMENT|REPLACE|EXTEND|COMPLEMENT|NEW_COMPONENT`. A new component requires proof existing owners cannot absorb it; replacement identifies incumbent and cleanup. Revalidate decision freshness immediately before actual code write. `agentx_status`, novelty, UI choice, model confidence and donor registry do not grant authority. Proposed semantic state precedes implementation; verified state requires tests. Unknown or hard failure fails closed.
 
-Before work, re-check current local `main` and the working tree. Never reset newer work to this baseline.
+**Required negative decisions:** `NO_VALUE`, `DUPLICATE`, `ARCHITECTURAL_MISFIT`, `INFEASIBLE`, `UNTESTABLE`, `MAINTENANCE_BURDEN`, `GOVERNANCE`, `STALE_DECISION`.
 
-Hard rules:
-1. The recently added `harvest_*.py` files are **donor code**, not presumed canonical owners.
-2. Merge useful logic into the existing subsystem that already owns the responsibility unless a new owner is independently justified.
-3. Do not create a second/third Harvest stack, scheduler, persistence layer, embedding route, Gate B, promotion path, or UI.
-4. Semantic proposed state precedes behavior-changing code; verified semantic state follows tests/runtime reconciliation.
-5. Replace/merge before add. Once donor logic is absorbed, delete/deactivate the redundant donor path.
-6. Tests must exercise production paths, not only isolated donor classes.
-7. Any hard gate failure or hard UNKNOWN blocks PASS.
-8. UI never authorizes implementation; server-side Gate B/governance does.
-9. Do not keep code because effort was spent on it; keep it only if it has a justified owner, consumer, and value.
-
-## Primary existing targets
-
-- `collective_core/capability_distillation.py`
-- canonical `evaluate_gate_b`, `AssimilationDisposition`, Gate B decision store
-- actual `_mixins/write_code.py` or current equivalent
-- donor `harvest_contracts.py`, `harvest_gate_b.py`, relevant `harvest_models.py`
-
-## Required work
-
-Strengthen one Gate B. Require measurable gap, canonical owner, value floor, feasibility, experiment contract, guardrails, and explicit REJECT/EXPERIMENT/REPLACE/EXTEND/COMPLEMENT/NEW_COMPONENT disposition. Remove `agentx_status`, update/upgrade, novelty, UI choice, and LLM confidence as authority. Revalidate stale decisions before coding. `NEW_COMPONENT` requires proof no existing owner can absorb it.
-
-## Exact completion gates
-
-The real code-writing path must fail closed unless the current canonical Gate B explicitly authorizes. Hard outcomes include NO_VALUE, DUPLICATE, ARCHITECTURAL_MISFIT, INFEASIBLE, UNTESTABLE, MAINTENANCE_BURDEN, GOVERNANCE, STALE_DECISION.
-
-## Tests / evidence
-
-Harvest record -> Gate A -> Gate B -> implementation-trigger integration test; `agentx_status=upgrade` cannot authorize; stale decision cannot authorize; duplicate cannot create new module; REPLACE names incumbent and cleanup.
-
-## Cleanup / replacement
-
-Delete/neutralize donor contracts/Gate B after migration. Rewrite their useful tests against canonical `capability_distillation.py`.
-
-## Completion record
-
-Record starting/ending HEAD, semantic delta/reconciliation, owners changed, donor symbols consumed, donor files deleted/retained and why, production call paths, exact test commands/results, rollback point, and all failures/UNKNOWNs.
+**Falsifiable Ground:** Real Harvest→Gate A→Gate B→implementation-trigger test; `agentx_status=upgrade` alone never writes; stale decision cannot write; duplicate cannot spawn module; REPLACE identifies/removes incumbent; tests hit actual caller, not donor-only fixtures. Only after equivalent production behavior and references are verified may donor contracts/Gate B be removed and tests retargeted. Preserve start/end HEAD, semantic reconciliation, call paths, exact test results, rollback and unknowns. Recheck current DT owner/permissions before any action.
