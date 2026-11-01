@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # BPE-20261101-007 — Reject a receipt for another claim ID in direct per-claim verification.
+# EXECUTOR COMPATIBILITY: feature/alphacode-provider @ b1931476299f5b0dfa7b7222ce2706df9d11a01e (after BPE-20261101-003)
 # SOURCE: private DT @ 7b86364f1bbf34c0f04a2b85f21e5fb499fd7719; mission DT-EVO-007 / 7.9 evidence-trust extension
 # STATUS: PREPARED_UNTESTED; standalone patch, never claim verified before local testing.
 # Positive:** A matching claim ID and correctly digested evidence still produce PASS through the direct `verify_claim` API.
@@ -12,7 +13,7 @@ cd "$DT_ROOT"
 printf 'PATCH_ID=%s\nSTART_HEAD=%s\n' "BPE-20261101-007" "$(git rev-parse HEAD)"
 if [[ ! -f "tools/doubletake_evolve/claim_receipt/receipts.py" ]]; then echo "STOP missing tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 21; fi
 if ! git diff --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py" || ! git diff --cached --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py"; then echo "STOP dirty tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 22; fi
-if [[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/receipts.py")" != "a304c64d15db4ed37b94e491b4deebc9738b23ad" ]]; then echo "STOP source changed; ask patch worker to rebase tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 23; fi
+if [[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/receipts.py")" != "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c" ]]; then echo "STOP source changed; ask patch worker to rebase tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 23; fi
 if [[ -e "tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py" || -L "tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py" ]]; then echo "STOP existing tools/doubletake_evolve/claim_receipt/test_claim_id_binding.py" >&2; exit 24; fi
 PATCH_TEXT="$(cat <<'BPE_PATCH_PAYLOAD_BPE_20261101_007'
 diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletake_evolve/claim_receipt/receipts.py
