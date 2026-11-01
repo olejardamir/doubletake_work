@@ -8,12 +8,12 @@
 
 | Deleted relative scrapyard path | Last blob SHA | Deletion commit | Bytes |
 |---|---|---|---:|
-| `AGENT_X_GOVERNED_SEMANTIC_KWARG_FORWARDING_FIX.md` | `3f110552db948083d20a48b5e9ca9a2a815d59a8` | `6dc9d5ec298de023afda0b713f4497ff62987116` | 4066 |
-| `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | `b2e4c51bfa87e25fe04a8885c45ca6a3c4c3c48a` | 14420 |
-| `AGENT_X_SEMANTIC_WRITE_SET_RESOLUTION_REPAIR.md` | `e446916997c2a156cb13c863222f5d4fc3f2f578` | `611ec305e614b376097c03c136af0e566e3c95af` | 11121 |
-| `AGENT_X_SPEC_DRIVEN_FALSE_NOOP_REPAIR.md` | `bbb6d89e321b350daf66ae3e8d2d56f5127e4b46` | `201ccaa662da7af87524df3dee8ba583e978a7b1` | 16457 |
+| `AGENT_X_GOVERNED_SEMANTIC_KWARG_FORWARDING_FIX.md` | `3f110552db948083d20a48b5e9ca9a2a815d59a8` | `6dc9d5ec298de023afda0b713f4497ff62987116` | 4072 |
+| `AGENT_X_SEMANTIC_PROMPT_GOVERNANCE_DEADLOCK_REPAIR.md` | `82055f8f3d4101b1285ac05af062797af1b9690f` | `b2e4c51bfa87e25fe04a8885c45ca6a3c4c3c48a` | 14426 |
+| `AGENT_X_SEMANTIC_WRITE_SET_RESOLUTION_REPAIR.md` | `e446916997c2a156cb13c863222f5d4fc3f2f578` | `611ec305e614b376097c03c136af0e566e3c95af` | 11203 |
+| `AGENT_X_SPEC_DRIVEN_FALSE_NOOP_REPAIR.md` | `bbb6d89e321b350daf66ae3e8d2d56f5127e4b46` | `201ccaa662da7af87524df3dee8ba583e978a7b1` | 16489 |
 
-**This second checkpoint:** 5 content-read (4 merged + 1 distinct historical UI contract); 4 fully dissected and canonical-replaced; 1 justified KEEP; 4 verified original deletions; 1 new coherent cluster; 0 in-place reductions; 0 nontext converted. Original source bytes **46,064** removed; canonical **9,265** added; **36,799 net source+cluster bytes removed** before inventory metadata. Combined current run with CL-HARVEST-001: **17 source bodies read** (16 replaced, one distinct kept), **16 verified source deletions**, **2 canonical clusters**, **47,773 net source+canonical bytes removed** before inventory/ledger metadata; **14 fewer files**. No current DT Ground, no new incoming note after IS-015, and no Director mission edits. Continue with fresh unreviewed material next run rather than revisiting these source copies. Full 30–50 distinct-file target not reached; no content-read claim for tree metadata.
+**UTF-8 byte audit:** byte figures in both current checkpoints were reconciled to Git tree object `5f3c0a77ba2711cecf19b7ea9a7567c6a75fbba4` (pre-deletion) and the verified current cluster tree; earlier JavaScript string lengths undercounted non-ASCII bytes. Counts below are Git object byte sizes, not character lengths.\n\n**This second checkpoint:** 5 content-read (4 merged + 1 distinct historical UI contract); 4 fully dissected and canonical-replaced; 1 justified KEEP; 4 verified original deletions; 1 new coherent cluster; 0 in-place reductions; 0 nontext converted. Original source bytes **46,190** removed; canonical **9,311** added; **36,879 net source+cluster bytes removed** before inventory metadata. Combined current run with CL-HARVEST-001: **17 source bodies read** (16 replaced, one distinct kept), **16 verified source deletions**, **2 canonical clusters**, **47,897 net source+canonical bytes removed** before inventory/ledger metadata; **14 fewer files**. No current DT Ground, no new incoming note after IS-015, and no Director mission edits. Continue with fresh unreviewed material next run rather than revisiting these source copies. Full 30–50 distinct-file target not reached; no content-read claim for tree metadata.
 
 
 ## CL-HARVEST-001 canonical-only semantic merge and D01 closure — 2026-11-01 ~20:00Z
@@ -26,20 +26,20 @@
 
 | Deleted path relative to scrapyard/ | Last blob SHA | Delete commit SHA | Bytes removed |
 |---|---|---|---:|
-| `CURRENT_STATE_AUDIT.md` | `dc4a13e656b26937109c17a53ef56fb3979d28c0` | `746ac96b95af54547167ce94791eaff6c164cc0b` | 1631 |
-| `DONOR_MODULE_DISPOSITION_MATRIX.md` | `f6022de2f82ce921142e2ab23f7ee8d8c9f27842` | `2e3f9f45f401733a9774cb8b2f778ce1773343f8` | 1696 |
-| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `96f9d52276a4968fec98e39bb3e3cf8e5f8b5044` | `10aa5aa6f42e3f025d52248808eaef32fcd06bdc` | 1876 |
-| `01_revalidate_and_disposition.md` | `6688846ab15a72d50c88c70a9d9696ee5709b611` | `559858fa8da5c08e10668a8fdb96838c72043725` | 2177 |
-| `02_gate_b_contract_integration.md` | `0a4aec9bbfd3b26365c6fa4968c081a90027a638` | `1a9520e966154314433a759a15005feb8fdff663` | 2068 |
-| `03_semantic_embedding_grounding.md` | `06f3081f219552203852b42fb6b0f55ee6ac574b` | `0c0c6a4ddffea98fa977f73092ee649bc32e7ed1` | 1833 |
-| `04_generation_scheduler_integration.md` | `f177d789d16b1f5cc53b41644d5725de3de8369f` | `199eec3164c9eb46539897ca592fc0c43acf6921` | 1864 |
-| `05_evaluation_promotion_integration.md` | `39ec0cd88e2657862fa7961bfe8b67a104457555` | `2f22613023b24aa964ea68448c3f459806fb4e14` | 1830 |
-| `06_persistence_migration_recovery.md` | `1e9c6eb4924abe89a4ae4378ee771018f5760952` | `96fc6aab5c450bc704eb6472196b991f7e2ce1c2` | 1758 |
-| `07_real_api_ui_inventory.md` | `572d3e80a22d9de12beaa1939e020053911927ff` | `12e6a19078f32330cb14a8ea13310178efb0a6db` | 1785 |
-| `08_benchmark_holdout.md` | `9ac87fe414f86f76b7352b7d08a23a913487caf7` | `1b22f4c0e3fe022bb8f820ae224d155e37f79e63` | 1596 |
-| `09_strict_e2e_ci.md` | `350060eba69d56d3eafab4594e30cd13e708128e` | `22d46b4c265f024379c1afc9b432c8b1ff50f600` | 1563 |
+| `CURRENT_STATE_AUDIT.md` | `dc4a13e656b26937109c17a53ef56fb3979d28c0` | `746ac96b95af54547167ce94791eaff6c164cc0b` | 1639 |
+| `DONOR_MODULE_DISPOSITION_MATRIX.md` | `f6022de2f82ce921142e2ab23f7ee8d8c9f27842` | `2e3f9f45f401733a9774cb8b2f778ce1773343f8` | 1698 |
+| `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` | `96f9d52276a4968fec98e39bb3e3cf8e5f8b5044` | `10aa5aa6f42e3f025d52248808eaef32fcd06bdc` | 1896 |
+| `01_revalidate_and_disposition.md` | `6688846ab15a72d50c88c70a9d9696ee5709b611` | `559858fa8da5c08e10668a8fdb96838c72043725` | 2185 |
+| `02_gate_b_contract_integration.md` | `0a4aec9bbfd3b26365c6fa4968c081a90027a638` | `1a9520e966154314433a759a15005feb8fdff663` | 2076 |
+| `03_semantic_embedding_grounding.md` | `06f3081f219552203852b42fb6b0f55ee6ac574b` | `0c0c6a4ddffea98fa977f73092ee649bc32e7ed1` | 1837 |
+| `04_generation_scheduler_integration.md` | `f177d789d16b1f5cc53b41644d5725de3de8369f` | `199eec3164c9eb46539897ca592fc0c43acf6921` | 1866 |
+| `05_evaluation_promotion_integration.md` | `39ec0cd88e2657862fa7961bfe8b67a104457555` | `2f22613023b24aa964ea68448c3f459806fb4e14` | 1832 |
+| `06_persistence_migration_recovery.md` | `1e9c6eb4924abe89a4ae4378ee771018f5760952` | `96fc6aab5c450bc704eb6472196b991f7e2ce1c2` | 1760 |
+| `07_real_api_ui_inventory.md` | `572d3e80a22d9de12beaa1939e020053911927ff` | `12e6a19078f32330cb14a8ea13310178efb0a6db` | 1787 |
+| `08_benchmark_holdout.md` | `9ac87fe414f86f76b7352b7d08a23a913487caf7` | `1b22f4c0e3fe022bb8f820ae224d155e37f79e63` | 1600 |
+| `09_strict_e2e_ci.md` | `350060eba69d56d3eafab4594e30cd13e708128e` | `22d46b4c265f024379c1afc9b432c8b1ff50f600` | 1579 |
 
-**Verified outcomes:** 12 historical text bodies content-read / fully dissected (closure re-review), 1 coherent semantic cluster created, **12 verified original deletions**, **0 in-place reductions this checkpoint**, **0 non-plaintext conversions**, **0 verified DT capability changes**. Deleted source bytes **21,677**, canonical added **10,703**, **10,974 net source+canonical bytes removed** before inventory metadata; 12 source files removed, one canonical added, **11 fewer files**. Recursive tree after writes: **370 scrapyard blobs** (excluding directories); one known LLM7 deletion safety hold remains unchanged. Prior inventory first-pass review completion is not proof of universal atomic distillation. Next content-review cursor: uncompressed historical DT/Governed-Ingestion sources not yet atomically distilled; do not re-read these 12 unless new evidence changes their relevance. No unreviewed binary falsely counted as converted.
+**Verified outcomes:** 12 historical text bodies content-read / fully dissected (closure re-review), 1 coherent semantic cluster created, **12 verified original deletions**, **0 in-place reductions this checkpoint**, **0 non-plaintext conversions**, **0 verified DT capability changes**. Deleted source bytes **21,755**, canonical added **10,737**, **11,018 net source+canonical bytes removed** before inventory metadata; 12 source files removed, one canonical added, **11 fewer files**. Recursive tree after writes: **370 scrapyard blobs** (excluding directories); one known LLM7 deletion safety hold remains unchanged. Prior inventory first-pass review completion is not proof of universal atomic distillation. Next content-review cursor: uncompressed historical DT/Governed-Ingestion sources not yet atomically distilled; do not re-read these 12 unless new evidence changes their relevance. No unreviewed binary falsely counted as converted.
 
 
 ## CL-LLM7-001 verified semantic cluster merge and IS-015 triage — 2026-11-01 UTC
