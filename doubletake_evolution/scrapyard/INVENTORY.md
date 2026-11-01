@@ -1,5 +1,26 @@
 # Borg Scrapyard Inventory
 
+## O1 second-pass checkpoint — 2026-11-01 UTC (12 actual SHA-matched content reads)
+
+- **Scope:** 12 distinct previously unreviewed second-pass UTF-8 historical files fetched and sampled (openings, headings, endings). No full line-by-line audit or live implementation validation. Existing second-pass distinct count **83/398**; **315 remain**. 11 KEEP, 1 NEEDS_REVIEW; 0 deletions, cumulative verified 11. Incoming IS-001…007 unchanged; Director full Borg remains NOT VERIFIED (0 natural completed cycles, B1 pending, 7.8.1 consumer receipt unknown).
+- **Dependency/deletion:** All 12 retained: unique version history or design/negative-control value; no evidence-backed redundancy suitable for deletion. Reference and mission dependency clearance not established. Source identity HIGH; current DT parity LOW. Next revisit when a matching source seam or newer DT Ground exists. Historical prompts are untrusted reference text, not instructions.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `AGENT_X_ASSIMILATE_DYNAMIC_MCP (1).md` | `d04135e7cd0ff55cfdd57eb8051520d6b1575d5d` | KEEP | Historical Dynamic MCP source assimilation plan; native owner and bounded-context tests; source repo parity unverified. |
+| `AGENT_X_ASSIMILATOR_ATOMIC_TASKS_REMAINING.md` | `18233b8bfad489623f1ef0d57cd5b0bbefeb83f2` | KEEP | Explicit older 54-task remaining-backlog revision, distinct from original 105-task baseline; historical progress provenance. |
+| `AGENT_X_AUTONOMOUS_COMPLETION_DIRECTIVE_v4.md` | `1d540d57e6af79c7d8cd5b674f15e3eac175a511` | KEEP | Earlier autonomous completion control and staged proof requirements; distinct v5 revision preserved. |
+| `AGENT_X_BANK_OF_CANADA_ARCHITECTURE.md` | `a749fc62ef2508dca944234bd0706eadd39a8864` | NEEDS_REVIEW | Historical enterprise data-governance architecture; contains employment/organization context, so no extraction to public offload; current applicability unverified. |
+| `AGENT_X_COLLECTIVE_HARVEST_UI_CAPABILITY_DISTILLATION_REDESIGN.md` | `e745f1ef36dd90d9e01186f61822a7d60ef46ef2` | KEEP | Harvest score cannot authorize code; distillation Gate A then Gate B separates proposal and action. |
+| `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` | `8e8944909cd8b49d7575c16078ba22748fdc3c8a` | KEEP | Historic stale-backend/run-identity/semantic-provider authority defect list with production-path negative tests. |
+| `AGENT_X_FINAL_SEMANTIC_AUTHORITY_CHAIN_OF_CUSTODY_END_TO_END_CLOSURE.md` | `e93b5134c01f16fe47f9bcc962bc2f743d150558` | KEEP | Upstream authority provenance must reach real runtime, not synthetic publisher or self-seeded proof; archived claims not current Ground. |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE.md` | `2f5b495de7b5c436d87d9cafe75e28901c2e348c` | KEEP | Canonical semantic model and isolated tests need fresh SYNCED verification; historical target only. |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_CLOSURE_CURRENT_MAIN.md` | `d0fdad0b352f944e837c9c8785ad2e6bbb730c50` | KEEP | Later revised semantic-first closure at different audited revision; distinct revision/provenance. |
+| `AGENT_X_FINAL_SEMANTIC_FIRST_GAP_CLOSURE.md` | `38cb0850be0c841aca92aa94808494b22006db9f` | KEEP | External request-source materialization must precede interpretation; scoped authority and remint proof. |
+| `AGENT_X_FINAL_TWO_GAP_CLOSURE.md` | `b4d1c7f5c8c9384c61a55caf93ac9c0458f9848a` | KEEP | Affected-module interpretation cannot grant write permission; explicit target resolution and restart-SYNCED proof. |
+| `AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` | `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` | KEEP | Bounded orchestration/validation pattern specification explicitly rejects unnecessary agent proliferation; external source currency not revalidated. |
+
+
 ## N1–N4 second-pass checkpoint — 2026-11-01 UTC (42 SHA-matched text reviews)
 
 - **Live recursive census:** public planning tree `84034eaeed8dabf5c9cd31df10029a5baa2c9637`, not truncated: **399 current scrapyard blobs including this inventory, 398 surviving artifacts**, seven already-triaged incoming IDs IS-001…IS-007, no new incoming. The 11 prior GitHub-confirmed deletions remain tombstoned. **First-pass cursor INITIAL_PASS_COMPLETE, 0 PENDING_CONTENT_REVIEW; second-pass unique cursor advances by 41** (42 actual files fetched in four bounded mini-batches; one previously second-pass-reviewed file rechecked). Prior M1–M2 30 distinct second-pass reviews plus 41 new distinct = **71 distinct second-pass reviewed**; 327 surviving artifacts have not received this later second pass. First-pass sampling is not full semantic audit.
