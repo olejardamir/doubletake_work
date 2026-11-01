@@ -3,9 +3,9 @@
 # Mission: DT-EVO-007 / 7.9 evidence-trust extension; NOT completion of distinct 7.9.2 proof-chain package.
 # Executor branch: feature/alphacode-provider; source snapshot: 9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb
 # Source blob: tools/doubletake_evolve/claim_receipt/receipts.py 5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0
-# Revision: 1; status PREPARED_UNTESTED. No local execution or tests claimed.
+# Revision: 2; status PREPARED_UNTESTED. Source implementation unchanged; added skipped-predecessor and ordering regressions. No local execution or tests claimed.
 # DoD positive: one/two correctly linked receipts remain valid and all_pass
-# DoD negative: two anchors, unknown predecessor or disconnected singleton are rejected even when per-claim evidence matches
+# DoD negative: two anchors, unknown predecessor, disconnected singleton, and skipped-middle receipt are rejected even when per-claim evidence matches
 # DoD regression: new focused tests and existing test_claim_receipt.py pass under host guard; git diff --check passes.
 # DoD evidence: local executor records actual source/branch, tests and DT commit separately from public feedback.
 # STOP if branch/source differs, touched path dirty, target test exists, apply-check or tests fail. Never auto-commit/push.
@@ -72,7 +72,7 @@ diff --git a/tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py
 new file mode 100644
 --- /dev/null
 +++ b/tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py
-@@ -0,0 +1,62 @@
+@@ -0,0 +1,93 @@
 +"""Chain continuity is mandatory for an aggregate success verdict."""
 +
 +from doubletake_evolve.claim_receipt.models import (
@@ -135,6 +135,37 @@ new file mode 100644
 +    chain = verify_chain({"a": receipt})
 +    assert not chain.chain_valid
 +    assert chain.gaps == ("a",)
++
++
++def test_reversed_mapping_insertion_keeps_valid_order():
++    spec, evidence, receipts = _case()
++    result = verify_claims(spec, evidence, {"b": receipts["b"], "a": receipts["a"]})
++    assert result.chain.chain_valid
++    assert result.all_pass
++    assert [r.claim_id for r in result.chain.receipts] == ["a", "b"]
++
++
++def test_skipped_middle_receipt_does_not_count_as_contiguous_chain():
++    ids = ("a", "b", "c")
++    spec = ClaimReceiptSpec(
++        spec_id="skip", version="1",
++        claims=tuple(
++            ClaimSpec(claim_id=cid, statement=cid, expected_kind="score",
++                      evidence_path=f"ev/{cid}", required_fields=("value",))
++            for cid in ids
++        ),
++        committed_claim_ids=ids, sealed_at="2026-11-01T00:00:00Z",
++    )
++    evidence = {f"ev/{cid}": EvidenceItem(path=f"ev/{cid}", payload={"value": cid}) for cid in ids}
++    first = TerminalReceipt("a", evidence["ev/a"].content_digest, "")
++    middle = TerminalReceipt("b", evidence["ev/b"].content_digest, first.receipt_sha256)
++    last = TerminalReceipt("c", evidence["ev/c"].content_digest, first.receipt_sha256)
++    result = verify_claims(spec, evidence, {"a": first, "b": middle, "c": last})
++    assert result.coverage.covered
++    assert all(v.verdict == PASS for v in result.verdicts)
++    assert not result.chain.chain_valid
++    assert result.chain.gaps == ("c",)
++    assert not result.all_pass
 BPE_DIFF_010_END
 )"
 printf '%s\n' "$PATCH_TEXT" | git apply --check - || { echo "FAIL_APPLY_CHECK" >&2; exit 30; }
