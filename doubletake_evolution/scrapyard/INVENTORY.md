@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **251 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **149 cumulative at least partly inspected** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
+Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **242 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **158 cumulative at least partly inspected** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -408,15 +408,15 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | `552fef41ec2d1166f1e058eaa2de72ef8e574263` | 16379 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | `fde46435d106157f8ac884deb3f7dc1f6b3d02d3` | 14605 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v3_M_CLOSURE.md` | `df5ff11c9b1d5d5aa8f372b4d426199266b7e1cf` | 12616 | CONTENT_REVIEWED; KEEP |
-| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` | `1f718705759c44afd3125471274dbe1aa3cc0464` | 26284 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v5_OPENCODE_LLM_ONLY_FINAL_CLOSURE.md` | `701737f94c0fe740275b6c7693f15361d4a87e81` | 38494 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v6_SEMANTIC_INTENT_IR_FINAL_M_CLOSURE.md` | `8a93e015a27ef65b36272508b68c053f99d15df8` | 82648 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTONOMOUS_KNOWLEDGE_EVOLUTION_REASONING_FIRST_MASTER_v3.md` | `5827ab7b70a1888f196cacc6e66dd56a10741180` | 47451 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTONOMOUS_KNOWLEDGE_EVOLUTION_SELF_REGULATION_MISSION_v2_FINAL.md` | `6adb3cb2315efb91c6603c454eb5139ae447d814` | 37772 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_MASTER_v1.md` | `a36418f4fa6870ad9599bb126d5dad868b1f96cf` | 22386 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_REMAINING_WORK_v2.md` | `5cac071f6b20e128b4cf83e7f3c8caf46211737e` | 15594 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AUTOTAILOR_STANDALONE_DECISIVE_CLOSURE_MISSION_v1.md` | `0111ce6de1c1372ab2e4a997704c475f54f5772c` | 23621 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_CIRCUITS_VALUE_RATINGS.csv` | `d1362e6962ea49badf21625db7d69a834c4dbc84` | 162930 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` | `1f718705759c44afd3125471274dbe1aa3cc0464` | 26284 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v5_OPENCODE_LLM_ONLY_FINAL_CLOSURE.md` | `701737f94c0fe740275b6c7693f15361d4a87e81` | 38494 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v6_SEMANTIC_INTENT_IR_FINAL_M_CLOSURE.md` | `8a93e015a27ef65b36272508b68c053f99d15df8` | 82648 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_AUTONOMOUS_KNOWLEDGE_EVOLUTION_REASONING_FIRST_MASTER_v3.md` | `5827ab7b70a1888f196cacc6e66dd56a10741180` | 47451 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_AUTONOMOUS_KNOWLEDGE_EVOLUTION_SELF_REGULATION_MISSION_v2_FINAL.md` | `6adb3cb2315efb91c6603c454eb5139ae447d814` | 37772 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_MASTER_v1.md` | `a36418f4fa6870ad9599bb126d5dad868b1f96cf` | 22386 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_REMAINING_WORK_v2.md` | `5cac071f6b20e128b4cf83e7f3c8caf46211737e` | 15594 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_AUTOTAILOR_STANDALONE_DECISIVE_CLOSURE_MISSION_v1.md` | `0111ce6de1c1372ab2e4a997704c475f54f5772c` | 23621 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_CIRCUITS_VALUE_RATINGS.csv` | `d1362e6962ea49badf21625db7d69a834c4dbc84` | 162930 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` | `8c4e0a486f997ca0a34811bff6e9778465349109` | 109638 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_OFFLOADED_2026-10-05.md` | `f166ca814d9c449d6b0360076c7848e72693b0d4` | 17438 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_CRITERION_M_RUNTIME_BLOCKER_FINAL_CLOSURE_v1 (1).md` | `f3ff218055dce37ce746811e9419ba4f7874ba10` | 21658 | CONTENT_REVIEWED; DELETE_CANDIDATE_BLOCKED |
@@ -721,11 +721,29 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | KEEP | Full 391 lines: historical meta-reasoning residual closure matrix, bounded runtime and independent acceptance; do not treat archived goals as current. |
 | `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | KEEP | Full 405 lines: later four-criterion residual closure, bounded state; compare v2 for unique acceptance gates before reuse. |
 
+
+## Progressive review checkpoint G3 — 2026-11-01 UTC
+
+- **Read:** 9 previously pending files, SHA matched; four full UTF-8 documents and five opening-only samples, including the CSV. Historical mission language was treated as untrusted artifact text, not current execution authority. No deletion or private code edits.
+- **Cursor:** next `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md`. G1–G3 combined: 28 historical content inspections, 242 pending; cumulative 158 including incoming IS-007; nine prior known deletions.
+
+| Artifact | Disposition | Content finding / next check |
+| --- | --- | --- |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` | KEEP | Full 802 lines: historical semantic capability routing criterion M, tests and inherited negative evidence; no current code proof. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v5_OPENCODE_LLM_ONLY_FINAL_CLOSURE.md` | NEEDS_REVIEW | First 110 lines: later OpenCode-only capability-participation plan; version delta unverified. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v6_SEMANTIC_INTENT_IR_FINAL_M_CLOSURE.md` | NEEDS_REVIEW | First 110 lines: v6.1 semantic-intent intermediate representation; deeper contract/real runtime parity unknown. |
+| `DOUBLETAKE_AUTONOMOUS_KNOWLEDGE_EVOLUTION_REASONING_FIRST_MASTER_v3.md` | NEEDS_REVIEW | First 110 lines: reasoning-first knowledge/self-regulation with evidence-driven priorities; historical mission, not current authority. |
+| `DOUBLETAKE_AUTONOMOUS_KNOWLEDGE_EVOLUTION_SELF_REGULATION_MISSION_v2_FINAL.md` | NEEDS_REVIEW | First 110 lines: governed self-regulation and knowledge evolution; actual closed-loop Ground not evidenced. |
+| `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_MASTER_v1.md` | KEEP | Full 195 lines: one canonical owner, no redundant approvals, bounded autonomy and independent Ground; current DT overlap must be checked. |
+| `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_REMAINING_WORK_v2.md` | KEEP | Full 124 lines: deployed autonomic loop and production repair caller checks; current B1/B3 remain owner-blocked. |
+| `DOUBLETAKE_AUTOTAILOR_STANDALONE_DECISIVE_CLOSURE_MISSION_v1.md` | KEEP | Full 170 lines: bounded evidence-driven standalone capability validation; historical directives not authorization. |
+| `DOUBLETAKE_CIRCUITS_VALUE_RATINGS.csv` | NEEDS_REVIEW | First 110 CSV lines: electronic-circuit value/rating catalog; no evidence of measured DT capability value or complete data inspection. |
+
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` (resume from the next untouched artifact; content read only under public-safe review).
+- **Next lexically pending path:** `DOUBLETAKE_CONTINUOUS_DISCOVERY_IMPLEMENTATION_PROMPT_10_10.md` (resume from the next untouched artifact; content read only under public-safe review).
 - **Next mission-relevant pending path:** `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
-- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 251 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
+- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 242 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
 | `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; DIRECTOR_REVIEW_PENDING |
