@@ -1,9 +1,0 @@
-# Historical Harvest integration pack — canonical index
-
-**Scope:** `Astrocytech/Agent_X` historical main `874bbe4268aca0539cbf8476f62444d704f2d555`, **not** current DT mission. Original Git blob `4a5682905e5f21f3b0a5a4e3ab552c27ce51fa8c`; parent references migrated at `e722579dec2f5fbeed285e25571a2741eeec0147`. [D01 canonical](DISTILLED_KNOWLEDGE.md).
-
-**Observed historical problem:** parallel donor Harvest modules lacked proven integration into canonical production owners. Read [audit](CURRENT_STATE_AUDIT.md) and [19-donor disposition matrix](DONOR_MODULE_DISPOSITION_MATRIX.md). Required loop: donor idea→real owner/caller→semantic delta→merge→production UI/API/state→production-path tests→delete obsolete donor→source/runtime reconciliation. No third adapter stack.
-
-**Ordered archival phases:** [01](01_revalidate_and_disposition.md), [02](02_gate_b_contract_integration.md), [03](03_semantic_embedding_grounding.md), [04](04_generation_scheduler_integration.md), [05](05_evaluation_promotion_integration.md), [06](06_persistence_migration_recovery.md), [07](07_real_api_ui_inventory.md), [08](08_benchmark_holdout.md), [09](09_strict_e2e_ci.md), [10–11 canonical cleanup and final audit](DISTILLED_KNOWLEDGE.md#d01-canonical-closure-harvest-cleanup-and-final-audit-2026-11-01). Historical phase ordering is provenance, not authorization to execute.
-
-**New-owner gate:** only if existing owner cannot absorb the distinct responsibility, live caller and lifecycle are proven, tests cover it, and obsolete path removal is planned. **DoD:** real semantic inventory/UI, canonical Gate B before code, embedding, scheduler, R0–R6, persistence/restart, holdout, strict E2E, cleanup and independent Ground; if new policy loses on holdout, keep incumbent. **Unknown:** current DT parity and actual runtime results; revalidate current HEAD and permissions before any action.
