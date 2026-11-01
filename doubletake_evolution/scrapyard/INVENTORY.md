@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **185 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 215 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **173 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 227 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -482,18 +482,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `EA_FINAL_GAP_CLOSURE_PROMPT.md` | `cbad287c38499f91635614f5eed14269a3921b1c` | 25280 | CONTENT_SAMPLED; KEEP |
 | `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` | `2b512674477f1e30795f3e9af62892e2d0c282b9` | 109622 | CONTENT_SAMPLED; KEEP |
 | `EQC_AC_Architecture_Contract_Standard_v1_5.md` | `d0eb932ce132be093b9016758eb3286d80dbfe42` | 109600 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `EQC_FIC_Standard_v1_6.md` | `16ece3332c51ceed64aecb04f2a95e09e6f59b62` | 81132 | PENDING_CONTENT_REVIEW |
-| `EQC_FIC_Standard_v1_7.md` | `10ecab54aeef55191bad343afe33b1b8d8502334` | 91041 | PENDING_CONTENT_REVIEW |
-| `EQC_FIC_Standard_v1_8.md` | `4d2a5149c2813a38c218bd3c558fec07743bef10` | 96011 | PENDING_CONTENT_REVIEW |
-| `EQC_FIC_Standard_v1_9.md` | `9035c7b2ee24f566d5954fece8f8a82876530410` | 96305 | PENDING_CONTENT_REVIEW |
-| `EQC_FIC_Standard_v2_1.md` | `a2a93f55e494125a73577393f3e680b967a59f45` | 107837 | PENDING_CONTENT_REVIEW |
-| `EQC_FIC_Standard_v2_3.md` | `6e74ff3906337779bbf60a8325f3bf2b30838e1c` | 117376 | PENDING_CONTENT_REVIEW |
-| `EQC_FIC_Standard.md` | `d0d5ff9d723e2e96b0be58d7a34edfdeffdca68f` | 26093 | PENDING_CONTENT_REVIEW |
-| `EQC-SR-v0.7.md` | `2f83c7fcbc157806711104a808849bc81a1eabd6` | 105675 | PENDING_CONTENT_REVIEW |
-| `EQC-SR-v0.9.md` | `a9fcbce544146f316a15b2ea24097b1395b5e8b5` | 125036 | PENDING_CONTENT_REVIEW |
-| `EQC-SR-v1.0-release-candidate.md` | `f29690915f4218bbb2ce9ea04d6b1340c4683fdc` | 133167 | PENDING_CONTENT_REVIEW |
-| `evp_ui_backend_readiness_prompt_v3.md` | `e68ba6544c178cebd5fee7fb0df3c41e7b6a44ca` | 22413 | PENDING_CONTENT_REVIEW |
-| `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` | `50648cea4736514a405c212e32b65b4768a804b3` | 223541 | PENDING_CONTENT_REVIEW |
+| `EQC_FIC_Standard_v1_6.md` | `16ece3332c51ceed64aecb04f2a95e09e6f59b62` | 81132 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `EQC_FIC_Standard_v1_7.md` | `10ecab54aeef55191bad343afe33b1b8d8502334` | 91041 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `EQC_FIC_Standard_v1_8.md` | `4d2a5149c2813a38c218bd3c558fec07743bef10` | 96011 | CONTENT_SAMPLED; KEEP |
+| `EQC_FIC_Standard_v1_9.md` | `9035c7b2ee24f566d5954fece8f8a82876530410` | 96305 | CONTENT_SAMPLED; KEEP |
+| `EQC_FIC_Standard_v2_1.md` | `a2a93f55e494125a73577393f3e680b967a59f45` | 107837 | CONTENT_SAMPLED; KEEP |
+| `EQC_FIC_Standard_v2_3.md` | `6e74ff3906337779bbf60a8325f3bf2b30838e1c` | 117376 | CONTENT_SAMPLED; KEEP |
+| `EQC_FIC_Standard.md` | `d0d5ff9d723e2e96b0be58d7a34edfdeffdca68f` | 26093 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `EQC-SR-v0.7.md` | `2f83c7fcbc157806711104a808849bc81a1eabd6` | 105675 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `EQC-SR-v0.9.md` | `a9fcbce544146f316a15b2ea24097b1395b5e8b5` | 125036 | CONTENT_SAMPLED; KEEP |
+| `EQC-SR-v1.0-release-candidate.md` | `f29690915f4218bbb2ce9ea04d6b1340c4683fdc` | 133167 | CONTENT_SAMPLED; KEEP |
+| `evp_ui_backend_readiness_prompt_v3.md` | `e68ba6544c178cebd5fee7fb0df3c41e7b6a44ca` | 22413 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` | `50648cea4736514a405c212e32b65b4768a804b3` | 223541 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Fixed_Modular_ML_SHA256_Architecture.md` | `38de201f75587db24eacf29fcf82ee5c38de78e4` | 16164 | PENDING_CONTENT_REVIEW |
 | `Forcing_Age_Liquidity_Mathematics_FALM_v6_final_theoretical_core.md` | `d9ad8605616d23bc980ded634c55e0f5f458534a` | 75221 | PENDING_CONTENT_REVIEW |
 | `forcing_age_liquidity_repair_vs_replenishment.md` | `002bf99336db736891d86970acd6c2ce86fb41ab` | 6086 | PENDING_CONTENT_REVIEW |
@@ -870,3 +870,21 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` **KEEP**: Architecture contract standard: semantic→architecture→file-contract→tests traceability; v1.5.1 corrects self-version binding.
 - `EQC_AC_Architecture_Contract_Standard_v1_5.md` **NEEDS_REVIEW**: Earlier architecture standard adds provenance freshness/expiry; preserve until exact v1.5.1 delta and reference checks.
 - **Dependency/deletion check:** No file deleted; older versions may be referenced by historical prompts and unique delta has not been excluded. No verified safe removal in this batch. Cumulative 215 sampled; 185 pending. Next cursor `EQC_FIC_Standard_v1_6.md`.
+
+
+## I2 checkpoint — 2026-11-01 UTC (12 newly sampled historical artifacts)
+
+- Fetched and SHA-matched first 125 lines of 12 current files (11 lengthy standards/specifications and one unrelated UI task); **partial content samples**, not complete-file review. No source instruction executed. All retained pending normative-version comparisons and exact-reference checks.
+- `EQC_FIC_Standard_v1_6.md` **NEEDS_REVIEW**: Early file implementation contract: pre-code gates, invariants, error and security obligations; preserve for v2.3 delta check.
+- `EQC_FIC_Standard_v1_7.md` **NEEDS_REVIEW**: Adds source-of-truth ownership, negative tests and idempotence; older variant's unique normative differences unverified.
+- `EQC_FIC_Standard_v1_8.md` **KEEP**: Introduces explicit pseudocode→FIC→code unitization and traceability; candidate test discipline, not proven DT behavior.
+- `EQC_FIC_Standard_v1_9.md` **KEEP**: Adds unit dependency DAG, semantic lockfile, bounded implementation packets and coverage; possible no-drift controls.
+- `EQC_FIC_Standard_v2_1.md` **KEEP**: Adds control-plane separation, evidence retention and machine-readable conformance; current DT adoption unverified.
+- `EQC_FIC_Standard_v2_3.md` **KEEP**: Later release candidate adds hostile-document safety, contract-to-test gate, artifact inventory and cross-unit integration.
+- `EQC_FIC_Standard.md` **NEEDS_REVIEW**: Original v1.0 file-contract template; preserve provenance pending version/delta and reference census.
+- `EQC-SR-v0.7.md` **NEEDS_REVIEW**: Symbolic-regression porting profile: stable requirement IDs and source-to-spec coverage; older version retained for delta.
+- `EQC-SR-v0.9.md` **KEEP**: Symbolic-regression profile adds differential tests, frozen semantics, failure injection and benchmark discipline.
+- `EQC-SR-v1.0-release-candidate.md` **KEEP**: Release candidate formalizes source extraction, semantic freeze, reference traces and Python parity gates; no actual port verified.
+- `evp_ui_backend_readiness_prompt_v3.md` **NEEDS_REVIEW**: Unrelated audio application UI/backend contract; potential upload-state lifecycle pattern, DT relevance not established.
+- `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` **NEEDS_REVIEW**: Large separate sports-feed assignment closure prompt; strict scope freeze and measured POC evidence, no current DT mandate.
+- **Deletion:** 0. Older standard variants may retain independent normative history; cannot infer valuelessness from later versions. Cumulative 227 sampled, 173 pending; next cursor `Fixed_Modular_ML_SHA256_Architecture.md`.
