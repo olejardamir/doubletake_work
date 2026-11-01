@@ -2,6 +2,12 @@
 
 ## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
 
+- **Prior path:** `doubletake_evolution/scrapyard/runic_poetry_corpus (1).md`; **prior blob:** `a1934dcfee5b71511c960a80ffe9e1469ea59cb8`; **classification:** `DELETE_CANDIDATE → DELETED_VERIFIED`; **GitHub deletion commit:** `f00288e22e74f5433ac1a4421b916cb3e21daf76`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/runic_poetry_corpus.md` (same exact full UTF-8 content and Git blob SHA, re-fetched immediately before deletion). **Dependency checks:** five current Director files had no exact numbered-path reference; both-repo code search found no indexed matching filename stem; other unindexed/external references remain unknowable. Original path reversible via Git history. No unique material lost; no deletion outside scrapyard. No DT implementation, protected history or mission altered.
+
+
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
 - **Prior path:** `doubletake_evolution/scrapyard/MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1b.md`; **prior blob:** `259ab402ce7edefc4d8394630da4b100dd59c509`; **classification:** `DELETE_CANDIDATE → DELETED_VERIFIED`; **GitHub deletion commit:** `93e7a30a60b8c9d8526f857c553b192b53bbadbe`.
 - **Retained canonical:** `doubletake_evolution/scrapyard/MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` (same exact full UTF-8 content and Git blob SHA, re-fetched immediately before deletion). **Dependency checks:** five current Director files had no exact numbered-path reference; both-repo code search found no indexed matching filename stem; other unindexed/external references remain unknowable. Original path reversible via Git history. No unique material lost; no deletion outside scrapyard. No DT implementation, protected history or mission altered.
 
