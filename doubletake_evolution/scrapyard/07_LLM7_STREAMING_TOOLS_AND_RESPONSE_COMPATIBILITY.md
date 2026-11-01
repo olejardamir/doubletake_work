@@ -1,92 +1,9 @@
-# Prompt 07 — Complete Streaming, Tool Calling, and OpenAI-Compatible Response Handling
+# Historical LLM7 streaming/tool compatibility — distilled
 
-## Objective
+**Original blob:** `6b53c2ca4f7925f4bfd3c0761c87ed849daa9c9c`. Historical Agent_X plan, not DT implementation evidence. [Master](00_MAIN_PROMPT.md), [D01](DISTILLED_KNOWLEDGE.md).
 
-Make LLM7 behave correctly through Agent_X's higher-level agent runtime, especially for streaming and tool/function calls.
+**Streaming:** use canonical agent runtime abstraction rather than raw SSE. Preserve incremental text, empty deltas, finish reasons, final termination, optional usage/model metadata, cancellation, connection close and midstream errors. Streaming and nonstreaming outputs should agree semantically; no dropped/duplicated chunks.
 
-## Streaming
+**Tools:** existing tool schema/choice, IDs, argument JSON (not double-encoded), role-linked results, multiple calls when supported, normalized finish reasons. Tool support depends on **model and access tier**; advertised capability does not imply anonymous entitlement. Paid/token-only denial must be accurately surfaced without disabling ordinary anonymous chat. Centralize capability gating; do not scatter provider-specific branches. Structured JSON output only if proven supported.
 
-1. Trace Agent_X's canonical streaming abstraction.
-2. Feed LLM7 streaming responses through that abstraction rather than exposing raw provider-specific SSE chunks to higher layers.
-3. Correctly handle:
-   - incremental content;
-   - empty deltas;
-   - finish reasons;
-   - final termination marker/event;
-   - usage data when present;
-   - model metadata when present;
-   - cancellation;
-   - mid-stream error;
-   - connection close.
-4. Do not concatenate or drop chunks incorrectly.
-5. Non-streaming and streaming paths must agree on final semantic output.
-
-## Tool / function calling
-
-LLM7 is OpenAI-compatible at the chat-completions layer, but **tool support is model- and access-dependent**.
-
-Implement tool calling through Agent_X's existing tool abstraction.
-
-Requirements:
-
-```text
-tools schema passes through correctly
-tool_choice semantics are preserved where supported
-tool_calls are parsed
-tool call ids are preserved
-arguments are not double-encoded
-tool results are returned using the correct role/id linkage
-multiple tool calls are handled if Agent_X supports them
-finish reasons are normalized
-```
-
-Do not advertise tool calling for a model that discovery marks unsupported.
-
-Do not assume an anonymously accessible text model also grants anonymous tool calling. If LLM7 returns a token/paid-feature error for tool use, surface that accurately and allow the runtime to choose a supported model/path according to existing Agent_X behavior.
-
-## Other response compatibility
-
-Inspect the actual Agent_X abstractions and support the OpenAI-compatible fields it relies on, such as:
-
-```text
-choices
-message.content
-message.tool_calls
-finish_reason
-usage
-model
-error
-```
-
-Ignore unknown fields safely unless Agent_X needs them.
-
-Where the runtime supports JSON/structured output, enable it only when the selected model/access path actually supports it.
-
-## Capability gating
-
-Capability decisions should be centralized in the model/provider capability layer rather than scattered `if provider === "llm7"` checks throughout the agent runtime.
-
-## Tests
-
-Include representative fixtures for:
-
-```text
-non-streaming text
-streaming text
-empty delta
-stream end
-tool call request
-tool result continuation
-multiple tool calls if supported
-tool capability disabled
-tool access denied/token-required
-malformed chunk
-mid-stream provider error
-cancellation
-```
-
-Run existing generic OpenAI-compatible/provider streaming and tool tests where applicable.
-
-## Completion criteria
-
-LLM7 can participate in the same Agent_X agent execution flow as existing capable providers without special-case leakage into unrelated layers.
+**Negative fixtures:** empty delta, malformed chunk, missing termination, cancellation, midstream error, unsupported tool, paid-tier refusal, tool-result continuation and multi-call linkage; rerun generic OpenAI-compatible tests. **Unknown:** current LLM7 service semantics and actual DT runtime parity.
