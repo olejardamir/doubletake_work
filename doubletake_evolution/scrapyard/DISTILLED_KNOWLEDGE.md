@@ -1,5 +1,8 @@
 # Scrapyard — loss-aware distilled knowledge (consolidated)
 
+> **Later canonical-cluster supersession (2026-11-01):** The D01 status table below is a historical checkpoint, not current file presence. The LLM7 master `00_MAIN_PROMPT.md` and numbered phases **01, 03–09** were merged into verified `clustered/llm7-provider-integration.md` (CL-LLM7-001; blob `4d7b77be267ad3637408e1df455f16df15e21376`) and their working copies SHA-guarded deleted; nine exact deletion commits/tombstones are in `INVENTORY.md` checkpoint CL-LLM7-001. Phase **02** is fully represented but remains intact at `f0f6861636159e44c5d6c684eac240f42d5bd917` because the connected delete action was safety-blocked. All older original and reduced-source blobs remain recoverable in Git history. This changes source-file disposition only, **not** DT implementation or research validity.
+
+
 **Checkpoint:** 2026-11-01 UTC, D01, with D01-S1 in-place closure follow-up. **Authority:** research/provenance only, not execution instructions, approvals, DT Ground, or a replacement for original evidence. All 30 source bodies below were read as UTF-8 and dissected; historical statements remain **source claims** unless independently checked. Sources are either retained/reduced or replaced by verified canonical text; original pre-surgery versions are recoverable by historical Git blob SHA in the ledger. Do not infer current DT implementation status from this historical pack. Do not use this digest to bypass the Director's governed knowledge→assimilation boundary. No private implementation text or secrets are reproduced.
 
 ## Shared historical principles (one copy, not repeated 30 times)
