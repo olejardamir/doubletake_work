@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **233 PENDING_CONTENT_REVIEW**. This pass read 37 historical artifacts (19 complete UTF-8 files, 18 partial first-110-line samples), plus full incoming IS-007; **cumulative 167 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **221 PENDING_CONTENT_REVIEW**. This pass read 37 historical artifacts (19 complete UTF-8 files, 18 partial first-110-line samples), plus full incoming IS-007; **cumulative 179 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -428,20 +428,20 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_ENTERPRISE_COPILOT_READY_SECURITY_BOUNDARY_MISSION_v1.md` | `ca24e5841d3002bc418d4b4f17daff72cdd27ded` | 26812 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_ENTERPRISE_E17_EVIDENCE_FINAL_CLOSURE_OFFLOADED_2026-10-06.md` | `840d769d6ce0d80a761db98f9a1bef25115aefac` | 16782 | CONTENT_REVIEWED; KEEP |
 | `DoubleTake_Enterprise_Governance_Offline_Python_Evolution_Master_v7_10of10.md` | `9fb4d9f8a8164e555852c0a3adfeb053ba595087` | 93652 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` | `bcec6a148adf88f91686b1d4c7774ed30047ed88` | 17226 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_FAMILY_116_SEMANTIC_DISCRIMINATION_EVOLUTION_MISSION_v2_FINAL.md` | `0ad9727c6da23724b8e7288d75377d77dd2c1f8e` | 31015 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v2_DIRECTORY_DISCOVERY.md` | `5dad73510430b1ba8a85abfacaec9effe769e8bc` | 107106 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v3_REUSE_FIRST_VERTICAL_SLICE.md` | `95ffe42f5964f91ebe692794c27021bbe9a7b125` | 115556 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_GOAL_DRIVEN_AUTONOMOUS_CAPABILITY_EVOLUTION_RESEARCH_AND_TASK_CLOSURE_MASTER_v2_AUTOTAILOR.md` | `ec577f58c00ddc0db8291dc41ad3140a9e166087` | 54769 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_GOVERNED_INGESTION_CLOSURE_DEADLOCK_RESOLUTION_v1.md` | `cb363783208a220391de1e8228f2c2338a98149b` | 16047 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` | `bcec6a148adf88f91686b1d4c7774ed30047ed88` | 17226 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_FAMILY_116_SEMANTIC_DISCRIMINATION_EVOLUTION_MISSION_v2_FINAL.md` | `0ad9727c6da23724b8e7288d75377d77dd2c1f8e` | 31015 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v2_DIRECTORY_DISCOVERY.md` | `5dad73510430b1ba8a85abfacaec9effe769e8bc` | 107106 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v3_REUSE_FIRST_VERTICAL_SLICE.md` | `95ffe42f5964f91ebe692794c27021bbe9a7b125` | 115556 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_GOAL_DRIVEN_AUTONOMOUS_CAPABILITY_EVOLUTION_RESEARCH_AND_TASK_CLOSURE_MASTER_v2_AUTOTAILOR.md` | `ec577f58c00ddc0db8291dc41ad3140a9e166087` | 54769 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_GOVERNED_INGESTION_CLOSURE_DEADLOCK_RESOLUTION_v1.md` | `cb363783208a220391de1e8228f2c2338a98149b` | 16047 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_GOVERNED_INGESTION_FINAL_ACCEPTANCE_ACTIVATION_OFFLOAD.md` | `e256e885b308367117a5cc1e3561fa32833cd6e7` | 9454 | CONTENT_REVIEWED; KEEP |
-| `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `0ea696876f137f114e0c3b02accee491e43a04e8` | 191239 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | `0ea696876f137f114e0c3b02accee491e43a04e8` | 191239 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_HIGH_VALUE_EXTERNAL_ASSIMILATION_URLS.md` | `f5563ed5aa05e2c36d28f90aacf6791ebc3305da` | 3399 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_CHECKPOINT_v2_2026-10-04.md` | `0feb3a31e6f4807bcece656a0741478425757898` | 78506 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_DELTA_CLOSURE_OFFLOADED_2026-10-04.md` | `53115f3107da99c17da5495880abad0d074ea1e7` | 32903 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_OFFLOADED_2026-10-05.md` | `fb4adc4b9d92f06db8682c3c0ab8f4a653637d70` | 21805 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_v1.md` | `3a91822c7b2e10ea647b24b294edfa8470293354` | 16594 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_MISSION_v19_RECOVERED_CONSOLIDATED.md` | `266b15131e0d8079f83d1639a16491c0a9f21fac` | 160817 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_CHECKPOINT_v2_2026-10-04.md` | `0feb3a31e6f4807bcece656a0741478425757898` | 78506 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_DELTA_CLOSURE_OFFLOADED_2026-10-04.md` | `53115f3107da99c17da5495880abad0d074ea1e7` | 32903 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_OFFLOADED_2026-10-05.md` | `fb4adc4b9d92f06db8682c3c0ab8f4a653637d70` | 21805 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_v1.md` | `3a91822c7b2e10ea647b24b294edfa8470293354` | 16594 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_MISSION_v19_RECOVERED_CONSOLIDATED.md` | `266b15131e0d8079f83d1639a16491c0a9f21fac` | 160817 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_MASTER_RESEARCH_SOURCE_EVOLUTION_FINAL_DELTA_CLOSURE_OFFLOADED_2026-10-09.md` | `2919bfe98a11ae6d29d25840d1fe2af484f50362` | 22699 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_MASTER_RESEARCH_SOURCE_EVOLUTION_MISSION_v4_FINAL.md` | `1a2cc9e0c39f1eacd098ed168125a5c681801d22` | 52455 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_MASTER_RESEARCH_SOURCE_EVOLUTION_MISSION_v7_FINAL.md` | `f76470398605bab1b06eb57b453e74e44ce7d492` | 69226 | PENDING_CONTENT_REVIEW |
@@ -777,3 +777,24 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 ## Recurring workflow
 
 Re-list recursively, compare blob SHA, read changed and prioritized unreviewed content, verify source/licensing, and track Director disposition and independent Ground. No deletion without reference census and fresh blob check. Metadata coverage is not content-review coverage.
+
+
+## Progressive review checkpoint H1 — 2026-11-01 UTC
+
+- **12 previously pending artifacts** inspected through their first 125 lines, matched to the exact blob SHAs already recorded in the ledger. All are **partial content reviews**, not full-document or implementation validation. No new incoming item beyond IS-007. 8 KEEP, 4 NEEDS_REVIEW. None eligible for safe deletion: no fresh dependency census, and none proven redundant by bytes in this batch. Historic instructions are treated as untrusted text.
+- **Dependency and privacy limits:** current DT owner parity and exact-path dependency review incomplete; no private source or personal details published. Revisit on authorized parity check, successor-version comparison or newly verified source evidence.
+
+| Artifact (SHA in existing ledger) | Disposition | Actual-content finding / revisit trigger |
+| --- | --- | --- |
+| `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` | **KEEP** | Explicit chat intent to governed phase execution, correlated receipt and negative authorization tests; historical design only. |
+| `DOUBLETAKE_FAMILY_116_SEMANTIC_DISCRIMINATION_EVOLUTION_MISSION_v2_FINAL.md` | **KEEP** | Math-family identity-testing/hitting-list ideas proposed for semantic discrimination; transfer evidence absent. |
+| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v2_DIRECTORY_DISCOVERY.md` | **NEEDS_REVIEW** | Earlier mission-manager directory-discovery specification; compare v3 before deduplication. |
+| `DOUBLETAKE_GENERAL_PURPOSE_AUTONOMOUS_MISSION_MANAGER_EVOLUTION_MISSION_v3_REUSE_FIRST_VERTICAL_SLICE.md` | **KEEP** | Reuse-first manager, bounded vertical slice and user-authorized directory objectives; no runtime proof. |
+| `DOUBLETAKE_GOAL_DRIVEN_AUTONOMOUS_CAPABILITY_EVOLUTION_RESEARCH_AND_TASK_CLOSURE_MASTER_v2_AUTOTAILOR.md` | **KEEP** | Durable user goal, capability acquisition, independent acceptance and resume-original-task contract. |
+| `DOUBLETAKE_GOVERNED_INGESTION_CLOSURE_DEADLOCK_RESOLUTION_v1.md` | **KEEP** | Distinguishes checkpoint/revalidation from actual dispatch, acceptance and activation; relevant B7 liveness. |
+| `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` | **KEEP** | Uncertainty-aware multi-objective ASHA/Hyperband evaluation-budget allocation; actual DT benefit unmeasured. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_CHECKPOINT_v2_2026-10-04.md` | **KEEP** | Typed impasse, goal-context isolation, verified resolution reuse; dated checkpoint not implementation proof. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_DELTA_CLOSURE_OFFLOADED_2026-10-04.md` | **NEEDS_REVIEW** | Older impasse closure delta; compare successor evidence and distinct residuals. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_OFFLOADED_2026-10-05.md` | **NEEDS_REVIEW** | Offloaded impasse evidence closure, may contain unique authority checks; compare full version. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_FINAL_EVIDENCE_CLOSURE_v1.md` | **NEEDS_REVIEW** | Earlier full impasse evidence closure; inspect beyond opening and compare offloaded successor. |
+| `DOUBLETAKE_IMPASSE_NATIVE_COGNITIVE_CONTROL_MISSION_v19_RECOVERED_CONSOLIDATED.md` | **KEEP** | Four explicit cognitive mechanisms including causal resolution compilation and recurrence refusal; historical. |
