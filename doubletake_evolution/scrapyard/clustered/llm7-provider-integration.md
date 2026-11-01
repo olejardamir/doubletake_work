@@ -1,0 +1,38 @@
+# CL-LLM7-001 — historical provider integration, canonical cluster
+
+**Scope/authority (2026-11-01):** Ten fully read and compared public archival Agent_X LLM7 planning notes, not current DoubleTake implementation, approved task, service entitlement or Ground. All previous text is recoverable from Git history and original pre-surgery blobs in `../DISTILLED_KNOWLEDGE.md`. No third-party code or private material reproduced. Related Borg gap: possible future provider extensibility, **no demonstrated B1–B7 critical-path delta**; no Director handoff. Stable cluster ID **CL-LLM7-001**.
+
+## Distilled mechanisms and distinct contributions
+
+1. **Owner map before edits [LLM7-00,01,03].** Trace provider type → catalog → definition/export → registry → install/no-install backend → runtime config/persistence → interactive/headless selection → model discovery → transport → SSE/tool normalization → errors/tests. Historical *candidate* paths: `src/app/providers/catalog.ts`, `definitions/{opencode,codex}.ts`, `registry.ts`, `install-backend.ts`, `runtime-config.ts`, `definitions/index.ts`, `__tests__/`. Existence in current DT UNKNOWN. One canonical provider integration, no duplicate registry/config/transport, fake local executable or unrelated refactor. Preserve OpenCode/Codex and verify real caller path.
+2. **External service and access [LLM7-00,02,03,05].** Historical note claimed a 2026-09-11 anonymous `POST https://api.llm7.io/v1/chat/completions` with example `codestral-latest` and no Authorization; receipt and **current** entitlement unverified. Base `https://api.llm7.io/v1`, dynamic `GET /models`, `POST /chat/completions` are historical endpoints to recheck. Never permanently pin example IDs or assume aliases `default/fast/pro`. Model metadata ≠ model/access-tier capability.
+3. **Opt-in protocol qualification [LLM7-02,05,08].** Bounded GET models, normalize optional ID/owner/modality/context/tier/status/streaming/tools/JSON/reasoning; tolerate missing/malformed entries. If terms permit, tiny anonymous nonstreaming chat, optional SSE termination and tool entitlement, invalid model/malformed payload and naturally encountered rate/access errors. Capture redacted HTTP fixtures/status, no secrets, no broad model enumeration, retry storms or unbounded calls. Distinguish documented/advertised tools from actually accessible anonymous tools.
+4. **Registration and no-auth transport [LLM7-03,04].** Add `llm7` identity/display/definition/registry once through existing remote/no-install abstraction only when authorized. Anonymous mode, if permitted: **no login/key prompt, fake key, persisted synthetic secret or outgoing Authorization header**. Verify wire behavior; an SDK forcing bearer auth may require existing configurable lower-level client or minimal `auth:none` adapter, never a second protocol stack. Optional real token uses secure existing storage and must not be logged. Preserve messages/model/options, correct URL and Content-Type, abort/timeout, response normalization and OpenCode/Codex auth semantics.
+5. **Dynamic selection and configuration [LLM7-05,06].** Deduplicate model IDs, bounded TTL/refresh; retain saved config on discovery outage but do not give stale cache authority. Access evidence order: live tier/entitlement → bounded allowed probe → verified selector semantics → honest error/reselection. Do not probe every model. Interactive selection/cancel/back/errors and headless explicit provider/model/base_url/auth:none must use existing schema/storage, no second config or fabricated login. Verify persistence/reload and existing-provider migration.
+6. **Streaming/tool parity [LLM7-04,07].** Canonical runtime consumes incremental text, empty deltas, finish reasons, termination, optional usage/model metadata, close, abort and midstream errors; no duplicate/dropped chunks. Tool schema/choice, call IDs, argument JSON without double encoding, multiple calls, role-linked results and continuation must match the **actually entitled** model/tier. Denied paid/token-only tools must not break ordinary permitted chat. Structured JSON only if independently supported; centralize gating.
+7. **Test tiers and acceptance [LLM7-01,02,06,07,08,09].** Deterministic mocked HTTP fixtures → actual canonical provider consumer/integration → tiny opt-in live smoke; external service is not mandatory CI. Cover registration uniqueness, no-key/no-Authorization/no-secret-log, config/cancel/reload/headless, model valid/empty/malformed/partial/TTL/refresh, chat/SSE empty/malformed/termination/cancel, 4xx/5xx/rate/model errors, unsupported/token-only tools, multi-call/result linkage, OpenCode/Codex regressions. End-to-end receipt must show select → GET models → eligible model → canonical config → POST chat → normalized response/stream and optional entitled tools, with changed-file/test/rollback evidence. Direct curl, grep/file-presence and donor-only tests are not in-app Ground.
+
+## Counterevidence, limitations and recheck
+
+- Anonymous example is **dated**; live API terms, current provider implementation, licensing and anonymous tools remain UNKNOWN. Policy drift is not automatically a config bug; do not silently force login or misreport entitlement.
+- Negative controls include invalid model, partial metadata, stale cache, missing choices, empty/malformed SSE, missing final termination, cancellation, multiple tool calls, token-only refusal, malformed JSON, no fake credentials, correct auth header omission, no partial config corruption, timeouts, no retry storms and existing-provider regression.
+- A live service response without an authenticated in-app caller/consumer is not proof of integration. No verified present-day DT gap, owner authorization, production reachability or test result was established. Revisit only for a Director-qualified provider gap and an authorized bounded fixture. This is archival research, not executable instruction.
+
+## Source attribution and recoverability
+
+All source paths below are relative to `doubletake_evolution/scrapyard/`. SHA identifies the **fully read immediate pre-merge text**; earlier original blobs are separately in D01. Each unique fact/constraint above cites stable member IDs. Source files may be deleted only after canonical commit, fresh SHA/reference/dependency checks and tombstones.
+
+| Member | Source path | Pre-merge blob SHA | Bytes |
+| --- | --- | --- | ---: |
+| LLM7-00 | `00_MAIN_PROMPT.md` | `1857e1525aa46f311db3979f5e393db2df380d9c` | 2416 |
+| LLM7-01 | `01_REPOSITORY_PROVIDER_ARCHITECTURE_AUDIT.md` | `1998f55b5ead7afe0e6149835f4867fc0536f3c6` | 1349 |
+| LLM7-02 | `02_LLM7_LIVE_PROTOCOL_AND_CAPABILITY_PROBE.md` | `f0f6861636159e44c5d6c684eac240f42d5bd917` | 1379 |
+| LLM7-03 | `03_LLM7_PROVIDER_DEFINITION_REGISTRY_AND_INSTALL.md` | `15e740dfafb78f60b88087eed91dbf9c6832ac4a` | 1165 |
+| LLM7-04 | `04_LLM7_RUNTIME_TRANSPORT_AND_AUTHENTICATION.md` | `cbce3124d5bce21f393a5c92f4f355f31fe03231` | 1367 |
+| LLM7-05 | `05_LLM7_DYNAMIC_MODEL_DISCOVERY_AND_SELECTION.md` | `5a9ae738edf3fd2915b95dfcbe4c50725936e3a7` | 1228 |
+| LLM7-06 | `06_LLM7_SETUP_UX_AND_HEADLESS_CONFIGURATION.md` | `cfacc004a3d2d433dc8115edc72746d455729055` | 1203 |
+| LLM7-07 | `07_LLM7_STREAMING_TOOLS_AND_RESPONSE_COMPATIBILITY.md` | `5f764eaaa87c1fc1f9eddbd40c2cecff3476dd2a` | 1364 |
+| LLM7-08 | `08_LLM7_TESTS_FAILURE_MODES_AND_REGRESSION.md` | `f4ea7c9200146ba74e8a0c52e7fb531c2f83caaf` | 1326 |
+| LLM7-09 | `09_LLM7_FINAL_END_TO_END_VALIDATION.md` | `7bfcba54accef6c0543b7bff3222e92700cb6848` | 1503 |
+
+**License/provenance:** Self-authored synthesis of user-provided archival planning notes; no external code/text reproduced. Historical API URLs are research pointers, not permission or present-day entitlement.
