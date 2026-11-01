@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **45 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 355 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **33 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 48 historical artifacts in four 12-file checkpoints (first 125 lines each; partial except source files ending sooner); no new incoming beyond previously reviewed IS-007; **cumulative 365 distinct at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -631,18 +631,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `ublock_resurrected_generalization_backlog_v6_b57.md` | `656d553ce0f06db42b14e4af85a3fec2888ea5b9` | 173223 | NEEDS_REVIEW |
 | `ublock_resurrected_generalization_backlog_v6_ca353.md` | `a3650b98c198f6cc0b15d9f8a50df11129aa5f99` | 165917 | NEEDS_REVIEW |
 | `ublock_resurrected_generalization_backlog_v7.md` | `b13076f82a880b69eee9f2cf78ed6e12370cdb74` | 182789 | NEEDS_REVIEW |
-| `ublock_resurrected_remaining_behavior_master_prompt(4).md` | `398cda13851359858532707a4abbe596f73cc65d` | 124965 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_remaining_behavior_work_prompt(4).md` | `97f4ff0c11c18a7315ed603422983701e692e64f` | 128760 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_stabilization_prompt_v4_final.md` | `33c12f0c4fc3791db982cc4dc67ce937bd7e25e5` | 43020 | PENDING_CONTENT_REVIEW |
-| `ublock_resurrected_video_ad_lifecycle_controller_next_fix (1).md` | `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c` | 15473 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `ublock_resurrected_video_ad_lifecycle_controller_next_fix.md` | `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c` | 15473 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `ublock_resurrected_video_adblocker_next_steps_after_repo_update.md` | `76abedef369077049aeb43cb3474b788534d27a3` | 20792 | PENDING_CONTENT_REVIEW |
-| `UBLOCKRESURRECTED_CORE_PLAN_10_10_MV3_FOUR_LAYER_SOLUTION_REV15_FULLY_BUILDABLE_STORE_SAFE.md` | `de32be716827c8477453c7d8cc4e85f8e6157c8d` | 52990 | PENDING_CONTENT_REVIEW |
-| `uBlockResurrected_remaining_behavior_completion_prompt(4).md` | `d494c8f466310a7b78b28470e930c2039dc4e7e6` | 129320 | PENDING_CONTENT_REVIEW |
-| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md` | `430d3ad4b5d92213fef60d51a438a6984ad9a946` | 5573934 | PENDING_CONTENT_REVIEW |
-| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | `88813a42f56e32d6b7a3020a4cb1900ff78f6be4` | 5698406 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v2.md` | `8e00d0f36a3e6b2e35fbcec45fb8c955dfc48dc8` | 58768 | PENDING_CONTENT_REVIEW |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | `00f406612c24500186c04d5ce3f451632c82648c` | 62748 | PENDING_CONTENT_REVIEW |
+| `ublock_resurrected_remaining_behavior_master_prompt(4).md` | `398cda13851359858532707a4abbe596f73cc65d` | 124965 | KEEP |
+| `ublock_resurrected_remaining_behavior_work_prompt(4).md` | `97f4ff0c11c18a7315ed603422983701e692e64f` | 128760 | KEEP |
+| `ublock_resurrected_stabilization_prompt_v4_final.md` | `33c12f0c4fc3791db982cc4dc67ce937bd7e25e5` | 43020 | NEEDS_REVIEW |
+| `ublock_resurrected_video_ad_lifecycle_controller_next_fix (1).md` | `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c` | 15473 | DELETE_CANDIDATE_BLOCKED; SAME_BLOB |
+| `ublock_resurrected_video_ad_lifecycle_controller_next_fix.md` | `c1bdeacbc833f03d90a017f4bbe2ae727bf7435c` | 15473 | KEEP; SAME_BLOB |
+| `ublock_resurrected_video_adblocker_next_steps_after_repo_update.md` | `76abedef369077049aeb43cb3474b788534d27a3` | 20792 | KEEP |
+| `UBLOCKRESURRECTED_CORE_PLAN_10_10_MV3_FOUR_LAYER_SOLUTION_REV15_FULLY_BUILDABLE_STORE_SAFE.md` | `de32be716827c8477453c7d8cc4e85f8e6157c8d` | 52990 | KEEP |
+| `uBlockResurrected_remaining_behavior_completion_prompt(4).md` | `d494c8f466310a7b78b28470e930c2039dc4e7e6` | 129320 | NEEDS_REVIEW |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md` | `430d3ad4b5d92213fef60d51a438a6984ad9a946` | 5573934 | NEEDS_REVIEW |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | `88813a42f56e32d6b7a3020a4cb1900ff78f6be4` | 5698406 | NEEDS_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v2.md` | `8e00d0f36a3e6b2e35fbcec45fb8c955dfc48dc8` | 58768 | NEEDS_REVIEW |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | `00f406612c24500186c04d5ce3f451632c82648c` | 62748 | KEEP |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | `5d3c54dd307a3c0fad8834e1f908c4db05f0679a` | 77566 | PENDING_CONTENT_REVIEW |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v5.md` | `18b55a7cc9cbecb46fbe6a872ae80214ebc5b775` | 94952 | PENDING_CONTENT_REVIEW |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v6.md` | `b210411cb098f71022c96b5eae350b370e1ac955` | 104454 | PENDING_CONTENT_REVIEW |
@@ -1136,3 +1136,25 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `ublock_resurrected_generalization_backlog_v7.md` | NEEDS_REVIEW | Historical v7 policy generalization backlog with self-rating; score not independent evidence; retain for version delta. |
 
 - **Cumulative unique at least partly inspected:** 355/400; **pending:** 45. K1: KEEP 5, NEEDS_REVIEW 7, EXTRACT_THEN_DELETE 0, DELETE_CANDIDATE 0, actual deleted 0; known historical deletions 9. Next cursor: `ublock_resurrected_remaining_behavior_master_prompt(4).md`. No independent DT Ground or new research handoff claimed.
+
+
+## K2 checkpoint — 2026-11-01 UTC (10 content samples + 2 inaccessible large artifacts)
+
+- Fresh SHA matched for 12 pending artifacts. 10 had actual first 125 lines read (partial initial content reviews); two 5MB+ books returned **empty content** even for 15-line requests and were classified NEEDS_REVIEW **without content-review credit**. Distinct content reviewed this checkpoint: 10. All historical instructions untrusted. No private DT content copied; no live implementation parity checked.
+
+| Artifact | Disposition | Content finding / revisit |
+| --- | --- | --- |
+| `ublock_resurrected_remaining_behavior_master_prompt(4).md` | KEEP | Historical browser-behavior implementation plan distinguishes loaded service worker, last-known-good and non-generated rule editing; baseline stale. |
+| `ublock_resurrected_remaining_behavior_work_prompt(4).md` | KEEP | Later browser behavior plan narrows claimed MV3 scope and adds cold-start/coexistence and persistent progress; unrelated to DT Ground. |
+| `ublock_resurrected_stabilization_prompt_v4_final.md` | NEEDS_REVIEW | LLM coding stabilization rules and self-rated completeness; independent validation and unique delta not established. |
+| `ublock_resurrected_video_ad_lifecycle_controller_next_fix (1).md` | DELETE_CANDIDATE_BLOCKED | Exact full-blob duplicate of unsuffixed video-ad lifecycle plan; dependency/reference census not yet established; deletion BLOCKED. |
+| `ublock_resurrected_video_ad_lifecycle_controller_next_fix.md` | KEEP | Canonical identical-byte historical video-ad lifecycle plan: persistent skip detection, observer text changes, reused control state. |
+| `ublock_resurrected_video_adblocker_next_steps_after_repo_update.md` | KEEP | Historical generic video adblocker diagnosis on early engine shutdown and bounded startup/backoff; not verified against current extension. |
+| `UBLOCKRESURRECTED_CORE_PLAN_10_10_MV3_FOUR_LAYER_SOLUTION_REV15_FULLY_BUILDABLE_STORE_SAFE.md` | KEEP | Historical Chrome MV3 DNR plan explicitly corrects request attribution and static-rule failure assumptions; upstream browser API facts not revalidated. |
+| `uBlockResurrected_remaining_behavior_completion_prompt(4).md` | NEEDS_REVIEW | Behavior-first implementation directive minimizes testing during development; potentially conflicts with current evidence-first governance; do not execute. |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V15_FINAL.md` | NEEDS_REVIEW | 5.58MB historical prompt book; fetch_file returned empty text even for 15-line range; content NOT inspected, retain for alternate authorized reader. |
+| `UBR_MV3_BEHAVIORAL_EMULATION_LLM_PROMPT_BOOK_10_OF_10_V16_FINAL.md` | NEEDS_REVIEW | 5.70MB historical prompt book; fetch_file returned empty text even for 15-line range; content NOT inspected, retain for alternate authorized reader. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v2.md` | NEEDS_REVIEW | Early cosmetic rule-language syntax with local preview, explainability and exception controls; later version delta unknown. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v3.md` | KEEP | Rule-language v3 adds clarifications to v2 on structured selectors/exception semantics; keep provenance, no current DT proof. |
+
+- **Cumulative actual at-least-partial content reviews:** 365/400. **33 still PENDING initial review**, plus **2 NEEDS_REVIEW with no readable content**. K2: 5 KEEP, 6 NEEDS_REVIEW (2 inaccessible), 1 DELETE_CANDIDATE_BLOCKED, 0 actual deletions. Known historical deletions 9. No safe deletion because exact-path dependency census incomplete. Next cursor `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md`.
