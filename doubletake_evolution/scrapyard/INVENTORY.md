@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **209 PENDING_CONTENT_REVIEW**. This pass read 37 historical artifacts (19 complete UTF-8 files, 18 partial first-110-line samples), plus full incoming IS-007; **cumulative 191 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **197 PENDING_CONTENT_REVIEW**. This pass read 37 historical artifacts (19 complete UTF-8 files, 18 partial first-110-line samples), plus full incoming IS-007; **cumulative 203 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -456,19 +456,19 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_RANKEVOLVE_SELECTIVE_ASSIMILATION_NOTE.md` | `6ed3fe5bcae95f1b1a73fdbbafd3d8228a34075d` | 7638 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DOUBLETAKE_REASONING_FIRST_BANK_VALUE_EVOLUTION_MISSION_v4.md` | `36f322e24d25b68500f21e0976b9f8123437f6c0` | 39499 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DOUBLETAKE_RESEARCH_ASSIMILATION_D04_THREE_MECHANISM_FINAL_CLOSURE_OFFLOADED_v5.md` | `8e22a7346a3a3f6e1bf18cf3e669e0e23712192c` | 18656 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_D04_D08_FINAL_CLOSURE_OFFLOADED_v4.md` | `b59990a0876f7166cfc8fc37c1298a5eb5e0ecb7` | 17419 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_DELTA_FINAL_CLOSURE_OFFLOADED_v2.md` | `3bb33578634aea4074df38dac3a7eb8e3296264e` | 23569 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_DELTA_FINAL_CLOSURE_OFFLOADED_v3.md` | `e887d8f3dfb1de6aff909a6d8febf520d2409eff` | 21654 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_FINAL_CLOSURE_v1.md` | `944f1d0e4d607e78809a3a33c27109471aea26df` | 73305 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_SKILLGYM_NATIVE_ASSIMILATION_PROMPT_10_10.md` | `bd33072bbdbfa019775fbac6f60f94b1d3784245` | 45082 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_STRONGEST_LINK_ASSIMILATION_CORPUS.md` | `e2c18892ed9d996845dfa7d203be421626209267` | 20020 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_D04_D08_FINAL_CLOSURE_OFFLOADED_v4.md` | `b59990a0876f7166cfc8fc37c1298a5eb5e0ecb7` | 17419 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_DELTA_FINAL_CLOSURE_OFFLOADED_v2.md` | `3bb33578634aea4074df38dac3a7eb8e3296264e` | 23569 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_DELTA_FINAL_CLOSURE_OFFLOADED_v3.md` | `e887d8f3dfb1de6aff909a6d8febf520d2409eff` | 21654 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_FINAL_CLOSURE_v1.md` | `944f1d0e4d607e78809a3a33c27109471aea26df` | 73305 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_SKILLGYM_NATIVE_ASSIMILATION_PROMPT_10_10.md` | `bd33072bbdbfa019775fbac6f60f94b1d3784245` | 45082 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_STRONGEST_LINK_ASSIMILATION_CORPUS.md` | `e2c18892ed9d996845dfa7d203be421626209267` | 20020 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v1.md` | `c4e261f6390a06a6fbfcd8809bec2da6a5817034` | 12980 | CONTENT_REVIEWED; KEEP |
-| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v3_UNIVERSAL_EVOLUTION_ADOPTION.md` | `59a9712b0a52d051b1300f1aaef1c323a6dadd76` | 26034 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_THREE_PHASE_EVOLUTION_MIGRATION_MISSION_v3_EXCLUSIVE.md` | `09137b4cc4d563893c9f6767df6a1689dcd6336a` | 35925 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_TRANSFERABLE_PROJECT_EVOLUTION_IMPLEMENTATION_PROMPT_v1.md` | `5061a3e8b495fffd501f2a1af18f7515c169a3a5` | 40025 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_UNIVERSAL_ADAPTIVE_RESEARCH_AND_INFORMATION_ACQUISITION_EVOLUTION_MISSION_v2_UI_AUTO_ACTIVATION.md` | `94af46971f70a9cfdacce8e81118bff0f1dda658` | 59857 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_UNIVERSAL_RESEARCH_INTELLIGENCE_DISCOVERY_RELEVANCE_VERIFICATION_FINAL_CLOSURE_v1.md` | `4868c682a00e04c891e8268810931e05cd47ccbe` | 41320 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_UNIVERSAL_RESEARCH_MULTI_ENGINE_FINAL_REAL_WORLD_CLOSURE_MASTER_v1.md` | `9856cb1dcf68c157e97a9398393bf4c1007a714b` | 69186 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v3_UNIVERSAL_EVOLUTION_ADOPTION.md` | `59a9712b0a52d051b1300f1aaef1c323a6dadd76` | 26034 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_MIGRATION_MISSION_v3_EXCLUSIVE.md` | `09137b4cc4d563893c9f6767df6a1689dcd6336a` | 35925 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_TRANSFERABLE_PROJECT_EVOLUTION_IMPLEMENTATION_PROMPT_v1.md` | `5061a3e8b495fffd501f2a1af18f7515c169a3a5` | 40025 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_UNIVERSAL_ADAPTIVE_RESEARCH_AND_INFORMATION_ACQUISITION_EVOLUTION_MISSION_v2_UI_AUTO_ACTIVATION.md` | `94af46971f70a9cfdacce8e81118bff0f1dda658` | 59857 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_INTELLIGENCE_DISCOVERY_RELEVANCE_VERIFICATION_FINAL_CLOSURE_v1.md` | `4868c682a00e04c891e8268810931e05cd47ccbe` | 41320 | CONTENT_SAMPLED; KEEP |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_MULTI_ENGINE_FINAL_REAL_WORLD_CLOSURE_MASTER_v1.md` | `9856cb1dcf68c157e97a9398393bf4c1007a714b` | 69186 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` | `0d45870461370a7f9588d6abe39de2ad86760465` | 26724 | PENDING_CONTENT_REVIEW |
 | `DT_Evolution_Prompt_Governed_Ingestion_Agent_v2.md` | `35f4d60edfe03862f8e6fa93a7f1d01d4e9f1c6a` | 37460 | PENDING_CONTENT_REVIEW |
 | `DT_Evolution_Prompt_Governed_Ingestion_Agent_v3_10of10.md` | `36d5d02267d83ba10f837dc81157babf612fb087` | 79552 | PENDING_CONTENT_REVIEW |
@@ -767,7 +767,7 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `DOUBLETAKE_EXPLICIT_CHAT_THREE_PHASE_EVOLUTION_END_TO_END_INTEGRATION_MISSION_v1.md` (resume from the next untouched artifact; content read only under public-safe review).
+- **Next lexically pending path:** `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` (resume from the next untouched artifact; content read only under public-safe review).
 - **Next mission-relevant pending path:** `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
 - **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 233 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
@@ -819,3 +819,31 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 | `DOUBLETAKE_PROBLEM_SPACE_REFORMULATION_INVARIANT_SEARCH_IMPLEMENTATION_MISSION_v2_FINAL.md` | **KEEP** | Sound equivalence vs heuristic approximation and invariant-guided search with independent checks. |
 | `DOUBLETAKE_REASONING_FIRST_BANK_VALUE_EVOLUTION_MISSION_v4.md` | **NEEDS_REVIEW** | Open-ended reasoning/transfer scorecard with organization-specific context; privacy and current mission parity pending. |
 | `DOUBLETAKE_RESEARCH_ASSIMILATION_D04_THREE_MECHANISM_FINAL_CLOSURE_OFFLOADED_v5.md` | **NEEDS_REVIEW** | D04 three-mechanism production evidence closure; dated 9/12 and 10/12 claims need current verification. |
+
+
+## Progressive review checkpoint H3 — 2026-11-01 UTC
+
+- **12 previously pending artifacts** inspected through their first 125 lines, matched to the exact blob SHAs already recorded in the ledger. All are **partial content reviews**, not full-document or implementation validation. No new incoming item beyond IS-007. 9 KEEP, 3 NEEDS_REVIEW. None eligible for safe deletion: no fresh dependency census, and none proven redundant by bytes in this batch. Historic instructions are treated as untrusted text.
+- **Dependency and privacy limits:** current DT owner parity and exact-path dependency review incomplete; no private source or personal details published. Revisit on authorized parity check, successor-version comparison or newly verified source evidence.
+
+| Artifact (SHA in existing ledger) | Disposition | Actual-content finding / revisit trigger |
+| --- | --- | --- |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_D04_D08_FINAL_CLOSURE_OFFLOADED_v4.md` | **NEEDS_REVIEW** | D04/D08 production ingress offload; dated 3/12 reachability and later successors, compare exact deltas. |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_DELTA_FINAL_CLOSURE_OFFLOADED_v2.md` | **NEEDS_REVIEW** | Earlier 12-WORK/one-POLICY integration contract; compare later v3/v4 before deduplication. |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_DELTA_FINAL_CLOSURE_OFFLOADED_v3.md` | **NEEDS_REVIEW** | Later operational assimilation delta; independent production-entry evidence required, v4 overlap unverified. |
+| `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_FINAL_CLOSURE_v1.md` | **KEEP** | Original real production ingress and provenance-bound work builder contract; no current execution inferred. |
+| `DOUBLETAKE_SKILLGYM_NATIVE_ASSIMILATION_PROMPT_10_10.md` | **KEEP** | Verified skill effect and trajectory internalization proposal; donor access and measured DT gain unknown. |
+| `DOUBLETAKE_STRONGEST_LINK_ASSIMILATION_CORPUS.md` | **KEEP** | Primary paper/source and release-history research corpus for two unrelated DoubleTake projects; license check needed. |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_FINAL_CLOSURE_OFFLOADED_v3_UNIVERSAL_EVOLUTION_ADOPTION.md` | **KEEP** | Stable evolutionary capability interface with successor adoption and no mission-specific hardcoding. |
+| `DOUBLETAKE_THREE_PHASE_EVOLUTION_MIGRATION_MISSION_v3_EXCLUSIVE.md` | **KEEP** | OUTWARD/INWARD/GROUND evidence contract and bounded phase rotation; historical mission not current authority. |
+| `DOUBLETAKE_TRANSFERABLE_PROJECT_EVOLUTION_IMPLEMENTATION_PROMPT_v1.md` | **KEEP** | Generic authorized project evolution, independently verified changes and rollback; no actual transfer proof. |
+| `DOUBLETAKE_UNIVERSAL_ADAPTIVE_RESEARCH_AND_INFORMATION_ACQUISITION_EVOLUTION_MISSION_v2_UI_AUTO_ACTIVATION.md` | **KEEP** | Automatic ordinary-chat research activation, evidence provenance and adaptive permitted retrieval. |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_INTELLIGENCE_DISCOVERY_RELEVANCE_VERIFICATION_FINAL_CLOSURE_v1.md` | **KEEP** | Independent relevance/coverage/answer truthfulness tests; non-hardcoded multi-domain negative controls. |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_MULTI_ENGINE_FINAL_REAL_WORLD_CLOSURE_MASTER_v1.md` | **KEEP** | Multiple search-provider fallbacks and genuine real-world result acceptance, no fixture-only success. |
+
+
+## H1–H3 closeout and current cursor
+
+- **36 historical files newly content-sampled** (first 125 lines per file), 0 fully read in this run; cumulative at least partly inspected **203**; pending initial content review **197**; 401 current scrapyard blobs including inventory, subject to fresh tree reconciliation. **KEEP 23 / NEEDS_REVIEW 13** for this run. Actual deletions **0**, previously recorded **9**; previously blocked exact-duplicate candidates unchanged and not retried. The 36 items have source blob SHA in the ledger; no new SHA divergence observed.
+- **Next untouched lexical path:** `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md`. NEEDS_REVIEW also includes 36 new partial reads (23 retained as useful, 13 uncertain); do not confuse initial inspection with exhaustive coverage.
+- **Incoming IS-007:** still KEEP / SOURCE_CHECKED. Proposed handoff `R-BORG-SCOUT-20261101-007` remains **OFFLOAD_WRITE_BLOCKED** from prior run; no Director approval or DT Ground evidence. The RFC 9162 append-only rule remains a candidate for an authorized independent knowledge-to-behavior experiment, not a history-repair grant. No repeat of the previously rejected offload mutation. Current Director B1/B7 and local consumer gate remain unresolved.
