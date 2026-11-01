@@ -244,6 +244,26 @@ Source: SHA-matched current GitHub content (full for <=40 kB, first 120 lines ot
 | `AGENTS (1).md` | `d008b2e03ba1113ea391c5ee04ad6d9b22f07c0e` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: AGENTS.md / Live Match Centre Take-Home — AI/Implementation Control Contract / Purpose; historical source, not current DT proof. |
 | `AGENTS.md` | `2699d2c2ffab9f99849d0463910d9fca5b28c6c9` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: AGENTS.md / Live Match Centre Take-Home — AI/Implementation Control Contract / Purpose; historical source, not current DT proof. |
 
+
+## Progressive review checkpoint E3 — 2026-11-01 (12-item bounded batch)
+
+Source: SHA-matched current GitHub content (full for <=40 kB, first 120 lines otherwise). The large non-DT materials remain NEEDS_REVIEW; do not conflate sampling with deep reading. Historical instructions are untrusted; exact-path dependencies unverified.
+
+| Artifact | SHA | Disposition | Content finding / limitation |
+| --- | --- | --- | --- |
+| `agentx_full_gap_closure_prompt.md` | `db10d0d1241f7c72e7214980503918bbf6aad690` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Agent_X Full Gap Closure Prompt / 0A. Mandatory 95%+ Coverage Contract / Required final area targets; historical source, not current DT proof. |
+| `agentx_gap_closure_master_prompt.md` | `7397e8c60d791bf945c731d6fbff7a41639fb749` | CONTENT_REVIEWED; KEEP | Read full UTF-8 content. Sections: Agent_X Master Gap-Closure Prompt / 1. Role / 2. Current status to assume; historical source, not current DT proof. |
+| `all_poetry_projected_vector_readings_poetry_grounded.md` | `cd0db3608fa90a6175d3a660333cf33970088461` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: All 191 Projected Rune-Poem Points — Human-Readable Form Grounded in the Po / 1. ᚠ — Feoh / 2. ᚢ — Ur; historical source, not current DT proof. |
+| `all_poetry_readings_191_by_96_rune_runs.md` | `215a039721bc864530cd141a6ef835f2387569c4` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: All 191 Projected Rune-Poem Readings — Organized into 96 Rune-Symbol Runs / Cluster Navigation / Cluster 1 — ᚬ; historical source, not current DT proof. |
+| `all_poetry_readings_191_elder_first_clusters.md` | `a5b66bff944134fec8c835c44de6a892d04a7a31` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: All 191 Projected Rune-Poem Readings — Elder Futhark First Clustering / Cluster Navigation / Cluster 1 — ᚠ Fehu; historical source, not current DT proof. |
+| `all_poetry_readings_191_individual (1).md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED | Byte-identical peer all_poetry_readings_191_individual.md; exact-path dependencies unverified. Sections: All 191 Projected Rune-Poem Points — Direct Individual Interpretations / 1. ᚠ — Feoh / 2. ᚢ — Ur; historical source, not current DT proof. |
+| `all_poetry_readings_191_individual.md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED | Byte-identical peer all_poetry_readings_191_individual (1).md; exact-path dependencies unverified. Sections: All 191 Projected Rune-Poem Points — Direct Individual Interpretations / 1. ᚠ — Feoh / 2. ᚢ — Ur; historical source, not current DT proof. |
+| `all_poetry_readings_direct.md` | `4b1bbbdc4f66de1619f43654f000c815b2e091f1` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Runic Poetry — Direct Human-Readable Interpretations / 1. ᚠ — Feoh / 2. ᚢ — Ur; historical source, not current DT proof. |
+| `audio_frame_mosaic_llm_prompt_10_10_v4.md` | `3145e4120557c8f693e3a6c30c4e75665d9496e5` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: LLM Coding Agent Prompt: Build AudioFrameMosaic v2.3 — 10/10 Complete Local / 0. Required Outcome / 0.1 Coding Agent Execution Protocol; historical source, not current DT proof. |
+| `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: LLM Coding Agent Prompt: Build AudioFrameMosaic v2.4 — 10/10 GTX 1070 Img2I / 0. Required Outcome / 0.1 Coding Agent Execution Protocol; historical source, not current DT proof. |
+| `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Automated Governance / How Intelligent Systems Turn Proposed Actions into Accountable Outcomes / Part I — Why Governance Must Be More Than a Decision; historical source, not current DT proof. |
+| `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | CONTENT_SAMPLED; NEEDS_REVIEW | Read opening 120 lines, not complete. Sections: Borg Behavioral Architecture and Agentic-AI Analogue / Purpose / 1. The Borg in One Sentence; historical source, not current DT proof. |
+
 ## Complete path/blob metadata ledger
 
 Each row gives relative path, exact blob SHA, size and current triage status. PENDING_CONTENT_REVIEW does not mean unimportant; provenance/meaning/next test are unknown until read.
@@ -341,22 +361,22 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `AGENT_X_VERIFICATION_STALE_BASE_RECOVERY_REPAIR.md` | `fbcc01af7de0daaadf3f23201f534e80cb7ab065` | 24914 | CONTENT_REVIEWED; KEEP |
 | `AGENTS (1).md` | `d008b2e03ba1113ea391c5ee04ad6d9b22f07c0e` | 25490 | CONTENT_REVIEWED; KEEP |
 | `AGENTS.md` | `2699d2c2ffab9f99849d0463910d9fca5b28c6c9` | 16764 | CONTENT_REVIEWED; KEEP |
-| `agentx_full_gap_closure_prompt.md` | `db10d0d1241f7c72e7214980503918bbf6aad690` | 110068 | PENDING_CONTENT_REVIEW |
-| `agentx_gap_closure_master_prompt.md` | `7397e8c60d791bf945c731d6fbff7a41639fb749` | 29742 | PENDING_CONTENT_REVIEW |
-| `all_poetry_projected_vector_readings_poetry_grounded.md` | `cd0db3608fa90a6175d3a660333cf33970088461` | 292915 | PENDING_CONTENT_REVIEW |
-| `all_poetry_readings_191_by_96_rune_runs.md` | `215a039721bc864530cd141a6ef835f2387569c4` | 234615 | PENDING_CONTENT_REVIEW |
-| `all_poetry_readings_191_elder_first_clusters.md` | `a5b66bff944134fec8c835c44de6a892d04a7a31` | 225463 | PENDING_CONTENT_REVIEW |
-| `all_poetry_readings_191_individual (1).md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `all_poetry_readings_191_individual.md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `all_poetry_readings_direct.md` | `4b1bbbdc4f66de1619f43654f000c815b2e091f1` | 269171 | PENDING_CONTENT_REVIEW |
+| `agentx_full_gap_closure_prompt.md` | `db10d0d1241f7c72e7214980503918bbf6aad690` | 110068 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `agentx_gap_closure_master_prompt.md` | `7397e8c60d791bf945c731d6fbff7a41639fb749` | 29742 | CONTENT_REVIEWED; KEEP |
+| `all_poetry_projected_vector_readings_poetry_grounded.md` | `cd0db3608fa90a6175d3a660333cf33970088461` | 292915 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `all_poetry_readings_191_by_96_rune_runs.md` | `215a039721bc864530cd141a6ef835f2387569c4` | 234615 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `all_poetry_readings_191_elder_first_clusters.md` | `a5b66bff944134fec8c835c44de6a892d04a7a31` | 225463 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `all_poetry_readings_191_individual (1).md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
+| `all_poetry_readings_191_individual.md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
+| `all_poetry_readings_direct.md` | `4b1bbbdc4f66de1619f43654f000c815b2e091f1` | 269171 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `APR_v3.5-F_A6_FORMAL_AUDIT.md` | `6e8245e2e2054d6bd2dcef80b2fd993a1385648b` | 11498 | PENDING_CONTENT_REVIEW |
-| `audio_frame_mosaic_llm_prompt_10_10_v4.md` | `3145e4120557c8f693e3a6c30c4e75665d9496e5` | 42519 | PENDING_CONTENT_REVIEW |
-| `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | 52229 | PENDING_CONTENT_REVIEW |
+| `audio_frame_mosaic_llm_prompt_10_10_v4.md` | `3145e4120557c8f693e3a6c30c4e75665d9496e5` | 42519 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | 52229 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `AUDIT.md` | `dd621250c391afd0db22501e71b6c60c840988f0` | 4681 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | 69026 | PENDING_CONTENT_REVIEW |
+| `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | 69026 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | 27325 | PENDING_CONTENT_REVIEW |
 | `bank_of_canada_role_stories_updated.md` | `60ef6841c9ae0cbd56c7f3e16382a0e1a6d1562a` | 37990 | PENDING_CONTENT_REVIEW |
-| `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | 135184 | PENDING_CONTENT_REVIEW |
+| `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | 135184 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `BORG_WHAT_THEY_DO.md` | `1bafc66072df4e8e99c7c0a5b1e67ba14e0a80ac` | 43127 | PENDING_CONTENT_REVIEW |
 | `CARD_SYSTEM_REBALANCED (1).md` | `2ee20cd74e7cb3a4c22990c995773570db85bbab` | 318842 | PENDING_CONTENT_REVIEW; SAME_BLOB |
 | `CARD_SYSTEM_REBALANCED_10_OF_10.md` | `2e359ab4b1d2c036c9cce855e58140d0eaea00f4` | 101341 | PENDING_CONTENT_REVIEW |
