@@ -1,88 +1,14 @@
-https://github.com/zhaoxuya520/reverse-skill
+# reverse-skill — selective donor mechanisms (historical research, not instructions)
+Source: https://github.com/zhaoxuya520/reverse-skill
+Prior source blob: `fbb6188f41ee47eb28e10536f44c9e5b0584c60b`. Origin: historical DT comparison, version not pinned; original wording recoverable from Git history. Independently checked upstream README opening and current routing configuration on 2026-11-01; exact implementation and DT parity not tested. Upstream advertises MIT; independently check exact license and any third-party assets before reuse.
 
-Yes — but **selectively**. I would not merge `reverse-skill` into DoubleTake wholesale. After comparing it against current DoubleTake `main`, DoubleTake already has the more sophisticated general architecture: capability contracts, semantic routing, bounded composition, conflict handling, automatic participation, Borg assimilation, sealed-venv adoption, runtime-environment governance, evidence, quarantine, and SkillGym verification. For example, those are already visible in `capability_router.py`, `collective_core/adoption.py`, `borg_capability_fabric/bridge.py`, and the recent automatic-capability-participation work.
+## Three candidate mechanisms
+1. **Live tool-readiness index**: distinguish capability advertised → binary installed → executable path/version known → MCP/service registered → service healthy → permitted executable *now*. Upstream `skills/scripts/refresh-tool-index.sh` and PowerShell equivalent refresh a snapshot; stale snapshot must fail safely, not imply live availability. DT's existing sealed Python adoption is not proof of universal host/MCP readiness.
+2. **Declarative environment bootstrap**: upstream `bootstrap-manifest.json` proposes version-pinned acquisition via package managers, Git, binary releases, services, MCP and manual steps. Any DT use requires explicit owner permission, supply-chain integrity, platform compatibility, bounded cost, verification, rollback and **no implicit installation**. Hypothesized locus: existing Skill2Env/adoption/capability fabric; current implementation parity UNKNOWN.
+3. **Route ↔ benchmark coverage invariant**: upstream `routing-benchmark.json`, `skills/config/routing.json` and `verify-routing-coherence.ps1` connect routing configuration to regression coverage. A DT-compatible *proposal* is to test every routable capability with (a) canonical request, (b) request lacking capability name, (c) paraphrase, (d) multi-capability positive, (e) near-neighbour negative, (f) unrelated negative. Integrate into existing SkillGym **only if** current evaluator lacks equivalent checks; do not create another controller/test stack.
 
-The useful parts of `reverse-skill` are mostly **operational patterns DoubleTake can generalize**:
+## Other donor elements and constraints
+Compact precedent index (`field-journal/_index.md`), route/config/document consistency and scope/case workflow are mostly overlapping with existing DT knowledge/governance; security-specific workflows should not become universal DT defaults. Upstream current README describes client-neutral routing and Windows/Ubuntu CI; source content and benchmark counts evolve and are not current DT metrics. Historical claims of `52/52` SkillGym and earlier capability-participation failure are **unverified for current DT HEAD**.
 
-| `reverse-skill` idea | Value to DoubleTake | Why |
-|---|---:|---|
-| **Machine-local tool/capability index** | **High** | `refresh-tool-index.sh` discovers what is actually installed, where it is, its version, MCP registration, service state, etc. DoubleTake knows a lot about capabilities, but a unified live **“what can this machine actually execute right now?”** view would make routing more grounded. |
-| **Declarative bootstrap manifest** | **High** | `bootstrap-manifest.json` handles npm MCPs, Git releases, git clones, local HTTP MCPs, OS packages, manual tools, pinned commits/versions, verification modes, dependencies, etc. DoubleTake's sealed-venv adoption is stronger for Python code, but this would broaden autonomous acquisition to **system binaries, services, MCPs and non-Python tools**. |
-| **Route ↔ benchmark coverage invariant** | **Very high** | `routing-benchmark.json` plus `verify-routing-coherence.ps1` requires every route to have test cases and prevents orphaned benchmarks/routes. This maps extremely well to DoubleTake's recent capability-participation problem. |
-| **Compact precedent/experience index** | Medium | `field-journal/_index.md` lets an agent retrieve proven prior methods cheaply before loading full cases. DoubleTake already has experience/knowledge infrastructure, so the concept is useful but mostly overlapping. |
-| **Route/config/document coherence checking** | Medium-low | Good implementation discipline, but DoubleTake's proof/gate infrastructure is already considerably more extensive. |
-| Security-specific routing tables and workflows | Low for core DT | Useful only as a cybersecurity specialization. Borg can assimilate them rather than baking them into DoubleTake itself. |
-| Consent/scope/case framework | Low | DoubleTake already has substantially stronger governance, authorization, evidence and rollback machinery. |
-
-The **route benchmark idea is particularly relevant right now**. DoubleTake recently discovered that capability participation could fall sharply when the user did not explicitly type the capability's name (`694d052`). `reverse-skill` solves the simpler version of that problem by maintaining a large explicit routing regression corpus and mechanically enforcing that every route has benchmark coverage. I would adapt that idea rather than copy it.
-
-For DoubleTake, it could become something stronger:
-
-```text
-For every routable capability:
-
-1. at least one canonical request
-2. at least one request that DOES NOT contain the capability name
-3. at least one paraphrased/synonym request
-4. at least one multi-capability request where it should participate
-5. at least one near-neighbour request where it must NOT participate
-6. at least one irrelevant request where it must NOT participate
-
-Capability enters ACTIVE routing only if these cases pass.
-```
-
-That would complement the existing SkillGym/automatic-participation work rather than duplicate it. In fact, DoubleTake's recent `52/52` SkillGym evidence means I would integrate this **into SkillGym as another derived invariant**, not create another parallel testing subsystem.
-
-The other genuinely interesting piece is the machine-local index. `reverse-skill` separates:
-
-```text
-CAPABILITY EXISTS
-        ↓
-TOOL IS INSTALLED
-        ↓
-TOOL PATH IS KNOWN
-        ↓
-VERSION IS ACCEPTABLE
-        ↓
-SERVICE/MCP IS REGISTERED
-        ↓
-SERVICE IS HEALTHY
-        ↓
-CAPABILITY IS EXECUTABLE NOW
-```
-
-That distinction would be valuable for DoubleTake. Its Borg currently does something stronger for assimilated Python components—sealed environments, import/symbol/construct gates, execution telemetry and automatic quarantine—but `reverse-skill` extends the same basic idea to **arbitrary host tools and MCP infrastructure**. That fits very well with your goal of making DoubleTake increasingly resourceful.
-
-And the bootstrap manifest could fit particularly well with the Skill2Env work you have just been integrating. I would make the relationship:
-
-```text
-Skill / task
-    ↓
-Capability requirements
-    ↓
-Skill2Env determines required environment
-    ↓
-Live capability index checks what already exists
-    ↓
-Bootstrap resolver finds the cheapest governed way
-    ↓
-apt / brew / pip / npm / git / binary release / MCP / service / manual
-    ↓
-verification
-    ↓
-Capability Fabric registration
-    ↓
-automatic participation
-```
-
-That is stronger than either project independently.
-
-So my conclusion is: **yes, there is real value here, but probably only three things deserve first-class DoubleTake implementation**:
-
-1. **Universal live capability/tool readiness index**
-2. **Cross-platform declarative bootstrap/resolution manifest for non-Borg/non-Python resources**
-3. **Per-capability routing/participation benchmark coverage enforced as an invariant**
-
-The rest should mostly be **assimilated as donor knowledge**, not transplanted architecturally.
-
-In other words, `reverse-skill` would not make DoubleTake fundamentally smarter by itself. Its strongest contribution would be making DoubleTake **better at knowing what capabilities are actually available, acquiring missing ones, and proving that it can discover them from ordinary user intent without the user having to name them**. That is a meaningful addition to the DoubleTake you currently have.
+## Falsifiable small test / decision
+Owner first identifies current canonical routing/SkillGym and tool-readiness paths. On frozen authorized isolated fixtures, compare baseline against a proposed coverage check: no-name positive and near-neighbour negative must expose an otherwise missed routing defect without increasing false positives; stale/uninstalled/version-mismatch/MCP-unhealthy cases must not be marked executable. Reject as ALREADY_PRESENT if existing DT tests already cover these; reject as NO_DELTA if no independently observed improvement. No actual installation or DT code edit authorized. Revisit on a verified routing or tool-readiness failure, not just this donor's existence.
