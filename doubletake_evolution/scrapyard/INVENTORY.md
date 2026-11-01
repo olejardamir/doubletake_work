@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **161 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 239 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **149 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 251 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -506,18 +506,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `full_freudian_id_ego_superego_mechanism_pseudocode.md` | `684906039df0cb2876f0e69ab4658eb0167b3463` | 85878 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `full_freudian_id_ego_superego_mechanism_V2_complete.md` | `d3466a4861a9e315077fc23c3a5267e079c8b9e0` | 168818 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` | `f2a106d2529b8c0c9945ec398e90e85e94a463dd` | 170951 | CONTENT_SAMPLED; KEEP |
-| `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md` | `16cfa1e4497350355083d071431ff1a4227ec586` | 193199 | PENDING_CONTENT_REVIEW |
-| `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` | `248f079e471d1e98e5f2ee578f107dfb160eaa73` | 195345 | PENDING_CONTENT_REVIEW |
-| `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md` | `cdacf4e24e0e9f0467eec61ff208e9b6cd22409c` | 221001 | PENDING_CONTENT_REVIEW |
-| `full_freudian_id_ego_superego_mechanism_V7_flow_corrected_canonical.md` | `c2a3d4ae6b7111d9dff70cf91d1b02b46a3f2c8d` | 231934 | PENDING_CONTENT_REVIEW |
-| `GENERAL_ENGINEERING_JIRA_TICKET_OPERATING_PROCEDURE_v2.md` | `0442f22ef5a5dc1a2c81d2d69f1bd342148360c6` | 24601 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Fifteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `e6a9d317f4039763e7ba625a341f6fef81b2a304` | 53459 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Forty_Sixth_Pass_Patent_Review_FULL_Success_Table_and_Final_Patent_Drafting_Direction.md` | `7edd31d820cf23d46a1de9b6e66c03762d07f144` | 136068 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Fourteenth_Pass_Patent_Review_and_Risk_Focused_Better_Direction.md` | `e5c256c5d457bc99a1bc499bb25aad5c2b3dd14d` | 47263 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Nineteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `f880cf45b028a69b6c7eb1f2588853320b93eed7` | 75075 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Seventh_Pass_Patent_Review_and_Better_Direction.md` | `ed0ef6590c99dd8976f588d6c9de1163b456fd01` | 47072 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Sixteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `37dd8f739d076ff5b578fc5f308d2f92ff309e25` | 60716 | PENDING_CONTENT_REVIEW |
-| `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md` | `b285a935aae8bf51c47eca3eba1a1fdfe7811a13` | 56355 | PENDING_CONTENT_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md` | `16cfa1e4497350355083d071431ff1a4227ec586` | 193199 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` | `248f079e471d1e98e5f2ee578f107dfb160eaa73` | 195345 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md` | `cdacf4e24e0e9f0467eec61ff208e9b6cd22409c` | 221001 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_V7_flow_corrected_canonical.md` | `c2a3d4ae6b7111d9dff70cf91d1b02b46a3f2c8d` | 231934 | CONTENT_SAMPLED; KEEP |
+| `GENERAL_ENGINEERING_JIRA_TICKET_OPERATING_PROCEDURE_v2.md` | `0442f22ef5a5dc1a2c81d2d69f1bd342148360c6` | 24601 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Fifteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `e6a9d317f4039763e7ba625a341f6fef81b2a304` | 53459 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Forty_Sixth_Pass_Patent_Review_FULL_Success_Table_and_Final_Patent_Drafting_Direction.md` | `7edd31d820cf23d46a1de9b6e66c03762d07f144` | 136068 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Fourteenth_Pass_Patent_Review_and_Risk_Focused_Better_Direction.md` | `e5c256c5d457bc99a1bc499bb25aad5c2b3dd14d` | 47263 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Nineteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `f880cf45b028a69b6c7eb1f2588853320b93eed7` | 75075 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Seventh_Pass_Patent_Review_and_Better_Direction.md` | `ed0ef6590c99dd8976f588d6c9de1163b456fd01` | 47072 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Sixteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `37dd8f739d076ff5b578fc5f308d2f92ff309e25` | 60716 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md` | `b285a935aae8bf51c47eca3eba1a1fdfe7811a13` | 56355 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `Glyphser_Thirty_Second_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `0d64f8cc7a00b25d02b5ce51b00350d08431b405` | 77842 | PENDING_CONTENT_REVIEW |
 | `Glyphser_Twenty_Fifth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `d7d335cbc3a36c5872d9a69701326c2c6557dab6` | 81825 | PENDING_CONTENT_REVIEW |
 | `Glyphser_Twenty_Fourth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` | `35aa611c2a0edf9779a71c192d4c758b058d4479` | 74976 | PENDING_CONTENT_REVIEW |
@@ -906,3 +906,21 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - `full_freudian_id_ego_superego_mechanism_V2_complete.md` **NEEDS_REVIEW**: Expanded conceptual Freudian model with additional defense layers; V3 documents corrections, provenance retained.
 - `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` **KEEP**: V3 corrects pseudocode consistency, declares a canonical entry point and separates base library; no tested DT transfer.
 - **Deletion:** 0. Form Picker numbered copy is an exact duplicate, but full dependency census is unverified. No automatic removal of superseded conceptual/financial originals. Cumulative 239 sampled, 161 pending; next cursor `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md`.
+
+
+## I4 checkpoint — 2026-11-01 UTC (12 newly sampled historical artifacts)
+
+- Actual first 125 lines fetched and blob-SHA matched for 12 current files. **Partial** content reviews only. Six patent-risk assessments may contain commercially sensitive research; no technical invention details copied into this public inventory. Historical documents are not executable instructions.
+- `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md` **NEEDS_REVIEW**: Conceptual model adds body-boundary and word-presentation routing plus flow repairs; not empirically validated as DT cognition.
+- `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` **NEEDS_REVIEW**: Conceptual V5 fixes state-field and control-flow inconsistencies; preserve provenance pending V7 comparison.
+- `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md` **NEEDS_REVIEW**: Conceptual V6 adds reality arbitration and persistent parallel attitudes; not evidence of autonomous agent benefit.
+- `full_freudian_id_ego_superego_mechanism_V7_flow_corrected_canonical.md` **KEEP**: Latest conceptual V7 corrects stale conflict inputs and duplicate pressure updates; analogy only, not implemented DT mechanism.
+- `GENERAL_ENGINEERING_JIRA_TICKET_OPERATING_PROCEDURE_v2.md` **NEEDS_REVIEW**: Human/Copilot engineering ticket procedure separates workstream setup from per-ticket action; possible workplace context, do not extract.
+- `Glyphser_Fifteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` **NEEDS_REVIEW**: Patent-risk and alternative architecture assessment; potentially proprietary IP, preserve without public technical extraction.
+- `Glyphser_Forty_Sixth_Pass_Patent_Review_FULL_Success_Table_and_Final_Patent_Drafting_Direction.md` **NEEDS_REVIEW**: Later patent assessment and scoring table; legal validity and transfer unverified, avoid exposing potential private IP.
+- `Glyphser_Fourteenth_Pass_Patent_Review_and_Risk_Focused_Better_Direction.md` **NEEDS_REVIEW**: Earlier patent conflict assessment; source search limitations and legal uncertainty, retain as historical evidence.
+- `Glyphser_Nineteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` **NEEDS_REVIEW**: Intermediate patent risk assessment with explicit search limitations; no validated DT relevance or redistribution clearance.
+- `Glyphser_Seventh_Pass_Patent_Review_and_Better_Direction.md` **NEEDS_REVIEW**: Earlier patent architecture direction; unique source trail and legal dependencies not checked, retain.
+- `Glyphser_Sixteenth_Pass_Patent_Review_and_Strictly_Improved_Direction.md` **NEEDS_REVIEW**: Intermediate patent direction/risk assessment; potentially sensitive invention context, no public technical extraction.
+- `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md` **NEEDS_REVIEW**: Earlier patent conflict and architecture assessment; provenance retained, independent claims verification absent.
+- **Deletion:** 0. Unique revision histories and potential proprietary provenance require retention; no independent proof of redundancy. Cumulative 251 sampled, 149 pending; next cursor from ledger after `Glyphser_Sixth_Pass_Patent_Review_and_Better_Direction.md`.
