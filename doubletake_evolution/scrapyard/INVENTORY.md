@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **197 PENDING_CONTENT_REVIEW**. This pass read 37 historical artifacts (19 complete UTF-8 files, 18 partial first-110-line samples), plus full incoming IS-007; **cumulative 203 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **197 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 203 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -767,9 +767,9 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` (resume from the next untouched artifact; content read only under public-safe review).
-- **Next mission-relevant pending path:** `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
-- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 233 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
+- **Next lexically pending path:** `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` (resume from next untouched artifact; public-safe review only).
+- **Next mission-relevant NEEDS_REVIEW path:** `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md`; compare against existing canonical allocation and verified benefit before proposing work.
+- **Current review epoch:** 2026-11-01; latest Scout checkpoint H1–H3 sampled 36 further historical files, all partial. 197 PENDING_CONTENT_REVIEW remain; earlier sixth-pass E/G checkpoints are preserved as historical observations.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
 | `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; OFFLOAD_WRITE_BLOCKED |
@@ -847,3 +847,8 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - **36 historical files newly content-sampled** (first 125 lines per file), 0 fully read in this run; cumulative at least partly inspected **203**; pending initial content review **197**; 401 current scrapyard blobs including inventory, subject to fresh tree reconciliation. **KEEP 23 / NEEDS_REVIEW 13** for this run. Actual deletions **0**, previously recorded **9**; previously blocked exact-duplicate candidates unchanged and not retried. The 36 items have source blob SHA in the ledger; no new SHA divergence observed.
 - **Next untouched lexical path:** `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md`. NEEDS_REVIEW also includes 36 new partial reads (23 retained as useful, 13 uncertain); do not confuse initial inspection with exhaustive coverage.
 - **Incoming IS-007:** still KEEP / SOURCE_CHECKED. Proposed handoff `R-BORG-SCOUT-20261101-007` remains **OFFLOAD_WRITE_BLOCKED** from prior run; no Director approval or DT Ground evidence. The RFC 9162 append-only rule remains a candidate for an authorized independent knowledge-to-behavior experiment, not a history-repair grant. No repeat of the previously rejected offload mutation. Current Director B1/B7 and local consumer gate remain unresolved.
+
+
+## H3 research cross-check — 2026-11-01 UTC
+
+- **Independent frontier:** `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` proposes multi-objective asynchronous successive-halving resource allocation. Original [MLSys 2020 ASHA](https://proceedings.mlsys.org/paper_files/paper/2020/hash/a06f20b349c6cf09a6b171c71b88bbfc-Abstract.html) and [Multi-objective ASHA (2021)](https://arxiv.org/abs/2106.12639) confirm related algorithms and published evaluations, **not** this specific proposed uncertainty-aware hybrid or a DT improvement. Source provenance partially checked; actual current DT budget-owner parity and measured candidate-selection advantage unknown. **KEEP / NO NEW DIRECTOR PROPOSAL** until a bounded existing-owner comparison shows a distinct deficit. Suggested negative test: a slowly improving candidate must not be eliminated solely on low-fidelity early scores; compare equal-budget Pareto quality, regret and cost to existing owner. No code or extra authority.
