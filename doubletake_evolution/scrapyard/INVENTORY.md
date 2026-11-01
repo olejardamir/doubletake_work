@@ -1,5 +1,28 @@
 # Borg Scrapyard Inventory
 
+## Q19 SHA-matched second-pass checkpoint — 2026-11-01 UTC
+
+- **Scope:** 13 current UTF-8/CSV artifacts fetched and sampled; 9 KEEP, 2 NEEDS_REVIEW, 2 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. Large 944-kB book sampled only; no deep audit.
+- **Coverage:** 392/392 nominal sampled by prior running arithmetic, **but 12 trailing cursor artifacts still lack this pass's explicit SHA-matched disposition**. Do not claim zero pending; next checkpoint must reconcile trailing 12 and deduplicate coverage counts against earlier ledger. Cursor after `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md`.
+- **Safety:** Aggregated CSV and original authority-compiler draft retained for provenance/rights review; no public reuse or implementation authorization inferred. Two exact-blob duplicates await fresh checks.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / next review |
+| --- | --- | --- | --- |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v9_consolidated.md` | `25052f94e1cf741141fc7a2f5194330f3e1a2254` | KEEP | Consolidated v9 rule-language safety specification; distinct extensive revision. Retain; deeper provenance/DT parity only if relevant. |
+| `ubr_smart_cosmetic_rule_syntax_blueprint.md` | `aeadb46db79a53da0c4203aa7a246d414b65dcb3` | KEEP | Original conceptual smart cosmetic rule syntax and user-intent baseline. Retain; deeper provenance/DT parity only if relevant. |
+| `Uninstalls by region_ooagdclidngalapkfajibimbmdhgafal.csv` | `2f019ba443f842d7cbf955887a3a3eceb4d276fe` | NEEDS_REVIEW | Aggregate regional uninstall time-series CSV; origin, license, analytic use and sharing rights unverified; retain without public redistribution. Retain; deeper provenance/DT parity only if relevant. |
+| `universal_job_post_template_for_resume_creation_10_10_v2 (1).md` | `f2c08f203cdce88edfbfbced56e05e9bc0f2102a` | DELETE_CANDIDATE | Exact blob of unsuffixed candidate-agnostic job blueprint; no unique content, pending references check. Do not delete before fresh SHA/reference checks. |
+| `universal_job_post_template_for_resume_creation_10_10_v2.md` | `f2c08f203cdce88edfbfbced56e05e9bc0f2102a` | KEEP | Canonical candidate-agnostic job blueprint and evidence-label guidance. Retain; deeper provenance/DT parity only if relevant. |
+| `universal_job_post_template_for_resume_creation_ats_aligned_10_10_v6.md` | `003f5edb3a93186c4edc46d00843ab33dc4604bf` | KEEP | Distinct ATS-compatible v6 blueprint and truthfulness checks. Retain; deeper provenance/DT parity only if relevant. |
+| `V30_clean_filing_version_conflict_calibrated_runtime_authority_compiler.md` | `0e3106347c7c30019b40f368ed27bef38a57f77e` | NEEDS_REVIEW | Original conflict-calibrated deterministic agent authority design draft; provenance/ownership/rights and DT overlap require owner-sensitive review; no public proposal copied. Retain; deeper provenance/DT parity only if relevant. |
+| `Verified_Modular_Program_Induction_Architecture_STRENGTHENED.md` | `fff9a834c2fddaca95aba6487df0b45420557bc9` | KEEP | Strengthened verified modular induction design with explicit black-box and cryptographic limits. Retain; deeper provenance/DT parity only if relevant. |
+| `Verified_Modular_Program_Induction_Architecture.md` | `089207d3e1bd9219ddca3abdeaaa1a5e8acdc90d` | KEEP | Earlier input-output modular program induction baseline; retain for chronology. Retain; deeper provenance/DT parity only if relevant. |
+| `VISION_CENTERED_CARD_SYSTEM_BOOK.md` | `c54dbabdd329ef52e4be6ffb5d7a09c0950952a1` | KEEP | Long-form 52-card/104-state interpretive system book; partial sample, no DT capability proof. Retain; deeper provenance/DT parity only if relevant. |
+| `VISION_CENTERED_CARD_SYSTEM_CONCRETE_DIVINATION_BOOK.md` | `9a6245dcdfeec42369c313ce927563e58af10370` | KEEP | Separate shorter concrete-reflection edition, distinct from long book. Retain; deeper provenance/DT parity only if relevant. |
+| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL (1).md` | `0392337815e267f06e6610c67ad8788888082b41` | DELETE_CANDIDATE | Exact blob of unsuffixed calibrated card-system edition; pending reference check. Do not delete before fresh SHA/reference checks. |
+| `VISION_CENTERED_CARD_SYSTEM_VECTOR_CALIBRATED_FINAL.md` | `0392337815e267f06e6610c67ad8788888082b41` | KEEP | Canonical vector-calibrated 52-card system edition; distinct from other books. Retain; deeper provenance/DT parity only if relevant. |
+
+
 ## Q18 SHA-matched second-pass checkpoint — 2026-11-01 UTC
 
 - **Scope:** 13 current artifacts checked against tree blob SHAs; 11 path-reader UTF-8 content samples plus two oversized 5.56/5.69 MB prompt books whose blob reader confirmed nonempty contents and opening text. 10 KEEP, 2 NEEDS_REVIEW, 1 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No full deep audit of large files.
