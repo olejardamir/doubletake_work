@@ -1,5 +1,10 @@
 # Borg Scrapyard Inventory
 
+## Verified SHA-guarded deletion tombstone — 2026-11-01 UTC
+
+- **Prior path:** `doubletake_evolution/scrapyard/CARD_SYSTEM_REBALANCED (1).md`; **prior blob SHA:** `2ee20cd74e7cb3a4c22990c995773570db85bbab`; **disposition:** DELETE_CANDIDATE → DELETED_VERIFIED; **deletion commit:** `b983a3a614935d4e4497270ff0a2b8dc524dd551`.
+- **Retained canonical:** `doubletake_evolution/scrapyard/CARD_SYSTEM_REBALANCED.md` with exactly identical full Git blob SHA `2ee20cd74e7cb3a4c22990c995773570db85bbab` and matching fetched content. The five current Director documents had no exact numbered-path references; GitHub indexed searches in planning and private DT returned no filename-stem matches (index/external coverage is not exhaustive). No unique bytes, retained private DT history or external files deleted. Original is recoverable from Git history. No approval or implementation capability inferred.
+
 ## Q21 incremental intake and targeted semantic re-review — 2026-11-01 UTC
 
 - **Tree before any new deletion:** 388 surviving artifacts excluding inventory, including 8 incoming (IS-001–IS-008). Prior 387 survivor first-pass ledger was complete only for bounded text samples; **new first-pass item: 1** (IS-008). **This checkpoint:** 12 previously sampled artifacts revisited by fetching actual UTF-8 bodies (not a new first-pass backlog), plus 1 newly received Internet note; 12 KEEP, 1 NEEDS_REVIEW, 0 EXTRACT_THEN_DELETE, 0 actual deletions at checkpoint. These 12 were reviewed for source/owner/claims/sections, not exhaustive independent code parity. No other new artifacts found. Cursor remains end of sorted prior tree; incremental incoming IS-008 processed. PENDING_FIRST_PASS_SHA_SAMPLE 0 for reachable current text; deep/rights/format review remains open.
