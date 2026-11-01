@@ -1,5 +1,20 @@
 # Borg Scrapyard Inventory
 
+## D02-S4b additional historical content surgery — 2026-11-01 UTC
+
+**Incremental bounded batch:** Three more full UTF-8 sources read (two historical texts and one atomic source-link pointer). Two original text files reduced **in place** with fresh-SHA guarded writes and exact post-commit refetch; one already-minimal source link retained unchanged with explicit reason. No new canonical duplicate, no deletion, no private implementation change. Source byte reduction **4,481**; total S4 + S4b historical-source reduction **68,182 bytes** (63,701 + 4,481) across 3 in-place edits and 1 verified duplicate deletion. Overall **6 source bodies read**, **4 fully dissected**, **3 surgically reduced**, **1 deleted**, **1 new Internet note source-validated**, **1 minimal pointer retained**; binary conversions 0; independently verified DT Ground 0. Backlog 30–50 target was not reached; do not credit metadata-only listings as reads.
+
+| Path under scrapyard/ | Blob / bytes before → after | Evidence-backed disposition |
+| --- | --- | --- |
+| `openshell_not_prompt.txt` | `3015885a7b72feb88035a2fa4e91500b0718ae04` → `c7de916080326d7273a6bdea33687851da681c12`; 5,953 → 3,233; commit `72bd078afd723982219cb62af2f3b39d6d02366d` | **KEEP / SURGICALLY_REDUCED_IN_PLACE**. Distinct optional OpenShell sandbox-enforcement proposal condensed into DT-owns-policy/OS-enforces boundary, compiler/prover/runtime-evidence contract, no unrestricted fallback, adversarial controls. NVIDIA official prover docs source-checked; prover supports only modeled policy domains and can return unsupported, and a pass does not prove runtime enforcement. Current DT owner/permissions/novelty UNKNOWN. No offload: missing distinct verified DT gap and authorized fixture. |
+| `AUDIT.md` | `dd621250c391afd0db22501e71b6c60c840988f0` → `730eff81d1e95e5212d5745b2b63a531dda6514f`; 4,681 → 2,920; commit `591c2aa07e8a7959a0133d6cd9fb61201bd1bbf2` | **KEEP / SURGICALLY_REDUCED_IN_PLACE**. Preserved 64 source full-meaning requirement, frozen pair mapping, same-GGUF embedding route, exact model/binary hashes, 8192 context, rank-1/source projection, two orthogonal 31-simplexes, 33rd-point distance invariant, manifest integrity, and missing-local-model limitation. Claims about ZIP corrections not independently reproduced. Current DT transfer UNKNOWN. |
+| `Harness_not_prompt.txt` | `51c5fb30f22bf8c0b2f615a05ceb862532c40d63`; 74 → 74 unchanged | **KEEP_FULL_ORIGINAL_WITH_SPECIFIC_JUSTIFICATION / MINIMAL_ATOMIC_POINTER**. Single original URL `https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness` already minimal; 2026-10-01 primary author post independently read. Claims 64% median coding-thread cost reduction on author's Open SWE traffic without measured quality loss; no DT result or parity evidence. Rewriting URL would add bytes or risk losing exact source. A new note would duplicate this pointer. Revisit if Director asks for cost-aware routing parity benchmark. |
+
+**Backlog cursor:** these three paths have current full-content findings; continue with unreviewed distinct sources after `AUDIT.md`/`openshell_not_prompt.txt`, rather than revisiting completed D01 or these two newly reduced files. D01 24 SR / 2 DD / 4 ND unchanged. No new research proposal beyond `R-BORG-SCOUT-20261101-013`. Pending backlog large; no global content-coverage claim.
+
+---
+
+
 ## D02-S4 canonical source closure + Internet IS-013 intake — 2026-11-01 UTC
 
 **Director context:** Latest STATE/ACTIVE_MISSION/WORKER_PROMPT/RESEARCH_OFFLOAD/COMPLETED consulted. FULL BORG **NO / NOT VERIFIED**; B1 historical-integrity owner disposition pending, 7.8.1 local mission-consumer receipt unobserved, natural complete cycles and independent external assimilation Ground remain zero. Prior IS-012 is Director-DEFER/OUTWARD ONLY. Private Borg corpus directory was reachable; no private material copied into public records. No ACTIVE_MISSION/WORKER_PROMPT/private DT implementation modified.
