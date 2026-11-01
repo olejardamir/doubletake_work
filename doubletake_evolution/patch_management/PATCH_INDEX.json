@@ -17,7 +17,8 @@
     "public_source_disclosure": "DT code diff patches are allowed in designated public patches directory; do not publish credentials, protected runtime state, or confidential third-party data.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb"
+    "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+    "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches."
   },
   "patches": [
     {
@@ -510,6 +511,116 @@
         "ground_verified": false
       },
       "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
+    },
+    {
+      "id": "BPE-20261101-015",
+      "mission_ref": "DT-EVO-002 / 2.2.2",
+      "summary": "Repair caller/grant boundary",
+      "file": "BPE-20261101-015.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "ISOLATED_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "priority": 115,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/tests/test_repair_console_ingress.py",
+        "tools/doubletake_evolve/tests/test_w19_repair_delegation.py"
+      ],
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+    },
+    {
+      "id": "BPE-20261101-016",
+      "mission_ref": "DT-EVO-002 / 2.2.3",
+      "summary": "Denied/failed repair test baseline",
+      "file": "BPE-20261101-016.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "ISOLATED_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "priority": 116,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/tests/test_repair_is_cycle_scoped.py",
+        "tools/doubletake_evolve/tests/test_repair_provider_failure_is_honest.py"
+      ],
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+    },
+    {
+      "id": "BPE-20261101-017",
+      "mission_ref": "DT-EVO-002 / 2.4.2",
+      "summary": "Isolated repair fault-path baseline",
+      "file": "BPE-20261101-017.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "ISOLATED_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "priority": 117,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/tests/test_autonomous_repair.py",
+        "tools/doubletake_evolve/tests/test_repair_is_bounded.py"
+      ],
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+    },
+    {
+      "id": "BPE-20261101-018",
+      "mission_ref": "DT-EVO-002 / 2.4.3",
+      "summary": "Bounded repair retry baseline",
+      "file": "BPE-20261101-018.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "ISOLATED_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "priority": 118,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/tests/test_repair_budget_exhaustion_reports_counts.py",
+        "tools/doubletake_evolve/tests/test_repair_is_cycle_scoped.py"
+      ],
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+    },
+    {
+      "id": "BPE-20261101-019",
+      "mission_ref": "DT-EVO-003 / 3.4.2",
+      "summary": "Status and cycle-boundary baseline",
+      "file": "BPE-20261101-019.sh",
+      "status": "DIAGNOSTIC_READY",
+      "type": "ISOLATED_DIAGNOSTIC",
+      "code_patch": false,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "priority": 119,
+      "depends_on": [],
+      "verification": {
+        "executed": false,
+        "ground_verified": false
+      },
+      "tests": [
+        "tools/doubletake_evolve/mission_management/tests/test_status_view.py",
+        "tools/doubletake_evolve/tests/test_cycle_summary_boundary.py"
+      ],
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
