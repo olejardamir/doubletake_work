@@ -1,5 +1,26 @@
 # Borg Scrapyard Inventory
 
+## Q6 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
+
+- **Scope:** 12 new distinct UTF-8 bodies fetched and sampled for actual opening, sections and ending; embedded base64 in one file NOT decoded. Q1–Q6 **72 distinct samples** (70 KEEP, 2 NEEDS_REVIEW); **238/397** surviving files second-pass sampled, **159 pending**. Next cursor after `forcing_age_liquidity_repair_vs_replenishment.md`. No deletion in Q6; cumulative historical GitHub-verified deletions **12**. Samples do not certify full semantic inspection.
+- **Insight:** EQC-FIC revisions expose control-plane isolation and contract-to-test falsifiers, overlapping DT's existing owner and governance. External symbolic regression and financial theory lack demonstrated present DT assimilation benefit. Embedded artifact requires separate inspection; **NEEDS_REVIEW**, not discard. No new qualified K, observed mission receipt or independent Ground. **Reference/dependency:** distinct original/version provenance, unknown external consumers and unexamined embedded payload prevent safe deletion.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / dependency status |
+| --- | --- | --- | --- |
+| `EQC_FIC_Standard_v1_9.md` | `9035c7b2ee24f566d5954fece8f8a82876530410` | KEEP | v1.9 unit DAG, semantic lockfile and implementation packet ordering; distinct delta. No deletion clearance. |
+| `EQC_FIC_Standard_v2_1.md` | `a2a93f55e494125a73577393f3e680b967a59f45` | KEEP | v2.1 control-plane separation, retained evidence, machine-readable manifests and failure learning. No deletion clearance. |
+| `EQC_FIC_Standard_v2_3.md` | `6e74ff3906337779bbf60a8325f3bf2b30838e1c` | KEEP | v2.3 hostile-document boundary, contract-to-test gate and artifact inventory; unique release candidate. No deletion clearance. |
+| `EQC_FIC_Standard.md` | `d0d5ff9d723e2e96b0be58d7a34edfdeffdca68f` | KEEP | Original v1.0 constrained contract→code→evidence design; original provenance, not redundant by age. No deletion clearance. |
+| `EQC-SR-v0.7.md` | `2f83c7fcbc157806711104a808849bc81a1eabd6` | KEEP | Symbolic regression v0.7 clean-room and conformance outputs with source-to-spec accounting. No deletion clearance. |
+| `EQC-SR-v0.9.md` | `a9fcbce544146f316a15b2ea24097b1395b5e8b5` | KEEP | v0.9 semantic freeze, differential testing, failure injection and benchmark corpus discipline. No deletion clearance. |
+| `EQC-SR-v1.0-release-candidate.md` | `f29690915f4218bbb2ce9ea04d6b1340c4683fdc` | KEEP | Release-candidate symbolic-regression governed extraction and post-release change control. No deletion clearance. |
+| `evp_ui_backend_readiness_prompt_v3.md` | `e68ba6544c178cebd5fee7fb0df3c41e7b6a44ca` | KEEP | Frontend audio-chunk typed backend-ready contracts, mock/real state separation and honest save/export semantics. No deletion clearance. |
+| `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` | `50648cea4736514a405c212e32b65b4768a804b3` | NEEDS_REVIEW | Large external take-home task includes embedded base64 artifact not decoded/verified; outer instructions sampled, preserve until embedded material examined. No deletion clearance. |
+| `Fixed_Modular_ML_SHA256_Architecture.md` | `38de201f75587db24eacf29fcf82ee5c38de78e4` | KEEP | Bit-exact modular SHA-256 via exhaustively verified Boolean primitives, not sampled-neural guarantee. No deletion clearance. |
+| `Forcing_Age_Liquidity_Mathematics_FALM_v6_final_theoretical_core.md` | `d9ad8605616d23bc980ded634c55e0f5f458534a` | KEEP | Speculative forcing-age liquidity measure, observation uncertainty and frozen out-of-sample falsification criteria. No deletion clearance. |
+| `forcing_age_liquidity_repair_vs_replenishment.md` | `002bf99336db736891d86970acd6c2ce86fb41ab` | KEEP | Original opposing-book repair vs replenishment treadmill identifiability counterexample; later formalization distinct. No deletion clearance. |
+
+
 ## Q5 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
 
 - **Scope:** Twelve new surviving UTF-8 bodies fetched, actual openings, relevant sections and endings sampled. Q1–Q5 **60 distinct samples** (59 KEEP, 1 NEEDS_REVIEW); **226/397** surviving files second-pass sampled, **171 pending**. Sampled is not full independent line-by-line review. Next cursor after `EQC_FIC_Standard_v1_8.md`. Seven existing incoming notes unchanged; no newly observed incoming source. **0 actual deletions this batch; 12 verified historical deletions.**
