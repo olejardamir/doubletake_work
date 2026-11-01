@@ -10,12 +10,13 @@
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
     "verification": "local execution and independent evidence required",
     "public_repo": true,
-    "local_selection": "Select only authorized eligible PREPARED_UNTESTED/APPLY_READY patches with satisfied dependencies, compatible source and disclosure clearance. All currently pending public scripts 004-007 are BLOCKED_PRIVATE_CONTENT and must not be auto-selected.",
+    "local_selection": "Select only patches that have been checked against actual current DT branch source, are not already applied, and have satisfied dependencies. Check patch_results/public feedback before each selection.",
     "one_patch_per_file": true,
     "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
     "executor_branch_reference": "feature/alphacode-provider",
-    "public_source_disclosure": "SAFETY_STOP: do not publish or revise source-bearing private DT diffs in public doubletake_work until explicit owner authorization; existing public copies do not constitute permission.",
-    "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work."
+    "public_source_disclosure": "DT code diff patches are allowed in designated public patches directory; do not publish credentials, protected runtime state, or confidential third-party data.",
+    "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
+    "automation_always_on": true
   },
   "patches": [
     {
@@ -70,15 +71,15 @@
         "tools/doubletake_evolve/claim_receipt/test_evidence_path_binding.py"
       ],
       "depends_on": [],
-      "status": "BLOCKED_PRIVATE_CONTENT",
+      "status": "APPLIED_UNVERIFIED",
       "patch_revision": 2,
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED_23_PASSED",
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "PUBLIC_DISCLOSURE_HOLD: ACTIVE_MISSION 7.9 explicitly stops further publication of private DT source-bearing patches; existing public scripts are not authorization for execution or revision.",
+      "last_error": null,
       "patch_blob_sha": "5873588a038308adc619d45bb53c8c1867fb6c2b",
       "file": "BPE-20261101-004.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -87,11 +88,12 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "9739e17efb73d87368d2e91d086a7de3ec123ccd",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "publication_hold": {
-        "authority": "ACTIVE_MISSION.md 7.9 next action",
-        "mission_blob_sha": "aaafac5be79b7ea46fdea19c1be762e14d22b66e",
-        "classification": "NO_NEW_OR_REVISED_SOURCE_BEARING_PUBLIC_PATCH",
-        "requires": "explicit owner authorization for safe disclosure or private-only execution path"
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "6260daa5bfe56f0c73874d0f92ee624864b028c4",
+        "test_result": "23 passed (reported in DT patch_results)",
+        "test_logs_independently_seen": false,
+        "source_diff_confirmed": true
       }
     },
     {
@@ -107,7 +109,7 @@
         "tools/doubletake_evolve/claim_receipt/test_sealed_spec_digest.py"
       ],
       "depends_on": [],
-      "status": "BLOCKED_PRIVATE_CONTENT",
+      "status": "BLOCKED",
       "patch_revision": 2,
       "verification": {
         "applied": false,
@@ -115,7 +117,7 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "PUBLIC_DISCLOSURE_HOLD: ACTIVE_MISSION 7.9 explicitly stops further publication of private DT source-bearing patches; existing public scripts are not authorization for execution or revision.",
+      "last_error": "SOURCE_RECHECK_REQUIRED: former publication hold lifted, but current target branch differs; rebase/test source-specific patch before local selection.",
       "patch_blob_sha": "613cc4c9dc9518df2917bfc65c8dddc8ccea8c43",
       "file": "BPE-20261101-005.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -124,12 +126,7 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "49fb0f997f684c20cc66a225620a62810c916ec5",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "publication_hold": {
-        "authority": "ACTIVE_MISSION.md 7.9 next action",
-        "mission_blob_sha": "aaafac5be79b7ea46fdea19c1be762e14d22b66e",
-        "classification": "NO_NEW_OR_REVISED_SOURCE_BEARING_PUBLIC_PATCH",
-        "requires": "explicit owner authorization for safe disclosure or private-only execution path"
-      }
+      "source_recheck_required": true
     },
     {
       "id": "BPE-20261101-006",
@@ -146,7 +143,7 @@
       "depends_on": [
         "BPE-20261101-004"
       ],
-      "status": "BLOCKED_PRIVATE_CONTENT",
+      "status": "BLOCKED",
       "patch_revision": 2,
       "verification": {
         "applied": false,
@@ -154,7 +151,7 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "PUBLIC_DISCLOSURE_HOLD: ACTIVE_MISSION 7.9 explicitly stops further publication of private DT source-bearing patches; existing public scripts are not authorization for execution or revision.",
+      "last_error": "SOURCE_RECHECK_REQUIRED: former publication hold lifted, but current target branch differs; rebase/test source-specific patch before local selection.",
       "patch_blob_sha": "b39e112a8496727d7162d0dfe9a10a6fdc567390",
       "file": "BPE-20261101-006.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -163,18 +160,13 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "7e8df8539e76ab2386f4a78efa301b226dfd5fa7",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "publication_hold": {
-        "authority": "ACTIVE_MISSION.md 7.9 next action",
-        "mission_blob_sha": "aaafac5be79b7ea46fdea19c1be762e14d22b66e",
-        "classification": "NO_NEW_OR_REVISED_SOURCE_BEARING_PUBLIC_PATCH",
-        "requires": "explicit owner authorization for safe disclosure or private-only execution path"
-      },
       "preflight_drift_observation": {
         "current_script_hash": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c",
         "expected_after_prior_patch_calculated": "bc43bf6768b736ae45310f4d8d9b3cfe5091ee4a",
         "status": "EXPECTED_STALE_AFTER_PREDECESSOR; IN_MEMORY_HUNK_MATCH_ONLY; NO_EXECUTION",
         "resolution": "Rebase only after authorized private publication path; no public script revision permitted"
-      }
+      },
+      "source_recheck_required": true
     },
     {
       "id": "BPE-20261101-007",
@@ -191,7 +183,7 @@
       "depends_on": [
         "BPE-20261101-006"
       ],
-      "status": "BLOCKED_PRIVATE_CONTENT",
+      "status": "BLOCKED",
       "patch_revision": 2,
       "verification": {
         "applied": false,
@@ -199,7 +191,7 @@
         "ground_verified": false
       },
       "publication_review": "PUBLIC_SAFE_MINIMAL_GENERIC_CODE_NO_SECRETS",
-      "last_error": "PUBLIC_DISCLOSURE_HOLD: ACTIVE_MISSION 7.9 explicitly stops further publication of private DT source-bearing patches; existing public scripts are not authorization for execution or revision.",
+      "last_error": "SOURCE_RECHECK_REQUIRED: former publication hold lifted, but current target branch differs; rebase/test source-specific patch before local selection.",
       "patch_blob_sha": "ac634d53d2b882bb38d84eacfc9c0480173cee00",
       "file": "BPE-20261101-007.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
@@ -208,18 +200,13 @@
       "target_branch": "feature/alphacode-provider",
       "script_blob_sha": "2498096be538cbd1357e4e522ee667adab341440",
       "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified",
-      "publication_hold": {
-        "authority": "ACTIVE_MISSION.md 7.9 next action",
-        "mission_blob_sha": "aaafac5be79b7ea46fdea19c1be762e14d22b66e",
-        "classification": "NO_NEW_OR_REVISED_SOURCE_BEARING_PUBLIC_PATCH",
-        "requires": "explicit owner authorization for safe disclosure or private-only execution path"
-      },
       "preflight_drift_observation": {
         "current_script_hash": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c",
         "expected_after_prior_patch_calculated": "3c6f362f620dc0bb73e371143a26d5ee2a81fa43",
         "status": "EXPECTED_STALE_AFTER_PREDECESSOR; IN_MEMORY_HUNK_MATCH_ONLY; NO_EXECUTION",
         "resolution": "Rebase only after authorized private publication path; no public script revision permitted"
-      }
+      },
+      "source_recheck_required": true
     },
     {
       "id": "BPE-20261101-008",
@@ -290,7 +277,8 @@
     "blocked_publication": 4,
     "private_unpublished": 2,
     "results_observed": 1,
-    "notes": "Safety stop discovered in authoritative ACTIVE_MISSION 7.9. Public source-bearing publication prohibited. Four pending scripts blocked, with 006 and 007 known to become stale after predecessors; exact patch hunk compatibility simulated only, not applied or tested. Previously integrated 003 remains APPLIED_UNVERIFIED."
+    "notes": "Historical hold superseded by updated ACTIVE_MISSION.md. Revalidate code scripts on actual feature branch before new local applications.",
+    "policy_superseded": true
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
