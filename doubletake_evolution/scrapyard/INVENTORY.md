@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **260 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **Cumulative at least partly inspected: 140** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
+Updated 2026-11-01 UTC; fresh complete recursive GitHub tree census at commit `0efeef649d481edb11b2e792d452e0b976e0dc5a` (not truncated): **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows after this update. **251 PENDING_CONTENT_REVIEW** (306 before minus 36). This run read 36 historical artifacts (16 full-text KEEP, 16 opening-only NEEDS_REVIEW, 4 byte-identical duplicate candidates blocked) and independently validated incoming IS-006 (full text). **149 cumulative at least partly inspected** (previous 92 + 37 this run); partial is not full deep review. **New deletions: 0; known historical deletions: 9.** No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -396,17 +396,17 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `Constructible_Computation_Mathematics_v56.md` | `50b9f4adeefda8075baaf8c32a87c6872ef43322` | 151949 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `cool_edit_pro_bottom_player_prompt_v9.md` | `dadf5acda7228e1ebe8002d8dae0827ab76d1cf2` | 14220 | CONTENT_REVIEWED; KEEP |
 | `cool_edit_pro_style_ui_prompt_v5_style_only.md` | `ae11463e618d79245ba88e5e91384c9dece829a6` | 17743 | CONTENT_REVIEWED; KEEP |
-| `cool_edit_pro_ui_style_polish_prompt_v7.md` | `0e1bef5ea3122a871fbf38230943a814e3b796e0` | 11727 | PENDING_CONTENT_REVIEW |
-| `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md` | `6f09d435ca9797c263acf1ebde76b8914ae7e581` | 11160 | PENDING_CONTENT_REVIEW |
+| `cool_edit_pro_ui_style_polish_prompt_v7.md` | `0e1bef5ea3122a871fbf38230943a814e3b796e0` | 11727 | CONTENT_REVIEWED; KEEP |
+| `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md` | `6f09d435ca9797c263acf1ebde76b8914ae7e581` | 11160 | CONTENT_REVIEWED; KEEP |
 | `CURRENT_STATE_AUDIT.md` | `2ce5cbca46e1aed5f3f212322ea0cd906c7e643a` | 2897 | CONTENT_REVIEWED; KEEP |
-| `Databricks_Hands_On_Only_One_Sandbox_38_Tickets_2026.md` | `919026e4aae828089f30e9b090930e9dee37355d` | 143004 | PENDING_CONTENT_REVIEW |
-| `DCLIF_FULL_METHOD_v1.md` | `54ef381656a7fd6f0e37c49489187e75f7f45811` | 28143 | PENDING_CONTENT_REVIEW |
-| `DCLIF_FULL_METHOD_v2_RESIDUAL_DISCOVERY.md` | `ab3c8f7d663ecaadac4bfb442cb5a66f29eb902a` | 40689 | PENDING_CONTENT_REVIEW |
-| `deep-research-report (1).md` | `85f6416ae835791ab25742d523ac9ce5fbec72b5` | 57627 | PENDING_CONTENT_REVIEW |
-| `deep-research-report.md` | `99dc287ecca30c050ee4ad190f34924440764131` | 42333 | PENDING_CONTENT_REVIEW |
+| `Databricks_Hands_On_Only_One_Sandbox_38_Tickets_2026.md` | `919026e4aae828089f30e9b090930e9dee37355d` | 143004 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DCLIF_FULL_METHOD_v1.md` | `54ef381656a7fd6f0e37c49489187e75f7f45811` | 28143 | CONTENT_REVIEWED; KEEP |
+| `DCLIF_FULL_METHOD_v2_RESIDUAL_DISCOVERY.md` | `ab3c8f7d663ecaadac4bfb442cb5a66f29eb902a` | 40689 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `deep-research-report (1).md` | `85f6416ae835791ab25742d523ac9ce5fbec72b5` | 57627 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `deep-research-report.md` | `99dc287ecca30c050ee4ad190f34924440764131` | 42333 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `DONOR_MODULE_DISPOSITION_MATRIX.md` | `b634d27a527e107e9af6df3929a96b42ac616498` | 1901 | CONTENT_REVIEWED; KEEP |
-| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | `552fef41ec2d1166f1e058eaa2de72ef8e574263` | 16379 | PENDING_CONTENT_REVIEW |
-| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | `fde46435d106157f8ac884deb3f7dc1f6b3d02d3` | 14605 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | `552fef41ec2d1166f1e058eaa2de72ef8e574263` | 16379 | CONTENT_REVIEWED; KEEP |
+| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | `fde46435d106157f8ac884deb3f7dc1f6b3d02d3` | 14605 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v3_M_CLOSURE.md` | `df5ff11c9b1d5d5aa8f372b4d426199266b7e1cf` | 12616 | CONTENT_REVIEWED; KEEP |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` | `1f718705759c44afd3125471274dbe1aa3cc0464` | 26284 | PENDING_CONTENT_REVIEW |
 | `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v5_OPENCODE_LLM_ONLY_FINAL_CLOSURE.md` | `701737f94c0fe740275b6c7693f15361d4a87e81` | 38494 | PENDING_CONTENT_REVIEW |
@@ -703,11 +703,29 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `cool_edit_pro_bottom_player_prompt_v9.md` | KEEP | Full 593 lines: UI transport-control visual/function requirements; unrelated design, no direct DT capability claim. |
 | `cool_edit_pro_style_ui_prompt_v5_style_only.md` | KEEP | Full 733 lines: style-only UI scope isolation, no logic mutation; useful as design/behavior negative control, not a DT mission. |
 
+
+## Progressive review checkpoint G2 — 2026-11-01 UTC
+
+- **Read:** 9 previously pending files, SHA-matched, 5 complete and 4 first-110-line samples. Five KEEP, four NEEDS_REVIEW; no eligible safe deletion, no protected-state changes. A full document read is not proof that its scientific claims are valid. Public-safe summaries only.
+- **Cursor:** next `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md`. Combined G1+G2: 19 historical content inspections, 251 pending, cumulative 149 including IS-007. Known deletions unchanged at 9.
+
+| Artifact | Disposition | Content finding / limitation |
+| --- | --- | --- |
+| `cool_edit_pro_ui_style_polish_prompt_v7.md` | KEEP | Full 512 lines: style-only React UI polish; explicitly forbids functional changes, useful visual-vs-behavior boundary. |
+| `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md` | KEEP | Full 495 lines: speculative crystal-radio pendulum engineering with staged battery-first feasibility; not a validated energy device or DT component. |
+| `Databricks_Hands_On_Only_One_Sandbox_38_Tickets_2026.md` | NEEDS_REVIEW | First 110 lines: one-sandbox ticket lab with cost/security guardrails; may contain user-specific context; do not expose or execute. |
+| `DCLIF_FULL_METHOD_v1.md` | KEEP | Full 1120 lines: latent inverse formulation for herbal mixtures, dose calibration and falsifiable ingredient metrics; scientific/clinical validity unverified, not health advice. |
+| `DCLIF_FULL_METHOD_v2_RESIDUAL_DISCOVERY.md` | NEEDS_REVIEW | First 110 lines: residual-guided extension of DCLIF v1; claimed novelty and empirical support require validation. |
+| `deep-research-report (1).md` | NEEDS_REVIEW | First 110 lines: semantic portfolio research design; finance-domain claims and citations unverified, no DT implementation link. |
+| `deep-research-report.md` | NEEDS_REVIEW | First 110 lines: taxonomy of LLM coding failures, controls and evaluation; possible B7 independent testing ideas; citations not source-checked. |
+| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | KEEP | Full 391 lines: historical meta-reasoning residual closure matrix, bounded runtime and independent acceptance; do not treat archived goals as current. |
+| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | KEEP | Full 405 lines: later four-criterion residual closure, bounded state; compare v2 for unique acceptance gates before reuse. |
+
 ## Durable progressive review cursor
 
-- **Next lexically pending path:** `cool_edit_pro_ui_style_polish_prompt_v7.md` (resume from the next untouched artifact; content read only under public-safe review).
+- **Next lexically pending path:** `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` (resume from the next untouched artifact; content read only under public-safe review).
 - **Next mission-relevant pending path:** `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md`; compare historical Borg behavior against authoritative private design without copying it into public notes.
-- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 260 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
+- **Current review epoch:** 2026-11-01; sixth Scout pass completed 36 historical content inspections plus one full incoming review, checkpointed in E1/E2/E3 and sixth-pass summary. 251 PENDING_CONTENT_REVIEW remain; 16 of this run's large sampled files still NEEDS_REVIEW for deep examination.
 - **Duplicate deletion queue:** Four newly SHA-identical duplicate candidates remain blocked (two pairs), plus earlier candidates; exact-path reference and owner-dependency census unavailable. No deletion this run; do not repeat unsafe unchanged delete attempts.
 
 | `incoming/IS-20261101-007-merkle-consistency-proof-as-external-knowledge-falsifier.md` | `46efa667c19579876b16993e325a02f6f5621184` | 11659 | CONTENT_REVIEWED; SOURCE_CHECKED; KEEP; DIRECTOR_REVIEW_PENDING |
