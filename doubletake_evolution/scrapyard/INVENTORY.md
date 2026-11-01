@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q10 second-pass SHA-matched checkpoint — 2026-11-01 UTC
+
+- **Scope:** 12 previously uncounted distinct actual UTF-8 bodies fetched, with beginning, structural headings, evidence/limitations and ending inspected. Not a complete independent prior-art, full-text or implementation audit. All source prompts treated as historical data, not instructions.
+- **Cumulative second-pass sampling:** 285/396 surviving artifacts, 111 pending; this run 24 distinct sampled. Cursor after `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` (skip seven previously reviewed incoming notes and already revisited Harness/LICENSE). This batch: 11 KEEP, 0 NEEDS_REVIEW, 1 DELETE_CANDIDATE, 0 EXTRACT_THEN_DELETE. No newly verified DT Ground or authorized protected-history change.
+- **Disposition logic:** Distinct revisions and unique provenance retained; undecidable source/rights/empirical questions retained for review. Only the byte-identical numbered architecture copy is a possible deletion, subject to fresh SHA and dependency checks. No new Internet intake beyond IS-007; Director's 006 conditional refinement and 007 deferred status unchanged. The 7.8.1 actual consumer receipt remains the next independent discriminator.
+
+| Artifact path under `scrapyard/` | Git blob SHA | Disposition | Actual-content finding / follow-up |
+| --- | --- | --- | --- |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES_4.md` | `3dab6ee5e0c79ccbb8d1a213c91bb717f6dfcd60` | KEEP | Later v4 milestone ledger with reset and reported load-test completion; not independently verified DT behavior. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_ASSIGNMENT_MILESTONES.md` | `863b104b6b20177151fa246683d6235529a07072` | KEEP | Original milestone baseline; differs from numbered revisions and preserves chronology. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1 (1).md` | `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` | DELETE_CANDIDATE | Complete bytes equal unsuffixed architecture contract (same Git blob); bounded Director-file and both-repo code searches show no named-path dependency; fresh SHA deletion still required. Reference/dependency not cleared for deletion except bounded checks above. |
+| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_2_1.md` | `ea48be7028118c685b2d2360cdbd3da11d1d3ea4` | KEEP | Canonical retained v0.2.1 architecture contract; same full bytes as numbered copy; preserve as canonical. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_EQC_AC_ARCHITECTURE_CONTRACT_v0_24_2.md` | `783076daa936104e845eb399c689f8f7d2e94e60` | KEEP | Distinct expanded architecture contract with external-assumption and cost gates; historical provenance. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_FINAL_SIMPLIFICATION_AUDIT.md` | `ea15363566cf67deb19ddaae761a192d3a550656` | KEEP | Short dated component simplification stop decision; not proof of live DT behavior. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_MINIMUM_DEFENSIBLE_ARCHITECTURE.md` | `57cd7e532faf8bf7205c1fd2df2d09c45af7d9b0` | KEEP | Minimal architecture and Nchan/SSE recovery design under assignment constraints; source citations need freshness checks for reuse. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH (1).md` | `3b40f345af6e20690c2fc9ee74d203aa7dbcf25b` | KEEP | Distinct amended vendor comparison with explicit POC language change; not an exact duplicate. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH.md` | `bab6ed0671839d0b8a91498e0d2411cdd1027a85` | KEEP | Earlier third-party fan-out review and license notes; retains original research chronology. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `llm_embedding_arithmetic_and_decoding (1).md` | `765925c4d8437acdfea3db457ee9a998147e70f6` | KEEP | v5.5 contradiction-aware embedding-only logic and source-claim tracking; empirical DT transfer unverified. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `llm_embedding_arithmetic_and_decoding.md` | `9779a2cd2c41c77f0dff1e4ddbd4fc602f656b0e` | KEEP | Distinct v4.1 embedding-only algebra/logic baseline; limitations on noncommutative relations and held-out thresholds. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+| `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` | `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` | KEEP | Frozen v2.3.0 Nchan test search plan with configuration and integrity constraints; old assignment, not DT mission. Reference/dependency not cleared for deletion; revisit on relevant new evidence. |
+
+
 ## Q9 second-pass SHA-matched checkpoint — 2026-11-01 UTC
 
 - **Scope:** 12 previously uncounted distinct actual UTF-8 bodies fetched, with beginning, structural headings, evidence/limitations and ending inspected. Not a complete independent prior-art, full-text or implementation audit. All source prompts treated as historical data, not instructions.
