@@ -1,0 +1,57 @@
+diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletake_evolve/claim_receipt/receipts.py
+--- a/tools/doubletake_evolve/claim_receipt/receipts.py
++++ b/tools/doubletake_evolve/claim_receipt/receipts.py
+@@ -11,1 +11,1 @@
+-from doubletake_evolve._shared.crypto_utils import sha256_text
++from doubletake_evolve._shared.crypto_utils import canonical_json_digest, sha256_text
+@@ -39,1 +39,1 @@
+-    return item.content_digest
++    return canonical_json_digest(item.payload)
+diff --git a/tools/doubletake_evolve/claim_receipt/test_evidence_payload_digest.py b/tools/doubletake_evolve/claim_receipt/test_evidence_payload_digest.py
+new file mode 100644
+--- /dev/null
++++ b/tools/doubletake_evolve/claim_receipt/test_evidence_payload_digest.py
+@@ -0,0 +1,43 @@
++"""Fail closed when a cached evidence digest disagrees with actual payload bytes."""
++
++from doubletake_evolve._shared.crypto_utils import canonical_json_digest
++from doubletake_evolve.claim_receipt.models import (
++    ClaimSpec, EvidenceItem, TerminalReceipt, INVALID, PASS,
++)
++from doubletake_evolve.claim_receipt.receipts import (
++    recompute_evidence_digest, verify_claim,
++)
++
++
++def _claim():
++    return ClaimSpec(
++        claim_id="a", statement="payload", expected_kind="score",
++        evidence_path="ev/a", required_fields=("value",),
++    )
++
++
++def _receipt(digest):
++    return TerminalReceipt(
++        claim_id="a", reported_digest=digest, prev_receipt_digest="",
++    )
++
++
++def test_unchanged_payload_remains_valid():
++    item = EvidenceItem(path="ev/a", payload={"value": "original"})
++    assert recompute_evidence_digest(item) == canonical_json_digest(item.payload)
++    assert verify_claim(_claim(), {"ev/a": item}, _receipt(item.content_digest)).verdict == PASS
++
++
++def test_mutating_payload_after_construction_invalidates_original_receipt():
++    item = EvidenceItem(path="ev/a", payload={"value": "original"})
++    receipt = _receipt(item.content_digest)
++    item.payload["value"] = "tampered"
++    assert recompute_evidence_digest(item) == canonical_json_digest(item.payload)
++    assert verify_claim(_claim(), {"ev/a": item}, receipt).verdict == INVALID
++
++
++def test_supplied_forged_cached_digest_cannot_override_payload():
++    item = EvidenceItem(
++        path="ev/a", payload={"value": "real"}, content_digest="0" * 64,
++    )
++    assert verify_claim(_claim(), {"ev/a": item}, _receipt("0" * 64)).verdict == INVALID

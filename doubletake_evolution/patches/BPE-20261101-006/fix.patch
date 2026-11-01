@@ -1,0 +1,52 @@
+diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletake_evolve/claim_receipt/receipts.py
+--- a/tools/doubletake_evolve/claim_receipt/receipts.py
++++ b/tools/doubletake_evolve/claim_receipt/receipts.py
+@@ -110,1 +110,1 @@
+-    covered = committed & set(receipts.keys())
++    covered = committed & set(receipts.keys()) & {c.claim_id for c in spec.claims}
+diff --git a/tools/doubletake_evolve/claim_receipt/test_committed_claim_coverage.py b/tools/doubletake_evolve/claim_receipt/test_committed_claim_coverage.py
+new file mode 100644
+--- /dev/null
++++ b/tools/doubletake_evolve/claim_receipt/test_committed_claim_coverage.py
+@@ -0,0 +1,41 @@
++"""A receipt cannot cover a committed claim absent from the sealed claim set."""
++
++from doubletake_evolve.claim_receipt.models import (
++    ClaimReceiptSpec, ClaimSpec, EvidenceItem, TerminalReceipt,
++)
++from doubletake_evolve.claim_receipt.receipts import check_coverage, verify_claims
++
++
++def _spec(committed_ids):
++    return ClaimReceiptSpec(
++        spec_id="s", version="1",
++        claims=(ClaimSpec(
++            claim_id="a", statement="sample", expected_kind="score",
++            evidence_path="ev/a", required_fields=("value",),
++        ),),
++        committed_claim_ids=committed_ids, sealed_at="2026-11-01T00:00:00Z",
++    )
++
++
++def _receipts(item):
++    first = TerminalReceipt("a", item.content_digest, "")
++    extra = TerminalReceipt("ghost", "not-an-evidence-digest", first.receipt_sha256)
++    return {"a": first, "ghost": extra}
++
++
++def test_known_committed_claim_is_covered():
++    item = EvidenceItem(path="ev/a", payload={"value": "1"})
++    result = verify_claims(_spec(("a",)), {"ev/a": item}, {"a": _receipts(item)["a"]})
++    assert result.coverage.covered
++    assert result.all_pass
++
++
++def test_unknown_committed_claim_cannot_be_covered_by_unverified_receipt():
++    item = EvidenceItem(path="ev/a", payload={"value": "1"})
++    spec = _spec(("a", "ghost"))
++    receipts = _receipts(item)
++    coverage = check_coverage(spec, receipts)
++    assert not coverage.covered
++    assert "ghost" in coverage.missing_ids
++    result = verify_claims(spec, {"ev/a": item}, receipts)
++    assert not result.all_pass

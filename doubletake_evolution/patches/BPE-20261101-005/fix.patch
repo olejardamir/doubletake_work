@@ -1,0 +1,51 @@
+diff --git a/tools/doubletake_evolve/claim_receipt/models.py b/tools/doubletake_evolve/claim_receipt/models.py
+--- a/tools/doubletake_evolve/claim_receipt/models.py
++++ b/tools/doubletake_evolve/claim_receipt/models.py
+@@ -59,2 +59,1 @@
+-        if self.spec_digest:
+-            return
++        supplied_digest = self.spec_digest
+@@ -73,1 +72,3 @@
++        if supplied_digest and supplied_digest != digest:
++            raise ValueError("ClaimReceiptSpec digest does not match its contents")
+         object.__setattr__(self, "spec_digest", digest)
+diff --git a/tools/doubletake_evolve/claim_receipt/test_sealed_spec_digest.py b/tools/doubletake_evolve/claim_receipt/test_sealed_spec_digest.py
+new file mode 100644
+--- /dev/null
++++ b/tools/doubletake_evolve/claim_receipt/test_sealed_spec_digest.py
+@@ -0,0 +1,35 @@
++"""A pre-sealed claim specification must match its declared digest."""
++
++from dataclasses import replace
++
++import pytest
++
++from doubletake_evolve.claim_receipt.models import ClaimReceiptSpec, ClaimSpec
++
++
++def _spec():
++    return ClaimReceiptSpec(
++        spec_id="s", version="1",
++        claims=(ClaimSpec(
++            claim_id="a", statement="original", expected_kind="score",
++            evidence_path="ev/a", required_fields=("value",),
++        ),),
++        committed_claim_ids=("a",), sealed_at="2026-11-01T00:00:00Z",
++    )
++
++
++def test_matching_external_seal_is_accepted():
++    spec = _spec()
++    assert replace(spec, spec_digest=spec.spec_digest).spec_digest == spec.spec_digest
++
++
++def test_arbitrary_external_seal_is_rejected():
++    with pytest.raises(ValueError, match="digest"):
++        replace(_spec(), spec_digest="0" * 64)
++
++
++def test_reusing_old_seal_after_claim_mutation_is_rejected():
++    spec = _spec()
++    changed_claim = replace(spec.claims[0], statement="changed")
++    with pytest.raises(ValueError, match="digest"):
++        replace(spec, claims=(changed_claim,))
