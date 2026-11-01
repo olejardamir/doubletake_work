@@ -11,7 +11,9 @@
     "verification": "local execution and independent evidence required",
     "public_repo": true,
     "local_selection": "read ../patch_management/PATCH_INDEX.json, select first eligible by priority/status/dependencies and compatible DT source; inspect and execute ONE ../patches/<ID>.sh patch; report to patch_management/results/<ID>.json",
-    "one_patch_per_file": true
+    "one_patch_per_file": true,
+    "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
+    "executor_branch_reference": "feature/alphacode-provider"
   },
   "patches": [
     {
@@ -57,9 +59,9 @@
       "id": "BPE-20261101-004",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
       "summary": "Reject evidence whose embedded path disagrees with the committed evidence path.",
-      "source_revision": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
+      "source_revision": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
       "source_blob_shas": {
-        "tools/doubletake_evolve/claim_receipt/receipts.py": "a304c64d15db4ed37b94e491b4deebc9738b23ad"
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c"
       },
       "touched_paths": [
         "tools/doubletake_evolve/claim_receipt/receipts.py",
@@ -67,7 +69,7 @@
       ],
       "depends_on": [],
       "status": "PREPARED_UNTESTED",
-      "patch_revision": 1,
+      "patch_revision": 2,
       "verification": {
         "applied": false,
         "tested": false,
@@ -79,13 +81,16 @@
       "file": "BPE-20261101-004.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 2,
-      "application": "one_patch_per_local_execution"
+      "application": "one_patch_per_local_execution",
+      "target_branch": "feature/alphacode-provider",
+      "script_blob_sha": "9739e17efb73d87368d2e91d086a7de3ec123ccd",
+      "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified"
     },
     {
       "id": "BPE-20261101-005",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
       "summary": "Reject externally supplied sealed-spec digests that do not match current claim contents.",
-      "source_revision": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
+      "source_revision": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
       "source_blob_shas": {
         "tools/doubletake_evolve/claim_receipt/models.py": "6806ec309b405f2b7f692aa0ee5341cf590e7839"
       },
@@ -95,7 +100,7 @@
       ],
       "depends_on": [],
       "status": "PREPARED_UNTESTED",
-      "patch_revision": 1,
+      "patch_revision": 2,
       "verification": {
         "applied": false,
         "tested": false,
@@ -107,15 +112,18 @@
       "file": "BPE-20261101-005.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
-      "application": "one_patch_per_local_execution"
+      "application": "one_patch_per_local_execution",
+      "target_branch": "feature/alphacode-provider",
+      "script_blob_sha": "49fb0f997f684c20cc66a225620a62810c916ec5",
+      "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified"
     },
     {
       "id": "BPE-20261101-006",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
       "summary": "Do not count receipts for committed claim IDs absent from the sealed claim set as coverage.",
-      "source_revision": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
+      "source_revision": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
       "source_blob_shas": {
-        "tools/doubletake_evolve/claim_receipt/receipts.py": "a304c64d15db4ed37b94e491b4deebc9738b23ad"
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c"
       },
       "touched_paths": [
         "tools/doubletake_evolve/claim_receipt/receipts.py",
@@ -123,7 +131,7 @@
       ],
       "depends_on": [],
       "status": "PREPARED_UNTESTED",
-      "patch_revision": 1,
+      "patch_revision": 2,
       "verification": {
         "applied": false,
         "tested": false,
@@ -135,15 +143,18 @@
       "file": "BPE-20261101-006.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 4,
-      "application": "one_patch_per_local_execution"
+      "application": "one_patch_per_local_execution",
+      "target_branch": "feature/alphacode-provider",
+      "script_blob_sha": "7e8df8539e76ab2386f4a78efa301b226dfd5fa7",
+      "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified"
     },
     {
       "id": "BPE-20261101-007",
       "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension",
       "summary": "Reject a receipt for another claim ID in direct per-claim verification.",
-      "source_revision": "7b86364f1bbf34c0f04a2b85f21e5fb499fd7719",
+      "source_revision": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
       "source_blob_shas": {
-        "tools/doubletake_evolve/claim_receipt/receipts.py": "a304c64d15db4ed37b94e491b4deebc9738b23ad"
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "e0320b4ec4d6ca4431e57c4bc06fb4ee6b22618c"
       },
       "touched_paths": [
         "tools/doubletake_evolve/claim_receipt/receipts.py",
@@ -151,7 +162,7 @@
       ],
       "depends_on": [],
       "status": "PREPARED_UNTESTED",
-      "patch_revision": 1,
+      "patch_revision": 2,
       "verification": {
         "applied": false,
         "tested": false,
@@ -163,7 +174,10 @@
       "file": "BPE-20261101-007.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 5,
-      "application": "one_patch_per_local_execution"
+      "application": "one_patch_per_local_execution",
+      "target_branch": "feature/alphacode-provider",
+      "script_blob_sha": "2498096be538cbd1357e4e522ee667adab341440",
+      "revision_reason": "Rebound source preflight to confirmed feature/alphacode-provider after BPE-20261101-003; actual execution/tests remain unverified"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -200,5 +214,6 @@
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
-  "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json"
+  "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
+  "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md"
 }
