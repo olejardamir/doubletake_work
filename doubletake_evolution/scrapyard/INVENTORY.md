@@ -67,6 +67,27 @@ Updated 2026-11-01 UTC; latest checked GitHub main tree `11c2606a953989ffd1206c1
 
 18 groups of byte-identical blob SHAs found, including a nine-path group. Identity does not authorize deletion: references/dependencies have not been checked. Eight verified duplicate deletions (tombstones above). No binary/archive seen in listed tree; non-Markdown files pending.
 
+## Progressive review checkpoint A — 2026-11-01 UTC (12 actual file contents inspected)
+
+All twelve files below were fetched as text and examined for objective, mechanisms, evidence requirements and limitations. They are **historical design prompts**, not proof of implementation or live instructions. KEEP pending current-DT parity and reference review; no deletion authorized. All were individually distinct in the current tree.
+
+| File | Content finding / why keep | Revisit trigger |
+| --- | --- | --- |
+| `01_REPOSITORY_PROVIDER_ARCHITECTURE_AUDIT.md` | Provider ownership audit; map canonical extension points before adding a provider. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `02_LLM7_LIVE_PROTOCOL_AND_CAPABILITY_PROBE.md` | Evidence-first anonymous API capability and failure probes; historical endpoint behavior, not current verification. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `02_gate_b_contract_integration.md` | Canonical Gate B and donor-collapse plan; avoids parallel assimilation authority. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `03_LLM7_PROVIDER_DEFINITION_REGISTRY_AND_INSTALL.md` | First-class provider registry and backend integration contract; historical implementation prompt. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `04_LLM7_RUNTIME_TRANSPORT_AND_AUTHENTICATION.md` | No-fake-credential transport and explicit absence of auth header; useful regression principle. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `04_generation_scheduler_integration.md` | Canonical optimizer/generator scheduler ownership; candidate generation must not become promotion authority. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `05_LLM7_DYNAMIC_MODEL_DISCOVERY_AND_SELECTION.md` | Dynamic provider model discovery and failure-tolerant metadata parsing. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `06_LLM7_SETUP_UX_AND_HEADLESS_CONFIGURATION.md` | Headless configuration and credential-free setup with persistence tests. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `07_LLM7_STREAMING_TOOLS_AND_RESPONSE_COMPATIBILITY.md` | Streaming, tool-call, cancellation and partial-error compatibility test matrix. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `07_real_api_ui_inventory.md` | Real API/UI inventory linked to canonical semantic state, not in-memory mock. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `08_LLM7_TESTS_FAILURE_MODES_AND_REGRESSION.md` | Mocked/integration/opt-in-live test pyramid with behavioral negative controls. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+| `08_benchmark_holdout.md` | Holdout/ablation evidence before ranking/search-policy promotion; relevant to DT Ground. | Current DT canonical owner/test comparison; archive as historical if fully superseded. |
+
+**Cursor:** batch A complete (12 content-inspected); continue with unreviewed technical files, avoiding repeated reads. No deletion candidates in this batch. No private code disclosed.
+
 ## Complete path/blob metadata ledger
 
 Each row gives relative path, exact blob SHA, size and current triage status. PENDING_CONTENT_REVIEW does not mean unimportant; provenance/meaning/next test are unknown until read.
@@ -74,22 +95,22 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | Relative path | Blob SHA | Bytes | Status |
 | --- | --- | ---: | --- |
 | `00_MAIN_PROMPT.md` | `3093ec2d1ab888a3921bd258a9c26dbb62289734` | 6797 | REVIEWED_HISTORICAL; RETAIN |
-| `01_REPOSITORY_PROVIDER_ARCHITECTURE_AUDIT.md` | `415b6f5c8a80d22a212c5c8baf9b82e738c363d8` | 3222 | PENDING_CONTENT_REVIEW |
+| `01_REPOSITORY_PROVIDER_ARCHITECTURE_AUDIT.md` | `415b6f5c8a80d22a212c5c8baf9b82e738c363d8` | 3222 | CONTENT_REVIEWED; KEEP |
 | `01_revalidate_and_disposition.md` | `df695e0556ab926f03cf1f59c91841fab4fb0d9a` | 2954 | REVIEWED_HISTORICAL; RETAIN |
-| `02_gate_b_contract_integration.md` | `e9b17035387e8680f5ec2328fb51c7765edc43a8` | 3110 | PENDING_CONTENT_REVIEW |
-| `02_LLM7_LIVE_PROTOCOL_AND_CAPABILITY_PROBE.md` | `d56f73a0643a65b4d5aea815efdffd32db9115ae` | 3614 | PENDING_CONTENT_REVIEW |
-| `03_LLM7_PROVIDER_DEFINITION_REGISTRY_AND_INSTALL.md` | `b4895bb1c8b1c187be15c8db35df3ce4f4fc5bc5` | 2731 | PENDING_CONTENT_REVIEW |
+| `02_gate_b_contract_integration.md` | `e9b17035387e8680f5ec2328fb51c7765edc43a8` | 3110 | CONTENT_REVIEWED; KEEP |
+| `02_LLM7_LIVE_PROTOCOL_AND_CAPABILITY_PROBE.md` | `d56f73a0643a65b4d5aea815efdffd32db9115ae` | 3614 | CONTENT_REVIEWED; KEEP |
+| `03_LLM7_PROVIDER_DEFINITION_REGISTRY_AND_INSTALL.md` | `b4895bb1c8b1c187be15c8db35df3ce4f4fc5bc5` | 2731 | CONTENT_REVIEWED; KEEP |
 | `03_semantic_embedding_grounding.md` | `046070224ecad6f037676438af00dcef130e9fa4` | 2926 | REVIEWED_HISTORICAL; RETAIN |
-| `04_generation_scheduler_integration.md` | `bc1de84d7f1c4be97cff5b4636be048c45184b71` | 2918 | PENDING_CONTENT_REVIEW |
-| `04_LLM7_RUNTIME_TRANSPORT_AND_AUTHENTICATION.md` | `e4987706cad7770cbe01c832d51d48843a4b1615` | 2984 | PENDING_CONTENT_REVIEW |
+| `04_generation_scheduler_integration.md` | `bc1de84d7f1c4be97cff5b4636be048c45184b71` | 2918 | CONTENT_REVIEWED; KEEP |
+| `04_LLM7_RUNTIME_TRANSPORT_AND_AUTHENTICATION.md` | `e4987706cad7770cbe01c832d51d48843a4b1615` | 2984 | CONTENT_REVIEWED; KEEP |
 | `05_evaluation_promotion_integration.md` | `47bb697da972c59b0ce3cfe402c3b0628f6e07ac` | 2937 | REVIEWED_HISTORICAL; RETAIN |
-| `05_LLM7_DYNAMIC_MODEL_DISCOVERY_AND_SELECTION.md` | `d88d81ef714a11f45a32754966fc8dcdfb84da1b` | 2907 | PENDING_CONTENT_REVIEW |
-| `06_LLM7_SETUP_UX_AND_HEADLESS_CONFIGURATION.md` | `746ea8632ea6c8873e002f84a21a7a752fb49087` | 2604 | PENDING_CONTENT_REVIEW |
+| `05_LLM7_DYNAMIC_MODEL_DISCOVERY_AND_SELECTION.md` | `d88d81ef714a11f45a32754966fc8dcdfb84da1b` | 2907 | CONTENT_REVIEWED; KEEP |
+| `06_LLM7_SETUP_UX_AND_HEADLESS_CONFIGURATION.md` | `746ea8632ea6c8873e002f84a21a7a752fb49087` | 2604 | CONTENT_REVIEWED; KEEP |
 | `06_persistence_migration_recovery.md` | `d2a2eed040d64d1e9d04c235e2bc59a24a53a555` | 2781 | REVIEWED_HISTORICAL; RETAIN |
-| `07_LLM7_STREAMING_TOOLS_AND_RESPONSE_COMPATIBILITY.md` | `6b53c2ca4f7925f4bfd3c0761c87ed849daa9c9c` | 2865 | PENDING_CONTENT_REVIEW |
-| `07_real_api_ui_inventory.md` | `f077f15df62d12bbda19ed5f832ff3e6b84b17cc` | 3005 | PENDING_CONTENT_REVIEW |
-| `08_benchmark_holdout.md` | `9f5ca876be588f7249cd55e2c078b7a606ee84f7` | 2774 | PENDING_CONTENT_REVIEW |
-| `08_LLM7_TESTS_FAILURE_MODES_AND_REGRESSION.md` | `e8e54fb6104adafd329cc031f4d03a6ccd4b4fc8` | 2822 | PENDING_CONTENT_REVIEW |
+| `07_LLM7_STREAMING_TOOLS_AND_RESPONSE_COMPATIBILITY.md` | `6b53c2ca4f7925f4bfd3c0761c87ed849daa9c9c` | 2865 | CONTENT_REVIEWED; KEEP |
+| `07_real_api_ui_inventory.md` | `f077f15df62d12bbda19ed5f832ff3e6b84b17cc` | 3005 | CONTENT_REVIEWED; KEEP |
+| `08_benchmark_holdout.md` | `9f5ca876be588f7249cd55e2c078b7a606ee84f7` | 2774 | CONTENT_REVIEWED; KEEP |
+| `08_LLM7_TESTS_FAILURE_MODES_AND_REGRESSION.md` | `e8e54fb6104adafd329cc031f4d03a6ccd4b4fc8` | 2822 | CONTENT_REVIEWED; KEEP |
 | `09_LLM7_FINAL_END_TO_END_VALIDATION.md` | `13d24abd8768e2c5ce99fd329389b15eb281ecc6` | 3733 | PENDING_CONTENT_REVIEW |
 | `09_strict_e2e_ci.md` | `4465231b2ba76b867290031d365a2bd7f9959267` | 2920 | PENDING_CONTENT_REVIEW |
 | `10_parallel_stack_cleanup.md` | `444a6a23a39f7c1f64f71493a6d63d5e272fca9b` | 2540 | PENDING_CONTENT_REVIEW |
