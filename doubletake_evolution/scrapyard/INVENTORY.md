@@ -971,3 +971,22 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - `LIVE_MATCH_CENTRE_MINIMUM_DEFENSIBLE_ARCHITECTURE.md` — blob `57cd7e532faf8bf7205c1fd2df2d09c45af7d9b0` — **KEEP**: Historical minimal SSE/Nchan architecture with tradeoffs; current DT relevance limited and unverified.
 - **Dependency/deletion:** Exact twin of architecture contract identified by Git blob SHA, but no complete exact-path dependency census; retain both. 0 deletions. No new Director proposal from unrelated historical take-home materials.
 - **Checkpoint totals:** 12 newly sampled, 6 KEEP, 5 NEEDS_REVIEW, 1 DELETE_CANDIDATE_BLOCKED; cumulative 275 at least partly sampled, 125 pending initial review. Next cursor `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH (1).md`.
+
+
+## I7 checkpoint — 2026-11-01 UTC (12 new initial content samples)
+
+- SHA-verified first 125 lines of 12 current historical files; 59-line Harvest executor fully read, others partial. Third-party citations not independently revalidated; no document text treated as authority. Cross-domain evaluation/stop-rule patterns noted but not independently shown to improve DT.
+- `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH (1).md` — blob `3b40f345af6e20690c2fc9ee74d203aa7dbcf25b` — **NEEDS_REVIEW**: Historical bounded fan-out alternatives review; distinct from unsuffixed blob; citations and unique delta unverified.
+- `LIVE_MATCH_CENTRE_THIRD_PARTY_RESEARCH.md` — blob `bab6ed0671839d0b8a91498e0d2411cdd1027a85` — **KEEP**: Canonical industry fan-out/replay review; reuse only with fresh primary source verification.
+- `llm_embedding_arithmetic_and_decoding (1).md` — blob `765925c4d8437acdfea3db457ee9a998147e70f6` — **NEEDS_REVIEW**: v5.5 embedding-only algebra/contradiction-aware experiment; external validity and actual executable parity unknown.
+- `llm_embedding_arithmetic_and_decoding.md` — blob `9779a2cd2c41c77f0dff1e4ddbd4fc602f656b0e` — **NEEDS_REVIEW**: Earlier v4.1 embedding-only proposal; not equivalent blob; source trail and differences retained.
+- `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` — blob `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` — **NEEDS_REVIEW**: Historical M3 frozen benchmark acceptance effort; exact live outcome and relevance to DT unverified.
+- `M3_FINAL_PUSH_CURRENT_STATE_DEADLINE_FOCUSED.md` — blob `c6a255009b3171e36c9d2df7ef5a0a171e5c2d1b` — **NEEDS_REVIEW**: Historical M3 focused blocker remediation; no independent current outcome.
+- `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` — blob `92f3476aa830db37520d795afcb2b1df48719d9d` — **KEEP**: Historical frozen acceptance and stop-rule discipline; useful evidence-gating example, not DT Ground.
+- `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` — blob `3a1cde51997351586eeffe8a006f3a19fecffae0` — **KEEP**: Later M4–M7 dependency-gated execution plan linked to M3 terminal truth; actual completion unverified.
+- `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` — blob `223ea1748251cb0c08d6fd65d4de7affe71651d3` — **NEEDS_REVIEW**: Earlier v9 M4–M7 plan; preserve unique source/authority differences pending v10 delta.
+- `MAIN_EXECUTE_REMAINING_HARVEST_WORK.md` — blob `4a5682905e5f21f3b0a5a4e3ab552c27ce51fa8c` — **KEEP**: 59-line historical Agent_X Harvest work executor; distinct resume/migration ordering, not executable authority.
+- `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.1.md` — blob `8eabf55583193601aae032b1960ca9382ef9e03a` — **NEEDS_REVIEW**: Historical semantic-finance research architecture; financial transfer/empirical results unverified.
+- `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.2_INTERMEDIATE.md` — blob `f2573f079b944409df51fd7c8eba6c36beaa4dce` — **NEEDS_REVIEW**: v1.2 intermediate semantic portfolio engineering; current novelty, legal use and performance unknown.
+- **Dependency/deletion:** 0 deletions; no identical full-blob pair in this batch. Versioned alternatives remain distinct and unverified for safe removal. No new offload candidate: existing 7.8.1/7.8.3 evidence bottleneck still dominates.
+- **Checkpoint totals:** 12 newly sampled, 4 KEEP, 8 NEEDS_REVIEW; cumulative 287 at least partially sampled, 113 pending initial review. Next cursor `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.6_CHECKPOINT.md`.
