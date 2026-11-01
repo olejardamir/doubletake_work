@@ -1,5 +1,25 @@
 # Borg Scrapyard Inventory
 
+## P3 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched actual-content samples)
+
+- **Scope:** 12 additional current bodies fetched and sampled for technical mechanism, negative tests, versioned baselines and limitations. **Second-pass 155/398; 243 remain.** 9 KEEP, 3 NEEDS_REVIEW, 0 delete candidates, **0 actual deletions**, 11 historical verified. Unverified health/financial assertions are retained without endorsement or propagation; external citations and present-day DT parity not independently established.
+- **Gap assessment:** Canonical-owner merge, nameless capability and cognition-vs-authority separation support existing Borg specifications but are old prompts, not a new external-K natural Ground demonstration. No new proposal; await independent 7.8.1 receipt and current-DT parity before asserting a capability delta. Next cursor after `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v6_SEMANTIC_INTENT_IR_FINAL_M_CLOSURE.md`.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reason |
+| --- | --- | --- | --- |
+| `CURRENT_STATE_AUDIT.md` | `2ce5cbca46e1aed5f3f212322ea0cd906c7e643a` | KEEP | Historic Harvest parallel-owner diagnosis at specific old Agent_X commit; donor-to-canonical-owner migration hypothesis. |
+| `DCLIF_FULL_METHOD_v1.md` | `54ef381656a7fd6f0e37c49489187e75f7f45811` | NEEDS_REVIEW | Herbal-formulation latent inverse optimization v1; efficacy/safety/dose sources not independently verified; no DT adoption. |
+| `DCLIF_FULL_METHOD_v2_RESIDUAL_DISCOVERY.md` | `ab3c8f7d663ecaadac4bfb442cb5a66f29eb902a` | NEEDS_REVIEW | v2 adds residual-guided add/remove/substitution falsification; clinical efficacy and calibration still unverified. |
+| `deep-research-report (1).md` | `85f6416ae835791ab25742d523ac9ce5fbec72b5` | NEEDS_REVIEW | Market-semantic portfolio research design with point-in-time and bias controls; financial claims/citations not source-checked; separate domain. |
+| `deep-research-report.md` | `99dc287ecca30c050ee4ad190f34924440764131` | KEEP | Taxonomy of coding-agent failures and layered schema/verification mitigations; many inline source tokens need primary-source verification before offload. |
+| `DONOR_MODULE_DISPOSITION_MATRIX.md` | `b634d27a527e107e9af6df3929a96b42ac616498` | KEEP | Concise historical donor-module owner merge/split/benchmark-only map; canonical owner and real caller must be checked. |
+| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v2_RESIDUAL_CLOSURE.md` | `552fef41ec2d1166f1e058eaa2de72ef8e574263` | KEEP | Earlier meta-reasoning bounded state, escalation, transactional dispatch and non-vacuous proof closure map. |
+| `DOUBLETAKE_AGENTIC_META_REASONING_IMPLEMENTATION_MISSION_v3_15_CRITERIA_CLOSURE.md` | `fde46435d106157f8ac884deb3f7dc1f6b3d02d3` | KEEP | Later 44-PASS/4-OPEN historical criterion table; explicitly not a current DT Ground verdict. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v3_M_CLOSURE.md` | `df5ff11c9b1d5d5aa8f372b4d426199266b7e1cf` | KEEP | Criterion M historical nameless capability activation, with non-fabricated convergence tests. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v4_M_FINAL_CLOSURE.md` | `1f718705759c44afd3125471274dbe1aa3cc0464` | KEEP | v4 semantic abstraction explores failed lexical/embedding approaches and rejects threshold-only closure. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v5_OPENCODE_LLM_ONLY_FINAL_CLOSURE.md` | `701737f94c0fe740275b6c7693f15361d4a87e81` | KEEP | v5 separates LLM semantic cognition from deterministic permission/route authority; live OpenCode proof required. |
+| `DOUBLETAKE_AUTOMATIC_CAPABILITY_PARTICIPATION_MISSION_v6_SEMANTIC_INTENT_IR_FINAL_M_CLOSURE.md` | `8a93e015a27ef65b36272508b68c053f99d15df8` | KEEP | v6.1 corrects v6 schema/migration pitfalls for semantic-intent IR; historical target, current code and live proof unknown. |
+
 ## P2 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched actual-content samples)
 
 - **Scope:** 12 additional current artifact bodies fetched and sampled for openings, mechanisms, evidence/limitations, section structure and endings. **Second-pass 143/398; 255 remain**. All 12 KEEP, 0 new deletion candidates, **0 actual deletions**, historical verified 11. External claims, mathematical proofs and implementation assertions not independently reproduced; source SHA identity HIGH, current DT parity LOW.
