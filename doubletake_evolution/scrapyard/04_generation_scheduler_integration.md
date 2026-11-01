@@ -1,9 +1,0 @@
-# Historical Harvest Task 04 — Bounded proposal scheduling
-
-**Provenance:** Astrocytech/Agent_X `main` audit `874bbe4268aca0539cbf8476f62444d704f2d555` (implementation wave after `3887efe448edd223a00f94db324786d6a47a2d3b`). Historical plan only; not DT runtime evidence or implementation permission. D01 digest: [DISTILLED_KNOWLEDGE.md](DISTILLED_KNOWLEDGE.md); original blob `bc1de84d7f1c4be97cff5b4636be048c45184b71`.
-
-**Historical loci:** `_hp_mining.py`, current Harvest scheduler/lifecycle, `learning/stabilization/scheduler.py` where relevant; donor generators/scheduler/ranking/optimizers.
-
-**Mechanism:** Wrap Topography/current producers in a proposal-only interface. Add semantic-neighbor, mutation, centroid or qualified optimizer modes only when value and caller exist. Reuse existing persistent scheduler for asynchronous multi-fidelity budgets, uncertainty/cost-aware repeat allocation, delayed downstream reward and bounded exploration. CEM/CMA-ES/Bayesian optimization act on compact controls, not full raw embedding vectors by default. Invalid scope, provenance, cost or governance rejects early. Generator fitness and scheduler priority never authorize code/promotion; avoid new scheduler DB or parallel authority.
-
-**Falsifiable Ground:** Existing Topography behavior preserved; slow probe does not block unrelated work; cost cap enforced; delayed reward measurably alters allocations; exploration remains bounded; restart does not double-count; generator cannot invoke implementation/promotion. Compare fixed-budget baseline and negative controls. Migrate unique donor logic into canonical owners; remove redundant donor scheduler/ranking only after references checked, retain optimizer only with real benchmark/production caller. Record revisions, exact test results, affected owners, rollback, unresolved unknowns. Current DT parity UNKNOWN.
