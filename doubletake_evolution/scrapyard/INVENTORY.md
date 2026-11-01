@@ -1,5 +1,27 @@
 # Borg Scrapyard Inventory
 
+## Q7 second-pass checkpoint and verified duplicate tombstone — 2026-11-01 UTC (12 SHA-matched content samples)
+
+- **Scope:** Twelve new distinct UTF-8 bodies fetched and sampled (opening, relevant sections, ending), including two byte-identical Form Picker copies. Q1–Q7 **84 distinct samples**: **81 KEEP, 2 NEEDS_REVIEW, 1 DELETE_CANDIDATE→DELETED_VERIFIED**. Current **249/396** surviving files second-pass sampled, **147 pending**; cumulative verified GitHub deletions **13**, **1 this batch**. Next cursor after `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md`. No claim of exhaustive full-text validation.
+- **Verified deletion/tombstone:** `doubletake_evolution/scrapyard/form_picker_phase1_mvp_10_10_blueprint (1).md`, prior Git blob `9498019786070abf117384d4abd48880a4e164c2`, was re-fetched immediately before deletion, full text identical to retained `doubletake_evolution/scrapyard/form_picker_phase1_mvp_10_10_blueprint.md` (same blob). Five Director files contain no exact numbered-path reference; GitHub indexed code search returned no stem match; inventory contains historical path references, preserved here. No unique content or active mission dependency identified in bounded checks; undocumented external references remain unknown. SHA-guarded GitHub delete commit **`8fa3454f63db027b1fc48ef11ac663a92c502b44`**; recoverable via Git history. No deletion outside scrapyard.
+- **Research relevance:** Freudian graph/pseudocode artifacts are conceptual routing analogies, not evidence of intelligence, self-repair or current DT assimilation. No new qualified K or independently observed natural DT consumer. Distinct historical revisions retained; no new Director proposal. **Reference/dependency:** all retained artifacts lack clearance for deletion; only verified byte-identical numbered copy removed.
+
+| Artifact path under `scrapyard/` | Blob SHA | Disposition | Actual-content finding / reference status |
+| --- | --- | --- | --- |
+| `form_picker_phase1_mvp_10_10_blueprint (1).md` | `9498019786070abf117384d4abd48880a4e164c2` | DELETED_VERIFIED | Byte-identical numbered duplicate; canonical unnumbered blueprint retained. SHA-guarded delete commit 8fa3454f63db027b1fc48ef11ac663a92c502b44. |
+| `form_picker_phase1_mvp_10_10_blueprint.md` | `9498019786070abf117384d4abd48880a4e164c2` | KEEP | Original browser form-picker MVP: same-origin iframe scan, grouped radio/checkbox teaching, optionHash and SPA cache. |
+| `form_picker_phase1_mvp_final_10_10_blueprint.md` | `27e9c1c13dceb0e7b5505bdfe7d9b0ba88e86a84` | KEEP | Later stable frameLocator, iframe recursion bounds and minimal permissions; unique revision. |
+| `form_picker_phase1_mvp_final_clean_10_10_blueprint.md` | `1f2037b773f2e3579d93f69af60dab7e04fd240a` | KEEP | Later nested locator, iframe wait, URL monitor lifecycle and storage simplification; distinct revision. |
+| `freudian_graph_common_chat_architecture.md` | `7a5be885b7eca182a248532b20e25caedbacd112` | KEEP | Conceptual forced internal decision graph, compact traces and external chat synthesizer; not validated cognition. |
+| `freudian_v7_node_decision_map.md` | `321ce258d16abe2c0e7e56104d837c82b6144702` | KEEP | V7 conceptual node/decision catalogue and routing schema; not evidence of live distributed intelligence. |
+| `full_freudian_id_ego_superego_mechanism_pseudocode.md` | `684906039df0cb2876f0e69ab4658eb0167b3463` | KEEP | Original conceptual Freudian process model, explicitly not clinical/computational validation. |
+| `full_freudian_id_ego_superego_mechanism_V2_complete.md` | `d3466a4861a9e315077fc23c3a5267e079c8b9e0` | KEEP | V2 adds psychological layers and therapy reversal map; unique historical revision. |
+| `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` | `f2a106d2529b8c0c9945ec398e90e85e94a463dd` | KEEP | V3 repairs defense/output types, declared fields and ordering; conceptual only. |
+| `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md` | `16cfa1e4497350355083d071431ff1a4227ec586` | KEEP | V4 bodily ego, word-presentation routing and renunciation feedback; unverified analogy. |
+| `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` | `248f079e471d1e98e5f2ee578f107dfb160eaa73` | KEEP | V5 fixes field ordering, defense/output separation and base-loop authority; distinct hygiene revision. |
+| `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md` | `cdacf4e24e0e9f0467eec61ff208e9b6cd22409c` | KEEP | V6 adds pleasure/reality arbitration, negation/judgment and ego-splitting; no empirical validation. |
+
+
 ## Q6 second-pass checkpoint — 2026-11-01 UTC (12 SHA-matched content samples)
 
 - **Scope:** 12 new distinct UTF-8 bodies fetched and sampled for actual opening, sections and ending; embedded base64 in one file NOT decoded. Q1–Q6 **72 distinct samples** (70 KEEP, 2 NEEDS_REVIEW); **238/397** surviving files second-pass sampled, **159 pending**. Next cursor after `forcing_age_liquidity_repair_vs_replenishment.md`. No deletion in Q6; cumulative historical GitHub-verified deletions **12**. Samples do not certify full semantic inspection.
