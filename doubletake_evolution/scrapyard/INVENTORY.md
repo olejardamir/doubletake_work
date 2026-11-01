@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **173 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 227 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **161 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 239 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -494,18 +494,18 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `EQC-SR-v1.0-release-candidate.md` | `f29690915f4218bbb2ce9ea04d6b1340c4683fdc` | 133167 | CONTENT_SAMPLED; KEEP |
 | `evp_ui_backend_readiness_prompt_v3.md` | `e68ba6544c178cebd5fee7fb0df3c41e7b6a44ca` | 22413 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` | `50648cea4736514a405c212e32b65b4768a804b3` | 223541 | CONTENT_SAMPLED; NEEDS_REVIEW |
-| `Fixed_Modular_ML_SHA256_Architecture.md` | `38de201f75587db24eacf29fcf82ee5c38de78e4` | 16164 | PENDING_CONTENT_REVIEW |
-| `Forcing_Age_Liquidity_Mathematics_FALM_v6_final_theoretical_core.md` | `d9ad8605616d23bc980ded634c55e0f5f458534a` | 75221 | PENDING_CONTENT_REVIEW |
-| `forcing_age_liquidity_repair_vs_replenishment.md` | `002bf99336db736891d86970acd6c2ce86fb41ab` | 6086 | PENDING_CONTENT_REVIEW |
-| `form_picker_phase1_mvp_10_10_blueprint (1).md` | `9498019786070abf117384d4abd48880a4e164c2` | 27292 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `form_picker_phase1_mvp_10_10_blueprint.md` | `9498019786070abf117384d4abd48880a4e164c2` | 27292 | PENDING_CONTENT_REVIEW; SAME_BLOB |
-| `form_picker_phase1_mvp_final_10_10_blueprint.md` | `27e9c1c13dceb0e7b5505bdfe7d9b0ba88e86a84` | 33091 | PENDING_CONTENT_REVIEW |
-| `form_picker_phase1_mvp_final_clean_10_10_blueprint.md` | `1f2037b773f2e3579d93f69af60dab7e04fd240a` | 38084 | PENDING_CONTENT_REVIEW |
-| `freudian_graph_common_chat_architecture.md` | `7a5be885b7eca182a248532b20e25caedbacd112` | 23833 | PENDING_CONTENT_REVIEW |
-| `freudian_v7_node_decision_map.md` | `321ce258d16abe2c0e7e56104d837c82b6144702` | 48453 | PENDING_CONTENT_REVIEW |
-| `full_freudian_id_ego_superego_mechanism_pseudocode.md` | `684906039df0cb2876f0e69ab4658eb0167b3463` | 85878 | PENDING_CONTENT_REVIEW |
-| `full_freudian_id_ego_superego_mechanism_V2_complete.md` | `d3466a4861a9e315077fc23c3a5267e079c8b9e0` | 168818 | PENDING_CONTENT_REVIEW |
-| `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` | `f2a106d2529b8c0c9945ec398e90e85e94a463dd` | 170951 | PENDING_CONTENT_REVIEW |
+| `Fixed_Modular_ML_SHA256_Architecture.md` | `38de201f75587db24eacf29fcf82ee5c38de78e4` | 16164 | CONTENT_SAMPLED; KEEP |
+| `Forcing_Age_Liquidity_Mathematics_FALM_v6_final_theoretical_core.md` | `d9ad8605616d23bc980ded634c55e0f5f458534a` | 75221 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `forcing_age_liquidity_repair_vs_replenishment.md` | `002bf99336db736891d86970acd6c2ce86fb41ab` | 6086 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `form_picker_phase1_mvp_10_10_blueprint (1).md` | `9498019786070abf117384d4abd48880a4e164c2` | 27292 | CONTENT_SAMPLED; DELETE_CANDIDATE_BLOCKED |
+| `form_picker_phase1_mvp_10_10_blueprint.md` | `9498019786070abf117384d4abd48880a4e164c2` | 27292 | CONTENT_SAMPLED; KEEP |
+| `form_picker_phase1_mvp_final_10_10_blueprint.md` | `27e9c1c13dceb0e7b5505bdfe7d9b0ba88e86a84` | 33091 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `form_picker_phase1_mvp_final_clean_10_10_blueprint.md` | `1f2037b773f2e3579d93f69af60dab7e04fd240a` | 38084 | CONTENT_SAMPLED; KEEP |
+| `freudian_graph_common_chat_architecture.md` | `7a5be885b7eca182a248532b20e25caedbacd112` | 23833 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `freudian_v7_node_decision_map.md` | `321ce258d16abe2c0e7e56104d837c82b6144702` | 48453 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_pseudocode.md` | `684906039df0cb2876f0e69ab4658eb0167b3463` | 85878 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_V2_complete.md` | `d3466a4861a9e315077fc23c3a5267e079c8b9e0` | 168818 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` | `f2a106d2529b8c0c9945ec398e90e85e94a463dd` | 170951 | CONTENT_SAMPLED; KEEP |
 | `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md` | `16cfa1e4497350355083d071431ff1a4227ec586` | 193199 | PENDING_CONTENT_REVIEW |
 | `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` | `248f079e471d1e98e5f2ee578f107dfb160eaa73` | 195345 | PENDING_CONTENT_REVIEW |
 | `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md` | `cdacf4e24e0e9f0467eec61ff208e9b6cd22409c` | 221001 | PENDING_CONTENT_REVIEW |
@@ -888,3 +888,21 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 - `evp_ui_backend_readiness_prompt_v3.md` **NEEDS_REVIEW**: Unrelated audio application UI/backend contract; potential upload-state lifecycle pattern, DT relevance not established.
 - `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` **NEEDS_REVIEW**: Large separate sports-feed assignment closure prompt; strict scope freeze and measured POC evidence, no current DT mandate.
 - **Deletion:** 0. Older standard variants may retain independent normative history; cannot infer valuelessness from later versions. Cumulative 227 sampled, 173 pending; next cursor `Fixed_Modular_ML_SHA256_Architecture.md`.
+
+
+## I3 checkpoint — 2026-11-01 UTC (12 newly sampled historical artifacts)
+
+- Actual first 125 lines fetched from 12 current files; source SHA matches ledger. **Partial** review, except the exact Form Picker pair also has independently matching full blob SHA (same bytes). No hidden claims of binary or whole-document inspection.
+- `Fixed_Modular_ML_SHA256_Architecture.md` **KEEP**: Bit-exact SHA-256 via exhaustively verified small Boolean cells and fixed wiring; useful compositional-proof analogy, not a new DT hash capability.
+- `Forcing_Age_Liquidity_Mathematics_FALM_v6_final_theoretical_core.md` **NEEDS_REVIEW**: Independent market-liquidity mathematical hypothesis distinguishes book endurance from displayed depth; empirical novelty/transfer unverified.
+- `forcing_age_liquidity_repair_vs_replenishment.md` **NEEDS_REVIEW**: Earlier market forcing-age sketch contrasts durable opposing liquidity with rapid replenishment; preserve source history pending v6 delta.
+- `form_picker_phase1_mvp_10_10_blueprint (1).md` **DELETE_CANDIDATE_BLOCKED**: Exact Git blob twin of unsuffixed Form Picker blueprint; retain pending complete exact-path dependency/reference census and fresh-SHA check.
+- `form_picker_phase1_mvp_10_10_blueprint.md` **KEEP**: Canonical byte twin of numbered Form Picker blueprint; user-triggered limited-permission form scan and reversible field filling.
+- `form_picker_phase1_mvp_final_10_10_blueprint.md` **NEEDS_REVIEW**: Later form picker blueprint adds stable rule identities, bounded iframe recursion and group undo; unique delta not fully compared.
+- `form_picker_phase1_mvp_final_clean_10_10_blueprint.md` **KEEP**: Final-clean form picker blueprint reduces permissions, redundant keys and observer lifecycle; cross-domain least-privilege example.
+- `freudian_graph_common_chat_architecture.md` **NEEDS_REVIEW**: Conceptual Freudian chat graph with small-model summarization and symbolic nodes; no empirical advantage or DT necessity established.
+- `freudian_v7_node_decision_map.md` **NEEDS_REVIEW**: Functional node/decision decomposition of conceptual Freudian V7; not a clinical or validated cognitive architecture.
+- `full_freudian_id_ego_superego_mechanism_pseudocode.md` **NEEDS_REVIEW**: Early conceptual id/ego/superego pseudocode; non-clinical analogy, preserve pending later version comparison.
+- `full_freudian_id_ego_superego_mechanism_V2_complete.md` **NEEDS_REVIEW**: Expanded conceptual Freudian model with additional defense layers; V3 documents corrections, provenance retained.
+- `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` **KEEP**: V3 corrects pseudocode consistency, declares a canonical entry point and separates base library; no tested DT transfer.
+- **Deletion:** 0. Form Picker numbered copy is an exact duplicate, but full dependency census is unverified. No automatic removal of superseded conceptual/financial originals. Cumulative 239 sampled, 161 pending; next cursor `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md`.
