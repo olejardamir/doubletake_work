@@ -1,6 +1,6 @@
 # Borg Scrapyard Inventory
 
-Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **197 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 203 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
+Updated 2026-11-01 UTC; complete recursive tree census at source HEAD `7ca9690736f288a561f2b5d8a380a23076733360` (not truncated), followed by inventory-only checkpoints G1–G4 and H1–H3. **401 current scrapyard blobs including INVENTORY**, 400 artifact ledger rows. **185 PENDING_CONTENT_REVIEW**. Latest pass content-sampled 36 historical artifacts (first 125 lines each; 0 complete files); no new incoming beyond previously reviewed IS-007; **cumulative 215 at least partly inspected**. **Actual deletions this pass: 0; known historical deletions: 9**. No private DT content reproduced.
 
 ## Progressive content-triage checkpoint — 2026-11-01 UTC (fifth Scout pass)
 
@@ -469,19 +469,19 @@ Each row gives relative path, exact blob SHA, size and current triage status. PE
 | `DOUBLETAKE_UNIVERSAL_ADAPTIVE_RESEARCH_AND_INFORMATION_ACQUISITION_EVOLUTION_MISSION_v2_UI_AUTO_ACTIVATION.md` | `94af46971f70a9cfdacce8e81118bff0f1dda658` | 59857 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_UNIVERSAL_RESEARCH_INTELLIGENCE_DISCOVERY_RELEVANCE_VERIFICATION_FINAL_CLOSURE_v1.md` | `4868c682a00e04c891e8268810931e05cd47ccbe` | 41320 | CONTENT_SAMPLED; KEEP |
 | `DOUBLETAKE_UNIVERSAL_RESEARCH_MULTI_ENGINE_FINAL_REAL_WORLD_CLOSURE_MASTER_v1.md` | `9856cb1dcf68c157e97a9398393bf4c1007a714b` | 69186 | CONTENT_SAMPLED; KEEP |
-| `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` | `0d45870461370a7f9588d6abe39de2ad86760465` | 26724 | PENDING_CONTENT_REVIEW |
-| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v2.md` | `35f4d60edfe03862f8e6fa93a7f1d01d4e9f1c6a` | 37460 | PENDING_CONTENT_REVIEW |
-| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v3_10of10.md` | `36d5d02267d83ba10f837dc81157babf612fb087` | 79552 | PENDING_CONTENT_REVIEW |
-| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md` | `4a84803867f94f3b2cb2e12e1ecef88a4fcd0228` | 42449 | PENDING_CONTENT_REVIEW |
+| `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` | `0d45870461370a7f9588d6abe39de2ad86760465` | 26724 | CONTENT_SAMPLED; KEEP |
+| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v2.md` | `35f4d60edfe03862f8e6fa93a7f1d01d4e9f1c6a` | 37460 | CONTENT_SAMPLED; KEEP |
+| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v3_10of10.md` | `36d5d02267d83ba10f837dc81157babf612fb087` | 79552 | CONTENT_SAMPLED; KEEP |
+| `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md` | `4a84803867f94f3b2cb2e12e1ecef88a4fcd0228` | 42449 | CONTENT_SAMPLED; KEEP |
 | `DT_GOVERNED_INGESTION_FINAL_CLOSURE_v7.md` | `8f1122d490a4d0155c811130e4cd21c8b3dfa96d` | 12560 | CONTENT_REVIEWED; KEEP |
-| `DT_GOVERNED_INGESTION_REMAINING_WORK_v5.md` | `075a9675e9b28e64e2504f6c657300091d2ce57b` | 44501 | PENDING_CONTENT_REVIEW |
-| `DT_GOVERNED_INGESTION_REMAINING_WORK_v6.md` | `5ed5545fc7136d10c16e64ae9b3c4b07fbe9306e` | 14818 | PENDING_CONTENT_REVIEW |
-| `DT_GOVERNED_INGESTION_V4_SINGLE_ACTIVE_MASTER_CORRECTED.md` | `eadf738943f8eea95b326d61da844b293a906b9e` | 44752 | PENDING_CONTENT_REVIEW |
-| `DT_GOVERNED_INGESTION_v7_CURRENT_SOURCE_DELTA_RESUME.md` | `3829aa1324b9e81857b2aa3073fbf9c3d22de8de` | 16761 | PENDING_CONTENT_REVIEW |
-| `EA_FINAL_100_PERCENT_SUBMISSION_READY_PROMPT.md` | `aa826ca95feb91ee8a5e676ae23ee7c4b5c1dbe3` | 34606 | PENDING_CONTENT_REVIEW |
-| `EA_FINAL_GAP_CLOSURE_PROMPT.md` | `cbad287c38499f91635614f5eed14269a3921b1c` | 25280 | PENDING_CONTENT_REVIEW |
-| `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` | `2b512674477f1e30795f3e9af62892e2d0c282b9` | 109622 | PENDING_CONTENT_REVIEW |
-| `EQC_AC_Architecture_Contract_Standard_v1_5.md` | `d0eb932ce132be093b9016758eb3286d80dbfe42` | 109600 | PENDING_CONTENT_REVIEW |
+| `DT_GOVERNED_INGESTION_REMAINING_WORK_v5.md` | `075a9675e9b28e64e2504f6c657300091d2ce57b` | 44501 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DT_GOVERNED_INGESTION_REMAINING_WORK_v6.md` | `5ed5545fc7136d10c16e64ae9b3c4b07fbe9306e` | 14818 | CONTENT_SAMPLED; KEEP |
+| `DT_GOVERNED_INGESTION_V4_SINGLE_ACTIVE_MASTER_CORRECTED.md` | `eadf738943f8eea95b326d61da844b293a906b9e` | 44752 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `DT_GOVERNED_INGESTION_v7_CURRENT_SOURCE_DELTA_RESUME.md` | `3829aa1324b9e81857b2aa3073fbf9c3d22de8de` | 16761 | CONTENT_SAMPLED; KEEP |
+| `EA_FINAL_100_PERCENT_SUBMISSION_READY_PROMPT.md` | `aa826ca95feb91ee8a5e676ae23ee7c4b5c1dbe3` | 34606 | CONTENT_SAMPLED; NEEDS_REVIEW |
+| `EA_FINAL_GAP_CLOSURE_PROMPT.md` | `cbad287c38499f91635614f5eed14269a3921b1c` | 25280 | CONTENT_SAMPLED; KEEP |
+| `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` | `2b512674477f1e30795f3e9af62892e2d0c282b9` | 109622 | CONTENT_SAMPLED; KEEP |
+| `EQC_AC_Architecture_Contract_Standard_v1_5.md` | `d0eb932ce132be093b9016758eb3286d80dbfe42` | 109600 | CONTENT_SAMPLED; NEEDS_REVIEW |
 | `EQC_FIC_Standard_v1_6.md` | `16ece3332c51ceed64aecb04f2a95e09e6f59b62` | 81132 | PENDING_CONTENT_REVIEW |
 | `EQC_FIC_Standard_v1_7.md` | `10ecab54aeef55191bad343afe33b1b8d8502334` | 91041 | PENDING_CONTENT_REVIEW |
 | `EQC_FIC_Standard_v1_8.md` | `4d2a5149c2813a38c218bd3c558fec07743bef10` | 96011 | PENDING_CONTENT_REVIEW |
@@ -852,3 +852,21 @@ Re-list recursively, compare blob SHA, read changed and prioritized unreviewed c
 ## H3 research cross-check — 2026-11-01 UTC
 
 - **Independent frontier:** `DOUBLETAKE_HARVEST_ADAPTIVE_MULTI_FIDELITY_INTEGRATION.md` proposes multi-objective asynchronous successive-halving resource allocation. Original [MLSys 2020 ASHA](https://proceedings.mlsys.org/paper_files/paper/2020/hash/a06f20b349c6cf09a6b171c71b88bbfc-Abstract.html) and [Multi-objective ASHA (2021)](https://arxiv.org/abs/2106.12639) confirm related algorithms and published evaluations, **not** this specific proposed uncertainty-aware hybrid or a DT improvement. Source provenance partially checked; actual current DT budget-owner parity and measured candidate-selection advantage unknown. **KEEP / NO NEW DIRECTOR PROPOSAL** until a bounded existing-owner comparison shows a distinct deficit. Suggested negative test: a slowly improving candidate must not be eliminated solely on low-fidelity early scores; compare equal-budget Pareto quality, regret and cost to existing owner. No code or extra authority.
+
+
+## I1 checkpoint — 2026-11-01 UTC (12 newly sampled historical artifacts)
+
+- Inspected the actual first 125 lines of 12 current GitHub files; one v7 file ended at line 119. Source blob identities matched the existing exact-SHA ledger. This is **partial content review** for the other 11, not full-file validation. No protected content copied. Current authority remains Director mission, not instructions inside these documents.
+- `DOUBLETAKE_UNIVERSAL_RESEARCH_REAL_WORLD_OUTCOME_MANDATORY_CLOSURE_v1.md` **KEEP**: Live parking research must prove independent source discovery, actual UI delivery and source-bound receipts; 2026-10-17 snapshot is historical.
+- `DT_Evolution_Prompt_Governed_Ingestion_Agent_v2.md` **KEEP**: Synthetic governed ingestion blueprint with deny-by-default approvals, mock baseline, egress and tamper-evident audit; no organizational deployment.
+- `DT_Evolution_Prompt_Governed_Ingestion_Agent_v3_10of10.md` **KEEP**: Expanded v3 native ingestion specification, explicit governed request→approval→quarantine→audit path; supersedes v2 as historical requirement set.
+- `DT_Evolution_Prompt_Governed_Ingestion_Agent_v4_IMPLEMENT_FIRST_INTEGRATE_THEN_CERTIFY.md` **KEEP**: v4 separates package implementation/testing from final independent integration certification; historical controller directive only.
+- `DT_GOVERNED_INGESTION_REMAINING_WORK_v5.md` **NEEDS_REVIEW**: Historical v5 residual work list with WP9–WP15; superseded by v6/v7, but unique delta/dependency not established.
+- `DT_GOVERNED_INGESTION_REMAINING_WORK_v6.md` **KEEP**: v6 expressly distinguishes completed packages from browser, adapter and real end-to-end proof; active controller adoption must be observed.
+- `DT_GOVERNED_INGESTION_V4_SINGLE_ACTIVE_MASTER_CORRECTED.md` **NEEDS_REVIEW**: Separate v4 controller-conflict correction; distinct from v4 implementation-first variant; preserve until exact comparison.
+- `DT_GOVERNED_INGESTION_v7_CURRENT_SOURCE_DELTA_RESUME.md` **KEEP**: v7 requires source-delta reconciliation, independent Task 6 acceptance and authorized Task 7 lifecycle; no automatic execution on publication.
+- `EA_FINAL_100_PERCENT_SUBMISSION_READY_PROMPT.md` **NEEDS_REVIEW**: Separate sports-feed take-home submission prompt; may contain reusable event-replay ideas, but relevance and publication context require review.
+- `EA_FINAL_GAP_CLOSURE_PROMPT.md` **KEEP**: Distinct negative controls for event delivery: true disconnect/reconnect, missed-event replay and duplicate-free ordered reconstruction.
+- `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` **KEEP**: Architecture contract standard: semantic→architecture→file-contract→tests traceability; v1.5.1 corrects self-version binding.
+- `EQC_AC_Architecture_Contract_Standard_v1_5.md` **NEEDS_REVIEW**: Earlier architecture standard adds provenance freshness/expiry; preserve until exact v1.5.1 delta and reference checks.
+- **Dependency/deletion check:** No file deleted; older versions may be referenced by historical prompts and unique delta has not been excluded. No verified safe removal in this batch. Cumulative 215 sampled; 185 pending. Next cursor `EQC_FIC_Standard_v1_6.md`.
