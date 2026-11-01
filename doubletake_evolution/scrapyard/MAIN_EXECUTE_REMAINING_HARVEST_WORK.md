@@ -47,8 +47,8 @@ Revalidate paths because main may have advanced beyond `874bbe4268aca0539cbf8476
 7. `07_real_api_ui_inventory.md`
 8. `08_benchmark_holdout.md`
 9. `09_strict_e2e_ci.md`
-10. `10_parallel_stack_cleanup.md`
-11. `11_final_10_10_audit.md`
+10. [Canonical historical Task 10 — parallel-stack cleanup](DISTILLED_KNOWLEDGE.md#d01-canonical-closure-harvest-cleanup-and-final-audit-2026-11-01)
+11. [Canonical historical Task 11 — final hard-gate audit](DISTILLED_KNOWLEDGE.md#d01-canonical-closure-harvest-cleanup-and-final-audit-2026-11-01)
 
 ## New-file gate
 
