@@ -635,10 +635,10 @@
       "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
     },
     {
-      "id": "BPE-20261101-22",
+      "id": "BPE-20261101-022",
       "mission_ref": "DT-EVO-007 / 7.3.1",
       "summary": "Knowledge intake and quarantine baseline",
-      "file": "BPE-20261101-22.sh",
+      "file": "BPE-20261101-022.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "READ_ONLY_DIAGNOSTIC",
       "code_patch": false,
@@ -653,13 +653,15 @@
         "tools/doubletake_evolve/collective_core/test_knowledge_intake_scope.py",
         "tools/doubletake_evolve/collective_core/test_knowledge_quarantine_contract.py"
       ],
-      "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent."
+      "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent.",
+      "file_present": true,
+      "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed."
     },
     {
-      "id": "BPE-20261101-23",
+      "id": "BPE-20261101-023",
       "mission_ref": "DT-EVO-007 / 7.5.2",
       "summary": "Governed intake source-generality baseline",
-      "file": "BPE-20261101-23.sh",
+      "file": "BPE-20261101-023.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "READ_ONLY_DIAGNOSTIC",
       "code_patch": false,
@@ -674,7 +676,9 @@
         "tools/doubletake_evolve/governed_knowledge/test_source_generality_real_sources.py",
         "tools/doubletake_evolve/governed_knowledge/test_source_generality_intake.py"
       ],
-      "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent."
+      "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent.",
+      "file_present": true,
+      "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
