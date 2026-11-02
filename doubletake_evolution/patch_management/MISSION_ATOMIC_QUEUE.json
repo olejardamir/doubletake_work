@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "description": "Full current mission atomic-unit execution ledger. This is NOT proof that patches exist or that units are implemented.",
   "mission_source": "doubletake_evolution/ACTIVE_MISSION.md",
-  "mission_blob_sha": "25bde73b5cae83fe4c769b577558a56b7492e5b8",
+  "mission_blob_sha": "0fac9ab062ddae0cd7a0e39e98f0d8cd8620ad11",
   "patch_directory": "doubletake_evolution/patches",
   "patch_index": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "counts": {
@@ -11,7 +11,11 @@
     "real_patches_published_for_subset": true,
     "executable_gate_packages_created": 58,
     "pending_source_diff_code_patches": 3,
-    "all_real_code_diffs_prepared": false
+    "all_real_code_diffs_prepared": false,
+    "atomic_work_orders": 58,
+    "actual_executable_source_diffs_in_active_patch_directory": 3,
+    "real_source_diff_coverage_complete": false,
+    "work_orders_created": 58
   },
   "rule": "Each feasible code unit needs an independently executable actual unified-diff source patch. Authority/runtime-gated units remain gated; do not generate fake implementation to fill a quota. Reconcile the entire ledger on every scheduled worker run.",
   "units": [
@@ -28,7 +32,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-1-3-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-1-3-3-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/autonomous_loop/; tools/doubletake_evolve/runtime/; tools/doubletake_evolve/collective_autonomic/",
+      "external_gate": "Existing retained-state owner decision or genuinely new independent evidence; do not alter preserved history.",
+      "acceptance_contract_step": "1.3.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "1.3.3-B",
@@ -43,7 +56,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-1-3-3-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-1-3-3-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "1.3.3-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/autonomous_loop/; tools/doubletake_evolve/runtime/; tools/doubletake_evolve/collective_autonomic/",
+      "external_gate": null,
+      "acceptance_contract_step": "1.3.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "1.3.3-C",
@@ -58,7 +82,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-1-3-3-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-1-3-3-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "1.3.3-B"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/autonomous_loop/; tools/doubletake_evolve/runtime/; tools/doubletake_evolve/collective_autonomic/",
+      "external_gate": null,
+      "acceptance_contract_step": "1.3.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.2.2-A",
@@ -80,7 +115,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-2-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-2-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "READY_FOR_SOURCE_GROUNDED_PROOF_OR_PATCH_DESIGN",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.2.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.2.2-B",
@@ -102,7 +146,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-2-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-2-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.2.2-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": "Existing valid production caller grant, explicit scope and canonical repair request evidence.",
+      "acceptance_contract_step": "2.2.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.2.2-C",
@@ -124,7 +179,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-2-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-2-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.2.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.2.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.2.3-A",
@@ -146,7 +212,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-2-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-2-3-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.2.2-B"
+      ],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.2.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.2.3-B",
@@ -168,7 +245,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-2-3-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-2-3-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.2.2-B"
+      ],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.2.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.2.3-C",
@@ -190,7 +278,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-2-3-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-2-3-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.2.2-B"
+      ],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.2.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.4.2-A",
@@ -212,7 +311,19 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-4-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-4-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.2.2-B",
+        "2.2.3-A"
+      ],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.4.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.4.2-B",
@@ -234,7 +345,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-4-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-4-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.4.2-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/production_readiness_boundary/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.4.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.4.3-A",
@@ -256,7 +378,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-4-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-4-3-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.4.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/collective_autonomic/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.4.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "2.4.3-B",
@@ -278,7 +411,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-2-4-3-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-2-4-3-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "2.4.3-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/rollback_recovery/; tools/doubletake_evolve/collective_autonomic/",
+      "external_gate": null,
+      "acceptance_contract_step": "2.4.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.3.4-A",
@@ -293,7 +437,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-3-4-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-3-4-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "1.3.3-C"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/runtime_metrics.py; tools/doubletake_evolve/autonomous_loop/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.3.4",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.3.4-B",
@@ -308,7 +463,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-3-4-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-3-4-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "3.3.4-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/runtime_metrics.py; tools/doubletake_evolve/autonomous_loop/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.3.4",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.3.4-C",
@@ -323,7 +489,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-3-4-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-3-4-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "3.3.4-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/runtime_metrics.py; tools/doubletake_evolve/autonomous_loop/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.3.4",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.4.2-A",
@@ -351,7 +528,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-4-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-4-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "SOURCE_DIFF_PREPARED_BPE_025_PARTIAL",
+      "delivery_status": "PREPARED_UNTESTED_VALIDATE_SOURCE_AND_EXECUTE",
+      "source_search_boundary": "tools/doubletake_evolve/evolution_acceptance/; tools/doubletake_evolve/runtime/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.4.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.4.2-B",
@@ -379,7 +565,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-4-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-4-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "3.4.2-A"
+      ],
+      "delivery_class": "SOURCE_DIFF_PREPARED_BPE_025_PARTIAL",
+      "delivery_status": "PREPARED_UNTESTED_VALIDATE_SOURCE_AND_EXECUTE",
+      "source_search_boundary": "tools/doubletake_evolve/evolution_acceptance/; tools/doubletake_evolve/runtime/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.4.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.5.2-A",
@@ -394,7 +591,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-5-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-5-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_autonomic/; tools/doubletake_evolve/concurrency_locks/",
+      "external_gate": "Existing state-owner decision defining writer serialization, conflict rejection and acknowledgement semantics.",
+      "acceptance_contract_step": "3.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.5.2-B",
@@ -409,7 +615,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-5-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-5-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "3.5.2-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_autonomic/; tools/doubletake_evolve/concurrency_locks/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "3.5.2-C",
@@ -424,7 +641,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-5-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-5-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "3.5.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_autonomic/; tools/doubletake_evolve/concurrency_locks/",
+      "external_gate": null,
+      "acceptance_contract_step": "3.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "4.2.2.2-A",
@@ -446,7 +674,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/api_operator_surface/; tools/doubletake_evolve/end_to_end_ui_capability/",
+      "external_gate": "Genuine new authorization/release integration or changed served bundle; prior negative finding does not grant deployment.",
+      "acceptance_contract_step": "4.2.2.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "4.2.2.2-B",
@@ -468,7 +705,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "4.2.2.2-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/api_operator_surface/; tools/doubletake_evolve/end_to_end_ui_capability/",
+      "external_gate": null,
+      "acceptance_contract_step": "4.2.2.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "4.2.2.2-C",
@@ -490,7 +738,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "4.2.2.2-B"
+      ],
+      "delivery_class": "SOURCE_DIFF_PREPARED_BPE_024_PARTIAL",
+      "delivery_status": "PREPARED_UNTESTED_VALIDATE_SOURCE_AND_EXECUTE",
+      "source_search_boundary": "tools/doubletake_evolve/api_operator_surface/; tools/doubletake_evolve/end_to_end_ui_capability/",
+      "external_gate": null,
+      "acceptance_contract_step": "4.2.2.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "4.2.2.3-A",
@@ -505,7 +764,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-3-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "1.3.3-C"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/api_operator_surface/; tools/doubletake_evolve/autonomous_loop/",
+      "external_gate": null,
+      "acceptance_contract_step": "4.2.2.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "4.2.2.3-B",
@@ -520,7 +790,19 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-3-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-3-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "4.2.2.3-A",
+        "4.2.2.2-C"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/api_operator_surface/; tools/doubletake_evolve/autonomous_loop/",
+      "external_gate": null,
+      "acceptance_contract_step": "4.2.2.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "6.5.2-A",
@@ -535,7 +817,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-6-5-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-6-5-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_autonomic/; tools/doubletake_evolve/runtime/",
+      "external_gate": "Existing retention/persistence owner authorizes reversible nondestructive capacity changes.",
+      "acceptance_contract_step": "6.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "6.5.2-B",
@@ -550,7 +841,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-6-5-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-6-5-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "6.5.2-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_autonomic/; tools/doubletake_evolve/runtime/",
+      "external_gate": null,
+      "acceptance_contract_step": "6.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "6.5.2-C",
@@ -565,7 +867,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-6-5-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-6-5-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "6.5.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_autonomic/; tools/doubletake_evolve/runtime/",
+      "external_gate": null,
+      "acceptance_contract_step": "6.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.3.1-A",
@@ -587,7 +900,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-3-1-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-3-1-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.5.2-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_assimilation/; tools/doubletake_evolve/governed_knowledge/",
+      "external_gate": "A genuinely fetchable, independent, qualified human-readable source for actually missing capability.",
+      "acceptance_contract_step": "7.3.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.3.1-B",
@@ -609,7 +933,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-3-1-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-3-1-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.5.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_assimilation/; tools/doubletake_evolve/governed_knowledge/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.3.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.3.1-C",
@@ -631,7 +966,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-3-1-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-3-1-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.3.1-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_assimilation/; tools/doubletake_evolve/governed_knowledge/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.3.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.5.2-A",
@@ -653,7 +999,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-5-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-5-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_assimilation/; tools/doubletake_evolve/governed_knowledge/; tools/doubletake_evolve/frontier_discovery/",
+      "external_gate": "A new independently source-backed candidate and current capability absence; NO_QUALIFIED_SOURCE is the present finding.",
+      "acceptance_contract_step": "7.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.5.2-B",
@@ -675,7 +1030,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-5-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-5-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.5.2-A"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_assimilation/; tools/doubletake_evolve/governed_knowledge/; tools/doubletake_evolve/frontier_discovery/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.5.2-C",
@@ -697,7 +1063,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-5-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-5-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.5.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_assimilation/; tools/doubletake_evolve/governed_knowledge/; tools/doubletake_evolve/frontier_discovery/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.5.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.6.2-A",
@@ -712,7 +1089,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-6-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-6-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/collective_integration/; tools/doubletake_evolve/mission_management/",
+      "external_gate": "Next naturally encountered, genuinely unseen integration challenge; no artificial challenge creation.",
+      "acceptance_contract_step": "7.6.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.6.2-B",
@@ -727,7 +1113,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-6-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-6-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.6.2-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_integration/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.6.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.6.2-C",
@@ -742,7 +1139,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-6-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-6-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.6.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/collective_integration/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.6.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.1-A",
@@ -764,7 +1172,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-1-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-1-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "READY_FOR_SOURCE_GROUNDED_PROOF_OR_PATCH_DESIGN",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/replay_evidence_closure/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.7.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.1-B",
@@ -786,7 +1203,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-1-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-1-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.7.1-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/replay_evidence_closure/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.7.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.1-C",
@@ -808,7 +1236,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-1-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-1-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.7.1-B"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/replay_evidence_closure/",
+      "external_gate": "Recorded source-level applicability decision after 009 baseline; do not infer a gap from analogy.",
+      "acceptance_contract_step": "7.7.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.2-A",
@@ -823,7 +1262,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.7.1-C"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/replay_evidence_closure/",
+      "external_gate": "7.7.1 demonstrates a distinct actual gap with owner authority.",
+      "acceptance_contract_step": "7.7.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.2-B",
@@ -838,7 +1288,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.7.2-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/replay_evidence_closure/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.7.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.3-A",
@@ -853,7 +1314,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-3-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.7.1-C"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.7.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.7.3-B",
@@ -868,7 +1340,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-7-3-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-7-3-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.7.3-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.7.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.1-A",
@@ -890,7 +1373,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-1-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-1-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "READY_FOR_SOURCE_GROUNDED_PROOF_OR_PATCH_DESIGN",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.8.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.1-B",
@@ -912,7 +1404,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-1-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-1-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.8.1-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.8.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.1-C",
@@ -934,7 +1437,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-1-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-1-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.8.1-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.8.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.2-A",
@@ -949,7 +1463,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.8.1-C"
+      ],
+      "delivery_class": "CONDITIONAL_PATCH_ON_REAL_AUTHORITY",
+      "delivery_status": "NOT_AUTHORIZED_OR_PREREQUISITE_PENDING",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/mission_management/",
+      "external_gate": "7.8.1 proves actual mission-consumer owner gap and authority.",
+      "acceptance_contract_step": "7.8.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.2-B",
@@ -964,7 +1489,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.8.2-A"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/mission_management/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.8.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.3-A",
@@ -979,7 +1515,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-3-A.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.8.1-C"
+      ],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/collective_assimilation/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.8.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.8.3-B",
@@ -994,7 +1541,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-8-3-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-8-3-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.8.3-A"
+      ],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/collective_assimilation/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.8.3",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.9.1-A",
@@ -1016,7 +1574,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-1-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-1-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "READY_FOR_SOURCE_GROUNDED_PROOF_OR_PATCH_DESIGN",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/claim_receipt/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.9.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.9.1-B",
@@ -1038,7 +1605,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-1-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-1-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.9.1-A"
+      ],
+      "delivery_class": "IMPLEMENTED_BPE_001_REQUIRES_VERIFICATION",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/claim_receipt/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.9.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.9.1-C",
@@ -1060,7 +1638,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-1-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-1-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.9.1-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/mission_intake/; tools/doubletake_evolve/claim_receipt/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.9.1",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.9.2-A",
@@ -1094,7 +1683,16 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-2-A.md",
+      "work_order_revision": 1,
+      "dependencies": [],
+      "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
+      "delivery_status": "READY_FOR_SOURCE_GROUNDED_PROOF_OR_PATCH_DESIGN",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.9.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.9.2-B",
@@ -1128,7 +1726,18 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-2-B.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.9.2-A"
+      ],
+      "delivery_class": "SOURCE_DIFF_PREPARED_BPE_010",
+      "delivery_status": "PREPARED_UNTESTED_VALIDATE_SOURCE_AND_EXECUTE",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/",
+      "external_gate": "BPE-010 exact source-blob compatibility, clean overlap and approved local executor; BPE-002 remains retired.",
+      "acceptance_contract_step": "7.9.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     },
     {
       "unit_id": "7.9.2-C",
@@ -1162,11 +1771,23 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE"
+      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-2-C.md",
+      "work_order_revision": 1,
+      "dependencies": [
+        "7.9.2-B"
+      ],
+      "delivery_class": "EVIDENCE_PATCH_OR_TEST",
+      "delivery_status": "AWAITING_DEPENDENCY_AND_SOURCE_INSPECTION",
+      "source_search_boundary": "tools/doubletake_evolve/claim_receipt/",
+      "external_gate": null,
+      "acceptance_contract_step": "7.9.2",
+      "evidence_required": "revision-bound positive and discriminating negative controls, guarded tests or real observation, scope/authority, rollback and unaffected work; separate fixture vs live Ground"
     }
   ],
   "source_main_head_at_generation": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
   "package_directory": "doubletake_evolution/patch_management/atomic_patches/",
   "implementation_directory": "doubletake_evolution/patches/",
-  "note": "All 58 units now have executable gated/precondition scripts; those scripts do not make source modifications and exit 78 pending real prerequisites. Only 010,024,025 are actual source-diff implementations prepared untested. Source-diff coverage is NOT 58/58."
+  "note": "Every atomic mission unit now has a unique detailed work order plus its legacy executable gate. Work orders specify code/evidence/gating and dependency edges; they are NOT automatically 58 source-diff patches. Three actual source patches BPE-010,024,025 remain prepared, with tests unverified. Blocked authorization/host steps cannot have truthful unconditional diffs.",
+  "patch_work_orders_directory": "doubletake_evolution/patch_management/work_orders"
 }
