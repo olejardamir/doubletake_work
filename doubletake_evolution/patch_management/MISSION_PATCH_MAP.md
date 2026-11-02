@@ -1,6 +1,6 @@
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `25bde73b5cae83fe4c769b577558a56b7492e5b8`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `b662dc374850622da37d7572c5eb0c648b7ffb6f`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
@@ -31,6 +31,10 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `25bde73b5cae8
 
 **Each run:** reconcile mission/COMPLETED against this map; list every unrepresented new step; classify; add patch IDs and actual source refs/test proof; prioritize repair of existing stale patches; publish as many independent complete new patches as warranted; report uncovered, blocked and verified counts. Preserve stable patch identity and keep PATCH_INDEX.json as authoritative executable queue.
 
+
+## Complete 58-unit work-order dependency graph
+
+The full current mission has 22 numbered open steps mapped to **58 individually scoped patch work orders** in [WORK_ORDERS_INDEX.md](WORK_ORDERS_INDEX.md) and [work_orders/](work_orders/). Their dependency graph and acceptance obligations are machine-readable in [MISSION_ATOMIC_QUEUE.json](MISSION_ATOMIC_QUEUE.json). Every work order is distinct; a conditional MEP shell is only a gate, not a source diff. Existing source-diff implementation queue contains only BPE-010, BPE-024, BPE-025, all prepared and unverified. Owner-gated and live-observation steps must remain truthful rather than manufactured as code. Patch Engineer converts eligible units to real BPE diffs and records checked outcomes, maintaining the full graph.
 
 ## 2026-11-01 patch publication and execution reconciliation
 

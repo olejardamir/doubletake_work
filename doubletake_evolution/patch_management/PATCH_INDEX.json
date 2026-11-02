@@ -1096,5 +1096,16 @@
     "current_dt_branch_head": "03d09b55f0c37966144f425661f39313ce0f2830"
   },
   "atomic_packages_path": "doubletake_evolution/patch_management/atomic_patches/",
-  "mission_atom_count": 58
+  "mission_atom_count": 58,
+  "mission_work_orders_index": "doubletake_evolution/patch_management/WORK_ORDERS_INDEX.md",
+  "mission_work_orders_directory": "doubletake_evolution/patch_management/work_orders/",
+  "work_orders_count": 58,
+  "mission_steps_count": 22,
+  "mission_patch_coverage": {
+    "planned_work_orders": 58,
+    "guarded_conditional_scripts": 58,
+    "source_code_patch_scripts_current": 3,
+    "all_source_implementation_complete": false,
+    "notes": "Work orders do not prove implementation. Production/authority gates and live Ground cannot be replaced by scripts."
+  }
 }

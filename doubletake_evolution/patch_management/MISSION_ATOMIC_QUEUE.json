@@ -2,7 +2,7 @@
   "schema_version": 2,
   "description": "Full current mission atomic-unit execution ledger. This is NOT proof that patches exist or that units are implemented.",
   "mission_source": "doubletake_evolution/ACTIVE_MISSION.md",
-  "mission_blob_sha": "0fac9ab062ddae0cd7a0e39e98f0d8cd8620ad11",
+  "mission_blob_sha": "b662dc374850622da37d7572c5eb0c648b7ffb6f",
   "patch_directory": "doubletake_evolution/patches",
   "patch_index": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "counts": {
@@ -1789,5 +1789,6 @@
   "package_directory": "doubletake_evolution/patch_management/atomic_patches/",
   "implementation_directory": "doubletake_evolution/patches/",
   "note": "Every atomic mission unit now has a unique detailed work order plus its legacy executable gate. Work orders specify code/evidence/gating and dependency edges; they are NOT automatically 58 source-diff patches. Three actual source patches BPE-010,024,025 remain prepared, with tests unverified. Blocked authorization/host steps cannot have truthful unconditional diffs.",
-  "patch_work_orders_directory": "doubletake_evolution/patch_management/work_orders"
+  "patch_work_orders_directory": "doubletake_evolution/patch_management/work_orders",
+  "mission_work_orders_index": "doubletake_evolution/patch_management/WORK_ORDERS_INDEX.md"
 }

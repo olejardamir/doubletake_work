@@ -11,6 +11,10 @@ Continuously determine the highest-value improvements for DoubleTake, keep a sin
 
 IMPORTANT: The planning repository is public. Do not copy private code, unredacted logs, proprietary data, secrets, security-sensitive architectural details, or unpublished documents into it. Describe tasks at an appropriate public-safe abstraction level; retain detailed pointers only where safe. Do not expand permissions or disclose private content to make the workflow easier.
 
+## Mission patch-work-order synchronization
+
+[WORK_ORDERS_INDEX.md](patch_management/WORK_ORDERS_INDEX.md) and [MISSION_ATOMIC_QUEUE.json](patch_management/MISSION_ATOMIC_QUEUE.json) are the complete 58-unit decomposition. Each unit has an individual dependency-bound work order and a separate gated shell, which must never be mistaken for an implemented BPE source patch. The Patch Engineer converts eligible work orders into actual single-file diffs or independently reproducible evidence; this Director worker validates full mission acceptance and updates/archive only independently demonstrated outcomes. Reconcile new or changed mission requirements with the atomic graph every run and never infer implementation progress from the count of files.
+
 ## Every scheduled run
 1. **Observe.** Inspect the latest DT main state, recent changes, applicable instructions, relevant tests and existing improvement evidence. Compare with the previous recorded inspection. Do not treat commit messages or another LLM's "done" as proof.
 2. **Analyze.** Look for real bugs, regressions, incomplete wiring, reliability problems, unnecessary bureaucracy, performance bottlenecks, security problems, duplicate functionality and missing abilities. Use deep reasoning and external web/paper/GitHub research where it could materially improve decisions. Prefer mechanisms that DT can evolve itself, rather than copying third-party code.
