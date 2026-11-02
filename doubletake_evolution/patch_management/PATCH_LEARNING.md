@@ -94,3 +94,9 @@ During the run, another public writer retired the same BPE-001/011–014 scripts
 ## 2026-11-02 BPE-028 — supplied verdict fingerprint
 
 Current DT main accepts arbitrary nonempty `ReceiptVerification.verdict_digest`. BPE-028 recomputes canonical aggregate and rejects mismatched supplied digests; positive empty/matching and negative forged/chain-changed tests. **Hypothesis:** closes false proof-fingerprint acceptance without breaking valid round trips. **Measure:** first local apply, four new tests, existing verdict-chain/claim-receipt regressions, DT commit and public feedback. **Revert trigger:** legitimate round-trip regression or incompatible consumer contract. Only source context statically inspected; no GPT test run.
+
+## 2026-11-02 — fail-closed local runner and verified-source retirement
+
+- BPE-028 was implemented on DT main at `089f3050b18b7455a273e37c29966caf6d651a87` but remained selectable in public PATCH_INDEX. Its script has now been retired, with source evidence retained as `APPLIED_UNVERIFIED`; no independent test/mission Ground is asserted.
+- DT main now has an exact Git blob-pinned, clean-worktree, single-script local BPE queue runner, and a dedicated isolated test suite. It is **SOURCE_COMMITTED_UNTESTED** until host-guarded tests and a local run are observed.
+- Future authoring must include `patch_blob_sha`, test first-try selection/apply and avoid reapplying integrated code. Give priority to B1 integrity disposition and 7.8.1 real mission consumption rather than proof-only patch count.

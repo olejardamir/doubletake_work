@@ -1336,5 +1336,15 @@
     "all_source_implementation_complete": false,
     "notes": "BPE-028 source committed in private DT; public script retired, local tests and runtime Ground unverified.",
     "last_reconciled_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a"
+  },
+  "local_executor": {
+    "repo": "olejardamir/DT",
+    "path": "tools/doubletake_evolve/patch_execution/bpe_queue_runner.py",
+    "tests": "tools/doubletake_evolve/patch_execution/test_bpe_queue_runner.py",
+    "test_status": "SOURCE_COMMITTED_NOT_EXECUTED_LOCALLY",
+    "approved_mode": "read-only default; --execute --reviewed explicit and local",
+    "script_pin_required": "patch_blob_sha",
+    "no_commit_push": true,
+    "not_runtime_patch_authority": true
   }
 }
