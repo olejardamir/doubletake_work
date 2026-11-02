@@ -330,7 +330,9 @@
       "rebase_required": false,
       "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
       "file_present": true,
-      "source_basis": "Verified DT main code matches source blob(s) used for patch"
+      "source_basis": "Verified DT main code matches source blob(s) used for patch",
+      "code_patch": true,
+      "type": "SOURCE_DIFF_IMPLEMENTATION"
     },
     {
       "id": "BPE-20261101-006",
