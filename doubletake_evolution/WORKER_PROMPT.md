@@ -15,6 +15,10 @@ At every checkpoint inspect **actual evidence**, not only instructions: latest p
 
 Store a concise public-safe oversight result in the **existing** `STATE.md` only when meaningful: DT revision inspected, workers actually checked, concrete broken or improved handoff, source/test/Ground grades, corrective action and subsequent effect. Private source/test specifics belong only in private DT's existing `reports/gpt_collective/INTEGRATION_COORDINATION.md`. Do not create parallel control planes, new trackers or fake test outcomes. Existing Code Engineer exclusively owns source/test implementation directly in PRIVATE DT `main`; this Overseer audits and accepts only independently demonstrated outcomes. Retain approved historical/integrity/deployment gates and protect the public/private boundary. No GitHub Actions, paid CI, local LLM or user's machine needed for scheduled GPT-side oversight.
 
+### Evidence-based four-worker sequencing
+
+The existing hourly pipeline is Internet Scout around :39 → Scrapyard Scout around :54 → **Borg Code Engineer around :08 of the following hour** → Evolution Overseer around :24. Code Engineer was moved from ~:41 to ~:08 because it previously ran before the Scrapyard's current-source validation, making premature integration/handoff lag possible. This is a **coordination hypothesis**, not proof that the worker execution order or code quality has improved. Confirm each hop with actual scheduler completion times, source IDs, DT/main commit and independent tests; never demand a new Scout handoff for independently eligible code. After two meaningful checkpoints, keep or revise this schedule only upon measured evidence and operator authorization. No GitHub Actions, local LLM or extra worker.
+
 ## Repositories
 - Implementation (read for analysis): `olejardamir/DT` (private)
 - Planning (write only to `doubletake_evolution/`): `olejardamir/doubletake_work` (public)
