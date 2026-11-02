@@ -223,3 +223,7 @@ All 58 atomic units in the current 22 open mission steps have separate guarded s
 ## 2026-11-02 — DT main integration
 
 DT `main` `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf` contains independently inspected source/test commits BPE-010/024/025/026/027; all five executable scripts retired. Exact commits in PATCH_INDEX and public results. 110 guarded tests executor-reported, none rerun by GPT. 7.9.2 unseen proof-consumer Ground remains open; 4.2.2.2 production serving/deployment authority remains blocked; 3.4.2 final status remains unverified. BPE-010 staging SHA disagrees with actual GitHub SHA; GitHub is authoritative.
+
+## 2026-11-02 — residual verdict fingerprint gap
+
+BPE-20261102-028: DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf` accepts nonempty caller-supplied `ReceiptVerification.verdict_digest` without recomputation. New source-bound diff validates digest and adds four positive/negative tests. PREPARED_UNTESTED, local worktree/apply/tests/Ground unknown; 7.9.2 remains open.

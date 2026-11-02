@@ -86,3 +86,7 @@ All 58 individual work orders were re-read. BPE-010 rev5 (strict predecessor), B
 ## 2026-11-02 mainline reconciliation
 
 Five implementation commits confirmed on DT main and scripts retired. 110 tests executor-reported, none independently rerun; live Ground/authority pending.
+
+## 2026-11-02 BPE-028
+
+Prepared one genuine source diff for residual 7.9.2 verdict digest identity, not counted as integrated. All 58 work orders remain separate acceptance units.

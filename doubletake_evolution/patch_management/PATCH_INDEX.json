@@ -1161,6 +1161,46 @@
         "implementation_commit_sha": "d1d107b555b6ce44637703ef17ab01baf4667f0a",
         "local_worktree": "UNKNOWN"
       }
+    },
+    {
+      "id": "BPE-20261102-028",
+      "mission_ref": "DT-EVO-007 / 7.9.2",
+      "summary": "Reject forged caller-supplied aggregate verdict digest",
+      "file": "BPE-20261102-028.sh",
+      "file_present": true,
+      "code_patch": true,
+      "type": "SOURCE_DIFF_IMPLEMENTATION",
+      "priority": 6,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "main",
+      "source_revision": "db86a85f2ca204117bcd36e8e51a9d1df05d9bbf",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/models.py": "7f5eb49c20094911c5deedf5937cabb2c5b7d849"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/models.py",
+        "tools/doubletake_evolve/claim_receipt/test_verdict_digest_validation.py"
+      ],
+      "depends_on": [],
+      "auto_selectable": true,
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "validation": {
+        "remote_source_hunk_unique": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN",
+        "new_test_lines": 38
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE_IN_SCRIPT",
+      "source_basis": "Current main ReceiptVerification accepts nonempty supplied verdict_digest without recomputation"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1195,8 +1235,10 @@
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
     "atomic_gate_scripts_count": 58,
-    "source_patch_scripts_count": 0,
-    "new_scripts": [],
+    "source_patch_scripts_count": 1,
+    "new_scripts": [
+      "BPE-20261102-028"
+    ],
     "revised_scripts": [],
     "retired_scripts": [
       "BPE-20261101-010",
@@ -1208,7 +1250,7 @@
     "independent_tests_rerun": 0,
     "executor_reported_test_total": 110,
     "local_worktree": "UNKNOWN",
-    "next_conditional_patch": null,
+    "next_conditional_patch": "BPE-20261102-028",
     "no_runtime_ground_claimed": true
   },
   "last_format_migration": "2026-11-01",
@@ -1266,9 +1308,9 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 0,
+    "source_code_patch_scripts_current": 1,
     "all_source_implementation_complete": false,
-    "notes": "58 atomic work orders/gates; five DT main source patches committed and retired; 110 guarded tests reported, zero independently rerun or live Ground.",
+    "notes": "58 work orders; five previous patches committed/retired; new BPE-028 PREPARED_UNTESTED, no local tests.",
     "last_reconciled_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a"
   }
 }
