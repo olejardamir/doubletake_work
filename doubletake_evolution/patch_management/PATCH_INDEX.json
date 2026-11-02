@@ -1248,7 +1248,9 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false,
-        "local_worktree": "UNKNOWN"
+        "local_worktree": "UNKNOWN",
+        "remote_exact_hunks_matched": 2,
+        "static_hunk_count_errors": 0
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE",
       "source_basis": "runner checks script blob but then executes mutable pathname; negative test swaps after inspection",
@@ -1289,7 +1291,9 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false,
-        "local_worktree": "UNKNOWN"
+        "local_worktree": "UNKNOWN",
+        "remote_exact_hunks_matched": 4,
+        "static_hunk_count_errors": 0
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE",
       "source_basis": "reserved proof files opened by pathname after validation; late leaf symlink can redirect write"
