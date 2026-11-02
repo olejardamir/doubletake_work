@@ -12,19 +12,19 @@
     "public_repo": true,
     "local_selection": "Only existing .sh with matching INDEX and unimplemented objective, actual DT main source-compatible context, satisfied dependencies and no unresolved overlap; execute local git apply --check and guarded tests before any DT commit. A committed blob mismatch alone is not a local worktree conflict. No auto selection of retired 002 or implemented 001/003–007/011–014.",
     "one_patch_per_file": true,
-    "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
+    "mission_decomposition": "Retain all 22 mission steps and 58 gated work orders. Every new direct DT/main code commit must be linked to exact work-order ID in CURRENT_ENGINEERING_LEDGER.md, or explicitly UNMAPPED; update relevant statuses only when independently grounded. Do not manufacture public code-bearing .sh files.",
     "executor_branch_reference": "main",
     "public_source_disclosure": "CURRENT FOUR-WORKER POLICY: public doubletake_work is planning, research and historical patch metadata only; new implementation source/test diffs are committed directly to private DT/main by Borg Code Engineer. Older public patch records are preserved as history, not new publication authority.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "db86a85f2ca204117bcd36e8e51a9d1df05d9bbf",
+    "latest_executor_head_inspected": "45b51a737208dbe2b1252e682ff14a1e240a6332",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
-    "next_patch": "NONE_AUTO_SELECTABLE. BPE-010/024/025/026/027/028 already integrated in private DT/main; BPE-029/030 are historical PREPARED_UNTESTED proposals, auto_selectable=false. Borg Code Engineer must source-verify any new gap and commit eligible code/tests directly to private DT/main.",
+    "next_patch": "NO AUTO-SELECTABLE PUBLIC SCRIPT. BPE-029 and BPE-030 are historical PREPARED_UNTESTED, not integration authority. Sole direct code implementation owner: Borg Code Engineer -> private DT/main. See CURRENT_ENGINEERING_LEDGER.md for post-merger source/test commit reconciliation.",
     "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update.",
     "retirement_contract": "Already integrated code changes are retained as APPLIED_UNVERIFIED historical records; never reapply by stale selection metadata. Confirm direct private DT/main source before status reconciliation. Ground remains independent of source commit and test definitions.",
     "active_patch_selector": "DISABLED for GPT-side integration. No public .sh patch is an automatically executable or approved DT change. Existing 58 atomic packages remain conditional gates, not implementation. Retain historical records and require exact current-main source/authority verification before any proposal.",
-    "mainline": "DT executor is now branch main at 17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2; former feature/alphacode-provider has been merged or removed. Re-query actual main HEAD on each run.",
+    "mainline": "DT implementation target is private main. Most recent independently inspected main HEAD 45b51a737208dbe2b1252e682ff14a1e240a6332 (2026-11-02T23:09:02Z). Always refetch before mutation; no active public implementation source patch selector.",
     "conditional_patches": "58 atomic mission task packages reside in doubletake_evolution/patch_management/atomic_patches/ as guarded executable prerequisites/verification. These are NOT source-diff implementation patches and MUST NOT be counted as implemented code. Replace them with source-grounded diffs as actual gaps and authorization permit."
   },
   "patches": [
@@ -1430,5 +1430,21 @@
     "github_actions": false,
     "local_llm_required": false,
     "live_ground_not_claimed": true
+  },
+  "current_direct_engineering_reconciliation": {
+    "observed_at_utc": "2026-11-02T23:09:02Z",
+    "private_dt_main_head": "45b51a737208dbe2b1252e682ff14a1e240a6332",
+    "ledger": "doubletake_evolution/patch_management/CURRENT_ENGINEERING_LEDGER.md",
+    "source_or_test_commits_since_worker_merge": 21,
+    "implementation_labeled_commits": 17,
+    "separately_test_labeled_commits": 4,
+    "exact_mep_mapping": "PROVISIONAL_AND_OPEN",
+    "runtime_ground": "NOT_INDEPENDENTLY_VERIFIED",
+    "pending_public_scripts": [
+      "BPE-20261102-029",
+      "BPE-20261102-030"
+    ],
+    "auto_selectable_scripts": 0,
+    "raw_applied_statuses": "HISTORICAL_SOURCE_PROVENANCE_NOT_RUNTIME_ACCEPTANCE"
   }
 }
