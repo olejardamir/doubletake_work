@@ -4,7 +4,7 @@ The standalone Patch Engineer automation was merged into **Borg Code Engineer** 
 
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `cf212925e16c47949d7f96f5b5a33383639fd2e1`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `87d28602ef66286b7c2de26489c08e776fc112a6`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
