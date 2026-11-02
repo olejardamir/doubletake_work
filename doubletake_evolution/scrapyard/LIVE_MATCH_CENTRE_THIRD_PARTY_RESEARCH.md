@@ -3,6 +3,9 @@
 **Research date:** 2026-08-19  
 **Purpose:** Bounded pre-POC review of existing real-time sports architectures, managed fan-out platforms, recovery patterns, reusable open-source components, and implementation ideas that could materially change the Live Match Centre design or POC.
 
+
+**Canonical merger note (2026-11-02, research archive only):** This file consolidates two same-date alternatives, base Go/Gorilla source blob `bab6ed0671839d0b8a91498e0d2411cdd1027a85` and numbered Node/TypeScript/`ws` variant blob `3b40f345af6e20690c2fc9ee74d203aa7dbcf25b`. Both are historical design hypotheses; their competing language recommendations are retained, not asserted as one verified implementation. Existing vendor prices, license assertions and claimed capacities require current independent verification before reuse. Original full versions remain recoverable via Git history. This is unrelated to verified DT runtime Ground.
+
 ## Executive conclusion
 
 The research **does not overturn the current production architecture**.
@@ -490,6 +493,62 @@ For the fan-out path:
 
 ---
 
+## 5.1 Node.js + TypeScript + `ws` — RECOMMENDED FOR POC
+
+Repository:
+
+```text
+github.com/websockets/ws
+```
+
+License:
+
+```text
+MIT
+```
+
+Why it fits:
+
+- stays in the same JavaScript/TypeScript ecosystem as Next.js;
+- simple, widely used WebSocket server/client implementation;
+- passes the Autobahn test suite;
+- supports direct server broadcast patterns;
+- supports ping/pong heartbeat handling;
+- optional `bufferutil` native addon improves frame masking/unmasking performance;
+- easy to instrument for connection counts, latency, backpressure, memory and event-loop delay.
+
+Important caveat:
+
+`ws` is intentionally a straightforward Node.js implementation, not the highest-performance possible WebSocket stack. That is useful for this assignment because the POC is supposed to test whether the selected approach has enough capacity. We should not start by hiding the risk behind an exotic high-performance runtime.
+
+If `ws` materially fails the frozen capacity criterion, the next architecture branch would be:
+
+```text
+Node.js + uWebSockets.js
+```
+
+rather than changing language immediately. `uWebSockets.js` is a high-performance native V8 addon for Node.js, but it adds native/runtime complexity and should only be introduced if measurement justifies it.
+
+### Recommendation
+
+Use:
+
+```text
+Node.js
+TypeScript
+ws
+custom TypeScript load generator
+Docker Compose
+```
+
+For the fan-out path:
+- serialize each event once;
+- broadcast the same buffer/string to subscribed sockets;
+- use bounded per-client state/queues;
+- detect `bufferedAmount` / backpressure;
+- terminate slow clients rather than allowing unbounded memory growth;
+- record event-loop delay, CPU, memory, socket counts and fan-out latency.
+
 ## 5.2 Grafana k6 — USEFUL SECONDARY TOOL, NOT SOLE CAPACITY ORACLE
 
 k6 supports WebSocket load tests. The current `k6/websockets` module uses a global event loop and allows multiple concurrent WebSockets per VU, improving efficiency.
@@ -509,6 +568,8 @@ A 100k-connection capacity experiment can easily become a **load-generator capac
 Do not make k6 the only source of final capacity evidence unless we first demonstrate the generator has adequate headroom.
 
 A lightweight Go load generator in a separate container may give us tighter control over:
+
+A lightweight TypeScript/Node.js load generator in a separate container gives us tighter control over:
 - connection count;
 - file descriptors;
 - ephemeral ports;
@@ -593,6 +654,21 @@ Go
 + Docker Compose one-command execution
 ```
 
+### Alternative POC implementation direction (numbered source)
+
+Refined to:
+
+```text
+Node.js
++ TypeScript
++ ws
++ bounded client queues / backpressure checks
++ explicit slow-client disconnect
++ custom TypeScript load generator
++ optional k6 smoke/secondary check
++ Docker Compose one-command execution
+```
+
 The final experiment contract must still freeze the exact implementation/workload/criteria before measurement.
 
 ---
@@ -653,6 +729,8 @@ Primary/vendor sources used in this review:
 - Cloudflare Durable Object data location: https://developers.cloudflare.com/durable-objects/reference/data-location/
 - Gorilla WebSocket: https://github.com/gorilla/websocket
 - Gorilla WebSocket Go API: https://pkg.go.dev/github.com/gorilla/websocket
+- ws: https://github.com/websockets/ws
+- uWebSockets.js: https://github.com/uNetworking/uWebSockets.js
 - Grafana k6 WebSockets: https://grafana.com/docs/k6/latest/using-k6/protocols/websockets/
 
 ---
@@ -664,5 +742,6 @@ Industry / third-party research: COMPLETE
 Architecture winner changed: NO
 POC target changed: NO
 POC implementation direction refined: YES
+POC implementation direction refined: YES — Node.js/TypeScript, no Go
 Next milestone: Freeze the POC experiment contract
 ```
