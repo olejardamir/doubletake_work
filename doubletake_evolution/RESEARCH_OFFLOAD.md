@@ -7,6 +7,8 @@
 - **Feedback and recheck:** Source attribution remains **UNVERIFIED**; return `NO_AUTHORIZED_FIXTURE` if no lawful local seam exists. Revisit only after matching paper-code provenance, actual DT parity evidence, or a relevant authorized owner fixture. Priority remains 7.8.1 mission-consumer receipt and B1 decision; no capability delta or full assimilation Ground claimed.
 
 
+> **Subsequent Scout evidence correction (2026-11-02 ~03:50Z; Director decision unchanged):** The paper's own author line **does** link the named DART repository and §1 confirms the README expansion. The preceding Director decision correctly remains **DEFER** because the paper's benchmark reproduction, current-DT parity and owner-authorized fixture remain unverified. See IS-023 and the corrected R-022 evidence below. Do not repeat the superseded 'different project' attribution inference.
+
 ## R-BORG-SCOUT-20261102-022 — semantic rollback veto after downstream commitment
 
 **Stage:** INTAKE → VALIDATED (concept/source) → OFFERED_TO_DIRECTOR. **Status:** PROPOSED_FOR_DIRECTOR_REVIEW; **priority LOW / CONDITIONAL**. **Source:** `scrapyard/incoming/IS-20261102-022-semantic-rollback-admissibility-with-committed-consumers.md`, reviewed blob `95313a56f811c6889f8676e18eecb968049a45f6`, prior intake `07ddc17ddb10fbf35befe8abb5bf61642730d285`. Primary preprint: https://arxiv.org/abs/2605.23311 (Yang et al., 2026-05-22). Adjacent NSDI 2026: https://www.usenix.org/conference/nsdi26/presentation/li-zhenyu . Source claims are not independently reproduced.
