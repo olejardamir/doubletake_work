@@ -704,6 +704,62 @@
       "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent.",
       "file_present": true,
       "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed."
+    },
+    {
+      "id": "BPE-20261101-024",
+      "mission_ref": "DT-EVO-004 / 4.2.2.2",
+      "summary": "Prevent unmounted UI build from claiming it is production-served",
+      "file": "BPE-20261101-024.sh",
+      "file_present": true,
+      "code_patch": true,
+      "status": "PREPARED_UNTESTED",
+      "priority": 25,
+      "patch_revision": 1,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "008a0bc94f581cdd97b6e60dfb48abb4a8173952",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/api/health.py": "cf6249355a6990648c23d297c46b92ff9eea69f3",
+        "tools/doubletake_evolve/tests/test_w10_ui_build_identity.py": "785660f7586faa0eeb697398da41a67e1a8e848e"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/api/health.py",
+        "tools/doubletake_evolve/tests/test_w10_ui_build_identity.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "limitation": "No production deployment or actual served-bundle acceptance."
+    },
+    {
+      "id": "BPE-20261101-025",
+      "mission_ref": "DT-EVO-003 / 3.4.2",
+      "summary": "Prioritize actual failed objective over unrelated authority request in campaign status",
+      "file": "BPE-20261101-025.sh",
+      "file_present": true,
+      "code_patch": true,
+      "status": "PREPARED_UNTESTED",
+      "priority": 26,
+      "patch_revision": 1,
+      "target_branch": "feature/alphacode-provider",
+      "source_revision": "008a0bc94f581cdd97b6e60dfb48abb4a8173952",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/mission_management/status.py": "9a0878c0cb6c755eef30807f100c9ae30026ff2c",
+        "tools/doubletake_evolve/mission_management/tests/test_status_view.py": "b0745267d9b83c613930d9720234f84906bb125c"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/mission_management/status.py",
+        "tools/doubletake_evolve/mission_management/tests/test_status_view.py"
+      ],
+      "depends_on": [],
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "limitation": "No final mission closure or autonomous recovery claimed."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",

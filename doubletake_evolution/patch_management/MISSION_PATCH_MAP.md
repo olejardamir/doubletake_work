@@ -10,9 +10,9 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `32d5e090376cd
 | DT-EVO-002 | 2.4.2 | Exercise the production caller | DEPENDENCY_PENDING | BPE-20261101-017 (diagnostic only) |
 | DT-EVO-002 | 2.4.3 | Reconcile state | DEPENDENCY_PENDING | BPE-20261101-018 (diagnostic only) |
 | DT-EVO-003 | 3.3.4 | Verify post-recovery performance only after actual natural recovery | DEPENDENCY_PENDING | — |
-| DT-EVO-003 | 3.4.2 | Publish one concise final status | VERIFICATION_ONLY | BPE-20261101-019 (diagnostic only) |
+| DT-EVO-003 | 3.4.2 | Publish one concise final status | VERIFICATION_ONLY | BPE-20261101-019 (diagnostic only); BPE-20261101-025 (source patch, untested) |
 | DT-EVO-003 | 3.5.2 | Establish a no-loss shared-state write contract, conditional on existing authority | BLOCKED_AUTHORITY | — |
-| DT-EVO-004 | 4.2.2.2 | Verify an authorized production-served health indication | BLOCKED_DEPLOYMENT_AUTHORITY | — |
+| DT-EVO-004 | 4.2.2.2 | Verify an authorized production-served health indication | BLOCKED_DEPLOYMENT_AUTHORITY | BPE-20261101-024 (source patch, untested) |
 | DT-EVO-004 | 4.2.2.3 | Verify recovery clearing and stable health classification | DEPENDENCY_PENDING | — |
 | DT-EVO-006 | 6.5.2 | INWARD/GROUND, conditional on 6.5.1: test a reversible capacity extension | BLOCKED_AUTHORITY | — |
 | DT-EVO-007 | 7.3.1 | Ground the full evidence-to-validated-knowledge path, not merely queue reachability | DEPENDENCY_PENDING_NO_QUALIFIED_SOURCE | BPE-20261101-022 (diagnostic only) |
@@ -174,3 +174,8 @@ These two code patches are preparation, not execution or Ground. No authority-bl
 - **BPE-014** (`PREPARED_UNTESTED`, depends on 012): Include `chain_digest` and `verdict_digest` in CLI JSON for both valid and failed verification, preserving BPE-012 nonzero failure exit. Source target `cli.py` blob `903445b151774881d36eebe2651549759403cc81` is a **predicted post-012** blob, not yet observed in DT. Actual Git apply/tests remain unrun.
 - 013/014 are **supporting 7.9.2 evidence-trust packages**, not replacements for private BPE-002's distinct canonical proof-chain contract. 7.9.1 BPE-001 publication/tool block and race-safe containment Ground remain unresolved. Read-only BPE-008/009 remain diagnostic only. No authority-dependent or verification-only step is reclassified as code-complete.
 - Ready for local source-check sequence (not tested): **011 → 013** on `models.py`; **012 → 014** on `cli.py`; **010 rev2** on `receipts.py`. Any branch drift requires fresh source SHA and exact apply validation before selection.
+
+## New source-grounded cross-mission code patches
+
+- BPE-20261101-024 → 4.2.2.2: Prevent unmounted UI build from claiming it is production-served. No production deployment or actual served-bundle acceptance. Actual tests pending.
+- BPE-20261101-025 → 3.4.2: Prioritize actual failed objective over unrelated authority request in campaign status. No final mission closure or autonomous recovery claimed. Actual tests pending.
