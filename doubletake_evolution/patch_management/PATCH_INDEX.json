@@ -21,7 +21,9 @@
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
     "next_patch": "Do not auto-choose 002 or 010 until conflict resolved and 010 exact source is validated. New code patches 024 and 025 remain prepared; ensure source compatibility before executing.",
-    "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update."
+    "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update.",
+    "retirement_contract": "Code patches implemented and pushed on DT feature branch are removed from public active patch directory, but retained in index/historical commits/results. Status APPLIED_UNVERIFIED must not be misread as whole-mission Ground or DT/main integration.",
+    "active_patch_selector": "Select only file_present !== false, code_patch===true, status in PREPARED_UNTESTED/APPLY_READY, not explicitly blocked and compatible with current checkout. Never resurrect retired files without a NEW independently verified regression and distinct patch ID."
   },
   "patches": [
     {
@@ -64,7 +66,14 @@
       "file_present": false,
       "historical_file": "BPE-20261101-001.sh",
       "script_retired_at": "2026-11-02",
-      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground",
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "552457195c7780ed800ae63b052dc47c84fdd010",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-003",
@@ -108,7 +117,14 @@
       "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
       "script_retired_at": "2026-11-01",
       "historical_file": "BPE-20261101-003.sh",
-      "auto_selectable": false
+      "auto_selectable": false,
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "b1931476299f5b0dfa7b7222ce2706df9d11a01e",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-002",
@@ -198,7 +214,14 @@
       "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
       "script_retired_at": "2026-11-01",
       "historical_file": "BPE-20261101-004.sh",
-      "auto_selectable": false
+      "auto_selectable": false,
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "6260daa5bfe56f0c73874d0f92ee624864b028c4",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-005",
@@ -244,7 +267,14 @@
       "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
       "script_retired_at": "2026-11-01",
       "historical_file": "BPE-20261101-005.sh",
-      "auto_selectable": false
+      "auto_selectable": false,
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "0e2078eb136fe3b5cd107b2637a5300e1b5bf61d",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-010",
@@ -339,7 +369,14 @@
       "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
       "script_retired_at": "2026-11-01",
       "historical_file": "BPE-20261101-006.sh",
-      "auto_selectable": false
+      "auto_selectable": false,
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "189dfb64bf641b28d910822a2e76a4eaa6aa596f",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-011",
@@ -387,7 +424,14 @@
       "file_present": false,
       "historical_file": "BPE-20261101-011.sh",
       "script_retired_at": "2026-11-02",
-      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground",
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "62c255c8010fd7514eb6b6b76f35b3ee1296b493",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-007",
@@ -435,7 +479,14 @@
       "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
       "script_retired_at": "2026-11-01",
       "historical_file": "BPE-20261101-007.sh",
-      "auto_selectable": false
+      "auto_selectable": false,
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "41c262026cfee14a58c23ea82184905ab473f6e9",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-012",
@@ -482,7 +533,14 @@
       "file_present": false,
       "historical_file": "BPE-20261101-012.sh",
       "script_retired_at": "2026-11-02",
-      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground",
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "f5ed8b59a1080c08d562ec0c209325a49558e0ff",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
@@ -536,7 +594,14 @@
       "file_present": false,
       "historical_file": "BPE-20261101-013.sh",
       "script_retired_at": "2026-11-02",
-      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground",
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "2913d0f9f4b4faed1441ce20e0deb017807e8f03",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
@@ -590,7 +655,14 @@
       "file_present": false,
       "historical_file": "BPE-20261101-014.sh",
       "script_retired_at": "2026-11-02",
-      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground",
+      "retirement": {
+        "reason": "Implementation commit independently confirmed in feature/alphacode-provider ancestry; active .sh script retired",
+        "script_removed_from_public_patches": true,
+        "implementation_commit_sha": "04a2fe6e1709017940621eb52654d2ac38f56d8d",
+        "ground_verified": false,
+        "local_tests": "EXECUTOR_REPORTED"
+      }
     },
     {
       "id": "BPE-20261101-008",
@@ -978,5 +1050,35 @@
       "7.9.1",
       "7.9.2"
     ]
+  },
+  "last_completed_reconciliation": {
+    "executed_code_patches": [
+      "BPE-20261101-001",
+      "BPE-20261101-003",
+      "BPE-20261101-004",
+      "BPE-20261101-005",
+      "BPE-20261101-006",
+      "BPE-20261101-007",
+      "BPE-20261101-011",
+      "BPE-20261101-012",
+      "BPE-20261101-013",
+      "BPE-20261101-014"
+    ],
+    "removed_now": [
+      "BPE-20261101-001",
+      "BPE-20261101-011",
+      "BPE-20261101-012",
+      "BPE-20261101-013",
+      "BPE-20261101-014"
+    ],
+    "already_removed": [
+      "BPE-20261101-003",
+      "BPE-20261101-004",
+      "BPE-20261101-005",
+      "BPE-20261101-006",
+      "BPE-20261101-007"
+    ],
+    "completion_scope": "DT feature branch implementation only; guarded tests executor-reported; runtime Ground open",
+    "current_dt_branch_head": "03d09b55f0c37966144f425661f39313ce0f2830"
   }
 }
