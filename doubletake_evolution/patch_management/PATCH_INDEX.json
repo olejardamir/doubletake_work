@@ -23,7 +23,9 @@
     "next_patch": "Do not auto-choose 002 or 010 until conflict resolved and 010 exact source is validated. New code patches 024 and 025 remain prepared; ensure source compatibility before executing.",
     "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update.",
     "retirement_contract": "Code patches implemented and pushed on DT feature branch are removed from public active patch directory, but retained in index/historical commits/results. Status APPLIED_UNVERIFIED must not be misread as whole-mission Ground or DT/main integration.",
-    "active_patch_selector": "Select only file_present !== false, code_patch===true, status in PREPARED_UNTESTED/APPLY_READY, not explicitly blocked and compatible with current checkout. Never resurrect retired files without a NEW independently verified regression and distinct patch ID."
+    "active_patch_selector": "Only select actual implementation .sh files in doubletake_evolution/patches; 010,024,025 currently prepared and tests not executed. Never select superseded 002 or atomic conditional files in implementation mode.",
+    "mainline": "DT executor is now branch main at 17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2; former feature/alphacode-provider has been merged or removed. Re-query actual main HEAD on each run.",
+    "conditional_patches": "58 atomic mission task packages reside in doubletake_evolution/patch_management/atomic_patches/ as guarded executable prerequisites/verification. These are NOT source-diff implementation patches and MUST NOT be counted as implemented code. Replace them with source-grounded diffs as actual gaps and authorization permit."
   },
   "patches": [
     {
@@ -131,7 +133,7 @@
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Require canonical ordered receipt predecessor chain, recomputed receipt digest and invalid-chain aggregate failure",
       "file": "BPE-20261101-002.sh",
-      "status": "BLOCKED_CONFLICT",
+      "status": "SUPERSEDED",
       "priority": 2,
       "patch_revision": 2,
       "target_branch": "feature/alphacode-provider",
@@ -168,7 +170,14 @@
       "apply_compatibility": "rev2: compare committed blobs for provenance; use git apply --check on actual worktree, tolerate non-overlap, fail closed on overlap. On conflict, inspect and adapt precisely without discarding prior changes.",
       "revision_reason": "Learn from local Clai conflict: removed blanket dirty worktree rejection but retained patch-context check and tests.",
       "auto_selectable": false,
-      "overlap_resolution": "BPE-010 rev3 sole strict-predecessor candidate; BPE-011/013 already handle digest/aggregate gating. Keep 002 blocked pending 010 integration and mapping-key negative verification."
+      "overlap_resolution": "BPE-010 rev3 sole strict-predecessor candidate; BPE-011/013 already handle digest/aggregate gating. Keep 002 blocked pending 010 integration and mapping-key negative verification.",
+      "file_present": false,
+      "superseded_by": [
+        "BPE-20261101-011",
+        "BPE-20261101-013",
+        "BPE-20261101-010"
+      ],
+      "retirement_reason": "011 and 013 integrated; sole remaining strict-adjacency fix assigned to 010; old combined patch removed."
     },
     {
       "id": "BPE-20261101-004",
@@ -283,10 +292,10 @@
       "file": "BPE-20261101-010.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
-      "patch_revision": 3,
+      "patch_revision": 4,
       "status": "PREPARED_UNTESTED",
-      "target_branch": "feature/alphacode-provider",
-      "source_revision": "03d09b55f0c37966144f425661f39313ce0f2830",
+      "target_branch": "main",
+      "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
       "source_blob_shas": {
         "tools/doubletake_evolve/claim_receipt/receipts.py": "bc39080efa674bb41f1b8f738130ee90ada9db6a"
       },
@@ -315,13 +324,13 @@
       },
       "patch_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
       "script_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
-      "revision_reason": "Removed redundant all_pass hunk integrated by 013; kept strict adjacency and full negative test file; allow compatible dirty worktree only after git apply --check",
-      "conflicts_with": [
-        "BPE-20261101-002"
-      ],
+      "revision_reason": "Rebased to DT main after feature branch merge/deletion; old 002 removed.",
+      "conflicts_with": [],
       "auto_selectable": true,
       "rebase_required": false,
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY"
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
+      "file_present": true,
+      "source_basis": "Verified DT main code matches source blob(s) used for patch"
     },
     {
       "id": "BPE-20261101-006",
@@ -912,8 +921,8 @@
       "status": "PREPARED_UNTESTED",
       "priority": 25,
       "patch_revision": 1,
-      "target_branch": "feature/alphacode-provider",
-      "source_revision": "03d09b55f0c37966144f425661f39313ce0f2830",
+      "target_branch": "main",
+      "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
       "source_blob_shas": {
         "tools/doubletake_evolve/api/health.py": "cf6249355a6990648c23d297c46b92ff9eea69f3",
         "tools/doubletake_evolve/tests/test_w10_ui_build_identity.py": "785660f7586faa0eeb697398da41a67e1a8e848e"
@@ -938,7 +947,8 @@
         "host_tests_executed": false,
         "local_worktree": "UNKNOWN"
       },
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY"
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
+      "source_basis": "Verified DT main code matches source blob(s) used for patch"
     },
     {
       "id": "BPE-20261101-025",
@@ -950,8 +960,8 @@
       "status": "PREPARED_UNTESTED",
       "priority": 26,
       "patch_revision": 1,
-      "target_branch": "feature/alphacode-provider",
-      "source_revision": "03d09b55f0c37966144f425661f39313ce0f2830",
+      "target_branch": "main",
+      "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
       "source_blob_shas": {
         "tools/doubletake_evolve/mission_management/status.py": "9a0878c0cb6c755eef30807f100c9ae30026ff2c",
         "tools/doubletake_evolve/mission_management/tests/test_status_view.py": "b0745267d9b83c613930d9720234f84906bb125c"
@@ -976,7 +986,8 @@
         "host_tests_executed": false,
         "local_worktree": "UNKNOWN"
       },
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY"
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
+      "source_basis": "Verified DT main code matches source blob(s) used for patch"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1081,5 +1092,7 @@
     ],
     "completion_scope": "DT feature branch implementation only; guarded tests executor-reported; runtime Ground open",
     "current_dt_branch_head": "03d09b55f0c37966144f425661f39313ce0f2830"
-  }
+  },
+  "atomic_packages_path": "doubletake_evolution/patch_management/atomic_patches/",
+  "mission_atom_count": 58
 }
