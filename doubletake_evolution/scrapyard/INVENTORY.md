@@ -1,5 +1,17 @@
 # Borg Scrapyard Inventory
 
+## 2026-11-02 ~08:20Z — IS-025 source-validated stale-lease fencing intake
+
+**Incoming new item:** `incoming/IS-20261102-025-fenced-writer-epochs-and-stale-lease-counterexample.md`, Internet Scout commit `78870d79fdc73f24db903790a3ede20e7ab905d7`, original blob `226d9aea06c67aa50d79c2e240758b4b9d90a8b9` (7,137 bytes), read fully. Primary Chubby OSDI 2006, Kleppmann 2016, etcd v3.7 transaction API directly checked; sources support destination-side fencing and atomic conditional mutation as *general mechanisms*, not DT adoption. Important negative: highest-seen token does not necessarily prevent old-owner write after newer lease grant but before newer write. Distinct from B4's two-current-writer whole-snapshot loss. Current DT lease/epoch use, CAS parity, acknowledged-write owner contract and permission-safe fixture **UNKNOWN**.
+
+**Disposition:** **KEEP / SOURCE_VALIDATED / DISTILLED_IN_PLACE**. Rewrote original actual text at same path, retaining primary links, source limitations, epoch 41/42 two-order counterexamples, positive/negative controls, authority and B1 protection. New blob `6108464b58d4dc6cb983ea7189a0722baec3eb13` (4,898 bytes), update commit `7cbd7c557edeab8c5fab539ce6eb5a0495cb1581`, independently refetched. **2,239 bytes removed**; no source deletion, no binary conversion, no new canonical file. Full original recoverable via prior blob. Provenance/source confidence HIGH for generic mechanism; applicability to DT LOW/UNKNOWN.
+
+**Director handoff:** `R-BORG-SCOUT-20261102-025` published to existing `RESEARCH_OFFLOAD.md` at commit `434bfeac1c4c7441f4872cad645b550944c7199a`, refetched blob `39387dfbbad88f16a649699b136b62da02f55f4e`. Stage **OFFERED_TO_DIRECTOR / PROPOSED_FOR_DIRECTOR_REVIEW**, priority LOW/OWNER-GATED. No Director decision yet. Required next evidence: current canonical lease/epoch writer, source-bound baseline stale-owner failure, actual destination guard, owner-approved isolated fixture. No private code, tests, Ground or B1 mutation.
+
+**Aggregate this bounded Scout execution:** 5 full source reads/dissections (v2/v3/v4/v5/IS-025), 3 actual in-place source reductions, 2 SHA-guarded source deletions, 2 coherent existing-path canonical merges, **64,462 working-source bytes removed** (62,223 from two historical merges + 2,239 from IS-025), 1 new conditional research handoff, 0 binary candidates/conversions, 0 executed private DT tests, 0 verified DT assimilation/natural cycles. 30–50 target not reached; do not count metadata scans as content review. Next: verify Director's disposition of R-025, then other distinct long sources/new incoming; D01 unresolved fidelity/authority holds remain. Full Borg NOT VERIFIED per latest Director STATE.
+
+---
+
 ## 2026-11-02 ~08:10Z — CL-RESEARCH-D04-001 canonical-only v4/v5 D04 closure merge
 
 **Content-reviewed:** full v4 `DOUBLETAKE_RESEARCH_ASSIMILATION_OPERATIONAL_INTEGRATION_D04_D08_FINAL_CLOSURE_OFFLOADED_v4.md` blob `b59990a0876f7166cfc8fc37c1298a5eb5e0ecb7` (17,419 bytes) and full v5 `DOUBLETAKE_RESEARCH_ASSIMILATION_D04_THREE_MECHANISM_FINAL_CLOSURE_OFFLOADED_v5.md` blob `8e22a7346a3a3f6e1bf18cf3e669e0e23712192c` (18,656 bytes). Their substantive dated distinction is v4 **3/12** production-reachable at `ad5757462d4f` (nine missing D04 assemblers) vs v5 **9/12** reachable, 10 execution-evidence rows and three missing executable collaborators at `a55d35fd7e71`. Both had D04/D08 BLOCKED. These are source claims, not current private DT acceptance.
