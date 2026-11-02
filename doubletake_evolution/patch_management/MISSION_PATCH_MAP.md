@@ -1,6 +1,6 @@
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `c61b9be0780222d13dd2420b44f2fd68422c33e3`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `228a4f8d007fc4c7a2e707c90684f9c9bd0d565f`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
@@ -231,3 +231,7 @@ BPE-20261102-028: DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf` accepts non
 ## 2026-11-02 deterministic-queue reconciliation
 
 BPE-028 was already implemented on DT `main` at `089f3050b18b7455a273e37c29966caf6d651a87` and its negative test file exists. The executable is retired from `patches/`; report evidence has not been independently observed, so patch remains `APPLIED_UNVERIFIED`, and mission 7.9.2 Ground is still open. A future queue runner must reject applied code even if the public index temporarily lags the source.
+
+## 2026-11-02 — Queue script check-to-use integrity (supporting work, not Ground)
+
+Current DT main `df5f733cef0292dee865cf5a184fbb9d0c209e6d`; mission blob `228a4f8d007fc4c7a2e707c90684f9c9bd0d565f`. All 22 open numbered mission steps and all 58 individual work-order acceptance contracts were inspected. BPE-20261102-030 is a source-grounded **supporting** patch for the local BPE maintenance queue runner: it prevents a validated script pathname from being replaced between SHA preflight and shell execution. It is NOT proof that the public ACTIVE_MISSION Markdown was consumed or that reserved mission proof artifacts are race-safe. Its exact source and test blobs were inspected; local `bash -n`, `git apply --check`, host-guarded pytest and DT worktree state are **UNVERIFIED/UNKNOWN**. The source owner, external grants, natural-cycle and independent proof Ground gates remain open. Recheck after actual local results and authorized DT main integration.

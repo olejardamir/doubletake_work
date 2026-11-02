@@ -90,3 +90,7 @@ Five implementation commits confirmed on DT main and scripts retired. 110 tests 
 ## 2026-11-02 BPE-028
 
 Prepared one genuine source diff for residual 7.9.2 verdict digest identity, not counted as integrated. All 58 work orders remain separate acceptance units.
+
+## 2026-11-02 supporting executor patch
+
+BPE-20261102-030 `PREPARED_UNTESTED`: maintenance queue script check-to-use byte pinning. Linked to 7.9.1-C as supporting infrastructure only; does not satisfy the reserved proof-artifact acceptance contract. All 58 atomic work orders remain mapped and not automatically completed.

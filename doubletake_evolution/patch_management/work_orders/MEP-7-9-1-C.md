@@ -20,3 +20,7 @@
 5. Acceptance receipt must record checked DT revision and tested files, exact positive/negative assertions, invocation and PASS/FAIL/NOT_RUN, source changes or absence thereof, independent Ground versus fixture-only, rollback, affected and unaffected work, safety authority and next blocker. **Status VERIFIED only for this unit with that evidence.**
 
 **Definition of Done for this work order:** the atomic outcome above is proved against the parent's full acceptance contract, or explicitly remains OPEN with a concrete external prerequisite. A created script or green component test alone is not mission closure.
+
+## Supporting patch published (2026-11-02)
+
+BPE-20261102-030 addresses a separate local queue runner check-to-use race; source and test diff are prepared, NOT applied/tested. The reserved proof-artifact use-time race and independent unseen-case Ground in this work order remain OPEN. Do not count this supporting patch as work-order closure.

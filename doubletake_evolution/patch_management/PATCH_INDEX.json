@@ -1211,6 +1211,47 @@
         "ground_verified": false
       },
       "retirement_note": "Retired after current DT/main source commit and new negative-test file independently confirmed. Testing report still missing; not Ground."
+    },
+    {
+      "id": "BPE-20261102-030",
+      "mission_ref": "DT-EVO-007 / 7.9.1-C (supporting executor check-to-use integrity; not direct proof-artifact closure)",
+      "summary": "Execute exact pinned BPE script bytes after queue inspection",
+      "file": "BPE-20261102-030.sh",
+      "file_present": true,
+      "code_patch": true,
+      "type": "SOURCE_DIFF_IMPLEMENTATION",
+      "priority": 2,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "main",
+      "source_revision": "df5f733cef0292dee865cf5a184fbb9d0c209e6d",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/patch_execution/bpe_queue_runner.py": "88d0a3c6d18e8be13cb7957ed62115bc51819733",
+        "tools/doubletake_evolve/patch_execution/test_bpe_queue_runner.py": "a3be102d65aa4c754d8287bfd5f399e738572e99"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/patch_execution/bpe_queue_runner.py",
+        "tools/doubletake_evolve/patch_execution/test_bpe_queue_runner.py"
+      ],
+      "depends_on": [],
+      "auto_selectable": false,
+      "eligibility": "LOCAL_APPLY_UNVERIFIED; operator review, bash -n, git apply --check and guarded tests required",
+      "patch_blob_sha": "3feb676c45775545421911860206a6260e278bb8",
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "validation": {
+        "remote_source_hunk_unique": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN"
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE",
+      "source_basis": "runner checks script blob but then executes mutable pathname; negative test swaps after inspection"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1240,48 +1281,26 @@
   "last_run": {
     "date_utc": "2026-11-02",
     "executor_branch": "main",
-    "executor_head_inspected": "03d02929066a9f69d3db536012bd66933ae97c33",
-    "public_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a",
+    "executor_head_inspected": "df5f733cef0292dee865cf5a184fbb9d0c209e6d",
+    "public_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f",
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
-    "atomic_gate_scripts_count": 58,
-    "source_patch_scripts_count": 0,
+    "source_patch_scripts_count": 1,
     "new_scripts": [
-      "BPE-20261102-028"
+      "BPE-20261102-030"
     ],
     "revised_scripts": [],
-    "retired_scripts": [
-      "BPE-20261101-010",
-      "BPE-20261101-024",
-      "BPE-20261101-025",
-      "BPE-20261101-026",
-      "BPE-20261101-027"
-    ],
+    "retired_scripts": [],
     "independent_tests_rerun": 0,
-    "executor_reported_test_total": 110,
     "local_worktree": "UNKNOWN",
-    "next_conditional_patch": null,
-    "no_runtime_ground_claimed": true,
-    "publication_commits": [
-      "e4d3829d5f716f0c62d4f3968a2dae4fb41834fd",
-      "e2fe0b2e3ec5c1e96eba8fe77a66eb9956cc5f66",
-      "953073c3139cf3162cc5d93561e8e343526ba2fe"
-    ],
-    "patch028_validation": {
-      "remote_source_hunk_exact_match": true,
-      "unified_hunk_counts_valid": true,
-      "local_bash_syntax_executed": false,
-      "git_apply_check_executed": false,
-      "host_tests_executed": false,
-      "local_worktree": "UNKNOWN"
-    },
-    "reconciled_028": "committed implementation, no independent tests recorded"
+    "next_conditional_patch": "BPE-20261102-030",
+    "no_runtime_ground_claimed": true
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a",
+  "latest_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f",
   "last_manual_patch_publication": {
     "new_code_scripts": [
       "BPE-20261101-001",
@@ -1332,10 +1351,10 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 0,
+    "source_code_patch_scripts_current": 1,
     "all_source_implementation_complete": false,
-    "notes": "BPE-028 source committed in private DT; public script retired, local tests and runtime Ground unverified.",
-    "last_reconciled_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a"
+    "notes": "BPE-030 is supporting queue check-to-use integrity; no mission step or runtime Ground closed.",
+    "last_reconciled_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f"
   },
   "local_executor": {
     "repo": "olejardamir/DT",
