@@ -4,7 +4,7 @@ Source: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md). Each row represents **one dis
 
 **Coverage:** 22 open mission steps, 58 atomic work orders; 4 explicitly linked to prepared source patches; 19 with currently missing owner/prerequisite; 5 immediately independent source/verification investigations; all other items depend on prior results. **Implementation coverage is not 58/58.**
 
-Code diff queue: [BPE-010, BPE-024, BPE-025](../patches/). Applied old diffs are retired, and BPE-002 is superseded.
+Code diff queue: [BPE-010, BPE-024, BPE-025, BPE-026](../patches/). Applied old diffs are retired, and BPE-002 is superseded.
 
 | Work order | Priority | Unit class | Depends on | Current status |
 |---|---|---|---|---|
@@ -76,3 +76,7 @@ Code diff queue: [BPE-010, BPE-024, BPE-025](../patches/). Applied old diffs are
 5. Continuous chain: each recorded result updates its work order, patch index, mission mapping and prerequisites; independently validate full-system Ground before archiving mission step.
 
 **Exit criterion:** No remaining OPEN item lacks a work order, a real BPE patch or explicit gate, downstream dependency and evidence contract. This is complete *planning decomposition*, not completion of implementation.
+
+## 2026-11-02 — current mainline implementation queue
+
+All 58 individual work orders were re-read. BPE-010 rev5 (strict predecessor), BPE-024 (served UI truth), BPE-025 (failed objective status) and new BPE-026 (reject extra uncommitted receipt records) are the **four** prepared source-code scripts; none has local `git apply --check`, shell syntax, host-guarded tests or Ground evidenced. The 58 MEP scripts remain conditional gates, not implementations. DT main HEAD `17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2`, ACTIVE_MISSION blob `c61b9be0780222d13dd2420b44f2fd68422c33e3`. BPE-002 remains superseded.

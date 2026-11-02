@@ -1,6 +1,6 @@
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `b662dc374850622da37d7572c5eb0c648b7ffb6f`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `c61b9be0780222d13dd2420b44f2fd68422c33e3`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
@@ -207,3 +207,11 @@ ACTIVE_MISSION blob `5c4644de375d708e4c05067849d0574f3740fdda` was re-enumerated
 ## Executable mission-unit coverage
 
 All 58 atomic units in the current 22 open mission steps have separate guarded scripts at `patch_management/atomic_patches/MEP-*.sh`, linked in `MISSION_ATOMIC_QUEUE.json`. These are conditional read-only gate and acceptance packages, NOT implemented source-code fixes and do not count as Ground. Three actual code-diff patches remain prepared and untested in `patches/`: BPE-010 (7.9.2), BPE-024 (4.2.2.2), BPE-025 (3.4.2). DT execution branch is now `main`; the former feature branch is gone. BPE-002 has been superseded and removed. The Patch Engineer must continue replacing qualifying gate packages with real source-grounded diffs as prerequisites are satisfied.
+
+## 2026-11-02 — hourly patch reconciliation (DT main)
+
+- Inspected authoritative ACTIVE_MISSION blob `c61b9be0780222d13dd2420b44f2fd68422c33e3`, COMPLETED, all 22 numbered open steps (including 4.2.2.2/4.2.2.3), all 58 individual work orders and 58 guarded MEP packages; **22/22 steps mapped, 58/58 planned units, 4 actual pending source-diff scripts**. Gate scripts are not code implementations.
+- DT `main` at `17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2` (sole current branch); private worktree **UNKNOWN**. Previously integrated BPE-001/003–007/011–014 remain retired and are not eligible; BPE-002 remains SUPERSEDED and absent. No new DT commits or local tests observed.
+- **7.9.2:** BPE-010 rev5 targets strict adjacent predecessor links; BPE-026 rev1 independently rejects uncommitted extra receipts even when all sealed claims pass and the receipt chain is valid. Both match current committed `receipts.py` blob `bc39080efa674bb41f1b8f738130ee90ada9db6a` at distinct nonoverlapping hunks. Positive/negative tests are embedded but **UNRUN**; local worktree `git apply --check`, bash syntax and guarded tests are unverified. BPE-026 is a distinct uncovered case from BPE-006's *unknown committed claim* coverage test.
+- **4.2.2.2** BPE-024 and **3.4.2** BPE-025 remain prepared, not tested; no production deployment, owner authorization, natural-cycle recovery, source-qualified Scout knowledge or independent Ground is inferred. All other mission units retain their precise authority/observation/dependency gates.
+- Conditional next code candidate: **BPE-010**, followed by independent BPE-026, BPE-024 and BPE-025 subject to local source/dirty-overlap checks and guarded acceptance. No `APPLY_READY` status is asserted.

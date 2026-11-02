@@ -10,17 +10,17 @@
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
     "verification": "local execution and independent evidence required",
     "public_repo": true,
-    "local_selection": "Check actual DT HEAD and git status --porcelain for target paths BEFORE choosing or executing an .sh. Separate committed source drift from uncommitted changes, and check whether idea is already implemented. Try git apply --check on actual worktree; if hunks compatible, apply preserving independent changes, then guarded tests. If overlap, do not overwrite or reset; Clai should inspect source/test and minimally integrate the precise behavior, or report exact conflict. Never interpret a local dirty path as proof of remote stale source. Do not select conflicting alternatives (002 versus 010).",
+    "local_selection": "Only existing .sh with matching INDEX and unimplemented objective, actual DT main source-compatible context, satisfied dependencies and no unresolved overlap; execute local git apply --check and guarded tests before any DT commit. A committed blob mismatch alone is not a local worktree conflict. No auto selection of retired 002 or implemented 001/003–007/011–014.",
     "one_patch_per_file": true,
     "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
-    "executor_branch_reference": "feature/alphacode-provider",
+    "executor_branch_reference": "main",
     "public_source_disclosure": "DT code diff patches are allowed in designated public patches directory; do not publish credentials, protected runtime state, or confidential third-party data.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+    "latest_executor_head_inspected": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
-    "next_patch": "Do not auto-choose 002 or 010 until conflict resolved and 010 exact source is validated. New code patches 024 and 025 remain prepared; ensure source compatibility before executing.",
+    "next_patch": "BPE-20261101-010 rev5: first conditional candidate, requires local git apply --check and guarded tests; BPE-026 independently eligible on nonoverlapping hunk, then BPE-024/025.",
     "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update.",
     "retirement_contract": "Code patches implemented and pushed on DT feature branch are removed from public active patch directory, but retained in index/historical commits/results. Status APPLIED_UNVERIFIED must not be misread as whole-mission Ground or DT/main integration.",
     "active_patch_selector": "Only select actual implementation .sh files in doubletake_evolution/patches; 010,024,025 currently prepared and tests not executed. Never select superseded 002 or atomic conditional files in implementation mode.",
@@ -292,7 +292,7 @@
       "file": "BPE-20261101-010.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
-      "patch_revision": 4,
+      "patch_revision": 5,
       "status": "PREPARED_UNTESTED",
       "target_branch": "main",
       "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
@@ -320,11 +320,12 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false,
-        "local_worktree": "UNKNOWN"
+        "local_worktree": "UNKNOWN",
+        "source_rechecked_at_head": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2"
       },
-      "patch_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
-      "script_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
-      "revision_reason": "Rebased to DT main after feature branch merge/deletion; old 002 removed.",
+      "patch_blob_sha": "2dc131d886e907ec85268448f18dac92ba4d7d86",
+      "script_blob_sha": "2dc131d886e907ec85268448f18dac92ba4d7d86",
+      "revision_reason": "Rev5 script metadata synchronized with DT/main strict adjacency diff; actual source hunk unique; no local tests.",
       "conflicts_with": [],
       "auto_selectable": true,
       "rebase_required": false,
@@ -990,6 +991,53 @@
       },
       "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
       "source_basis": "Verified DT main code matches source blob(s) used for patch"
+    },
+    {
+      "id": "BPE-20261101-026",
+      "mission_ref": "DT-EVO-007 / 7.9.2",
+      "summary": "Reject uncommitted extra receipts from a sealed claim proof even if chain is valid",
+      "file": "BPE-20261101-026.sh",
+      "file_present": true,
+      "code_patch": true,
+      "type": "SOURCE_DIFF_IMPLEMENTATION",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 4,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "main",
+      "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "bc39080efa674bb41f1b8f738130ee90ada9db6a"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/receipts.py",
+        "tools/doubletake_evolve/claim_receipt/test_uncommitted_receipt_universe.py"
+      ],
+      "depends_on": [],
+      "related_nonoverlapping_patches": [
+        "BPE-20261101-010"
+      ],
+      "auto_selectable": true,
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; source hunk matches main; not APPLY_READY",
+      "source_basis": "Verified DT main source and independent new regression: extra validly linked receipt previously permits aggregate success",
+      "validation": {
+        "remote_source_hunk_unique": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN",
+        "new_test_lines": 47
+      },
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_SECRETS_OR_PROTECTED_RUNTIME_DATA_IN_SCRIPT",
+      "script_blob_sha": "92d319d7d037ec39a99cf2f75c4d7b0ae2fc05b0",
+      "patch_blob_sha": "92d319d7d037ec39a99cf2f75c4d7b0ae2fc05b0",
+      "independent_goal": "All supplied receipts must be within the sealed committed universe before aggregate all_pass"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1018,42 +1066,40 @@
   ],
   "last_run": {
     "date_utc": "2026-11-02",
-    "executor_branch": "feature/alphacode-provider",
-    "executor_head_inspected": "03d09b55f0c37966144f425661f39313ce0f2830",
-    "public_mission_blob": "5c4644de375d708e4c05067849d0574f3740fdda",
+    "executor_branch": "main",
+    "executor_head_inspected": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
+    "public_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3",
     "open_mission_steps_mapped": 22,
-    "retired_scripts": [
-      "001",
-      "011",
-      "012",
-      "013",
-      "014"
-    ],
-    "relocated_diagnostics": [
-      "008",
-      "009",
-      "015",
-      "016",
-      "017",
-      "018",
-      "019",
-      "022",
-      "023"
+    "atomic_work_orders_reviewed": 58,
+    "atomic_gate_scripts_count": 58,
+    "source_patch_scripts_count": 4,
+    "new_scripts": [
+      "BPE-20261101-026"
     ],
     "revised_scripts": [
-      "010"
+      "BPE-20261101-010"
     ],
-    "new_scripts": 0,
+    "retired_scripts": [],
     "independent_tests_rerun": 0,
     "local_worktree": "UNKNOWN",
     "next_conditional_patch": "BPE-20261101-010",
-    "mission_recheck": "22/22 current open steps mapped; no new closure"
+    "publication_commits": [
+      "8ca53ea9f3db6ddf01a65435c89ff29b70b9611b",
+      "c313d0bc432fc980a51a3d90a1cc00cc8598b500"
+    ],
+    "static_hunks_checked": [
+      "010",
+      "024",
+      "025",
+      "026"
+    ],
+    "no_runtime_ground_claimed": true
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "b662dc374850622da37d7572c5eb0c648b7ffb6f",
+  "latest_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3",
   "last_manual_patch_publication": {
     "new_code_scripts": [
       "BPE-20261101-001",
@@ -1104,9 +1150,9 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 3,
+    "source_code_patch_scripts_current": 4,
     "all_source_implementation_complete": false,
-    "notes": "Work orders do not prove implementation. Production/authority gates and live Ground cannot be replaced by scripts.",
-    "last_reconciled_mission_blob": "b662dc374850622da37d7572c5eb0c648b7ffb6f"
+    "notes": "58 work orders/gates do not equal source changes. Four independent code scripts are remote-context-checked but local apply and tests remain unverified.",
+    "last_reconciled_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3"
   }
 }

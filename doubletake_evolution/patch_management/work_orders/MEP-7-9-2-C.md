@@ -20,3 +20,7 @@
 5. Acceptance receipt must record checked DT revision and tested files, exact positive/negative assertions, invocation and PASS/FAIL/NOT_RUN, source changes or absence thereof, independent Ground versus fixture-only, rollback, affected and unaffected work, safety authority and next blocker. **Status VERIFIED only for this unit with that evidence.**
 
 **Definition of Done for this work order:** the atomic outcome above is proved against the parent's full acceptance contract, or explicitly remains OPEN with a concrete external prerequisite. A created script or green component test alone is not mission closure.
+
+## 2026-11-02 source reconciliation
+
+Independent positive and negative tests are prepared but UNRUN: BPE-010 rejects second anchor, unknown/distant predecessor and skipped middle while retaining ordered valid chains; BPE-026 rejects extra validly chained uncommitted receipts while retaining valid exact and empty proofs. Confirm actual local apply, focused host-guarded tests and regression/consumer behavior before recording any acceptance. No independent runtime Ground or owner authorization is inferred.

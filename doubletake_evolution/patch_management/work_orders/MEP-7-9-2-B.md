@@ -20,3 +20,7 @@
 5. Acceptance receipt must record checked DT revision and tested files, exact positive/negative assertions, invocation and PASS/FAIL/NOT_RUN, source changes or absence thereof, independent Ground versus fixture-only, rollback, affected and unaffected work, safety authority and next blocker. **Status VERIFIED only for this unit with that evidence.**
 
 **Definition of Done for this work order:** the atomic outcome above is proved against the parent's full acceptance contract, or explicitly remains OPEN with a concrete external prerequisite. A created script or green component test alone is not mission closure.
+
+## 2026-11-02 source reconciliation
+
+Use BPE-010 rev5 only for strict immediate predecessor; do not resurrect BPE-002 or repeat already integrated BPE-013 aggregate chain gating. BPE-026 separately rejects extra uncommitted receipts. Both scripts target DT main `17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2`, `receipts.py` blob `bc39080efa674bb41f1b8f738130ee90ada9db6a`, with nonoverlapping hunks and mandatory local apply-check. No local tests or commits evidenced; remain PREPARED_UNTESTED.
