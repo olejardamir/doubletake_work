@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "patch_id": "BPE-20261101-002",
+  "reported_attempt": {
+    "outcome": "BLOCKED",
+    "source": "user-provided local Clai report",
+    "message": "receipts.py/test_claim_receipt.py hashes differ in local checkout; local code changes conflict with patch BPE-002; no application",
+    "test_execution_reported": false,
+    "local_branch": "not independently confirmed",
+    "local_dirty_diff": "not available",
+    "local_commit_sha": "not reported"
+  },
+  "independent_github_inspection": {
+    "repository": "olejardamir/DT",
+    "branch": "feature/alphacode-provider",
+    "head_at_inspection": "0f62b51528d11ae9c74f90fe901aaea7499628ef",
+    "committed_source_blobs": {
+      "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0",
+      "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py": "0cbf09e728f483788d63c5b016cdd4df3d728c6e"
+    },
+    "committed_baseline_matches_bpe002": true,
+    "claimed_behavior_missing_in_committed_code": [
+      "strict adjacent predecessor requirement",
+      "recomputation of supplied receipt SHA",
+      "overall all_pass gated on chain.chain_valid"
+    ]
+  },
+  "diagnosis": "Local worktree drift or different local branch is reported, but not independently inspectable. Prior BPE-002 rev1 preflight was overly strict: it rejected any dirty target file even if actual patch context remained compatible. No evidence BPE-003–007 already implemented the BPE-002 contract on this GitHub branch.",
+  "remediation": {
+    "script_revision": 2,
+    "script_path": "doubletake_evolution/patches/BPE-20261101-002.sh",
+    "script_published": true,
+    "policy": "run git apply --check on actual worktree; accept compatible nonoverlapping edits; if overlap, stop without overwrite and integrate precise missing contract into existing code after inspection; never force/reset/auto-stage unrelated edits",
+    "verification": "PREPARED_UNTESTED_NOT_LOCAL_RETRIED"
+  },
+  "status": "LOCAL_BLOCK_REPORTED_REVISED_SCRIPT_AVAILABLE"
+}
