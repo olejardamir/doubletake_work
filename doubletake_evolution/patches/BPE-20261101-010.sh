@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # BPE-20261101-010 — Require contiguous ordered receipt links and chain validity for overall success
 # Mission: DT-EVO-007 / 7.9 evidence-trust extension; NOT completion of distinct 7.9.2 proof-chain package.
-# Executor branch: feature/alphacode-provider; source snapshot: 9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb
-# Source blob: tools/doubletake_evolve/claim_receipt/receipts.py 5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0
-# Revision: 2; status PREPARED_UNTESTED. Source implementation unchanged; added skipped-predecessor and ordering regressions. No local execution or tests claimed.
+# Executor branch: feature/alphacode-provider; source snapshot: 03d09b55f0c37966144f425661f39313ce0f2830
+# Source blob: tools/doubletake_evolve/claim_receipt/receipts.py bc39080efa674bb41f1b8f738130ee90ada9db6a
+# Revision: 3; PREPARED_UNTESTED / LOCAL_APPLY_UNVERIFIED; rebased after BPE-013 already integrated all_pass gate. Only strict adjacency remains.
 # DoD positive: one/two correctly linked receipts remain valid and all_pass
 # DoD negative: two anchors, unknown predecessor, disconnected singleton, and skipped-middle receipt are rejected even when per-claim evidence matches
 # DoD regression: new focused tests and existing test_claim_receipt.py pass under host guard; git diff --check passes.
 # DoD evidence: local executor records actual source/branch, tests and DT commit separately from public feedback.
-# STOP if branch/source differs, touched path dirty, target test exists, apply-check or tests fail. Never auto-commit/push.
+# STOP if committed source differs, target test exists, apply-check or tests fail. Preserve prior edits; never stage/commit/push.
 set -euo pipefail
 DT_ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || { echo "STOP_NOT_DT_CHECKOUT" >&2; exit 20; }
 cd "$DT_ROOT"
@@ -17,9 +17,9 @@ cd "$DT_ROOT"
 printf 'PATCH_ID=BPE-20261101-010\nDT_HEAD=%s\n' "$(git rev-parse HEAD)"
 [[ -f "tools/doubletake_evolve/claim_receipt/receipts.py" ]] || { echo "STOP_MISSING_SOURCE" >&2; exit 22; }
 if ! git diff --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py" || ! git diff --cached --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py"; then
-  echo "STOP_DIRTY_TARGET_SOURCE" >&2; exit 23
+  echo "NOTICE_LOCAL_EDITS: actual overlap determined by git apply --check; preserve prior edits" >&2
 fi
-[[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/receipts.py")" == "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0" ]] || { echo "STOP_STALE_SOURCE_BLOB" >&2; exit 24; }
+[[ "$(git rev-parse "HEAD:tools/doubletake_evolve/claim_receipt/receipts.py")" == "bc39080efa674bb41f1b8f738130ee90ada9db6a" ]] || { echo "STOP_STALE_SOURCE_BLOB" >&2; exit 24; }
 [[ ! -e "tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py" && ! -L "tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py" ]] || { echo "STOP_TEST_ALREADY_EXISTS_OR_PATCH_APPLIED" >&2; exit 25; }
 PATCH_TEXT="$(cat <<'BPE_DIFF_010_END'
 diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletake_evolve/claim_receipt/receipts.py
@@ -59,15 +59,6 @@ diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletak
      chain_digest = sha256_text("|".join(chain_digests))
  
      return ReceiptChain(
-@@ -201,7 +196,7 @@
-     n = len(verdicts)
-     n_pass = sum(1 for v in verdicts if v.verdict == PASS)
-     sufficiency = n_pass / n if n else 1.0
--    all_pass = all(v.verdict == PASS for v in verdicts) and coverage.covered
-+    all_pass = all(v.verdict == PASS for v in verdicts) and coverage.covered and chain.chain_valid
- 
-     return ReceiptVerification(
-         spec_digest=spec.spec_digest,
 diff --git a/tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py b/tools/doubletake_evolve/claim_receipt/test_chain_continuity_gate.py
 new file mode 100644
 --- /dev/null

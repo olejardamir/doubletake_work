@@ -60,7 +60,11 @@
         "logs_independently_observed": false
       },
       "retirement_eligible": true,
-      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select.",
+      "file_present": false,
+      "historical_file": "BPE-20261101-001.sh",
+      "script_retired_at": "2026-11-02",
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
     },
     {
       "id": "BPE-20261101-003",
@@ -111,7 +115,7 @@
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Require canonical ordered receipt predecessor chain, recomputed receipt digest and invalid-chain aggregate failure",
       "file": "BPE-20261101-002.sh",
-      "status": "BLOCKED_SUPERSEDED_PENDING_CANONICAL_PATCH",
+      "status": "BLOCKED_CONFLICT",
       "priority": 2,
       "patch_revision": 2,
       "target_branch": "feature/alphacode-provider",
@@ -148,7 +152,7 @@
       "apply_compatibility": "rev2: compare committed blobs for provenance; use git apply --check on actual worktree, tolerate non-overlap, fail closed on overlap. On conflict, inspect and adapt precisely without discarding prior changes.",
       "revision_reason": "Learn from local Clai conflict: removed blanket dirty worktree rejection but retained patch-context check and tests.",
       "auto_selectable": false,
-      "overlap_resolution": "Digest verified by integrated 011, aggregate all_pass gated by 013; strict adjacent chain link remains missing, assign only to 010."
+      "overlap_resolution": "BPE-010 rev3 sole strict-predecessor candidate; BPE-011/013 already handle digest/aggregate gating. Keep 002 blocked pending 010 integration and mapping-key negative verification."
     },
     {
       "id": "BPE-20261101-004",
@@ -249,12 +253,12 @@
       "file": "BPE-20261101-010.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
-      "patch_revision": 2,
-      "status": "BLOCKED_STALE_SOURCE",
+      "patch_revision": 3,
+      "status": "PREPARED_UNTESTED",
       "target_branch": "feature/alphacode-provider",
-      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_revision": "03d09b55f0c37966144f425661f39313ce0f2830",
       "source_blob_shas": {
-        "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0"
+        "tools/doubletake_evolve/claim_receipt/receipts.py": "bc39080efa674bb41f1b8f738130ee90ada9db6a"
       },
       "touched_paths": [
         "tools/doubletake_evolve/claim_receipt/receipts.py",
@@ -267,24 +271,27 @@
         "ground_verified": false
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
-      "last_error": "Original script includes all_pass hunk already implemented by 013; rebase strict-link change against actual feature HEAD, then validate before marking eligible.",
+      "last_error": null,
       "validation": {
-        "exact_source_blob_inspected": true,
-        "old_hunks_matched_uniquely": true,
-        "all_diff_hunk_counts_validated": true,
-        "embedded_new_test_lines": 93,
+        "remote_source_hunk_unique": true,
+        "old_hunk_lines": 22,
+        "new_hunk_lines": 17,
+        "new_test_lines": 93,
+        "unified_hunk_counts_validated": true,
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
-        "host_tests_executed": false
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN"
       },
       "patch_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
       "script_blob_sha": "fae3997f3eea77a617aa0e6fa466b0b7deb44337",
-      "revision_reason": "Added discriminating three-receipt skipped-predecessor negative and reversed mapping order positive; same implementation hunk and source binding.",
+      "revision_reason": "Removed redundant all_pass hunk integrated by 013; kept strict adjacency and full negative test file; allow compatible dirty worktree only after git apply --check",
       "conflicts_with": [
         "BPE-20261101-002"
       ],
-      "auto_selectable": false,
-      "rebase_required": true
+      "auto_selectable": true,
+      "rebase_required": false,
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY"
     },
     {
       "id": "BPE-20261101-006",
@@ -376,7 +383,11 @@
         "logs_independently_observed": false
       },
       "retirement_eligible": true,
-      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select.",
+      "file_present": false,
+      "historical_file": "BPE-20261101-011.sh",
+      "script_retired_at": "2026-11-02",
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
     },
     {
       "id": "BPE-20261101-007",
@@ -467,7 +478,11 @@
         "logs_independently_observed": false
       },
       "retirement_eligible": true,
-      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select.",
+      "file_present": false,
+      "historical_file": "BPE-20261101-012.sh",
+      "script_retired_at": "2026-11-02",
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
     },
     {
       "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
@@ -517,7 +532,11 @@
         "logs_independently_observed": false
       },
       "retirement_eligible": true,
-      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select.",
+      "file_present": false,
+      "historical_file": "BPE-20261101-013.sh",
+      "script_retired_at": "2026-11-02",
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
     },
     {
       "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
@@ -567,13 +586,17 @@
         "logs_independently_observed": false
       },
       "retirement_eligible": true,
-      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select.",
+      "file_present": false,
+      "historical_file": "BPE-20261101-014.sh",
+      "script_retired_at": "2026-11-02",
+      "script_retired_reason": "Confirmed feature-branch implementation commit in current HEAD ancestry; tests only reported, no Ground"
     },
     {
       "id": "BPE-20261101-008",
       "mission_ref": "DT-EVO-007 / 7.8.1",
       "summary": "Read-only source census for actual mission-consumer and A/B receipt proof",
-      "file": "BPE-20261101-008.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-008.sh",
       "type": "READ_ONLY_DIAGNOSTIC",
       "status": "DIAGNOSTIC_REPORTED",
       "priority": 20,
@@ -587,13 +610,17 @@
       },
       "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics.",
       "auto_selectable": false,
-      "verified_tests": "Reported by user, no logs or result JSON on public repository"
+      "verified_tests": "Reported by user, no logs or result JSON on public repository",
+      "file_present": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-008.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-009",
       "mission_ref": "DT-EVO-007 / 7.7.1",
       "summary": "Guarded temporary-fixture cartography integrity baseline before replay applicability decision",
-      "file": "BPE-20261101-009.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-009.sh",
       "type": "READ_ONLY_DIAGNOSTIC",
       "status": "DIAGNOSTIC_REPORTED",
       "priority": 21,
@@ -607,13 +634,17 @@
       },
       "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics.",
       "auto_selectable": false,
-      "verified_tests": "Reported by user, no logs or result JSON on public repository"
+      "verified_tests": "Reported by user, no logs or result JSON on public repository",
+      "file_present": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-009.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-015",
       "mission_ref": "DT-EVO-002 / 2.2.2",
       "summary": "Repair caller/grant boundary",
-      "file": "BPE-20261101-015.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-015.sh",
       "status": "DIAGNOSTIC_REPORTED",
       "type": "ISOLATED_DIAGNOSTIC",
       "code_patch": false,
@@ -631,13 +662,17 @@
       ],
       "caveat": "Current isolated fixtures only; no actual production completion or code implementation.",
       "auto_selectable": false,
-      "verified_tests": "Reported by user, no logs or result JSON on public repository"
+      "verified_tests": "Reported by user, no logs or result JSON on public repository",
+      "file_present": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-015.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-016",
       "mission_ref": "DT-EVO-002 / 2.2.3",
       "summary": "Denied/failed repair test baseline",
-      "file": "BPE-20261101-016.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-016.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "ISOLATED_DIAGNOSTIC",
       "code_patch": false,
@@ -653,13 +688,18 @@
         "tools/doubletake_evolve/tests/test_repair_is_cycle_scoped.py",
         "tools/doubletake_evolve/tests/test_repair_provider_failure_is_honest.py"
       ],
-      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation.",
+      "file_present": false,
+      "auto_selectable": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-016.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-017",
       "mission_ref": "DT-EVO-002 / 2.4.2",
       "summary": "Isolated repair fault-path baseline",
-      "file": "BPE-20261101-017.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-017.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "ISOLATED_DIAGNOSTIC",
       "code_patch": false,
@@ -675,13 +715,18 @@
         "tools/doubletake_evolve/tests/test_autonomous_repair.py",
         "tools/doubletake_evolve/tests/test_repair_is_bounded.py"
       ],
-      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation.",
+      "file_present": false,
+      "auto_selectable": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-017.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-018",
       "mission_ref": "DT-EVO-002 / 2.4.3",
       "summary": "Bounded repair retry baseline",
-      "file": "BPE-20261101-018.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-018.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "ISOLATED_DIAGNOSTIC",
       "code_patch": false,
@@ -697,13 +742,18 @@
         "tools/doubletake_evolve/tests/test_repair_budget_exhaustion_reports_counts.py",
         "tools/doubletake_evolve/tests/test_repair_is_cycle_scoped.py"
       ],
-      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation.",
+      "file_present": false,
+      "auto_selectable": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-018.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-019",
       "mission_ref": "DT-EVO-003 / 3.4.2",
       "summary": "Status and cycle-boundary baseline",
-      "file": "BPE-20261101-019.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-019.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "ISOLATED_DIAGNOSTIC",
       "code_patch": false,
@@ -719,13 +769,18 @@
         "tools/doubletake_evolve/mission_management/tests/test_status_view.py",
         "tools/doubletake_evolve/tests/test_cycle_summary_boundary.py"
       ],
-      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation.",
+      "file_present": false,
+      "auto_selectable": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-019.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-022",
       "mission_ref": "DT-EVO-007 / 7.3.1",
       "summary": "Knowledge intake and quarantine baseline",
-      "file": "BPE-20261101-022.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-022.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "READ_ONLY_DIAGNOSTIC",
       "code_patch": false,
@@ -741,14 +796,18 @@
         "tools/doubletake_evolve/collective_core/test_knowledge_quarantine_contract.py"
       ],
       "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent.",
-      "file_present": true,
-      "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed."
+      "file_present": false,
+      "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed.",
+      "auto_selectable": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-022.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-023",
       "mission_ref": "DT-EVO-007 / 7.5.2",
       "summary": "Governed intake source-generality baseline",
-      "file": "BPE-20261101-023.sh",
+      "file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-023.sh",
       "status": "DIAGNOSTIC_READY",
       "type": "READ_ONLY_DIAGNOSTIC",
       "code_patch": false,
@@ -764,8 +823,12 @@
         "tools/doubletake_evolve/governed_knowledge/test_source_generality_intake.py"
       ],
       "caveat": "Existing fixture baseline only; source qualification and positive end-to-end Ground absent.",
-      "file_present": true,
-      "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed."
+      "file_present": false,
+      "index_repair_note": "Corrected non-canonical ID filename padding to match actual GitHub file; no patch contents changed.",
+      "auto_selectable": false,
+      "artifact_type": "READ_ONLY_DIAGNOSTIC",
+      "diagnostic_file": "doubletake_evolution/patch_management/diagnostics/BPE-20261101-023.sh",
+      "relocation_reason": "Moved out of code-bearing implementation-only patch queue"
     },
     {
       "id": "BPE-20261101-024",
@@ -778,7 +841,7 @@
       "priority": 25,
       "patch_revision": 1,
       "target_branch": "feature/alphacode-provider",
-      "source_revision": "008a0bc94f581cdd97b6e60dfb48abb4a8173952",
+      "source_revision": "03d09b55f0c37966144f425661f39313ce0f2830",
       "source_blob_shas": {
         "tools/doubletake_evolve/api/health.py": "cf6249355a6990648c23d297c46b92ff9eea69f3",
         "tools/doubletake_evolve/tests/test_w10_ui_build_identity.py": "785660f7586faa0eeb697398da41a67e1a8e848e"
@@ -793,7 +856,17 @@
         "tested": false,
         "ground_verified": false
       },
-      "limitation": "No production deployment or actual served-bundle acceptance."
+      "limitation": "No production deployment or actual served-bundle acceptance.",
+      "auto_selectable": true,
+      "validation": {
+        "remote_hunks_match_uniquely": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN"
+      },
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY"
     },
     {
       "id": "BPE-20261101-025",
@@ -806,7 +879,7 @@
       "priority": 26,
       "patch_revision": 1,
       "target_branch": "feature/alphacode-provider",
-      "source_revision": "008a0bc94f581cdd97b6e60dfb48abb4a8173952",
+      "source_revision": "03d09b55f0c37966144f425661f39313ce0f2830",
       "source_blob_shas": {
         "tools/doubletake_evolve/mission_management/status.py": "9a0878c0cb6c755eef30807f100c9ae30026ff2c",
         "tools/doubletake_evolve/mission_management/tests/test_status_view.py": "b0745267d9b83c613930d9720234f84906bb125c"
@@ -821,7 +894,17 @@
         "tested": false,
         "ground_verified": false
       },
-      "limitation": "No final mission closure or autonomous recovery claimed."
+      "limitation": "No final mission closure or autonomous recovery claimed.",
+      "auto_selectable": true,
+      "validation": {
+        "remote_hunks_match_uniquely": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN"
+      },
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -849,26 +932,42 @@
     }
   ],
   "last_run": {
-    "date_utc": "2026-11-01",
+    "date_utc": "2026-11-02",
     "executor_branch": "feature/alphacode-provider",
-    "executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-    "public_mission_blob": "32d5e090376cd4560ba4cd91bf4376e1a9aea13c",
+    "executor_head_inspected": "03d09b55f0c37966144f425661f39313ce0f2830",
+    "public_mission_blob": "25bde73b5cae83fe4c769b577558a56b7492e5b8",
     "open_mission_steps_mapped": 22,
-    "existing_patches_reconciled": 10,
-    "existing_source_integrations_observed": 5,
+    "retired_scripts": [
+      "001",
+      "011",
+      "012",
+      "013",
+      "014"
+    ],
+    "relocated_diagnostics": [
+      "008",
+      "009",
+      "015",
+      "016",
+      "017",
+      "018",
+      "019",
+      "022",
+      "023"
+    ],
+    "revised_scripts": [
+      "010"
+    ],
+    "new_scripts": 0,
     "independent_tests_rerun": 0,
-    "new_patches": 2,
-    "revised_patches": 1,
-    "verified_patches": 0,
-    "reported_feature_branch_integrations": 5,
-    "source_hunk_checks": "BPE-010 rev2: 2 existing hunks + 93-line test; BPE-011/012: current-source hunks; BPE-013/014: dependency-derived source blobs and exact old hunk contexts checked; no actual git apply --check",
-    "notes": "Two new source-specific evidence-identity patches 013/014 published; 010 strengthened with skipped-middle-receipt negative and input-order positive. All three remain PREPARED_UNTESTED. Feature branch unchanged; no new local result JSON. Owner-authorized publication, not runtime authority."
+    "local_worktree": "UNKNOWN",
+    "next_conditional_patch": "BPE-20261101-010"
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "32d5e090376cd4560ba4cd91bf4376e1a9aea13c",
+  "latest_mission_blob": "25bde73b5cae83fe4c769b577558a56b7492e5b8",
   "last_manual_patch_publication": {
     "new_code_scripts": [
       "BPE-20261101-001",

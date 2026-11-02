@@ -1,0 +1,13 @@
+{
+  "patch_id": "BPE-20261101-001",
+  "branch": "feature/alphacode-provider",
+  "dt_commit_sha": "552457195c7780ed800ae63b052dc47c84fdd010",
+  "dt_head_observed": "03d09b55f0c37966144f425661f39313ce0f2830",
+  "source_commit_in_ancestry": true,
+  "guarded_tests_reported_passed": 41,
+  "independent_tests_rerun": false,
+  "test_logs_available": false,
+  "ground_verified": false,
+  "evidence": "GitHub commit inspected; test count user-relayed from Clai; no private logs",
+  "remaining": "use-time race-negative"
+}
