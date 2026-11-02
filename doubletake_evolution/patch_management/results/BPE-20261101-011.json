@@ -1,0 +1,16 @@
+{
+  "patch_id": "BPE-20261101-011",
+  "status": "APPLIED_UNVERIFIED",
+  "source_repository": "olejardamir/DT",
+  "branch": "feature/alphacode-provider",
+  "commit_sha": "62c255c8010fd7514eb6b6b76f35b3ee1296b493",
+  "commit_verified_on_branch": true,
+  "local_executor_report": {
+    "applied": true,
+    "verified": true,
+    "tests": "25 passed in 0.14s",
+    "raw_test_log_independently_read": false
+  },
+  "ground_verified": false,
+  "note": "DT private GitHub patch_results reported success; implementation commit verified as ancestor of current branch; independent test logs and full mission Ground not available."
+}
