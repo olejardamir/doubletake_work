@@ -1,5 +1,7 @@
 # Agent_X Final Semantic-First Gap Closure Prompt
 
+> **Historical canonical lineage (2026-11-02 Scout):** This 79-section current-main audit supersedes the 73-section earlier snapshot `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` (blob `8e8944909cd8b49d7575c16078ba22748fdc3c8a`, historical audited main `3485e010f1712a6bcd8fa603077a314ebd179ad4`). Every other nontrivial line from that earlier version is retained verbatim in this newer source; the earlier blob is recoverable from Git history. These are historical test requirements, not proof of present DT behavior or an implementation mandate.
+
 You are working on the current Agent_X `main`.
 
 At the time this prompt was written, the latest independently audited `main` was:
