@@ -18,6 +18,6 @@
 
 ## Run counts and blocked work
 
-- Current recursive census: **364 scrapyard blobs** = 323 root files (including INVENTORY), 28 incoming, 13 clustered; 363 artifacts excluding inventory. Previously reported first-pass cursor exhausted; deep dissection still pending.
+- Current recursive census after this delta commit: **365 scrapyard blobs** = 324 root files (including INVENTORY and this delta), 28 incoming, 13 clustered; 364 artifacts excluding INVENTORY. The pre-delta census was 364 blobs. Previously reported first-pass cursor exhausted; deep dissection still pending.
 - **2 complete source bodies read** (1 newly dissected and shortened; 1 verified previous reduction), 1 conditional handoff, 1 stale row reconciled in this delta, 0 deletions, 0 new clusters, 0 binary conversions, 0 independently verified natural cycles. Source byte reduction **2,353** before metadata growth.
 - **WRITE_BLOCKED:** in-place `INVENTORY.md` update; do not claim it was committed. No deletion candidate qualified by fresh SHA and dependency checks. Existing historical D01 cleanup remains documented in main inventory. Do not edit ACTIVE_MISSION/WORKER_PROMPT/private DT from this Scout.
