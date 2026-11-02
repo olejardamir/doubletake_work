@@ -1,6 +1,6 @@
 # Mission step → patch coverage
 
-Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `32d5e090376cd4560ba4cd91bf4376e1a9aea13c`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
+Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `25bde73b5cae83fe4c769b577558a56b7492e5b8`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
 
 | Task | Open step | Exact intended outcome | Initial status | Associated patch ID(s) |
 |---|---|---|---|---|
@@ -24,8 +24,8 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `32d5e090376cd
 | DT-EVO-007 | 7.8.1 | OUTWARD: map the actual existing consumer and test revision-bound acknowledgement | DIAGNOSTIC_READY (not implementation) | BPE-20261101-008 |
 | DT-EVO-007 | 7.8.2 | INWARD, only if 7.8.1 proves an actionable owner gap | DEPENDENCY_PENDING | — |
 | DT-EVO-007 | 7.8.3 | GROUND: independently verify the full downstream effect and return feedback to the Scouts | DEPENDENCY_PENDING | — |
-| DT-EVO-007 | 7.9.1 | OUTWARD→INWARD→GROUND: contain reserved mission proof artifacts | IMPLEMENTATION_PATCH_PREPARED_UNTESTED | BPE-20261101-001 (private rev2; source/test blobs match executor branch; 6/6 source hunks match; public BPE-20261101-001.sh now published; not yet executed) |
-| DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | IMPLEMENTATION_PARTIAL_FEATURE_BRANCH; NEW_CANONICAL_PATCH_PREPARED_UNTESTED | BPE-20261101-002.sh published, PREPARED_UNTESTED (alternative to BPE-010); BPE-20261101-003–004 applied on feature branch; BPE-20261101-005–007 also integrated on feature branch (source/test commits inspected; test counts reported); supporting PREPARED_UNTESTED BPE-010 rev2, 011, 012, 013 (depends on 011), 014 (depends on 012). None closes canonical 7.9.2 contract |
+| DT-EVO-007 | 7.9.1 | OUTWARD→INWARD→GROUND: contain reserved mission proof artifacts | IMPLEMENTATION_COMMITTED_FEATURE_BRANCH; FULL_GROUND_OPEN | BPE-001 commit 552457195c7780ed800ae63b052dc47c84fdd010 (41 tests reported); full 7.9.1 Ground remains OPEN |
+| DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | PARTIAL_IMPLEMENTATION; CANONICAL_CHAIN_BLOCKED | BPE-003–007 and 011–014 commits confirmed; BPE-002 overlaps/blocked, BPE-010 stale and blocked pending rebase, strict adjacent predecessor remains missing; Ground OPEN |
 
 **Snapshot coverage:** 22 numbered open steps across 6 task areas. `SOURCE_REVIEW_REQUIRED` means no valid patch or blocker has yet been established. A mapped patch is NOT a completed mission step. Conditional or owner-authority-blocked steps must not be implemented without legitimate authorization. A verification-only step needs real test/observation evidence, not a fabricated source diff.
 
@@ -179,3 +179,7 @@ These two code patches are preparation, not execution or Ground. No authority-bl
 
 - BPE-20261101-024 → 4.2.2.2: Prevent unmounted UI build from claiming it is production-served. No production deployment or actual served-bundle acceptance. Actual tests pending.
 - BPE-20261101-025 → 3.4.2: Prioritize actual failed objective over unrelated authority request in campaign status. No final mission closure or autonomous recovery claimed. Actual tests pending.
+
+## Latest local executor results — reconciliation
+
+Clai reports code patches 001, 003–007, 011–014 committed and pushed to DT `feature/alphacode-provider`; GitHub ancestry confirms 001 and 011–014 and earlier 003–007. The reported focused tests are not independently rerun. Patches 002 and 010 are conflicting and ineligible until consolidated and rebased. Diagnostics 008, 009 and 015 were reported successful without uploaded logs. Newly authored implementation patches 024 and 025 remain untested, and this map is not evidence that the whole mission is closed.
