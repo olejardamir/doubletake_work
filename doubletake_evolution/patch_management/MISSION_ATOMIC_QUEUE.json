@@ -1,0 +1,991 @@
+{
+  "schema_version": 1,
+  "description": "Full current mission atomic-unit execution ledger. This is NOT proof that patches exist or that units are implemented.",
+  "mission_source": "doubletake_evolution/ACTIVE_MISSION.md",
+  "mission_blob_sha": "25bde73b5cae83fe4c769b577558a56b7492e5b8",
+  "patch_directory": "doubletake_evolution/patches",
+  "patch_index": "doubletake_evolution/patch_management/PATCH_INDEX.json",
+  "counts": {
+    "numbered_open_steps": 22,
+    "atomic_units": 58,
+    "real_patches_published_for_subset": true
+  },
+  "rule": "Each feasible code unit needs an independently executable actual unified-diff source patch. Authority/runtime-gated units remain gated; do not generate fake implementation to fill a quota. Reconcile the entire ledger on every scheduled worker run.",
+  "units": [
+    {
+      "unit_id": "1.3.3-A",
+      "mission_step": "1.3.3",
+      "mission_task": "DT-EVO-001",
+      "objective": "Verify exact owner decision and permitted disposition (blocked).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "1.3.3-B",
+      "mission_step": "1.3.3",
+      "mission_task": "DT-EVO-001",
+      "objective": "If authorized, isolate and preserve original retained-history evidence (blocked).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "1.3.3-C",
+      "mission_step": "1.3.3",
+      "mission_task": "DT-EVO-001",
+      "objective": "After valid disposition, collect version-bound 60-minute multiple-natural-cycle Ground.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.2.2-A",
+      "mission_step": "2.2.2",
+      "mission_task": "DT-EVO-002",
+      "objective": "Map actual fault-to-repair caller against existing grants.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-015",
+          "file": "BPE-20261101-015.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.2.2-B",
+      "mission_step": "2.2.2",
+      "mission_task": "DT-EVO-002",
+      "objective": "Only with standing authority, implement minimal canonical caller wiring.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-015",
+          "file": "BPE-20261101-015.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.2.2-C",
+      "mission_step": "2.2.2",
+      "mission_task": "DT-EVO-002",
+      "objective": "Negative test: denied caller creates no effects.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-015",
+          "file": "BPE-20261101-015.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.2.3-A",
+      "mission_step": "2.2.3",
+      "mission_task": "DT-EVO-002",
+      "objective": "Authorized invocation and expected verified repair regression.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-016",
+          "file": "BPE-20261101-016.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.2.3-B",
+      "mission_step": "2.2.3",
+      "mission_task": "DT-EVO-002",
+      "objective": "Absent/invalid grant and incomplete evidence negative suite.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-016",
+          "file": "BPE-20261101-016.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.2.3-C",
+      "mission_step": "2.2.3",
+      "mission_task": "DT-EVO-002",
+      "objective": "Denied mutation, rollback and unrelated-work continuation suite.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-016",
+          "file": "BPE-20261101-016.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.4.2-A",
+      "mission_step": "2.4.2",
+      "mission_task": "DT-EVO-002",
+      "objective": "Reproduce existing isolated fault under permitted caller.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-017",
+          "file": "BPE-20261101-017.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.4.2-B",
+      "mission_step": "2.4.2",
+      "mission_task": "DT-EVO-002",
+      "objective": "Measure actual caller repair or refusal without unrelated effects.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-017",
+          "file": "BPE-20261101-017.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.4.3-A",
+      "mission_step": "2.4.3",
+      "mission_task": "DT-EVO-002",
+      "objective": "Capture durable outcome, bounded retries and effects/no-effects.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-018",
+          "file": "BPE-20261101-018.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "2.4.3-B",
+      "mission_step": "2.4.3",
+      "mission_task": "DT-EVO-002",
+      "objective": "Verify restart and unrelated work after actual caller invocation.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-018",
+          "file": "BPE-20261101-018.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.3.4-A",
+      "mission_step": "3.3.4",
+      "mission_task": "DT-EVO-003",
+      "objective": "Freeze comparable pre/post measurement and attribution (after 1.3.3).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.3.4-B",
+      "mission_step": "3.3.4",
+      "mission_task": "DT-EVO-003",
+      "objective": "Measure completed natural cycles with same workload/sampling.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.3.4-C",
+      "mission_step": "3.3.4",
+      "mission_task": "DT-EVO-003",
+      "objective": "Document uncertainty, effect size and regression checks.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.4.2-A",
+      "mission_step": "3.4.2",
+      "mission_task": "DT-EVO-003",
+      "objective": "Reconcile one status owner with verified and pending scope.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-019",
+          "file": "BPE-20261101-019.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        },
+        {
+          "id": "BPE-20261101-025",
+          "file": "BPE-20261101-025.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.4.2-B",
+      "mission_step": "3.4.2",
+      "mission_task": "DT-EVO-003",
+      "objective": "Publish one truthful final scope report without duplicate tracker.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-019",
+          "file": "BPE-20261101-019.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        },
+        {
+          "id": "BPE-20261101-025",
+          "file": "BPE-20261101-025.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.5.2-A",
+      "mission_step": "3.5.2",
+      "mission_task": "DT-EVO-003",
+      "objective": "Establish owner-approved conflict and acknowledgement contract (blocked).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.5.2-B",
+      "mission_step": "3.5.2",
+      "mission_task": "DT-EVO-003",
+      "objective": "Implement conditional serialized writer/merge through existing owner.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "3.5.2-C",
+      "mission_step": "3.5.2",
+      "mission_task": "DT-EVO-003",
+      "objective": "Test two writers, restart/crash, rejection-before-ACK, no lost records.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "4.2.2.2-A",
+      "mission_step": "4.2.2.2",
+      "mission_task": "DT-EVO-004",
+      "objective": "Compare staged revision to actual served asset and authority (blocked).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-024",
+          "file": "BPE-20261101-024.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "4.2.2.2-B",
+      "mission_step": "4.2.2.2",
+      "mission_task": "DT-EVO-004",
+      "objective": "Deploy only through approved existing release mechanism with rollback.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-024",
+          "file": "BPE-20261101-024.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "4.2.2.2-C",
+      "mission_step": "4.2.2.2",
+      "mission_task": "DT-EVO-004",
+      "objective": "Validate served warning and healthy/idle/failed-poll negative controls.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-024",
+          "file": "BPE-20261101-024.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "4.2.2.3-A",
+      "mission_step": "4.2.2.3",
+      "mission_task": "DT-EVO-004",
+      "objective": "Wait for independent full natural-cycle recovery proof.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "4.2.2.3-B",
+      "mission_step": "4.2.2.3",
+      "mission_task": "DT-EVO-004",
+      "objective": "Test warning clearance and clock/heartbeat negative controls on served surface.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "6.5.2-A",
+      "mission_step": "6.5.2",
+      "mission_task": "DT-EVO-006",
+      "objective": "Obtain owner-approved reversible capacity policy (blocked).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "6.5.2-B",
+      "mission_step": "6.5.2",
+      "mission_task": "DT-EVO-006",
+      "objective": "Implement isolated temporary-state capacity extension only after approval.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "6.5.2-C",
+      "mission_step": "6.5.2",
+      "mission_task": "DT-EVO-006",
+      "objective": "Test accepted reloadable records over ceiling, crash/digest/rollback/compatibility.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.3.1-A",
+      "mission_step": "7.3.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Acquire independently qualified source-backed artifact (dependency).",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-022",
+          "file": "BPE-20261101-022.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.3.1-B",
+      "mission_step": "7.3.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Verify governed classification, knowledge validation and durable result.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-022",
+          "file": "BPE-20261101-022.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.3.1-C",
+      "mission_step": "7.3.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Prove negative/replay/rollback, independent consumer behavior and cost.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-022",
+          "file": "BPE-20261101-022.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.5.2-A",
+      "mission_step": "7.5.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Verify source authenticity/relevance and actual missing capability.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-023",
+          "file": "BPE-20261101-023.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.5.2-B",
+      "mission_step": "7.5.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Connect missing canonical knowledge intake seam only if verified.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-023",
+          "file": "BPE-20261101-023.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.5.2-C",
+      "mission_step": "7.5.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Test forged/stale/absent-session/duplicate and rollback failures.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-023",
+          "file": "BPE-20261101-023.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.6.2-A",
+      "mission_step": "7.6.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Await genuinely new independent natural integration challenge.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.6.2-B",
+      "mission_step": "7.6.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Freeze answer-free first-pass reachability/negative rubric.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.6.2-C",
+      "mission_step": "7.6.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Compare observed controls, intervention, retries and cost without cherry-picking.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.1-A",
+      "mission_step": "7.7.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Run BPE-20261101-009 temporary-fixture baseline diagnostic.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-009",
+          "file": "BPE-20261101-009.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.1-B",
+      "mission_step": "7.7.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Compare actual record semantics against executable-history replay contract.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-009",
+          "file": "BPE-20261101-009.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.1-C",
+      "mission_step": "7.7.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Classify verified gap vs already-present/not-applicable/authority-blocked.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-009",
+          "file": "BPE-20261101-009.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.2-A",
+      "mission_step": "7.7.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Only after confirmed gap, modify canonical verifier in-place.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.2-B",
+      "mission_step": "7.7.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Prove exact corrected deficiency plus unauthorized/tamper rejection.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.3-A",
+      "mission_step": "7.7.3",
+      "mission_task": "DT-EVO-007",
+      "objective": "Trace Scout source-to-Director provenance and real mission receipt.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.7.3-B",
+      "mission_step": "7.7.3",
+      "mission_task": "DT-EVO-007",
+      "objective": "Independently validate downstream behavior against held-out test and rollback.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.1-A",
+      "mission_step": "7.8.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Run BPE-20261101-008 local source-owner census.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-008",
+          "file": "BPE-20261101-008.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.1-B",
+      "mission_step": "7.8.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Freeze A/B published-versus-consumed SHA and stable run identity.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-008",
+          "file": "BPE-20261101-008.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.1-C",
+      "mission_step": "7.8.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Test stale/forged/denied/same-B replay and delayed observation ambiguity.",
+      "state": "EVIDENCE_ONLY_OR_PARTIAL",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-008",
+          "file": "BPE-20261101-008.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "DIAGNOSTIC_READY"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.2-A",
+      "mission_step": "7.8.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Only after 7.8.1 demonstrates missing owner seam, bind consumed SHA to authorized action.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.2-B",
+      "mission_step": "7.8.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Run A/B/stale/forged/replay/delayed/rollback contract tests.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.3-A",
+      "mission_step": "7.8.3",
+      "mission_task": "DT-EVO-007",
+      "objective": "Link accepted Scout source to actually consumed mission and governed action.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.8.3-B",
+      "mission_step": "7.8.3",
+      "mission_task": "DT-EVO-007",
+      "objective": "Independent unseen outcome, rejected-source negative and no-loss regression.",
+      "state": "NEEDS_SOURCE_INSPECTION",
+      "patches_for_parent_step": [],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.9.1-A",
+      "mission_step": "7.9.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Verify current private proof-artifact write behavior and safe patch applicability.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-001",
+          "file": "BPE-20261101-001.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.9.1-B",
+      "mission_step": "7.9.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Private BPE-001 rev2 remains PREPARED_UNTESTED and source-compatible on confirmed feature branch; public .sh packaging was rejected by tool safety checks this run. No public executable patch is available for this ID. Do not count it as applied or silently bypass the publication blocker.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-001",
+          "file": "BPE-20261101-001.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "Verify exact mission acceptance criterion and source state",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.9.1-C",
+      "mission_step": "7.9.1",
+      "mission_task": "DT-EVO-007",
+      "objective": "Test reserved/intermediate symlink and validation→write swap negative fixtures in an isolated workspace with outside sentinel. Static path validation in private BPE-001 does not prove race-safe use-time containment; preserve the independent Ground requirement.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-001",
+          "file": "BPE-20261101-001.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "Verify exact mission acceptance criterion and source state",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.9.2-A",
+      "mission_step": "7.9.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Confirm canonical receipt-chain contract and private patch compatibility.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-002",
+          "file": "BPE-20261101-002.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-013",
+          "file": "BPE-20261101-013.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-014",
+          "file": "BPE-20261101-014.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.9.2-B",
+      "mission_step": "7.9.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Apply private BPE-002 only if contract matches; otherwise stop.",
+      "state": "PREREQUISITE_GATED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-002",
+          "file": "BPE-20261101-002.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-013",
+          "file": "BPE-20261101-013.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-014",
+          "file": "BPE-20261101-014.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "GATED_CONDITIONAL",
+      "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    },
+    {
+      "unit_id": "7.9.2-C",
+      "mission_step": "7.9.2",
+      "mission_task": "DT-EVO-007",
+      "objective": "Test valid ordered chain, forged/disconnected/skipped cases and overall false success.",
+      "state": "PARTIAL_CODE_PATCH_PREPARED",
+      "patches_for_parent_step": [
+        {
+          "id": "BPE-20261101-002",
+          "file": "BPE-20261101-002.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-013",
+          "file": "BPE-20261101-013.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-014",
+          "file": "BPE-20261101-014.sh",
+          "kind": "DIAGNOSTIC",
+          "state": "PREPARED_UNTESTED"
+        }
+      ],
+      "requirement_type": "ACTIONABLE_OR_VERIFICATION",
+      "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
+      "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
+      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented."
+    }
+  ]
+}
