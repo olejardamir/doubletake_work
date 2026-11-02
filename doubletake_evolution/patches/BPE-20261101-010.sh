@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # BPE-20261101-010 — Require contiguous ordered receipt links and chain validity for overall success
 # Mission: DT-EVO-007 / 7.9 evidence-trust extension; NOT completion of distinct 7.9.2 proof-chain package.
-# Executor branch: feature/alphacode-provider; source snapshot: 03d09b55f0c37966144f425661f39313ce0f2830
+# Executor branch: main; source snapshot: 17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2
 # Source blob: tools/doubletake_evolve/claim_receipt/receipts.py bc39080efa674bb41f1b8f738130ee90ada9db6a
 # Revision: 3; PREPARED_UNTESTED / LOCAL_APPLY_UNVERIFIED; rebased after BPE-013 already integrated all_pass gate. Only strict adjacency remains.
 # DoD positive: one/two correctly linked receipts remain valid and all_pass
@@ -13,7 +13,7 @@ set -euo pipefail
 DT_ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || { echo "STOP_NOT_DT_CHECKOUT" >&2; exit 20; }
 cd "$DT_ROOT"
 [[ -f "tools/doubletake_evolve/runtime/host_workload.py" ]] || { echo "STOP_NOT_DT_SOURCE" >&2; exit 20; }
-[[ "$(git branch --show-current)" == "feature/alphacode-provider" ]] || { echo "STOP_WRONG_EXECUTOR_BRANCH" >&2; exit 21; }
+[[ "$(git branch --show-current)" == "main" ]] || { echo "STOP_WRONG_EXECUTOR_BRANCH" >&2; exit 21; }
 printf 'PATCH_ID=BPE-20261101-010\nDT_HEAD=%s\n' "$(git rev-parse HEAD)"
 [[ -f "tools/doubletake_evolve/claim_receipt/receipts.py" ]] || { echo "STOP_MISSING_SOURCE" >&2; exit 22; }
 if ! git diff --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py" || ! git diff --cached --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py"; then
