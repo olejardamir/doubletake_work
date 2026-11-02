@@ -1,5 +1,7 @@
 # Borg Scrapyard Inventory
 
+**S12 addendum — verified v2 reduction:** `DOUBLETAKE_AUTONOMY_BUREAUCRACY_REDUCTION_REMAINING_WORK_v2.md` original `5cac071f6b20e128b4cf83e7f3c8caf46211737e` (15,594 bytes) → new `1baed7b5617ad3ea88b26b5de80dd7a46a944738` (6,368 bytes), update commit `2d87aa1cfdcbcfdde8277bc5e8dff33f6f810e5f`, verified readback. Preserves T1 historical measured limits, T2–T5 residuals and falsifiers. Additional 9,226 bytes removed; S12 total net working bytes removed 19,586, 4 full source reads, 2 actual reductions, 1 merge, 0 deletions. Previous S12 counts below were prior to this additional commit.
+
 ## 2026-11-02 ~09:10Z — Scout S12: M-v4 canonical merge blocked at source closure; autonomy-v1 in-place surgery
 
 **Fresh census:** public `main` recursive tree 362 current scrapyard blobs (25 incoming, 13 clustered); no exact blob-SHA duplicate pairs. Latest incoming IS-025 is already source-validated and dissected at `6108464b58d4dc6cb983ea7189a0722baec3eb13`. No new incoming after IS-025 at this checkpoint. Director's `STATE.md` 08:31Z and `RESEARCH_OFFLOAD.md` show **R-BORG-SCOUT-20261102-025 DEFERRED** (no active mission): current DT writer lease/epoch/CAS parity and an owner-authorized isolated test are unknown; no Code Engineer adoption or Ground. Full Borg remains **NOT VERIFIED**, B1/B4/B7 still owner/consumer/evidence gated.
