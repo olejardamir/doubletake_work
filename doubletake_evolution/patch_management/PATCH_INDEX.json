@@ -19,7 +19,9 @@
     "automation_always_on": true,
     "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
-    "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results."
+    "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
+    "next_patch": "Do not auto-choose 002 or 010 until conflict resolved and 010 exact source is validated. New code patches 024 and 025 remain prepared; ensure source compatibility before executing.",
+    "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update."
   },
   "patches": [
     {
@@ -27,7 +29,7 @@
       "mission_ref": "DT-EVO-007 / 7.9.1",
       "summary": "Refuse reserved mission plan/evidence redirects and normalized output collisions; preserve canonical evidence",
       "file": "BPE-20261101-001.sh",
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "priority": 1,
       "patch_revision": 2,
       "target_branch": "feature/alphacode-provider",
@@ -42,13 +44,23 @@
         "tools/doubletake_evolve/mission_intake/test_mission_intake_boundary.py"
       ],
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED: 41 passed in 0.26s",
         "ground_verified": false
       },
       "code_patch": true,
       "source_context_check": "All 6 patch old hunks matched current executor source, hunk counts checked; git apply/test not run.",
-      "limitation": "Independent use-time symlink race Ground remains unverified"
+      "limitation": "Independent use-time symlink race Ground remains unverified",
+      "auto_selectable": false,
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "552457195c7780ed800ae63b052dc47c84fdd010",
+        "source_commit_confirmed": true,
+        "reported_guarded_tests": "41 passed in 0.26s",
+        "logs_independently_observed": false
+      },
+      "retirement_eligible": true,
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
     },
     {
       "id": "BPE-20261101-003",
@@ -99,7 +111,7 @@
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Require canonical ordered receipt predecessor chain, recomputed receipt digest and invalid-chain aggregate failure",
       "file": "BPE-20261101-002.sh",
-      "status": "PREPARED_UNTESTED",
+      "status": "BLOCKED_SUPERSEDED_PENDING_CANONICAL_PATCH",
       "priority": 2,
       "patch_revision": 2,
       "target_branch": "feature/alphacode-provider",
@@ -134,7 +146,9 @@
       "last_error": null,
       "source_context": "Confirmed committed feature-branch target blobs match original baseline. Source-drift block was from local worktree, not verified GitHub commit drift.",
       "apply_compatibility": "rev2: compare committed blobs for provenance; use git apply --check on actual worktree, tolerate non-overlap, fail closed on overlap. On conflict, inspect and adapt precisely without discarding prior changes.",
-      "revision_reason": "Learn from local Clai conflict: removed blanket dirty worktree rejection but retained patch-context check and tests."
+      "revision_reason": "Learn from local Clai conflict: removed blanket dirty worktree rejection but retained patch-context check and tests.",
+      "auto_selectable": false,
+      "overlap_resolution": "Digest verified by integrated 011, aggregate all_pass gated by 013; strict adjacent chain link remains missing, assign only to 010."
     },
     {
       "id": "BPE-20261101-004",
@@ -230,13 +244,13 @@
     },
     {
       "id": "BPE-20261101-010",
-      "mission_ref": "DT-EVO-007 / 7.9 evidence-trust extension (not prepared 7.9.2 package)",
+      "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Require contiguous ordered receipt links and gate all_pass on chain validity",
       "file": "BPE-20261101-010.sh",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
       "patch_revision": 2,
-      "status": "BLOCKED_CONFLICT",
+      "status": "BLOCKED_STALE_SOURCE",
       "target_branch": "feature/alphacode-provider",
       "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
       "source_blob_shas": {
@@ -253,7 +267,7 @@
         "ground_verified": false
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
-      "last_error": "Overlapping implementation alternative to BPE-002. Resolve 002/local working tree first; never apply both.",
+      "last_error": "Original script includes all_pass hunk already implemented by 013; rebase strict-link change against actual feature HEAD, then validate before marking eligible.",
       "validation": {
         "exact_source_blob_inspected": true,
         "old_hunks_matched_uniquely": true,
@@ -268,7 +282,9 @@
       "revision_reason": "Added discriminating three-receipt skipped-predecessor negative and reversed mapping order positive; same implementation hunk and source binding.",
       "conflicts_with": [
         "BPE-20261101-002"
-      ]
+      ],
+      "auto_selectable": false,
+      "rebase_required": true
     },
     {
       "id": "BPE-20261101-006",
@@ -326,7 +342,7 @@
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 4,
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "target_branch": "feature/alphacode-provider",
       "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
       "source_blob_shas": {
@@ -338,8 +354,8 @@
       ],
       "depends_on": [],
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED: 25 passed in 0.14s",
         "ground_verified": false
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
@@ -350,7 +366,17 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false
-      }
+      },
+      "auto_selectable": false,
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "62c255c8010fd7514eb6b6b76f35b3ee1296b493",
+        "source_commit_confirmed": true,
+        "reported_guarded_tests": "25 passed in 0.14s",
+        "logs_independently_observed": false
+      },
+      "retirement_eligible": true,
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
     },
     {
       "id": "BPE-20261101-007",
@@ -408,7 +434,7 @@
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 5,
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "target_branch": "feature/alphacode-provider",
       "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
       "source_blob_shas": {
@@ -420,8 +446,8 @@
       ],
       "depends_on": [],
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED: 23 passed in 0.15s",
         "ground_verified": false
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
@@ -431,7 +457,17 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false
-      }
+      },
+      "auto_selectable": false,
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "f5ed8b59a1080c08d562ec0c209325a49558e0ff",
+        "source_commit_confirmed": true,
+        "reported_guarded_tests": "23 passed in 0.15s",
+        "logs_independently_observed": false
+      },
+      "retirement_eligible": true,
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
     },
     {
       "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
@@ -439,10 +475,10 @@
       "target_branch": "feature/alphacode-provider",
       "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED: 27 passed in 0.20s",
         "ground_verified": false
       },
       "publication_review": "SOURCE_DIFF_ONLY_NO_SECRETS_OR_PROTECTED_RUNTIME_DATA",
@@ -471,7 +507,17 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false
-      }
+      },
+      "auto_selectable": false,
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "2913d0f9f4b4faed1441ce20e0deb017807e8f03",
+        "source_commit_confirmed": true,
+        "reported_guarded_tests": "27 passed in 0.20s",
+        "logs_independently_observed": false
+      },
+      "retirement_eligible": true,
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
     },
     {
       "mission_ref": "DT-EVO-007 / 7.9.2 evidence integrity support (not full canonical package)",
@@ -479,10 +525,10 @@
       "target_branch": "feature/alphacode-provider",
       "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "verification": {
-        "applied": false,
-        "tested": false,
+        "applied": true,
+        "tested": "REPORTED: 25 passed in 0.19s",
         "ground_verified": false
       },
       "publication_review": "SOURCE_DIFF_ONLY_NO_SECRETS_OR_PROTECTED_RUNTIME_DATA",
@@ -511,7 +557,17 @@
         "git_apply_check_executed": false,
         "bash_syntax_checked": false,
         "host_tests_executed": false
-      }
+      },
+      "auto_selectable": false,
+      "integration": {
+        "branch": "feature/alphacode-provider",
+        "commit_sha": "04a2fe6e1709017940621eb52654d2ac38f56d8d",
+        "source_commit_confirmed": true,
+        "reported_guarded_tests": "25 passed in 0.19s",
+        "logs_independently_observed": false
+      },
+      "retirement_eligible": true,
+      "retirement_note": "Code integrated in feature branch; script still exists pending safe removal; do not auto-select."
     },
     {
       "id": "BPE-20261101-008",
@@ -519,7 +575,7 @@
       "summary": "Read-only source census for actual mission-consumer and A/B receipt proof",
       "file": "BPE-20261101-008.sh",
       "type": "READ_ONLY_DIAGNOSTIC",
-      "status": "DIAGNOSTIC_READY",
+      "status": "DIAGNOSTIC_REPORTED",
       "priority": 20,
       "depends_on": [],
       "source_branch": "feature/alphacode-provider",
@@ -529,7 +585,9 @@
         "executed": false,
         "ground_verified": false
       },
-      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
+      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics.",
+      "auto_selectable": false,
+      "verified_tests": "Reported by user, no logs or result JSON on public repository"
     },
     {
       "id": "BPE-20261101-009",
@@ -537,7 +595,7 @@
       "summary": "Guarded temporary-fixture cartography integrity baseline before replay applicability decision",
       "file": "BPE-20261101-009.sh",
       "type": "READ_ONLY_DIAGNOSTIC",
-      "status": "DIAGNOSTIC_READY",
+      "status": "DIAGNOSTIC_REPORTED",
       "priority": 21,
       "depends_on": [],
       "source_branch": "feature/alphacode-provider",
@@ -547,14 +605,16 @@
         "executed": false,
         "ground_verified": false
       },
-      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics."
+      "disposition": "Not a code change. Supports OUTWARD evidence; local executor must not push DT source for diagnostics.",
+      "auto_selectable": false,
+      "verified_tests": "Reported by user, no logs or result JSON on public repository"
     },
     {
       "id": "BPE-20261101-015",
       "mission_ref": "DT-EVO-002 / 2.2.2",
       "summary": "Repair caller/grant boundary",
       "file": "BPE-20261101-015.sh",
-      "status": "DIAGNOSTIC_READY",
+      "status": "DIAGNOSTIC_REPORTED",
       "type": "ISOLATED_DIAGNOSTIC",
       "code_patch": false,
       "target_branch": "feature/alphacode-provider",
@@ -569,7 +629,9 @@
         "tools/doubletake_evolve/tests/test_repair_console_ingress.py",
         "tools/doubletake_evolve/tests/test_w19_repair_delegation.py"
       ],
-      "caveat": "Current isolated fixtures only; no actual production completion or code implementation."
+      "caveat": "Current isolated fixtures only; no actual production completion or code implementation.",
+      "auto_selectable": false,
+      "verified_tests": "Reported by user, no logs or result JSON on public repository"
     },
     {
       "id": "BPE-20261101-016",
