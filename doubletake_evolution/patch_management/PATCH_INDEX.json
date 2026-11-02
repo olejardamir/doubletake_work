@@ -87,7 +87,12 @@
         },
         "test_logs_independently_observed": false,
         "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-003.json"
-      }
+      },
+      "file_present": false,
+      "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
+      "script_retired_at": "2026-11-01",
+      "historical_file": "BPE-20261101-003.sh",
+      "auto_selectable": false
     },
     {
       "id": "BPE-20261101-002",
@@ -170,7 +175,12 @@
         "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-004.json"
       },
       "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun.",
+      "file_present": false,
+      "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
+      "script_retired_at": "2026-11-01",
+      "historical_file": "BPE-20261101-004.sh",
+      "auto_selectable": false
     },
     {
       "id": "BPE-20261101-005",
@@ -211,7 +221,12 @@
         "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-005.json"
       },
       "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun.",
+      "file_present": false,
+      "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
+      "script_retired_at": "2026-11-01",
+      "historical_file": "BPE-20261101-005.sh",
+      "auto_selectable": false
     },
     {
       "id": "BPE-20261101-010",
@@ -296,7 +311,12 @@
         "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-006.json"
       },
       "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun.",
+      "file_present": false,
+      "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
+      "script_retired_at": "2026-11-01",
+      "historical_file": "BPE-20261101-006.sh",
+      "auto_selectable": false
     },
     {
       "id": "BPE-20261101-011",
@@ -373,7 +393,12 @@
         "result_ref": "doubletake_evolution/patch_management/results/BPE-20261101-007.json"
       },
       "source_reconciled_at_head": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun."
+      "reconciliation_note": "Source behavior and committed test file independently inspected on feature branch; executor test counts reported, not independently rerun.",
+      "file_present": false,
+      "script_retired_reason": "Implementation source commit confirmed in feature/alphacode-provider ancestry of 0f62b51528d11ae9c74f90fe901aaea7499628ef; executable retired from active queue, NOT evidence of main merge/runtime Ground.",
+      "script_retired_at": "2026-11-01",
+      "historical_file": "BPE-20261101-007.sh",
+      "auto_selectable": false
     },
     {
       "id": "BPE-20261101-012",
