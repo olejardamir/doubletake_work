@@ -1350,7 +1350,7 @@
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "87d28602ef66286b7c2de26489c08e776fc112a6",
+  "latest_mission_blob": "e3bfd64d26571531d3cc373f4301060e1ce3106b",
   "last_manual_patch_publication": {
     "new_code_scripts": [
       "BPE-20261101-001",
@@ -1404,7 +1404,7 @@
     "source_code_patch_scripts_current": 2,
     "all_source_implementation_complete": false,
     "notes": "Two source-bound scripts 029/030 prepared but not locally applied; 029 is partial 7.9.1-C, 030 is supporting executor safety; all 58 work orders remain open unless separately evidenced.",
-    "last_reconciled_mission_blob": "87d28602ef66286b7c2de26489c08e776fc112a6"
+    "last_reconciled_mission_blob": "e3bfd64d26571531d3cc373f4301060e1ce3106b"
   },
   "local_executor": {
     "repo": "olejardamir/DT",
