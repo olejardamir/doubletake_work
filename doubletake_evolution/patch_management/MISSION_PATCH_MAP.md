@@ -199,3 +199,7 @@ Current DT `feature/alphacode-provider` HEAD `03d09b55f0c37966144f425661f39313ce
 ## 2026-11-02 — latest mission snapshot reconciliation
 
 ACTIVE_MISSION blob `5c4644de375d708e4c05067849d0574f3740fdda` was re-enumerated after concurrent Director writes: all **22/22** numbered open steps, including `4.2.2.2` and `4.2.2.3`, remain represented in this map, 0 newly unmapped. Existing blocked authority/live-observation/source-qualification requirements remain open. BPE-010 rev3 is the sole conditional strict-predecessor implementation candidate; BPE-002 remains blocked as overlapping, and 024/025 are independent conditional candidates. No local application, live Ground or DT main integration is claimed.
+
+## Executable mission-unit coverage
+
+All 58 atomic units in the current 22 open mission steps have separate guarded scripts at `patch_management/atomic_patches/MEP-*.sh`, linked in `MISSION_ATOMIC_QUEUE.json`. These are conditional read-only gate and acceptance packages, NOT implemented source-code fixes and do not count as Ground. Three actual code-diff patches remain prepared and untested in `patches/`: BPE-010 (7.9.2), BPE-024 (4.2.2.2), BPE-025 (3.4.2). DT execution branch is now `main`; the former feature branch is gone. BPE-002 has been superseded and removed. The Patch Engineer must continue replacing qualifying gate packages with real source-grounded diffs as prerequisites are satisfied.
