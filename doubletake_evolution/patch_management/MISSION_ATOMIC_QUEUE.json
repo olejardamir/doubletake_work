@@ -1821,5 +1821,7 @@
   "note": "Every atomic mission unit now has a unique detailed work order plus its legacy executable gate. Work orders specify code/evidence/gating and dependency edges; they are NOT automatically 58 source-diff patches. Three actual source patches BPE-010,024,025 remain prepared, with tests unverified. Blocked authorization/host steps cannot have truthful unconditional diffs.",
   "patch_work_orders_directory": "doubletake_evolution/patch_management/work_orders",
   "mission_work_orders_index": "doubletake_evolution/patch_management/WORK_ORDERS_INDEX.md",
-  "last_reconciled_mission_blob": "e3bfd64d26571531d3cc373f4301060e1ce3106b"
+  "last_reconciled_mission_blob": "e3bfd64d26571531d3cc373f4301060e1ce3106b",
+  "current_direct_engineering_ledger": "doubletake_evolution/patch_management/CURRENT_ENGINEERING_LEDGER.md",
+  "current_direct_engineering_note": "Four-worker Code Engineer commits source directly to private DT/main; 21 source-or-test commits after consolidation backfilled as provisional mission associations; exact atomic MEP mapping still OPEN. 58 executable gate packages are NOT 58 implemented fixes, 029/030 are untested historical proposals, tests and live Ground remain independent."
 }
