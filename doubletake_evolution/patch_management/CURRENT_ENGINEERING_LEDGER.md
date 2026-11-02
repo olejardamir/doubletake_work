@@ -1,0 +1,43 @@
+# Current DoubleTake engineering ledger — public-safe
+
+**Engineering implementation repository:** PRIVATE `olejardamir/DT/main`. **Ledger repository:** PUBLIC `olejardamir/doubletake_work`. No private source, patch hunks, logs, secrets, or test bodies are copied here. Commit metadata is included only to reconcile source progress with the existing atomic mission queue.
+
+## Initial repair baseline (2026-11-02)
+
+- Last observed private DT/main: `45b51a737208dbe2b1252e682ff14a1e240a6332` (coordination/report commit). This ledger backfills **21 source-or-test commits** from the four-worker consolidation period beginning 2026-11-02 03:45 UTC; classification uses the commit titles and prior published evidence, not executed test results.
+- **17 implementation-labeled commits**, **4 separately test-labeled commits**, including one known expected-red test. A commit's title is not evidence of working implementation, validation or deployment. Some fixes also modified tests in the same commit; test-file counts are NOT inferred here.
+- All mission-area links below are **candidate associations**, not proven exact MEP work-order mapping. Borg Code Engineer must reconcile each with exact existing MEP IDs and public source-safe objective links when possible, or mark an explicit justified UNMAPPED and notify Director. Do not count backfill as 21 completed mission units.
+- Existing current mission: **22 open numbered steps, 58 guarded atomic work orders**. Historical applied BPE IDs remain in `PATCH_INDEX.json` and `results/`; `BPE-029`/`030` remain untested proposals. No new public source-bearing BPE scripts are authorized; actual fixes go privately to DT/main.
+- Independent test execution against the actual current checkout has **not been established** for these new commits. Current natural full autonomous cycles independently verified: **0**. Protected history owner gate and authentic public mission read→authorized action→receipt Ground remain open.
+
+## Source and test commits requiring work-order reconciliation
+
+| UTC time (Nov 2) | Private commit | Safe topic | Mission association | Evidence |
+|---|---|---|---|---|
+| 23:08:38Z | [`048d5018d`](https://github.com/olejardamir/DT/commit/048d5018d982c741da0ba4acfd523c80f7389330) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 22:06:05Z | [`77e0c130f`](https://github.com/olejardamir/DT/commit/77e0c130f1662805c037d92e6e4a3b5af81203a4) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | TEST_DEFINITION_ONLY; tests not independently witnessed |
+| 21:14:17Z | [`df57c2529`](https://github.com/olejardamir/DT/commit/df57c25299a4788b3e44e02daed2a3cd4c67f1e5) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 21:14:13Z | [`bd632627f`](https://github.com/olejardamir/DT/commit/bd632627ffb6710812923bdbd6a32ea646d5ddb7) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | TEST_DEFINITION_ONLY; tests not independently witnessed |
+| 20:10:25Z | [`2e01eafdb`](https://github.com/olejardamir/DT/commit/2e01eafdbdeaf296dc3306dde7c37e7c14154f00) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 19:05:03Z | [`ca011ee4b`](https://github.com/olejardamir/DT/commit/ca011ee4bfde9a59fee272296fb057cf4e60ec03) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 19:04:59Z | [`3347fa315`](https://github.com/olejardamir/DT/commit/3347fa315074ed5019848b41dbc68783d393f5f0) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | TEST_DEFINITION_ONLY; tests not independently witnessed |
+| 18:10:13Z | [`85fa07ccb`](https://github.com/olejardamir/DT/commit/85fa07ccb5ecc4afd0298c64df9adaab37fca9b8) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 17:05:41Z | [`c9a392ca6`](https://github.com/olejardamir/DT/commit/c9a392ca6432bb8c5fe94be674089ca6bdae9417) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 16:06:47Z | [`59f92d5ae`](https://github.com/olejardamir/DT/commit/59f92d5aeae487b3cc47b6bb0b09c64cc7d0319d) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 13:13:34Z | [`35dd4bcdb`](https://github.com/olejardamir/DT/commit/35dd4bcdbea3f2511d3f4b6b380499c8596ef580) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 12:05:13Z | [`23b2f0451`](https://github.com/olejardamir/DT/commit/23b2f045183ebb39e2881470f9d767200e76c2a4) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 10:06:27Z | [`463fd6495`](https://github.com/olejardamir/DT/commit/463fd6495f9e9aaf0f729e5708cab17e029958fa) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 09:16:38Z | [`665ee3a19`](https://github.com/olejardamir/DT/commit/665ee3a1927b063672050476bc7f0dd7e7243add) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 08:29:13Z | [`1d4c6c9ba`](https://github.com/olejardamir/DT/commit/1d4c6c9ba6e4b40ca296858cec8d48b470347104) | GitHub intake safety | DT-EVO-007 / 7.8.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 07:18:29Z | [`6dc2bec1a`](https://github.com/olejardamir/DT/commit/6dc2bec1ad9880e2e1128cd2923c41570c9774ba) | GitHub intake safety | DT-EVO-007 / 7.8.1 candidate — **PROVISIONAL, not accepted** | TEST_DEFINITION_ONLY; tests not independently witnessed |
+| 07:17:59Z | [`16d5ebdb8`](https://github.com/olejardamir/DT/commit/16d5ebdb87f53e3cdc7ec2971a8fb63214dc4d5d) | GitHub intake safety | DT-EVO-007 / 7.8.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 06:12:59Z | [`a2f1f7afd`](https://github.com/olejardamir/DT/commit/a2f1f7afd507debc0e30f76f0ffe910567e65afe) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 05:05:27Z | [`176b5a3ff`](https://github.com/olejardamir/DT/commit/176b5a3ffd23b846bcf129e9c8fbf7a5d5fe1b61) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 04:08:32Z | [`a2e7b788a`](https://github.com/olejardamir/DT/commit/a2e7b788a59833c95b553348f0af80e90a0d6209) | GitHub intake safety | DT-EVO-007 / 7.8.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+| 03:45:34Z | [`d4774d1d4`](https://github.com/olejardamir/DT/commit/d4774d1d411a9be44182f723e6cd70e0991e7a12) | GitHub intake safety | DT-EVO-007 / 7.8.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
+
+## Continuing worker contract
+
+Before changing DT: inspect current main and choose exact MEP unit(s), or record a justified separate reliability fix without falsely closing a mission unit. After implementation: update this ledger with the exact source SHA, MEP ID, substantive status, tests **executed** (command/exit/result only if observed), latest outstanding Ground, and whether related historical BPE scripts are retired, blocked or obsolete. Reconcile affected `PATCH_INDEX.json`, `MISSION_ATOMIC_QUEUE.json` and `WORK_ORDERS_INDEX.md` with fresh SHAs when materially changed. Avoid daily copy-forward or unbounded duplicated logs: move reconciled old rows to a bounded historical record only after accurate acceptance metadata is preserved.
+
+**Definition of done for this repair:** no newly committed implementation remains silently absent from this ledger after the next engineer cycle; every current source change has an exact accepted MEP ID or an honest explicit UNMAPPED rationale; no source commit is called executed or verified without independent evidence. Overseer audits at two meaningful subsequent checkpoints.
