@@ -2,6 +2,14 @@
 
 ## Semantic-first canonical-only closure and four-gap source surgery — 2026-11-02 ~05:00Z
 
+### Same-run bounded independent exploration: Voynich source surgery
+
+`voynich_frequency_mapping_workflow_updated.md`: fully read historical 15-stage protocol; blob `2da46b82d46ce8e29e209409f1bcf3e0819e0791` → verified `e445230d5fcd19d59dad5d7d5c3fbafea0f6d8c8`, **12,982→5,919 bytes** (**7,063 saved**), in-place update commit `c7507c6a0eaa4021cf6b2055694d42ab9ac38fad`. **KEEP / DISTILLED_IN_PLACE / NO_DT_GROUND**: retains exact universal frequency-bin mapping/GA hypothesis, source and licensing UNKNOWNs, original weighted formula (explicitly uncalibrated), precomputed embeddings/sparse LLM judge, matched optimized shuffles, held-out controls and narrow interpretation boundary. No merge with `voynich_unsupervised_morphology_system.md`: shared manuscript and null-control vocabulary but different proposed mechanism (global word dictionary vs morphology clustering); no proven redundant canonical content. No new DT handoff.
+
+**Revised total for this checkpoint:** **8 distinct full-content reads; 1 original deleted, 2 originals surgically reduced, 1 canonical lineage correction, 0 new cluster files, 0 binaries converted, 0 DT Ground; 110,201 gross source bytes removed, 554 lineage bytes added, net **109,647 bytes removed** (inventory excluded). Historical D01 blocked/compact statuses unchanged. Current post-deletion recursive blob count remains unverified by this connector; no false complete-census assertion.
+
+
+
 **Evidence / bounded scope:** Re-read **7 distinct full UTF-8 sources**: the 73-section and 79-section historical semantic-first versions, the 29-section four-gap source, three compact D01 records (`02_LLM7_LIVE_PROTOCOL_AND_CAPABILITY_PROBE.md`, `herdr_agent_x_port_plan.md`, `LIVE_MATCH_CENTRE_FINAL_SIMPLIFICATION_AUDIT.md`), and latest known intake `incoming/IS-20261102-023-...`. Current Director `STATE.md` blob `1703e908a33c359c9f81397f68003e6d7be01285`, mission `59c1b85e234ae0f6b4496b070f89ef1729142acc`, offload `6f29c1aa73c5ad4f80a1f36d52e027af33338d88`, and private integration coordination `8f16551bc0ae848c7b1ce577a242a4e938b9eff9` read. **Full Borg NOT VERIFIED**: B1 owner integrity disposition and B7 actual Markdown mission consumption still open; zero independently verified complete natural cycles and no external assimilation Ground. No fresh IS-024 intake file found in bounded exact-path/recent-commit checks; directory-wide recursive tree not available through this connector in this run, so last confirmed 365-file census is historical, not asserted current. No new Director proposal: existing R-BORG-SCOUT-20261102-022 remains DEFERRED and IS-023 already incorporated.
 
 | Original path relative to scrapyard/ | Exact source / verified outcome | Disposition, atomic value and proof |
