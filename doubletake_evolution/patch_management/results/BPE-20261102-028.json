@@ -1,0 +1,11 @@
+{
+  "patch_id": "BPE-20261102-028",
+  "status": "APPLIED_UNVERIFIED",
+  "source_commit_confirmed": true,
+  "commit_sha": "089f3050b18b7455a273e37c29966caf6d651a87",
+  "dt_main_head_observed": "03d02929066a9f69d3db536012bd66933ae97c33",
+  "tests_ran_by_this_agent": false,
+  "executor_test_report": "NOT_OBSERVED",
+  "ground_verified": false,
+  "reason": "Source implementation and test file confirmed on DT/main; no full runtime Ground. Public executable retired to prevent replay."
+}

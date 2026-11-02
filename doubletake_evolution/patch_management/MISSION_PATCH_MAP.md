@@ -227,3 +227,7 @@ DT `main` `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf` contains independently insp
 ## 2026-11-02 — residual verdict fingerprint gap
 
 BPE-20261102-028: DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf` accepts nonempty caller-supplied `ReceiptVerification.verdict_digest` without recomputation. New source-bound diff validates digest and adds four positive/negative tests. PREPARED_UNTESTED, local worktree/apply/tests/Ground unknown; 7.9.2 remains open.
+
+## 2026-11-02 deterministic-queue reconciliation
+
+BPE-028 was already implemented on DT `main` at `089f3050b18b7455a273e37c29966caf6d651a87` and its negative test file exists. The executable is retired from `patches/`; report evidence has not been independently observed, so patch remains `APPLIED_UNVERIFIED`, and mission 7.9.2 Ground is still open. A future queue runner must reject applied code even if the public index temporarily lags the source.

@@ -1167,12 +1167,12 @@
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Reject forged caller-supplied aggregate verdict digest",
       "file": "BPE-20261102-028.sh",
-      "file_present": true,
+      "file_present": false,
       "code_patch": true,
       "type": "SOURCE_DIFF_IMPLEMENTATION",
       "priority": 6,
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "target_branch": "main",
       "source_revision": "db86a85f2ca204117bcd36e8e51a9d1df05d9bbf",
       "source_blob_shas": {
@@ -1183,7 +1183,7 @@
         "tools/doubletake_evolve/claim_receipt/test_verdict_digest_validation.py"
       ],
       "depends_on": [],
-      "auto_selectable": true,
+      "auto_selectable": false,
       "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
       "verification": {
         "applied": false,
@@ -1200,7 +1200,17 @@
         "new_test_lines": 38
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE_IN_SCRIPT",
-      "source_basis": "Current main ReceiptVerification accepts nonempty supplied verdict_digest without recomputation"
+      "source_basis": "Current main ReceiptVerification accepts nonempty supplied verdict_digest without recomputation",
+      "historical_file": "BPE-20261102-028.sh",
+      "implementation": {
+        "branch": "main",
+        "commit_sha": "089f3050b18b7455a273e37c29966caf6d651a87",
+        "source_commit_confirmed": true,
+        "head_checked": "03d02929066a9f69d3db536012bd66933ae97c33",
+        "reported_tests": "NOT_OBSERVED",
+        "ground_verified": false
+      },
+      "retirement_note": "Retired after current DT/main source commit and new negative-test file independently confirmed. Testing report still missing; not Ground."
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1230,12 +1240,12 @@
   "last_run": {
     "date_utc": "2026-11-02",
     "executor_branch": "main",
-    "executor_head_inspected": "db86a85f2ca204117bcd36e8e51a9d1df05d9bbf",
+    "executor_head_inspected": "03d02929066a9f69d3db536012bd66933ae97c33",
     "public_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a",
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
     "atomic_gate_scripts_count": 58,
-    "source_patch_scripts_count": 1,
+    "source_patch_scripts_count": 0,
     "new_scripts": [
       "BPE-20261102-028"
     ],
@@ -1250,7 +1260,7 @@
     "independent_tests_rerun": 0,
     "executor_reported_test_total": 110,
     "local_worktree": "UNKNOWN",
-    "next_conditional_patch": "BPE-20261102-028",
+    "next_conditional_patch": null,
     "no_runtime_ground_claimed": true,
     "publication_commits": [
       "e4d3829d5f716f0c62d4f3968a2dae4fb41834fd",
@@ -1264,7 +1274,8 @@
       "git_apply_check_executed": false,
       "host_tests_executed": false,
       "local_worktree": "UNKNOWN"
-    }
+    },
+    "reconciled_028": "committed implementation, no independent tests recorded"
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
@@ -1321,9 +1332,9 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 1,
+    "source_code_patch_scripts_current": 0,
     "all_source_implementation_complete": false,
-    "notes": "58 work orders; five previous patches committed/retired; new BPE-028 PREPARED_UNTESTED, no local tests.",
+    "notes": "BPE-028 source committed in private DT; public script retired, local tests and runtime Ground unverified.",
     "last_reconciled_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a"
   }
 }

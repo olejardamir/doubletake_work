@@ -10,10 +10,10 @@
     "atomic_units": 58,
     "real_patches_published_for_subset": true,
     "executable_gate_packages_created": 58,
-    "pending_source_diff_code_patches": 1,
+    "pending_source_diff_code_patches": 0,
     "all_real_code_diffs_prepared": false,
     "atomic_work_orders": 58,
-    "actual_executable_source_diffs_in_active_patch_directory": 1,
+    "actual_executable_source_diffs_in_active_patch_directory": 0,
     "real_source_diff_coverage_complete": false,
     "work_orders_created": 58,
     "source_diff_implementations_newly_confirmed_main": 5
