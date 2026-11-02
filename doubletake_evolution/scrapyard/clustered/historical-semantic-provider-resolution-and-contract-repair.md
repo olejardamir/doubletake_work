@@ -1,6 +1,6 @@
 # CL-SEMANTIC-PROVIDER-001 — Historical governed provider resolution and contract repair
 
-**Scope / trust:** Distillation of two dated, public scrapyard Agent_X repair specifications. Historical source assertions are **not** current private DT facts, implementation approval, executed tests or Ground. No private source or incident log is reproduced. Preserve the distinction between transport availability, schema compliance and mutation authority. Historical source blobs are recoverable in Git history.
+**Scope / trust:** Distillation of three dated, public scrapyard Agent_X repair specifications. Historical source assertions are **not** current private DT facts, implementation approval, executed tests or Ground. No private source or incident log is reproduced. Preserve the distinction between transport availability, schema compliance and mutation authority. Historical source blobs are recoverable in Git history.
 
 ## Distinct mechanisms and incident evidence
 
