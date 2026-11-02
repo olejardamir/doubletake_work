@@ -26,3 +26,7 @@
 DT main `17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2` and actual `receipts.py` blob `bc39080efa674bb41f1b8f738130ee90ada9db6a` inspected. Current code still permits a non-adjacent predecessor and also permits extra, correctly chained receipts outside the committed proof universe to coexist with aggregate success. BPE-010 rev5 and BPE-026 rev1 are independent source-grounded implementation candidates. Both have exact unique committed hunk contexts, but no local application/tests/host Ground; original BPE-002 is superseded and must not be selected. Source-owner proof and runtime scope remain separate from this work order.
 
 **2026-11-02 additional inspected gap:** sealed ClaimReceiptSpec does not reject duplicate claim IDs or duplicate committed IDs; downstream coverage collapses IDs to sets. BPE-027 is a distinct source-bound uniqueness patch, not an alternative to BPE-010/026; no local tests or integration yet.
+
+## 2026-11-02 source/evidence reconciliation (overrides stale earlier readiness)
+
+DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf`: BPE-010/026/027 integrated on DT main; BPE-028 PREPARED_UNTESTED for forged caller-supplied verdict digests; independent proof-consumer Ground and unseen negative checks open. Prior implemented executables retired; exact commits and executor-reported tests in PATCH_INDEX/results. No independent GPT test rerun. This work order remains open until distinct acceptance evidence exists; do not reapply retired patches.

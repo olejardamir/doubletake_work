@@ -26,3 +26,7 @@
 Use BPE-010 rev5 only for strict immediate predecessor; do not resurrect BPE-002 or repeat already integrated BPE-013 aggregate chain gating. BPE-026 separately rejects extra uncommitted receipts. Both scripts target DT main `17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2`, `receipts.py` blob `bc39080efa674bb41f1b8f738130ee90ada9db6a`, with nonoverlapping hunks and mandatory local apply-check. No local tests or commits evidenced; remain PREPARED_UNTESTED.
 
 **Additional independent patch:** BPE-027 (models.py unique sealed IDs) may be applied separately from BPE-010/026 (receipts.py) only after exact local apply-check and guarded tests. All remain PREPARED_UNTESTED; no new owner authority granted.
+
+## 2026-11-02 source/evidence reconciliation (overrides stale earlier readiness)
+
+DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf`: BPE-010/026/027 integrated on DT main; BPE-028 PREPARED_UNTESTED for forged caller-supplied verdict digests; independent proof-consumer Ground and unseen negative checks open. Prior implemented executables retired; exact commits and executor-reported tests in PATCH_INDEX/results. No independent GPT test rerun. This work order remains open until distinct acceptance evidence exists; do not reapply retired patches.

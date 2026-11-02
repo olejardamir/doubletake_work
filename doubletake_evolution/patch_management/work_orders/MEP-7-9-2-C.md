@@ -26,3 +26,7 @@
 Independent positive and negative tests are prepared but UNRUN: BPE-010 rejects second anchor, unknown/distant predecessor and skipped middle while retaining ordered valid chains; BPE-026 rejects extra validly chained uncommitted receipts while retaining valid exact and empty proofs. Confirm actual local apply, focused host-guarded tests and regression/consumer behavior before recording any acceptance. No independent runtime Ground or owner authorization is inferred.
 
 **Additional negative/positive controls:** BPE-027 rejects duplicate claim definitions and committed IDs; accepts distinct and empty sealed sets. It remains UNRUN and does not substitute for 010's predecessor checks or 026's extra-receipt check.
+
+## 2026-11-02 source/evidence reconciliation (overrides stale earlier readiness)
+
+DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf`: BPE-010/026/027 integrated on DT main; BPE-028 PREPARED_UNTESTED for forged caller-supplied verdict digests; independent proof-consumer Ground and unseen negative checks open. Prior implemented executables retired; exact commits and executor-reported tests in PATCH_INDEX/results. No independent GPT test rerun. This work order remains open until distinct acceptance evidence exists; do not reapply retired patches.

@@ -20,3 +20,7 @@ Reuse the existing status/evidence owner; do not create duplicate trackers or cl
 5. Acceptance receipt must record checked DT revision and tested files, exact positive/negative assertions, invocation and PASS/FAIL/NOT_RUN, source changes or absence thereof, independent Ground versus fixture-only, rollback, affected and unaffected work, safety authority and next blocker. **Status VERIFIED only for this unit with that evidence.**
 
 **Definition of Done for this work order:** the atomic outcome above is proved against the parent's full acceptance contract, or explicitly remains OPEN with a concrete external prerequisite. A created script or green component test alone is not mission closure.
+
+## 2026-11-02 source/evidence reconciliation (overrides stale earlier readiness)
+
+DT main `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf`: BPE-025 integrated on DT main; final mission status and live closure evidence still unverified. Prior implemented executables retired; exact commits and executor-reported tests in PATCH_INDEX/results. No independent GPT test rerun. This work order remains open until distinct acceptance evidence exists; do not reapply retired patches.
