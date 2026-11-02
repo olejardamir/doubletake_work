@@ -1,3 +1,9 @@
+# Archived BPE patch contract — consolidated into Borg Code Engineer
+
+**Current authority (2026-11-02):** The operator merged the former independent Borg Patch Engineer into the active GPT-scheduled **Borg Code Engineer** `6ae806721bc48191bc27372da61ec9fc`. The retired Patch Engineer automation `6ae785556ee48191bec4acaed0c9a791` is **disabled**. This file preserves historical BPE single-file patch guidance, 58-unit decomposition, provenance, safety controls, and prior failures. It is NOT an instruction to recreate the fifth worker, to run scripts on the user's machine, or to publish new DT source implementation code into this public repository. For new fixes, Code Engineer reads this ledger as a proposal and **directly modifies and commits private `olejardamir/DT/main`**. The four-worker authoritative coordination is private `DT/reports/gpt_collective/INTEGRATION_COORDINATION.md`. No GitHub Actions, paid CI, local LLM or host processes required. Preserve patch index records/results as historical evidence; stale public patch scripts are never execution permission.
+
+---
+ 
 # Borg Patch Engineer — authoritative single-file patch contract
 Status: ACTIVE independent hourly GPT scheduled worker `6ae785556ee48191bec4acaed0c9a791`.
 

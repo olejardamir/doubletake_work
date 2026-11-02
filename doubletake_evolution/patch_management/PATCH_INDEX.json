@@ -3,8 +3,8 @@
   "source_repo": "olejardamir/DT",
   "mission_path": "doubletake_evolution/ACTIVE_MISSION.md",
   "patch_directory": "doubletake_evolution/patches",
-  "worker": "Borg Patch Engineer",
-  "automation_status": "ACTIVE",
+  "worker": "Borg Code Engineer",
+  "automation_status": "ACTIVE_MERGED_ENGINEERING",
   "policy": {
     "max_patches_per_run": "as many independent source-grounded complete patches as execution resources permit",
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
@@ -1299,7 +1299,7 @@
       "source_basis": "reserved proof files opened by pathname after validation; late leaf symlink can redirect write"
     }
   ],
-  "automation_id": "6ae785556ee48191bec4acaed0c9a791",
+  "automation_id": "6ae806721bc48191bc27372da61ec9fc",
   "automation_schedule": "hourly",
   "unpublished_existing": [
     {
@@ -1413,5 +1413,20 @@
     "script_pin_required": "patch_blob_sha",
     "no_commit_push": true,
     "not_runtime_patch_authority": true
+  },
+  "merged_from": {
+    "worker": "Borg Patch Engineer",
+    "automation_id": "6ae785556ee48191bec4acaed0c9a791",
+    "schedule_status": "DISABLED",
+    "historical_patch_ledger_retained": true
+  },
+  "implementation_target": {
+    "repository": "olejardamir/DT",
+    "branch": "main",
+    "method": "GPT GitHub connector direct source/test edits",
+    "public_repo_is_planning_only": true,
+    "github_actions": false,
+    "local_llm_required": false,
+    "live_ground_not_claimed": true
   }
 }

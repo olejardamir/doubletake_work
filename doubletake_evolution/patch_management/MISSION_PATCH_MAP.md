@@ -1,3 +1,7 @@
+## Four-worker engineering ownership — 2026-11-02
+
+The standalone Patch Engineer automation was merged into **Borg Code Engineer** `6ae806721bc48191bc27372da61ec9fc`; historical BPE-029/030 scripts, source diffs and mapping stay as proposals/evidence. **Code Engineer implements source fixes directly in PRIVATE `olejardamir/DT/main`**, not as new public implementation code. No local LLM or GitHub Actions. The existing 22 steps/58 work orders remain governed by the Director's mission; untested source commits do not prove Ground. Read the retained historical map below as proposal history, not a mandate to activate the disabled Patch Engineer schedule.
+
 # Mission step → patch coverage
 
 Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `228a4f8d007fc4c7a2e707c90684f9c9bd0d565f`. This is an INITIAL triage inventory, not proof of implementation or authority. Borg Patch Engineer must refresh against current mission and DT executor branch EVERY run, inspect all unnumbered acceptance criteria, split every eligible step into source-grounded single-file patches, and record reasons for blocked/non-code work. Only `.sh` patch files go in `../patches/`.
