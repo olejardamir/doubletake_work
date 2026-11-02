@@ -1,0 +1,35 @@
+# IS-20261102-025 — Fenced writer epochs: a stale-owner no-loss discriminator
+
+**Date:** 2026-11-02. **Origin:** Borg Internet Scout. **Status:** UNTRIAGED INTELLIGENCE, not an approved implementation, owner grant, or observed DT defect. **Focus:** public B4/3.5.2 shared-state ownership and acknowledged-write retention. No private DT code or protected history included.
+
+## Primary sources directly examined
+
+1. Mike Burrows, *The Chubby Lock Service for Loosely-Coupled Distributed Systems*, OSDI 2006, §2.4 and §2.6, USENIX open-access HTML: https://www.usenix.org/legacy/event/osdi06/tech/full_papers/burrows/burrows_html/index.html . This is an original deployed-system description, **not** a DT test. Chubby's lock *sequencer* binds lock name, mode and generation; a cooperating recipient checks current validity or a recent sequencer. An advisory lock by itself cannot stop a late request from a former holder. Chubby's fallback lock-delay is explicitly imperfect.
+2. Martin Kleppmann, *How to do distributed locking* (2016-02-08), original technical analysis: https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html . A process paused past lease expiry can resume and overwrite newer state. Monotonic fencing generations, **checked by the destination with the mutation**, reject a previously superseded owner. This is an argument/counterexample, not an independent DT reproduction.
+3. etcd project, *v3 API — Transaction*, official documentation: https://etcd.io/docs/v3.7/learning/api/ . Atomic compare-then-write over version/modification revision is an available implementation primitive; the existence of an API does not imply DT uses etcd or needs it.
+
+**Source-vs-inference:** Directly read the above published primary descriptions. The proposed applicability to DT is **our hypothesis**. No third-party benchmark, code, local DT process, lease contract, or executable fixture was inspected or run. Source documents are linked; no full text or third-party code is redistributed. License for any copied implementation remains unassessed, so do not copy one.
+
+## Distinct mechanism, concrete counterexample and limits
+
+A obtains shared-state writer lease/epoch 41 and prepares an update; A pauses. Its lease expires. B obtains epoch 42, commits a newer acknowledged update. A resumes and attempts an epoch-41 write. A lease-only check at task start is insufficient; the *actual durable write destination* must atomically reject stale epoch 41, or an immutable generation-specific result must be published through an atomically guarded pointer. A successful read-only check before write has a check-to-use race.
+
+**Critical nuance:** a simple destination *highest-seen* epoch rejects A **after** B's epoch-42 write has reached that destination; it may still accept A after B was granted epoch 42 but **before** any 42 write arrives. If strict exclusion begins at grant time, require an authoritative epoch handoff/current-lease validation at the destination, not merely highest-seen. Fencing is not the same as deduplication/idempotency; it also does not by itself guarantee durable flush, acknowledged-event retention, or restart recovery.
+
+## Current DT gap mapping and duplicate screen
+
+The public Director STATE/mission reports B4/3.5.2: an **isolated two-instance whole-snapshot lost-update counterexample**, no accepted owner/no-loss writer contract, and no independently verified restart/concurrent-writer Ground. This is a different potential failure mode: **stale former-owner writes after lease turnover**, not simply two active writers overwriting snapshots. Existing IS-010/Porcupine/Elle covers independent history checking, and IS-005 covers invariant-confluence/merge classification; neither public RESEARCH_OFFLOAD nor INVENTORY mentions fencing tokens, sequencers, stale lease writers or a fenced destination. Repository code search for 'fencing' returned no hits (not exhaustive for historical/unindexed files). Current private-DT use of leases/epochs and precise writer owner remain **UNVERIFIED**; a single-writer transaction or existing CAS may already make this irrelevant.
+
+**Capability-delta hypothesis (falsifiable):** *If* the authorized current DT B4 writer contract uses expiring ownership/leases and permits delayed write attempts, an atomic destination-side epoch check will prevent an older acknowledged state from being replaced after a newer owner has committed, without dropping valid distinct acknowledgements. If no lease-based owner exists, the baseline already rejects stale attempts, or there is no owner-authorized test seam, classify **NO_APPLICABILITY / ALREADY_PRESENT / NO_AUTHORIZED_FIXTURE**, not a new capability.
+
+## Outward → Inward → Ground, bounded test
+
+**OUTWARD:** B4 owner identifies the **existing** canonical writer, acknowledgment semantics, whether leases/epochs exist, and whether a disposable test seam is authorized. Pin exact source revision, state schema and no-loss invariants. Do **not** change B1 protected history or install a new store/coordinator.
+
+**INWARD:** In a permission-safe disposable model of that contract, compare baseline vs conditional atomic epoch validation with independently fixed expected outcomes: (1) A41 paused → B42 acknowledged → A41 delayed write must fail and B42 persist; (2) A41 arrives after B42 grant but before B42's first write, distinguish strict grant-time exclusion from high-watermark-only behavior; (3) repeated epoch, reordered acknowledgments, crash/restart and generation-counter reset; (4) legitimate B42 writes and unrelated keys succeed; (5) missing/forged epoch fails closed where the owner contract requires it. Keep independent event log and byte/record digests; test cost and valid-write false rejections.
+
+**GROUND:** An independent checker compares before/after acknowledged-event sets, exact durable state after restart, rejected stale attempts, retained unrelated writes, and owner/authorization controls. Demand **zero acknowledged-event loss, zero stale overwrites, zero unauthorized promotions** and no unacceptable valid-write rejection under the agreed contract. A synthetic success proves only the model; real DT capability credit requires current-private-DT parity, authorized executed tests, an observed changed consumer decision/action, independent verification and later reuse. No implementation request until Director and owner approve.
+
+## Coordination / related research
+
+Related: IS-20261101-010 (history oracle), IS-20261101-005 (invariant-confluence), IS-20261102-023 (missing recovery snapshot negative case), IS-20261102-024 (fact-state evolution). Existing B4 owner and Code Engineer source mapping take precedence. Scrapyard Scout owns triage; Director/Overseer owns acceptance. No change to ACTIVE_MISSION.md, RESEARCH_OFFLOAD.md, INVENTORY.md or private DT. Independent curiosity frontier examined separately: Soma et al., *Congestion and Scalability in Robot Swarms* (2023), https://arxiv.org/abs/2307.08568 ; its simulation cautions that added collective communication can reduce scalability, but no DT transfer fixture justifies another artifact.
