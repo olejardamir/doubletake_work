@@ -2,6 +2,7 @@
 
 **Current owner (2026-11-02):** **Borg Code Engineer**, GPT automation `6ae806721bc48191bc27372da61ec9fc`, merges former Borg Patch Engineer source diagnosis/patch repair with direct code/test integration. The old Patch Engineer automation `6ae785556ee48191bec4acaed0c9a791` is disabled. **All new implementation source changes belong directly in PRIVATE `olejardamir/DT/main`, never here.** This PUBLIC repository contains mission planning, read-only historic BPE proposals, source-safe work orders and sanitized feedback. No GitHub Actions or local LLM needed.
 
+- [`CURRENT_ENGINEERING_LEDGER.md`](CURRENT_ENGINEERING_LEDGER.md): mandatory current public-safe DT/main source-commit → exact MEP work-order reconciliation, authored/executed-test separation and unresolved Ground; newly created and backfilled 2026-11-02
 - `PATCH_INDEX.json`: historical proposal IDs, exact provenance, implementation status, dependencies and recorded test/Ground limits
 - `WORKER_RULES.md`: archived prior Patch Engineer contract, read as legacy design guidance; four-worker current role assignments take precedence
 - `PATCH_LEARNING.md`: documented lessons from historical patch conflicts and source integration
