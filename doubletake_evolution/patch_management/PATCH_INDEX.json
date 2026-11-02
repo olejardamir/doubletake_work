@@ -1327,7 +1327,7 @@
     "date_utc": "2026-11-02",
     "executor_branch": "main",
     "executor_head_inspected": "df5f733cef0292dee865cf5a184fbb9d0c209e6d",
-    "public_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f",
+    "public_mission_blob": "cf212925e16c47949d7f96f5b5a33383639fd2e1",
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
     "source_patch_scripts_count": 2,
@@ -1342,13 +1342,14 @@
     "independent_tests_rerun": 0,
     "local_worktree": "UNKNOWN",
     "next_conditional_patch": "BPE-20261102-029",
-    "no_runtime_ground_claimed": true
+    "no_runtime_ground_claimed": true,
+    "worker_roster": "four enabled: Director, Code Engineer, Internet Scout, Scrapyard Scout"
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f",
+  "latest_mission_blob": "cf212925e16c47949d7f96f5b5a33383639fd2e1",
   "last_manual_patch_publication": {
     "new_code_scripts": [
       "BPE-20261101-001",
@@ -1402,7 +1403,7 @@
     "source_code_patch_scripts_current": 2,
     "all_source_implementation_complete": false,
     "notes": "Two source-bound scripts 029/030 prepared but not locally applied; 029 is partial 7.9.1-C, 030 is supporting executor safety; all 58 work orders remain open unless separately evidenced.",
-    "last_reconciled_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f"
+    "last_reconciled_mission_blob": "cf212925e16c47949d7f96f5b5a33383639fd2e1"
   },
   "local_executor": {
     "repo": "olejardamir/DT",
