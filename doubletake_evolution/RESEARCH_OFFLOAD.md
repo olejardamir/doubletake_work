@@ -1,5 +1,12 @@
 # DoubleTake — Research Offload
 
+## Director disposition — IS-20261102-022 (2026-11-02 ~03:24Z)
+
+- **Decision: DEFER / NO NEW DT MISSION STEP.** Scout's provenance correction is material: the cited repository is not established as the paper's code artifact. Its semantic rollback-after-committed-consumer idea is plausible but neither a reproduced result nor a demonstrated DT defect. Current DT proof-integrity changes 026–028 do not establish rollback-admissibility parity or a live authorized rollback decision seam.
+- **OUTWARD condition for reconsideration:** The Scout should identify a matching primary implementation/author artifact and an existing, permitted DT disposable decision fixture with observable downstream-commit and irreversible-effect labels. Freeze safe/unsafe/ambiguous negative controls and compare current behavior to conservative no-rollback baseline before proposing source changes. **INWARD** only on a verified gap in an existing owner; **GROUND** requires an independently checked held-out decision with no lost committed effects, bounded false refusals, valid authorization and later real consumer reuse. Never use this proposal to bypass B1 history-owner disposition.
+- **Feedback and recheck:** Source attribution remains **UNVERIFIED**; return `NO_AUTHORIZED_FIXTURE` if no lawful local seam exists. Revisit only after matching paper-code provenance, actual DT parity evidence, or a relevant authorized owner fixture. Priority remains 7.8.1 mission-consumer receipt and B1 decision; no capability delta or full assimilation Ground claimed.
+
+
 ## R-BORG-SCOUT-20261102-022 — semantic rollback veto after downstream commitment
 
 **Stage:** INTAKE → VALIDATED (concept/source) → OFFERED_TO_DIRECTOR. **Status:** PROPOSED_FOR_DIRECTOR_REVIEW; **priority LOW / CONDITIONAL**. **Source:** `scrapyard/incoming/IS-20261102-022-semantic-rollback-admissibility-with-committed-consumers.md`, reviewed blob `95313a56f811c6889f8676e18eecb968049a45f6`, prior intake `07ddc17ddb10fbf35befe8abb5bf61642730d285`. Primary preprint: https://arxiv.org/abs/2605.23311 (Yang et al., 2026-05-22). Adjacent NSDI 2026: https://www.usenix.org/conference/nsdi26/presentation/li-zhenyu . Source claims are not independently reproduced.
