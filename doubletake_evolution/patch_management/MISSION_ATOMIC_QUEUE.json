@@ -2,7 +2,7 @@
   "schema_version": 2,
   "description": "Full current mission atomic-unit execution ledger. This is NOT proof that patches exist or that units are implemented.",
   "mission_source": "doubletake_evolution/ACTIVE_MISSION.md",
-  "mission_blob_sha": "87d28602ef66286b7c2de26489c08e776fc112a6",
+  "mission_blob_sha": "e3bfd64d26571531d3cc373f4301060e1ce3106b",
   "patch_directory": "doubletake_evolution/patches",
   "patch_index": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "counts": {
@@ -18,7 +18,7 @@
     "work_orders_created": 58,
     "source_diff_implementations_newly_confirmed_main": 5
   },
-  "rule": "Each feasible code unit needs an independently executable actual unified-diff source patch. Authority/runtime-gated units remain gated; do not generate fake implementation to fill a quota. Reconcile the entire ledger on every scheduled worker run.",
+  "rule": "Verify current private DT/main and actual authority before proposing work. Code Engineer alone implements eligible source/test changes directly on private DT/main; do not generate new public implementation shell patches or auto-execute legacy scripts. Keep 58 work orders and preserve external evidence/owner gates. Refresh mission_blob_sha and last_reconciled_mission_blob when the public mission changes; a matching SHA proves ledger reconciliation only, not actual DT mission consumption.",
   "units": [
     {
       "unit_id": "1.3.3-A",
@@ -30,7 +30,7 @@
       "requirement_type": "GATED_CONDITIONAL",
       "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
       "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
-      "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
+      "note": "58 guarded work orders remain OPEN until independently accepted; no work-order or gate package is a code fix. Integrated BPE-010/024/025/026/027/028 are source-level APPLIED_UNVERIFIED; BPE-029/030 remain historical PREPARED_UNTESTED and not auto-selectable. Borg Code Engineer commits eligible source/tests directly to private DT/main; public patches are legacy proposals. Mission SHA is a planning revision pointer, not a DT consumer receipt, executed test, Ground, deployment or owner grant.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-1-3-3-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
       "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
@@ -1821,5 +1821,5 @@
   "note": "Every atomic mission unit now has a unique detailed work order plus its legacy executable gate. Work orders specify code/evidence/gating and dependency edges; they are NOT automatically 58 source-diff patches. Three actual source patches BPE-010,024,025 remain prepared, with tests unverified. Blocked authorization/host steps cannot have truthful unconditional diffs.",
   "patch_work_orders_directory": "doubletake_evolution/patch_management/work_orders",
   "mission_work_orders_index": "doubletake_evolution/patch_management/WORK_ORDERS_INDEX.md",
-  "last_reconciled_mission_blob": "87d28602ef66286b7c2de26489c08e776fc112a6"
+  "last_reconciled_mission_blob": "e3bfd64d26571531d3cc373f4301060e1ce3106b"
 }
