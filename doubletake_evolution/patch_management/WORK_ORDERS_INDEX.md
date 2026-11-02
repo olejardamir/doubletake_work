@@ -94,3 +94,5 @@ Prepared one genuine source diff for residual 7.9.2 verdict digest identity, not
 ## 2026-11-02 supporting executor patch
 
 BPE-20261102-030 `PREPARED_UNTESTED`: maintenance queue script check-to-use byte pinning. Linked to 7.9.1-C as supporting infrastructure only; does not satisfy the reserved proof-artifact acceptance contract. All 58 atomic work orders remain mapped and not automatically completed.
+
+- `MEP-7.9.1-C`: BPE-20261102-029 `PREPARED_UNTESTED` reserved proof write-use leaf-symlink protection; full independent race-safety Ground still OPEN.

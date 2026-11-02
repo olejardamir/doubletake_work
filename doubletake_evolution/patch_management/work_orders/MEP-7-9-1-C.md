@@ -24,3 +24,5 @@
 ## Supporting patch published (2026-11-02)
 
 BPE-20261102-030 addresses a separate local queue runner check-to-use race; source and test diff are prepared, NOT applied/tested. The reserved proof-artifact use-time race and independent unseen-case Ground in this work order remain OPEN. Do not count this supporting patch as work-order closure.
+
+BPE-20261102-029 is now prepared as a source-specific reserved plan/evidence use-time symlink refusal patch with normal and late-swap negative tests. Source-only validation; local tests, adversarial rename safety and independent Ground still OPEN. Do not mark this work order complete from publication.

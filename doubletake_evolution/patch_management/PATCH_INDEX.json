@@ -1253,6 +1253,46 @@
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE",
       "source_basis": "runner checks script blob but then executes mutable pathname; negative test swaps after inspection",
       "revision_note": "Negative test replacement script uses actual newline escapes; implementation hunk unchanged"
+    },
+    {
+      "id": "BPE-20261102-029",
+      "mission_ref": "DT-EVO-007 / 7.9.1-C",
+      "summary": "Refuse post-validation symlink swaps for reserved plan/evidence proof files",
+      "file": "BPE-20261102-029.sh",
+      "file_present": true,
+      "code_patch": true,
+      "type": "SOURCE_DIFF_IMPLEMENTATION",
+      "priority": 1,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "main",
+      "source_revision": "df5f733cef0292dee865cf5a184fbb9d0c209e6d",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/mission_intake/__init__.py": "ed871b95f15fb3434145b77adec35df20c6b3cf6"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/mission_intake/__init__.py",
+        "tools/doubletake_evolve/mission_intake/test_reserved_proof_use_time.py"
+      ],
+      "depends_on": [],
+      "auto_selectable": false,
+      "eligibility": "LOCAL_APPLY_UNVERIFIED; operator review, bash -n, git apply --check and guarded tests required",
+      "patch_blob_sha": "5017a78dbf05a31961997eb3a7a102a72efebf41",
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "validation": {
+        "remote_source_hunk_unique": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN"
+      },
+      "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE",
+      "source_basis": "reserved proof files opened by pathname after validation; late leaf symlink can redirect write"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1286,15 +1326,18 @@
     "public_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f",
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
-    "source_patch_scripts_count": 1,
+    "source_patch_scripts_count": 2,
     "new_scripts": [
+      "BPE-20261102-029",
       "BPE-20261102-030"
     ],
-    "revised_scripts": [],
+    "revised_scripts": [
+      "BPE-20261102-030 rev2"
+    ],
     "retired_scripts": [],
     "independent_tests_rerun": 0,
     "local_worktree": "UNKNOWN",
-    "next_conditional_patch": "BPE-20261102-030",
+    "next_conditional_patch": "BPE-20261102-029",
     "no_runtime_ground_claimed": true
   },
   "last_format_migration": "2026-11-01",
@@ -1352,9 +1395,9 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 1,
+    "source_code_patch_scripts_current": 2,
     "all_source_implementation_complete": false,
-    "notes": "BPE-030 is supporting queue check-to-use integrity; no mission step or runtime Ground closed.",
+    "notes": "Two source-bound scripts 029/030 prepared but not locally applied; 029 is partial 7.9.1-C, 030 is supporting executor safety; all 58 work orders remain open unless separately evidenced.",
     "last_reconciled_mission_blob": "228a4f8d007fc4c7a2e707c90684f9c9bd0d565f"
   },
   "local_executor": {
