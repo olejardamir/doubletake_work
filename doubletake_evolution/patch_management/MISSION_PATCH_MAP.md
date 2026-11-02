@@ -10,9 +10,9 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `c61b9be078022
 | DT-EVO-002 | 2.4.2 | Exercise the production caller | DEPENDENCY_PENDING | BPE-20261101-017 (diagnostic only) |
 | DT-EVO-002 | 2.4.3 | Reconcile state | DEPENDENCY_PENDING | BPE-20261101-018 (diagnostic only) |
 | DT-EVO-003 | 3.3.4 | Verify post-recovery performance only after actual natural recovery | DEPENDENCY_PENDING | — |
-| DT-EVO-003 | 3.4.2 | Publish one concise final status | VERIFICATION_ONLY | BPE-20261101-019 (diagnostic only); BPE-20261101-025 (source patch, untested) |
+| DT-EVO-003 | 3.4.2 | Publish one concise final status | SOURCE_GUARD_COMMITTED; FINAL_STATUS_GROUND_OPEN | BPE-025 31b06c30d3e76fc218db2e12846853554a31b6bb (5 tests reported); script retired; final-status evidence pending |
 | DT-EVO-003 | 3.5.2 | Establish a no-loss shared-state write contract, conditional on existing authority | BLOCKED_AUTHORITY | — |
-| DT-EVO-004 | 4.2.2.2 | Verify an authorized production-served health indication | BLOCKED_DEPLOYMENT_AUTHORITY | BPE-20261101-024 (source patch, untested) |
+| DT-EVO-004 | 4.2.2.2 | Verify an authorized production-served health indication | BLOCKED_DEPLOYMENT_AUTHORITY; SOURCE_GUARD_COMMITTED | BPE-024 c76572630e34e7fd15ffec315f0fa460b6d685e3 (21 tests reported); script retired; production-served bundle unverified |
 | DT-EVO-004 | 4.2.2.3 | Verify recovery clearing and stable health classification | DEPENDENCY_PENDING | — |
 | DT-EVO-006 | 6.5.2 | INWARD/GROUND, conditional on 6.5.1: test a reversible capacity extension | BLOCKED_AUTHORITY | — |
 | DT-EVO-007 | 7.3.1 | Ground the full evidence-to-validated-knowledge path, not merely queue reachability | DEPENDENCY_PENDING_NO_QUALIFIED_SOURCE | BPE-20261101-022 (diagnostic only) |
@@ -25,7 +25,7 @@ Mission: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md); snapshot blob `c61b9be078022
 | DT-EVO-007 | 7.8.2 | INWARD, only if 7.8.1 proves an actionable owner gap | DEPENDENCY_PENDING | — |
 | DT-EVO-007 | 7.8.3 | GROUND: independently verify the full downstream effect and return feedback to the Scouts | DEPENDENCY_PENDING | — |
 | DT-EVO-007 | 7.9.1 | OUTWARD→INWARD→GROUND: contain reserved mission proof artifacts | FEATURE_IMPLEMENTATION_COMMITTED; USE_TIME_GROUND_OPEN | BPE-001 DT commit 552457195c7780ed800ae63b052dc47c84fdd010 (41 tests reported), executable retired; intermediate redirect/swap tests still open |
-| DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | PARTIAL_FEATURE_IMPLEMENTATION; STRICT_CHAIN_FIX_OPEN | BPE-003–007,011–014 committed and scripts retired; BPE-002/010 blocked/overlap; strict immediate predecessor not yet applied |
+| DT-EVO-007 | 7.9.2 | OUTWARD→INWARD→GROUND: prevent invalid proof chains from producing a successful verdict | MAIN_SOURCE_FIXES_COMMITTED; INDEPENDENT_GROUND_OPEN | BPE-010/026/027 committed on DT main, 27/27/30 tests reported; all retired; unseen Ground pending |
 
 **Snapshot coverage:** 22 numbered open steps across 6 task areas. `SOURCE_REVIEW_REQUIRED` means no valid patch or blocker has yet been established. A mapped patch is NOT a completed mission step. Conditional or owner-authority-blocked steps must not be implemented without legitimate authorization. A verification-only step needs real test/observation evidence, not a fabricated source diff.
 
@@ -219,3 +219,7 @@ All 58 atomic units in the current 22 open mission steps have separate guarded s
 ### Additional independent 7.9.2 patch — 2026-11-02
 
 - **BPE-027** is a fifth active source-diff script, independent of 010/026 and bound to DT main `17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2`, `claim_receipt/models.py` blob `91011f3908399ab228da89778ea063d24c5f50c9`. It rejects duplicate claim definitions or committed IDs in a sealed specification; positive distinct/empty controls and duplicate negatives are embedded. The source hunk matched uniquely at expected line 56; local apply, `bash -n`, guarded tests and Ground **UNRUN**. Mission remains 22/22 mapped, 58 work orders, **5** prepared implementation scripts; no authority or runtime proof inferred.
+
+## 2026-11-02 — DT main integration
+
+DT `main` `db86a85f2ca204117bcd36e8e51a9d1df05d9bbf` contains independently inspected source/test commits BPE-010/024/025/026/027; all five executable scripts retired. Exact commits in PATCH_INDEX and public results. 110 guarded tests executor-reported, none rerun by GPT. 7.9.2 unseen proof-consumer Ground remains open; 4.2.2.2 production serving/deployment authority remains blocked; 3.4.2 final status remains unverified. BPE-010 staging SHA disagrees with actual GitHub SHA; GitHub is authoritative.

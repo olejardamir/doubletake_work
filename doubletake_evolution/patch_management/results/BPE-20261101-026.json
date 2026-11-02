@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "patch_id": "BPE-20261101-026",
+  "source_repository": "olejardamir/DT",
+  "branch": "main",
+  "implementation_commit_sha": "64f61bf4ce6b605597ffbf1328d17ca35249ef65",
+  "implementation_commit_verified_in_main_ancestry": true,
+  "executor_reported": {
+    "applied": true,
+    "host_guarded_tests_reported": 27,
+    "raw_test_logs_available": false,
+    "staging_result_observed": true
+  },
+  "independent_observation": {
+    "github_commit_and_changed_paths_verified": true,
+    "tests_independently_rerun": false,
+    "local_worktree": "UNKNOWN",
+    "runtime_ground_verified": false
+  },
+  "status": "APPLIED_UNVERIFIED",
+  "notes": "Guarded tests executor-reported only; source commit verified."
+}

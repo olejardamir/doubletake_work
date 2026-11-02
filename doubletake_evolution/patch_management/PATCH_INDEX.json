@@ -17,7 +17,7 @@
     "public_source_disclosure": "DT code diff patches are allowed in designated public patches directory; do not publish credentials, protected runtime state, or confidential third-party data.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
+    "latest_executor_head_inspected": "db86a85f2ca204117bcd36e8e51a9d1df05d9bbf",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
     "next_patch": "BPE-010 rev5 first conditional candidate; BPE-026 and BPE-027 are independent source-grounded proof integrity patches; BPE-024/025 are independent cross-mission candidates. All require local apply-check and guarded tests.",
@@ -293,7 +293,7 @@
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 3,
       "patch_revision": 5,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "target_branch": "main",
       "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
       "source_blob_shas": {
@@ -305,9 +305,11 @@
       ],
       "depends_on": [],
       "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
+        "applied": true,
+        "source_commit_verified": true,
+        "tested": "EXECUTOR_REPORTED_ONLY",
+        "ground_verified": false,
+        "production_runtime_verified": false
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
       "last_error": null,
@@ -327,13 +329,26 @@
       "script_blob_sha": "2dc131d886e907ec85268448f18dac92ba4d7d86",
       "revision_reason": "Rev5 script metadata synchronized with DT/main strict adjacency diff; actual source hunk unique; no local tests.",
       "conflicts_with": [],
-      "auto_selectable": true,
+      "auto_selectable": false,
       "rebase_required": false,
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
-      "file_present": true,
+      "eligibility": "RETIRED_IMPLEMENTED_ON_DT_MAIN",
+      "file_present": false,
       "source_basis": "Verified DT main code matches source blob(s) used for patch",
       "code_patch": true,
-      "type": "SOURCE_DIFF_IMPLEMENTATION"
+      "type": "SOURCE_DIFF_IMPLEMENTATION",
+      "historical_file": "BPE-20261101-010.sh",
+      "integration": {
+        "commit_sha": "9cae2ebebd3d12878538377f04ae362809bb40bd",
+        "branch": "main",
+        "source_commit_verified": true,
+        "reported_guarded_tests": 27,
+        "independent_test_execution": false
+      },
+      "retirement": {
+        "reason": "GitHub-confirmed DT main source/test commit; script redundant",
+        "implementation_commit_sha": "9cae2ebebd3d12878538377f04ae362809bb40bd",
+        "local_worktree": "UNKNOWN"
+      }
     },
     {
       "id": "BPE-20261101-006",
@@ -919,9 +934,9 @@
       "mission_ref": "DT-EVO-004 / 4.2.2.2",
       "summary": "Prevent unmounted UI build from claiming it is production-served",
       "file": "BPE-20261101-024.sh",
-      "file_present": true,
+      "file_present": false,
       "code_patch": true,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "priority": 25,
       "patch_revision": 1,
       "target_branch": "main",
@@ -936,12 +951,14 @@
       ],
       "depends_on": [],
       "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
+        "applied": true,
+        "source_commit_verified": true,
+        "tested": "EXECUTOR_REPORTED_ONLY",
+        "ground_verified": false,
+        "production_runtime_verified": false
       },
       "limitation": "No production deployment or actual served-bundle acceptance.",
-      "auto_selectable": true,
+      "auto_selectable": false,
       "validation": {
         "remote_hunks_match_uniquely": true,
         "unified_hunk_counts_validated": true,
@@ -950,17 +967,30 @@
         "host_tests_executed": false,
         "local_worktree": "UNKNOWN"
       },
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
-      "source_basis": "Verified DT main code matches source blob(s) used for patch"
+      "eligibility": "RETIRED_IMPLEMENTED_ON_DT_MAIN",
+      "source_basis": "Verified DT main code matches source blob(s) used for patch",
+      "historical_file": "BPE-20261101-024.sh",
+      "integration": {
+        "commit_sha": "c76572630e34e7fd15ffec315f0fa460b6d685e3",
+        "branch": "main",
+        "source_commit_verified": true,
+        "reported_guarded_tests": 21,
+        "independent_test_execution": false
+      },
+      "retirement": {
+        "reason": "GitHub-confirmed DT main source/test commit; script redundant",
+        "implementation_commit_sha": "c76572630e34e7fd15ffec315f0fa460b6d685e3",
+        "local_worktree": "UNKNOWN"
+      }
     },
     {
       "id": "BPE-20261101-025",
       "mission_ref": "DT-EVO-003 / 3.4.2",
       "summary": "Prioritize actual failed objective over unrelated authority request in campaign status",
       "file": "BPE-20261101-025.sh",
-      "file_present": true,
+      "file_present": false,
       "code_patch": true,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "priority": 26,
       "patch_revision": 1,
       "target_branch": "main",
@@ -975,12 +1005,14 @@
       ],
       "depends_on": [],
       "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
+        "applied": true,
+        "source_commit_verified": true,
+        "tested": "EXECUTOR_REPORTED_ONLY",
+        "ground_verified": false,
+        "production_runtime_verified": false
       },
       "limitation": "No final mission closure or autonomous recovery claimed.",
-      "auto_selectable": true,
+      "auto_selectable": false,
       "validation": {
         "remote_hunks_match_uniquely": true,
         "unified_hunk_counts_validated": true,
@@ -989,21 +1021,34 @@
         "host_tests_executed": false,
         "local_worktree": "UNKNOWN"
       },
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; not APPLY_READY",
-      "source_basis": "Verified DT main code matches source blob(s) used for patch"
+      "eligibility": "RETIRED_IMPLEMENTED_ON_DT_MAIN",
+      "source_basis": "Verified DT main code matches source blob(s) used for patch",
+      "historical_file": "BPE-20261101-025.sh",
+      "integration": {
+        "commit_sha": "31b06c30d3e76fc218db2e12846853554a31b6bb",
+        "branch": "main",
+        "source_commit_verified": true,
+        "reported_guarded_tests": 5,
+        "independent_test_execution": false
+      },
+      "retirement": {
+        "reason": "GitHub-confirmed DT main source/test commit; script redundant",
+        "implementation_commit_sha": "31b06c30d3e76fc218db2e12846853554a31b6bb",
+        "local_worktree": "UNKNOWN"
+      }
     },
     {
       "id": "BPE-20261101-026",
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Reject uncommitted extra receipts from a sealed claim proof even if chain is valid",
       "file": "BPE-20261101-026.sh",
-      "file_present": true,
+      "file_present": false,
       "code_patch": true,
       "type": "SOURCE_DIFF_IMPLEMENTATION",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 4,
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "target_branch": "main",
       "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
       "source_blob_shas": {
@@ -1017,8 +1062,8 @@
       "related_nonoverlapping_patches": [
         "BPE-20261101-010"
       ],
-      "auto_selectable": true,
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; source hunk matches main; not APPLY_READY",
+      "auto_selectable": false,
+      "eligibility": "RETIRED_IMPLEMENTED_ON_DT_MAIN",
       "source_basis": "Verified DT main source and independent new regression: extra validly linked receipt previously permits aggregate success",
       "validation": {
         "remote_source_hunk_unique": true,
@@ -1030,27 +1075,42 @@
         "new_test_lines": 47
       },
       "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
+        "applied": true,
+        "source_commit_verified": true,
+        "tested": "EXECUTOR_REPORTED_ONLY",
+        "ground_verified": false,
+        "production_runtime_verified": false
       },
       "publication_review": "NO_SECRETS_OR_PROTECTED_RUNTIME_DATA_IN_SCRIPT",
       "script_blob_sha": "92d319d7d037ec39a99cf2f75c4d7b0ae2fc05b0",
       "patch_blob_sha": "92d319d7d037ec39a99cf2f75c4d7b0ae2fc05b0",
-      "independent_goal": "All supplied receipts must be within the sealed committed universe before aggregate all_pass"
+      "independent_goal": "All supplied receipts must be within the sealed committed universe before aggregate all_pass",
+      "historical_file": "BPE-20261101-026.sh",
+      "integration": {
+        "commit_sha": "64f61bf4ce6b605597ffbf1328d17ca35249ef65",
+        "branch": "main",
+        "source_commit_verified": true,
+        "reported_guarded_tests": 27,
+        "independent_test_execution": false
+      },
+      "retirement": {
+        "reason": "GitHub-confirmed DT main source/test commit; script redundant",
+        "implementation_commit_sha": "64f61bf4ce6b605597ffbf1328d17ca35249ef65",
+        "local_worktree": "UNKNOWN"
+      }
     },
     {
       "id": "BPE-20261101-027",
       "mission_ref": "DT-EVO-007 / 7.9.2",
       "summary": "Reject duplicate claim identifiers in sealed proof specification",
       "file": "BPE-20261101-027.sh",
-      "file_present": true,
+      "file_present": false,
       "code_patch": true,
       "type": "SOURCE_DIFF_IMPLEMENTATION",
       "format": "single_file_bash_embedded_diff_instructions_DoD",
       "priority": 5,
       "patch_revision": 1,
-      "status": "PREPARED_UNTESTED",
+      "status": "APPLIED_UNVERIFIED",
       "target_branch": "main",
       "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
       "source_blob_shas": {
@@ -1065,8 +1125,8 @@
         "BPE-20261101-010",
         "BPE-20261101-026"
       ],
-      "auto_selectable": true,
-      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; source hunk matches main; not APPLY_READY",
+      "auto_selectable": false,
+      "eligibility": "RETIRED_IMPLEMENTED_ON_DT_MAIN",
       "source_basis": "Verified current sealed ClaimReceiptSpec permits repeated claim and committed IDs",
       "validation": {
         "remote_source_hunk_unique": true,
@@ -1078,14 +1138,29 @@
         "new_test_lines": 38
       },
       "verification": {
-        "applied": false,
-        "tested": false,
-        "ground_verified": false
+        "applied": true,
+        "source_commit_verified": true,
+        "tested": "EXECUTOR_REPORTED_ONLY",
+        "ground_verified": false,
+        "production_runtime_verified": false
       },
       "publication_review": "NO_SECRETS_OR_PROTECTED_RUNTIME_DATA_IN_SCRIPT",
       "script_blob_sha": "f671a56a2348d7edad5b6dfe6e4988efc0e384f4",
       "patch_blob_sha": "f671a56a2348d7edad5b6dfe6e4988efc0e384f4",
-      "independent_goal": "Unique claim identifiers in a sealed claim specification, including committed claim universe"
+      "independent_goal": "Unique claim identifiers in a sealed claim specification, including committed claim universe",
+      "historical_file": "BPE-20261101-027.sh",
+      "integration": {
+        "commit_sha": "d1d107b555b6ce44637703ef17ab01baf4667f0a",
+        "branch": "main",
+        "source_commit_verified": true,
+        "reported_guarded_tests": 30,
+        "independent_test_execution": false
+      },
+      "retirement": {
+        "reason": "GitHub-confirmed DT main source/test commit; script redundant",
+        "implementation_commit_sha": "d1d107b555b6ce44637703ef17ab01baf4667f0a",
+        "local_worktree": "UNKNOWN"
+      }
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1115,35 +1190,25 @@
   "last_run": {
     "date_utc": "2026-11-02",
     "executor_branch": "main",
-    "executor_head_inspected": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
-    "public_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3",
+    "executor_head_inspected": "db86a85f2ca204117bcd36e8e51a9d1df05d9bbf",
+    "public_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a",
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
     "atomic_gate_scripts_count": 58,
-    "source_patch_scripts_count": 5,
-    "new_scripts": [
+    "source_patch_scripts_count": 0,
+    "new_scripts": [],
+    "revised_scripts": [],
+    "retired_scripts": [
+      "BPE-20261101-010",
+      "BPE-20261101-024",
+      "BPE-20261101-025",
       "BPE-20261101-026",
       "BPE-20261101-027"
     ],
-    "revised_scripts": [
-      "BPE-20261101-010"
-    ],
-    "retired_scripts": [],
     "independent_tests_rerun": 0,
+    "executor_reported_test_total": 110,
     "local_worktree": "UNKNOWN",
-    "next_conditional_patch": "BPE-20261101-010",
-    "publication_commits": [
-      "8ca53ea9f3db6ddf01a65435c89ff29b70b9611b",
-      "c313d0bc432fc980a51a3d90a1cc00cc8598b500",
-      "28b7ffb23c224b32bfe95dd4d121e794a0760f89"
-    ],
-    "static_hunks_checked": [
-      "010",
-      "024",
-      "025",
-      "026",
-      "027"
-    ],
+    "next_conditional_patch": null,
     "no_runtime_ground_claimed": true
   },
   "last_format_migration": "2026-11-01",
@@ -1201,9 +1266,9 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 5,
+    "source_code_patch_scripts_current": 0,
     "all_source_implementation_complete": false,
-    "notes": "58 atomic work orders and gates, five real source patch scripts; no local apply/tests or Ground.",
-    "last_reconciled_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3"
+    "notes": "58 atomic work orders/gates; five DT main source patches committed and retired; 110 guarded tests reported, zero independently rerun or live Ground.",
+    "last_reconciled_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a"
   }
 }

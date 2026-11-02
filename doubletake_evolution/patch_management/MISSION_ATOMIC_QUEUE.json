@@ -10,12 +10,13 @@
     "atomic_units": 58,
     "real_patches_published_for_subset": true,
     "executable_gate_packages_created": 58,
-    "pending_source_diff_code_patches": 5,
+    "pending_source_diff_code_patches": 0,
     "all_real_code_diffs_prepared": false,
     "atomic_work_orders": 58,
-    "actual_executable_source_diffs_in_active_patch_directory": 5,
+    "actual_executable_source_diffs_in_active_patch_directory": 0,
     "real_source_diff_coverage_complete": false,
-    "work_orders_created": 58
+    "work_orders_created": 58,
+    "source_diff_implementations_newly_confirmed_main": 5
   },
   "rule": "Each feasible code unit needs an independently executable actual unified-diff source patch. Authority/runtime-gated units remain gated; do not generate fake implementation to fill a quota. Reconcile the entire ledger on every scheduled worker run.",
   "units": [
@@ -520,7 +521,8 @@
           "file": "BPE-20261101-025.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-025"
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
@@ -528,7 +530,7 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-4-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "evidence_status": "STATUS_GUARD_COMMITTED; FINAL_CLOSURE_UNVERIFIED",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-4-2-A.md",
       "work_order_revision": 1,
       "dependencies": [],
@@ -557,7 +559,8 @@
           "file": "BPE-20261101-025.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-025"
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
@@ -565,7 +568,7 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-3-4-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "evidence_status": "STATUS_GUARD_COMMITTED; FINAL_CLOSURE_UNVERIFIED",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-3-4-2-B.md",
       "work_order_revision": 1,
       "dependencies": [
@@ -666,7 +669,8 @@
           "file": "BPE-20261101-024.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-024"
       ],
       "requirement_type": "GATED_CONDITIONAL",
       "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
@@ -674,7 +678,7 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "evidence_status": "SOURCE_GUARD_COMMITTED; PRODUCTION_SERVING_NOT_OBSERVED",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-2-A.md",
       "work_order_revision": 1,
       "dependencies": [],
@@ -697,7 +701,8 @@
           "file": "BPE-20261101-024.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-024"
       ],
       "requirement_type": "GATED_CONDITIONAL",
       "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
@@ -705,7 +710,7 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "evidence_status": "SOURCE_GUARD_COMMITTED; PRODUCTION_SERVING_NOT_OBSERVED",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-2-B.md",
       "work_order_revision": 1,
       "dependencies": [
@@ -730,7 +735,8 @@
           "file": "BPE-20261101-024.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-024"
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
@@ -738,7 +744,7 @@
       "note": "Parent-step patch links do not imply this particular atomic unit has been implemented.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-4-2-2-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "UNVERIFIED_NO_IMPLEMENTATION_BY_THIS_FILE",
+      "evidence_status": "SOURCE_GUARD_COMMITTED; PRODUCTION_SERVING_NOT_OBSERVED",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-4-2-2-2-C.md",
       "work_order_revision": 1,
       "dependencies": [
@@ -1675,7 +1681,10 @@
           "file": "BPE-20261101-027.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-010",
+        "BPE-20261101-026",
+        "BPE-20261101-027"
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
@@ -1683,12 +1692,12 @@
       "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance. BPE-027 additionally prevents duplicate sealed claim IDs; local tests UNRUN.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "REMOTE_HUNK_CONTEXT_VERIFIED_LOCAL_APPLY_AND_TESTS_UNRUN",
+      "evidence_status": "SOURCE_IMPLEMENTATION_COMMITTED_MAIN; TESTS_REPORTED; INDEPENDENT_GROUND_OPEN",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-2-A.md",
       "work_order_revision": 1,
       "dependencies": [],
       "delivery_class": "SOURCE_DIFF_IF_VERIFIED_GAP",
-      "delivery_status": "PREPARED_UNTESTED_VALIDATE_SOURCE_AND_EXECUTE",
+      "delivery_status": "CODE_IMPLEMENTED_MAIN; INDEPENDENT_ACCEPTANCE_OPEN",
       "source_search_boundary": "tools/doubletake_evolve/claim_receipt/",
       "external_gate": null,
       "acceptance_contract_step": "7.9.2",
@@ -1718,7 +1727,10 @@
           "file": "BPE-20261101-027.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-010",
+        "BPE-20261101-026",
+        "BPE-20261101-027"
       ],
       "requirement_type": "GATED_CONDITIONAL",
       "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
@@ -1726,14 +1738,14 @@
       "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance. BPE-027 additionally prevents duplicate sealed claim IDs; local tests UNRUN.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "REMOTE_HUNK_CONTEXT_VERIFIED_LOCAL_APPLY_AND_TESTS_UNRUN",
+      "evidence_status": "SOURCE_IMPLEMENTATION_COMMITTED_MAIN; TESTS_REPORTED; INDEPENDENT_GROUND_OPEN",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-2-B.md",
       "work_order_revision": 1,
       "dependencies": [
         "7.9.2-A"
       ],
       "delivery_class": "SOURCE_DIFF_PREPARED_BPE_010",
-      "delivery_status": "PREPARED_UNTESTED_VALIDATE_SOURCE_AND_EXECUTE",
+      "delivery_status": "CODE_IMPLEMENTED_MAIN; INDEPENDENT_ACCEPTANCE_OPEN",
       "source_search_boundary": "tools/doubletake_evolve/claim_receipt/",
       "external_gate": "BPE-010 exact source-blob compatibility, clean overlap and approved local executor; BPE-002 remains retired.",
       "acceptance_contract_step": "7.9.2",
@@ -1763,7 +1775,10 @@
           "file": "BPE-20261101-027.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
-        }
+        },
+        "BPE-20261101-010",
+        "BPE-20261101-026",
+        "BPE-20261101-027"
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
@@ -1771,14 +1786,14 @@
       "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance. BPE-027 additionally prevents duplicate sealed claim IDs; local tests UNRUN.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
-      "evidence_status": "REMOTE_HUNK_CONTEXT_VERIFIED_LOCAL_APPLY_AND_TESTS_UNRUN",
+      "evidence_status": "SOURCE_IMPLEMENTATION_COMMITTED_MAIN; TESTS_REPORTED; INDEPENDENT_GROUND_OPEN",
       "work_order": "doubletake_evolution/patch_management/work_orders/MEP-7-9-2-C.md",
       "work_order_revision": 1,
       "dependencies": [
         "7.9.2-B"
       ],
       "delivery_class": "EVIDENCE_PATCH_OR_TEST",
-      "delivery_status": "AWAITING_LOCAL_TESTS_AND_INDEPENDENT_GROUND",
+      "delivery_status": "CODE_IMPLEMENTED_MAIN; INDEPENDENT_ACCEPTANCE_OPEN",
       "source_search_boundary": "tools/doubletake_evolve/claim_receipt/",
       "external_gate": null,
       "acceptance_contract_step": "7.9.2",
