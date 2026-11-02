@@ -30,6 +30,6 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `incoming/IS-20261102-024-intrinsic-fact-state-evolution-gate.md` | `0223c80441bb98489ac022f4eb3223e073331cb0` | 5781 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `incoming/IS-20261102-025-fenced-writer-epochs-and-stale-lease-counterexample.md` | `6108464b58d4dc6cb983ea7189a0722baec3eb13` | 4898 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `incoming/IS-20261102-026-task-identity-contract-before-transfer-scoring.md` | `0a85118bf7963ffed93c38e4c609de9df78dfd93` | 5124 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `incoming/IS-20261102-027-cross-plane-mission-consumption-attribution-abstention.md` | `b018f1c8cf5adfdc7b915234703136b9e346f4fd` | 4352 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `incoming/IS-20261102-028-certified-effect-outcome-before-continuation.md` | `f035937ce8b2e5847a9c9329c4f3b95267f0101f` | 5557 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `incoming/IS-20261102-029-benign-input-guardrail-to-trace-witness.md` | `4c16fee08a99af27f21f3242d7ac82e396331d8c` | 5157 | S25 / FULL_READ / REDUCED_IN_PLACE / 2,712 bytes saved / 9ae987a; Director handoff R-BORG-SCOUT-20261102-029 pending; KEEP |
+| `incoming/IS-20261102-027-cross-plane-mission-consumption-attribution-abstention.md` | `b018f1c8cf5adfdc7b915234703136b9e346f4fd` | 4352 | Director DEFER 2026-11-02 ~15:31Z; no current B7 assessor seam or attribution defect; keep conditional provenance lead |
+| `incoming/IS-20261102-028-certified-effect-outcome-before-continuation.md` | `f035937ce8b2e5847a9c9329c4f3b95267f0101f` | 5557 | S23 FULL_READ / REDUCED_IN_PLACE / 2,353 bytes saved / bd92713; Director DEFER ~21:24Z; no authorized effect fixture; KEEP |
+| `incoming/IS-20261102-029-benign-input-guardrail-to-trace-witness.md` | `4c16fee08a99af27f21f3242d7ac82e396331d8c` | 5157 | S25 FULL_READ / REDUCED_IN_PLACE / 2,712 bytes saved / 9ae987a; Director DEFER ~23:24Z; no fallback-route/fixture evidence; KEEP |
