@@ -10,7 +10,7 @@
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
     "verification": "local execution and independent evidence required",
     "public_repo": true,
-    "local_selection": "Select next eligible CODE patch, check current feature branch, dependency and conflicts before applying; never apply APPLIED_*, BLOCKED_* or diagnostics unless explicitly requested. Compare 002/010 alternatives and choose at most one.",
+    "local_selection": "Check actual DT HEAD and git status --porcelain for target paths BEFORE choosing or executing an .sh. Separate committed source drift from uncommitted changes, and check whether idea is already implemented. Try git apply --check on actual worktree; if hunks compatible, apply preserving independent changes, then guarded tests. If overlap, do not overwrite or reset; Clai should inspect source/test and minimally integrate the precise behavior, or report exact conflict. Never interpret a local dirty path as proof of remote stale source. Do not select conflicting alternatives (002 versus 010).",
     "one_patch_per_file": true,
     "mission_decomposition": "Every run: enumerate all active mission steps; split eligible implementation into one-file patches; explicitly track blocked, prerequisite, and verification-only steps; rebase pending scripts on latest executor branch.",
     "executor_branch_reference": "feature/alphacode-provider",
@@ -18,7 +18,8 @@
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
     "latest_executor_head_inspected": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
-    "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches."
+    "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
+    "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results."
   },
   "patches": [
     {
@@ -95,9 +96,9 @@
       "file": "BPE-20261101-002.sh",
       "status": "PREPARED_UNTESTED",
       "priority": 2,
-      "patch_revision": 1,
+      "patch_revision": 2,
       "target_branch": "feature/alphacode-provider",
-      "source_revision": "9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb",
+      "source_revision": "0f62b51528d11ae9c74f90fe901aaea7499628ef",
       "source_blob_shas": {
         "tools/doubletake_evolve/claim_receipt/receipts.py": "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0",
         "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py": "0cbf09e728f483788d63c5b016cdd4df3d728c6e"
@@ -117,7 +118,18 @@
       "conflicts_with": [
         "BPE-20261101-010"
       ],
-      "limitation": "Only verifier contract; independent Ground still required"
+      "limitation": "Only verifier contract; independent Ground still required",
+      "last_attempt": {
+        "outcome": "BLOCKED_LOCAL_EDIT_REPORTED",
+        "source": "Clai report relayed by user",
+        "reason": "local target file hashes differ / code edits overlap, local diff unavailable",
+        "not_remote_staleness_verified": true,
+        "results_path": "doubletake_evolution/patch_management/results/BPE-20261101-002.json"
+      },
+      "last_error": null,
+      "source_context": "Confirmed committed feature-branch target blobs match original baseline. Source-drift block was from local worktree, not verified GitHub commit drift.",
+      "apply_compatibility": "rev2: compare committed blobs for provenance; use git apply --check on actual worktree, tolerate non-overlap, fail closed on overlap. On conflict, inspect and adapt precisely without discarding prior changes.",
+      "revision_reason": "Learn from local Clai conflict: removed blanket dirty worktree rejection but retained patch-context check and tests."
     },
     {
       "id": "BPE-20261101-004",
@@ -226,7 +238,7 @@
         "ground_verified": false
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_DATA_IN_DIFF",
-      "last_error": "Alternative to BPE-002 canonical receipt-chain implementation; do not apply both. If BPE-002 validates, mark this superseded; otherwise reassess independently.",
+      "last_error": "Overlapping implementation alternative to BPE-002. Resolve 002/local working tree first; never apply both.",
       "validation": {
         "exact_source_blob_inspected": true,
         "old_hunks_matched_uniquely": true,
