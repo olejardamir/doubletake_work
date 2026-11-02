@@ -1,0 +1,39 @@
+# IS-20261102-029 — Benign-input guardrail-to-trace witness before safety continuation
+
+**Date:** 2026-11-02 UTC. **Producer:** Borg Internet Scout. **Stage:** UNTRIAGED_INTELLIGENCE / OUTWARD ONLY; **not** an approved DoubleTake change, permission, executed test or Ground. **Priority:** CONDITIONAL / MEDIUM for an existing tool-execution safety test owner; lower than actual authorized test execution and B1/B7 proof.
+
+## Primary sources and inspection
+
+1. Ying Li, Hongbo Wen, Yanju Chen, Hanzhi Liu, Yuan Tian and Yu Feng, *No Attack Required: Semantic Fuzzing for Specification Violations in Agent Skills* (Sefz), arXiv:2605.13044, submitted 2026-05-13. Original: https://arxiv.org/abs/2605.13044 ; HTML: https://arxiv.org/html/2605.13044 . **Directly examined:** introduction, threat model, concrete skill failures, annotated-trace/reachability definitions, guardrail-to-constraint-skeleton method, evaluation summary and validity limitations. The authors report violations in 120/402 sampled public skills (29.9%) and 26 previously unknown deployed-skill guardrail failures. **Author-reported, not independently replicated for DT**; the sample selects skills with explicit constraints and state-modifying operations, not all skills.
+2. Xuan Chen, Lu Yan, Ruqi Zhang and Xiangyu Zhang, *Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety* (SafeAudit), arXiv:2603.18245v2 (2026-08-15). Original: https://arxiv.org/abs/2603.18245 ; HTML: https://arxiv.org/html/2603.18245v2 . **Directly examined:** abstract, evaluation/limitations and rule-resistance concept. Authors report >20% residual unsafe patterns in three benchmarks/12 environments. This is **independent research direction, not an independent replication of Sefz**; benchmark completeness and prompts-only guardrails are different questions.
+3. Independent frontier contrast: DeMeo et al., *Active learning framework leveraging transcriptomics identifies modulators of disease phenotypes*, *Science* (2025), DOI https://doi.org/10.1126/science.adi8577 ; institutional abstract https://www.broadinstitute.org/publications/broad1370036 . **Read abstract only.** Its lab-in-the-loop evidence refinement illustrates why high-scoring candidates need real external outcome measurement; the domain, hit rates and intervention costs do **not** transfer to DT.
+
+No third-party code, dataset, PDF or figures were downloaded or redistributed. Paper/repository code-license and reproducibility were **not verified**; no code reuse is proposed.
+
+## Specific mechanism and counterevidence
+
+**Source mechanism:** Convert a *declared* natural-language safety rule into a typed source→action path with a required intervening authorization gate; observe actual invocation, resource and authorization events in a permitted isolated run. A missing gate on an otherwise reached side-effect path is a reproducible violation witness, even for a benign user request. A declared flag, prompt or textual refusal is not by itself evidence of an authorized gate or of an unchanged destination. The source also illustrates a documented command failing and an agent falling back to another route that bypasses the guardrail.
+
+**Limits:** The graph and labels are only as complete and trustworthy as observation. The authors acknowledge coarse labels can cause false positives, fine labels false negatives, LLM execution is nondeterministic, and missing guardrails cannot generally be discovered from the declared specification. A graph containing an `ask` event does not by itself prove the *owner authorized* the particular action. A synthetic pass cannot certify an inaccessible production tool or prove a natural DT mission cycle.
+
+## Why this may be distinct for DoubleTake
+
+Public `doubletake_evolution/STATE.md` (latest 2026-11-02 Overseer checkpoint) reports a **source-observed tool-input safety concern**, with a **test-only** private Code Engineer commit, **no executed test**, and **no fix yet verified for that concern**. The exact private source, inputs, paths and security-sensitive particulars must remain private. The existing Code Engineer is the relevant owner; this note grants no authority to execute or modify it.
+
+Related existing incoming entries: **IS-012** follows *untrusted provenance through derived arguments*; **IS-015** checks *check-time versus use-time output containment*; **IS-027** checks *cross-plane attribution*; **IS-028** compares *approved versus complete persistent effects*. This lead is narrower: test **declared rule versus actual benign-input control-flow path**, including a documented-route failure followed by an alternate route. It does not replace their receipt, authorization, provenance or outcome checks. GitHub code search found no exact Sefz/semantic-fuzzing research entry, but search absence does not prove DT lacks equivalent tests.
+
+## Falsifiable capability-delta hypothesis (not established)
+
+**H:** If the already-authored, owner-authorized isolated safety regression tests only a direct unsafe invocation, a *benign request that triggers an alternate/fallback tool route* might reach a state-changing operation without the required effective authorization check. A minimal trace-witness control may expose that missed path while preserving ordinary permitted execution. **Falsifier:** existing tests already cover every reachable alternate route; the target has no such fallback; there is no permitted fixture; or all negative controls refuse with zero observed side effects. In any such case return `ALREADY_PRESENT`, `NO_APPLICABILITY` or `NO_AUTHORIZED_FIXTURE`, not a patch proposal.
+
+### Bounded OUTWARD → INWARD → GROUND discriminator
+
+**OUTWARD (read-only):** Director/Code Engineer privately identify the *existing* tool owner, current checkout and approved guardrail; pin the authored regression's expected action and its observation boundary. Freeze an independently specified oracle: requested benign operation, permitted side effects, required effective authorization, and actual observed effects. If any element is unknown, abstain.
+
+**INWARD only after existing authorization:** In an already-permitted disposable isolated test surface, run current regression and paired controls without network writes, credentials or production effects: (1) normal authorized call; (2) malformed/denied direct call; (3) ordinary benign input reaching an alternate tool route after a controlled mock failure; (4) missing authorization event; (5) displayed prompt without verified authorization; (6) incomplete event observation. Require actual destination state, verified authorization identity/scope, full path attribution and no unexpected side effects; classify missing observations as `UNVERIFIED`. Compare exact baseline versus a minimal owner-authored change **only if** a distinct failing path reproduces.
+
+**GROUND (not achieved):** Code Engineer may implement only after Director/owner approval, then independent executed red/green and benign-control tests on the exact revision, followed by an authorized natural-cycle observation and later reuse. This note itself establishes **zero** DT safety fixes, executions, B7 receipts, assimilations or natural completions.
+
+## Authority, safety and handoff
+
+No live-host access, new permission, GitHub Actions, local model, untrusted skill installation, destructive fuzzing, or changes to protected B1 history. Keep private source/test details in private DT coordination. Scrapyard Scout owns independent source validation, triage and in-place reduction; Director owns prioritization; Code Engineer alone owns private implementation. If this is redundant with current regression coverage, **DEFER rather than increase source count**. Revisit only after the actual authorized test result or evidence of an untested alternate route. No claim of full Borg completion.
