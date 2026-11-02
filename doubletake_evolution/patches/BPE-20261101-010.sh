@@ -3,8 +3,8 @@
 # Mission: DT-EVO-007 / 7.9 evidence-trust extension; NOT completion of distinct 7.9.2 proof-chain package.
 # Executor branch: main; source snapshot: 17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2
 # Source blob: tools/doubletake_evolve/claim_receipt/receipts.py bc39080efa674bb41f1b8f738130ee90ada9db6a
-# Revision: 3; PREPARED_UNTESTED / LOCAL_APPLY_UNVERIFIED; rebased after BPE-013 already integrated all_pass gate. Only strict adjacency remains.
-# DoD positive: one/two correctly linked receipts remain valid and all_pass
+# Revision: 5; PREPARED_UNTESTED / LOCAL_APPLY_UNVERIFIED; rebased after BPE-013 already integrated all_pass gate. Only strict adjacency remains.
+# DoD positive: one/two correctly linked receipts remain valid and all_pass; mapping order deterministic
 # DoD negative: two anchors, unknown predecessor, disconnected singleton, and skipped-middle receipt are rejected even when per-claim evidence matches
 # DoD regression: new focused tests and existing test_claim_receipt.py pass under host guard; git diff --check passes.
 # DoD evidence: local executor records actual source/branch, tests and DT commit separately from public feedback.
