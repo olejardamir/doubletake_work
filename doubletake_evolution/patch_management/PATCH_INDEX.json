@@ -20,7 +20,7 @@
     "latest_executor_head_inspected": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
-    "next_patch": "BPE-20261101-010 rev5: first conditional candidate, requires local git apply --check and guarded tests; BPE-026 independently eligible on nonoverlapping hunk, then BPE-024/025.",
+    "next_patch": "BPE-010 rev5 first conditional candidate; BPE-026 and BPE-027 are independent source-grounded proof integrity patches; BPE-024/025 are independent cross-mission candidates. All require local apply-check and guarded tests.",
     "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update.",
     "retirement_contract": "Code patches implemented and pushed on DT feature branch are removed from public active patch directory, but retained in index/historical commits/results. Status APPLIED_UNVERIFIED must not be misread as whole-mission Ground or DT/main integration.",
     "active_patch_selector": "Only select actual implementation .sh files in doubletake_evolution/patches; 010,024,025 currently prepared and tests not executed. Never select superseded 002 or atomic conditional files in implementation mode.",
@@ -1038,6 +1038,54 @@
       "script_blob_sha": "92d319d7d037ec39a99cf2f75c4d7b0ae2fc05b0",
       "patch_blob_sha": "92d319d7d037ec39a99cf2f75c4d7b0ae2fc05b0",
       "independent_goal": "All supplied receipts must be within the sealed committed universe before aggregate all_pass"
+    },
+    {
+      "id": "BPE-20261101-027",
+      "mission_ref": "DT-EVO-007 / 7.9.2",
+      "summary": "Reject duplicate claim identifiers in sealed proof specification",
+      "file": "BPE-20261101-027.sh",
+      "file_present": true,
+      "code_patch": true,
+      "type": "SOURCE_DIFF_IMPLEMENTATION",
+      "format": "single_file_bash_embedded_diff_instructions_DoD",
+      "priority": 5,
+      "patch_revision": 1,
+      "status": "PREPARED_UNTESTED",
+      "target_branch": "main",
+      "source_revision": "17c70b0e2b7fec53e46bdeaa35e9e25d76034bd2",
+      "source_blob_shas": {
+        "tools/doubletake_evolve/claim_receipt/models.py": "91011f3908399ab228da89778ea063d24c5f50c9"
+      },
+      "touched_paths": [
+        "tools/doubletake_evolve/claim_receipt/models.py",
+        "tools/doubletake_evolve/claim_receipt/test_sealed_claim_id_uniqueness.py"
+      ],
+      "depends_on": [],
+      "related_nonoverlapping_patches": [
+        "BPE-20261101-010",
+        "BPE-20261101-026"
+      ],
+      "auto_selectable": true,
+      "eligibility": "CONDITIONAL_LOCAL_PREFLIGHT; source hunk matches main; not APPLY_READY",
+      "source_basis": "Verified current sealed ClaimReceiptSpec permits repeated claim and committed IDs",
+      "validation": {
+        "remote_source_hunk_unique": true,
+        "unified_hunk_counts_validated": true,
+        "git_apply_check_executed": false,
+        "bash_syntax_checked": false,
+        "host_tests_executed": false,
+        "local_worktree": "UNKNOWN",
+        "new_test_lines": 38
+      },
+      "verification": {
+        "applied": false,
+        "tested": false,
+        "ground_verified": false
+      },
+      "publication_review": "NO_SECRETS_OR_PROTECTED_RUNTIME_DATA_IN_SCRIPT",
+      "script_blob_sha": "f671a56a2348d7edad5b6dfe6e4988efc0e384f4",
+      "patch_blob_sha": "f671a56a2348d7edad5b6dfe6e4988efc0e384f4",
+      "independent_goal": "Unique claim identifiers in a sealed claim specification, including committed claim universe"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
@@ -1072,9 +1120,10 @@
     "open_mission_steps_mapped": 22,
     "atomic_work_orders_reviewed": 58,
     "atomic_gate_scripts_count": 58,
-    "source_patch_scripts_count": 4,
+    "source_patch_scripts_count": 5,
     "new_scripts": [
-      "BPE-20261101-026"
+      "BPE-20261101-026",
+      "BPE-20261101-027"
     ],
     "revised_scripts": [
       "BPE-20261101-010"
@@ -1085,13 +1134,15 @@
     "next_conditional_patch": "BPE-20261101-010",
     "publication_commits": [
       "8ca53ea9f3db6ddf01a65435c89ff29b70b9611b",
-      "c313d0bc432fc980a51a3d90a1cc00cc8598b500"
+      "c313d0bc432fc980a51a3d90a1cc00cc8598b500",
+      "28b7ffb23c224b32bfe95dd4d121e794a0760f89"
     ],
     "static_hunks_checked": [
       "010",
       "024",
       "025",
-      "026"
+      "026",
+      "027"
     ],
     "no_runtime_ground_claimed": true
   },
@@ -1150,9 +1201,9 @@
   "mission_patch_coverage": {
     "planned_work_orders": 58,
     "guarded_conditional_scripts": 58,
-    "source_code_patch_scripts_current": 4,
+    "source_code_patch_scripts_current": 5,
     "all_source_implementation_complete": false,
-    "notes": "58 work orders/gates do not equal source changes. Four independent code scripts are remote-context-checked but local apply and tests remain unverified.",
+    "notes": "58 atomic work orders and gates, five real source patch scripts; no local apply/tests or Ground.",
     "last_reconciled_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3"
   }
 }

@@ -10,10 +10,10 @@
     "atomic_units": 58,
     "real_patches_published_for_subset": true,
     "executable_gate_packages_created": 58,
-    "pending_source_diff_code_patches": 4,
+    "pending_source_diff_code_patches": 5,
     "all_real_code_diffs_prepared": false,
     "atomic_work_orders": 58,
-    "actual_executable_source_diffs_in_active_patch_directory": 4,
+    "actual_executable_source_diffs_in_active_patch_directory": 5,
     "real_source_diff_coverage_complete": false,
     "work_orders_created": 58
   },
@@ -1669,12 +1669,18 @@
           "file": "BPE-20261101-026.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-027",
+          "file": "BPE-20261101-027.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
         }
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
       "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
-      "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance.",
+      "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance. BPE-027 additionally prevents duplicate sealed claim IDs; local tests UNRUN.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-A.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
       "evidence_status": "REMOTE_HUNK_CONTEXT_VERIFIED_LOCAL_APPLY_AND_TESTS_UNRUN",
@@ -1706,12 +1712,18 @@
           "file": "BPE-20261101-026.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-027",
+          "file": "BPE-20261101-027.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
         }
       ],
       "requirement_type": "GATED_CONDITIONAL",
       "prerequisite_or_acceptance": "prerequisite/authorization must be independently satisfied; not a ready code patch.",
       "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
-      "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance.",
+      "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance. BPE-027 additionally prevents duplicate sealed claim IDs; local tests UNRUN.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-B.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
       "evidence_status": "REMOTE_HUNK_CONTEXT_VERIFIED_LOCAL_APPLY_AND_TESTS_UNRUN",
@@ -1745,12 +1757,18 @@
           "file": "BPE-20261101-026.sh",
           "kind": "CODE_DIFF",
           "state": "PREPARED_UNTESTED"
+        },
+        {
+          "id": "BPE-20261101-027",
+          "file": "BPE-20261101-027.sh",
+          "kind": "CODE_DIFF",
+          "state": "PREPARED_UNTESTED"
         }
       ],
       "requirement_type": "ACTIONABLE_OR_VERIFICATION",
       "prerequisite_or_acceptance": "evidence or focused positive/negative result required; not satisfied by planning alone.",
       "completion_evidence": "NONE_VERIFIED_FOR_THIS_ATOMIC_UNIT",
-      "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance.",
+      "note": "BPE-002 superseded; 011–014 already implemented on DT main. BPE-010 strict predecessor and BPE-026 extra-receipt proof universe are distinct. Both require local guarded tests and independent acceptance. BPE-027 additionally prevents duplicate sealed claim IDs; local tests UNRUN.",
       "execution_package": "doubletake_evolution/patch_management/atomic_patches/MEP-7-9-2-C.sh",
       "execution_package_kind": "EXECUTABLE_CONDITIONAL_GATE_NOT_CODE_DIFF",
       "evidence_status": "REMOTE_HUNK_CONTEXT_VERIFIED_LOCAL_APPLY_AND_TESTS_UNRUN",

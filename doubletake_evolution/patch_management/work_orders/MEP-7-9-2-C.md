@@ -24,3 +24,5 @@
 ## 2026-11-02 source reconciliation
 
 Independent positive and negative tests are prepared but UNRUN: BPE-010 rejects second anchor, unknown/distant predecessor and skipped middle while retaining ordered valid chains; BPE-026 rejects extra validly chained uncommitted receipts while retaining valid exact and empty proofs. Confirm actual local apply, focused host-guarded tests and regression/consumer behavior before recording any acceptance. No independent runtime Ground or owner authorization is inferred.
+
+**Additional negative/positive controls:** BPE-027 rejects duplicate claim definitions and committed IDs; accepts distinct and empty sealed sets. It remains UNRUN and does not substitute for 010's predecessor checks or 026's extra-receipt check.
