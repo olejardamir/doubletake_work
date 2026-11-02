@@ -104,3 +104,7 @@ Current DT main accepts arbitrary nonempty `ReceiptVerification.verdict_digest`.
 ## 2026-11-02 — BPE-030 local queue execution identity
 
 DT main `df5f733cef0292dee865cf5a184fbb9d0c209e6d` shows a check-to-use gap: the runner validates script bytes and then executes the mutable script pathname. BPE-030 reads the bytes again, checks both indexed Git blob SHA and SHA-256, and executes the captured text via bash stdin. A new isolated negative test swaps the script after inspection and asserts refusal/no execution; existing positive runner and receipt tests remain in the focused suite. **Hypothesis:** an after-inspection swap cannot change executed bytes without refusal. **Measure:** local `bash -n`, `git apply --check`, guarded runner tests, first-try apply, DT commit and separately published sanitized feedback. **Revert/revise:** if normal pinned scripts fail due to stdin semantics, or the negative swap still executes. Source hunks statically inspected only; no host tests or independent Ground claimed. This is supporting maintenance, not 7.9.1-C completion.
+
+### BPE-030 rev2 test-fixture correction
+
+Static inspection found doubled backslashes in the swapped-script negative test. Rev2 uses Python newline escapes so an erroneously launched replacement would write the sentinel. Implementation hunk unchanged. No local bash/apply/host tests run. Revisit if the negative control does not discriminate a launched replacement.

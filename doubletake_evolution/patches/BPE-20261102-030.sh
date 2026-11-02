@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# BPE-20261102-030 rev1 | DT-EVO-007 / 7.9.1-C supporting executor integrity
+# BPE-20261102-030 rev2 | DT-EVO-007 / 7.9.1-C supporting executor integrity
 # Goal: run exactly the bytes whose hash was checked, not a replaceable pathname.
 # DT/main source HEAD df5f733cef0292dee865cf5a184fbb9d0c209e6d
 # tools/doubletake_evolve/patch_execution/bpe_queue_runner.py blob 88d0a3c6d18e8be13cb7957ed62115bc51819733
@@ -66,7 +66,7 @@ diff --git a/tools/doubletake_evolve/patch_execution/test_bpe_queue_runner.py b/
 +
 +    def swap_after_inspection(*args, **kwargs):
 +        report = original(*args, **kwargs)
-+        script.write_text("#!/usr/bin/env bash\\nprintf malicious > applied.txt\\n")
++        script.write_text("#!/usr/bin/env bash\nprintf malicious > applied.txt\n")
 +        return report
 +
 +    monkeypatch.setattr(runner, "inspect_queue", swap_after_inspection)

@@ -1221,7 +1221,7 @@
       "code_patch": true,
       "type": "SOURCE_DIFF_IMPLEMENTATION",
       "priority": 2,
-      "patch_revision": 1,
+      "patch_revision": 2,
       "status": "PREPARED_UNTESTED",
       "target_branch": "main",
       "source_revision": "df5f733cef0292dee865cf5a184fbb9d0c209e6d",
@@ -1236,7 +1236,7 @@
       "depends_on": [],
       "auto_selectable": false,
       "eligibility": "LOCAL_APPLY_UNVERIFIED; operator review, bash -n, git apply --check and guarded tests required",
-      "patch_blob_sha": "3feb676c45775545421911860206a6260e278bb8",
+      "patch_blob_sha": "238408bedcaf8e22ca03e3ef3eb42e6241b9622f",
       "verification": {
         "applied": false,
         "tested": false,
@@ -1251,7 +1251,8 @@
         "local_worktree": "UNKNOWN"
       },
       "publication_review": "NO_CREDENTIALS_OR_PROTECTED_RUNTIME_STATE",
-      "source_basis": "runner checks script blob but then executes mutable pathname; negative test swaps after inspection"
+      "source_basis": "runner checks script blob but then executes mutable pathname; negative test swaps after inspection",
+      "revision_note": "Negative test replacement script uses actual newline escapes; implementation hunk unchanged"
     }
   ],
   "automation_id": "6ae785556ee48191bec4acaed0c9a791",
