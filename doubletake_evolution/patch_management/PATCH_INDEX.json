@@ -1251,13 +1251,26 @@
     "executor_reported_test_total": 110,
     "local_worktree": "UNKNOWN",
     "next_conditional_patch": "BPE-20261102-028",
-    "no_runtime_ground_claimed": true
+    "no_runtime_ground_claimed": true,
+    "publication_commits": [
+      "e4d3829d5f716f0c62d4f3968a2dae4fb41834fd",
+      "e2fe0b2e3ec5c1e96eba8fe77a66eb9956cc5f66",
+      "953073c3139cf3162cc5d93561e8e343526ba2fe"
+    ],
+    "patch028_validation": {
+      "remote_source_hunk_exact_match": true,
+      "unified_hunk_counts_valid": true,
+      "local_bash_syntax_executed": false,
+      "git_apply_check_executed": false,
+      "host_tests_executed": false,
+      "local_worktree": "UNKNOWN"
+    }
   },
   "last_format_migration": "2026-11-01",
   "patch_management_directory": "doubletake_evolution/patch_management",
   "index_path": "doubletake_evolution/patch_management/PATCH_INDEX.json",
   "mission_patch_map": "doubletake_evolution/patch_management/MISSION_PATCH_MAP.md",
-  "latest_mission_blob": "c61b9be0780222d13dd2420b44f2fd68422c33e3",
+  "latest_mission_blob": "8e7ffc9dc22960ed6fc3c00716748090f1fafa1a",
   "last_manual_patch_publication": {
     "new_code_scripts": [
       "BPE-20261101-001",
