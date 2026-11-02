@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# BPE-20261101-002 rev1 | DT-EVO-007 / 7.9.2 canonical receipt-chain acceptance
+# BPE-20261101-002 rev2 | DT-EVO-007 / 7.9.2 canonical receipt-chain acceptance
 # Prepared against DT feature/alphacode-provider HEAD 9d784b7f0e465cd7916dc0a49ab2fc0dcd94c5bb
 # SOURCE receipts.py blob 5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0, tests blob 0cbf09e728f483788d63c5b016cdd4df3d728c6e
-# PREPARED_UNTESTED; do not claim local test or Ground.
+# PREPARED_UNTESTED; prior local attempt blocked by working-tree edits, not proven source drift.
+# Precise goal can be integrated minimally by Clai when existing edits overlap; never force/reset/overwrite.
 # GOAL: fail closed on invalid predecessor continuity, forged receipt hash, false overall success.
 # POSITIVE: valid single and ordered receipt chains continue to verify.
 # NEGATIVE: second/disconnected root, skipped predecessor, forged hash or wrong receipt key rejected;
@@ -12,13 +13,23 @@
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 [[ -f "tools/doubletake_evolve/claim_receipt/receipts.py" ]] || { echo 'STOP not a DT checkout'; exit 20; }
-echo "PATCH_ID=BPE-20261101-002 HEAD=$(git rev-parse HEAD)"
-[[ -f "tools/doubletake_evolve/claim_receipt/receipts.py" ]] || { echo "BLOCKED missing tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 21; }
-git diff --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py" && git diff --cached --quiet -- "tools/doubletake_evolve/claim_receipt/receipts.py" || { echo "BLOCKED dirty path tools/doubletake_evolve/claim_receipt/receipts.py" >&2; exit 22; }
-[[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/receipts.py")" == "5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0" ]] || { echo "STALE tools/doubletake_evolve/claim_receipt/receipts.py; ask worker for rebase" >&2; exit 23; }
-[[ -f "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py" ]] || { echo "BLOCKED missing tools/doubletake_evolve/claim_receipt/test_claim_receipt.py" >&2; exit 21; }
-git diff --quiet -- "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py" && git diff --cached --quiet -- "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py" || { echo "BLOCKED dirty path tools/doubletake_evolve/claim_receipt/test_claim_receipt.py" >&2; exit 22; }
-[[ "$(git hash-object -- "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py")" == "0cbf09e728f483788d63c5b016cdd4df3d728c6e" ]] || { echo "STALE tools/doubletake_evolve/claim_receipt/test_claim_receipt.py; ask worker for rebase" >&2; exit 23; }
+echo "PATCH_ID=BPE-20261101-002 HEAD=$(git rev-parse HEAD) BRANCH=$(git branch --show-current)"
+# Preserve existing worktree edits from preceding patches; validate the actual patch context.
+# Committed SHA checks provide provenance, not a blanket lock on unrelated edits.
+for entry in \
+  "tools/doubletake_evolve/claim_receipt/receipts.py:5d2e9ce04089f14d1b7b2b02615cca7d1a1649f0" \
+  "tools/doubletake_evolve/claim_receipt/test_claim_receipt.py:0cbf09e728f483788d63c5b016cdd4df3d728c6e"; do
+  path="${entry%%:*}"
+  expected="${entry#*:}"
+  [[ -f "$path" && ! -L "$path" ]] || { echo "BLOCKED_MISSING_OR_SYMLINK_PATH: $path" >&2; exit 21; }
+  head_blob="$(git rev-parse "HEAD:$path" 2>/dev/null || true)"
+  if [[ "$head_blob" != "$expected" ]]; then
+    echo "NOTICE_HEAD_SOURCE_CHANGED: $path ($head_blob); review compatibility and tests" >&2
+  fi
+  if ! git diff --quiet -- "$path" || ! git diff --cached --quiet -- "$path"; then
+    echo "NOTICE_LOCAL_EDITS: $path; preserve prior edits, stage only relevant changes after testing" >&2
+  fi
+done
 patch_text="$(cat <<'BPE_002_UNIFIED_PATCH'
 diff --git a/tools/doubletake_evolve/claim_receipt/receipts.py b/tools/doubletake_evolve/claim_receipt/receipts.py
 --- a/tools/doubletake_evolve/claim_receipt/receipts.py
@@ -118,7 +129,14 @@ diff --git a/tools/doubletake_evolve/claim_receipt/test_claim_receipt.py b/tools
          item = EvidenceItem(path="ev/a", payload={"value": "1"})
 BPE_002_UNIFIED_PATCH
 )"
-printf '%s\n' "$patch_text" | git apply --check -
+if ! printf '%s\n' "$patch_text" | git apply --check -; then
+  echo "BLOCKED_LOCAL_OVERLAP_OR_ALREADY_IMPLEMENTED: this script changed no files." >&2
+  echo "Clai: inspect existing verify_chain() and verify_claims(), preserve earlier changes," >&2
+  echo "implement only missing ordered-link, digest and aggregate-failure behavior," >&2
+  echo "run focused positive/negative tests, then commit/push only verified changes." >&2
+  echo "A worktree conflict is not proof that the committed GitHub baseline is stale." >&2
+  exit 30
+fi
 printf '%s\n' "$patch_text" | git apply -
 python3 tools/doubletake_evolve/runtime/host_workload.py -- python3 -m pytest -q tools/doubletake_evolve/claim_receipt/test_claim_receipt.py
 git diff --check -- tools/doubletake_evolve/claim_receipt/receipts.py tools/doubletake_evolve/claim_receipt/test_claim_receipt.py
