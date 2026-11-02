@@ -4,7 +4,7 @@ Source: [ACTIVE_MISSION.md](../ACTIVE_MISSION.md). Each row represents **one dis
 
 **Coverage:** 22 open mission steps, 58 atomic work orders; 4 explicitly linked to prepared source patches; 19 with currently missing owner/prerequisite; 5 immediately independent source/verification investigations; all other items depend on prior results. **Implementation coverage is not 58/58.**
 
-Code diff queue: no active scripts after BPE-010/024/025/026/027 integration on DT main. All five retired after verified source commits; 58 work orders remain and independent acceptance/authority gates are not closed. BPE-002 superseded.
+**Current 2026-11-02 reconciliation:** No public source patch is auto-selectable. Two historical prepared but untested scripts BPE-029/030 remain under `../patches/`; BPE-010/024–028 are source-integrated and retired, NOT independently Ground-accepted. New Code Engineer source/test changes are committed directly to PRIVATE DT/main; see [CURRENT_ENGINEERING_LEDGER.md](CURRENT_ENGINEERING_LEDGER.md). Initial work-order statuses below can lag source commits and are not acceptance proof. All 58 work orders remain open until exact source mapping and independent applicable Ground; BPE-002 superseded.
 
 | Work order | Priority | Unit class | Depends on | Current status |
 |---|---|---|---|---|
