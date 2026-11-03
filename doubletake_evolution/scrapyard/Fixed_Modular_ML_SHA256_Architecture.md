@@ -1,6 +1,6 @@
 # Exact modular neural-Boolean SHA-256 — distilled architecture
 
-**Source/provenance:** In-place reduction of this file, original blob `38de201f75587db24eacf29fcf82ee5c38de78e4` (16,164 Git bytes), 2026-11-02. Original equations, circuit diagram, pseudocode and discussion recoverable from Git history. This is a **design argument**, not a trained model, certified cryptographic implementation, current DoubleTake requirement or benchmark. No code or model was executed in this Scout review. The relevant external normative specification is NIST FIPS 180-4 (SHA-256); the design must be checked against it before use.
+**Source/provenance:** In-place reduction of this file, original blob `38de201f75587db24eacf29fcf82ee5c38de78e4` (16,164 Git bytes), 2026-11-02. Original equations, circuit diagram, pseudocode and discussion recoverable from Git history. This is a **design argument**, not a trained model, certified cryptographic implementation, current DoubleTake requirement or benchmark. No code or model was executed in this Scout review. Primary normative source: NIST FIPS 180-4 (2015), https://csrc.nist.gov/pubs/fips/180-4/upd1/final (publisher identity and SHA-256 coverage verified 2026-11-02). The proposed learned-circuit design itself is not NIST-endorsed; its composition and inference have not been independently reproduced.
 
 ## Core claim and proof obligation
 
