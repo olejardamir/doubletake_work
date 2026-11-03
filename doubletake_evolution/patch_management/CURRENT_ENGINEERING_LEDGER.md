@@ -12,8 +12,9 @@
 
 ## Source and test commits requiring work-order reconciliation
 
-| UTC time (Nov 2) | Private commit | Safe topic | Mission association | Evidence |
+| UTC time (Nov 2 unless date shown) | Private commit | Safe topic | Mission association | Evidence |
 |---|---|---|---|---|
+| 2026-11-03 00:10:28Z | [`8bbc299ab`](https://github.com/olejardamir/DT/commit/8bbc299ab7046a8df3a579bb84589acbf6edf7e2) | read-only autonomous journal verifier rejects non-object JSON records without crashing | **NEW_UNMAPPED**, supports DT-EVO-001 / 1.3.3 fault-evidence integrity; MEP-1.3.3-A/B/C concern owner disposition/natural cycles, not this isolated parser fix; no mission unit closed | SOURCE_COMMITTED; 5 negative cases and 2 positive controls authored; **TESTS_NOT_EXECUTED**; no runtime Ground; BPE none; retained-history owner authorization still open |
 | 23:08:38Z | [`048d5018d`](https://github.com/olejardamir/DT/commit/048d5018d982c741da0ba4acfd523c80f7389330) | mission output preflight | DT-EVO-007 / 7.9.1 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
 | 22:06:05Z | [`77e0c130f`](https://github.com/olejardamir/DT/commit/77e0c130f1662805c037d92e6e4a3b5af81203a4) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | TEST_DEFINITION_ONLY; tests not independently witnessed |
 | 21:14:17Z | [`df57c2529`](https://github.com/olejardamir/DT/commit/df57c25299a4788b3e44e02daed2a3cd4c67f1e5) | autonomous-loop reliability | DT-EVO-001 / 1.3.3 candidate — **PROVISIONAL, not accepted** | SOURCE_COMMITTED; tests not independently witnessed |
