@@ -20,7 +20,7 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `EQC-SR-v1.0-release-candidate.md` | `f29690915f4218bbb2ce9ea04d6b1340c4683fdc` | 133167 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `evp_ui_backend_readiness_prompt_v3.md` | `e68ba6544c178cebd5fee7fb0df3c41e7b6a44ca` | 22413 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `FINAL_SINGLE_OPENCODE_PROMPT_NON_M3_REQUIREMENT_CLOSURE_EXIT_VERIFIED.md` | `50648cea4736514a405c212e32b65b4768a804b3` | 223541 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `Fixed_Modular_ML_SHA256_Architecture.md` | `21280ee77ea09b5f7286bd50e34a0997d0778dd7` | 6081 | S27 / FULL_READ / REDUCED_IN_PLACE / 10083 bytes saved / 51fd31e1; finite Boolean truth-table exactness and SHA-256 composition; KEEP research-only; original `38de201f75587db24eacf29fcf82ee5c38de78e4` recoverable in Git history |
+| `Fixed_Modular_ML_SHA256_Architecture.md` | `a281d569d29a69137a51bd33f92affd5739fbef1` | 6252 | S27 / FULL_READ / REDUCED_IN_PLACE / 9912 net bytes saved / 51fd31e1 + c83ec133; NIST FIPS 180-4 publisher link verified, finite Boolean proof conditions; KEEP research-only; original `38de201f75587db24eacf29fcf82ee5c38de78e4` recoverable in Git history |
 | `Forcing_Age_Liquidity_Mathematics_FALM_v6_final_theoretical_core.md` | `d9ad8605616d23bc980ded634c55e0f5f458534a` | 75221 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `forcing_age_liquidity_repair_vs_replenishment.md` | `2a292beff3e7b6a631a6cbcdb9b942dda0480f39` | 2961 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `form_picker_phase1_mvp_10_10_blueprint.md` | `9498019786070abf117384d4abd48880a4e164c2` | 27292 | LEGACY_STATUS_NOT_YET_MIGRATED |
