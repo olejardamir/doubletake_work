@@ -34,7 +34,7 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v4.md` | `5d3c54dd307a3c0fad8834e1f908c4db05f0679a` | 77566 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v5.md` | `18b55a7cc9cbecb46fbe6a872ae80214ebc5b775` | 94952 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v6.md` | `b210411cb098f71022c96b5eae350b370e1ac955` | 104454 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md` | `bfee8cf9f2dacbe5f741408589273b1465973f4f` | 129732 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `ubr_smart_cosmetic_rule_syntax_blueprint_v7.md` | `bfee8cf9f2dacbe5f741408589273b1465973f4f` | 129732 | DELETED_SUPERSEDED_VERSION (2026-11-02); all long substantive lines transferred into v9 consolidated; only heading and version statement differ; historical Git blob retained |
 | `ubr_smart_cosmetic_rule_syntax_blueprint_v9_consolidated.md` | `25052f94e1cf741141fc7a2f5194330f3e1a2254` | 208218 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `ubr_smart_cosmetic_rule_syntax_blueprint.md` | `aeadb46db79a53da0c4203aa7a246d414b65dcb3` | 46317 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `Uninstalls by region_ooagdclidngalapkfajibimbmdhgafal.csv` | `2f019ba443f842d7cbf955887a3a3eceb4d276fe` | 5203 | DELETED_NO_DT_VALUE (2026-11-02); Unrelated raw app uninstall-by-region export without DT contract; original Git blob retained |
@@ -51,6 +51,6 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `voynich_unsupervised_morphology_system.md` | `22ec98f57085ea2652d7e8533bf759c499ac8b4c` | 3368 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `WEALTHSIMPLE_HR_INTERVIEW_DAMIR_CLUSTERED.md` | `39624f47870cb77866037f397e47228a7f20e383` | 34082 | DELETED_NO_DT_VALUE (2026-11-02); Private interview preparation; no DT research contribution; original Git blob retained |
 | `WEALTHSIMPLE_HR_INTERVIEW_TRANSCRIPT_DAMIR_STUDY_ONLY.md` | `d5b7afda4b2ecba002f3d1aa6b0a3b7a59745420` | 65781 | DELETED_NO_DT_VALUE (2026-11-02); Private interview transcript and preparation; no DT research contribution; original Git blob retained |
-| `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | 199310 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `youtube_detection_neutral_architecture_v16.md` | `aacbb3527cfe4c6a4867e784f779c8cd8936fdba` | 199310 | DELETED_SUPERSEDED_VERSION (2026-11-02); all long substantive lines transferred into v17; only version heading and status line differ; historical Git blob retained |
 | `youtube_detection_neutral_architecture_v17.md` | `3387f7a74038e2c6155dce3702969351af3999fc` | 213206 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `zero_resolution_observation_genesis_of_distinction.md` | `b75eda1766f0896edc78f0c96b36483b36f05e9f` | 54203 | LEGACY_STATUS_NOT_YET_MIGRATED |

@@ -7,12 +7,12 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `EA_FINAL_100_PERCENT_SUBMISSION_READY_PROMPT.md` | `aa826ca95feb91ee8a5e676ae23ee7c4b5c1dbe3` | 34606 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `EA_FINAL_GAP_CLOSURE_PROMPT.md` | `cbad287c38499f91635614f5eed14269a3921b1c` | 25280 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `EQC_AC_Architecture_Contract_Standard_v1_5_1.md` | `2b512674477f1e30795f3e9af62892e2d0c282b9` | 109622 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_AC_Architecture_Contract_Standard_v1_5.md` | `d0eb932ce132be093b9016758eb3286d80dbfe42` | 109600 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_FIC_Standard_v1_6.md` | `16ece3332c51ceed64aecb04f2a95e09e6f59b62` | 81132 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_FIC_Standard_v1_7.md` | `10ecab54aeef55191bad343afe33b1b8d8502334` | 91041 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_FIC_Standard_v1_8.md` | `4d2a5149c2813a38c218bd3c558fec07743bef10` | 96011 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_FIC_Standard_v1_9.md` | `9035c7b2ee24f566d5954fece8f8a82876530410` | 96305 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_FIC_Standard_v2_1.md` | `a2a93f55e494125a73577393f3e680b967a59f45` | 107837 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `EQC_AC_Architecture_Contract_Standard_v1_5.md` | `d0eb932ce132be093b9016758eb3286d80dbfe42` | 109600 | DELETED_SUPERSEDED_VERSION (2026-11-02); 99.86% long-line content carried into v1.5.1; differences are version/status labels; historical Git blob retained |
+| `EQC_FIC_Standard_v1_6.md` | `16ece3332c51ceed64aecb04f2a95e09e6f59b62` | 81132 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v1.7 onward preserves 99% long-line content and latest v2.3 retained; historical Git blob retained |
+| `EQC_FIC_Standard_v1_7.md` | `10ecab54aeef55191bad343afe33b1b8d8502334` | 91041 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v1.8 onward preserves 98% long-line content and latest v2.3 retained; historical Git blob retained |
+| `EQC_FIC_Standard_v1_8.md` | `4d2a5149c2813a38c218bd3c558fec07743bef10` | 96011 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v1.9 onward preserves 98% long-line content and latest v2.3 retained; historical Git blob retained |
+| `EQC_FIC_Standard_v1_9.md` | `9035c7b2ee24f566d5954fece8f8a82876530410` | 96305 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v2.1 onward preserves 98% long-line content and latest v2.3 retained; historical Git blob retained |
+| `EQC_FIC_Standard_v2_1.md` | `a2a93f55e494125a73577393f3e680b967a59f45` | 107837 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v2.3 preserves 98% long-line content; version-specific changelog is recoverable via Git; historical Git blob retained |
 | `EQC_FIC_Standard_v2_3.md` | `6e74ff3906337779bbf60a8325f3bf2b30838e1c` | 117376 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `EQC_FIC_Standard.md` | `d0d5ff9d723e2e96b0be58d7a34edfdeffdca68f` | 26093 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `EQC-SR-v0.7.md` | `2f83c7fcbc157806711104a808849bc81a1eabd6` | 105675 | LEGACY_STATUS_NOT_YET_MIGRATED |
@@ -29,10 +29,10 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `freudian_graph_common_chat_architecture.md` | `7a5be885b7eca182a248532b20e25caedbacd112` | 23833 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `freudian_v7_node_decision_map.md` | `321ce258d16abe2c0e7e56104d837c82b6144702` | 48453 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `full_freudian_id_ego_superego_mechanism_pseudocode.md` | `684906039df0cb2876f0e69ab4658eb0167b3463` | 85878 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `full_freudian_id_ego_superego_mechanism_V2_complete.md` | `d3466a4861a9e315077fc23c3a5267e079c8b9e0` | 168818 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `full_freudian_id_ego_superego_mechanism_V2_complete.md` | `d3466a4861a9e315077fc23c3a5267e079c8b9e0` | 168818 | DELETED_SUPERSEDED_VERSION (2026-11-02); 98% long-line content in V3; unique lines are prior version entry-point and variable names; historical Git blob retained |
 | `full_freudian_id_ego_superego_mechanism_V3_complete_canonical.md` | `f2a106d2529b8c0c9945ec398e90e85e94a463dd` | 170951 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `full_freudian_id_ego_superego_mechanism_V4_complete_canonical.md` | `16cfa1e4497350355083d071431ff1a4227ec586` | 193199 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` | `248f079e471d1e98e5f2ee578f107dfb160eaa73` | 195345 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `full_freudian_id_ego_superego_mechanism_V5_complete_canonical.md` | `248f079e471d1e98e5f2ee578f107dfb160eaa73` | 195345 | DELETED_SUPERSEDED_VERSION (2026-11-02); 98% long-line content in V6; unique lines largely prior version-specific entry-point and checklist names; historical Git blob retained |
 | `full_freudian_id_ego_superego_mechanism_V6_complete_canonical.md` | `cdacf4e24e0e9f0467eec61ff208e9b6cd22409c` | 221001 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `full_freudian_id_ego_superego_mechanism_V7_flow_corrected_canonical.md` | `c2a3d4ae6b7111d9dff70cf91d1b02b46a3f2c8d` | 231934 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `GENERAL_ENGINEERING_JIRA_TICKET_OPERATING_PROCEDURE_v2.md` | `0442f22ef5a5dc1a2c81d2d69f1bd342148360c6` | 24601 | LEGACY_STATUS_NOT_YET_MIGRATED |
