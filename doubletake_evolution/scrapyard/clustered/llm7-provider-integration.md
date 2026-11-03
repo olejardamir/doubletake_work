@@ -36,3 +36,8 @@ All source paths below are relative to `doubletake_evolution/scrapyard/`. SHA id
 | LLM7-09 | `09_LLM7_FINAL_END_TO_END_VALIDATION.md` | `7bfcba54accef6c0543b7bff3222e92700cb6848` | 1503 |
 
 **License/provenance:** Self-authored synthesis of user-provided archival planning notes; no external code/text reproduced. Historical API URLs are research pointers, not permission or present-day entitlement.
+
+
+## LLM7-02 source deletion confirmation (2026-11-02)
+
+The surviving standalone probe note `../02_LLM7_LIVE_PROTOCOL_AND_CAPABILITY_PROBE.md` (source blob `f0f6861636159e44c5d6c684eac240f42d5bd917`, 1,379 Git bytes) was independently read before its retirement. Its distinct historic claim (anonymous 2026-09-11 completion without a retained receipt), changing model entitlements, GET-model/chat/SSE/tool probes, bounded opt-in and malformed/rate controls, and unverified current Ground are already preserved in this canonical cluster under members LLM7-02/05/08. The original file was therefore **redundant as an active source**. Full contents and prior original `d56f73a0643a65b4d5aea815efdffd32db9115ae` remain recoverable through immutable Git history. No DT behavior or external-service entitlement is claimed. This confirmation records one verified cluster-consolidation candidate; actual source deletion is evidenced separately by its Git commit and the root_0-9 inventory tombstone.
