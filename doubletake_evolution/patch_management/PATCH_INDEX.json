@@ -17,15 +17,25 @@
     "public_source_disclosure": "CURRENT FOUR-WORKER POLICY: public doubletake_work is planning, research and historical patch metadata only; new implementation source/test diffs are committed directly to private DT/main by Borg Code Engineer. Older public patch records are preserved as history, not new publication authority.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "db15aa4e4243f4db4134bade14f2aee452a00e66",
+    "latest_executor_head_inspected": "0fe40aab618dea08459a7be916cf416eb050cc96",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
     "next_patch": "NO AUTO-SELECTABLE PUBLIC SCRIPT. BPE-029 and BPE-030 are historical PREPARED_UNTESTED, not integration authority. Sole direct code implementation owner: Borg Code Engineer -> private DT/main. See CURRENT_ENGINEERING_LEDGER.md for post-merger source/test commit reconciliation.",
     "directory_contract": "patches/ implementation .sh only. Diagnostic-only .sh are legacy and should be migrated to patch_management/diagnostics/ upon authorized safe update.",
     "retirement_contract": "Already integrated code changes are retained as APPLIED_UNVERIFIED historical records; never reapply by stale selection metadata. Confirm direct private DT/main source before status reconciliation. Ground remains independent of source commit and test definitions.",
     "active_patch_selector": "DISABLED for GPT-side integration. No public .sh patch is an automatically executable or approved DT change. Existing 58 atomic packages remain conditional gates, not implementation. Retain historical records and require exact current-main source/authority verification before any proposal.",
-    "mainline": "DT implementation target is private main. Most recent independently inspected main HEAD db15aa4e4243f4db4134bade14f2aee452a00e66 (2026-11-03T00:11:42Z); underlying latest source/test commit 8bbc299ab7046a8df3a579bb84589acbf6edf7e2 has TESTS_NOT_EXECUTED. Always refetch before mutation; no active public implementation source patch selector.",
-    "conditional_patches": "58 atomic mission task packages reside in doubletake_evolution/patch_management/atomic_patches/ as guarded executable prerequisites/verification. These are NOT source-diff implementation patches and MUST NOT be counted as implemented code. Replace them with source-grounded diffs as actual gaps and authorization permit."
+    "mainline": "Verified private DT/main was 05ce0c39fdb2e0dcb0247581b5d36d01eb4583c3 before receipt-only commit 0fe40aab618dea08459a7be916cf416eb050cc96. Its exact committed executor (76955145...) and test (d2779cd5...) were executed in isolated GPT-side Python 3.13.5/pytest 9.0.2: 7/7 passed, with minimal crypto_utils and ToolResult dependency substitutes. This is an exact-source focused test, not full-checkout/host/runtime Ground. Public patch selector remains DISABLED; BPE-029/030 remain untested proposals.",
+    "conditional_patches": "58 atomic mission task packages reside in doubletake_evolution/patch_management/atomic_patches/ as guarded executable prerequisites/verification. These are NOT source-diff implementation patches and MUST NOT be counted as implemented code. Replace them with source-grounded diffs as actual gaps and authorization permit.",
+    "focused_committed_regression": {
+      "report": "private DT/main: reports/gpt_collective/FOCUSED_COMMITTED_TOOL_ARGUMENT_REGRESSION_20261103.md",
+      "executor_blob": "769551450d2580f3d85bc2b95f07c845a62f4bd3",
+      "test_blob": "d2779cd5277c6ecac9cc2af78d4f7f71fea5b0f5",
+      "source_revision": "05ce0c39fdb2e0dcb0247581b5d36d01eb4583c3",
+      "result": "7/7 PASS",
+      "grade": "FOCUSED_ISOLATED_EXACT_SOURCE_TEST_WITH_STUBBED_DEPENDENCIES",
+      "full_checkout_verified": false,
+      "live_runtime_verified": false
+    }
   },
   "patches": [
     {
