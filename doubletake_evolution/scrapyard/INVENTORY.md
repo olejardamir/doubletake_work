@@ -4,7 +4,7 @@ Last rebuilt: 2026-11-02. Full Git-blob access audit at `b2c891739d6cf57ba3eb406
 
 **This is the canonical small entrypoint, replacing the 621,621-character monolithic editable ledger.** Legacy detailed findings were retained *unaltered* in `doubletake_evolution/inventory_archives/INVENTORY_pre_sharding_20261102.md` at exact original Git blob `74a09db470c223dd690a6fb493576f9507ce395d`. Original history remains intact. Pre-sharding `INVENTORY_DELTA.md` is retained as historical metadata; S23–S25 factual source SHAs, reductions and Director dispositions are now reconciled in the appropriate source/incoming shards. Do not append further duplicate delta notes.
 
-- **Verified tree after this cleanup: 300 scrapyard blobs** = 249 root files, 29 incoming, 13 canonical clusters and 9 inventory shards. All six deleted source bodies remain in Git history with inventory-shard tombstones.
+- **Current verified target after relevance cleanup: 191 scrapyard blobs** = 140 root files, 29 incoming, 13 canonical clusters and 9 inventory shards; previous source counts are historical.
 - Active and retired source identities remain listed in the source shards; `INVENTORY.md` and `INVENTORY_DELTA.md` are excluded from self-referential blob-SHA tracking.
 - A listed blob is not proof of full reading, semantic value, or valid cluster membership. `LEGACY_STATUS_NOT_YET_MIGRATED` means classification must be reconciled with the archived inventory and actual current content before mutation.
 - In every run, edit only the shard(s) whose original source content was changed. Refetch SHA after commit and verify its row; mark old source deleted only after complete preservation/merge of unique content and check existing references.
@@ -14,13 +14,13 @@ Last rebuilt: 2026-11-02. Full Git-blob access audit at `b2c891739d6cf57ba3eb406
 
 - [clustered.md](inventory_shards/clustered.md) — 13 tracked files
 - [incoming.md](inventory_shards/incoming.md) — 29 tracked files
-- [root_0-9.md](inventory_shards/root_0-9.md) — 2 live files (historical tombstones separately retained)
-- [root_A-D.md](inventory_shards/root_A-D.md) — 124 live files (historical tombstones separately retained)
-- [root_E-H.md](inventory_shards/root_E-H.md) — 28 live files (historical tombstones separately retained)
-- [root_I-L.md](inventory_shards/root_I-L.md) — 14 live files (historical tombstones separately retained)
-- [root_M-P.md](inventory_shards/root_M-P.md) — 38 live files (historical tombstones separately retained)
-- [root_Q-T.md](inventory_shards/root_Q-T.md) — 14 live files (historical tombstones separately retained)
-- [root_U-Z.md](inventory_shards/root_U-Z.md) — 29 live files (historical tombstones separately retained)
+- [root_0-9.md](inventory_shards/root_0-9.md) — 1 live files (historical tombstones separately retained)
+- [root_A-D.md](inventory_shards/root_A-D.md) — 107 live files (historical tombstones separately retained)
+- [root_E-H.md](inventory_shards/root_E-H.md) — 10 live files (historical tombstones separately retained)
+- [root_I-L.md](inventory_shards/root_I-L.md) — 6 live files (historical tombstones separately retained)
+- [root_M-P.md](inventory_shards/root_M-P.md) — 7 live files (historical tombstones separately retained)
+- [root_Q-T.md](inventory_shards/root_Q-T.md) — 5 live files (historical tombstones separately retained)
+- [root_U-Z.md](inventory_shards/root_U-Z.md) — 4 live files (historical tombstones separately retained)
 
 ## Backlog priorities
 
@@ -57,3 +57,18 @@ Removed 5 additional superseded source files: original Agent_X multi-session tab
 
 - Deleted `ublock_resurrected_remaining_behavior_master_prompt(4).md` (124,965 bytes). It is an executable backlog for a separate browser extension, naming `Astrocytech/uBlockResurrected`, Chromium MV3/DNR rules, filter lists, and extension testing. No distinct reusable DoubleTake mechanism was identified; retaining merely because semantic duplication was not proven was an overly permissive rule. Recorded original Git blob `398cda13851359858532707a4abbe596f73cc65d` for recovery. This is a relevance-based deletion, not a claim of content equivalence to another browser-extension file.
 - Current scrapyard count 300 blobs after this deletion, 249 root files. Remaining uBlock files have not been certified valuable by this case-specific decision.
+
+## Relevance-first mass cleanup — 2026-11-02
+
+The previous structural access screening was not a reliable file-value decision. Reassessment prioritized **unique, concrete, current or demonstrably transferable DoubleTake mechanisms**, not merely technical detail or novelty. The following root-level source groups were directly checked against their actual Git blob contents (headings, repository attribution, subject matter, and DT-specific transfer evidence); no unrelated project archives are kept simply because they are long or contain generic programming guidance.
+
+- uBlock-specific implementation and browser-extension documentation: **21 deleted**.
+- separate live-match assignment and execution ledgers: **23 deleted**.
+- Glyphser patent-review history: **10 deleted**.
+- runic/poetry/card/I Ching interpretation corpus: **23 deleted**.
+- market-specific theories and experiments: **16 deleted**.
+- unrelated stand-alone engineering, mathematics and extension projects: **16 deleted**.
+
+- **109 files deleted, 16,287,924 original bytes removed** from current Git tree; initial 300 blobs, target 191. Each original Git blob SHA and deletion reason remain in sharded inventory tombstones; Git history provides full recovery. No incoming research, clustered DT synthesis, workers, mission file or production source modified.
+- Stand-alone architecture and proof references with plausible transfer value (EQC-AC, EQC-FIC, PAIV, finite-primitive proof) were explicitly preserved pending a concrete DT-specific distillation, not certified as important.
+- This is **relevance screening of directly fetched project documents, not a claim of paragraph-level semantic proof across every file**. Remaining root files require the same relevance-first rule, and should not be marked valuable just because no duplicate was found.

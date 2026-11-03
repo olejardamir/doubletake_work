@@ -6,15 +6,15 @@ Initial index snapshot historical; body-access verification performed against `b
 |---|---|---:|---|
 | `RADOVI.txt` | `154f3242ccdbe941ba58adb26afe3da13910cb45` | 13514 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
 | `README_UPDATED_WITH_DIAGRAMS.md` | `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414` | 13235 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `README.md` | `0fc04cd029d36818f76ba00f8e46e43760b0f242` | 3430 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
+| `README.md` | `0fc04cd029d36818f76ba00f8e46e43760b0f242` (historical) | 3430 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
 | `reverse-skill_not_prompt.txt` | `aae8a9187ae449bf9a17a2ec2a5d3b8ceb792415` | 3300 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` | 115118 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` | 70133 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `runic_poetry_reconstructed.md` | `5a4f85b2e933d0f10cc14c457e9b2a3d2da8eabd` | 24267 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `runic_poetry_reconstruction_audit.md` | `f316358b0a1d666d5ab6faa921cf615ec82333b9` | 24666 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `runic_poetry_rune_name_english.md` | `acab3dbfd0a07a995143715ca610f3f86f316032` | 24524 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `secrets_to_poetry_die_transform.md` | `bd9f1c25ced4263f7e9616960b47a31130bb623f` | 131503 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `STABLE_Wave_MX5_Scientific_Paper_v3.md` | `931c2c93edc01386575b1b4675ce5fc460e9f3e6` | 72526 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | `7e0c4001045de0d8ed88a2e9b8f4b5778438e92b` | 178714 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
+| `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` (historical) | 115118 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
+| `runic_poetry_corpus.md` | `a1934dcfee5b71511c960a80ffe9e1469ea59cb8` (historical) | 70133 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
+| `runic_poetry_reconstructed.md` | `5a4f85b2e933d0f10cc14c457e9b2a3d2da8eabd` (historical) | 24267 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
+| `runic_poetry_reconstruction_audit.md` | `f316358b0a1d666d5ab6faa921cf615ec82333b9` (historical) | 24666 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
+| `runic_poetry_rune_name_english.md` | `acab3dbfd0a07a995143715ca610f3f86f316032` (historical) | 24524 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
+| `secrets_to_poetry_die_transform.md` | `bd9f1c25ced4263f7e9616960b47a31130bb623f` (historical) | 131503 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
+| `STABLE_Wave_MX5_Scientific_Paper_v3.md` | `931c2c93edc01386575b1b4675ce5fc460e9f3e6` (historical) | 72526 (historical) | DELETED_NO_DT_VALUE 2026-11-02: unrelated stand-alone engineering, mathematics and extension projects; source recoverable by original Git SHA |
+| `SUB50_REPLACE_TESLA_IMPLEMENTATION_PROMPT(20260814-201559).md` | `7e0c4001045de0d8ed88a2e9b8f4b5778438e92b` (historical) | 178714 (historical) | DELETED_NO_DT_VALUE 2026-11-02: unrelated stand-alone engineering, mathematics and extension projects; source recoverable by original Git SHA |
 | `TMP_MATRIX_REGISTER_COMPARISON.md` | `1859dc3d88dabc65f9d0cb4893a09ca00aadaa56` | 2410 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
 | `TUI.txt` | `b373ef8a2950523c692984e12b6c81db63a736a5` | 20482 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
