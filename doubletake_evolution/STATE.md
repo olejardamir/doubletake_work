@@ -1,5 +1,15 @@
 # Evolution Planner State
 
+## 2026-11-03 — Operator correction: NO RUNNING DT HOST; GPT-only execution path
+
+- Operator clarified that **there is no running DT host**. Historical cartography integrity / 60-minute natural host cycles are **future-deployment-only**, not current blockers for the four scheduled GPT workers or private DT source evolution. No host recovery was applied or claimed.
+- All four existing GPT scheduled worker prompts updated (same enabled states/hourly schedules): Code Engineer is actual public mission GitHub reader and private DT/main source implementer; Overseer independently verifies source/commit evidence; both Scouts direct research toward GitHub-reachable evolution, not dormant host repair. No fifth worker or GitHub Actions.
+- PUBLIC `ACTIVE_MISSION.md`, `WORKER_PROMPT.md`, engineering ledger and patch index now reflect the no-host, GitHub-only critical path; historical unaccepted steps remain tracked.
+- PRIVATE DT/main added `tools/doubletake_evolve/github_intake/verify_gpt_action.py` and 14 exact-blob isolated passing tests checking forged source, changed blob, wrong parent, replay, non-code-only commit, malformed SHA and missing work item. Source commit `d851cda9bae3fe4c32256842605c4e8676215397`; test commit `acd4c4f1018ea77d89b4605eb37b2677080488d1`.
+- Source trace was refetched from GitHub: public mission commit `f214611f076bea574397ebbb74e5e551dd569783` blob `4d5e3bdacec74d06a8b751569715c55eff53847e`; private code commit `d851cda9bae3fe4c32256842605c4e8676215397` parent `638b844421320f65e5ab53a427adfd2934673671`, source blob `3654843788cbecb5138b55da4a24c5eee9f21cca`. Detailed receipt private: `reports/gpt_collective/mission_receipts/20261103_gpt_only_inline_source_action.md`.
+- Immediate Code Engineer `run_now` returned **inline execution in this conversation**, not a separate completed scheduled job. The actual scheduled-run and independent Overseer scheduled-run confirmations are **PENDING**. Current source action `GITHUB_REFETCH_CONFIRMED`, focused tests `14/14 PASS`; no DT runtime Ground is asserted. An additional 19-test local refinement was not committed after write refusal.
+
+
 ## 2026-11-03 — Focused committed-blob regression execution; independent Ground still open
 
 - Exact private DT executor/test Git blobs `769551450d2580f3d85bc2b95f07c845a62f4bd3` and `d2779cd5277c6ecac9cc2af78d4f7f71fea5b0f5` were reconstructed from `05ce0c39`, with `git hash-object` matches, and executed in GPT-side Python 3.13.5/pytest 9.0.2: **7/7 passed**. Private receipt: `reports/gpt_collective/FOCUSED_COMMITTED_TOOL_ARGUMENT_REGRESSION_20261103.md`, committed at `0fe40aab`.
