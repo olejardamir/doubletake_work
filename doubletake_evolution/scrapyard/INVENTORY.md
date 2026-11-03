@@ -10,6 +10,11 @@ Last rebuilt: 2026-11-02. Full Git-blob access audit at `b2c891739d6cf57ba3eb406
 - In every run, edit only the shard(s) whose original source content was changed. Refetch SHA after commit and verify its row; mark old source deleted only after complete preservation/merge of unique content and check existing references.
 - Do not create another monolithic inventory or new running delta log. Report actual bytes reduced, source files modified, clusters merged, originals deleted, incoming disposition, and any unverified Ground.
 
+## 2026-11-03 verified in-place relevance distillation (S31)
+
+- `AGENT_X_BANK_OF_CANADA_ARCHITECTURE.md` section-level DT relevance reduction: 150,099→9,980 Git bytes (**140,119 bytes removed**, 93.4%); source commit `46829f78aee590c08f2d70339694db26822f83ca`, current source blob `6554cf1c65cc9cf0ffd062c68910ad88d305a533`. The full historical source is preserved at original blob `a749fc62ef2508dca944234bd0706eadd39a8864`; canonical shard `root_A-D.md` updated in `87de278b3b1d4b30680acf41ca1c1747da658691`.
+- Retained narrowly transferable governed MCP control-plane, exact authorized effect/idempotency, bounded data-product release and falsifiable negative controls. Removed unrelated job/interview/textbook and detailed vendor tutorial content from the LIVE scrapyard file only. **No new canonical cluster, file deletion, DT source code, live runtime or acceptance claim**. The recursive file count therefore remains **187**, pending a newer full tree audit.
+
 ## Shards
 
 - [clustered.md](inventory_shards/clustered.md) — 13 tracked files
