@@ -4,6 +4,8 @@
 
 ## Latest engineering reconciliation
 
+| 2026-11-03 ~19:00Z | 7.8.1 — scoped GitHub source-action verification | PRIVATE DT source `9485a53afe9f9520471218c93045263801b0a6ab`, regression test `3309eceb64671bd757e2fe3abe48eed5d784c3e2` | Implemented explicit verified-Python-only scope, disclosure of other changed paths, malformed-file fail-closed handling; four new regression cases authored | **TESTS_NOT_EXECUTED** on new blobs; prior 26/26 applies to earlier revision only | Independent Overseer acceptance and execution of new cases pending; BPE none |
+
 | UTC | Mission mapping | Private DT commits | Objective/status | Test status | Remaining Ground / BPE |
 |---|---|---|---|---|---|
 | 2026-11-03 | **7.8.1 GPT-only independent mission-action verifier hardening** | Source commit `bba88b95c1f772f0acbabcb5dc3b558f0742f291`; test commit `cb22d1398cbec6952eae945950690a11e24e3399`; private evidence `reports/gpt_collective/mission_receipts/20261103_mission_declaration_verifier_fix.md` | Fixed incidental prose/quote/code examples being accepted as actual numbered mission items and malformed commit-parent objects. Corrected existing private verifier, no new controller; implementation SHA `0b485520dc7c563766da3c2eacf6445f7fedb315`. **Inline user-requested GPT engineering, not an independently completed scheduled Code Engineer run.** | **26/26 focused isolated tests executed/PASS**, Python 3.13.5 + pytest 9.0.2, exact locally hash-matched committed source/test blobs; six failures first reproduced against previous source; new test blob `4bba8a951db137520f30a126856a0c6e9ff6eb2b` | Commit chain and SHA independently refetched; full DT checkout and separately scheduled Overseer acceptance still unverified; no local DT host exists. |
