@@ -56,13 +56,13 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `all_poetry_readings_191_elder_first_clusters.md` | `a5b66bff944134fec8c835c44de6a892d04a7a31` | 225463 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `all_poetry_readings_191_individual.md` | `82ed92e0e82fe9e4f55a745a20f411d6129d98c5` | 215544 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `all_poetry_readings_direct.md` | `4b1bbbdc4f66de1619f43654f000c815b2e091f1` | 269171 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `APR_v3.5-F_A6_FORMAL_AUDIT.md` | `6e8245e2e2054d6bd2dcef80b2fd993a1385648b` | 11498 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `APR_v3.5-F_A6_FORMAL_AUDIT.md` | `6e8245e2e2054d6bd2dcef80b2fd993a1385648b` | 11498 | DELETED_NO_DT_VALUE (2026-11-02); Separate project-specific report, no DT mission linkage; original Git blob retained |
 | `audio_frame_mosaic_llm_prompt_10_10_v4.md` | `3145e4120557c8f693e3a6c30c4e75665d9496e5` | 42519 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `audio_frame_mosaic_llm_prompt_gtx1070_img2img_v5.md` | `7daac3cc51083ea7829c77f412c7f9a2a9e7057a` | 52229 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `AUDIT.md` | `730eff81d1e95e5212d5745b2b63a531dda6514f` | 2920 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `Automated_Governance_Image_Filename_Mapped.md` | `1fd6bc84d2730b8ee016411a5be42e7471e3d592` | 69026 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | 27325 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `bank_of_canada_role_stories_updated.md` | `60ef6841c9ae0cbd56c7f3e16382a0e1a6d1562a` | 37990 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `AZ-104_Transcript_Coverage_Matrix.md` | `03e700e998c4f88f4cf7d67afdd60e05a8092add` | 27325 | DELETED_NO_DT_VALUE (2026-11-02); Unrelated certification study matrix; no DT mission or reusable contract; original Git blob retained |
+| `bank_of_canada_role_stories_updated.md` | `60ef6841c9ae0cbd56c7f3e16382a0e1a6d1562a` | 37990 | DELETED_NO_DT_VALUE (2026-11-02); Personal interview preparation; no DT research contribution; original Git blob retained |
 | `borg_behavioral_architecture_and_agentic_ai.md` | `85fe0f0fc30d110a6b2fd0b921c4a170aa2fc1bc` | 135184 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `BORG_WHAT_THEY_DO.md` | `1bafc66072df4e8e99c7c0a5b1e67ba14e0a80ac` | 43127 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `CARD_SYSTEM_REBALANCED_10_OF_10.md` | `2e359ab4b1d2c036c9cce855e58140d0eaea00f4` | 101341 | LEGACY_STATUS_NOT_YET_MIGRATED |
@@ -72,11 +72,11 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `Constructible_Computation_Future_Iteration_Prompt_v9.md` | `5656233491430a0b6834774b2754992709cb7c93` | 23658 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `Constructible_Computation_Mathematics_MONOGRAPH_FINAL(1).md` | `ae2f43effdd309ef07516b2385dd8c158cc1224f` | 93853 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `Constructible_Computation_Mathematics_v56.md` | `50b9f4adeefda8075baaf8c32a87c6872ef43322` | 151949 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `cool_edit_pro_bottom_player_prompt_v9.md` | `dadf5acda7228e1ebe8002d8dae0827ab76d1cf2` | 14220 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `cool_edit_pro_style_ui_prompt_v5_style_only.md` | `ae11463e618d79245ba88e5e91384c9dece829a6` | 17743 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `cool_edit_pro_ui_style_polish_prompt_v7.md` | `d11c99f6e8f1f715ab6627615eb05ea767d88b39` | 3540 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `cool_edit_pro_bottom_player_prompt_v9.md` | `dadf5acda7228e1ebe8002d8dae0827ab76d1cf2` | 14220 | DELETED_NO_DT_VALUE (2026-11-02); Separate UI skin/style task, no DT mechanism; original Git blob retained |
+| `cool_edit_pro_style_ui_prompt_v5_style_only.md` | `ae11463e618d79245ba88e5e91384c9dece829a6` | 17743 | DELETED_NO_DT_VALUE (2026-11-02); Separate UI skin/style task, no DT mechanism; original Git blob retained |
+| `cool_edit_pro_ui_style_polish_prompt_v7.md` | `d11c99f6e8f1f715ab6627615eb05ea767d88b39` | 3540 | DELETED_NO_DT_VALUE (2026-11-02); Separate UI skin/style task, no DT mechanism; original Git blob retained |
 | `Crystal_Radio_Powered_Chaotic_Pendulum_Simplified.md` | `6f09d435ca9797c263acf1ebde76b8914ae7e581` | 11160 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `Databricks_Hands_On_Only_One_Sandbox_38_Tickets_2026.md` | `919026e4aae828089f30e9b090930e9dee37355d` | 143004 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `Databricks_Hands_On_Only_One_Sandbox_38_Tickets_2026.md` | `919026e4aae828089f30e9b090930e9dee37355d` | 143004 | DELETED_NO_DT_VALUE (2026-11-02); Unrelated standalone training ticket workbook; original Git blob retained |
 | `DCLIF_FULL_METHOD_v1.md` | `54ef381656a7fd6f0e37c49489187e75f7f45811` | 28143 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `DCLIF_FULL_METHOD_v2_RESIDUAL_DISCOVERY.md` | `ab3c8f7d663ecaadac4bfb442cb5a66f29eb902a` | 40689 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `deep-research-report (1).md` | `85f6416ae835791ab25742d523ac9ce5fbec72b5` | 57627 | LEGACY_STATUS_NOT_YET_MIGRATED |

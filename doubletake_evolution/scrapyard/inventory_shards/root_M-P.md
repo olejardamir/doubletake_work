@@ -39,17 +39,17 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `MISP_V2.2_APRIL_TUNING_AND_MAY_HOLDOUT.md` | `d1ccc385324bf69626d27eeb81a654ee984d104a` | 2161 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MSR_false_break_failure_modes_complete_v4.md` | `7f8c08e8a53be353be034865717dc57f6c2d2827` | 114594 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MSR_formal_specification_corrected_v26.md` | `f3ce6db8517b2ba1a9d48ec0443fe9ad66a6f17a` | 45281 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `Natal_Chart_Rectification_Working_Model_v10.md` | `ad57ec94642d797573bdf85902c20b63b40d86c2` | 6198 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `Natal_Chart_Rectification_Working_Model_v10.md` | `ad57ec94642d797573bdf85902c20b63b40d86c2` | 6198 | DELETED_NO_DT_VALUE (2026-11-02); Unrelated personal chart; no DT research use; original Git blob retained |
 | `NEW_MATH_GUARDRAILS_v6.md` | `bb8288b61755f90e5f820d7897b5f8603fef1fc1` | 118418 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `no_primitive_boundary_boolean_logic_paper_v0.4_proof_audited.md` | `466987ab877e15c9eda8c4dc0814a7b9786d37dc` | 58737 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `non_collapsing_adaptive_jumping_64hex_blueprint_v26.md` | `ba73dba5e4391a501e84a4491463c06c06df6a0b` | 65498 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `ontario_anal_fissure_clinics_expanded_175_locations.md` | `e9da2f9df2f3c92aecaa02654379ea0c5e7b36cd` | 65718 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `ontario_anal_fissure_clinics_expanded_175_locations.md` | `e9da2f9df2f3c92aecaa02654379ea0c5e7b36cd` | 65718 | DELETED_NO_DT_VALUE (2026-11-02); Unrelated medical directory; no DT research use; original Git blob retained |
 | `openshell_not_prompt.txt` | `c7de916080326d7273a6bdea33687851da681c12` | 3233 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | 28654 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | 54225 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `opsguru_carbon60_principal_architect_role_stories_UPDATED.md` | `6860cbcff9d87548614947e685650c51fcead33b` | 28654 | DELETED_NO_DT_VALUE (2026-11-02); Personal interview preparation; no DT research contribution; original Git blob retained |
+| `opsguru_carbon60_principal_architect_role_stories.md` | `6c5603272d718e17369d6333ddc023b68ade530e` | 54225 | DELETED_NO_DT_VALUE (2026-11-02); Personal interview preparation; no DT research contribution; original Git blob retained |
 | `PAIV_EQC_FIC_Implementation_Bundle_v0.1.0.md` | `943cbbdb59a9382f04cf924a3920f9e29c55aa15` | 294843 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `PAIV_EQC_Project_Master_Specification_v0.1.0.md` | `e4e511c8ab82bccdcfadc0eef97fd00cccbd2460` | 68593 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | `c647b322d7770522ecb1108e1fbfeec1b2d5a90a` | 58096 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `Pasted markdown.md` | `11f0dee7cd7b11c43412e8593266cd99fc6d9976` | 10815 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `Pasted markdown.md` | `11f0dee7cd7b11c43412e8593266cd99fc6d9976` | 10815 | DELETED_NO_DT_VALUE (2026-11-02); Personal résumé and contact information; unrelated to DT; original Git blob retained |
 | `PROPER_SEMANTIC_CENTER_AND_N_SIDED_DIE_METHOD.md` | `5c1d4f9c93a5c4ad8474ebe7637a2a060fbb8d53` | 4089 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | `0b3983284ebc7e9d4c7e1a28e20b31decb08f03c` | 7831 | S27 / FULL_READ / REDUCED_IN_PLACE / 8467 bytes saved / 42c20fb1; bounded FIC handoff, owner and negative-evidence contract; KEEP historical only; original `006727a9fbdefa798a63d81386f1689fce6015b4` recoverable in Git history |
