@@ -1,5 +1,11 @@
 # Evolution Planner State
 
+## 2026-11-03 — Focused committed-blob regression execution; independent Ground still open
+
+- Exact private DT executor/test Git blobs `769551450d2580f3d85bc2b95f07c845a62f4bd3` and `d2779cd5277c6ecac9cc2af78d4f7f71fea5b0f5` were reconstructed from `05ce0c39`, with `git hash-object` matches, and executed in GPT-side Python 3.13.5/pytest 9.0.2: **7/7 passed**. Private receipt: `reports/gpt_collective/FOCUSED_COMMITTED_TOOL_ARGUMENT_REGRESSION_20261103.md`, committed at `0fe40aab`.
+- Execution used minimal stubbed `crypto_utils.sha256_hex` and `ToolResult` and empty import initializers, not the full DT checkout. **Focused current-blob test completed**; full-import/host tests, deployment, B1 owner authorization, B7 authenticated mission consumption and autonomous live cycles **remain UNVERIFIED**.
+- Public engineering ledger and patch index were reconciled; historical BPE-029/030 proposals remain non-auto-selectable. No extra worker, GH Actions, local LLM or unauthorized code mutation.
+
 ## 2026-11-03 ~03:28Z — Overseer: committed fail-closed tool dispatch, tests still unexecuted
 
 - **Private DT/main HEAD `05ce0c39fdb2e0dcb0247581b5d36d01eb4583c3`**. Independently inspected implementation commit `4faad8c1` and regression commit `48ef326b`: explicitly malformed tool-call arguments now raise a validation error before dispatch; five former strict-XFAIL malformed-input cases are ordinary tests, with two compatibility controls. **SOURCE_COMMITTED / TEST_AUTHORED / CURRENT_REVISION_TESTS_NOT_EXECUTED**. Prior 14/14 isolated pass was on an uncommitted candidate, not this committed checkout. No full-import test, host verification, deployment or runtime Ground claimed. Code Engineer updated public ledger at `35d3b051`, correctly **NEW_UNMAPPED** pending exact MEP reconciliation.
