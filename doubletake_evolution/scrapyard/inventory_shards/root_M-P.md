@@ -4,7 +4,7 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 
 | Relative path | Current or historical blob SHA | Current or historical bytes | Deep review status |
 |---|---|---:|---|
-| `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` | `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` | 21573 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` | `adda7cb9aa7adc1139791d7c254ad7ccf29bde76` | 5291 | S30 FULL_READ / REDUCED_IN_PLACE; original `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` (21573 bytes); commit `18fe194507790554ba74107788ad5e37c9627866`; frozen EA 100k/Nchan/Redis metrics, 190-missing negative, six exact-version hypotheses, 4k→100k→3-seed falsifiers preserved; historical-only, no DT Ground |
 | `M3_FINAL_PUSH_CURRENT_STATE_DEADLINE_FOCUSED.md` | `d99e75cd574d2a4bf7514770134d5a121a2e6bcf` | 5200 | S29 FULL_READ / REDUCED_IN_PLACE; original `c6a255009b3171e36c9d2df7ef5a0a171e5c2d1b` (15581 bytes); frozen 100k/Nchan/Redis contract, F1 numeric failures, coordinator DNS blocker, bounded probe/terminal falsifiers preserved; historical EA only; no DT Ground; verify current EA source before reuse |
 | `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` | `92f3476aa830db37520d795afcb2b1df48719d9d` | 30691 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` | `3a1cde51997351586eeffe8a006f3a19fecffae0` | 123239 | LEGACY_STATUS_NOT_YET_MIGRATED |
