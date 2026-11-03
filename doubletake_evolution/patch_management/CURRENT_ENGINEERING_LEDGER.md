@@ -6,6 +6,7 @@
 
 | UTC | Mission mapping | Private DT commits | Objective/status | Test status | Remaining Ground / BPE |
 |---|---|---|---|---|---|
+| 2026-11-03 ~12:xxZ | NEW_UNMAPPED (focused tool-argument safety verification) | `05ce0c39fdb2e0dcb0247581b5d36d01eb4583c3` tested against exact committed executor/test blobs; receipt commit `0fe40aab618dea08459a7be916cf416eb050cc96` | No new source fix; five malformed-input and two compatibility tests executed in GPT-side Python sandbox | **7/7 PASS — focused, exact Git blob SHA matched with two stubbed dependencies** (`76955145`/`d2779cd5`); full checkout not executed | See private `reports/gpt_collective/FOCUSED_COMMITTED_TOOL_ARGUMENT_REGRESSION_20261103.md`; host Ground, B1, B7 and independent cycles UNVERIFIED |
 | 2026-11-03 ~03:08Z | NEW_UNMAPPED (autonomous-loop tool safety; mission reliability) | `4faad8c1bb1673a21dd831dd844a9c37a61a9633` + `48ef326b05e012abc2eeb73d205d509c571eb749` | Fail-closed explicit malformed tool arguments; source and negative/positive regressions committed | 7 test cases authored; **TESTS_NOT_EXECUTED on committed revision**; earlier reduced-dependency candidate 14/14 does not establish current checkout pass | Independent full-checkout tests, host Ground and authority remain open; no BPE reapplied |
 
 ## Initial repair baseline (2026-11-02)
