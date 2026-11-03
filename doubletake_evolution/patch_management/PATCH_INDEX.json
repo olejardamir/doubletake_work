@@ -17,7 +17,7 @@
     "public_source_disclosure": "CURRENT FOUR-WORKER POLICY: public doubletake_work is planning, research and historical patch metadata only; new implementation source/test diffs are committed directly to private DT/main by Borg Code Engineer. Older public patch records are preserved as history, not new publication authority.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "0fe40aab618dea08459a7be916cf416eb050cc96",
+    "latest_executor_head_inspected": "5aca15fef447839a935e036dea5110fa7e28a913",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
     "next_patch": "NO AUTO-SELECTABLE PUBLIC SCRIPT. BPE-029 and BPE-030 are historical PREPARED_UNTESTED, not integration authority. Sole direct code implementation owner: Borg Code Engineer -> private DT/main. See CURRENT_ENGINEERING_LEDGER.md for post-merger source/test commit reconciliation.",
@@ -35,6 +35,19 @@
       "grade": "FOCUSED_ISOLATED_EXACT_SOURCE_TEST_WITH_STUBBED_DEPENDENCIES",
       "full_checkout_verified": false,
       "live_runtime_verified": false
+    },
+    "current_source_evidence_20261103": {
+      "private_DT_head": "5aca15fef447839a935e036dea5110fa7e28a913",
+      "receipt": "private DT/main reports/gpt_collective/EXACT_SOURCE_RECOVERY_AND_PUBLIC_MISSION_TESTS_20261103.md",
+      "code_status": "B1_OPTION_B_QUARANTINE_UTILITY_PREPARED_NOT_APPLIED; B7_PINNED_PUBLIC_MISSION_READ_ONLY_SOURCE_READY_NOT_DISPATCHED",
+      "focused_tests": "18/18 PASS, exact Git source/test/dependency blobs; only lightweight import initializers",
+      "full_checkout_tests": false,
+      "host_test_results": false,
+      "retained_history_mutated": false,
+      "public_mission_live_action_verified": false,
+      "natural_cycles_verified": false,
+      "independent_Ground": false,
+      "outstanding": "Owner decision and live 67.9MB baseline verification before no-loss B1 action; authenticated actual DT mission read-to-action, independently observed receipt, 60-minute natural liveness and full host tests."
     }
   },
   "patches": [
