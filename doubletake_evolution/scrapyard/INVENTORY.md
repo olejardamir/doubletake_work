@@ -4,7 +4,7 @@ Last rebuilt: 2026-11-02. Full Git-blob access audit at `b2c891739d6cf57ba3eb406
 
 **This is the canonical small entrypoint, replacing the 621,621-character monolithic editable ledger.** Legacy detailed findings were retained *unaltered* in `doubletake_evolution/inventory_archives/INVENTORY_pre_sharding_20261102.md` at exact original Git blob `74a09db470c223dd690a6fb493576f9507ce395d`. Original history remains intact. Pre-sharding `INVENTORY_DELTA.md` is retained as historical metadata; S23–S25 factual source SHAs, reductions and Director dispositions are now reconciled in the appropriate source/incoming shards. Do not append further duplicate delta notes.
 
-- **Verified tree after this cleanup: 301 scrapyard blobs** = 250 root files, 29 incoming, 13 canonical clusters and 9 inventory shards. All six deleted source bodies remain in Git history with inventory-shard tombstones.
+- **Verified tree after this cleanup: 300 scrapyard blobs** = 249 root files, 29 incoming, 13 canonical clusters and 9 inventory shards. All six deleted source bodies remain in Git history with inventory-shard tombstones.
 - Active and retired source identities remain listed in the source shards; `INVENTORY.md` and `INVENTORY_DELTA.md` are excluded from self-referential blob-SHA tracking.
 - A listed blob is not proof of full reading, semantic value, or valid cluster membership. `LEGACY_STATUS_NOT_YET_MIGRATED` means classification must be reconciled with the archived inventory and actual current content before mutation.
 - In every run, edit only the shard(s) whose original source content was changed. Refetch SHA after commit and verify its row; mark old source deleted only after complete preservation/merge of unique content and check existing references.
@@ -20,7 +20,7 @@ Last rebuilt: 2026-11-02. Full Git-blob access audit at `b2c891739d6cf57ba3eb406
 - [root_I-L.md](inventory_shards/root_I-L.md) — 14 live files (historical tombstones separately retained)
 - [root_M-P.md](inventory_shards/root_M-P.md) — 38 live files (historical tombstones separately retained)
 - [root_Q-T.md](inventory_shards/root_Q-T.md) — 14 live files (historical tombstones separately retained)
-- [root_U-Z.md](inventory_shards/root_U-Z.md) — 30 live files (historical tombstones separately retained)
+- [root_U-Z.md](inventory_shards/root_U-Z.md) — 29 live files (historical tombstones separately retained)
 
 ## Backlog priorities
 
@@ -52,3 +52,8 @@ Removed 5 additional superseded source files: original Agent_X multi-session tab
 - Candidate comparison found very different archives even when filenames looked similar (e.g., old and current implementation prompts, patent-review iterations, research papers, standalone experiments). Those remain untouched unless a later consolidated successor was materially demonstrable. Some later files are additive rather than replacements.
 - **This commit removes 6 more superseded originals**, with current Git SHAs, successor paths, and source-level coverage reasons recorded in `inventory_shards/`. 31 previous deletions remain recorded. Remaining 301 blobs include current inventory metadata.
 - **Limitations:** exact/normalized long-line overlap is necessary but not sufficient for proving semantic redundancy; historical differences and version-specific outcomes remain recoverable in Git. No running code tests were executed. No unrelated external-project documents were discarded solely because of age or filename.
+
+## Direct relevance re-evaluation — 2026-11-02
+
+- Deleted `ublock_resurrected_remaining_behavior_master_prompt(4).md` (124,965 bytes). It is an executable backlog for a separate browser extension, naming `Astrocytech/uBlockResurrected`, Chromium MV3/DNR rules, filter lists, and extension testing. No distinct reusable DoubleTake mechanism was identified; retaining merely because semantic duplication was not proven was an overly permissive rule. Recorded original Git blob `398cda13851359858532707a4abbe596f73cc65d` for recovery. This is a relevance-based deletion, not a claim of content equivalence to another browser-extension file.
+- Current scrapyard count 300 blobs after this deletion, 249 root files. Remaining uBlock files have not been certified valuable by this case-specific decision.
