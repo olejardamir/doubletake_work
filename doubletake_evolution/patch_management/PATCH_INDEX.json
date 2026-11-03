@@ -8,7 +8,7 @@
   "policy": {
     "max_patches_per_run": "as many independent source-grounded complete patches as execution resources permit",
     "patch_type": "single_self_contained_shell_file_with_embedded_real_unified_diff_and_DoD",
-    "verification": "local execution and independent evidence required",
+    "verification": "Primary current path: GPT-side real private DT/main source/test commits + independently refetched GitHub SHA/commit/blob verification + actually executed isolated tests when accessible. Local host-only tests are conditional future-deployment work, not required to advance source; no local DT host exists.",
     "public_repo": true,
     "local_selection": "Only existing .sh with matching INDEX and unimplemented objective, actual DT main source-compatible context, satisfied dependencies and no unresolved overlap; execute local git apply --check and guarded tests before any DT commit. A committed blob mismatch alone is not a local worktree conflict. No auto selection of retired 002 or implemented 001/003–007/011–014.",
     "one_patch_per_file": true,
@@ -17,7 +17,7 @@
     "public_source_disclosure": "CURRENT FOUR-WORKER POLICY: public doubletake_work is planning, research and historical patch metadata only; new implementation source/test diffs are committed directly to private DT/main by Borg Code Engineer. Older public patch records are preserved as history, not new publication authority.",
     "non_code_scripts": "Scripts marked DIAGNOSTIC_READY are independent read-only/isolated verification steps, not implementation patches. Never claim code integration or push for them. They may be selected only when asked to execute diagnostic work.",
     "automation_always_on": true,
-    "latest_executor_head_inspected": "5aca15fef447839a935e036dea5110fa7e28a913",
+    "latest_executor_head_inspected": "0b11ce663c07afc5cbf8aedc73ed2865488faf8c",
     "diagnostic_artifacts": "015-019 are actual executable guarded baseline scripts, not code diffs, and must not be selected as implementation patches.",
     "git_commit": "Commit and push only the verified intended DT change on authorized branch; do not stage unrelated pre-existing dirty modifications. Separately publish sanitized result to patch_management/results.",
     "next_patch": "NO AUTO-SELECTABLE PUBLIC SCRIPT. BPE-029 and BPE-030 are historical PREPARED_UNTESTED, not integration authority. Sole direct code implementation owner: Borg Code Engineer -> private DT/main. See CURRENT_ENGINEERING_LEDGER.md for post-merger source/test commit reconciliation.",
@@ -48,6 +48,20 @@
       "natural_cycles_verified": false,
       "independent_Ground": false,
       "outstanding": "Owner decision and live 67.9MB baseline verification before no-loss B1 action; authenticated actual DT mission read-to-action, independently observed receipt, 60-minute natural liveness and full host tests."
+    },
+    "gpt_only_execution_mode_20261103": {
+      "operator_confirmed_no_running_DT_host": true,
+      "current_execution_actor": "Four existing GPT scheduled workers using GitHub; Borg Code Engineer commits source/tests to private olejardamir/DT/main",
+      "current_independent_verifier": "Evolution Overseer independently refetches public mission blob and private source commit/file SHAs",
+      "active_mission_consumer": "Borg Code Engineer via connected GitHub; NOT a locally running DT agent",
+      "historical_cartography_and_local_60min_cycles": "FUTURE_DEPLOYMENT_ONLY; not gating GPT source/test missions",
+      "current_handoff_outcome": "SOURCE_CHANGE_COMMITTED; scheduled automation round-trip requires independent verification",
+      "verifier_private_path": "tools/doubletake_evolve/github_intake/verify_gpt_action.py",
+      "evidence_private_path": "reports/gpt_collective/mission_receipts/20261103_gpt_only_inline_source_action.md",
+      "verifier_focused_isolated_tests": "14/14 passed against exact committed source/test blobs; separate 19/19 local revision not committed",
+      "independent_scheduler_run_acceptance": "PENDING — not inferred from this GPT conversation or a run_now inline prompt",
+      "local_host_ground": "NOT_APPLICABLE_NO_HOST",
+      "no_github_actions": true
     }
   },
   "patches": [
