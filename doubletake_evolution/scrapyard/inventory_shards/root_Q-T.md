@@ -5,7 +5,7 @@ Initial index snapshot historical; body-access verification performed against `b
 | Relative path | Current blob SHA | Bytes | Deep review status |
 |---|---|---:|---|
 | `RADOVI.txt` | `154f3242ccdbe941ba58adb26afe3da13910cb45` | 13514 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
-| `README_UPDATED_WITH_DIAGRAMS.md` | `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414` | 13235 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
+| `README_UPDATED_WITH_DIAGRAMS.md` | `96d6b322227e094a1fad8030a90723371ef4db6e` | 3491 | FULL_READ_AND_IN_PLACE_DISTILLED 2026-11-03; prior `f66b274b73cbb53ca6a2d7c2cf699dcf0c624414`, 13235→3491 bytes; retained L0 governance/gateway architecture, historical proof claims, proprietary license, 13 diagram captions and explicit unverified image/DT parity; KEEP compact canonical source, revisit on current DT gate discrepancy |
 | `README.md` | `0fc04cd029d36818f76ba00f8e46e43760b0f242` (historical) | 3430 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
 | `reverse-skill_not_prompt.txt` | `aae8a9187ae449bf9a17a2ec2a5d3b8ceb792415` | 3300 | BODY_FETCHED_2026_11_02; STRUCTURE_SCANNED; FULL_SEMANTIC_REVIEW_PENDING |
 | `Rune_Secrets_Unlocked_Cleaned.md` | `8f375ae9d2cecd516e093ca1f151c882c534c788` (historical) | 115118 (historical) | DELETED_NO_DT_VALUE 2026-11-02: runic/poetry/card/I Ching interpretation corpus; source recoverable by original Git SHA |
