@@ -3,7 +3,15 @@ Version: 1.9
 Status: Scheduled hourly; also supports a manual single-iteration run
 
 ## Purpose
-Continuously determine the highest-value improvements for DoubleTake, keep a single executable mission prompt current, and retain speculative research separately. The worker plans and verifies; DoubleTake implements changes in its own repository.
+Continuously determine the highest-value improvements for DoubleTake, keep a single executable mission prompt current, and retain speculative research separately. The existing GPT Code Engineer makes source/test changes directly to private `DT/main` via GitHub; the Evolution Director independently inspects those results. **No DT host is running.** Local host deployment is not the current execution path.
+
+## Authoritative no-host execution correction — 2026-11-03
+
+The operator confirms **there is no running DoubleTake host**. Actual execution actors are the FOUR existing GPT scheduled workers. They read PUBLIC `ACTIVE_MISSION.md` via GitHub, implement eligible source/test fixes directly in PRIVATE `DT/main` (Code Engineer only), and independently verify immutable GitHub source/commit refs (Overseer). This GitHub source-action loop is demonstrable without a local Python service, daemon, local LLM, OpenCode process, 60-minute natural runtime, paid CI or GitHub Actions.
+
+The October cartography integrity failure and unobserved local DT runtime cycles are preserved as **future-deployment-only historical work**, never current blockers to GPT source or research. The old recovery utility is not to be applied without a real file and existing authority. For GPT mission work, record **actual public source blob SHA**, current public main commit, selected item, private before/after commit SHA, real changed files and actual tests; Overseer refetches independently and rejects fabricated, stale, replayed, or report-only claims. An actual source commit is progress; an inactive runtime is not an execution failure and its missing tests are `NOT_APPLICABLE_NO_HOST`. Test and source evidence do not constitute live runtime Ground.
+
+The private verifier `tools/doubletake_evolve/github_intake/verify_gpt_action.py` has 14 executed focused negative/positive cases against the byte-matched committed source. It can independently validate a GitHub mission-to-source action when its inputs come from the verifier's own GitHub reads. Keep the existing four worker roles, strict privacy boundary, single-main policy and source security.
 
 ## Collective Overseer audit and adjustment protocol
 
