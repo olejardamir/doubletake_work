@@ -95,56 +95,7 @@ Do not mistake partially implemented files for completed phases:
 
 ## A03 — Audit reusable transaction primitives before designing publication — **DONE**
 
-**Current `main` audit note:** Current-main note: gap-filling transaction hardening exists, but no Assimilator-specific publication transaction currently coordinates runtime, manifest, canonical authority, and semantic-index state. Audit reuse; do not treat `GapApplyTransaction` as Task T. **RESOLVED:** Added a detailed "A03 — Reusable transaction-primitive audit" note to the `assimilation_publication.py` module docstring covering all 9 required items and the decision not to import `GapApplyTransaction` directly (different state model: file-apply vs 3 heterogeneous surfaces; no shared general primitive extracted).
-
-**Depends on:** none (all listed prerequisites are already complete on current `main`)
-
-**Where**
-
-Read:
-
-```text
-tools/agentx_evolve/gap_filling/transaction.py
-tools/agentx_evolve/gap_filling/tests/test_gap_filling_transaction.py
-```
-
-**What**
-
-Determine exactly which hardened transaction primitives can be reused for Assimilator publication.
-
-**How**
-
-Write a short code comment/design note near the eventual publication transaction implementation identifying whether the following are reusable:
-
-```text
-preimage/postimage validation
-journal persistence
-receipt validation
-fail-closed mutation
-rollback
-reconciliation
-mode/hash verification
-transaction ownership evidence
-```
-
-Do **not** import the entire gap-filling transaction blindly. Capability publication has different state:
-
-```text
-runtime module
-manifest row
-CapabilityAuthority contract
-semantic index record
-```
-
-Reuse only primitives whose contracts match.
-
-**Definition of done**
-
-- Reuse decision exists in code/design comments.
-- No duplicate general transaction primitive is created without justification.
-- Gap-filling `GapApplyTransaction` is not incorrectly treated as already solving capability publication.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: gap-filling transaction hardening exists, but no Assimilator-specific publication transaction currently coordinates runtime, manifest, canonical authority, and semantic-index state. Audit reuse; do not treat `GapApplyTransaction` as Task T. **RESOLVED:** Added a detailed "A03 — Reusable transaction-primitive audit" note to the `assimilation_publication.py` module docstring covering all 9 required items and the decision not to import `GapApplyTran
 
 # PHASE C — Source classification and admission
 
@@ -258,219 +209,23 @@ If `PARTIAL` is routable, its contract must explicitly describe the supported su
 
 ## K08 — Make persisted authority migration backward-compatible and fail-safe
 
-**Current `main` audit note:** Current-main note: `from_dict()` has compatibility defaults, but migration still needs an explicit old-schema verification path so a legitimate old 64-character digest is not mistaken for tampering after the schema changed.
-
-**DONE (K08):** Implemented in `capability_contract.py` — `_load_contracts()` now recognizes a legacy schema/artifact (`_LEGACY_CONTRACTS_SCHEMAS = ("0.9",)` / `_LEGACY_CONTRACTS_ARTIFACT`), verifies the ledger digest against the schema it was written under (`digest_schema`), records `_migrated_from_legacy`, persists the migrated new-schema ledger once on load, and keeps unknown schemas hard-failing. Field migration reuses `from_dict` safe-defaults (UNKNOWN fidelity, empty execution mode, no verification → NOT silently verified/routable). 3 authority-level migration tests added in `test_capability_contract.py` (forward migration + persistence, tamper-under-legacy rejection, unbound-stays-nonroutable).
-
-**Depends on:** K07
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_contract.py
-tests/test_assimilator_capability_contract.py
-```
-
-**What**
-
-Existing `capability_authority.json` files created with the old schema must still load.
-
-**How**
-
-In `from_dict()`/authority loading:
-
-- default missing new fields safely;
-- use `UNKNOWN` fidelity;
-- do not infer execution mode from arbitrary tags unless deterministic;
-- leave old incomplete executable records non-routable until enriched/revalidated;
-- preserve existing capability IDs where possible;
-- verify old digest according to its old schema before migration, rather than recomputing it as though new fields had always existed.
-
-If needed, bump persisted authority schema version and implement explicit migration.
-
-**Definition of done**
-
-A fixture representing the old authority format loads successfully, retains identity/provenance, and is not silently upgraded to verified/routable.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: `from_dict()` has compatibility defaults, but migration still needs an explicit old-schema verification path so a legitimate old 64-character digest is not mistaken for tampering after the schema changed.
 
 ## K09 — Enrich native seed contracts
 
-**DONE (K09):** Implemented `seed_core_contracts()` in `capability_contract.py` — inserts enriched `echo`, `add`, and `blob_put` seed contracts into a `CapabilityAuthority` with intents, input/output schemas (in effects), effects, requirements, safety, `execution_mode=NATIVE`, `fidelity_state=VERIFIED`, verification, native bindings, and provenance. Idempotent (skips already-enriched contracts). 16 tests in `TestK09NativeSeedEnrichment` covering creation, routability, intents, execution_mode, fidelity_state, verification, bindings, effects/safety, validation_errors, routable query, idempotence, and per-seed schema correctness. All 139 tests pass in `test_capability_contract.py` (2 pre-existing P05 failures remain).
-
-**Depends on:** K07, K08
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_contract.py
-```
-
-Function:
-
-```text
-seed_core_contracts()
-```
-
-**What**
-
-Update current native `echo`, `add`, and `blob_put` seed contracts so they satisfy the complete contract.
-
-**How**
-
-For each, provide:
-
-```text
-intents
-examples
-input_schema
-output_schema
-effects
-requirements
-safety
-execution_mode=NATIVE
-fidelity_state=VERIFIED
-verification
-native binding
-provenance
-```
-
-Example for `add`:
-
-```python
-intents=("add numbers", "calculate a sum", "sum numeric values")
-execution_mode=ExecutionMode.NATIVE.value
-fidelity_state=FidelityState.VERIFIED.value
-verification={"type": "output_schema"}
-```
-
-Do not use long natural-language blobs.
-
-**Definition of done**
-
-`echo`, `add`, and `blob_put` are valid routable canonical contracts under the new rules.
-
----
+Historical DONE claim (not independently verified against current DT). **DONE (K09):** Implemented `seed_core_contracts()` in `capability_contract.py` — inserts enriched `echo`, `add`, and `blob_put` seed contracts into a `CapabilityAuthority` with intents, input/output schemas (in effects), effects, requirements, safety, `execution_mode=NATIVE`, `fidelity_state=VERIFIED`, verification, native bindings, and provenance. Idempotent (skips already-enriched contracts). 16 tests in `TestK09NativeSeedEnrichment` covering creation, routability, intents, execution_mode, fi
 
 ## K10 — Make legacy registry adaptation safe by default
 
-**DONE (K10):** Implemented `CapabilityAuthority.register_from_registry_item()` in `capability_contract.py` — safe-by-default adapter for legacy `CapabilityRegistry` items. By default: `fidelity_state=UNKNOWN`, empty `execution_mode`, no executable binding, status `CREATED` (never routable). `executable=True` retained for compatibility but requires explicit `intents` + `verification`; even then it stays `fidelity_state=UNKNOWN` so structurally bound+ROUTABLE contracts remain out of the effective routing set (the K07 `authority.routable()` fidelity gate excludes UNKNOWN). Rewired `assimilate_directory` in `capabilities.py` to route discovered capabilities through this adapter (replacing the unconditional `bind()` that manufactured routable contracts). 9 tests in `TestK10LegacyAdaptationSafety` + updated `test_admission_wiring.py::test_authority_bind_failure_captured` to patch the new adapter method.
-
-**Depends on:** K07
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_contract.py
-```
-
-Method:
-
-```text
-register_from_registry_item()
-```
-
-**What**
-
-Ensure legacy discovery cannot accidentally manufacture a verified executable contract.
-
-**How**
-
-Default legacy sync to:
-
-```text
-fidelity_state=UNKNOWN
-execution_mode unset/unknown unless deterministically known
-no executable binding unless this is a later verified promotion
-```
-
-If `executable=True` remains supported for compatibility, require explicit:
-
-```text
-binding
-execution_mode
-fidelity_state
-intents
-verification
-```
-
-or keep the result non-routable.
-
-**Definition of done**
-
-Calling the adapter on a legacy `TOOL` item without verification evidence cannot create a routable contract.
-
----
+Historical DONE claim (not independently verified against current DT). **DONE (K10):** Implemented `CapabilityAuthority.register_from_registry_item()` in `capability_contract.py` — safe-by-default adapter for legacy `CapabilityRegistry` items. By default: `fidelity_state=UNKNOWN`, empty `execution_mode`, no executable binding, status `CREATED` (never routable). `executable=True` retained for compatibility but requires explicit `intents` + `verification`; even then it stays `fidelity_state=UNKNOWN` so structurally bound+ROUTABLE contracts remain out of the effective
 
 ## K11 — Add bounded authority query for routable contracts
 
-**DONE (K11):** Extended `CapabilityAuthority.routable()` in `capability_contract.py` to accept a bounded `limit` parameter (0 = unbounded, backward compatible), and added `CapabilityAuthority.list_routable(limit=1000)` as the canonical bounded enumeration — the single place router/index code asks the authority for the current routing set (applies `is_routable` + `fidelity != UNKNOWN`, never duplicated). Negative limits rejected. 7 tests in `TestK11ListRoutable` (default limit, respects limit, excludes UNKNOWN fidelity, limit=0 unbounded, negative reject, routable limit, set equivalence).
-
-**Current `main` audit note:** Current-main note: `CapabilityAuthority.routable()` exists. Extend/reuse it to provide bounded canonical enumeration after K07 is hardened; do not create a parallel inventory API.
-
-**Depends on:** K07
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_contract.py
-```
-
-**What**
-
-Give semantic fallback/routing a canonical way to enumerate only eligible abilities.
-
-**How**
-
-Add something like:
-
-```python
-def list_routable(self, *, limit: int = 1000) -> list[CapabilityContract]:
-    return [
-        c for c in self.list(...)
-        if c.is_routable
-    ][:limit]
-```
-
-If the authority already has a clean equivalent by implementation time, reuse it.
-
-**Definition of done**
-
-Router/index code does not have to duplicate lifecycle/fidelity gating.
-
----
+Historical DONE claim (not independently verified against current DT). **DONE (K11):** Extended `CapabilityAuthority.routable()` in `capability_contract.py` to accept a bounded `limit` parameter (0 = unbounded, backward compatible), and added `CapabilityAuthority.list_routable(limit=1000)` as the canonical bounded enumeration — the single place router/index code asks the authority for the current routing set (applies `is_routable` + `fidelity != UNKNOWN`, never duplicated). Negative limits rejected. 7 tests in `TestK11ListRoutable` (default limit, respects limit, e
 
 ## K12 — Prove Acceptance B — **DONE**
 
-**Depends on:** K11
-
-**Where**
-
-```text
-tests/test_assimilator_capability_contract.py
-```
-
-**What**
-
-Test complete contracts and migration.
-
-**How**
-
-Cover:
-
-1. new contract round trip;
-2. digest stability;
-3. old authority data migration;
-4. UNKNOWN legacy contract non-routable;
-5. full VERIFIED contract routable;
-6. missing intent/schema/verification non-routable;
-7. native seeds complete.
-
-**Definition of done**
-
-Acceptance B passes.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 # PHASE F — Behavioral fidelity
 
@@ -479,59 +234,11 @@ Acceptance B passes.
 
 ## P05 — Make canonical publication failure observable — **DONE**
 
-**Current `main` audit note:** Current-main note: live service paths now count `canonical_failed`, but a canonical-authority failure can still occur after earlier integration work. Counting the failure is not sufficient: success/non-promotion semantics must be fail-closed. **RESOLVED:** Both the `_register_integrated_as_tools` (P03, transaction path via `publish_targets`) and `register_synthesized_modules` (P02) service paths are fail-closed — a non-COMMITTED transaction or an injected `authority.upsert`/constructor failure yields `canonical_failed>=1` / `canonical_published==0` instead of success. Fixed the two broken P05 test fixtures in `test_capability_contract.py` (they referenced a fidelity-blocked placeholder module and a wrong `manifest_rel` path) by patching `evaluate_fidelity` to a promotable VERIFIED and correcting the manifest path so the canonical-publish branch is deterministically exercised; the fidelity gate itself remains intact (covered by its own F-tests). All 164 tests in `test_capability_contract.py` pass.
-
-**Depends on:** none (all listed prerequisites are already complete on current `main`)
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/service.py
-```
-
-**What**
-
-A runtime module cannot be reported as successfully integrated if canonical publication fails.
-
-**How**
-
-Until the full transaction in Phase T exists, make failure explicit and clean up the just-created transaction-owned runtime artifact where safely possible.
-
-Later T-phase work will replace this provisional handling with full rollback.
-
-**Definition of done**
-
-Injected `CapabilityAuthority.upsert()` failure causes assimilation to report failure/non-promotion rather than success.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: live service paths now count `canonical_failed`, but a canonical-authority failure can still occur after earlier integration work. Counting the failure is not sufficient: success/non-promotion semantics must be fail-closed. **RESOLVED:** Both the `_register_integrated_as_tools` (P03, transaction path via `publish_targets`) and `register_synthesized_modules` (P02) service paths are fail-closed — a non-COMMITTED transaction or an injected `authorit
 
 ## P06 — Prove one-authority inventory — **DONE**
 
-**Current `main` audit note:** Current-main note: native/integrated/synthesized canonical publication pieces now exist, but the one-authority invariant still needs an explicit acceptance proof after K06–K11 and P05 are complete. **RESOLVED:** `tests/test_assimilator_publication.py` (9 tests, all passing) proves native/adopted/synthesized capabilities are all queryable through a single `CapabilityAuthority`, and only COMPLETE/VERIFIED + PARTIAL fidelity states are routable (UNKNOWN excluded).
-
-**Depends on:** P05
-
-**Where**
-
-```text
-tests/test_assimilator_publication.py
-```
-
-**What**
-
-Test native, adopted, and synthesized capability presence.
-
-**How**
-
-Seed native contracts, publish one adopted fixture and one synthesized fixture.
-
-Assert all are queryable through `CapabilityAuthority`.
-
-**Definition of done**
-
-One canonical query returns all three execution modes and only complete verified/partial ones are routable.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: native/integrated/synthesized canonical publication pieces now exist, but the one-authority invariant still needs an explicit acceptance proof after K06–K11 and P05 are complete. **RESOLVED:** `tests/test_assimilator_publication.py` (9 tests, all passing) proves native/adopted/synthesized capabilities are all queryable through a single `CapabilityAuthority`, and only COMPLETE/VERIFIED + PARTIAL fidelity states are routable (UNKNOWN excluded).
 
 # PHASE S — Semantic capability indexing
 
@@ -540,314 +247,35 @@ One canonical query returns all three execution modes and only complete verified
 
 ## S01 — Add deterministic routing-text builder — **DONE**
 
-**Current `main` audit note:** Current-main note: `capability_semantic.py` now contains a custom deterministic TF-IDF-like fingerprint implementation. The target architecture still requires the existing `SemanticService` as the primary semantic retrieval system. Reuse the current fingerprint logic only as a bounded deterministic fallback if useful.
-
-**Depends on:** K12
-
-**Where**
-
-Recommended:
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-```
-
-**What**
-
-Create concise text for semantic indexing from canonical contract fields.
-
-**How**
-
-Example:
-
-```python
-def build_capability_routing_text(contract: CapabilityContract) -> str:
-    parts = [
-        contract.name,
-        *contract.intents,
-        *contract.aliases,
-        contract.description,
-        f"inputs: {sorted(contract.input_schema.get('properties', {}))}",
-        f"outputs: {contract.output_schema}",
-        f"effects: {contract.effects}",
-        f"requirements: {contract.requirements}",
-    ]
-    return "\n".join(str(p) for p in parts if p)
-```
-
-Keep deterministic ordering.
-
-Do not include raw source files, books, README bodies, or giant provenance text.
-
-**Definition of done**
-
-Same contract yields byte-identical routing text across calls.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: `capability_semantic.py` now contains a custom deterministic TF-IDF-like fingerprint implementation. The target architecture still requires the existing `SemanticService` as the primary semantic retrieval system. Reuse the current fingerprint logic only as a bounded deterministic fallback if useful.
 
 ## S02 — Add semantic index adapter for capability contracts — **DONE**
 
-**Current `main` audit note:** Current-main note: do not create another semantic database or keep the current fingerprint-only mechanism as the primary router. Adapt capability contracts into the existing `SemanticService`/semantic index.
-
-**Depends on:** S01
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-```
-
-**What**
-
-Wrap the existing `SemanticService` for capability-specific indexing/search.
-
-**How**
-
-Use:
-
-```text
-object_kind="capability_contract"
-object_id=<stable capability id + revision/digest strategy>
-```
-
-Store semantics sufficient to recover:
-
-```text
-capability_id
-contract_digest
-authority revision if useful
-```
-
-Do not create another embedding provider/index database.
-
-**Definition of done**
-
-One active routable contract can be indexed and found through the existing semantic service.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: do not create another semantic database or keep the current fingerprint-only mechanism as the primary router. Adapt capability contracts into the existing `SemanticService`/semantic index.
 
 ## S03 — Index only routable contracts — **DONE**
 
-**Depends on:** S02, K11
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-```
-
-**What**
-
-Prevent knowledge, stale, placeholder, failed, or incomplete contracts from becoming routing candidates.
-
-**How**
-
-Before indexing:
-
-```python
-if not contract.is_routable:
-    tombstone_if_present(...)
-    return
-```
-
-**Definition of done**
-
-A KNOWLEDGE and PLACEHOLDER fixture never appears in active capability search results.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 ## S04 — Connect authority invalidation callbacks to semantic maintenance — **DONE**
 
-**Depends on:** S03
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-```
-
-plus service initialization where `CapabilityAuthority` is created.
-
-**What**
-
-Keep index state synchronized with authority lifecycle changes.
-
-**How**
-
-Reuse `CapabilityAuthority` invalidation/revision callbacks.
-
-On change:
-
-- fetch current contract;
-- index/reindex if routable;
-- tombstone old semantic record if superseded/retired/non-routable;
-- avoid reindex when digest unchanged.
-
-Use existing semantic tombstone semantics.
-
-**Definition of done**
-
-Changing an active contract to RETIRED removes it from active semantic retrieval without restarting the process.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 ## S05 — Make indexing idempotent — **DONE**
 
-**Depends on:** S04
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-tests/test_assimilator_semantic.py
-```
-
-**What**
-
-Repeated synchronization must not create multiple active semantic rows for the same current contract.
-
-**How**
-
-Use a deterministic object ID strategy or tombstone-and-replace keyed by contract digest.
-
-Assert:
-
-```text
-same authority state synchronized twice
-=> one active semantic representation
-```
-
-**Definition of done**
-
-Second index sync creates no duplicate active result.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 ## S06 — Implement bounded lexical/structured fallback — **DONE**
 
-**Depends on:** K11, S01
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-```
-
-**What**
-
-When semantic provider/search fails, retrieve obvious matches deterministically from current authority.
-
-**How**
-
-Score only active routable contracts using compact evidence:
-
-```text
-exact name match
-alias match
-intent token overlap
-description overlap
-input-property compatibility
-```
-
-Example simple scoring:
-
-```python
-score = 0
-if q == name: score += 100
-if q in aliases: score += 80
-score += 10 * token_overlap(q, intents)
-score += 2 * token_overlap(q, description)
-```
-
-Bound the scanned authority list and return top-K.
-
-Do not invent a second semantic database.
-
-**Definition of done**
-
-With semantic provider forced to fail, a request containing an obvious capability alias/name/intent still retrieves the correct candidate.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 ## S07 — Add bounded candidate retrieval API — **DONE**
 
-**Depends on:** S02, S06
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_semantic.py
-```
-
-**What**
-
-Expose one retrieval function for the router.
-
-**How**
-
-Suggested:
-
-```python
-async def retrieve_candidates(
-    intent: str,
-    *,
-    top_k: int = 5,
-) -> list[CapabilityCandidate]:
-    ...
-```
-
-Hard-cap `top_k`, for example:
-
-```python
-top_k = max(1, min(top_k, 10))
-```
-
-Return canonical IDs/digests and relevance evidence, not full inventory dumps.
-
-**Definition of done**
-
-Router can request at most a small bounded candidate set through one API.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 ## S08 — Prove Acceptance D — **DONE**
 
-**Depends on:** S01, S07
-
-**Where**
-
-```text
-tests/test_assimilator_semantic.py
-```
-
-**What**
-
-Test semantic and fallback retrieval among distractors.
-
-**How**
-
-Index:
-
-- weighted-total capability;
-- unrelated formatter;
-- unrelated file counter;
-- several distractors.
-
-Natural language:
-
-```text
-"multiply the sum of these values by a weight"
-```
-
-must retrieve weighted-total near/top first.
-
-Then force semantic-provider failure and use an obvious alias/intent query.
-
-**Definition of done**
-
-Acceptance D passes in both semantic and fallback modes.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 # PHASE R — Transparent capability routing
 
@@ -856,381 +284,43 @@ Acceptance D passes in both semantic and fallback modes.
 
 ## R01 — Define router result types — **DONE**
 
-**Current `main` audit note:** Current-main note: `capability_router.py` exists with `CandidateScore` and `RoutingDecision`, but it lacks the required MATCH/NO_MATCH/MISSING_INPUT outcomes and bound execution-call plan. Refactor/extend the existing file.
-
-**Depends on:** S07
-
-**Where**
-
-Recommended:
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Create explicit typed outcomes rather than returning ad-hoc dictionaries.
-
-**How**
-
-Suggested shape:
-
-```python
-from dataclasses import dataclass
-from typing import Literal
-
-@dataclass(frozen=True)
-class BoundCapabilityCall:
-    capability_id: str
-    contract_digest: str
-    arguments: dict[str, object]
-
-@dataclass(frozen=True)
-class RouteResult:
-    status: Literal["MATCH", "NO_MATCH", "MISSING_INPUT"]
-    plan: tuple[BoundCapabilityCall, ...] = ()
-    missing: tuple[str, ...] = ()
-    rationale: str = ""
-```
-
-Add candidate/ranking types if useful.
-
-**Definition of done**
-
-Router outcomes distinguish no match from missing required input.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: `capability_router.py` exists with `CandidateScore` and `RoutingDecision`, but it lacks the required MATCH/NO_MATCH/MISSING_INPUT outcomes and bound execution-call plan. Refactor/extend the existing file.
 
 ## R02 — Retrieve candidates from semantic adapter only — **DONE**
 
-**Current `main` audit note:** Current-main note: the current router scans `CapabilityAuthority.routable()` and computes local fingerprints directly. Replace that primary retrieval path with the capability semantic adapter built in Phase S.
-
-**Depends on:** R01
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Make ordinary user intent the router input.
-
-**How**
-
-Primary entry:
-
-```python
-async def route(
-    intent: str,
-    *,
-    context: dict[str, object] | None = None,
-) -> RouteResult:
-    candidates = await semantic.retrieve_candidates(intent, top_k=...)
-```
-
-Do not require:
-
-```text
-module name
-source path
-synth_* tool name
-function name
-```
-
-**Definition of done**
-
-Caller can route using only ordinary outcome language/context.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: the current router scans `CapabilityAuthority.routable()` and computes local fingerprints directly. Replace that primary retrieval path with the capability semantic adapter built in Phase S.
 
 ## R03 — Revalidate candidate canonical state — **DONE**
 
-**Current `main` audit note:** Current-main note: semantic-hit digest/revision revalidation is not present. Add it against the current canonical authority before selection.
-
-**Depends on:** R02
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Do not trust stale semantic hits.
-
-**How**
-
-For each semantic candidate:
-
-```python
-contract = authority.get(capability_id)
-if not contract:
-    skip
-if contract.contract_digest != hit.contract_digest:
-    refresh/skip stale hit
-if not contract.is_routable:
-    skip
-```
-
-**Definition of done**
-
-A retired or changed contract cannot be routed because an old semantic record still exists.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: semantic-hit digest/revision revalidation is not present. Add it against the current canonical authority before selection.
 
 ## R04 — Add understandable candidate ranking — **DONE**
 
-**Current `main` audit note:** Current-main note: ranking currently uses similarity plus canonical-name tie-breaking only. Extend the existing ranking; do not create a second router.
-
-**Depends on:** R03
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Rank the bounded candidate set using transparent signals.
-
-**How**
-
-Use a small scoring structure, for example:
-
-```text
-semantic relevance
-fidelity preference: VERIFIED > PARTIAL
-input compatibility
-reliability evidence
-safety/risk penalty
-```
-
-Do not create a giant learned score.
-
-Keep score components available in debug evidence.
-
-**Definition of done**
-
-Given two known candidates, a test can explain why one ranks above the other.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: ranking currently uses similarity plus canonical-name tie-breaking only. Extend the existing ranking; do not create a second router.
 
 ## R05 — Implement schema-driven argument binding — **DONE**
 
-**Current `main` audit note:** Current-main note: the current router does not bind user/context values against the capability input schema. Add binding before any execution plan is emitted.
-
-**Depends on:** R04
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Bind available user/context values to contract `input_schema`.
-
-**How**
-
-Support JSON-schema essentials used by Agent_X:
-
-```text
-type
-properties
-required
-additionalProperties
-arrays/scalars
-basic enums if present
-```
-
-Rules:
-
-- never invent missing required values;
-- reject unknown fields when `additionalProperties=False`;
-- validate types;
-- allow defaults only if the canonical schema explicitly defines them.
-
-If a general schema validator already exists in Agent_X, reuse it.
-
-**Definition of done**
-
-Required missing fields produce `MISSING_INPUT`; invalid types do not execute.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: the current router does not bind user/context values against the capability input schema. Add binding before any execution plan is emitted.
 
 ## R06 — Add explicit `NO_MATCH` — **DONE**
 
-**Current `main` audit note:** Current-main note: `selected=None` exists, but retain this task until the router has an explicit NO_MATCH outcome distinct from missing required input.
-
-**Depends on:** R04
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Permit safe refusal when no candidate is relevant enough.
-
-**How**
-
-Use deterministic minimum evidence such as:
-
-- semantic result above configured relevance threshold; or
-- explicit lexical/alias/intent evidence in fallback mode.
-
-Do not select the least-bad candidate simply because top-K is non-empty.
-
-**Definition of done**
-
-An unrelated request produces `NO_MATCH` and an empty plan.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: `selected=None` exists, but retain this task until the router has an explicit NO_MATCH outcome distinct from missing required input.
 
 ## R07 — Produce single-capability execution plans — **DONE**
 
-**Depends on:** R05, R06
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Turn the best valid candidate into a bound call.
-
-**How**
-
-Populate:
-
-```text
-capability_id
-current contract_digest
-bound arguments
-```
-
-Do not embed mutable executable code in the plan.
-
-**Definition of done**
-
-A valid intent + complete input yields exactly one bound call for the expected capability.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 ## R08 — Add bounded composition search — **DONE**
 
-**Current `main` audit note:** Current-main note: bounded composition is not present in the current router.
-
-**Depends on:** R07
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Allow a short chain when no single capability can satisfy the task.
-
-**How**
-
-Constraints:
-
-```text
-max steps <= 4
-no repeated capability ID in same plan unless explicitly safe
-no graph cycles
-output/input schema compatibility required
-effects/safety checked at each edge
-```
-
-Prefer single capability whenever sufficient.
-
-Do not build an unbounded autonomous planner.
-
-**Definition of done**
-
-A two-step fixture can be planned and a cyclic fixture is rejected.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: bounded composition is not present in the current router.
 
 ## R09 — Add output-to-input binding for composed plans — **DONE**
 
-**Current `main` audit note:** Current-main note: explicit cross-step output→input bindings are not present.
-
-**Depends on:** R08
-
-**Where**
-
-```text
-tools/agentx_evolve/collective_core/capability_router.py
-```
-
-**What**
-
-Represent how output of step N supplies input to step N+1.
-
-**How**
-
-Use explicit binding expressions/keys rather than natural-language inference at execution time.
-
-Example conceptual shape:
-
-```python
-{
-    "from_step": 0,
-    "output_path": "$.value",
-    "to_argument": "text",
-}
-```
-
-Keep the supported mapping syntax small.
-
-**Definition of done**
-
-A composed plan explicitly states every cross-step data dependency.
-
----
+Historical DONE claim (not independently verified against current DT). **Current `main` audit note:** Current-main note: explicit cross-step output→input bindings are not present.
 
 ## R10 — Prove Acceptance E and routing core — **DONE**
 
-**Depends on:** R01, R09
-
-**Where**
-
-```text
-tests/test_assimilator_router.py
-```
-
-**What**
-
-Test:
-
-- ordinary intent;
-- candidate ranking;
-- argument binding;
-- missing input;
-- invalid input;
-- `NO_MATCH`;
-- bounded composition;
-- cycle rejection.
-
-**Definition of done**
-
-Acceptance E passes and composition planning has focused tests.
-
----
+Historical DONE claim (not independently verified against current DT). 
 
 # PHASE E — Governed execution, verification, fallback, reliability
 
