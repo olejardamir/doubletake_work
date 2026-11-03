@@ -2,13 +2,13 @@
 
 Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. This is a *source identity manifest*, NOT proof of content review. Preserve legacy detailed assessments in archived inventory; changes to individual source files MUST update the corresponding shard row after fresh SHA refetch. Explicitly distinguish FULL_READ / PARTIAL / CLUSTERED / REDUCED_IN_PLACE / DELETED_WITH_TOMBSTONE / INACCESSIBLE. For any deletion, record a tombstone in the same shard. Never infer content review from extension or SHA. Do not remove unresolved items without evidence.
 
-| Relative path | Current blob SHA | Bytes | Deep review status |
+| Relative path | Current or historical blob SHA | Current or historical bytes | Deep review status |
 |---|---|---:|---|
 | `M3_ACCEPT_PUSH_EXHAUST_REMAINING_NCHAN_CONFIG_SPACE.md` | `ceb9ccbe45b08b98a6e5dabb8bcb6f679db5179d` | 21573 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `M3_FINAL_PUSH_CURRENT_STATE_DEADLINE_FOCUSED.md` | `d99e75cd574d2a4bf7514770134d5a121a2e6bcf` | 5200 | S29 FULL_READ / REDUCED_IN_PLACE; original `c6a255009b3171e36c9d2df7ef5a0a171e5c2d1b` (15581 bytes); frozen 100k/Nchan/Redis contract, F1 numeric failures, coordinator DNS blocker, bounded probe/terminal falsifiers preserved; historical EA only; no DT Ground; verify current EA source before reuse |
 | `M3_TERMINAL_CLOSURE_FOCUS_ONLY_v2_AUDITED.md` | `92f3476aa830db37520d795afcb2b1df48719d9d` | 30691 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md` | `3a1cde51997351586eeffe8a006f3a19fecffae0` | 123239 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` | `223ea1748251cb0c08d6fd65d4de7affe71651d3` | 111689 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `M4_M7_OVERNIGHT_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v9.md` | `223ea1748251cb0c08d6fd65d4de7affe71651d3` (historical) | 111689 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: superseded revision; retained successor `M4_M7_CLOSE_100_PERCENT_PROMPT_FULL_COVERAGE_FINAL_v10_M3_TERMINAL_SYNC.md`; historical content recoverable by Git blob SHA |
 | `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.1.md` | `8eabf55583193601aae032b1960ca9382ef9e03a` | 101769 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MARKET_SEMANTIC_PORTFOLIO_ENGINEERING_v1.2_INTERMEDIATE.md` | `f2573f079b944409df51fd7c8eba6c36beaa4dce` | 106008 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MARKET_SEMANTIC_PORTFOLIO_SIMPLE_ENGINEERING_v1.6_CHECKPOINT.md` | `e393f51ae737c7b2b3019879c94fc1329c7cdaa2` | 27537 | LEGACY_STATUS_NOT_YET_MIGRATED |
@@ -21,11 +21,11 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `maximum_stealth_adblock_method.md` | `bd3b9d5b8632228df518a6275a1f6296787c5916` | 15995 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPT.md` | `8f3d55898b69c7d1dd0580d314a3bc9c8d949607` | 141351 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MILESTONE_2_CLOSE_GAP_100_PERCENT_PROMPTb.md` | `9aa4257d76629a63f9b23c7f3d684b1e89d6b7ce` | 49344 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v2.md` | `aaccd1527b6a3ebef69ad25bf56837dcf7f93cb7` | 26985 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v3.md` | `fd088252e5a9daa561d78daf7e75b8d68b9d6206` | 36193 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | `d24cfb24d2ae44b824c1ee0ac24ffd44cb82ab6e` | 50634 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | `3d6b342b76cc8daf79868e397d1f1d03dc61d880` | 43770 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | `f1e55fb858218f552b93042ab2f233de2684709b` | 30743 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v2.md` | `aaccd1527b6a3ebef69ad25bf56837dcf7f93cb7` (historical) | 26985 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: superseded revision; retained successor `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md`; historical content recoverable by Git blob SHA |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v3.md` | `fd088252e5a9daa561d78daf7e75b8d68b9d6206` (historical) | 36193 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: superseded revision; retained successor `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md`; historical content recoverable by Git blob SHA |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v4.md` | `d24cfb24d2ae44b824c1ee0ac24ffd44cb82ab6e` (historical) | 50634 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: superseded revision; retained successor `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md`; historical content recoverable by Git blob SHA |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5.md` | `3d6b342b76cc8daf79868e397d1f1d03dc61d880` (historical) | 43770 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: superseded revision; retained successor `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md`; historical content recoverable by Git blob SHA |
+| `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v5a.md` | `f1e55fb858218f552b93042ab2f233de2684709b` (historical) | 30743 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: superseded revision; retained successor `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md`; historical content recoverable by Git blob SHA |
 | `MILESTONE_2_CLOSE_GAP_REMAINING_ONLY_v6.md` | `e1d26006ec9b6c784416df1924698b8061959e4f` | 15514 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MILESTONE_3_100_PERCENT_INTEGRITY_CLOSEOUT_UNTIL_ACCEPT_v1.md` | `259ab402ce7edefc4d8394630da4b100dd59c509` | 46228 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `MILESTONE_3_ASSIGNMENT_SYNCED_EXECUTION_PLAN_v2_FINAL.md` | `332e0128515918eca57bd9340d2c2838b8ab640c` | 55485 | LEGACY_STATUS_NOT_YET_MIGRATED |
