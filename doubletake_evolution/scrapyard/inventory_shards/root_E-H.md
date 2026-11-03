@@ -14,7 +14,7 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `EQC_FIC_Standard_v1_9.md` | `9035c7b2ee24f566d5954fece8f8a82876530410` | 96305 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v2.1 onward preserves 98% long-line content and latest v2.3 retained; historical Git blob retained |
 | `EQC_FIC_Standard_v2_1.md` | `a2a93f55e494125a73577393f3e680b967a59f45` | 107837 | DELETED_SUPERSEDED_VERSION (2026-11-02); superseded incremental standard; v2.3 preserves 98% long-line content; version-specific changelog is recoverable via Git; historical Git blob retained |
 | `EQC_FIC_Standard_v2_3.md` | `6e74ff3906337779bbf60a8325f3bf2b30838e1c` | 117376 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `EQC_FIC_Standard.md` | `d0d5ff9d723e2e96b0be58d7a34edfdeffdca68f` | 26093 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `EQC_FIC_Standard.md` | `d0d5ff9d723e2e96b0be58d7a34edfdeffdca68f` (historical) | 26093 (historical) | DELETED_WITH_TOMBSTONE 2026-11-02: retired older document; successor `EQC_FIC_Standard_v2_3.md`; Git blob recoverable |
 | `EQC-SR-v0.7.md` | `2f83c7fcbc157806711104a808849bc81a1eabd6` (archived) | 105675 | RETIRED / later full specification `EQC-SR-v1.0-release-candidate.md` retained / `a0d8858a` |
 | `EQC-SR-v0.9.md` | `a9fcbce544146f316a15b2ea24097b1395b5e8b5` (archived) | 125036 | RETIRED / later full specification `EQC-SR-v1.0-release-candidate.md` retained / `66d5bc42` |
 | `EQC-SR-v1.0-release-candidate.md` | `f29690915f4218bbb2ce9ea04d6b1340c4683fdc` | 133167 | LEGACY_STATUS_NOT_YET_MIGRATED |
