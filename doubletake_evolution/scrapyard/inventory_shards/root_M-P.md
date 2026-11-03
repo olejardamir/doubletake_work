@@ -52,4 +52,4 @@ Snapshot: public main `d998ccce408670221b30da2e247569ad16f72657` at 2026-11-02. 
 | `PARALLEL_M3_SAFE_WORK_100_PERCENT_PROMPT.md` | `c647b322d7770522ecb1108e1fbfeec1b2d5a90a` | 58096 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `Pasted markdown.md` | `11f0dee7cd7b11c43412e8593266cd99fc6d9976` | 10815 | LEGACY_STATUS_NOT_YET_MIGRATED |
 | `PROPER_SEMANTIC_CENTER_AND_N_SIDED_DIE_METHOD.md` | `5c1d4f9c93a5c4ad8474ebe7637a2a060fbb8d53` | 4089 | LEGACY_STATUS_NOT_YET_MIGRATED |
-| `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | `006727a9fbdefa798a63d81386f1689fce6015b4` | 16298 | LEGACY_STATUS_NOT_YET_MIGRATED |
+| `Pseudocode_to_FIC_to_Code_Workflow_Note_v2.md` | `0b3983284ebc7e9d4c7e1a28e20b31decb08f03c` | 7831 | S27 / FULL_READ / REDUCED_IN_PLACE / 8467 bytes saved / 42c20fb1; bounded FIC handoff, owner and negative-evidence contract; KEEP historical only; original `006727a9fbdefa798a63d81386f1689fce6015b4` recoverable in Git history |
