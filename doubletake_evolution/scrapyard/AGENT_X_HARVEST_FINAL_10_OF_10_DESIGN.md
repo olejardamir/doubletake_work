@@ -30,33 +30,9 @@ The primary success criterion is therefore **better AGENT_X capability density a
 
 ---
 
-## 2. What “10/10” Means
+## 2. Acceptance meaning and failure coverage
 
-A 10/10 Harvest design is not one that merely describes good practices. It is one in which the important architectural decisions are mechanically enforced and cannot be bypassed by a UI click, a convenient code path, or an incomplete generation run.
-
-The design is considered complete only when all material failure modes have explicit handling:
-
-1. useful-looking but low-value inventory;
-2. duplication of existing capability;
-3. implementation in the wrong architectural layer;
-4. append-only accumulation instead of replacement;
-5. semantic/code disagreement;
-6. implementation from stale `main`;
-7. partial implementation;
-8. backend code with no production entrypoint;
-9. UI wiring that does not reach the intended implementation;
-10. state/persistence incompatibility;
-11. migration failure;
-12. crash between semantic and code stages;
-13. retry after interruption;
-14. concurrent Harvest operations;
-15. rollback after activation;
-16. dead or orphaned superseded code;
-17. generated code that technically works but degrades AGENT_X through unnecessary complexity, maintenance burden, latency, resource cost, or lack of actual user value.
-
-“10/10” therefore means **closed decision loops, hard gates, durable state, deterministic lineage, and verifiable production behavior**.
-
-It does **not** mean that the current AGENT_X implementation automatically conforms to this document. Conformance must be proven through implementation and acceptance tests.
+The historical “10/10” label is a design aspiration, **not** measured conformance. Closure requires enforced gates, durable state, deterministic lineage and observed production behavior, including negative controls for: irrelevant or duplicate source; wrong canonical owner; append-only replacement; semantic/code drift; stale main; partial implementation; unreachable backend/UI path; incompatible state/migration; crash/retry/concurrency; rollback; orphaned superseded code; and complexity, latency, resource or maintenance regression. Each failure class needs a real test or explicit unresolved disposition. A design document alone proves none of these.
 
 ---
 
