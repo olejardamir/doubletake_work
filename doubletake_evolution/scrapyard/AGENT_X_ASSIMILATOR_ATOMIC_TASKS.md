@@ -7,62 +7,9 @@
 
 ---
 
-# 0. How to execute this backlog
+# 0. Historical execution and test boundaries
 
-Execute tasks in ID order unless a task explicitly says it can be parallelized.
-
-Each task should normally:
-
-- change one responsibility;
-- touch the minimum production files needed;
-- add or update focused tests;
-- leave the repository passing the focused tests before moving on.
-
-Do not collapse several phases into one giant refactor.
-
-Do not create parallel replacements for:
-
-- `CapabilityAuthority`;
-- the legacy `CapabilityRegistry`;
-- `SemanticService`;
-- the semantic index;
-- `collective_synthesized/tool_runtime.py`;
-- Agent_X governance;
-- the existing assimilation synthesis pipeline;
-- the existing gap-filling transaction system.
-
-## Recommended new files
-
-These are **recommended architectural locations**, not claims that they already exist:
-
-```text
-tools/agentx_evolve/collective_core/source_classification.py
-tools/agentx_evolve/collective_core/capability_semantic.py
-tools/agentx_evolve/collective_core/capability_router.py
-tools/agentx_evolve/collective_core/capability_execution.py
-tools/agentx_evolve/collective_core/assimilation_publication.py
-tools/agentx_evolve/collective_core/assimilation_hygiene.py
-```
-
-If an existing file already owns the exact responsibility cleanly, extend it instead of creating the suggested file.
-
-## Recommended focused test files
-
-```text
-tests/test_assimilator_source_classification.py
-tests/test_assimilator_capability_contract.py
-tests/test_assimilator_fidelity.py
-tests/test_assimilator_publication.py
-tests/test_assimilator_semantic.py
-tests/test_assimilator_router.py
-tests/test_assimilator_execution.py
-tests/test_assimilator_mcp_surface.py
-tests/test_assimilator_transaction.py
-tests/test_assimilator_hygiene.py
-tests/test_assimilator_end_to_end.py
-```
-
-Reuse an existing directly relevant test module if one exists and remains cohesive.
+This is a historical Agent_X backlog derived from `AGENT_X_ASSIMILATOR_REMAINING_WORK.md`, audited against `Astrocytech/Agent_X` main at `47dcde3ffc0d97fabd501875cb97e597a708a063`; it is **not** a current DoubleTake implementation order or evidence of completed tests. Apply tasks in dependency order, one responsibility and focused regression at a time, after checking the current baseline. Preserve existing owners: `CapabilityAuthority`, `CapabilityRegistry`, `SemanticService`, semantic index, `collective_synthesized/tool_runtime.py`, governance, synthesis pipeline and gap-filling transactions. Extend current modules where appropriate; suggested `tools/agentx_evolve/collective_core/` modules and `tests/test_assimilator_*.py` names in the historical task bodies are proposals, not verified existing paths. Do not transplant Agent_X-specific paths into DT without independent parity checks. Preserve task-level acceptance and negative tests below.
 
 ---
 
