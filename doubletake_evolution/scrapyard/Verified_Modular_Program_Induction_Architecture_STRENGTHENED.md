@@ -149,50 +149,9 @@ This mode may produce empirical predictors or multiple hypotheses, but it must n
 
 ---
 
-## 4. Reliability Estimates for SHA-256
+## 4. SHA-256 feasibility and evidence boundary
 
-The percentages below are engineering planning estimates, not measured guarantees. Actual reliability must be established through repeated benchmark runs with fixed budgets and independently generated test sets.
-
-| SHA-related task | Estimated probability of successful recovery or completion |
-|---|---:|
-| Verify a supplied SHA-256 implementation against a correct formal model | Approximately 100% logical conclusiveness if the proof completes |
-| Execute a frozen, already verified SHA-256 module correctly | Near 100% under the model; implementation and integration defects remain possible |
-| Recover a very small post-processing function after frozen SHA-256, up to about 10 simple DSL nodes | 80-98% |
-| Recover a moderate post-processing function after frozen SHA-256, about 10-30 nodes | 40-85% |
-| Recover a large, branching, stateful, or irregular post-processing function | 5-50% depending on bounds and oracle access |
-| Complete a strongly specified SHA-256 sketch with a small number of local holes | 70-95% |
-| Complete a SHA-256 sketch with many unknown constants, connections, and operations | 10-60% |
-| Rediscover complete SHA-256 from raw message-to-digest pairs while only restricting the primitive vocabulary | Less than 0.1%; effectively 0% |
-| Recover an unknown cryptographic or pseudorandom transformation after SHA-256 | Approximately 0% without a structural weakness or leaked information |
-
-### 4.1 Single-number answer
-
-For the ambitious interpretation—rediscovering the complete SHA-256 algorithm from ordinary message-digest examples—the estimated reliability is:
-
-> **approximately 0%, conservatively below 0.1%.**
-
-For the corrected interpretation—using SHA-256 as a frozen verified module or completing a tightly specified SHA sketch—the architecture can be highly reliable.
-
-### 4.2 Why full rediscovery is effectively impossible
-
-SHA-256 is designed so that small changes to the input produce outputs that appear irregular and provide almost no useful local signal about the internal operations.
-
-The search would need to identify, among other things:
-
-- parsing and padding;
-- byte order;
-- word width;
-- the message schedule;
-- 64 rounds;
-- register routing;
-- rotations and shifts;
-- modular additions;
-- Boolean functions;
-- 64 round constants;
-- eight initial constants;
-- multi-block chaining.
-
-Even if all correct primitives exist in the library, the number of possible compositions is too large for examples alone to guide the search to the intended implementation.
+No measured success probabilities are available for this proposed architecture. Prior numerical recovery percentages were unsupported planning guesses and are deliberately retired, not empirical benchmarks. Verification of a supplied SHA-256 implementation is conclusive only if a correct formal model is used and the proof completes. A frozen, independently verified SHA-256 module can be composed with a bounded unknown transformation; tightly constrained sketch completion may be testable. Recovering the full SHA-256 algorithm from ordinary message–digest pairs without a strong structural sketch is not a credible practical objective: padding, word schedule, 64 rounds, constants, rotations, chaining and nonlinear operations make the unconstrained search enormous. Unknown cryptographic post-processing likewise cannot be assumed learnable. Report task-specific measured outcomes with budgets, seeds, independent controls and failure cases instead of assigning probabilities.
 
 ---
 
