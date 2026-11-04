@@ -1126,48 +1126,6 @@ This task is complete only when all of the following are true on the current bra
 
 ---
 
-# Required final report after execution
+# Historical evidence boundary
 
-When the work is complete, output a concise implementation report containing:
-
-1. **Baseline**
-   - starting `main` SHA;
-   - ending SHA/worktree state.
-
-2. **What changed**
-   - canonical Harvest selection/filter model;
-   - Search / Exploration Focus behavior;
-   - thresholds/criteria;
-   - Slop Risk selection;
-   - Gate B implementation-worthiness;
-   - architecture mode decision;
-   - semantic-first integration;
-   - stack completion handshake;
-   - durable inventory behavior;
-   - UI/runtime integration.
-
-3. **Files/components changed**
-   - grouped by UI, API, Harvest core, semantic-first integration, stack, schema/migration, tests.
-
-4. **Migrations**
-   - persisted UI-state migration;
-   - inventory/schema migration;
-   - compatibility notes.
-
-5. **Tests run**
-   - exact commands;
-   - pass/fail counts;
-   - any skipped tests and why.
-
-6. **End-to-end proof**
-   - identify the representative Harvest candidate used;
-   - show the lifecycle from discovery through exact stack removal and durable inventory completion.
-
-7. **Resource/performance result**
-   - confirm no material regression or describe measured bounds.
-
-8. **Remaining risks**
-   - only concrete unresolved risks, if any.
-   - Do not list speculative filler.
-
-Do not stop at a design document. Implement the working code, migrations, UI wiring, lifecycle updates, and tests end to end.
+This September 2026 Agent_X execution prompt is archival research, not a live DT worker instruction. The retained lifecycle, criteria, tests and completion definition above are design hypotheses requiring current-DT parity and authorized execution verification. The former post-execution report template (baseline SHA, files, migrations, tests, end-to-end proof, resource bounds and remaining risks) was administrative boilerplate, not independent implementation evidence. Original text remains recoverable at Git blob `c24cb33bdaee5d529711b360fcce5881851ba6d4`.
