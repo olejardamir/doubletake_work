@@ -20,178 +20,24 @@ Before implementation inspect current main, canonical semantic state, real Harve
 
 ---
 
-# 3. Current architecture that MUST be reused
-
-Do not rebuild these systems.
-
-## Harvest inventory / production loop
-
-Existing owners include:
-
-- `tools/agentx_evolve/collective_core/harvest_loop.py`
-- `_hp_mining.py`
-- `_hp_evidence.py`
-- `_hp_run.py`
-- `_hp_intel.py`
-
-These remain the production discovery/mining/inventory layer.
-
-## Harvest typed models and evidence
-
-Use:
-
-- `harvest_models.py`
-
-Preserve its content-derived item identity, evidence ledger, and existing `HarvestItemState` R0–R6 lifecycle unless a narrow compatibility correction is required.
-
-Do not replace it with a new top-level Harvest framework.
-
-## Experiment contracts
-
-Use:
-
-- `harvest_contracts.py`
-- `ExperimentContractV2`
-- `ContractState`
-- `validate_contract()`
-- `admit_candidate()`
-
-Do not create a parallel “implementation contract” model if the existing contract can be extended.
-
-## Gate B
-
-Use and repair:
-
-- `harvest_gate_b.py`
-- `GateBDecisionV2`
-- `ImplementationDisposition`
-- `SemanticFitResult`
-- `ValueAssessment`
-- `FeasibilityCheck`
-
-Gate B remains the canonical **Harvest eligibility/disposition decision**.
-
-It is **not** the canonical project-write authorization.
-
-## Reality / anti-slop / pre-coding enforcement
-
-Use:
-
-- `harvest_reality_kernel.py`
-- `CriticalKernel`
-- `PreCodingGate`
-- `ApplicabilityScan`
-- `ContractTrace`
-- `PromotionBarrier`
-- existing failure attribution
-
-These must become real hard inputs to Gate B / progression where they are not already wired.
-
-Do not leave them as an independent advisory system.
-
-## Embeddings and inventory representation
-
-Use:
-
-- `harvest_embedding.py`
-- `harvest_corpus.py`
-- `harvest_grounding.py`
-
-The current embedding subsystem already provides canonicalization, chunking, embedding identity, vector validation, provider identity and governed embedding routing.
-
-Use it for semantic retrieval where appropriate.
-
-Do not build another embedding/index stack.
-
-## Probe generation and scheduling
-
-Use:
-
-- `harvest_generators.py`
-- `harvest_scheduler.py`
-- `harvest_optimizers.py`
-
-These remain advisory/search systems.
-
-They can discover/promote candidates for evaluation.
-
-They cannot authorize production implementation.
-
-## Evaluation
-
-Use:
-
-- `harvest_evaluation.py`
-- existing R0–R6 ladder.
-
-Do not replace R0–R6 with another test ladder.
-
-## Ranking/champion/canary
-
-Use:
-
-- `harvest_ranking.py`
-- `harvest_champion.py`
-- `harvest_canary.py`
-
-Champion/challenger logic is evaluation/promotion evidence.
-
-It does not override semantic-first mutation authority.
-
-## Persistence and restart support
-
-Use:
-
-- `harvest_persistence.py`
-- `harvest_migration.py`
-
-Do not create a second general persistence subsystem.
-
-## UI decision/search helpers
-
-Use:
-
-- `harvest_ui.py`
-
-Repair the authority boundaries described below.
-
-## Wiring evidence
-
-Use and repair:
-
-- `harvest_wiring.py`
-
-It is verification evidence, not semantic truth.
-
-## Canonical semantic-first mutation stack
-
-Harvest production implementation MUST enter the existing canonical stack under:
-
-- `tools/agentx_evolve/semantic_first/`
-- especially `SemanticFirstCheckpoint`
-- `SemanticChangeOverlay`
-- `run_semantic_first`
-- `require_semantic_authorization`
-- `source_snapshot`
-- `implementation_revision`
-- canonical synchronization/recovery/finalization
-- canonical tool-effect contracts
-
-For UI/run-bound work, reuse the same shared semantic gate/finalization infrastructure used by the normal UI instead of writing a Harvest-specific semantic mutation pipeline.
-
-## Harvest reconciliation helper
-
-`semantic_first/reconcile_harvest.py` is evidence/reconciliation support only.
-
-It MUST NOT become an alternate mechanism for:
-
-- minting `SYNCED`;
-- manually rewriting accepted baselines;
-- bypassing canonical semantic-first verification/promotion.
-
-Correct any stale metadata/comments in that file that still describe Gate B as the only code-change authorization mint.
-
----
+# 3. Existing implementation surfaces (historical map; verify against current DT)
+
+Reuse the existing owners; do not build parallel Harvest, embedding, persistence, evaluation, authorization or semantic mutation stacks. Historical module names below are investigation pointers, not verified current DT paths.
+
+| Responsibility | Existing implementation at source revision |
+| --- | --- |
+| Discovery/mining/inventory | `tools/agentx_evolve/collective_core/harvest_loop.py`, `_hp_mining.py`, `_hp_evidence.py`, `_hp_run.py`, `_hp_intel.py` |
+| Typed evidence and R0–R6 item lifecycle | `harvest_models.py`, `HarvestItemState` (preserve content-derived identity and ledger) |
+| Experiment admission | `harvest_contracts.py`: `ExperimentContractV2`, `ContractState`, `validate_contract()`, `admit_candidate()` |
+| Harvest eligibility only, **not write authority** | `harvest_gate_b.py`: `GateBDecisionV2`, `ImplementationDisposition`, `SemanticFitResult`, `ValueAssessment`, `FeasibilityCheck` |
+| Hard reality/pre-coding/promotion evidence | `harvest_reality_kernel.py`: `CriticalKernel`, `PreCodingGate`, `ApplicabilityScan`, `ContractTrace`, `PromotionBarrier`, failure attribution; wire into decisions, not advisory-only |
+| Semantic retrieval and embedding identity | `harvest_embedding.py`, `harvest_corpus.py`, `harvest_grounding.py` (canonicalization, chunking, vector/provider validation and routing) |
+| Advisory search and candidate generation | `harvest_generators.py`, `harvest_scheduler.py`, `harvest_optimizers.py`; no production-write authority |
+| Evaluation and promotion evidence | `harvest_evaluation.py` (R0–R6), `harvest_ranking.py`, `harvest_champion.py`, `harvest_canary.py`; champion/canary cannot override semantic authority |
+| Persistence/restart | `harvest_persistence.py`, `harvest_migration.py` |
+| UI and wiring evidence | `harvest_ui.py`, `harvest_wiring.py`; wiring is not semantic truth |
+| Canonical project mutation | `tools/agentx_evolve/semantic_first/`: `SemanticFirstCheckpoint`, `SemanticChangeOverlay`, `run_semantic_first`, `require_semantic_authorization`, `source_snapshot`, `implementation_revision`, canonical synchronization/recovery/finalization and tool-effect contracts. Reuse shared UI/run gate. |
+| Harvest reconciliation | `semantic_first/reconcile_harvest.py` is evidence-only: cannot mint SYNCED, rewrite accepted baseline or bypass canonical verification; correct outdated Gate B authority descriptions. |
 
 # 4. The fundamental authority correction
 
