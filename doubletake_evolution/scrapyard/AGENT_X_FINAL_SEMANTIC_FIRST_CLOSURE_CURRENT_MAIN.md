@@ -2,27 +2,9 @@
 
 > **Historical canonical lineage (2026-11-02 Scout):** This 79-section current-main audit supersedes the 73-section earlier snapshot `AGENT_X_FINAL_FOUR_GAP_SEMANTIC_FIRST_CLOSURE.md` (blob `8e8944909cd8b49d7575c16078ba22748fdc3c8a`, historical audited main `3485e010f1712a6bcd8fa603077a314ebd179ad4`). Every other nontrivial line from that earlier version is retained verbatim in this newer source; the earlier blob is recoverable from Git history. These are historical test requirements, not proof of present DT behavior or an implementation mandate.
 
-You are working on the current Agent_X `main`.
+## Historical scope and audit identity
 
-At the time this prompt was written, the latest independently audited `main` was:
-
-`6a9db4ecbc6d54afdc28ea03f88505b9f39e22b6`
-
-Do not assume that SHA is still current. Start by inspecting the actual current `main`.
-
-## Mission
-
-Close the final proven semantic-first defects and do not stop until the real production path is correct end to end.
-
-Do **not** redesign semantic-first.
-
-Do **not** redo Harvest.
-
-Do **not** perform unrelated cleanup, UI redesign, CI/CD work, GitHub Actions work, broad refactors, or cosmetic edits.
-
-Do **not** assume or introduce a dedicated Architectural MCP. Use Agent_X's existing provider/tool/MCP infrastructure.
-
-Do **not** create parallel semantic-model, provider-routing, Git, mutation-authorization, verification, rollback, or synchronization systems. Reuse and repair the existing canonical stack.
+Audited Agent_X `main` at `6a9db4ecbc6d54afdc28ea03f88505b9f39e22b6`. This is a historical defect/test specification, **not** an instruction to execute or proof of present DT behavior. Intended scope: repair existing canonical semantic-first provider, authorization, revision and recovery paths without parallel owners or unrelated redesign. Re-evaluate current source before proposing changes.
 
 The latest independently proven defects are concrete:
 
