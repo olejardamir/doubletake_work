@@ -1887,13 +1887,6 @@ If any original section cannot be mapped to implemented code/tests/evidence, the
 
 ---
 
-# FINAL EXECUTION DIRECTIVE
+# Final historical acceptance boundary
 
-Start with `CD-000` against the **live repository**, not against assumptions in this prompt.
-
-Then execute the dependency-ordered task pack continuously. After each task, test it and update the durable ledger. When a phase is complete, run its phase gate and immediately continue to the next phase. After Phase 8, execute every Appendix A proof and audit every Appendix B invariant.
-
-Do not ask the user to manually translate architecture into tasks: that translation is already contained here.
-Do not create a new parallel architecture to avoid difficult migrations.
-Do not stop at a partial implementation.
-Do not claim completion without executable evidence.
+The CD-000 live-baseline preflight, dependency-ordered task ledger, per-phase gates, Appendix A proofs and Appendix B invariants are required for any claimed completion. This archived AGENT_X task pack is **not** an instruction to the current DT Scout or proof of current DT implementation. No parallel mutation authority or untested completion is implied.
