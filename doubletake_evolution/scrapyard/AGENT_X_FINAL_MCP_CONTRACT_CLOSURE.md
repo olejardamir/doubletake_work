@@ -19,11 +19,10 @@ Determine the exact real production tool set (historically `agentx_mcp_server`, 
 
 ## Falsifiable historical acceptance suite
 
-- Registry: deterministic real-tool enumeration; `validate_registered_tool_effects() == ()`; every offered tool explicit, non-`unknown`, digest-recomputable, correctly scoped, schema-valid, extractor and recovery present; malformed/unknown never executable. Replace historical permissive missing-tool regression with strict assertion **only after** true completeness.
-- Real dispatcher: read-only without mutation grant; authorized in-scope exact file; out-of-scope file denied; unauthorized Git denied; unknown, malformed args, digest mismatch and semantic-denial overrides all denied.
-- Real LLM7/MCP boundary: positive read-only/exact-file/multi-file/Git/durable-state/model-switch cases with corresponding exact effect authorization; one out-of-scope multi-file resource rejects whole operation; unauthorized model switch and read-only indirect switch rejected; mutation under read-only quarantines.
-- Semantic-first non-regression: ambiguous JSON/YAML/TOML/skill sources excluded without production-consumer evidence; source snapshots and implementation revision recompute; artifact-backed target/verification digests; fail-closed background finalization; retained legacy transaction migration; fresh-checkout portability; normal UI write completes governed semantic-first lifecycle.
-- **After any real production contract change**, historical plan required fresh corrected source snapshot, implementation revision, governed semantic model/enrichment, real target+verification evidence, new canonical baseline, atomic persist/reload, independent `SYNCED` assessment and second no-change `SYNCED`. Hand-edited JSON, commit messages, stored status labels, unit-only examples or donor-only tests cannot establish this.
+- Enumerate actual registered production tools; require explicit, non-`unknown`, digest-valid effect contracts and `validate_registered_tool_effects() == ()`. Missing/malformed contracts are not executable; replace the historical permissive regression only after true completeness.
+- Test dispatcher and MCP/LLM7 caller paths: read-only, authorized exact-file/multi-file/Git/durable-state/model-switch positives; deny out-of-scope resources (including one member of multi-file), unauthorized Git or switch, malformed args, unknown contract, digest mismatch, and semantic denial. A read-only tool that mutates must be quarantined.
+- Retain semantic-first source/consumer tests: reject ambiguous JSON/YAML/TOML/skill ingestion without real caller evidence; recompute source/implementation and target/verification digests; fail closed on background finalization; test legacy transaction migration, fresh checkout and governed UI write.
+- After a genuine production contract change, require corrected source snapshot, implementation revision, governed semantic model, real target/verification evidence, canonical baseline, atomic persist/reload, independent `SYNCED` assessment and second no-change `SYNCED`. Stored status, hand-edited JSON, unit-only examples and commit messages are insufficient.
 
 ## Recheck / scope
 
