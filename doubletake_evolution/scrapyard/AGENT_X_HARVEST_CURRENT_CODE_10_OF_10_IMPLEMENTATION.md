@@ -363,63 +363,16 @@ A hard negative decision remains `REJECTED`.
 
 ---
 
-# 9. Preserve current disposition enum
+# 9. Preserve current `ImplementationDisposition` and its boundaries
 
-Do not unnecessarily replace the existing `ImplementationDisposition`.
-
-Keep:
-
-- `REJECT`
-- `EXPERIMENT_ONLY`
-- `REPLACE`
-- `EXTEND`
-- `COMPLEMENT`
-- `NEW_COMPONENT`
-
-Interpret them as follows.
-
-## REJECT
-
-No production implementation.
-
-This is a successful Harvest terminal decision.
-
-## EXPERIMENT_ONLY
-
-Evidence may be gathered in an isolated/non-production environment.
-
-It MUST NOT enable the production Implement action.
-
-After evidence is gathered, Gate B must be re-run.
-
-## REPLACE
-
-Existing canonical responsibility remains conceptually owned in the same semantic area while its implementation/algorithm is replaced or materially redefined.
-
-Must include explicit removal/repoint plan.
-
-## EXTEND
-
-Existing canonical owner gains additional behavior.
-
-Do not create a second owner.
-
-## COMPLEMENT
-
-Allowed only when the candidate adds a genuinely distinct cooperating responsibility and does not create duplicate ownership or parallel implementation of the same behavior.
-
-Must record how it composes with the incumbent.
-
-## NEW_COMPONENT
-
-Highest burden of proof.
-
-Allowed only when:
-
-- no existing canonical owner can absorb it coherently;
-- reuse/extend/replace are insufficient;
-- there is a real production consumer;
-- complexity is justified.
+| Disposition | Contract |
+| --- | --- |
+| `REJECT` | Terminal successful rejection; no production implementation. |
+| `EXPERIMENT_ONLY` | Isolated, non-production evidence gathering only; production Implement disabled; rerun Gate B afterward. |
+| `REPLACE` | Replace/redefine implementation of an existing canonical responsibility, with explicit removal/repoint plan. |
+| `EXTEND` | Add behavior under the existing canonical owner; no second owner. |
+| `COMPLEMENT` | Distinct cooperating responsibility, with explicit incumbent composition and no duplicated ownership/behavior. |
+| `NEW_COMPONENT` | Highest proof burden: no coherent existing owner, reuse/extension/replacement inadequate, real consumer and justified complexity. |
 
 ---
 
