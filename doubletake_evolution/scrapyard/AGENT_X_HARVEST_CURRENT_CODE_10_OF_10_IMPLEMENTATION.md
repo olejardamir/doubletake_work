@@ -912,50 +912,18 @@ Let governed semantic-first reconciliation produce it.
 
 ---
 
-# 56. Definition of done — per candidate
+# 56. Per-candidate closure (grouped evidence checklist)
 
-A production candidate is finalized only when all applicable items are true:
+Production finalization requires **all applicable** evidence; missing proof blocks acceptance:
 
-- [ ] canonical Harvest item/source identity recorded;
-- [ ] provenance/source digest recorded;
-- [ ] experiment contract admitted;
-- [ ] current Agent_X overlap reconstructed from semantic + implementation truth;
-- [ ] actual canonical owner identified;
-- [ ] least-complex alternative analysis completed;
-- [ ] real value proven;
-- [ ] feasibility proven;
-- [ ] CriticalKernel passed;
-- [ ] PreCodingGate resolved;
-- [ ] Gate B production-authorized;
-- [ ] Gate B current-truth bindings fresh;
-- [ ] explicit disposition selected;
-- [ ] supersession map complete where applicable;
-- [ ] Agent_X run reserved;
-- [ ] canonical semantic-first target accepted;
-- [ ] exact write/effect scope sealed;
-- [ ] implementation performed only under that authority;
-- [ ] obsolete implementation removed/repointed where applicable;
-- [ ] applicable R0 passed or explicitly non-applicable;
-- [ ] applicable R1 passed;
-- [ ] applicable R2 passed;
-- [ ] applicable R3 passed/non-applicable with evidence;
-- [ ] applicable R4 passed;
-- [ ] applicable R5 passed/non-applicable with evidence;
-- [ ] applicable R6 passed/non-applicable with evidence;
-- [ ] required consumer paths wired;
-- [ ] actual production entrypoint verified;
-- [ ] persistence/migration verified if applicable;
-- [ ] restart/retry verified if applicable;
-- [ ] rollback verified if applicable;
-- [ ] no scope breach;
-- [ ] no duplicate canonical owner;
-- [ ] no unexplained superseded/dead implementation;
-- [ ] final semantic-first verification succeeds;
-- [ ] semantic ↔ implementation reconciliation succeeds;
-- [ ] accepted synchronization state is healthy;
-- [ ] Harvest final lineage references all authoritative artifacts.
+1. **Identity/need:** canonical item, source/provenance digest, admitted experiment contract, current semantic+implementation overlap, real owner, least-complex alternatives, demonstrated value and feasibility.
+2. **Admission:** CriticalKernel and PreCodingGate pass; fresh current-truth-bound Gate B production decision, explicit disposition and applicable supersession map.
+3. **Authority/effects:** reserved Agent_X run, accepted canonical semantic-first target, sealed exact effect scope, implementation solely within authorization, obsolete paths removed/repointed where applicable.
+4. **Evaluation/consumption:** R0–R6 each pass or carry an evidence-backed non-applicability decision; required consumer paths wired and real production entrypoint exercised.
+5. **Durability/safety:** applicable persistence/migration, restart/retry and rollback verified; no scope breach, duplicate canonical owner or unexplained dead/superseded implementation.
+6. **Independent closure:** final semantic-first verification, semantic↔implementation reconciliation, healthy accepted synchronization and Harvest lineage to every authoritative artifact.
 
-If one applicable proof is missing, production Harvest finalization is forbidden.
+These groups summarize the same requirements, not a waiver or substitute for executable proofs. The platform-specific falsifiers remain in §57 and the end-to-end sequence in §60.
 
 ---
 
