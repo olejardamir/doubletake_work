@@ -927,50 +927,18 @@ These groups summarize the same requirements, not a waiver or substitute for exe
 
 ---
 
-# 57. Platform-level acceptance criteria
+# 57. Platform-level acceptance criteria (loss-aware grouped falsifiers)
 
-Do not declare the Harvest system conformant until all are true:
+Platform acceptance requires **all** applicable controls, proven against real entrypoints, not a self-reported score or prompt assertion:
 
-1. `agentx_status` is no longer Gate B authority.
-2. Gate B is no longer documented or implemented as the project mutation-authorization mint.
-3. Gate B uses actual canonical semantic owner/current implementation evidence.
-4. Gate B decisions bind canonical semantic/implementation revisions.
-5. self-reported worth/value scores are not implementation authority.
-6. feasibility uses actual current system constraints.
-7. CriticalKernel and PreCodingGate are hard inputs to production Gate B.
-8. missing evidence has a first-class non-authorizing path.
-9. `EXPERIMENT_ONLY` cannot production-implement.
-10. `REJECT` cannot production-implement.
-11. `harvest_ui.can_implement()` no longer authorizes from disposition alone.
-12. stale Gate B decision disables implementation.
-13. Implement starts canonical semantic-first rather than direct code generation.
-14. Gate B decision alone cannot authorize file/tool effects.
-15. no second Harvest semantic checkpoint/activation system exists.
-16. semantic-first target receives Gate B/contract/supersession evidence.
-17. exact mutation effects are governed by canonical semantic/tool contracts.
-18. R0–R6 remain the Harvest evaluation ladder.
-19. R0–R6 SKIP is applicability-backed and not presented as PASS.
-20. `harvest_wiring.completion_ready` no longer contains an unconditional UI bypass.
-21. UI/API wiring is required when applicable.
-22. persistence is required only when applicable.
-23. real production consumer paths are mandatory.
-24. REPLACE removes/repoints obsolete production paths.
-25. compatibility shims are explicitly bounded.
-26. no `*_v2`/parallel owner junk pile is created without migration justification.
-27. freshness is based on canonical implementation/semantic revisions, not only Git SHA.
-28. overlapping Harvest transactions conflict deterministically.
-29. restart cannot duplicate effects.
-30. experiment-only evidence cannot auto-promote itself.
-31. champion/canary status cannot bypass semantic-first.
-32. canonical finalization is required before Harvest final success.
-33. `reconcile_harvest.py` cannot mint normal production `SYNCED` state.
-34. rejected candidate is considered a valid successful decision outcome.
-35. raw harvested content remains untrusted.
-36. production tool effects remain contract-governed.
-37. current semantic project model is reconciled through canonical semantic-first.
-38. UI is simpler than internal mechanics and does not duplicate domain authority.
-39. repeated Harvest use does not create unbounded transaction/code junk.
-40. tests prove the real UI/API/CLI/MCP/agent path for representative final candidates.
+1. **Gate B / trust:** `agentx_status` and self-rated value cannot authorize implementation; current canonical owner, actual source/semantic revisions, verified value/feasibility, CriticalKernel and PreCodingGate are required. Missing evidence, stale decisions, REJECT and EXPERIMENT_ONLY all prohibit production effects. Raw harvested content remains untrusted.
+2. **Single authority:** Gate B is eligibility only; real Implement uses canonical semantic-first target, run reservation and exact tool/file effect authorization. No parallel Harvest checkpoint, activation owner, `*_v2` subsystem or ungoverned effect path. Target binds contract, supersession, owner and effect scope.
+3. **UI and wiring:** `harvest_ui.can_implement()` cannot enable writes from disposition alone; stale decisions disable action. `harvest_wiring.completion_ready` cannot bypass applicable UI/API wiring, persistence or real production consumers. UI remains simpler than backend authority and cannot duplicate it.
+4. **Evaluation / lifecycle:** R0–R6 remain applicable evidence ladder; SKIP requires documented non-applicability, never PASS. REPLACE removes/repoints obsolete paths with bounded compatibility shims; overlapping transactions conflict deterministically; restart/retry never duplicates effects; experiment, champion and canary never self-promote.
+5. **Independent closure:** canonical semantic-first finalization precedes success; `reconcile_harvest.py` cannot mint production SYNCED. Current semantic model, source revision and accepted baseline reconcile independently. REJECT is a valid successful nonmutation outcome. Repeated runs create no unbounded transaction/code accumulation.
+6. **Real-path proof:** tests exercise representative real UI/API/CLI/MCP/agent consumers and production effect boundaries, including denial, stale/unknown, rollback, restart, no-change replay, and authorized positive cases. No unit-only or stored-status substitute for actual observed behavior.
+
+These grouped conditions preserve the original 40 historical criteria by mechanism; the full verbatim checklist remains recoverable in the prior Git blob. Present DT parity and executed Ground remain UNKNOWN.
 
 ---
 
