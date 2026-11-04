@@ -10,94 +10,13 @@
 
 ---
 
-# 1. Mission
+# 1–2. Historical mission and authority preflight (distilled)
 
-Bring the existing Agent_X Harvest implementation into full conformance with the intended 10/10 Harvest design **without creating a second semantic architecture, a second mutation authority, a second activation system, or a parallel Harvest stack**.
+**Historical Agent_X proposal, not executable DT instructions.** Design: `AGENT_X_HARVEST_FINAL_10_OF_10_DESIGN.md`; audited historical main `5ebf471c09a6c18585c2b67f1b16ecf2ceaa06f0`. Current DT parity and Ground unknown.
 
-The finished production path must be:
+Harvest evidence → normalization → current capability/owner reconstruction → value/fit/feasibility → REJECT / NEEDS_EVIDENCE / EXPERIMENT_ONLY / REPLACE / EXTEND / COMPLEMENT / NEW_COMPONENT. Only production-approved work enters the existing canonical semantic-first transaction → exact-effect authorization → implementation → R0–R6 → reconciliation/promotion. Gate B decides eligibility, never mutation authority. No duplicate semantic, mutation, activation or Harvest stack.
 
-```text
-inventory/source evidence
-        ↓
-Harvest discovery + normalization
-        ↓
-current Agent_X capability / ownership reconstruction
-        ↓
-Harvest value + fit + feasibility decision
-        ↓
-REJECT / NEEDS_EVIDENCE / EXPERIMENT_ONLY / REPLACE / EXTEND / COMPLEMENT / NEW_COMPONENT
-        ↓
-for production-approved work only:
-canonical Agent_X semantic-first transaction
-        ↓
-governed semantic target / exact effect scope
-        ↓
-implementation
-        ↓
-Harvest R0–R6 + production-path evidence
-        ↓
-canonical semantic-first verification/reconciliation/promotion
-        ↓
-Harvest FINALIZED
-```
-
-Harvest decides:
-
-- whether the candidate deserves to exist;
-- whether it is duplicate, replacement, extension, complement, experiment-only, or truly new;
-- which existing Agent_X capability/responsibility it belongs to;
-- what value/evidence is required;
-- what must be superseded.
-
-The already-completed canonical semantic-first stack decides:
-
-- the authoritative semantic target;
-- the exact permitted write/effect scope;
-- whether a mutation may occur;
-- post-implementation verification;
-- semantic ↔ implementation reconciliation;
-- canonical promotion;
-- accepted synchronization state.
-
-**Gate B is not allowed to mint project mutation authority anymore.**
-
----
-
-# 2. Work from the actual current code
-
-Before implementation:
-
-1. fetch/inspect actual current `main`;
-2. independently confirm the current canonical semantic state is healthy;
-3. inspect the real Harvest call graph and UI/API entrypoints;
-4. inspect tests;
-5. inspect state locations;
-6. inspect any changes made after the SHA recorded above;
-7. update the plan if current code has moved.
-
-Do not trust:
-
-- commit messages;
-- AGENTS.md completion claims;
-- comments saying something is authoritative;
-- stored `"SYNCED"` by itself;
-- old design documents over current executable contracts.
-
-Do not use Git HEAD as semantic or implementation revision authority.
-
-Git SHA is historical/repository evidence only.
-
-For freshness/authority use the canonical semantic-first values:
-
-- repository identity;
-- `source_snapshot(repo_root)`;
-- `implementation_revision(...)`;
-- semantic/model revision;
-- accepted synchronization baseline digest;
-- run ID;
-- change ID;
-- overlay digest;
-- exact workspace/worktree binding.
+Before implementation inspect current main, canonical semantic state, real Harvest callers/UI/API, tests, stores and post-baseline changes. Git HEAD, messages, comments, stored SYNCED and historical designs do not prove freshness. Bind repository identity, `source_snapshot(repo_root)`, `implementation_revision(...)`, semantic/model revision, accepted baseline digest, run/change IDs, overlay digest and exact workspace/worktree. Fail closed on stale/unknown authority.
 
 ---
 
