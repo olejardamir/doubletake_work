@@ -1962,113 +1962,17 @@ Do not declare the Harvest system conformant until all are true:
 
 ---
 
-# 58. Recommended implementation order in the current repository
+# 58–59. Historical implementation sequence and scope limits (distilled)
 
-Execute in this order to minimize churn.
+1. **Authority:** correct `harvest_gate_b.py` misuse of `agentx_status`; bind decisions to current semantic owner, revisions and evidence, with regression tests.
+2. **Hard gates:** connect `PreCodingGate`, `CriticalKernel`, experiment contracts and verified semantic fit/value/feasibility to the actual Gate B path; eliminate advisory-only authority.
+3. **Eligibility:** align `harvest_ui.can_implement()`, badges, experiment-only and stale-decision handling with server-side authorization; UI never grants authority.
+4. **Mutation:** route production approval through existing run reservation, `SemanticFirstCheckpoint`, overlay/change identity and exact-effect authorization, not a parallel Harvest engine.
+5. **Evidence:** verify `harvest_wiring.py`, R0–R6 applicability, real consumer paths, supersession and reference scans.
+6. **Durability:** bind existing Harvest persistence/leases/run state to canonical semantic transactions; test restart, concurrency and lineage.
+7. **Closure:** exercise reject, needs-evidence, experiment-only, replace, extend, complement and new-component outcomes; independently verify final canonical reconciliation.
 
-## Phase 1 — authority correction
-
-Repair:
-
-- `harvest_gate_b.py`;
-- Gate B docs/semantic metadata;
-- `agentx_status` misuse;
-- Gate B revision/evidence bindings.
-
-Add tests first.
-
-## Phase 2 — hard-gate consolidation
-
-Wire:
-
-- `PreCodingGate`;
-- `CriticalKernel`;
-- experiment contract;
-- actual semantic owner/value/feasibility;
-
-into the real Gate B path.
-
-Remove duplicate/conflicting advisory-only authority.
-
-## Phase 3 — UI/server eligibility
-
-Repair:
-
-- `harvest_ui.can_implement()`;
-- server-side implementation eligibility;
-- badges;
-- experiment-only flow;
-- stale-decision handling.
-
-Server remains authoritative.
-
-## Phase 4 — semantic-first handoff
-
-Wire the approved Implement action into the normal run-specific:
-
-- run reservation;
-- `SemanticFirstCheckpoint`;
-- overlay/change ID;
-- mutation authorization.
-
-Do not create a Harvest-specific mutation engine.
-
-## Phase 5 — wiring + evaluation
-
-Repair:
-
-- `harvest_wiring.py`;
-- R0–R6 applicability/evidence;
-- real consumer-path verification;
-- supersession/reference scans.
-
-## Phase 6 — restart/concurrency/lineage
-
-Use existing:
-
-- Harvest persistence;
-- leases;
-- run state;
-- semantic transaction state.
-
-Add missing bindings/evidence rather than another state engine.
-
-## Phase 7 — end-to-end closure
-
-Run representative:
-
-- reject;
-- needs evidence;
-- experiment-only;
-- replace;
-- extend;
-- complement;
-- new component;
-
-through real production paths.
-
-Then run canonical semantic-first final reconciliation and independently verify accepted state.
-
----
-
-# 59. Do not perform unrelated work
-
-Do not use this prompt as permission for broad cleanup.
-
-Do not:
-
-- redesign the overall UI style;
-- refactor unrelated subsystems;
-- rebuild semantic-first;
-- add a graph database;
-- add a second MCP architecture;
-- add CI/CD work;
-- rewrite all Harvest modules from scratch;
-- convert every current enum/model to a new schema;
-- rename files for cosmetics;
-- manually rewrite canonical semantic JSON.
-
-Only change what is necessary to make the existing Harvest production path conform.
+**Scope:** avoid unrelated UI redesign, broad subsystem refactors, rebuilding semantic-first, new graph/MCP/CI architectures, cosmetic renames, mass model rewrites and manual canonical JSON edits. These are historical implementation suggestions, not authorization to change current DT.
 
 ---
 
