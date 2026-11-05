@@ -41,3 +41,17 @@
 3. **Knowledge propagation:** Use only Director-authorized source-versioned DT consumer, freeze independent expected decisions, and show source citation → governed admission → changed real consumer output → independent negative/held-out checks → later normal reuse. Distinguish *paper/repository reading*, *public Scout distillation*, *private code commit*, *executed test* and *independently verified Ground*. If no baseline consumer or defect is accessible, report that precise gap; do not invent assimilation.
 
 **Revisit triggers:** verified primary code for the unavailable Deepractice repository; concrete source-pinned current-DT failing fixture; owner B1 disposition; B7 actual consumer receipt; independently reproduced experiment that beats current baseline. Research status **SOURCE_INDEX_CORRECTED / DT_PARITY_UNKNOWN / NO_APPROVED_IMPLEMENTATION / NO_GROUND**. Do not promote to `RESEARCH_OFFLOAD.md` as a new implementation proposal without evidence of distinct DT need and permission. 
+
+## Same-name external DoubleTake identity leads (merged historical link index)
+
+**Provenance:** loss-aware merge from the separate historical public source `DOUBLETAKE_HIGH_VALUE_EXTERNAL_ASSIMILATION_URLS.md` (pre-merge live Git blob `d22a2c28f87d48fb8afbaeb904f4fc55f906dcff`; original pre-distillation Git blob `f5563ed5aa05e2c36d28f90aacf6791ebc3305da`). Both earlier texts remain retrievable from Git history. These links are NOT the private `olejardamir/DT` project, validated integration candidates, verified source ownership or authorization. All product identity, version/license and useful transfer require independent checks; overlapping AgentX/Deepractice leads remain described above.
+
+- **DoubleTake.ai evaluation/trace product:** https://www.doubletake.so/ ; https://developers.doubletake.so/introduction ; https://github.com/DoubleTake-ai/DoubleTake-Trace-Eval — claimed trace/CI evaluators, lineage and license unverified.
+- **anis-marrouchi distributed mesh:** https://github.com/anis-marrouchi/doubletake ; https://doubletake-docs.pages.dev/ — ledger/replay and capability claims unverified.
+- **Industrial self-iteration source/code lead:** https://arxiv.org/abs/2606.26859 ; https://github.com/daiwk/auto-research — association to other same-name products is unverified; the paper itself is treated separately above.
+- **Workflow planner/executor research:** https://arxiv.org/abs/2509.07595 — paper applicability and reproduction unverified.
+- **Deepractice package registry pointer:** https://www.npmjs.com/org/doubletakejs — versions and licensing unverified; the inaccessible Deepractice/DoubleTake GitHub lead is already distinguished above.
+- **DoubleTakeHQ daemon/control:** https://www.doubletakehq.com/ — independent architecture/source parity unverified.
+- **MBZUAI/Oryx benchmark identity:** https://github.com/mbzuai-oryx/DoubleTake ; https://arxiv.org/abs/2505.24876 ; https://huggingface.co/datasets/Tajamul21/DoubleTake — dataset/benchmark relevance unverified.
+
+The original historical source was a name-collision index, not evidence of verified code, license, source-to-private-DT parity, adoption, or deployed Ground.
