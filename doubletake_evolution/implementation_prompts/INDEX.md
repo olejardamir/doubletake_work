@@ -4,7 +4,7 @@ Proposed prompts below are **for a future user-invoked LLM coder**. Workers only
 
 | ID | Status | Prompt | Source retired from scrapyard? | Current DT parity | Notes |
 | --- | --- | --- | --- | --- | --- |
-| DT-IP-0001 | NEEDS_SOURCE_VALIDATION | [Governed unified capability projection](DT-IP-0001-governed-dynamic-capability-projection.md) | NO — source retained pending coverage repair | UNKNOWN | Scout audit: clarify potential B7 consumer-selection/no-loss contribution vs no claim of full B7 resolution; original `91f6575ce6c1aafe8c1e77378e621e191ae4c19d`, prompt `ba28d9e1c1d9f4b7656b8ea49c417f358f7dd2b9`; inventory `root_A-D.md` has exact gap; NOT IMPLEMENTED |
+| DT-IP-0001 | PROMPT_READY_PENDING_INDEPENDENT_REVIEW | [Governed unified capability projection](DT-IP-0001-governed-dynamic-capability-projection.md) | NO — original retained pending Scout audit | UNKNOWN | Source `91f6575ce6c1aafe8c1e77378e621e191ae4c19d`; updated prompt `8bfb38a2a7e7cf8d610c3b5197e7815e00aebc7e`; repaired Scout B7 consumer-selection/no-loss contribution versus full B7 closure gap; NOT_EXECUTED; independent Scout verification pending |
 
 ## Accounting
 A source is counted as transferred only after (1) all distinct clauses covered by a verified prompt or existing library entry, (2) original source SHA checked, (3) SHA-guarded original deletion verified, and (4) matching existing inventory row reconciled. No status here establishes implemented DT behavior. Never execute a prompt automatically.
