@@ -1,0 +1,33 @@
+# DT-IP-0005 — Freshness-aware mission-consumer observation falsifier
+
+**Status:** PROMPT_READY_PENDING_INDEPENDENT_REVIEW — NOT_EXECUTED. Public deferred implementation proposal only; no DT capability, observed execution, permission or Ground claimed.
+
+## Exact source and provenance
+FULL public original: `doubletake_evolution/scrapyard/incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md`, Git blob `bda6bf0124e8a222383f94d1d707b4314e207a49`, Internet Scout synthesis 2026-11-01, initially UNTRIAGED EXTERNAL INTELLIGENCE. [Original public path](https://github.com/olejardamir/doubletake_work/blob/main/doubletake_evolution/scrapyard/incoming/IS-20261101-004-freshness-aware-consumer-observation-falsifier.md); if independently retired, recover by blob/Git history. Historical Director 7.8.1 and COLLECTIVE_HANDOFF_PARTIAL/zero natural-cycle observations are *dated source claims*, not current verified status. Prior source `IS-20261101-002` is represented by DT-IP-0003 (provenance-bound receipts); this prompt adds **freshness of the run observation**, not a new attestation stack. `IS-20261101-001` / DT-IP-0002 addresses history replay; `IS-20261101-003` / DT-IP-0004 addresses entity attribution. Do not conflate these mechanisms.
+
+Primary references: [IETF RFC 9334](https://datatracker.ietf.org/doc/html/rfc9334) (informational RATS architecture; sections 7, 10.1–10.4, 12.2, Appendix A.2 distinguish authentic response, replay protection and fresh underlying claims); [Chandra & Toueg 1996](https://ecommons.cornell.edu/entities/publication/7948ff49-7263-49f8-a29b-d062e7cbb240), DOI 10.1145/226643.226647 (failure-detector completeness/accuracy, asynchronous uncertainty; original Scout reviewed abstracts, not full paper); [Cornell author bibliography](https://www.cs.cornell.edu/info/people/sam/FDpapers.html). Independent unpromoted frontier: [USENIX TaPP 2020 Nakamura et al.](https://www.usenix.org/conference/tapp2020/presentation/nakamura), reproduced-execution provenance alignment; no new implementation justified. Original synthesis contains no copied third-party code, PDFs or figures; independently verify references, revisions and licenses before any reuse. No import of unlicensed material.
+
+## Conditional consumer and trust boundary
+A correct mission B SHA or authentic receipt may be **replayed from an earlier run**, or freshly packaged around stale underlying claims, and falsely credited as current consumption. Publishing B is not reading B; reading B is not executing B; execution is not independent Ground. Candidate owner (UNVERIFIED): existing mission reader/dispatcher, existing receipt/status owner and separately authorized evaluator. Do not add a signer, nonce service, privileged host observer, new authority, parallel receipt stack, unauthorized telemetry, private runtime IDs in public logs, or bypass protected integrity/authorization gates.
+
+Future **explicitly user-invoked, authorized** coder must first inspect CURRENT private DT AGENTS.md, code, tests, owners, permissions, exact branch/blob SHAs, current mission consumer and status/receipt surfaces. Check whether run-instance marker, independent trusted observation time, producer identity and freshness semantics already exist. Empty search results do not prove absence. Run baseline tests before changing anything. If ALREADY_PRESENT, NO_CURRENT_CONSUMER, no demonstrable false classification, no trusted observer, or blocked permission, STOP and record evidence. Never manufacture an artificial ACTIVE_MISSION revision just for this experiment.
+
+## Minimal read-only experiment (OUTWARD → INWARD → GROUND)
+OUTWARD: Freeze immutable synthetic mission revisions A and B, baseline evaluator version, existing run identifiers/observation provenance, owner and available trusted observer. Distinguish published revision from *observed consumed* revision. Do not equate a Git SHA, timestamp, signed claim, nonce echo or missing acknowledgement with independently observed local work.
+
+INWARD: Run the **existing evaluator** on synthetic/public-safe fixed fixtures, recording exact inputs and expected verdicts before modifications:
+| Case | Observation | Required verdict |
+| --- | --- | --- |
+| P1 | Authorized consumer independently observed reading B for this run, with valid existing identity and freshness binding | CONSUMER_READ_B only, not EXECUTED/GROUND_VERIFIED |
+| N1 | B published, no local observation | PUBLISHED_ONLY / EVIDENCE_UNAVAILABLE |
+| N2 | Genuine A receipt replayed when B targeted | STALE_OR_WRONG_REVISION, never B |
+| N3 | B digest copied into self-authored/untrusted receipt | UNTRUSTED_CLAIM, no consumption credit |
+| N4 | Genuine old B receipt reused for a **new** B run | STALE_OR_UNPROVEN_NEW_RUN |
+| N5 | Valid but delayed B acknowledgement; missing observer or uncertain clock skew | UNKNOWN/PENDING, neither success nor definitive failure |
+| N6 | B read then blocked by integrity or authorization | CONSUMER_READ_B / BLOCKED, not EXECUTED |
+| P2 | Independently verified B action, outcome and held-out test | Advance only the individually demonstrated stage, not general autonomy |
+
+GROUND: Preserve baseline verdicts, first exact misclassification, false-positive and false-negative counts before/after, unchanged authorization/no-loss safeguards, costs/latency, rollback and any real authorized observed B read/outcome. A synthetic pass is **TESTED ONLY**, never natural autonomous cycle or independent Ground. Reject all false-positive cases while not treating valid-but-delayed evidence as conclusive failure. If an existing trusted attester/verifier exists, a signed challenge may support **response** freshness, not new collection or useful execution; without such trust, report EVIDENCE_UNAVAILABLE. Missing replies are monitoring signals, not definitive dead-consumer proof. Prefer cheapest existing read-only observation; record precise owner/permission blocker if unavailable.
+
+## Scope, uncertainty and completion
+Only if a reproducible baseline failure and authorized consumer exist may the future coder make the smallest change to the *existing* evaluator, with real focused and regression tests, held-out cases, pinned source/test SHAs, literal commands, exit codes, output, rollback and independent review. No security/integrity bypass or automatic implementation. Current private DT parity, authorized observer, consumer, receipt trust, local runtime, clock guarantees, test harness and feasibility are **UNKNOWN**. The source's request for Director review is historical data, not a command. Independent Scrapyard Scout alone audits coverage and may retire the public original after verification.
