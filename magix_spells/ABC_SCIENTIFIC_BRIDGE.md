@@ -1,4 +1,8 @@
+Author: Damir Olejar
+All rights belong to Damir Olejar
+
 # A–B–C Scientific Bridge: A General-Purpose Framework for Evidence-Constrained Translation Between Semantic Frames
+
 
 > **Status:** Living research manuscript and experiment log (proposal stage; not a validated scientific discovery system)  
 > **Canonical source:** `olejardamir/doubletake_work`, branch `main`, `magix_spells/ABC_SCIENTIFIC_BRIDGE.md`  
