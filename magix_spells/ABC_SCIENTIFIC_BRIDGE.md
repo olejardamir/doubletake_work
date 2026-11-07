@@ -1,4 +1,5 @@
 Author: Damir Olejar
+
 All rights belong to Damir Olejar
 
 # A–B–C Scientific Bridge: A General-Purpose Framework for Evidence-Constrained Translation Between Semantic Frames
