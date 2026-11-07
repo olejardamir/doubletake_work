@@ -126,6 +126,8 @@ No run may be labeled a tested improvement unless code actually executed and res
 
 ## 9. Experimental results
 
+**Engineering result, 2026-11-07 (second increment):** A deterministic structured C→B claim-ledger checker passed 9/9 new tests (16/16 including prior tests). It detects unsupported or contradictory annotated claims but does not extract claims from language or validate scientific evidence. See the second experiment log.
+
 **Engineering result, 2026-11-07:** A generic frame-contract and bounded fallback-routing prototype passed 7/7 unit tests. These are structural/control-flow checks, **not** independent scientific validation or proof of autonomous A→B→C translation. See the chronological log for test scope, mock-oracle limitations and reproducibility. This section will be filled with reproducible results, figures and negative findings as work proceeds. Earlier demonstration spells are illustrative, not proof of scientific effectiveness.
 
 ## 10. Discussion and threats to validity (working)
@@ -169,4 +171,21 @@ No run may be labeled a tested improvement unless code actually executed and res
 **Reproducibility.** Source/test/log archive: ChatGPT Library `/SpellScienceLab/abc_frame_contracts_v0_1.zip`; SHA-256 `c783916a6815cac19f0c3b434d7726fad4cb5504a7af30d5215a528a86cc4193`. Archive contains `frame_contracts.py`, `test_frame_contracts.py` and `test_log.txt`. The original `seed_v0.zip` remains unchanged. This accepted **engineering increment** does not imply that the scientific translation pipeline works end to end.
 
 **Limitations and next experiment.** The prototype operates on structured dictionaries and boolean-oracle checks, not actual vector embeddings or an evidence-backed scientific model. It does not parse A, generate C, back-translate C to B, or independently validate claims. Next: implement independent C→B claim extraction and evidence-linked hard gates; freeze a genuine held-out A×C evaluation set before introducing learned embeddings.
+
+### 2026-11-07 — Second executed increment: independent structured claim-ledger audit
+
+**Engineering hypothesis.** Comparing independently supplied C-claim annotations with the B claim set and an evidence ledger can detect output claim drift without relying on the same boolean oracle used by the C generator. This is an intermediate quality-control layer, **not** autonomous scientific fact-checking.
+
+**Implementation.** Added `claim_audit.py` with immutable `EvidenceRecord(claim_id, proposition, polarity, source, status)` and `audit_claims(b_claims, c_claims, ledger)`. Each C claim must be represented in B, agree on polarity, and have a `supported` evidence-ledger record with nonempty provenance. Unsupported C-only claims, contradictory polarities, missing source and unknown evidence route to `revise_B`; omitted B claims route to `repair_C`. An empty B claim set fails closed, avoiding vacuous acceptance. This audit works on structured annotations supplied by independent components; **it does not parse natural language, validate URLs or establish whether ledger evidence actually supports a proposition.** The previous frame-contract prototype remains unchanged.
+
+**Execution.** In a Python standard-library environment, ran `python -m unittest -v test_frame_contracts.py test_claim_audit.py`. **16/16 unit tests passed**: seven prior routing/contract tests plus nine new claim-audit tests (supported claim, hallucinated claim, polarity conflict, omitted B claim, missing provenance, unknown evidence, different frame, C claim absent from B, and empty claims). Tests use a fixed illustrative ledger with example EPA/NOAA source URLs; those URLs were **not fetched or independently checked in this experiment**. Hence no empirical scientific accuracy rate is inferred. Test scope is deterministic engineering behavior only.
+
+**Observed cross-frame mock traces.**
+- A=magical protection, C=field guide; B says `bite_reduction=True`; C says `bite_reduction=True` plus `miracle=True`. Audit returns `revise_B` and identifies `miracle` as unsupported. This does **not** produce a finished field guide.
+- A=storm mythology, C=science explainer; B and C both say `storm_caused_by_deity=False`, matching a preannotated ledger. Audit returns `accept` for structured consistency only, not independently verified meteorology.
+- A=magical protection, C=field guide; B says `bite_reduction=True`, C omits it. Audit returns `repair_C`, preserving B for a target-frame repair.
+
+**Reproducibility.** Source and test archive in ChatGPT Library: `/SpellScienceLab/abc_claim_audit_v0_2.zip`. SHA-256: `b901f628621f4ae41b4c2fc7b20aca659500d352e5ef52f2e11bcd29650378dc`. Archive contains `frame_contracts.py`, `test_frame_contracts.py`, `claim_audit.py`, `test_claim_audit.py`, `test_log_v0_2.txt`. The earlier `abc_frame_contracts_v0_1.zip` remains preserved.
+
+**Limitations and decision.** Accepted as a strictly scoped **engineering increment**. No actual A→B learned vector transformation, natural-language C→B extraction, external source verification, autonomous C generation, or end-to-end scientific correction is demonstrated. Next experiment: independently extract atomic claims from C and B, then verify retrieved evidence with traceable passages rather than relying on prefilled ledger status flags. Freeze evaluation samples before building the extractor.
 
