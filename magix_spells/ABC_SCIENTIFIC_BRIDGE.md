@@ -126,6 +126,8 @@ No run may be labeled a tested improvement unless code actually executed and res
 
 ## 9. Experimental results
 
+**Engineering result, 2026-11-07 (fourth increment):** A conservative, non-annotated surface-pattern claim extractor passed 6/6 new unit tests. On four separately inspected sentences it extracted 2 and rejected 2; these examples are not a held-out scientific benchmark. It detects simple grammatical assertions, not scientific truth or complete natural-language claims. Earlier suites were not rerun.
+
 **Engineering result, 2026-11-07 (third increment):** Conservative explicit-annotation text parser passed 8/8 new tests. It abstains on missing or malformed claim annotations and returns matching claims for further evidence verification, but it cannot extract arbitrary natural-language scientific claims. Prior 16 tests were not rerun in this increment.
 
 **Engineering result, 2026-11-07 (second increment):** A deterministic structured C→B claim-ledger checker passed 9/9 new tests (16/16 including prior tests). It detects unsupported or contradictory annotated claims but does not extract claims from language or validate scientific evidence. See the second experiment log.
@@ -202,4 +204,18 @@ No run may be labeled a tested improvement unless code actually executed and res
 **Observed cross-frame trace.** A=magical insect protection, C=field-guide text containing `CLAIM[bite_reduction]: TRUE | Repellents reduce bites`; when supplied B has the same annotation, output is `needs_evidence_verification` (NOT accepted). Adding `CLAIM[miracle]: TRUE | Guaranteed` without B support routes to `revise_B`. A=storm mythology, C=science explanation with `CLAIM[storm]: FALSE | Deity caused storm` likewise requires independent evidence verification before acceptance.
 
 **Negative result / validity limitation.** This parser handles only intentionally machine-annotated lines, not ordinary language or latent vectors. Unannotated scientific assertions elsewhere in C can be missed, and exact proposition comparison can flag harmless paraphrases. The benchmark is a developer-authored structural test, not frozen unseen evaluation or independent scientific truth assessment. The safe outcome for a matching annotation is pending verification, never an automatic scientific acceptance. **Next experiment:** freeze independently authored natural-language C samples and assess claim-extraction recall and false negatives, then retrieve and check authoritative evidence passages for each atomic claim. No claim of autonomous A→B→C transformation is made.
+
+### 2026-11-07 — Fourth executed increment: ordinary-text claim extraction feasibility probe
+
+**Engineering hypothesis.** A fail-closed ordinary-text extractor can identify a narrow class of explicit causal and outcome assertions without requiring `CLAIM[...]` annotations, while flagging unrecognized syntax for review instead of silently accepting it.
+
+**Implementation.** Standard-library `abc_claim_probe_v04.py` uses a deliberately constrained regular-expression grammar to identify short English subject–predicate–object assertions, including simple negative predicates. It returns `Claim(subject, predicate, object, polarity, sentence)` objects and a separate list of rejected sentences. It is a stand-alone experimental probe, **not integrated into the accepted C→B audit**. Rejected text must not pass the scientific hard gate; even extracted claims require external evidence checks. In particular, matching a surface pattern is not semantic parsing.
+
+**Execution.** Ran `cd /mnt/data && python -m unittest -v test_abc_claim_probe_v04.py`: **6/6 new tests passed**. Tests cover simple reduction, guarantee, negation, unparsed metaphor, mixed parsed/unparsed input, and multiple sentences. A separate four-sentence manual inspection gave: `Repellents reduce mosquito bites.` → 1 extracted; `Candles guarantee love.` → 1 extracted; `When rain falls, the sky weeps.` → rejected; `The storm god sent thunder, which shook the village.` → rejected. **This is not an accuracy estimate:** the examples were developer-authored and inspected in the same run, with no independent annotation or frozen hold-out set.
+
+**Failure modes and significance.** Negation handling is rudimentary; syntactic variants, embedded clauses, quantifiers, modality, coreference, hedging, temporal and conditional scope, passive voice and multiword predicates are not reliably parsed. A detected claim may still be scientifically false (e.g. `Candles guarantee love.`). The extraction probe deliberately fails closed on unknown syntax but is not a validated scientific checker. Previous 7+9+8 tests were **not rerun** and no combined suite result is claimed.
+
+**Reproducibility.** Archive: ChatGPT Library `/SpellScienceLab/abc_claim_probe_v0_4.zip`, SHA-256 `0896e3dfda4627c5f82dd99fde0ceb88c11e534fdde07a460893f49a73bc75ca`. Includes `abc_claim_probe_v04.py`, `test_abc_claim_probe_v04.py`, `abc_probe_test_log_v04.txt`. Standard library only.
+
+**Decision and next experiment.** Accept only as a separately versioned engineering feasibility probe, **not** as an end-to-end or scientifically validated pipeline improvement. Freeze independently annotated natural-language sentences with cross-domain linguistic variation and measure recall/precision and abstention before integrating; then add evidence retrieval and passage-level entailment checks.
 
