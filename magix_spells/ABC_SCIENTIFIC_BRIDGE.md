@@ -126,7 +126,7 @@ No run may be labeled a tested improvement unless code actually executed and res
 
 ## 9. Experimental results
 
-**No accepted, independently validated experiments recorded yet.** This section will be filled with reproducible results, figures and negative findings as work proceeds. Earlier demonstration spells are illustrative, not proof of scientific effectiveness.
+**Engineering result, 2026-11-07:** A generic frame-contract and bounded fallback-routing prototype passed 7/7 unit tests. These are structural/control-flow checks, **not** independent scientific validation or proof of autonomous A→B→C translation. See the chronological log for test scope, mock-oracle limitations and reproducibility. This section will be filled with reproducible results, figures and negative findings as work proceeds. Earlier demonstration spells are illustrative, not proof of scientific effectiveness.
 
 ## 10. Discussion and threats to validity (working)
 
@@ -152,3 +152,21 @@ No run may be labeled a tested improvement unless code actually executed and res
 - Initial baseline remains unverified for autonomous generalization; no numerical or scientific performance claims made.
 - **Development target:** implement A/C frame contracts and frozen cross-frame test cases first, then evidence-grounded B verification and back-translation quality control.
 - **Manuscript policy:** Future hourly cycles must fetch and append/update **this exact Markdown file on `main`**, using GitHub's current blob SHA and sequential commits. Preserve this document as the single cumulative research paper and log; do not fragment into per-run `.md` files.
+
+### 2026-11-07 — First executed implementation: configurable frame contracts and bounded fallback routing
+
+**Development hypothesis (engineering only).** Frame-specific output requirements and scientific validation can be separated so that C-only formatting failures do not unnecessarily trigger a B revision, while scientifically unverified outputs cannot pass merely by satisfying C structure.
+
+**Implementation.** A small standard-library Python prototype `frame_contracts.py` introduces immutable `FrameContract(name, required_fields)` and `audit(candidate, contract, science_checker)`. The scientific checker is an **injected external function**, not a scientific model. It returns whether a candidate was independently verified. The audit routes a missing C field to `repair_C`, a negative science-check result to `revise_B`, and only accepts a candidate when both gates pass. `bounded_fallback` invokes separate supplied C repair and B revision functions, with initial limits of four C repairs and two B revisions, then abstains. Contracts are provided for spells, field guides and science explainers; source-frame A is not used to select a target-frame contract. The initial `science_checker` in tests is a controlled boolean oracle, not evidence retrieval.
+
+**Execution and result.** In a local Python standard-library environment, executed `python -m unittest -v test_frame_contracts.py`: **7/7 unit tests passed**, with no test failures. Tests exercised (i) three A/C pair configurations including spell→field guide and myth→science explainer, (ii) science failure overriding complete C format, (iii) missing C field routing, (iv) successful C-only repair, (v) successful B revision, (vi) bounded scientific abstention, and (vii) bounded structural abstention. These are **routing/contract tests only**, not seven valid scientific translations, and they do not measure accuracy of embeddings, actual scientific correction, or quality of generated prose.
+
+**Observed fallback traces (deterministic mocked tests):**
+- Spell A → field-guide C with a missing `steps` field and externally marked verified B: `repair_C → accept`. Repair fills the missing field with a generic label-directed placeholder; it is **not a complete evidence-reviewed field guide**.
+- Myth A → science-explainer C with an initially false external verification flag: `revise_B → accept` after a mock revision flips the flag. **No real scientific correction occurred.**
+- Unverifiable claim: `revise_B → revise_B → revise_B → abstain` (two actual revisions followed by final rejected check).
+
+**Reproducibility.** Source/test/log archive: ChatGPT Library `/SpellScienceLab/abc_frame_contracts_v0_1.zip`; SHA-256 `c783916a6815cac19f0c3b434d7726fad4cb5504a7af30d5215a528a86cc4193`. Archive contains `frame_contracts.py`, `test_frame_contracts.py` and `test_log.txt`. The original `seed_v0.zip` remains unchanged. This accepted **engineering increment** does not imply that the scientific translation pipeline works end to end.
+
+**Limitations and next experiment.** The prototype operates on structured dictionaries and boolean-oracle checks, not actual vector embeddings or an evidence-backed scientific model. It does not parse A, generate C, back-translate C to B, or independently validate claims. Next: implement independent C→B claim extraction and evidence-linked hard gates; freeze a genuine held-out A×C evaluation set before introducing learned embeddings.
+
