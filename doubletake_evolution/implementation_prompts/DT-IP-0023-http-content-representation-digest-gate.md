@@ -1,0 +1,35 @@
+# DT-IP-0023 — HTTP content/representation digest target and trailer consumption gate
+
+**State:** PROMPT_READY_PENDING_INDEPENDENT_REVIEW / NOT_EXECUTED / PROMPT_CREATED_NOT_IMPLEMENTED. This is a conditional future user-invoked LLM-coder instruction, NOT a verified DT defect, permission to code, or test result. **Private DT parity: UNKNOWN.**
+
+## Exact public lineage and rights
+- FULL live original: `doubletake_evolution/scrapyard/incoming/IS-20261108-031-rfc9530-content-vs-representation-digest.md`, blob `1d4de60a7b74a31fb54227decbe9dba47d9738f7` on public `olejardamir/doubletake_work/main` (2026-11-08); [original](https://github.com/olejardamir/doubletake_work/blob/main/doubletake_evolution/scrapyard/incoming/IS-20261108-031-rfc9530-content-vs-representation-digest.md). Preserve exact blob via Git history if Scout retires the file. No earlier source blob or change history independently established for this new incoming candidate; do not invent historical revisions.
+- Primary standard: Polli and Pardue, [RFC 9530, Digest Fields](https://www.rfc-editor.org/rfc/rfc9530), IETF Proposed Standard (2024), obsoletes RFC 3230; source reports review of §§1.2, 2, 3, 3.1, 4, 5, 6.1–6.4. Standards reference is not DT-specific evidence. [IETF Trust licensing](https://trustee.ietf.org/license-info); extracted code components subject to Revised BSD terms. No RFC code, vectors or unlicensed text copied. Future coder must verify current standard and reuse rights.
+
+## Conditional objective and interfaces
+**Hypothesis only:** If an owner-authorized *existing* HTTP evidence-ingest or capability consumer in current DT relies on RFC 9530 digest fields, distinguish integrity of **actual HTTP message content** (`Content-Digest`) from integrity of the **selected representation data** (`Repr-Digest`), which may cover an entire resource when the delivered response contains only a range. Never substitute the hash of a partial range body for a full representation digest. Determine the correct target bytes and any encoding/transfer transformations from the current HTTP and application contracts before comparing. Digest equality alone proves neither origin authentication, permission, freshness, nor integrity of unsigned HTTP metadata. A digest algorithm preference is a hint, not an authorization or security policy. Weak/deprecated algorithms must not silently satisfy adversarial-integrity requirements.
+
+If application policy requires an integrity check, **do not release bytes to a downstream consumer before all required digest fields have arrived and validated**, including digests delivered as HTTP trailers after the content. If streaming is unavoidable, require an explicitly approved buffering/quarantine/rollback policy; do not claim already consumed bytes were verified. Unknown/missing/unsupported required digests and incomplete trailers must produce policy-defined REJECT or INDETERMINATE, never a false VERIFIED. No new service, network authority, privileged host change or writer is authorized by this prompt.
+
+## Preflight (future explicitly authorized LLM coder ONLY)
+Inspect CURRENT private DT source, tests, permissions, existing HTTP consumers, body/representation byte semantics, allowed algorithms, trailers, policy owner, provenance/authentication and downstream release boundaries. Determine whether there is a real owner-approved consumer and disposable test seam. Exit `NO_APPLICABILITY` / `NO_CURRENT_CONSUMER` if none; `ALREADY_PRESENT` if existing implementation/tests cover all cases; `NO_AUTHORIZED_FIXTURE` if real tests are not permitted; `POLICY_UNKNOWN` if required integrity/algorithm/streaming policy cannot be authenticated. Do not touch private code or open tickets absent separate explicit user invocation and authorization.
+
+## Frozen disposable test matrix (independent oracle, no third-party vectors copied)
+Freeze exact HTTP status, range metadata, representation selection, raw content and full representation bytes, algorithm, digest/trailer placement, expected outcome, policy revision, runtime, evaluator and cost before running.
+1. **P1** complete message content with correct `Content-Digest` under approved algorithm → VERIFIED for content integrity only.
+2. **P2** supported partial/range response whose `Repr-Digest` correctly covers selected full representation → VERIFIED for representation integrity only with an independently known full-representation oracle; otherwise INDETERMINATE.
+3. **P3** required digest in trailer arrives valid before consumer release → permitted release only after verification.
+4. **N1** range-body digest substituted for full-representation digest → REJECT, not VERIFIED.
+5. **N2** mutate body after digest generation → REJECT.
+6. **N3** corrupt, omit or truncate a policy-required trailer → REJECT/INDETERMINATE, no release.
+7. **N4** send bytes to dependent consumer before required trailer arrives → fail the release gate even if later digest matches.
+8. **N5** weak/deprecated algorithm or unsupported algorithm under adversarial policy → REJECT/INDETERMINATE, not policy override.
+9. **N6** correct digest with forged sender, stale evidence, changed unsigned metadata or missing authorization → never mark provenance, freshness or authorization verified.
+10. **N7** mismatch content versus representation target under differing range/encoding semantics → REJECT/INDETERMINATE; no accidental cross-field acceptance.
+
+Compare current baseline with proposed minimal change under matched environments and held-out variants. Record raw exit/decision, digest target and algorithm, trailer timing, first downstream-consumption time, authorization/provenance verdict, false accepts/rejects, resource overhead and independent reviewer. Zero false policy-required releases before validation; no regressions to valid permitted flows. Real authorized tests and exact private commit/test receipts are required **only if separately invoked**. Synthetic tests alone are METHOD_ONLY, not private DT Ground or evidence of real mission consumption.
+
+## Distinctness and exclusions
+Distinct from DT-IP-0008 (RFC 9162 append-only Merkle proof), DT-IP-0009 (RFC 8785 JSON canonical historical bytes), DT-IP-0012 (HTTP conditional write/ack semantics), DT-IP-0013 (tool-argument provenance) and DT-IP-0022 (paired clean execution evidence). None of those covers RFC 9530's two different HTTP digest targets plus trailer-before-release condition. Source's repository search absence is not proof of private DT deficiency. No B1 protected-history modification, B4 durability claim, B7 mission-use proof, automatic research promotion, private code publication or new authority.
+
+**Scout handoff:** independently compare FULL source blob `1d4de60a7b74a31fb54227decbe9dba47d9738f7` and this exact prompt blob for every technical clause, safety negative and source/license statement. Original stays until Scout verifies coverage and separately handles authorized SHA-guarded retirement.
