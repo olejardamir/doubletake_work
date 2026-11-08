@@ -124,6 +124,8 @@ Every run should document:
 
 No run may be labeled a tested improvement unless code actually executed and results were checked. When a worker cannot write to GitHub, its report must explicitly say no canonical manuscript update occurred; never present a local or Library-only draft as a GitHub commit.
 
+**v0.20 population-scope preflight (2026-11-08).** The accepted v0.19 temporal-numeric guard delegates to the existing population parser only for direction-reversal alerts. Consequently, unequal percentages across explicitly different populations can still be labeled `review`. This increment wraps v0.19 with a conservative preflight: only when v0.19 returns `review`, compare explicitly extracted `among ...` population spans; if only one is present, abstain (`population_scope_unknown`); if both differ, abstain (`population_mismatch`); otherwise retain the original result. This is a lexical scope safeguard, not a scientific entailment model. The five diagnostic tests were authored before the new module was written, but are developer-designed and not independent held-outs.
+
 ## 9. Experimental results
 
 **Latest engineering result (v0.8, 2026-11-07):** Evidence-provenance preflight added; 40/40 combined unit tests passed, unchanged known benchmark 40/40 and challenge 11/15. **Zero scientifically verified claims** because source authentication and passage entailment are not implemented. See the eighth experiment log entry for scope and limitations.
@@ -137,6 +139,8 @@ No run may be labeled a tested improvement unless code actually executed and res
 
 **Engineering result, 2026-11-07:** A generic frame-contract and bounded fallback-routing prototype passed 7/7 unit tests. These are structural/control-flow checks, **not** independent scientific validation or proof of autonomous A→B→C translation. See the chronological log for test scope, mock-oracle limitations and reproducibility. This section will be filled with reproducible results, figures and negative findings as work proceeds. Earlier demonstration spells are illustrative, not proof of scientific effectiveness.
 
+**v0.20 (2026-11-08):** `python -m unittest discover -p 'test*.py' -q` executed **49/49 tests passed**, versus 44/44 in the archived v0.19 run (five added tests). Before change, `Mosquito bites decreased 12% among children in 2022` versus `Mosquito bites decreased 20% among adults in 2022` yielded `review/numeric_disagreement_scoped`; after change it yields `abstain/population_mismatch`. Same-population numeric disagreement remains `review`; one-sided population mention abstains; same-population direction reversal and different-year cases retain previous behavior. No independent scientific claims verified (0→0), no genuine A→B→C translations or B↔C fallback executed. One inherited test emits an unclosed-file ResourceWarning; test pass is not evidence of production robustness.
+
 ## 10. Discussion and threats to validity (working)
 
 - Mapping source-frame semantics to a scientific ontology can lose context and causal roles.
@@ -147,6 +151,8 @@ No run may be labeled a tested improvement unless code actually executed and res
 - Exact mathematical inversion may be impossible, particularly when A≠C or unsupported claims are intentionally removed.
 - A harmless ritual aesthetic must not be confused with an efficacious procedure.
 - Some target frames and goals are incompatible with safety or scientific feasibility; honest refusal/abstention is a necessary system output.
+
+**v0.20 interpretation:** The change reduces one demonstrable scope-related false alarm on developer-authored examples. It cannot establish that a population parser recognizes arbitrary demographic expressions, that an abstention is calibrated, or that evidence supports either claim. Scope parsing remains brittle (e.g., syntactic variants, overlapping populations). Highest-priority gap: an independently annotated, immutable claim–evidence benchmark with population, measurement, time, causal scope and abstention labels, evaluated blind to implementation.
 
 ## 11. References and evidence ledger
 
@@ -445,3 +451,12 @@ No run may be labeled a tested improvement unless code actually executed and res
 **Interpretation, limitations, and next measurable gap.** Separating numeric measurements from year metadata prevents one specific missed-alarm pathway, but the guard still relies on brittle lexical patterns and developer-written tests. Priority remains independently annotated claim–evidence data with explicit typed outcomes, populations, time windows, and causal relations; measure false alarms, missed contradictions, abstention calibration and fallback benefit against a frozen baseline. No evidence-based scientific claim support or cross-frame generalization was established.
 
 **Durable archive.** `/SpellScienceLab/abc_temporal_numeric_v0_19.zip`, SHA-256 `1e075696e9371ed1e512f194d21807c6980f7acd4369b2348fcf5665a39ac110`, uploaded successfully. Contains inherited source/tests, the new module and tests, run log, and machine-readable status. This manuscript remains the sole publication Markdown in `magix_spells/`.
+
+### Increment v0.20 — population preflight for numeric disagreements (2026-11-08)
+
+**Source and baseline:** Accepted `/SpellScienceLab/abc_temporal_numeric_v0_19.zip` (44 passing tests). Source manuscript was fetched from `main` with blob SHA `0c2253f13b742bc182100087fd0414c283d33c07` at the beginning of this run. Test definitions for five cases were written before implementation. The initial `python -m unittest discover -p 'test*.py' -q` run failed with `ModuleNotFoundError: No module named 'abc_population_preflight_v20'` (expected before implementation). The module `abc_population_preflight_v20.py` then added a conservative population preflight for **all** numeric `review` outcomes, rather than only direction reversals. Final command `python -m unittest discover -p 'test*.py' -q`: **49 tests, OK**, including five new cases. A ResourceWarning from an inherited test remains. No independent scientific validation, learned embeddings, complete A→B→C example, or B↔C repair occurred.
+
+**Example (two frame pairs, illustrations only):** A=protective charm, C=field guide: a 12% child-specific mosquito-bite observation cannot directly contradict a 20% adult-specific observation; the preflight abstains. A=storm myth, C=scientific explanation: the same population distinction would apply to numerical claims about storm-related outcomes, but the experiment did **not** execute this transformation or verify meteorological evidence. No scientifically defensible mechanism was inferred from either frame. **Fallback:** C→B was not invoked; the only implemented action was an abstention preflight on already provided text statements.
+
+**Artifact:** `/SpellScienceLab/abc_population_preflight_v0_20.zip` uploaded successfully; SHA-256 `39a4cc7f509c39822f364f442abcf6f582483faf42e698de3aa587daa536d189`. Includes inherited modules/tests, new source and tests, command log, and `status_v20.json`. **Next:** independently annotated claim–passage evidence benchmark; quantify false positives, missed contradictions and abstention, not merely developer-authored pass rates.
+
