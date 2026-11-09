@@ -25,3 +25,41 @@ Prevent a governed spec-compliance run from losing its accepted unsatisfied obli
 - Exercise semantic gate → actual adapter/prompt → provider effect → finalizer → compliance reassessment → reconciliation, including background/resume. Separate synthetic fake-provider results from authorized real integration tests. Record exact run/source/target/packet hashes, actual effects, independent readback, test commands/results, reconciliation evidence and commit if any. No natural autonomous cycle or B7 authenticated consumption is proven by this public prompt.
 
 **Dependencies/consumers (hypotheses):** existing spec evaluator, semantic target authority, sealed scope/tool-effect validator, provider adapters, run ledger, finalizer, UI status and independent verifier. B7 authenticated mission-consumer receipt is adjacent but distinct; B1 protected history cannot be bypassed. Stop on absent owner, incompatible current architecture or missing permission. Independent Scrapyard Scout alone audits coverage and decides original retirement.
+
+
+## Historical coverage-gap repair — conditional 31-condition acceptance matrix (2026-11-09)
+Historical full source blob `9f18646ecf0560240607e9323cc0ba37e79a9f5e` was reread for this repair; the original current reduced source remains `0ea9c957235915a9813ae7693c12fe1c308ad931`. Historical acceptance criteria are **future tests only**, contingent on current DT consumers, authorization, fixtures and applicability; they do not establish present defects. The historical checklist is preserved as 31 individually checkable conditions:
+
+1. Semantic gate exposes incomplete `spec_compliance`, `remaining_requirement_ids`, packet path and digest in gate output.
+2. Exactly one canonical `RuntimeImplementationPacket` builder governs the handoff.
+3. Packet binds run, change, target and source digest.
+4. Packet carries actionable remaining IDs and bounded statements.
+5. Packet identifies exact target components.
+6. Packet carries sealed exact write scope.
+7. Packet carries verification obligations.
+8. Packet is immutable, canonical-JSON, run-locally persisted and digest-bound.
+9. OpenCode receives actual obligations, not just the original request or a possibly unread packet path.
+10. Codex receives the same semantic execution contract where enabled.
+11. LLM7 coding runtime receives the same contract where enabled; semantic reasoning and coding calls remain separate.
+12. Original user-visible request remains unchanged; durable run records separately preserve `original_request`, original prompt identity/digest and effective runtime prompt identity/digest.
+13. Provider self-assessment/prose cannot mint task completion.
+14. Zero effects with mandatory requirements remaining rejects successful finalization: `finalized=false`, `reason=SPEC_REQUIREMENTS_REMAIN_UNIMPLEMENTED`, `remaining_requirement_ids` included, and appropriate non-success overlay transition.
+15. Legitimate STANDARD no-op and independently verified already-complete SPEC_COMPLIANCE no-op retain allowed success paths without cosmetic changes.
+16. Fresh post-effect compliance assessment is performed against the same bound specification.
+17. Updated requirement statuses and evidence are durably persisted after each run/slice.
+18. Previously satisfied requirements cannot silently regress.
+19. Provider-turn/run status and overall task status remain distinct.
+20. Verified partial progress is never labeled task complete; UI shows remaining count.
+21. Finalizer cross-checks run record, persisted packet and accepted-target digest; mismatch fails closed.
+22. Network/VPN/browser-disconnect, usage-limit/VPN retry and timeout-confirmation/retry paths preserve the exact packet, obligations, target/change IDs and scope.
+23. Recovery cannot silently revert to original-request-only prompt.
+24. Only when current Harvest source and authorized fixtures support the historical case, inspect Gate B mutation authority, `agentx_status`, disposition-only `can_implement`, and `(ui_api_wired or True)` as *hypotheses* and verify applicable obligations reach runtime.
+25. Under the same conditional fixture, outstanding Harvest requirements + zero effects cannot report task completion.
+26. Deterministic one-requirement-fix control yields verified partial progress and persists remaining count.
+27. Fully satisfied independent compliance yields task complete, not merely provider success.
+28. Runtime packet never becomes independent mutation authority; deterministic sealed run/change/target/write-set/tool-effect checks win on mismatch.
+29. After an authorized real change, reconcile semantic model and remint the current canonical baseline, preserving test/invariant/effect evidence.
+30. Independently recomputed first synchronization assessment is `SYNCED` when applicable.
+31. Immediate unchanged second independent assessment remains `SYNCED`.
+
+**Iterative bounded-slice ledger:** for a large specification, record each coherent authorized slice, selected/deferred IDs, verification outcome and remaining mandatory count. Continue automatically **only if current authorized product behavior already supports such continuation**; otherwise report `remaining requirements: N` and task partial. Never manufacture an autonomous loop. Exercise real enabled adapters and retry/finalizer tests only after future user authorization; deterministic fixtures do not establish live runtime success. Historical local paths and source assertions are not authority. Current DT parity and historical external licensing remain UNKNOWN.
