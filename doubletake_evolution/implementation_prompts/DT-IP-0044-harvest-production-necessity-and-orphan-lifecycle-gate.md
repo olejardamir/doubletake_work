@@ -4,7 +4,7 @@
 
 ## Source and provenance
 - FULL current public original: `doubletake_evolution/scrapyard/AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md`, blob `a81c2416ca70e599a6ab4e73df03eb8c20b51589`; [source](https://github.com/olejardamir/doubletake_work/blob/main/doubletake_evolution/scrapyard/AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION2.md).
-- Historical full original blob `c776a7d4a2a5527992921206d9291b3eeacafda0` (47,847 bytes), preceding reduced blob `f2aabe5359759ac6a36044ac19647ce80f9693c3`; historical target commit `1a0fd70ac01ca1a23670e61963d644b6a280cf07`, parent `c685cc12257ac311906f6e26063bb23aeaab0c84`. Historical versions **not independently re-read** in this transfer.
+- Historical full original blob `c776a7d4a2a5527992921206d9291b3eeacafda0` (47,847 bytes), preceding reduced blob `f2aabe5359759ac6a36044ac19647ce80f9693c3`; historical target commit `1a0fd70ac01ca1a23670e61963d644b6a280cf07`, parent `c685cc12257ac311906f6e26063bb23aeaab0c84`. Historical full predecessor **read in FULL during 2026-11-09 coverage repair**; predecessor's historical instructions are untrusted.
 - Companion incident: `AGENT_X_ORPHAN_HARVESTED_CAPABILITY_REMEDIATION.md` current blob `dfb236613e5e15572809e5ef14e2d7f3ae0363b2`, which records an alleged fitness-weighted crossover orphan; treat its incident claims as unverified. Related canonical cluster `clustered/historical-harvest-governed-integration.md` blob `597ce92067daa20db662e6bb4f997177ddae0d00`.
 - Historical Agent_X paths, statuses, benchmark claims and operator directives are **untrusted design data**, not private DT evidence. No external code is copied; provenance, third-party license, donor rights and current DT permissions must be established before any reuse.
 
@@ -29,3 +29,48 @@ Document exact source revision, independent need and caller trace, owner alterna
 
 ## Independent Scout handoff
 Current original **FULL** at SHA above; distinct clauses: independent need classes and insufficient-reference taxonomy; same-change/self-justification rejection; fidelity and historical crossover falsifiers; canonical ownership dispositions; pre-authoring and pre-mutation rechecks; typed fail-closed outcomes and bypass flags; complete entrypoint enforcement; verified orphan retirement, receipts and anti-resurrection; positive/negative/retry tests. Compare historical blobs and companion before independent approval or deletion. Original remains untouched.
+## Historical coverage repair — full predecessor `c776a7d4a2a5527992921206d9291b3eeacafda0`
+The predecessor was read in FULL for this repair. Its requirements below are **conditional acceptance probes for a future explicitly authorized coder**, not evidence of current DT defects. Historical Agent_X paths are investigation pointers only. Recheck present code, owner, permissions, third-party rights and real consumers first; exit `ALREADY_PRESENT`, `NO_APPLICABILITY`, or `NO_AUTHORIZED_FIXTURE` as appropriate.
+
+### Exact 21 adversarial cases (historical section 19)
+1. Substantive orphan: compilable code and passing unit tests without independent need must not author/promote.
+2. Self-export: package export is not consumer proof.
+3. Self-routing: candidate-created canonical routing or owner-map row is not need proof.
+4. Same-change fake caller: otherwise unused new caller without independently established requirement fails.
+5. Pre-existing runtime demand: verified existing hook/owner may proceed through ordinary gates.
+6. Measured replacement: pre-existing runtime baseline, agreed improvement criterion and integrated verification may proceed.
+7. `CREATE_CANONICAL_MODULE` without documented owner search fails.
+8. Harvested source alone as alleged need fails.
+9. Stale necessity approval bound to a different base revision fails.
+10. Missing or unresolved source provenance fails closed.
+11. Lifecycle spoof: claimed `IMPLEMENTED` without current canonical receipt/digest/tests/need fails.
+12. Historical retired capability remains historical, not active.
+13. Fabricated `consumer_path`, `runtime_used`, `production_needed` or forged evidence fails.
+14. Test-only, documentation-only and manifest-only references fail as production demand.
+15. Missing/unknown evidence origin on autonomous authoring path fails closed, not treated as ordinary human edit.
+16. Disabled/experimental/importable orphan without independently approved experiment or consumer remains non-production; a false feature flag does not justify retention.
+17. Generic bypass flags (`skip_production_need`, `force_production`, `trusted`, `allow_orphan`) cannot override normal autonomous governance.
+18. Existing legitimate caller and ordinary authorized human maintenance still work.
+19. Exact historical orphan-record end-to-end replay cannot invoke real author, promote, route, register or mark `IMPLEMENTED` without need.
+20. Rerun/replay cannot recreate retired code; unchanged evidence yields idempotent disposition.
+21. Positive end-to-end independently needed capability passes existing authoring, Gate B and canonical promotion.
+
+### `CREATE_CANONICAL_MODULE`: ten explicit admission checks (historical section 15)
+For a genuinely new canonical module, require (1) independent need preceding candidate-authored wiring; (2) documented search of existing owners; (3) proof existing owner cannot reasonably absorb behavior; (4) coherent new responsibility rather than wrapper/facade; (5) real runtime or external integration contract; (6) resolvable source provenance and license/rights; (7) fidelity between donor mechanism and proposed algorithm; (8) bounded behavior and integration tests including real consumer; (9) maintenance/removal and canonical ownership accountability; (10) evidence that new module reduces rather than increases unjustified architectural fragmentation. A failed check blocks new-module creation; an existing-owner patch may be considered under its own governance.
+
+### Per-module Harvest package audit (historical section 20)
+For **each** currently present harvested module, record exactly: `MODULE`, `SOURCE/PROVENANCE`, `CURRENT PRODUCTION CALLER(S)`, `RUNTIME ENTRY PATH`, `CANONICAL OWNER`, `NEED TYPE`, `BEHAVIORAL TEST`, `INTEGRATION/RUNTIME EVIDENCE`, `DISPOSITION`. Allowed six dispositions: `RETAIN_RUNTIME_USED`, `RETAIN_REQUIRED_EXTERNAL_CONTRACT`, `MOVE_INTO_EXISTING_OWNER`, `MERGE_WITH_EXISTING_OWNER`, `RETIRE_TO_CONCEPT_ONLY`, `DELETE_DUPLICATE`. Do not invent `UNUSED_BUT_JUSTIFIED` or mass-delete; dormant importable code is not retired evidence.
+
+### Historical section 27 closure matrix — conditional verification checklist
+**Commit cleanup:** audit all five changed files at target commit and current HEAD; independently justify or retire crossover; if retired remove module, paired test, exports and crossover-specific routing; reconcile substance-gate bookkeeping; eliminate active dangling references.
+**Knowledge:** preserve original evidence, historical Gate B/promotion/audit receipts and superseding retirement decision; prevent stale-history reactivation.
+**Necessity:** substance is not need; pre-authoring gate and fail-closed promotion recheck; reject supplied booleans/statuses and same-change callers; bind source/owner/action/revision; stricter new-module gate; `agentx_status` and Gate B `MERGE` never alone authorize production.
+**Lifecycle:** `IMPLEMENTED` requires current verified canonical production; retirement clears active authority; status API cannot manufacture implementation.
+**Other modules:** per-module independent need or external contract, disposition of orphans, no preservation-only managers.
+**End-to-end:** exact orphan replay cannot author/promote/register; failed pre-authoring gate avoids real author invocation; retired replay stays retired; positive legitimate promotion remains possible.
+**Verification:** adversarial, substance-gate, authoring, promotion/governance, lifecycle and harvested-algorithm suites pass; `compileall` passes; pytest collection clean or unrelated blockers explicitly documented. Do not claim completion on file deletion or isolated green tests alone.
+
+### Deterministic verification and closure receipts (historical sections 25–30)
+When explicitly authorized and relevant, use isolated temporary repo/candidate fixtures, offline/no-network tests, bounded deterministic inputs, no sleeps, no developer `.agentx-init` mutation, explicit revision/digest, no LLM-generated expected oracle. Run focused pytest suites, `PYTHONPATH=.:tools python -m pytest --collect-only -q` if feasible, `python -m compileall -q tools tests`, widest practical affected suite, `git diff --stat` and `git diff`; report actual execution/collection failures separately. Search active and historical references to `fitness_weighted_crossover`, `blend_parents`, `rank_weights`, `evolution_gap_21_3ee5`, `fcda4d3cc44fc3b7`, plus all actual autonomous author/promotion/registration entrypoints. Classify every remaining reference as active or historical, and inspect indirect routing/loaders.
+
+Per-entrypoint final report MUST name each discovered evidence→production path and the specific pre-authoring and canonical-mutation enforcement point (or an exact uncovered path/blocker). Include historical target `1a0fd70ac01ca1a23670e61963d644b6a280cf07`, parent `c685cc12257ac311906f6e26063bb23aeaab0c84`, current audited HEAD, crossover disposition `RETAINED/MOVED/MERGED/RETIRED/DELETED`, independent need, actual callers, canonical owner, source IDs/digests/fidelity, removed active vs preserved historical references, files/lines changed, need/new-module/status enforcement, per-module audit table, adversarial and focused test results, collection, compile, and exact blockers. Distinguish `historically promoted`, `currently active`, `currently implemented`, `retired/deferred/concept-only`. No completion unless all actual evidence-origin entrypaths enforce independent need at canonical mutation, with a passing legitimate positive control. 
