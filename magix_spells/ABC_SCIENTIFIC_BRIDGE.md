@@ -659,3 +659,20 @@ No run may be labeled a tested improvement unless code actually executed and res
 **Next measurable gap.** Test TLS certificate hostname mismatch and invalid trust chains against a controlled local TLS server, then integrate verified transport with independently sourced scientific evidence and human-adjudicated claim–evidence evaluation. Do not mistake network authenticity for scientific truth.
 
 **Durable reproducibility archive:** `/SpellScienceLab/abc_tls_context_gate_v0_34.zip`, SHA-256 `7e89c182868e304eab8eec3022dfcbbfe872648bc0dd238d7ce9f4b0a58f3bce`. Original author and rights paragraphs preserved exactly.
+
+
+### v0.35 — Connect-time TLS context mutation guard (2026-11-08)
+
+**Research question and defect.** v0.34 checked injected `ssl.SSLContext` verification settings only in the constructor. Python SSL contexts are mutable, so a caller could disable `check_hostname` (and then `verify_mode`) after construction but before `connect()`. This is a configuration integrity gap, not a demonstrated real-world attack. It does not establish scientific truth.
+
+**Method.** The new `abc_pinned_transport_v35.py` subclasses the v0.34 pinned connection and checks `verify_mode == ssl.CERT_REQUIRED` and `check_hostname is True` again immediately before the inherited socket/TLS connection logic. If either fails, it raises `ValueError('tls_verification_required_at_connect')` without dialing. The prior v0.34 source is retained for comparison. A future concurrent mutation between this check and the SSL handshake is not excluded; no thread-safety or independent security certification is claimed.
+
+**Tests and reproducibility.** Run `python -m unittest discover -p 'test*.py' -q` in the extracted archive. Actual result: **140/140 passed**, exit code 0, 0.123 seconds; inherited nonfatal `ResourceWarning` from `test_context_guard_v14.py`. Previous checkpoint **137/137**; **3 new developer-authored tests**. Two tests mutate a valid context after construction (hostname checking disabled; both hostname and certificate checks disabled) and assert failure *before socket creation*. One control confirms that an unchanged verified context reaches an attempted connection to the pinned IP, using a mocked dial that raises before any network access. This is an offline unit test, not a TLS certificate-chain or hostname-mismatch integration test.
+
+**Measured result.** Mutated-context pre-dial rejection: prior **not checked at connect**, now **2/2** synthetic cases rejected; verified-context control **1/1** reached the mocked pinned dial. Independently authenticated scientific sources **0→0**; independently adjudicated scientific claims **0→0**; full A→B→C cases **0→0**; B↔C fallback trials **0→0**. No scientific improvement is demonstrated, and no frame conversion was executed.
+
+**Illustrative two-frame example (not executed).** A (folklore): “A talisman guarantees protection from mosquitoes.” B (scientific frame): efficacy and operational advice require authentic evidence about a feasible intervention, not merely a verified TLS configuration. C (field-guide frame): **ABSTAIN** from issuing a guaranteed protection protocol without sufficient evidence. No B↔C fallback occurred: the blocker is missing scientific evidence in B, not output formatting in C.
+
+**Limitations and next test.** Context mutability remains possible after the connect-time check; controlled local TLS tests for hostname mismatch and untrusted certificate chains remain necessary. A secured transport alone does not authenticate scientific assertions or validate the general A→B→C bridge.
+
+**Durable artifact:** `/SpellScienceLab/abc_tls_mutation_v0_35.zip`, SHA-256 `e45e6fc3c520fd2e03220c7f2c9e9cd276f8c3cad154c00d12ee2def49e5a11e`, containing inherited source/tests, new module, three tests, test log, machine-readable benchmark/status and progress note. Authorship and rights header preserved verbatim.
