@@ -642,3 +642,20 @@ No run may be labeled a tested improvement unless code actually executed and res
 **Next measurable experiment.** Independently test pinned TLS against a local controlled TLS server and adversarial DNS substitution, with an explicit certificate hostname mismatch negative case; then obtain genuine external sources and human-adjudicated claim–evidence labels. Do not promote transport success to scientific support.
 
 **Durable artifact:** `/SpellScienceLab/abc_pinned_transport_v0_33.zip` (SHA-256 `a2edaa45fe65b5faeda763fdad6c65926631eb4c9daac69ae7d832514a1db1c1`), containing source, tests, logs, status and inherited regression assets. The author/rights header is unchanged.
+
+
+### v0.34 — TLS context verification admission gate (2026-11-08)
+
+**Research question.** Could an injected TLS context bypass the hostname/certificate checks of the v0.33 DNS-pinned transport? Inspection found that the constructor accepted arbitrary caller-supplied SSL contexts without checking their verification configuration. This is a security configuration defect, not a demonstrated exploit against a live server.
+
+**Implemented method.** A new versioned module `abc_pinned_transport_v34.py` retains the pinned-IP socket connection and original-hostname TLS SNI, but requires `verify_mode == ssl.CERT_REQUIRED` and `check_hostname is True` before constructing an HTTPS connection. A caller-supplied insecure context now fails closed with `ValueError("tls_verification_required")`. The inherited v0.33 implementation and tests remain in the archive for comparison. This change does not certify certificate-chain handling, DNS security, or a real remote connection.
+
+**Reproducible test.** From the extracted v0.34 archive, execute `python -m unittest discover -p 'test*.py' -q`. Observed result: **137/137 tests passed**, exit code 0, 0.029 seconds (nonfatal inherited ResourceWarning about an unclosed JSON file). The four newly authored tests check rejection of disabled hostname verification, rejection of disabled certificate verification, acceptance of an explicitly verified SSL context, and verified defaults. Previous checkpoint: **133/133**; new checkpoint: **137/137**. All new tests are offline and developer-authored; they are not independent adversarial validation. The regression suite was not expanded with a new independently annotated scientific benchmark.
+
+**Results and interpretation.** A configurable TLS-verification bypass present in the v0.33 constructor is now rejected in v0.34 for the tested context configurations. Independently authenticated external sources **0→0**, independently verified scientific claims **0→0**, complete A→B→C cases **0→0**, and B↔C fallback trials **0→0**. No scientific or semantic quality improvement was measured. This is a transport-hardening increment only; live production evidence admission remains blocked pending further security and scientific validation.
+
+**Two-frame illustration (not executed as a transformation).** A (folklore): “A charm prevents mosquito bites.” B: scientific efficacy would require authenticated and relevant intervention evidence; a TLS configuration check cannot provide that evidence. C (field-guide frame): **ABSTAIN** rather than invent a protective procedure. No B↔C fallback was executed, because the missing evidence is a B-level deficiency, not a C-format defect.
+
+**Next measurable gap.** Test TLS certificate hostname mismatch and invalid trust chains against a controlled local TLS server, then integrate verified transport with independently sourced scientific evidence and human-adjudicated claim–evidence evaluation. Do not mistake network authenticity for scientific truth.
+
+**Durable reproducibility archive:** `/SpellScienceLab/abc_tls_context_gate_v0_34.zip`, SHA-256 `7e89c182868e304eab8eec3022dfcbbfe872648bc0dd238d7ce9f4b0a58f3bce`. Original author and rights paragraphs preserved exactly.
