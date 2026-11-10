@@ -121,6 +121,9 @@ New scientific validity, new embeddings, trained alignment, independent evidence
 
 ## 8. Methods and reproducibility requirements
 
+**v0.73 execution method.** From `/SpellScienceLab/abc_scientific_bridge_v0_72.zip`, modify only `abc_pipeline.py` so source-candidate previews decode with user-selected `c_frame` rather than iterating fixed `('myth','field_guide')`. Run `python -m unittest discover -p 'test*.py' -q`, then `python abc_pipeline.py --input '<case>' --a-frame myth --c-frame <myth|field_guide> --contracts frame_contracts_run58.json --embedding-model model_pang_lee_polarity_fasttext.vec --evidence-passages evidence_passages_v70.json` for the three documented cases. Outputs and logs are in `/SpellScienceLab/abc_scientific_bridge_v0_73.zip`. This remains a tiny pretrained word-vector fixture, not an independently validated sentence encoder.
+
+
 **v0.69 polarity-aware diagnostic integration (2026-11-10).** Added `abc_polarity_alignment_v69.py` to the runnable `abc_pipeline.py` path. It reports a separate transparent, rule-based *surface negation* annotation alongside actual 100-dimensional pretrained Gensim fixture embeddings and cosine similarity. This is a hybrid diagnostic, NOT a learned contradiction classifier, scientific truth test, or permission to transfer evidence. The code does not infer negation scope and always sets `evidence_admissible=false`. Reproduction: unpack `/SpellScienceLab/abc_scientific_bridge_v0_69.zip`; run `python experiment_v69.py` and `python -m unittest discover -p 'test*.py' -q`. Internet model retrieval still fails with DNS `NameResolutionError` for Hugging Face and raw GitHub; no new sentence encoder was obtained.
 
 
@@ -141,6 +144,9 @@ No run may be labeled a tested improvement unless code actually executed and res
 
 ## 9. Experimental results
 
+**v0.73 (2026-11-10), source-derived preview frame control.** Three actual pipeline executions (myth→myth, myth→field_guide, unrelated myth→field_guide) each returned ABSTAIN with exactly one diagnostic preview matching the independently requested C frame; previous v0.72 preview behavior emitted two frames per invocation. Four available integration tests passed. Negative control `A library contains many books` still produced an irrelevant lightning-safety preview; therefore there is no improvement in scientific applicability, accepted B*, or verified complete transformations (all remain zero). A Hugging Face NLI model download was attempted and failed with DNS resolution `Errno -3 Temporary failure in name resolution`. No NLI inference was executed.
+
+
 **v0.69 frozen v0.68 contrast-set re-execution (2026-11-10).** Five inputs, original / affirmation / explicit negation / semantically opposite danger claim / unrelated control, were run against the existing lightning evidence record and pretrained fixture. Measured cosine scores respectively: 1.0000, 0.6553, 0.4645, 0.5500, 0.2744. Surface-negation mismatch flags versus reference: false, true, false, true, true. The semantically opposite danger claim and unrelated control are flagged merely because their surface negation differs from the original; the actual logical relation is NOT recovered. Five cross-frame `myth→field_guide` pipeline runs yielded one provisional C for exact original and zero for other variants; all returned ABSTAIN. Four available integration tests passed (historical 301-test suite not present). New complete A→B→C: **0**; independently verified scientific cases: **0**; new automatic B* corrections: **0**; new B↔C repairs: **0**. This is a limited representation diagnostic, not a scientific breakthrough.
 
 
@@ -158,6 +164,9 @@ No run may be labeled a tested improvement unless code actually executed and res
 **v0.20 (2026-11-08):** `python -m unittest discover -p 'test*.py' -q` executed **49/49 tests passed**, versus 44/44 in the archived v0.19 run (five added tests). Before change, `Mosquito bites decreased 12% among children in 2022` versus `Mosquito bites decreased 20% among adults in 2022` yielded `review/numeric_disagreement_scoped`; after change it yields `abstain/population_mismatch`. Same-population numeric disagreement remains `review`; one-sided population mention abstains; same-population direction reversal and different-year cases retain previous behavior. No independent scientific claims verified (0→0), no genuine A→B→C translations or B↔C fallback executed. One inherited test emits an unclosed-file ResourceWarning; test pass is not evidence of production robustness.
 
 ## 10. Discussion and threats to validity (working)
+
+**v0.73 limitation.** Independent C-frame selection is now honored for source-candidate diagnostic output, reducing unintended generation across frames, but this is an orchestration/decoder improvement only. The irrelevant negative-control preview remains an observed scientific-relevance failure; source similarity and format compliance cannot authorize a correction. Next scientific gap is a real claim-level entailment/contradiction model and evidence-applicability adjudication; until available, preserve ABSTAIN.
+
 
 **v0.69 interpretation.** Surface polarity improves auditability of embeddings but does not resolve their demonstrated inability to distinguish negation scope or evidence entailment; it also incorrectly groups a dangerous-tree assertion and unrelated control by negation absence. No scientific evidence transfer was authorized. Small sentiment-oriented fixture remains unsuitable for general scientific alignment. Priority remains an externally documented sentence encoder with independent entailment/contradiction evaluation and genuine source-grounded B* inference. The pipeline's fail-closed abstention is preserved.
 
@@ -178,6 +187,11 @@ No run may be labeled a tested improvement unless code actually executed and res
 **To be populated with verified bibliographic entries and source URLs when used in actual experiments.** Never fabricate references. Maintain a claim-to-source table in this section, including date retrieved, source type, and explicit limitations.
 
 ## 12. Chronological experiment and development log
+
+### 2026-11-10 — v0.73: requested-frame-only diagnostic decoding
+
+P0–P4 EXECUTED_UNVERIFIED; P5 BLOCKED. Implemented requested-C-frame selection in the source-candidate preview branch of the existing orchestration entrypoint. Three executions returned ABSTAIN and one preview each (same-frame myth, cross-frame field guide, unrelated negative control field guide). Four available tests passed. Irrelevant lightning guidance was still generated for a library claim, a substantive negative finding. Attempt to download NLI model from Hugging Face failed DNS lookup; no entailment inference. Source-backed B* accepted: 0; verified A→B→C: 0; new scientific feedback repairs: 0. Versioned code/results: `/SpellScienceLab/abc_scientific_bridge_v0_73.zip`. No other GitHub paths changed; authorship and rights preserved.
+
 
 ### 2026-11-10 — v0.69: explicit polarity diagnostic in pretrained embedding pipeline
 
