@@ -12,6 +12,8 @@ All rights belong to Damir Olejar
 
 ## Abstract (working)
 
+> **2026-11-10 v0.76:** A measured negative-control failure was addressed: unadjudicated evidence candidates no longer produce C preview text without a separately supplied claim-bound review. The unrelated library claim previously produced one lightning field-guide preview; it now produces zero. This is a containment improvement, not entailment, accepted B*, or scientific validation. Two pipeline runs returned ABSTAIN, and four available regression tests passed. Model acquisition remains blocked by DNS failure.
+
 > **2026-11-10 v0.74:** The evidence-derived B candidate now includes adjacent NWS shelter instructions from lines 147–148, rather than only the isolated tree warning (line 149). Three pipeline executions produced provisional target-frame previews, all ABSTAIN; unrelated input still received irrelevant lightning guidance. No accepted B*, independent entailment, or verified transformation.
 
 > **2026-11-10 v0.72:** Source-derived B candidates were decoded into two explicitly unverified C previews, including an unrelated-input negative control. Six previews, zero accepted B*/C, zero verified transformations. Scientific relevance remains unadjudicated.
@@ -1038,6 +1040,11 @@ P0 **EXECUTED_UNVERIFIED**; P1 **BLOCKED** (no usable pretrained weights); P2 **
 ## Experiment v0.61 — source-backed B* record integrated into the executable pipeline (2026-11-10)
 
 ### Methods
+
+### v0.76 — Applicability-bound diagnostic decoding (2026-11-10)
+
+The v0.75 pipeline produced a lightning-safety field-guide preview even for the unrelated input `A library contains many books`. Version 0.76 adds `correction_is_applicable(input_text, evidence_record)` to the existing `abc_pipeline.py` entrypoint. Evidence-derived previews are now withheld unless a separate review record names the *exact input claim* and contains a reviewer basis. This is deliberately a narrow **diagnostic publication gate**, not a semantic relevance classifier, proof of entailment, independent scientific review, or acceptance of B*. Retrieved B candidates remain available as explicitly unverified structured data. No new lexical evidence rules, similarity thresholds, or invented semantic scores were introduced. A general-purpose NLI model is still needed for paraphrase/contradiction adjudication. An actual model retrieval attempt failed with `curl: (6) Could not resolve host: huggingface.co`.
+
 The accepted v0.60 source was reconstructed from `/SpellScienceLab/abc_embedding_v0_60.zip`. The existing `abc_pipeline.py` now accepts optional `--evidence-record` JSON, invoking `abc_science_evidence_v61.correct_claim` while retaining fail-closed embedding behavior. The correction stage records original B0, corrected B*, applicability conditions, limitations, source URL, exact locator, source quotation, retrieval timestamp and reviewer basis. It rejects incomplete records and a mismatched original claim. This is **manual source-backed correction integration**, not automated inference, independent adjudication or a generic claim-to-evidence retrieval system. The P2 stage can be exercised for diagnostics even when P1 remains blocked; the final status stays ABSTAIN.
 
 ### Evidence and reproducible observation
@@ -1058,6 +1065,11 @@ Fetched current canonical GitHub manuscript before edits; checked Library specif
 Integrated a deliberately limited, evidence-record-driven decoder `abc_frame_decoder_v62.py` with the existing `abc_pipeline.py` entrypoint. The decoder accepts a B* object containing a corrected claim, conditions and limitations and renders it into either a myth-style lesson or a field-guide advisory. The user-configurable A frame remains independent of C. This is deterministic formatting of a **human-authored** source-linked correction, **not** a learned semantic decoder, independent scientific adjudication or a full A→B→C transformation. The pipeline retains final ABSTAIN whenever pretrained embeddings, independent quality control and scientific verification are missing.
 
 ### Results
+
+### v0.76 — Negative-control containment result (2026-11-10)
+
+Commands: `python abc_pipeline.py --input 'A tree does not protect me from lightning' --a-frame myth --c-frame field_guide --contracts frame_contracts_run58.json --embedding-model model_pang_lee_polarity_fasttext.vec --evidence-passages evidence_passages_v74.json` and the same command with `--input 'A library contains many books'`; results saved as `pipeline_cross_v76.json` and `pipeline_negative_v76.json`. Both produced a retrieved but **unadjudicated** B candidate, zero source-derived C previews, `source_candidate_decoding_status=BLOCKED_UNADJUDICATED_APPLICABILITY`, and `status=ABSTAIN`. The negative control's C preview count changed from **1 in v0.75 to 0 in v0.76**. No automatic B* correction, scientifically accepted C, or natural semantic fallback was demonstrated. `python -m unittest discover -p 'test*.py' -q` ran **4 tests, all passing**, with preexisting ResourceWarnings; the historical 301-test suite was not executed. Two actual A→B candidate retrieval→C abstention paths were executed; **complete independently verified A→B→C cases: 0**.
+
 Executed `python -m unittest discover -p 'test*.py' -q`: 301 tests passed, 0 failed; inherited ResourceWarning. Executed two CLI cases using the unmodified lightning evidence record: `python abc_pipeline.py --input 'Thunder cannot hurt me beneath a tree' --a-frame myth --c-frame field_guide --contracts frame_contracts_run58.json --evidence-record evidence_lightning_v61.json` and the same command with `--c-frame myth`. Both emitted distinct provisional C texts derived from the same B* while returning ABSTAIN. Cross-frame output begins “Guidance: Sheltering beneath a tree during a thunderstorm does not provide lightning protection…” and retains the 30-minute-after-last-thunder condition and outdoor-safety limitation. Same-frame output begins “The traveler learned: Sheltering beneath a tree…” and retains the same conditions. Counts: provisional B*→C renderings **0→2**; complete A→B→C **0→0**; pretrained embedding outputs **0→0**; operational C→B′ repairs **0→0**. No independent scientific verification was performed.
 
 ### Scientific evidence and limitations
@@ -1213,3 +1225,8 @@ P0 EXECUTED_UNVERIFIED; P1 BLOCKED; P2 EXECUTED_UNVERIFIED; P3 EXECUTED_UNVERIFI
 **Discussion.** The v0.75 contribution is an actually executed B-anchored regeneration of a lost scientific condition in two different output frames, with an explicit no-fallback baseline. It is a controlled mechanical feedback experiment, not evidence that autonomous C generation will preserve truth, and not independent scientific validation. P2 remains the earliest critical gap: independently assessed entailment, contradiction, and relevance must reject the unrelated-input failure before any B candidate can be promoted. Next test: evaluate an accepted B* on a frozen cross-frame matrix, including naturally occurring C drift and unsafe/infeasible abstentions.
 
 **Reproducibility and persistence.** Accepted secondary archive `/SpellScienceLab/abc_scientific_bridge_v0_75.zip` contains modified `abc_pipeline.py`, all three JSON outputs (`pipeline_same_v75.json`, `pipeline_cross_v75.json`, `pipeline_negative_v75.json`), `regression_v75.log`, `status_v75.json`, and earlier sources. No changes to other GitHub paths or the preexisting README.
+
+
+### 2026-11-10 — v0.76 hourly research audit
+
+Executed two source-grounded pipeline runs and four regression tests. Contained the measured unrelated-input preview leak (1→0), while preserving B-candidate provenance and fail-closed abstention. Hugging Face model download attempt failed DNS resolution; independent entailment and accepted scientific correction remain blocked. Uploaded accepted source and outputs to `/SpellScienceLab/abc_scientific_bridge_v0_76.zip`. No scientific validation claim.
