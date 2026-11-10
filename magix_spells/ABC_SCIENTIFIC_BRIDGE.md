@@ -1059,3 +1059,17 @@ Input A: “Thunder cannot hurt me beneath a tree.” The previously supplied Na
 
 ### Milestones and next experiment
 P0 EXECUTED_UNVERIFIED; P1 BLOCKED (no pretrained weights); P2 EXECUTED_UNVERIFIED (supplied evidence record); P3 EXECUTED_UNVERIFIED (provisional formatting); P4 EXECUTED_UNVERIFIED (controlled earlier repair only); P5 BLOCKED. The highest-priority task is to obtain an actual licensed pretrained model artifact through a permitted channel, compute real vectors, and connect them to A-role interpretation and evidence retrieval. Next restore a complete historical regression suite from an earlier Library checkpoint before claiming regression equivalence. Supporting archive: `/SpellScienceLab/abc_scientific_bridge_v0_64.zip` (upload must be verified separately).
+
+
+## v0.65 — Role-conditioned pretrained-vector binding (2026-11-10)
+
+### Methods
+Integrated `abc_role_embedding_v65.py` with the existing `abc_pipeline.py` CLI, preserving independently configurable A/C frames. The adapter binds genuine pretrained word-vector representations (if supplied) to each node in the evidence-linked typed graph and computes cosine similarities for existing typed relations. It reuses the v0.59 pretrained-vector loader; it does **not** claim that cosine similarity establishes causation or scientific truth. Missing model weights raise `EmbeddingUnavailable` and leave P1 BLOCKED rather than substituting invented vectors. This is a conditional implementation, not a demonstrated pretrained alignment.
+
+### Execution and results
+Commands: `python -m unittest discover -p 'test*.py' -q` (4/4 tests passed, two inherited unclosed-file ResourceWarnings); `python abc_pipeline.py --input 'Thunder cannot hurt me beneath a tree' --a-frame myth --c-frame field_guide --contracts frame_contracts_run58.json --evidence-record evidence_lightning_v61.json` and an equivalent myth→myth invocation. Both returned ABSTAIN. P1 returned `No pretrained vector artifact supplied for role-conditioned graph alignment`; zero genuine embedding vectors and zero complete A→B→C cases. No B↔C scientific fallback was newly tested. The four tests available in the v0.64 checkpoint do not reproduce the historical 301-test suite.
+
+Model retrieval attempts in this environment to `raw.githubusercontent.com`, `huggingface.co`, and `nlp.stanford.edu` each raised requests ConnectionError / DNS NameResolutionError; filesystem searches found no pretrained model artifacts. Thus there is no measured semantic alignment improvement and no scientific-quality delta. The existing National Weather Service lightning evidence record remains human-authored, not newly adjudicated. The provisional same-frame and cross-frame C outputs derive from supplied B*, not autonomous scientific reasoning.
+
+### Milestones and interpretation
+P0 EXECUTED_UNVERIFIED; P1 BLOCKED; P2 EXECUTED_UNVERIFIED; P3 EXECUTED_UNVERIFIED; P4 EXECUTED_UNVERIFIED (previous controlled trial only); P5 BLOCKED. A meaningful integration boundary is now in place for computed vectors to attach to interpretable graph roles, but the actual pretrained weights and model-based semantic performance remain untested. Next: obtain licensed pretrained weights through an accessible channel, run the role-binding adapter, and evaluate changed-wording cases without mistaking vector similarity for scientific support. Supporting archive: `/SpellScienceLab/abc_scientific_bridge_v0_65.zip`.
