@@ -116,3 +116,31 @@ Historical source blob `266dd35c8615eee7b197b6865ab009f0c901f859` (§3.2) identi
 **Negative controls:** Deliberately exercise the historical unbound `_ctx['i']` lookup or an equivalent wrong-closure sort in an isolated test double to prove the regression detects it; include a stale-score permutation, duplicate with differing trust/source identity (must not be collapsed without exact-identity policy), and an unauthorized source that must be filtered before ranking. Never treat a sorting failure as permission to bypass dedupe, return path strings as content, or erase policy/constraint distinctions.
 
 **Future-coder preflight and completion:** Inspect CURRENT private DT source/tests, real caller, deduplication owner, permissions, existing fixtures and actual semantics. If already correct, exit `ALREADY_PRESENT`; if no real consumer, `NO_APPLICABILITY`; if no authorized fixture, `NO_AUTHORIZED_FIXTURE`. Only when explicitly user-invoked may a minimal justified repair be made and real positive/negative tests run, with exact commit and test receipts. This public prompt remains `NOT_EXECUTED / PROMPT_READY_PENDING_INDEPENDENT_REVIEW`. Independent Scrapyard Scout must compare historical §3.1 and the full source against this clause before any original retirement.
+
+
+## Historical § context-packing pipeline: exact 18-stage order (Scout coverage-gap repair, 2026-11-10)
+
+**Conditional archival contract, not a present-DT defect or implementation authorization.** Historical full Agent_X blob `266dd35c8615eee7b197b6865ab009f0c901f859` (55,492 characters) specifies the following **ordered** context-pack construction pipeline, anchored to live compact source `doubletake_evolution/scrapyard/AGENT_X_SEMANTIC_EMBEDDING_UPGRADE_SPEC.md` blob `87eea551acc47652c34a7588a70a780cd288e0c8`. Preserve each stage and its ordering if and only if a current, authorized DT consumer and existing context-packing seam actually exist:
+
+1. Task normalization.
+2. Source authorization.
+3. Safe text load.
+4. ContextItems construction.
+5. Injection filter.
+6. Redaction.
+7. Semantic relevance.
+8. Priority.
+9. Recency.
+10. Exact deduplication.
+11. Semantic near-deduplication.
+12. Contradiction scan.
+13. Budget enforcement.
+14. Contradiction-safe compression.
+15. Extractive selection.
+16. Model compatibility.
+17. Tool compatibility.
+18. TaskPack construction.
+
+**Order invariants and tests:** freeze a synthetic authorized corpus containing secrets, injection strings, exact duplicates, semantic near-duplicates, mutually contradictory requirements, oversized text, and model/tool-incompatible material. Capture stage-by-stage trace and source/evidence references. Assert that source authorization precedes all loads, injection filtering and redaction precede any semantic provider invocation or cache use, exact deduplication precedes semantic near-deduplication, contradiction detection precedes budgeting and compression, and both model and tool compatibility checks precede TaskPack output. Negative mutation tests must intentionally swap adjacent critical stages and demonstrate deterministic rejection or failing regression assertions (especially semantic-before-redaction, near-dedupe-before-exact, compression-before-contradiction, pack-before-compatibility). Do not silently discard opposing trusted requirements during compression; preserve provenance and uncertainty. Assert that unauthorized/secret content never reaches embeddings, telemetry, logs or caches. Fail closed on missing authorization, unsafe source, unknown model/tool compatibility or unavailable required evidence. If current architecture has a different equivalent contract, compare observable invariants instead of imposing historical names or a parallel pipeline.
+
+**Future-coder preflight:** inspect CURRENT private DT source/tests, real context consumer, owner, permissions, and existing interfaces only when explicitly user-invoked. Exit `ALREADY_PRESENT` if equivalent ordering and tests exist, `NO_APPLICABILITY` if no genuine consumer, or `NO_AUTHORIZED_FIXTURE` if meaningful permitted tests cannot run. Do not implement without authorization; if invoked, run real tests, record exact evidence and rollback. Historical material is a proposal, not proof of a present defect. No third-party code is copied; verify any upstream licensing before use. Independent Scrapyard Scout must re-audit before original retirement.
