@@ -1,0 +1,28 @@
+# DT-IP-0056 — Audit logging failure alert and policy-bound response
+
+Status: PROMPT_READY_PENDING_INDEPENDENT_REVIEW / NOT_EXECUTED / PROMPT_CREATED_NOT_IMPLEMENTED. Current private DoubleTake parity: UNKNOWN. This is a conditional future-coder inspection instruction, not a finding of a defect, implementation permission, or a claim of NIST compliance.
+
+## Public source and rights
+- Exact live source: `doubletake_evolution/scrapyard/incoming/IS-20261111-nist-au5-audit-logging-failure-response.md`, Git blob `19ceed99d70e6ed549aab948c29b943561d91f1f` (2026-11-11). No distinct predecessor established; preserve Git history and recheck current blob at execution.
+- Primary authority: NIST SP 800-53 Rev. 5.1 AU-5, AU-5(1), AU-5(4), AU-5(5), related AU-12, official derived OSCAL publication: https://csrc.nist.gov/CSRC/media/Projects/risk-management/800-53%20Downloads/800-53r5/SP_800-53_v5_1-derived-OSCAL.pdf . The public source reports AU-5 review on 2026-11-11; independent revalidation of NIST publication/version and applicability is required before any implementation.
+- US-government publication; third-party contributions, logos and OSCAL packaging rights UNKNOWN. Paraphrase only; no upstream code copied. A control description is not an automatic DT requirement.
+
+## Future-coder preflight (mandatory)
+Only upon explicit user authorization, inspect CURRENT private DT source, tests, audit-event consumers, permissions, owner policies, deployment model and existing failure telemetry. Identify a real approved audit-sink consumer and owner-approved recipient, notification deadline, failure-response action and data classification. Stop with `ALREADY_PRESENT` if equivalent safeguards exist; `NO_APPLICABILITY` / `NO_CURRENT_CONSUMER` if no legitimate seam; `NO_AUTHORIZED_FIXTURE` if safe injection/observation is unavailable; `CONFIGURATION_UNRESOLVED` if recipients, deadlines or actions are not owner-defined. Never install an independent monitoring service or expand authority solely to satisfy this proposal. Tests and changes only with separate explicit user authorization.
+
+## Conditional contract
+If approved, distinguish an operation's success from the audit capture process's success. Detect observable capture/sink/storage failure, bind to affected component, operation/event scope and time, and send a bounded privacy-safe alert to approved roles within the approved interval. Independently verify alert delivery/observation; do not equate an attempted alert with a received alert. Enforce only owner-selected actions. Recovery must distinguish restored primary logging from expressly permitted alternate logging. AU-5(1) storage warning, AU-5(4) degraded/shutdown and AU-5(5) alternate logging are OPTIONAL separately authorized enhancements, not defaults. Never label a successful operation with failed audit capture `AUDIT_COMPLETE`. Prevent untrusted payloads from changing recipient, policy, logging permissions or disabling alerts; protect against alert flooding/DoS, secret leakage and authority elevation. Fail closed only if the existing owner policy explicitly requires it; preserve approved continuity/privacy.
+
+## Source-clause → prompt coverage and executable falsifiers (proposed, NOT run)
+| Public source clause | Conditional prompt contract | Positive / negative evidence |
+| --- | --- | --- |
+| AU-5 recipient, deadline, response | Owner-defined recipient, time bound, action; independently observable notification | P1 mock audit sink failure while operation succeeds; observe affected scope and delivery deadline. N2 missing configuration -> CONFIGURATION_UNRESOLVED, no invented compliance/shutdown. |
+| Audit failure vs execution success | Separate audit capture status from business operation status | N1 successful operation with failed sink must not be AUDIT_COMPLETE. |
+| AU-5(1), AU-5(4), AU-5(5) optional | Separate opt-in warning, degraded/shutdown and alternate-sink policies | P2 owner-approved recovery and fallback; N4 no automatic capacity thresholds or shutdown. |
+| Detection confidence and failure states | Independent sink failure evidence, separate false positive and unobservable | N5 distinguish confirmed loss, false-positive and UNKNOWN observation. |
+| Authorization, privacy, hostile payloads | Existing owner/role/permission checks, bounded sanitized alerts | N3 untrusted payload cannot reroute recipients, disable alerts or elevate authority; flood and secret-leak negatives. |
+| Provenance/version/license | Bind source blob, NIST Rev 5.1 clause, owner policy version and test fixture to evidence; paraphrase only | Reject mismatched source/policy versions, unsupported compliance claims and unlicensed copying. |
+| Current DT parity | Future authorized coder preflight and no-consumer/no-fixture exits | Stop without code on ALREADY_PRESENT, NO_APPLICABILITY, NO_CURRENT_CONSUMER or NO_AUTHORIZED_FIXTURE. |
+
+## Differentiation, evidence and completion
+Distinct hypothesis from AU-12 capable/selected/generated audit-event completeness, DT-IP-0037 evidence register, DT-IP-0043 obligation gates, and DT-IP-0054 atomic event-intent relay: this concerns **failure of the logging process itself**, notification and policy-bound response. Recheck other queued prompts and canonical clusters for overlapping clauses before implementation; this initial public dedup is not independent Scout certification. If user invokes future coder and all preflights pass, require actual positive/negative test commands, fixtures, revisions, alert receipts, denial evidence and precise failures, plus no regression of current audit capture. Otherwise report the exact stop reason; never assert code executed or NIST compliance from this prompt.
