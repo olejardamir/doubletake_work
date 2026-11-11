@@ -25,4 +25,32 @@ Inspect CURRENT private DT source, tests, interfaces, callers, contract owners, 
 - Include normal, boundary, property, integration, replay, migration, performance and security tests where relevant; explicitly justify documentation-only exemptions. Compare with current DT contract workflow and existing DT-IP-0043/0046; do not duplicate packet authority.
 - If a future authorized B7 mission-consumer or external assimilation seam is present, verify actual source revision → obligations → owner/Gate A/B → authorized effect → independent Ground and reuse. Do not claim that FIC replaces B1 protected-history controls or proves a natural cycle.
 
+## Scout grouped-gap repair — historical §§4, 6–7, 11–12, 15 (2026-11-11)
+This section preserves source-specific clauses omitted from the initial conditional contract. It does not authorize private DT implementation.
+
+### Exact prerequisite contracts
+- **Goal / §4 Step 1:** Before splitting into units, record the intended users or consumers, measurable success, explicit exclusions, must-not-break invariants, runtime and resource constraints, and safety, governance and persistence rules. Treat absent material fields as blocked rather than inferring intent.
+- **Whole-system pseudocode / §4 Step 2:** From entrypoint to completion, represent main control flow, decisions, state transitions, validation, error and fallback paths, external dependencies, observable outputs, and trace/checkpoint behavior. Language-specific details belong here only when they are constraints. Map every behavior to a bounded owning unit.
+- **Shared type contract / §4 Step 6:** In addition to the already preserved fields, enums, defaults, serialization, version and compatibility, specify **required versus optional** status for every field and concrete **validation rules**. Reject missing required fields, invalid enum values, invalid serialization and incompatible versions; never silently choose behavior-changing defaults.
+- **Bundle readiness / §4 Step 7:** Explicitly block a FIC with **no test obligations**, a unit **missing DAG placement**, a unit depending on **broad pseudocode rather than its bounded FIC**, or **incomplete bidirectional traceability**, even when other checks pass. These are separate negative fixtures, not implied by generic DAG consistency.
+- **Existing-code conflict / §§6, 11:** After inspecting existing source, interfaces, tests, dependency patterns, naming and runtime constraints, return the exact historical candidate exit **`BLOCKED_EXISTING_CODE_CONFLICT`** (or `BLOCKED_CONFLICTING_DOCUMENTS` where appropriate) when a FIC conflicts with live code. Never improvise a reconciliation or reinterpret the conflict as permission to edit.
+- **Ambiguity / §§6, 12:** A conventional local choice is allowed only if it has **no behavioral effect** and is **recorded in completion evidence**. Undefined interface, dependency, ownership, acceptance oracle, runtime behavior, security/persistence rule or higher-authority conflict blocks. Never silently default unspecified material behavior.
+- **Test timing / §15:** Reject tests written **only after coding** without a demonstrable mapping to **predeclared FIC acceptance criteria**. Preserve acceptance IDs and test-obligation revision before coding; after-the-fact tests may supplement but cannot retroactively manufacture the original acceptance contract.
+
+### Source-clause → prompt-section handoff checklist (Transformer coverage claim, not independent Scout verification)
+| Historical clause | Conditional preserved requirement | Negative control / evidence |
+| --- | --- | --- |
+| §4 Step 1 | Goal users, success, exclusions, invariants, resource, safety/governance/persistence | Missing material goal field → BLOCKED; goal revision trace |
+| §4 Step 2 | Decisions, transitions, validation, failures/fallback, dependencies, outputs, trace/checkpoints | Missing fallback or unowned transition → BLOCKED; source-unit map |
+| §4 Step 6 | Required/optional, field validation plus shared-type schema/version | Missing required field, invalid enum or incompatible schema → reject |
+| §4 Step 7 | Tests mandatory, DAG placement, FIC-bounded dependencies, complete traceability | Four independent readiness-failure fixtures |
+| §§6, 11 | Existing-code inspection and explicit conflict status | Live conflict → BLOCKED_EXISTING_CODE_CONFLICT; no unauthorized edits |
+| §§6, 12 | Record nonbehavioral local choices; prohibit silent material defaults | Missing oracle/authority/persistence → BLOCKED; evidence of recorded harmless choice |
+| §15 | Tests trace to acceptance declared before coding | Post-hoc-only test suite → REJECTED_TEST_INSUFFICIENT |
+| Source/rights | Current `0b3983284ebc7e1a28e20b31decb08f03c`, historical `006727a9fbdefa798a63d81386f1689fce6015b4`; dated 2026-05-25 v2.0 | Public history is provenance, not verified license or current DT fact; no unlicensed code |
+| Permissions/future preflight | Existing canonical owner, current private consumer, source/tests, allowed paths and explicit user permission | ALREADY_PRESENT / NO_APPLICABILITY / NO_AUTHORIZED_FIXTURE; no private action |
+| Completion | Real tests, negative controls, revision and permission evidence, independent reviewer | No implementation claim from prompt-only coverage |
+
+All clauses are **conditional** on an authorized future coder's inspection of current private DT. The historical FIC schema is not a new policy authority or mandate to build a second manager. Unknown current DT parity and third-party rights remain explicit; use only authorized fixtures and actual test evidence.
+
 **Definition of done for a future authorized implementation:** real canonical consumer, no duplicate owner, exact approved write scope, deterministic negative tests, independent real-consumer proof, traceable evidence and rollback; otherwise record the appropriate no-change/blocked exit. **No tests or implementation performed by this Transformer.**
