@@ -35,3 +35,71 @@ With explicit user authorization only, inspect **CURRENT** private DT source, te
 | Version/license/provenance, permissions, current DT applicability | Source/rights; preflight | No verified license/consumer/fixture → stop, do not claim code or tests |
 
 **Scout handoff:** Compare this prompt against both exact full source blobs and existing canonical prompt owners; independently classify any uncovered historical test or contractual clause as COVERAGE_GAP. Retain original until Scout independently verifies coverage and alone performs authorized SHA-guard retirement. **NOT_EXECUTED.**
+
+---
+
+## Grouped historical repair (2026-11-11)
+
+**State: TRANSFORMER_REPAIRED_PENDING_INDEPENDENT_SCOUT_REVIEW / NOT_EXECUTED.** This amendment responds to the four grouped coverage gaps identified by the independent Scout. Source live blob: b7b566dd2ac4afa6fe592537ae83458608345a04; historical complete blob: 35d7d4a3ac428ff38ca3ec514b32fc35f3fced1b; original prompt blob: ed04a8dc1eb3fa7e05b77f99bb4da071e52d8a58. Preserve all existing conditional permission, rights and current-DT preflight gates. This is not a claim that Von is installed, a current DT gap exists, tests ran, or any original can already be deleted.
+
+### A. Exact historical v1.4 package components
+
+A future *authorized* DT engineer must verify the existence, version, original SHA, schema, license, permissible use and actual relevance of EACH of these historical files before treating any design package as an implementation dependency:
+
+- BORG_VON1_RUNTIME_CONTROL_SPEC_v1.4.md — runtime decision and governance boundaries
+- borg_von1_decision_catalog_v1.4.json — typed catalog, unique identifiers and registered actions
+- borg_von1_eval_seed_v1.4.jsonl — expected-label corpus (do NOT change expected labels to pass)
+- BORG_VON1_SOURCE_COVERAGE_MANIFEST_v1.4.json — original source traceability
+- BORG_VON1_CONVERGENCE_AUDIT_v1.4.md — claims requiring independent evaluation
+
+Missing/unlicensed/invalid packages result in CONTRACT_UNKNOWN or NO_AUTHORIZED_FIXTURE, not a pass. Do not copy third-party weights or install an unverified model. The old Agent_X absolute filesystem paths and loopback address are provenance, NOT live DT installation commands. If approved, inspect actual catalog semantics for choice, noul and score, immutable definitions, digest, invariants and registered action references. Never hand-copy 85 historical decisions or create per-decision daemons.
+
+### B. Twelve named historical nanoprobe families and non-agent default
+
+The complete historical family list is:
+
+1. DISCOVERY_PROBE
+2. EVIDENCE_PROBE
+3. TOPOLOGY_PROBE
+4. BEHAVIOR_PROBE
+5. LINEAGE_PROBE
+6. SLOP_PROBE
+7. ASSIMILATION_PROBE
+8. ADAPTER_PROBE
+9. REPAIR_PROBE
+10. REGENERATION_PROBE
+11. ADAPTATION_PROBE
+12. COUNTER_PROBE
+
+These are labels to conditionally MAP to real existing authorized DT capabilities, not twelve mandated new modules or workers. A nanoprobe is NOT a full autonomous LLM agent by default. Preserve escalation tiers: deterministic → algorithmic → bounded semantic judgment → existing governed strong-model worker → collective escalation when justified. Each applicable probe is typed, scoped, budgeted, lineage-tracked, bounded in depth and termination, revision-protected and evidence-producing; mutation additionally requires separate authorization, rollback and effect proof. A discovery/evidence/topology/read-only probe may NOT self-promote to repair or other mutation authority. If a type has no actual consumer, return NO_APPLICABILITY rather than creating decorative wrappers.
+
+### C. Exact historical evaluation counters
+
+When, and only when, the source catalog, eval corpus and local execution fixture are authorized, execute the actual pinned evaluation seed with immutable expected labels. Report and persist:
+
+- total cases, passed cases, failed cases;
+- per-decision-family accuracy, number tested, and insufficient-evidence family count;
+- confidence DISTRIBUTION and latency DISTRIBUTION, with calibration if enough cases;
+- malformed-response count, timeout/service-failure count and governed fallback count;
+- false unauthorized-action/override count, actual approved escalation counts and disabled/advisory/auto-eligible comparison;
+- exact model/backend/version/digest, fixture, timestamps, test commands, real results and limitations.
+
+Keep per-family UNTESTED / ADVISORY / AUTO_ELIGIBLE / DISABLED registry and independently justified thresholds. Do not globally enable action merely because an aggregate score is high or treat tiny family counts as statistically reliable.
+
+### D. Required acceptance/falsification matrix from the historical full specification
+
+- Catalog loading/identity: reject corrupted schema, duplicate decision ID, unknown primitive, unregistered action, incompatible digest and missing invariant; immutable canonical definitions.
+- Deterministic compact state: fixed-order bounded serialization, no whole Borg docs or logs, secret redaction, untrusted external material cannot override catalog, authority or system instructions.
+- Adapter and runtime decisions: loopback/default local-only where approved, configured bounded timeout/retry, health probe, typed JSON validation, latency/backend provenance, and no shell action emitted by semantic model.
+- Authorization: no effect before independent policy validation; unauthorized mutation, unknown action, forged instruction and policy override must fail closed.
+- Modes: DISABLED maintains the baseline, ADVISORY creates no effect, AUTO_ELIGIBLE requires per-family evidence plus deterministic authorization.
+- Stale/concurrency: bind every decision to its exact source/catalog/state revision; reject obsolete decisions; respect locks, leases, owner/worktree and publication boundaries; no force push.
+- Nanoprobes: check forbidden read-only-to-mutation escalation, missing budgets/depth and lineage, stale targets and rollback metadata.
+- Failures: offline, malformed, low-confidence, missing System-Two, repeated oscillation and conflicting choices produce bounded defer or safe governed escalation without fabricating success.
+- End-to-end proof: controlled synthetic state → invariant check → compact decision → model bounded response → reliability gate → registered action → independent authorization → safe action/dry run → provenance and next state. Independently demonstrate offline, low-confidence and stale-state no-effect cases.
+- Existing regression requirements: identify and execute relevant CURRENT DT tests for default suite, L0 governance, L1 controller, session runtime, unified runtime, transformation lifecycle and CLI imports; separate proved pre-existing failures from newly introduced failures.
+- Real operational evidence: one real local smoke test IF an authorized running endpoint exists; status, health, current mode, catalog digest, decision dry run, corpus evaluation, recent provenance, enable/disable through existing CLI/API conventions.
+
+For final acceptance, report actual repository revision; changed/reused files, controllers, workers and stores; exact integration, catalog, state and semantic-action mapping; System-Two and nanoprobe integration; provenance location; modes/fallbacks; all corpus counters and per-family reliability; real smoke where permitted; regression commands/results; remaining limitations and exact operation/testing commands. The historic 21-item acceptance and 19-item report checklist are preserved here as conditional, testable grouped requirements, NOT claims of completion. Avoid redundant new orchestrators, catalog copies, speculative class wrappers or unsupported 100% correctness claims.
+
+**Independent handoff:** This grouped repair is now READY_PENDING_INDEPENDENT_REVIEW. The Scrapyard Scout must separately re-read BOTH source blobs, the exact current repaired prompt and any relevant existing canonical prompt owners, then mark COVERED/GAP/PARTIAL with source→prompt mappings at fresh SHAs. No Scout sign-off or deletion has yet occurred. Only Scout may SHA-guard delete an independently proven redundant source.
