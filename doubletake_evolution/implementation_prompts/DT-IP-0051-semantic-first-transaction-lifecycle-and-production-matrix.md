@@ -69,3 +69,125 @@ The historical decisive scenario was an ordinary UI request `implement this prom
 
 ## Scout independent coverage handoff
 Source-to-prompt mapping: current original “Transferable invariants” → lifecycle clauses 1–5; current A–AL list and full historical §15 A–AL → table; historical §§2–14, 16–20 → isolation, canonical truth, mutation boundary, recovery and evidence gates. Historical named files are hypothetical consumer probes only. Independently compare all distinct clauses of current blob and historical original; record precise `COVERAGE_GAP` before any original deletion. Preserve original until independent audit and authorized SHA-guarded retirement.
+
+## 2026-11-11 grouped historical coverage-gap repair — conditional, not executed
+
+The following source-specific contracts supersede vague lifecycle shorthand **only where current DT has an applicable owner and authorized fixture**. They are historical hypotheses, not permission to change private DT. Source provenance: FULL historical blob `2f5b495de7b5c436d87d9cafe75e28901c2e348c`, §§1–20, lines 1–1660; FULL live compact blob `9fd40c3712fc6b3bbc2b845a37d6b618a2fece85`. No external code copied; verify current licenses/permissions.
+
+### Explicit source-clause → prompt coverage checklist
+
+| Historical source clause | Exact conditional obligation and failure/negative proof |
+| --- | --- |
+| §1 lines 77–114; §15 AL | When an existing semantic installation is disputed, allow only an explicitly bounded recovery/conflict transaction tied to workspace/base/request/write set. If no recovery entrypoint exists, future coder may propose the minimum deterministic entrypoint, not a blanket bypass. Block unrelated writes, forbid self-certified SYNCED, revoke temporary authority after closure and prove token reuse fails. |
+| §2 lines 129–173; §15 M | Inject isolated workspace and state roots for tests/proofs/dry runs; no fallback to production canonical state. Byte-compare pre/post canonical project model, sync baseline, accepted history and conflict state; negative tests deliberately provoke failed fixture/cleanup/restart and confirm zero pollution. |
+| §3 lines 189–301; §15 U,V,W,AI,AJ,AK | Deterministic repository discovery precedes governed LLM architectural enrichment, followed by validation and acceptance. Inventory frontend, prompts, behavior-affecting configuration, schemas, MCP/REST/CLI, provider adapters, governance, persistence, algorithms/protocols, dynamic registration and ownership. Per artifact prove inclusion/binding or explicit justified exclusion. Deletion, replacement, supersession and shared-owner ambiguity cannot leave stale current identities; duplicate classification and fabricated ownership are negative cases. |
+| §5 lines 402–456; §15 AA | Durable semantic target transaction records architectural placement/rationale (prompt-only, prompt-driven plus deterministic enforcement, or code), current and target models, exact read/write sets, base/target revisions and digests, dependencies, compatibility/replacement, normalized validation, verification requirements and no-change/rejection evidence. Rejected/no-change target never grants writes. |
+| §6 lines 488–524; §15 X,AF | Concurrent overlapping runs each retain immutable base, change ID, overlay, target, exact write scope and result evidence. Overlap fails closed into conflict/staleness rather than last-writer-wins. Revoke on accepted, rejected, failed, rolled back, superseded, stale, conflicted or cancelled states; replayed or transferred token denied. |
+| §7 lines 589–621; §15 Y,Z,AH | Enumerate shell/terminal, Git index/worktree/branch mutations, subprocesses, provider tools, editors, patch/fuzzy edits, MCP/REST/CLI, agents/subagents and direct semantic JSON/history writes. Opaque shell cannot be deemed read-only by prose: prove capability restrictions or deny/quarantine. Out-of-band changes require detected drift and quarantine, not retroactive authorization. |
+| §8 lines 625–670; §15 I,J,K | At startup bind authoritative enforcement revision across interceptor, mutation gate, dispatch, workflow, Borg policy, sync/reconciliation and provider authority. Missing/empty/failed binding disables writes; every write-capable run rechecks current revision; mismatch requires restart, errors deny. Timestamps alone are not revisions. Read-only may remain available. |
+| §§9–10 lines 671–734; §15 H | Mandatory semantic-first dependency requires actual PASS-equivalent authorization, not merely NOT_BLOCKED. DEGRADED, NOT_APPLICABLE, missing, unknown or incomplete cannot authorize provider planning, downstream checkpoint, wave/consensus or terminal success; preserve unrelated degradable semantics. |
+| §§11–12 lines 735–845; §15 O,AE | Harvest evidence gathering cannot mint SYNCED. Distinguish verified/inferred/unknown/unresolved/conflicted; reflection, dynamic imports, plugin/late registration, configuration-driven dispatch remain unknown when unproven. Derived vector/retrieval index cannot overwrite canonical truth. |
+| §13 lines 846–921; §15 AB | Exact verification binds change ID, target digest, base revisions, resulting implementation revision, run/workspace and requirement set. Verify authorized files, interfaces, schemas, dependencies, invariants, security, tests, replacements and UI wiring; reject replay/wrong result. Reconciliation consumes evidence rather than manufacturing it. |
+| §14 lines 922–999; §15 AC | Build candidate canonical state in isolated transaction; atomically promote accepted semantic model and sync baseline only after validation, real verification and reconciliation. Crash at each boundary must resume/rebase/rollback with durable evidence; partial promotion preserves prior accepted state. Canonical history excludes tests, synthetic prompts, diagnostics, caches and intermediate artifacts. |
+| §15 lines 1000–1417 | Preserve all 38 A–AL production-path cases already listed above, including real dispatch/denial observation and isolated before/after state; helpers, enum presence and fake SYNCED fixtures are not sufficient. |
+| §§16–19 lines 1418–1538 | Run actual production-route checks, distinguish technically enforced read-only from prompt-classified read-only, preserve governed automatic implementation-form choice, and conduct a fresh audit from current main rather than trusting implementation reports. |
+| §20 lines 1539–1660 | The 90-condition historical final acceptance ledger below is a *conditional future-coder checklist*, not a present claim of pass or requirement to build absent consumers. Mark each applicable PASS/FAIL/BLOCKED/NOT_APPLICABLE with exact revision, command, observed effect and evidence. Any applicable unproven blocking condition forbids COMPLETE. |
+
+### Historical §20: 90-condition final acceptance ledger (all UNEXECUTED)
+
+- [ ] Canonical tests cannot modify canonical semantic state.
+- [ ] Semantic tests prove byte-for-byte no-pollution of all accepted semantic artifacts.
+- [ ] Test/proof/dry-run/fixture state has no fallback path into canonical semantic history or baselines.
+- [ ] Canonical project model has completed governed LLM semantic enrichment.
+- [ ] `semantic_generation_status = complete`.
+- [ ] Exact repository facts remain deterministic authority.
+- [ ] Architectural purpose, ownership, responsibility boundaries, and semantic relationships are governed LLM meaning with provenance/confidence rather than filename heuristics.
+- [ ] Initial bootstrap from no model invokes governed LLM enrichment before architectural authorization.
+- [ ] Localized post-change refresh uses affected-scope incremental enrichment by default.
+- [ ] Stable semantic IDs survive behavior-preserving file moves/renames/refactors.
+- [ ] Ordinary write-capable `/api/chat` requests automatically run semantic-first.
+- [ ] A user does not need to pre-create a semantic transaction manually.
+- [ ] Semantic authorization is bound to the exact current run/request/workspace/base.
+- [ ] Old unrelated transactions cannot authorize new requests.
+- [ ] Concurrent runs have isolated change IDs, overlays, targets, write sets, and result bindings.
+- [ ] Overlapping concurrent mutations become conflict/staleness, not last-writer-wins.
+- [ ] Natural-language write detection is not the mutation-authority boundary.
+- [ ] Write-capable runtimes cannot mutate when semantic-first has not succeeded.
+- [ ] Read-only requests remain possible only through genuinely read-only authority.
+- [ ] OpenCode cannot bypass semantic authorization.
+- [ ] Codex cannot bypass semantic authorization.
+- [ ] LLM7 cannot bypass semantic authorization if write-capable.
+- [ ] Future runtimes inherit provider-independent semantic-first enforcement.
+- [ ] Shell/terminal mutation cannot bypass semantic authorization.
+- [ ] Project-changing Git operations cannot bypass semantic authorization.
+- [ ] Subprocess/provider tool/editor/patch/fuzzy-edit effects cannot become accepted project state without semantic authorization.
+- [ ] `semantic_first` remains non-degradable.
+- [ ] Borg downstream dependencies require actual semantic PASS authorization.
+- [ ] `DEGRADED`, `NOT_APPLICABLE`, missing, or unknown verdicts cannot satisfy semantic-first success.
+- [ ] Actual mutation boundary independently validates semantic authorization.
+- [ ] Wrong write-set mutation is rejected.
+- [ ] Direct canonical semantic-file edits are governed or detected as semantic drift before further mutation.
+- [ ] Stale backend revision is detected.
+- [ ] Missing revision binding blocks writes.
+- [ ] Revision-check errors block writes.
+- [ ] Restart restores normal governed writes.
+- [ ] Harvest semantic claims reflect actual implementation evidence.
+- [ ] LLM semantic claims use correct inferred provenance.
+- [ ] No false verified architectural claims remain.
+- [ ] One-off Harvest reconciliation cannot self-certify `SYNCED`.
+- [ ] Common-base conflict resolution remains functional for `IMPLEMENTATION_AHEAD`.
+- [ ] Common-base conflict resolution remains functional for `SEMANTIC_AHEAD`.
+- [ ] Common-base conflict resolution remains functional for `BOTH_DIVERGED`.
+- [ ] Partial implementation and stale-base states cannot be accepted.
+- [ ] Neither code nor semantic state automatically wins a conflict.
+- [ ] Ordinary mutation is blocked while unresolved conflict remains, except the exactly bound resolution transaction.
+- [ ] Canonical semantic writes are transactionally promoted only after success.
+- [ ] Failure during canonical promotion preserves the previous accepted state.
+- [ ] Canonical history contains real accepted changes, not synthetic/test/runtime debris.
+- [ ] `accepted_target_digest` is real and non-placeholder.
+- [ ] Canonical semantic/code baseline is produced through the canonical pipeline.
+- [ ] Final `semantic_code_sync.json` status is exactly `SYNCED`.
+- [ ] Final implementation revision matches actual current source under the defined synchronization snapshot.
+- [ ] Final semantic revision matches actual accepted semantic model.
+- [ ] Final verification/reconciliation evidence binds the exact accepted target, implementation result, semantic result, run/change identity, and base revisions.
+- [ ] No unresolved conflict remains.
+- [ ] No semantic-generation incompleteness remains.
+- [ ] No canonical test pollution remains.
+- [ ] Production-path tests exercise actual API/workflow/provider/mutation behavior rather than helper existence.
+- [ ] Prompt-only / prompt-driven+deterministic / deterministic-code responsibility classification is produced automatically for material changes and carries rationale.
+- [ ] A validated durable target transaction exists before implementation authority for every material change.
+- [ ] Accepted current semantic state is never overwritten by the proposed target before implementation is verified.
+- [ ] Legitimate semantic no-change/reject decisions grant no mutation authority and do not fabricate code changes.
+- [ ] Verification covers the exact target and actual resulting implementation, not merely generic tests.
+- [ ] Verification evidence is bound to exact run/change/target/result/base revisions and cannot be replayed across results.
+- [ ] Reconciliation consumes valid verification and cannot self-certify.
+- [ ] Provider/runtime completion alone cannot mark a material Agent_X change accepted; post-code verification and reconciliation must succeed first.
+- [ ] Interrupted transactions recover without false acceptance at every lifecycle boundary.
+- [ ] Resume/rebase/rollback behavior remains bound to durable transaction/base/target evidence.
+- [ ] One canonical semantic authority exists; derived semantic retrieval/index state cannot redefine architecture.
+- [ ] Dynamic/reflection/config-driven behavior that cannot be proven remains unknown/unresolved rather than falsely verified absent.
+- [ ] Semantic mutation authorization expires/revokes on accepted/rejected/failed/rolled-back/superseded/stale/conflicted/cancelled terminal states.
+- [ ] Old transaction authorization cannot be reused as standing repository write permission.
+- [ ] Effect-time authorization revalidates current base/revisions/scope and closes TOCTOU drift.
+- [ ] UI, CLI, REST, MCP, autonomous repair, Harvest, Evolution, and subagent mutation origins all use the same semantic-first authorization invariant where applicable.
+- [ ] Drift detection remains defense-in-depth, not the normal authorization path for in-product mutation origins.
+- [ ] Canonical semantic discovery covers the whole behavior-affecting Agent_X project rather than a hard-coded Harvest/package subset.
+- [ ] Frontend, prompts, behavior-affecting config, schemas, MCP/REST/CLI interfaces, provider/runtime adapters, governance, state/persistence, and important algorithms/protocols are represented or explicitly classified as non-architectural evidence.
+- [ ] Deleted/replaced implementation does not remain bound as current semantic truth.
+- [ ] Responsibility-preserving replacement retains stable semantic identity while updating bindings.
+- [ ] Removed responsibilities are superseded/removed rather than kept current.
+- [ ] Material responsibilities have a clear canonical owner or explicit justified ambiguity/shared ownership.
+- [ ] Semantic relationships represent architectural meaning rather than raw import adjacency.
+- [ ] A disputed/incomplete semantic-first installation can be repaired only through an explicitly bound recovery/conflict transaction, not unrestricted governance bypass.
+- [ ] Recovery authority is scoped to exact workspace/base/request/write set and cannot self-certify `SYNCED`.
+- [ ] Temporary repair authority is revoked after closure and cannot authorize later ordinary changes.
+- [ ] Governance/security/state/transactions/locks/Git/rollback/promotion/verification/evidence authority remains deterministic and cannot be invented by LLM output.
+- [ ] No duplicate semantic/provider/reconciliation/mutation-authority stack was introduced to achieve closure.
+- [ ] A fresh no-change recheck returns `SYNCED`.
+- [ ] Re-running the complete audit from current `main` finds no material bypass, stale state, false semantic claim, incomplete lifecycle, omitted behavior-affecting surface, uncontained recovery path, or unverified acceptance path.
+
+### Rights, authorization and evidence
+
+The historical source is a repository-owned proposal, not an implementation grant. Current DT code, source and consumer parity are UNKNOWN. A future **explicitly authorized** coder must first inspect current private source/tests and permissions, verify a real consumer and lawful fixtures, then exit `ALREADY_PRESENT`, `NO_APPLICABILITY`, or `NO_AUTHORIZED_FIXTURE` as appropriate. No historical completion or test claim is independent evidence. Preserve exact public source SHAs, source Git-history lineage and any third-party license constraints. Record failures and negative tests as evidence, not fabricated PASS.
+
+**Transformer handoff:** all historical §§1–20 inspected; the table and 90-point ledger are a clause-preservation handoff, not independent Scout coverage verification. Scout must independently re-check the complete historical and live sources, current prompt and canonical overlaps before considering original retirement.
