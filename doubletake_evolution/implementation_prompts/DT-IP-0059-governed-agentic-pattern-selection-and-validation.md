@@ -86,3 +86,28 @@ Where events are justified by real independent consumers, preserve nine event co
 | Remaining historical review | same blob §§15–37,40–41,43–45, starting §15 line 856 | Existing contracts and Scout future audit | PARTIAL; no FULL claim |
 
 Verified public live source blob `7e67b815f173b733a6a23654bfe17a730958a985`; historical full text blob `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7`. Historical third-party guidance is not independently licensed or validated. Scout alone independently verifies and may retire the source; private DT NOT_EXECUTED.
+
+
+## Scout G8–G10 grouped historical §§16,20,22–23 repair — conditional, NOT_EXECUTED
+
+Historical source `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` lines 901–915, 1061–1082 and 1111–1180; live distilled source `7e67b815f173b733a6a23654bfe17a730958a985`. These are future inspection/acceptance obligations, not claims of defects or authorization to code. Inspect current private DT only when explicitly user-authorized; stop on `ALREADY_PRESENT`, `NO_APPLICABILITY`, `NO_AUTHORIZED_FIXTURE`, absent consumer/owner or missing rights. Reuse existing schemas and enforcement, preserve independent review and no unlicensed third-party code copying.
+
+### G8 — §16 parallel merge, seven separate outcomes
+Before any authorized independent fan-out, define deterministic merge policy for **duplicates, conflicts, missing outputs, timeout, partial success, provenance and differing confidence**. Each is a separately testable case, not interchangeable with a generic conflict-aware merge. Record task/revision/producer, validation result, evidence and source lineage for accepted outputs; reject untrusted or mismatched provenance and unsupported confidence aggregation. Missing/timed-out/partially successful branches must not silently count as complete; duplicate outputs must not duplicate effects; conflicting outputs require explicit adjudication or abstention. Test each of seven cases plus unauthorized merge/promotion, stale revision, replay and out-of-order results under bounded budgets.
+
+### G9 — §20 hierarchy identities and leaf criteria
+Only if a measured workload defeats simpler routing, every hierarchy level must preserve **stable task IDs and parent/child relationships**, with bounded maximum depth, no orphan/cycle, deterministic ownership and revision/evidence traceability. A leaf is executable only when **inputs are known, output contract is clear, allowed tools are known, and acceptance criteria are evaluable**. Reject unknown inputs, missing output schema, ambiguous parent, unauthorized tools, unevaluable acceptance, depth overflow, duplicate task ID, stale subtree and overlapping effect authority. No hierarchy merely to mirror the historical diagram.
+
+### G10 — §§22–23 risk and memory admission
+Historical candidate risk classes: **R0** read-only/deterministic/harmless → automatic; **R1** reversible local change → automatic only if validation passes; **R2** meaningful code/config mutation with automated rollback → automatic only under configured policy; **R3** architectural/destructive/external side effect → explicit approval normally required; **R4** security-sensitive/irreversible/high-impact → explicit approval required. These are *historical default mappings*, subordinate to current stricter DT policy and actual scope; no implied new permission. Bind approvals to exact plan/version, diff/action, scope and risk; material changes invalidate them. Negative tests: risk misclassification, R2 missing configured policy/rollback, R3/R4 without approval, approval replay, stale diff and unauthorized effects.
+
+Durable memory admission requires **known source, validated status, known scope, explicit staleness policy, and conflicts resolved or recorded**. Separate session, project semantics, validated decisions, implementation outcomes, failure/recovery, preferences and external/reference knowledge only when real consumers need those distinctions. Negative/rejection memory records the attempted approach, reason, evidence and **conditions for reconsideration**, not a permanent unreviewable prohibition. Reject unknown provenance, unvalidated assertions, stale conflicting knowledge, cross-scope promotion and forgotten reconsideration criteria; test readback, revision, replay and correction.
+
+| Scout gap | Exact historical clause | Transfer disposition |
+| --- | --- | --- |
+| G8 | §16.1 lines 901–915: seven parallel merge cases | COVERED_PENDING_INDEPENDENT_REVIEW; G8 and contract 2 |
+| G9 | §20 lines 1061–1082: stable hierarchy identities, bounded depth, four leaf conditions | COVERED_PENDING_INDEPENDENT_REVIEW; G9 and contract 2 |
+| G10 | §§22–23 lines 1111–1180: R0–R4 mapping, five memory admission gates, reconsideration | COVERED_PENDING_INDEPENDENT_REVIEW; G10 and contract 6 |
+| Unread independent Scout cursor | §§24–37,40–41,43–45; next §24 line 1185 | PARTIAL; no FULL or deletion claim |
+
+No private DT inspection or tests executed. Scout independently checks coverage and alone may retire source.
