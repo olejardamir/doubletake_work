@@ -17,6 +17,27 @@ Inspect CURRENT private DT source, tests, `AGENTS.md`, owners, callers, writers,
 5. **T5 — bounded repair and rollback.** Reuse current diagnostic/release owners, keep last-good pointer, attempt only grant-covered bounded repairs, rerun affected tests, rollback unsafe outcome, park identical failures, continue independent tasks. Reject retrying hard resource-limit refusals, orphan effects, duplicate external landing, corrupt release pointers and unauthorized policy edits.
 6. **T6 — canonical truthful status and compatibility.** Derive task, owner, digest, effect scope, tests, active version, blocker and next runnable action from canonical evidence. Migrate every actual reader before removing redundant store/report; retain mandatory audit/release history and current live rules. Measure unique authoritative stores, gate count, human interruptions, latency and redundant report commits against a matched baseline; mark UNMEASURED rather than invent savings.
 
+
+## Historical §3 mechanism-audit decision contract (Scout gap G1)
+
+For **each** actual gate, writer, queue, report, approval and retry loop, future authorized inspection must record the compact, machine-readable fields: `component/path | real caller | behavior | concrete failure prevented | external obligation? | existing overlapping enforcement | runtime cost | proposed KEEP/MERGE/AUTOMATE/LAZY/REMOVE | authorization required | before/after tests`. Do not collapse distinct writers or omit an external/legal/organizational obligation merely to claim lower overhead. Apply the exact five-way disposition conditionally: **KEEP** concrete failure prevention or compatibility/legal/organizational necessity; **MERGE** duplicate authorities into the existing owner with necessary adapters; **AUTOMATE** only mechanical checks and routine approvals already covered by deterministic non-self-granted authority; **LAZY** derive/cache report views by immutable inputs with affected-dependency invalidation; **REMOVE** only inert or redundant ceremony after real dependency/reader scans and regression tests. Required retention/audit/recovery/permission evidence and tested persisted-state migrations remain mandatory. Negative tests: removal of a legally required gate, unauthorized auto-approval, cache reuse after changed security input, double authority after merge, un-migrated reader, missing audit receipt, and purported cost reduction without matched baseline must reject the proposed disposition. A classification is a proposal, not execution permission.
+
+## Historical §8 per-slice evidence contract (Scout gap G2)
+
+For each **future separately authorized** T1–T6 implementation slice, produce a machine-readable receipt with the historical fields: `MISSION` (historical label `DT_AUTONOMY_FIRST_BUREAUCRACY_REDUCTION`, not a newly activated mission), `SOURCE_HEAD_BEFORE / AFTER` (actual revisions), `SLICE` (T1–T6 and behavior), `AUTHORITY` (real grant/FIC/owner or blocker), `PREVIOUS_PATH` (old execution chain and measured gates), `NEW_PATH` (actual chain and measured gates), `FILES` (changed paths), `TESTS` (guarded commands, collected results, failures and negative assertions), `COMPATIBILITY / MIGRATION` (actual outcome), `SECURITY` (regressions/escalation probes), `LATENCY / OVERHEAD` (matched before/after or `NOT_MEASURED`), `STATE` (only `DONE | REUSED_VERIFIED | BLOCKED_AUTHORITY | BLOCKED_SAFETY | FAILED` with evidence), and `NEXT` (one legitimate independent action or terminal). Never fabricate SHAs, executed commands, permissions, performance, migrations or PASS. A future final report must separately distinguish operational autonomy, reduced procedural steps, actual safety evidence, authority boundaries and unproven areas; no blanket completion percentage. Negative controls: absent source revision, forged authority, unrun test reported PASS, undocumented migration, stale before/after baseline and falsely marked DONE all fail closed.
+
+## Scout grouped-gap coverage handoff
+
+| Historical clause and blob | Prompt section | Transformer disposition |
+|---|---|---|
+| §3 lines 50–63; historical `a36418f4fa6870ad9599bb126d5dad868b1f96cf` | Historical §3 mechanism-audit decision contract | G1 COVERED for all eleven fields, five disposition rules, obligations, migration, failure and negative controls |
+| §8 lines 172–190; same historical blob | Historical §8 per-slice evidence contract | G2 COVERED for all thirteen named receipt lines including MISSION, exact state enum, measured-or-unknown metrics, final distinctions and negative controls |
+| §4 T1–T6, §5 security, §§6–7 integrated checks | Existing 1–6, preflight, integrated verification | UNCHANGED; no redundant rewrite |
+| §9 historical execute-now imperative | Preflight and status | ARCHIVAL_ONLY, not authorization; no private implementation |
+| Separate v2 residual live blob `1baed7b5617ad3ea88b26b5de80dd7a46a944738` | None | NOT_CLAIMED; distinct source retained for independent audit |
+
+This is Transformer clause mapping only; independent Scout must re-fetch and verify before any source retirement.
+
 ## Source-clause → prompt coverage and negative-test ledger
 
 | Source clause | This prompt | Required proof / failure gate |
