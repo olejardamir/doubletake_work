@@ -59,3 +59,30 @@ Map each **applicable** responsibility to an existing authorized owner/artifact 
 | Other historical clauses | §§0–37,40–41,45; lines 1–1684,1752–2000,2094–EOF | PARTIAL; independent Scout cursor unchanged, no FULL claim |
 
 Provenance: live public source `doubletake_evolution/scrapyard/AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` blob `7e67b815f173b733a6a23654bfe17a730958a985`; historical blob `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7`. Third-party Google material and historical Agent_X design are references, not code-copy licenses or proof of current DT parity. No private DT access, implementation, live tests or original deletion.
+
+
+## Scout G4–G7 grouped historical §§11–14 repair — conditional, NOT_EXECUTED
+
+The following clauses transfer precise historical requirements, not present-DT defect claims. Reuse an existing authorized owner and stop at ALREADY_PRESENT / NO_APPLICABILITY / NO_AUTHORIZED_FIXTURE / CONTRACT_UNKNOWN as appropriate. Preserve provenance, revision fences, licensing review, same-bar validation and deny-by-default runtime permissions. No private execution is authorized by this prompt.
+
+### G4 — §11 structured, revisable, nonauthorizing plan (historical lines 663–706)
+For a real planning consumer, preserve structured `goal`; each step's `id`, `objective`, `depends_on`, `pattern`, `tools`, `acceptance`; and plan-level `completion_criteria`, `rollback_strategy`, `risk`. Support explicit `PLAN_VALID`, `PLAN_NEEDS_REVISION`, `REPLAN` dispositions, retaining previously validated work where dependencies and revisions remain valid. A plan cannot grant itself tool rights or change policy; the runtime independently authorizes every effect. Test missing/malformed dependency, cycle, stale revision, invalid acceptance, unauthorized tool inserted by model, preserved validated prefix after replan, and bounded failure/rollback.
+
+### G5 — §12 complete authoritative capability registry (historical lines 710–744)
+Where an applicable owner exists, each capability entry conditionally requires all fifteen fields: ID, purpose, input schema, output schema, side effects, required permissions, risk class, reversibility, idempotency, timeout, resource cost, allowed lifecycle states, allowed callers/roles, validation requirements, provenance/evidence returned. Runtime—not model—decides permission. Return narrowly bounded observations rather than entire databases, repositories or logs. Reject unknown/missing fields, invalid output, unauthorized caller/state/effect, overbroad observation, missing evidence, timeout and stale capability version; preserve existing owner interfaces.
+
+### G6 — §13 governed MCP client and server boundary (historical lines 748–789)
+Client-side external MCP use must pass the same capability policy, permissions, timeout, schema, provenance/evidence and rate/resource gates as internal calls. Server-side exposure is only of selected validated bounded operations with authentication, authorization, capability ACLs, input validation, rate limits, audit logs and output filtering. Deny raw secret exposure and unrestricted database, shell or repository mutation unless separately and explicitly authorized by current policy; never infer authority from a model/tool description. Reuse domain logic across UI, internal call and MCP instead of creating shadow implementations. Negative tests: anonymous or wrong-principal request, cross-capability escalation, malicious tool description, secret exfiltration, unbounded read, mutation without explicit permission, malformed output, missing audit, rate-limit evasion, timeout and replay.
+
+### G7 — §14 typed events and independent-only concurrency (historical lines 792–852)
+Where events are justified by real independent consumers, preserve nine event contract fields: event type, schema/version, producer, correlation/task ID, causation ID, timestamp, payload, authority level, deduplication/idempotency key. Independent unit tests/static analysis/architecture/security scans may run concurrently on a fixed patch revision; patch generation and its dependent validation must not race. Reject schema mismatch, forged authority/producer, stale revision, duplicate effect, conflicting state mutation, missing correlation/causation, and out-of-order dependent validation. Avoid a new event bus for simple synchronous operations.
+
+| Scout gap | Historical blob/section | This prompt mapping | Transformer disposition |
+| --- | --- | --- | --- |
+| G4 plan state, replan, nonauthority | `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` §11 lines 663–706 | G4, contract 4, negative tests | COVERED_PENDING_INDEPENDENT_SCOUT |
+| G5 fifteen-field capability registry | same blob §12 lines 710–744 | G5, contract 5, negative tests | COVERED_PENDING_INDEPENDENT_SCOUT |
+| G6 MCP server/client controls | same blob §13 lines 748–789 | G6, contract 5, negative tests | COVERED_PENDING_INDEPENDENT_SCOUT |
+| G7 event schema and concurrency | same blob §14 lines 792–852 | G7, contracts 5/7, negative tests | COVERED_PENDING_INDEPENDENT_SCOUT |
+| Remaining historical review | same blob §§15–37,40–41,43–45, starting §15 line 856 | Existing contracts and Scout future audit | PARTIAL; no FULL claim |
+
+Verified public live source blob `7e67b815f173b733a6a23654bfe17a730958a985`; historical full text blob `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7`. Historical third-party guidance is not independently licensed or validated. Scout alone independently verifies and may retire the source; private DT NOT_EXECUTED.
