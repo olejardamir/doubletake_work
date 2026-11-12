@@ -37,3 +37,25 @@ All coverage here is **Transformer-authored mapping, not independent Scout verif
 
 ## Future completion evidence
 For each applicable contract record current-DT owner/consumer, authorized scope, source/test revision, precise test command/results (including negatives), independent readback, measured quality/latency/cost vs baseline, changed files/commit, license/provenance review and unresolved blockers. Stop rather than assert COMPLETE when an applicable failure gate lacks evidence. Scout alone may independently audit this public transfer and retire the original at its fresh SHA; Transformer must never delete it.
+
+## Scout grouped historical coverage repair — §§38–39 and §42 (conditional, NOT_EXECUTED)
+
+These are archival **candidate contracts** only. The future user-authorized coder must first inspect current DT source, owners, callers, permissions, tests and licensed dependencies; exit `ALREADY_PRESENT`, `NO_APPLICABILITY` or `NO_AUTHORIZED_FIXTURE` when appropriate. No extra registry, service, file or runtime may be created solely to match this historical list. Preserve least privilege, no automatic effects, fail-closed revision checks, unchanged validation of fallback, negative-test evidence and independent Scout review.
+
+### G1 — Historical §38 pattern-registry entry contract
+If a real current-DT orchestration consumer and authorized owner exist, evaluate a **machine-readable** pattern registry; each applicable entry must explicitly define all **nine** fields: (1) selection criteria, (2) required inputs, (3) state transitions, (4) maximum budgets, (5) failure behavior, (6) tool permissions, (7) merge behavior, (8) validation requirements, (9) telemetry fields. Historical candidate values are `deterministic`, `single_agent_react`, `sequential`, `parallel`, `review_critique`, `iterative_refinement`, `coordinator`, `hierarchical`, `human_in_loop`, `custom`, `swarm`. They are not a requirement to implement all patterns. Tests: reject incomplete/unknown entries, unauthorized tools, missing budgets, stale schema and unsafe parallel merges; demonstrate deterministic fallback and no new authority from registry metadata.
+
+### G2 — Historical §39 per-task-class evaluation contract
+For each **applicable** task class, compare a frozen simpler baseline with candidate route under matched fixtures, access, budgets and stopping rules; retain **twelve** explicit metrics: (1) completion rate, (2) behavioral correctness, (3) acceptance-test pass rate, (4) regression rate, (5) repair frequency, (6) mean model calls, (7) token cost, (8) latency, (9) tool-call count, (10) fallback frequency, (11) human intervention frequency, (12) slop/complexity delta. Include denominators, provenance, revisions, failed/abstained cases and uncertainty. No escalation to coordinator/hierarchy/swarm merely because a task seems complex; require measured benefit over the simpler route. Negative controls: missing metric, unequal model access, hidden failures, budget mismatch and unvalidated fallback cannot produce a PASS.
+
+### G3 — Historical §42 eighteen-artifact conditional acceptance ledger
+Map each **applicable** responsibility to an existing authorized owner/artifact (code, schema, configuration or prompt contract); mark each `PRESENT`, `MISSING`, `NOT_APPLICABLE` or `BLOCKED`, with evidence and negative test: (1) canonical lifecycle/state schema; (2) orchestration/pattern registry; (3) routing policy; (4) model execution/fallback policy; (5) capability/tool registry; (6) permission/risk policy; (7) context package schema; (8) evidence schema; (9) event schema; (10) validation registry; (11) memory admission policy; (12) promotion gate; (13) human-in-the-loop approval record; (14) Harvest integration contract; (15) observability/trace schema; (16) budgets/limits configuration; (17) architecture acceptance tests; (18) migration/compatibility tests. **No one-file-per-concept requirement**; reuse canonical DT contracts. Do not declare completion on missing authorization, evidence, real tests or migration compatibility.
+
+| Independently identified gap | Historical location and checked original blob | Prompt mapping / disposition |
+| --- | --- | --- |
+| G1 nine-field registry | §38 lines 1685–1717, `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7` | G1 above — TRANSFORMER_COVERED_PENDING_SCOUT |
+| G2 twelve metrics | §39 lines 1723–1742, same blob | G2 above — TRANSFORMER_COVERED_PENDING_SCOUT |
+| G3 eighteen contracts | §42 lines 2001–2026, same blob | G3 above — TRANSFORMER_COVERED_PENDING_SCOUT |
+| Other historical clauses | §§0–37,40–41,45; lines 1–1684,1752–2000,2094–EOF | PARTIAL; independent Scout cursor unchanged, no FULL claim |
+
+Provenance: live public source `doubletake_evolution/scrapyard/AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` blob `7e67b815f173b733a6a23654bfe17a730958a985`; historical blob `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7`. Third-party Google material and historical Agent_X design are references, not code-copy licenses or proof of current DT parity. No private DT access, implementation, live tests or original deletion.
