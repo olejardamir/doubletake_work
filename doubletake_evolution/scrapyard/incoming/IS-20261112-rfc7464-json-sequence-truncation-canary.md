@@ -1,0 +1,21 @@
+# IS-20261112-RFC7464 — JSON text sequence truncation canary and recovery
+
+**Status:** NEW_PUBLIC_SOURCE_CANDIDATE / NOT_IMPLEMENTED / PRIVATE_DT_PARITY_UNKNOWN.
+**Primary source:** Nicolas Williams, RFC 7464, *JavaScript Object Notation (JSON) Text Sequences*, IETF Proposed Standard, February 2015, https://www.rfc-editor.org/rfc/rfc7464 ; §§2.1–2.4 and 3 read directly 2026-11-12. Revision: RFC 7464 as published; errata status not independently reviewed. Rights: copyright 2015 IETF Trust/authors; BCP 78/IETF Trust Legal Provisions; extracted code components require Simplified BSD text per RFC copyright notice. This artifact paraphrases normative behavior and contains no copied RFC code.
+
+## Distinct falsifiable source clauses
+1. A JSON text sequence uses UTF-8 and RS (0x1E) before each element; the encoder appends LF (0x0A). Parsers SHOULD continue to subsequent RS after malformed/truncated elements (§§2.1–2.3); recovery does not prove a complete overall sequence, which has **no end-of-sequence indicator**.
+2. For non-self-delimited top-level values (numbers, true, false, null), parsers **MUST** check for trailing JSON whitespace and **MUST** drop potentially truncated elements lacking it (§2.4). In particular, an apparently parseable final number without LF/whitespace must not silently become a verified complete element.
+3. The format provides **no cryptographic integrity protection**; incremental parser disagreement/partial-result acceptance can permit data smuggling (§3). Record per-element failures rather than interpreting skipped records as complete evidence.
+
+## Hypothetical DT transfer / preflight
+**Only if** a future explicitly authorized coder finds an actual existing public-documented/current-private-DT consumer of `application/json-seq` or a formally equivalent RS-delimited stream, investigate an element-level completeness gate at that consumer. This is NOT a claim that DT currently uses this protocol or has a defect. Do not impose RFC7464 rules on SSE, NDJSON, arbitrary JSON or generic tool outputs. Current private code parity, consumer, owner and fixture: **UNKNOWN**. A future coder must check ALREADY_PRESENT / NO_CURRENT_CONSUMER / NO_AUTHORIZED_FIXTURE first.
+
+## Frozen safe tests (hypotheses, NOT executed)
+- P1: RS + JSON object + LF; P2: RS + top-level number + LF; P3: malformed record followed by RS + valid record; verify recovery with explicit warning.
+- N1: RS + `123` + RS without intervening whitespace: MUST drop first potentially truncated number; N2: RS + `true` at EOF without whitespace: MUST drop; N3: malformed/truncated record followed by valid record must not produce false completeness or suppress failure; N4: syntactically valid last element must not be used as proof of stream-level completeness (there is no terminal marker).
+- N5: attacker-controlled partial record or parser disagreement cannot be silently promoted to authenticated/authorized evidence; verify provenance and authorization separately.
+Use invented disposable bytes and independently fixed expected results; no private execution, protected writes, new runtime, or code installation.
+
+## Clause-level dedup, bounded
+Public INDEX `doubletake_evolution/implementation_prompts/INDEX.md` blob `848aba5bb87e19f00753f85c64b57d073e99aecf`, incoming inventory shard blob `1cacd83a2a862ff9ea9a7da2c99de4e84408e2e2`, and prompt bodies DT-IP-0018 blob `ca9f9854741cc3e25776edc0d5db4c923426b231`, DT-IP-0023 blob `0e0b2c2ebcd5d4230fb36dab940b9c5ca934b213` reviewed 2026-11-12. DT-IP-0018 covers semantic terminal outcomes but not RFC7464's mandatory top-level scalar whitespace canary; DT-IP-0023 covers HTTP digest/trailer release, not RS-delimited JSON scalar truncation/recovery. No dedicated RFC7464 clause observed in these comparisons. **Remaining uncertainty:** complete canonical-cluster coverage outside the checked INDEX and two bodies not established; Transformer/Scout must independently deduplicate before promotion or deletion. No private DT inspection, testing or implementation.
