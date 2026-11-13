@@ -169,3 +169,67 @@ Preserve all **twelve** historical failure types as conditional taxonomy: `TRANS
 | Not yet independently reconciled | §40 A–L, §41, §§43–45; G1–G19 final consistency and full live source | future Scout | PARTIAL / NO_DELETE |
 
 Historical list count corrected in this transfer: §31 has nine controls including artifact size; §36 names thirteen failures including NO_PROGRESS. These are source-derived counts, not implementation claims. Scout alone independently verifies coverage and may retire the original. Private DT NOT_EXECUTED.
+
+
+## Scout G20–G22 grouped closure: historical §§40–45 — CONDITIONAL / NOT_EXECUTED
+
+Evidence: current distilled source \`scrapyard/AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md\` blob \`7e67b815f173b733a6a23654bfe17a730958a985\`; complete historical original blob \`6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7\`, §40 lines 1752–1826, §41 lines 1830–1997, §§42–45 lines 2001–2165. This is **source-to-prompt preservation only**; NOT a verified current-DT defect, implemented design, license grant or authorization. Future coder first inspects current authorized DT main, canonical owner, real reachable consumer, exact fixture, upstream rights/version and policy. \`ALREADY_PRESENT\`, \`NO_CONSUMER\`, \`NO_FIXTURE\`, \`NO_OWNER\`, \`RIGHTS_UNKNOWN\`, \`UNAUTHORIZED\` => STOP without code. Reuse existing authority, no shadow services/agents. Tests below are required **only for applicable, approved migration**, with positive and adversarial negative fixtures; unavailable fixture is BLOCKED, never PASS.
+
+### G20 — §40 A–L architecture acceptance: each individual test is independently observable
+
+| Suite | Positive acceptance | Negative / rejection acceptance |
+| --- | --- | --- |
+| A Tiered routing | Deterministic request uses zero LLM calls; cheap classifier handles low-complexity ambiguity; deep task escalates; route recorded | Deterministic work invokes model; missing route trace; expensive tier chosen without policy |
+| B Same-bar fallback | Primary and fallback use identical required validators | Invalid fallback rejected; fallback cannot bypass permission/evidence |
+| C ReAct | Multi-step reason→act→observe, completes when done | Max-step termination; repeated no-progress detected and stopped |
+| D Sequential | Known dependency order enforced without model orchestration | Out-of-order dependent execution or unnecessary LLM control rejected |
+| E Parallel | Independent checks execute concurrently | Dependent stages never run prematurely; missing/conflicting merges cannot silently PASS |
+| F Critique | Separate reviewer applies structured criteria | Generator cannot self-accept; rejected critique goes to bounded repair, never unbounded retry |
+| G Context | Irrelevant history excluded; compression retains provenance | Lower-trust context cannot override runtime authority; missing lineage rejected |
+| H Human approval | Approval requested only for policy-required risk, bound to exact plan/action | Material plan change invalidates approval; stale/replayed approval rejected |
+| I Durability | Restart restores authoritative lifecycle state | Restart cannot fabricate completion, duplicate side effects or lose committed state |
+| J Harvest | Discovery/inventory followed by value/fit gates, end-to-end implementation and replacement cleanup | Inventory alone cannot trigger code; obsolete implementation cannot remain unaccounted |
+| K Anti-slop | Reachable, real behavior with independent proof and minimal owner | Placeholder-only, duplicate architecture, unused subsystem and unreachable user feature each fail |
+| L Promotion | Validated change promotes atomically | Failed validation blocks promotion; failed promotion leaves recoverable state |
+
+For each suite, record fixture ID, current owner, positive/negative assertion, evidence ID, validator result, revision, and applicable/not-applicable reason. Do not substitute a single A–L aggregate check for these individual cases. Where current DT lacks the relevant consumer, mark NOT_APPLICABLE_WITH_EVIDENCE rather than create architecture to satisfy a historical test.
+
+### G21 — §41 migration ordering (Phase 0–14), subject to current owner and applicability
+
+| Phase | Conditional dependency and deliverable |
+| --- | --- |
+| 0 | Inspect current main: roles, task state stores, orchestration, routing, tool registries, MCP, Harvest, validation/promotion, UI and duplicate authority; map existing→proposed before coding |
+| 1 | Consolidate one durable authoritative lifecycle, legal transitions and blocking states; remove competing state authority |
+| 2 | Establish governed capability registry, schemas, permissions, risk, provenance; tool calls use it |
+| 3 | Explicit deterministic/cheap/normal/deep tiered routing with telemetry |
+| 4 | Common model execution, bounded timeout/retry/fallback and identical post-generation validation |
+| 5 | Bounded ReAct action/observation/state/termination with no-progress detection |
+| 6 | Purpose-built context, trust/provenance, retrieval, compression and budgets; no transcript accumulation |
+| 7 | Shared validation and separated critique where needed |
+| 8 | **Only after lifecycle and authority:** typed events, correlation, safe independent parallelism, idempotency; no gratuitous message bus |
+| 9 | **After common lifecycle:** integrate Harvest admission→semantic delta→implementation→validation→promotion, remove duplicate orchestration |
+| 10 | Bind approval to risk policy, remove unnecessary approval and enforce high-risk approval |
+| 11 | **Only after internal capability policy:** selectively expose MCP tools with authn/authz/rate limits/audit |
+| 12 | Map detailed lifecycle to minimal UI states; hide agent topology |
+| 13 | **Before any optional multi-agent expansion:** remove obsolete loops, state, validators, adapters, UI, agent roles and unnecessary LLM calls |
+| 14 | Only if measured simpler patterns fail, evaluate coordinator/hierarchy/swarm; otherwise NO CHANGE |
+
+Enforce dependency DAG 0→1→2 before 8; 1/2 before 9; 2 before 11; 13 before 14. Other phases may be consolidated or skipped with evidence if already present; this is not a mandate to reconstruct obsolete Agent_X. Positive test: dependency order and compatibility/migration evidence; negative tests: event parallelism with competing lifecycle authority, MCP exposure without internal policy, premature multi-agent escalation, missing cleanup, and migration that changes behavior without acceptance proof.
+
+### G22 — §§42–45 artifact/rule/DoD/topology reconciliation
+
+**§42: eighteen required artifact categories, not eighteen mandatory new files.** Each must be mapped to existing current-DT owner/artifact or explicitly NOT_APPLICABLE with evidence: (1) lifecycle/state schema → G18; (2) pattern registry → G21/route contract; (3) routing policy → G20-A; (4) model/fallback policy → G20-B; (5) capability/tool registry → G18; (6) permission/risk policy → G10/G18; (7) context package schema → G20-G; (8) evidence schema → G11; (9) event schema → G8/G21; (10) validation registry → G12; (11) memory admission → G10; (12) promotion gate → G19; (13) HITL approval record → G10/G20-H; (14) Harvest integration → G14/G20-J; (15) trace schema → G16; (16) budget config → G17; (17) architecture acceptance tests → G20; (18) migration/compatibility tests → G21. A conceptual contract may be code, schema, config or prompt; no one-file-per-concept requirement.
+
+**§43: twenty coder rules, mapped as individually checkable gates.** (1) current main inspection → preflight; (2) architecture mapping → G21-0; (3) reuse/consolidate → G21; (4) no blindly named pseudo-components → preflight; (5) semantics not forced layout → G22 artifacts; (6) delete/consolidate instead of shadow systems → G21-13; (7) preserve existing behavior unless specified → migration acceptance; (8) hard guarantees outside prompts → G18; (9) semantic reasoning in prompts where safe → G18; (10) no mandatory Google ADK → rights/fit preflight; (11) no unjustified bus → G21-8; (12) no unjustified multi-agent → G21-14; (13) reject placeholders → G13/G20-K; (14) remove old dead paths → G14/G21-13; (15) tests at each meaningful migration step → G21; (16) evidence per criterion → G11/G20; (17) never weaken security/quality gate → G12; (18) fallback same validation → G20-B; (19) bound every loop → G17/G20-C; (20) promotion distinct from generation → G19. For each applicable rule, require positive proof and seeded violation that fails closed.
+
+**§44: twenty-nine DoD bullets mapped to contracts (no collective PASS).** (1) single lifecycle→G18/G21-1; (2) simplest adequate pattern→G21-3/14; (3) deterministic no-model→G20-A; (4) cheap before expensive→G20-A; (5) same-bar fallback→G20-B; (6) bounded evidence-driven ReAct→G20-C; (7) deliberate context→G20-G; (8) semantic before code→G18; (9) revisable structured plans→G7; (10) registered governed tools→G18; (11) auditable bounded MCP→G21-11; (12) safe independent concurrency→G8/G20-E; (13) separated critique→G20-F; (14) bounded repair→G19; (15) evidence-gated hierarchy/swarm→G21-14; (16) risk-based approval→G10/G20-H; (17) validated durable memory→G10; (18) evidence ledger→G11; (19) shared validation all routes→G12/G20-B; (20) common Harvest lifecycle→G14; (21) obsolete replacement removed→G14/G21-13; (22) simple UI→G15; (23) reconstructible redacted traces without private reasoning→G16; (24) budgets enforced→G17; (25) least privilege→G18; (26) gated promotion→G19; (27) A–L acceptance→G20; (28) old duplicate orchestration/state/validation removed→G21-13; (29) measured behavior ≥ baseline and lower complexity or measured reliability/capability gain→G13/G21. For each applicable bullet: current owner, fixture, baseline/head evidence, validator, negative case and disposition; otherwise BLOCKED or evidenced NOT_APPLICABLE, never unsubstantiated 100%.
+
+**§45: final authority/validation/promotion topology.** Historical conceptual sequence: user goal → L0–L3 classify/route → provenance/authority-aware context → semantic specification → plan/decompose/select simplest pattern → value/risk/architecture/permission gate → bounded execution → governed local/Git/MCP/sandbox/external tool layer → observation/evidence → **same-bar unified validation and independent critique** → PASS? → atomic gated promotion → authoritative updated state; on FAIL → bounded repair/replan/rollback, then revalidate or stop. No model-generated PASS or prompt authority may bypass policy, evidence or promotion transaction. Verify forward success, validation failure, denied tool, stale approval, interrupted promotion, rollback and restart/replay. Existing current-DT topology takes precedence; never install a duplicate to mirror a diagram.
+
+| Scout gap | Exact source span | Prompt mapping | Disposition |
+| --- | --- | --- | --- |
+| G20 | historical §40 A–L, lines 1752–1826 | G20 twelve suites, per-case positive/negative | COVERED_PENDING_INDEPENDENT_SCOUT |
+| G21 | historical §41 Phases 0–14, lines 1830–1997 | G21 phase table, dependencies and anti-patterns | COVERED_PENDING_INDEPENDENT_SCOUT |
+| G22 | historical §§42–45, lines 2001–2165 | G22 18 artifacts, 20 rules, 29 DoD, topology | COVERED_PENDING_INDEPENDENT_SCOUT |
+
+**Handoff:** G20–G22 transferred in one coherent edit. G1–G19 and full current/historical consistency still require independent Scout audit; source RETAINED. Upstream licensing/version, actual private DT owner/consumer/fixture and parity remain UNKNOWN and are STOP gates. No private DT implementation, tests, deletion or independent certification performed.
