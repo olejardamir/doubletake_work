@@ -8,6 +8,7 @@ This small file is the machine-readable, reviewer-friendly control plane for sco
 - TRANSFORMER_CLAIMED: Transformer has fetched live source/prompt SHAs and started the scoped repair. If no verified edit this run, revert to SCOUT_OPEN_GAP with exact blocker, not silently clear.
 - REPAIRED_PENDING_SCOUT: Prompt was repaired, SHA verified; **Scout must independently recompare exact original clauses**, not assume repaired means certified.
 - COVERAGE_GAP_REOPENED: Scout independently found a remaining precise omission. Equivalent to SCOUT_OPEN_GAP, with fresh source/prompt SHA and exact missing clause.
+- CLAUSE_COVERED_PENDING_FULL_SOURCE: Scout independently verified this specific set of corrected clauses, but other source sections/rights/provenance still need audit; ORIGINAL MUST BE RETAINED.
 - CERTIFIED_COVERED: Scout independently proved complete current/historical source-to-prompt coverage, rights and authorization gates retained, and recorded all required evidence. This is NOT private DT code implementation.
 - BLOCKED_NONTRANSFERABLE: Exception only with specific external ownership/rights/no-applicability evidence; original retained.
 - RETIRED_CONFIRMED: Scout alone deleted original with SHA guard, verified subsequent 404, and reconciled history; optional after CERTIFIED_COVERED.
