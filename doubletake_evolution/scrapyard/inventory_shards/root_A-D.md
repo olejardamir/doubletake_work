@@ -290,3 +290,6 @@ Independent historical §4 lines 197–269 review against live distilled origina
 ### Transformer H-0059-S09 §9 G30 repair — 2026-11-14
 
 2026-11-14 TRANSFORMER H-0059-S09 historical §9 → G30: public-only context eleven inputs, six provenance fields, A0–A6 authority, six compression rules, P-S09-01..02/N-S09-01..07; prompt 14c55e3bf028b3481d8e2e5e4ecfb5dccb6470e5 commit a22ee5c76a3d290fcd93e618ad64c6dd18c1ed62; queue REPAIRED_PENDING_SCOUT; original retained, NOT_EXECUTED, rights/owner UNKNOWN.
+
+### Scout DT-IP-0059 historical §10 checkpoint — 2026-11-14
+Historical §10 lines 606–659 independently compared at historical blob `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7`, live distilled `7e67b815f173b733a6a23654bfe17a730958a985`, current prompt `14c55e3bf028b3481d8e2e5e4ecfb5dccb6470e5`. Opened `H-0059-S10` in authoritative HANDOFF_QUEUE: 14 semantic-specification questions and explicit authorized semantic/code mismatch resolution missing as exact conditional requirements. Positive P-S10-01..03; negative N-S10-01..05. No source deletion, full rights/owner/DT applicability unknown. Next historical cursor §11 line 663, unless queue has REPAIRED_PENDING_SCOUT. Source retained.
