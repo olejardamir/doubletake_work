@@ -273,3 +273,26 @@ Positive tests: ambiguous class meets four justified gates, performs bounded dec
 | §19 | Historical original lines 1017–1043; four gate tests; three actions; four prohibitions | G25 and coordinator permission tests | REPAIRED_IN_PROMPT_PENDING_INDEPENDENT_SCOUT |
 
 **Handoff:** Independent Scout must recheck G23–G25 against full current/historical original, then finish its existing audit cursor §§20–39, rights/provenance, and full consistency. This prompt edit is NOT certification or deletion authorization. The scrapyard original remains retained. Private DT current applicability/parity UNKNOWN and NOT EXECUTED.
+
+
+## G26 — H-0059-S21: historical §21 default-disabled swarm and six-factor evidence gate (PUBLIC PROMPT ONLY)
+
+**Source mapping:** historical immutable `AGENT_X_GOOGLE_AGENTIC_PATTERNS_ADOPTION_SPEC.md` blob `6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7`, §21 lines 1086–1104 → this G26; current distilled blob `7e67b815f173b733a6a23654bfe17a730958a985`. This supplements G2 twelve-metric task-class evaluation and G21 Phase 14; it does **not** supersede their contracts.
+
+**Default and authorization:** swarm orchestration is `DEFAULT: DISABLED`. Never auto-enable it through a configuration default, self-approval, an LLM recommendation or unverified claimed benefit. Only a separately authorized owner may approve a **bounded experiment** on an identified current-DT consumer, after verifying the current version, policy, real owner, executable fixture, rights and source provenance. Preflight must STOP with recorded evidence on `ALREADY_PRESENT` (adequate existing guarded mechanism), `NO_CONSUMER`, `NO_FIXTURE`, `NO_OWNER`, `RIGHTS_UNKNOWN`, `UNAUTHORIZED` or policy denial. Unknown DT parity is not a defect finding. No agent-to-agent conversation may substitute for explicit architecture, authority, traceability or independent validation.
+
+**Six-factor experiment gate:** precommit a simpler-pattern baseline, task class, fixture revisions, evaluation denominators, matched access/budgets, independent evaluator, acceptance thresholds and latency/cost limits. Record and compare **all six** separately: (1) task success, (2) output quality, (3) failure rate, (4) workload-acceptable latency, (5) workload-acceptable cost, and (6) trace/debug complexity. Preserve raw outcomes, failures, run IDs, revisions, evaluator independence and uncertainty. Enablement requires demonstrable advantage over the simpler baseline on task success, output quality and failure rate, with latency, cost and trace/debug complexity acceptable under predeclared limits; a missing, incomparable, adverse or ambiguous dimension is NOT PASS. G2's wider twelve-metric ledger remains applicable; no metric may be silently dropped. An experiment approval is not production promotion; production requires separate current-owner authority, same-bar validation, security and rollback evidence. Fail closed and remain disabled on regressions, budget exhaustion, incomplete traces, revoked approval, stale revision or evaluation uncertainty.
+
+**Exact synthetic acceptance fixtures (future authorized coder only):**
+
+| ID | Setup | Required result |
+| --- | --- | --- |
+| P-S21-01 | Approved bounded experiment; frozen simpler baseline; matched tasks/resources; independent six-factor measurements with predeclared success/quality/failure improvement and acceptable latency/cost/debug complexity; all existing validation and rights gates satisfied | Experimental enablement only within authorized scope, revision and budgets; trace decision and evidence; production remains separately gated |
+| N-S21-01 | Same candidate but trace/debug complexity absent or exceeds approved bound | STOP; swarm stays DISABLED |
+| N-S21-02 | Success/quality promising but failure-rate improvement unmeasured, not demonstrated or worse than baseline | STOP; swarm stays DISABLED |
+| N-S21-03 | Swarm default enabled, self-authorized or experiment not approved | DENY and restore DISABLED; no execution |
+| N-S21-04 | Baseline incomparable due to different tasks, access, budgets, revisions or evaluator | STOP; no benefit claim |
+| N-S21-05 | Cost or latency violates predeclared acceptable limit, or results lack independent validation | STOP; swarm stays DISABLED |
+| N-S21-06 | Owner/consumer/fixture/rights unknown or approval revoked/stale | STOP before execution; record exact reason |
+
+**Failure/recovery and evidence:** no implicit fallback to swarm; revert to simpler authorized route, preserve evidence and revision-bound failure reason, and require fresh independent measurements plus owner approval for reconsideration. Never grant new tool permissions or promotion authority through swarm selection. Scout must independently compare the exact historical §21 source and G26 fixtures before marking H-0059-S21 covered. Original remains retained; no private DT code or tests executed.
