@@ -233,3 +233,43 @@ Enforce dependency DAG 0→1→2 before 8; 1/2 before 9; 2 before 11; 13 before 
 | G22 | historical §§42–45, lines 2001–2165 | G22 18 artifacts, 20 rules, 29 DoD, topology | COVERED_PENDING_INDEPENDENT_SCOUT |
 
 **Handoff:** G20–G22 transferred in one coherent edit. G1–G19 and full current/historical consistency still require independent Scout audit; source RETAINED. Upstream licensing/version, actual private DT owner/consumer/fixture and parity remain UNKNOWN and are STOP gates. No private DT implementation, tests, deletion or independent certification performed.
+
+## Scout G23–G25 correction — historical §§17–19 (2026-11-13; conditional; NOT EXECUTED)
+
+**Origin:** Scout independently found three precise gaps in inventory_shards/root_A-D.md, commit f4c0262fecc6855332869129b363b7de238aed12. Source original Git blob 6183f1ac04c1c572a4fbd502d5887e2ff36bd0b7, lines 919–1043; current distilled source blob 7e67b815f173b733a6a23654bfe17a730958a985. These are conditional FUTURE CODER contracts, not claims of existing DT code or tests. All actions require the original current-private-DT owner / authorized consumer / fixtures / permissions preflight: absent proof => STOP with a recorded reason.
+
+### G23 — §17 Independent reviewer, isolation and artifact categories (lines 919–959)
+
+The original requires review-and-critique of these EIGHT applicable high-impact candidate classes: (1) code changes; (2) architecture decisions; (3) Harvest admissions; (4) replacement decisions; (5) migrations; (6) prompt-system changes; (7) security-sensitive behaviour; (8) high-impact repairs. Record the actual consumer and source revision for each; when absent, NOT_APPLICABLE_WITH_EVIDENCE, not PASS.
+
+Review flow: GENERATOR -> candidate immutable revision -> CRITIC against ORIGINAL semantic specification AND acceptance criteria -> PASS / REPAIR_INSTRUCTIONS / REJECT. Meaningful independence requires an appropriate combination of a separate inference call, FRESH CONTEXT, explicitly isolated critic prompt, READ-ONLY TOOLS and inability to mutate the judged artifact. A second permanent agent is NOT required. Bind verdict, fixture, spec revision and candidate revision; only the existing governed promotion owner can accept PASS after other validators. Never let the generator certify itself or let review bypass authority.
+
+Positive tests: seeded high-impact defect is caught and rejected with original acceptance criterion; clean candidate independently accepted with evidence. Negative tests: generator self-approval, critic write tools, reviewer mutating judged revision, model-authored replacement acceptance criteria, injected PASS command, reviewer approving wrong revision, or unreviewed high-impact promotion must fail closed.
+
+### G24 — §18 Five exits, six no-progress indicators, ordered recovery (lines 962–1013)
+
+Bounded loop: GENERATE -> VALIDATE -> DIAGNOSE -> REPAIR -> REVALIDATE. Track attempt, current revision, validation defects, score deltas, budget, evidence and last accepted state. EXACT five terminal outcomes: (1) verified quality threshold reached = success; (2) maximum iterations; (3) no-progress threshold; (4) budget exhausted; (5) hard blocker discovered. Outcomes 2–5 are NOT success. No silently raised limits.
+
+Detect SIX explicit non-progress signals: (1) same validation errors repeating; (2) patch oscillation; (3) repeated revert/reapply; (4) unchanged acceptance score; (5) repeated tool call with no new evidence; (6) growing code without increased acceptance. Compare actual history/revisions and evidence, not model descriptions. Each signal has measurable bound and diagnostic.
+
+Recovery escalation ORDER: ordinary repair -> re-plan -> stronger reasoning tier ONLY if justified by evidence -> human approval ONLY if required by current policy -> rollback/reject. Permitted skipped steps need explicit grounds; never self-grant budget or approval. Failed attempts preserve unrelated files, leave reproducible blocker reason and retry only on new evidence/change.
+
+Positive tests: validated repair terminates; each of five exits is correctly reported; failed repairs trigger bounded replan then justified tier and optional policy approval; rollback preserves unrelated work. Negative tests: repeated same error accepted as progress, flip-flop patches, repeated evidence-free calls, longer code falsely marked improved, unbounded attempts, success after budget/hard-blocker exit, unjustified model escalation, self-approval, bypassed revalidation.
+
+### G25 — §19 Deterministic-first coordinator scope and authorization (lines 1017–1043)
+
+Default deterministic routing. A model coordinator is allowed ONLY when ALL FOUR criteria are supported: (1) genuinely ambiguous input types; (2) deterministic classifier cannot route reliably; (3) specialist capability boundaries are meaningful; (4) controlled evaluation demonstrates better completion or quality than simpler baseline on matched permissions, fixtures, risk, and budget. Unknown or failed criterion => retain deterministic routing, no speculative model coordinator.
+
+When justified, coordinator has THREE operations ONLY: decompose; select specialist role; merge results under normal validation. FOUR prohibited privileges: bypass policy; grant permissions; redefine authoritative state; promote its own result. Authority continues to reside in existing runtime policy, durable owner, evidence/validation and separate promotion transaction.
+
+Positive tests: ambiguous class meets four justified gates, performs bounded decomposition and reviewed merge; routine inputs stay deterministic; measured baselines saved. Negative tests: unjustified coordinator, no specialized roles, no measured improvement, model trying to grant itself tools, bypass policy, rewrite state, self-promote or accept conflicting merges => fail closed.
+
+### Explicit Scout source-to-prompt mapping
+
+| Scout gap | Source clause | Repaired scope | Status |
+| --- | --- | --- | --- |
+| §17 | Historical original lines 919–959; eight review classes; five reviewer isolation options; three verdicts | G23 and positive/negative review tests | REPAIRED_IN_PROMPT_PENDING_INDEPENDENT_SCOUT |
+| §18 | Historical original lines 962–1013; five exits; six signals; ordered escalation | G24 and stop/oscillation/rollback tests | REPAIRED_IN_PROMPT_PENDING_INDEPENDENT_SCOUT |
+| §19 | Historical original lines 1017–1043; four gate tests; three actions; four prohibitions | G25 and coordinator permission tests | REPAIRED_IN_PROMPT_PENDING_INDEPENDENT_SCOUT |
+
+**Handoff:** Independent Scout must recheck G23–G25 against full current/historical original, then finish its existing audit cursor §§20–39, rights/provenance, and full consistency. This prompt edit is NOT certification or deletion authorization. The scrapyard original remains retained. Private DT current applicability/parity UNKNOWN and NOT EXECUTED.
